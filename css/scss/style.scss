@@ -1,0 +1,1208 @@
+/* ====================== Copyright © Build by BDLoneR ====================== */
+
+/* ====================== Fonts ====================== */
+
+@font-face {
+    font-family: 'Prachason';
+    src: url('../fonts/Prachason-Bold.eot');
+    src: url('../fonts/Prachason-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Prachason-Bold.woff2') format('woff2'),
+        url('../fonts/Prachason-Bold.woff') format('woff'),
+        url('../fonts/Prachason-Bold.ttf') format('truetype'),
+        url('../fonts/Prachason-Bold.svg#.') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Prachason';
+    src: url('../fonts/Prachason-Light.eot');
+    src: url('../fonts/Prachason-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Prachason-Light.woff2') format('woff2'),
+        url('../fonts/Prachason-Light.woff') format('woff'),
+        url('../fonts/Prachason-Light.ttf') format('truetype'),
+        url('../fonts/Prachason-Light.svg#.') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Prachason';
+    src: url('../fonts/Prachason-Regular.eot');
+    src: url('../fonts/Prachason-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Prachason-Regular.woff2') format('woff2'),
+        url('../fonts/Prachason-Regular.woff') format('woff'),
+        url('../fonts/Prachason-Regular.ttf') format('truetype'),
+        url('../fonts/Prachason-Regular.svg#.') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Prachason';
+    font-weight: bold;
+}
+
+p, span, div, a, label, input, select, textarea {
+    font-family: 'Prachason';
+    font-weight: normal;
+}
+
+/* ====================== Variables ====================== */
+
+$primary-color: #FFBE00;
+$secondary-color: #161616;
+$accent-color: #fff;
+$g-container: 1160px;
+
+/* ====================== Global Settings ====================== */
+
+body, html{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    height: 150vh;
+}
+
+ul{
+    padding: 0;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: $accent-color;
+}
+
+.g-container {
+    max-width: $g-container;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.btn-border{
+    font-family: 'Agency FB';
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: 1px solid $primary-color;
+    text-transform: uppercase;
+    transition: all .3s ease-in-out;
+    width: 45%;
+    text-align: center;
+
+    &:hover{
+        background-color: $primary-color;
+    }
+}
+
+// Dropdown
+
+.d-btn {
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+.dd-lang-block {
+    position: relative;
+    display: inline-block;
+
+    &:hover{
+        .dd-content-block {display: block;}
+    }
+}
+
+.dd-content-block {
+    display: none;
+    position: absolute;
+    z-index: 1;
+
+    a {
+        color: #fff;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+}
+
+// Checkbox input
+
+.compare {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    color: $accent-color;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    &:hover {
+        input ~ .checkmark {
+            border-color: $primary-color;
+        }
+    }
+
+    input{
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+
+        &:checked ~ .checkmark {
+            background-color: transparent;
+        }
+
+        &:checked ~ .checkmark {
+            &::after {
+                display: block;
+            }
+        }
+    }
+
+    .checkmark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 20px;
+        width: 20px;
+        background-color: transparent;
+        border: 1px solid $accent-color;
+        border-radius: 5px;
+
+        &::after {
+            content: "";
+            position: absolute;
+            display: none;
+
+            left: 7px;
+            top: 2px;
+            width: 5px;
+            height: 10px;
+            border: solid $primary-color;
+            border-width: 0 3px 3px 0;
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+        }
+      }
+  }
+
+  
+  /* Show the checkmark when checked */
+  .container input
+  
+  /* Style the checkmark/indicator */
+  .container .checkmark:after {
+    
+  }
+
+/* ====================== Nav Global Site ====================== */
+
+.site-header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: $secondary-color;
+    padding-top: 10px;
+
+    .main-nav{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        .half-nav{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+
+            &.top-menu{
+                .dt-col{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-wrap: wrap;
+
+                    &.-lang {
+                        width: 20%;
+                        justify-content: flex-start;
+
+                        .dd-lang-block{
+                            .img-flag{
+                                width: 20px;
+                                margin-right: 5px;
+                            }
+                        }
+                    }
+
+                    &.-logo {
+                        width: 60%;
+                    }
+
+                    &.-addon {
+                        width: 20%;
+                        justify-content: flex-end;
+
+                        .addon-block {
+                            columns: 3;
+                        }
+                    }
+                }
+            }
+
+            &.main-menu{
+                .nav-menu-block {
+                    width: 100%;
+                    max-width: 680px;
+
+                    .nav-menu{
+                        display: flex;
+                        margin: 0;
+
+                        li{
+                            flex: 1 1 auto;
+                            text-align: center;
+                            padding: 20px 0;
+
+                            a {
+                                position: relative;
+                                transition: .3s;
+
+                                &::after{
+                                    content: '';
+                                    position: absolute;
+                                    bottom: -20.5px;
+                                    left: 0;
+                                    height: 4px;
+                                    width: 100%;
+                                    background: $primary-color;
+                                    opacity: 0;
+                                    transition: .3s all ease-in-out;
+                                }
+
+                                &:hover{
+                                    color: $primary-color;
+
+                                    &::after{
+                                        opacity: 1;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.navbar-autoshow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $secondary-color;
+    position: fixed;
+    top: -150px;
+    width: 100%;
+    transition: top 0.5s;
+    z-index: 9999;
+
+    .navbar-block {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100%;
+
+        .dt-col {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &.-logo{
+                width: 10%;
+                justify-content: flex-start;
+            }
+
+            &.-menu{
+                width: 65%;
+
+                .nav{
+                    display: flex;
+                    width: 100%;
+                    margin: 0;
+
+                    li{
+                        flex: 1 1 auto;
+                        text-align: center;
+                        padding: 30px 0;
+
+                        a {
+                            position: relative;
+                            transition: .3s;
+
+                            &::after{
+                                content: '';
+                                position: absolute;
+                                bottom: -30.5px;
+                                left: 0;
+                                height: 4px;
+                                width: 100%;
+                                background: $primary-color;
+                                opacity: 0;
+                                transition: .3s all ease-in-out;
+                            }
+
+                            &:hover{
+                                color: $primary-color;
+
+                                &::after{
+                                    opacity: 1;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            &.-addon{
+                width: 25%;
+                justify-content: flex-end;
+
+                .addon-block {
+                    columns: 3;
+                    margin: 0;
+                    align-items: center;
+                    margin-right: 15px;
+                }
+
+                .dd-lang-block{
+                    .img-flag{
+                        width: 20px;
+                        margin-right: 2px;
+                    }
+
+                    .dd-icon{
+                        width: 10px;
+                        margin-bottom: 2px;
+                        margin-left: 2px;
+                    }
+
+                    .dd-content-block{
+                        background-color: $secondary-color;
+                        padding-top: 20px;
+
+                        a{
+                            padding-right: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ====================== Product Loop Template ====================== */
+
+.post-items{
+    &.-card{
+        .featured-img-block {
+            height: 250px;
+            position: relative;
+            display: block;
+            overflow: hidden;
+
+            &:hover{
+                .featured-img{
+                    transform: scale(1.15);
+                }
+            }
+
+            .featured-img {
+                height: 100%;
+                transition: all .5s ease-in-out;
+            }
+
+            .badge {
+                position: absolute;
+                right: 0;
+                top: 25px;
+                padding: 5px 15px;
+                color: $accent-color;
+                font-family: 'Agency FB';
+                font-weight: bold;
+                font-size: 18px;
+                z-index: 2;
+
+                &.-g{
+                    background-color: #3ECB2C;
+                }
+
+                &.-r{
+                    background-color: #D32323;
+                    margin-top: 2.5rem;
+                }
+            }
+        }
+
+        .title-item{
+            font-family: 'Agency FB';
+
+            .category {
+                margin: 0;
+                margin-top: 15px;
+                font-size: 16px;
+                color: $primary-color;
+                font-weight: normal;
+            }
+
+            .title {
+                margin: 5px 0;
+                margin-bottom: 20px;
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                height: 55px;
+                color: $accent-color;
+            }
+        }
+        .content-item{
+            font-family: 'Agency FB';
+            display: flex;
+
+            .price-block{
+                width: 80%;
+
+                .price{
+                    color: $primary-color;
+                    font-weight: bold;
+                    font-size: 22px;
+                }
+            }
+
+            .fav-block{
+                display: flex;
+                width: 20%;
+                justify-content: flex-end;
+                align-items: center;
+
+                .fav{
+                    path { transition: fill .4s ease; fill: transparent; }
+                    
+                    &:hover{
+                        svg{
+                            path{
+                                fill: $primary-color;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .compare-block {
+            display: flex;
+            justify-content: center;
+            margin-top: 15px;
+            padding: 15px 0;
+            border-top: 1px solid #3B3B3B;
+        }
+    }
+}
+
+/* ====================== Home Page ====================== */
+
+
+.home{
+    background-color: $secondary-color;
+
+    .hero-slider-section{
+
+        // Home - Hero Banner //
+
+        .splide{
+            .splide__slide{
+                min-height: 600px;
+                
+                &.--slide-01{
+                    background: url(../images/hero-banner-home.png) center center;
+                    background-size: cover;
+                }
+
+                &.--slide-02{
+                    background: url(../images/hero-banner-home.png) center center;
+                    background-size: cover;
+                }
+
+                &.--slide-03{
+                    background: url(../images/hero-banner-home.png) center center;
+                    background-size: cover;
+                }
+            }
+
+            .splide__arrows{
+                .splide__arrow{
+                    opacity: 1;
+                    background: transparent;
+
+                    .arrow-left{
+                        width: 100px;
+                    }
+
+                    &--prev{
+                        left: 13%;
+                    }
+
+                    &--next{
+                        right: 13%;
+                    }
+                }
+            }
+
+            .splide__pagination__page {
+                background: transparent;
+                border: 1px solid $accent-color;
+                width: 15px;
+                height: 15px;
+                margin: 0px 5px;
+                margin-bottom: 15px;
+                opacity: 1;
+
+                &.is-active{
+                    transform: scale(1);
+                    border: 1px solid $primary-color;
+                    background-color: $primary-color;
+                }
+            }
+        }
+    }
+
+    // Home - Sub Hero //
+
+    .sub-hero-section{
+        background: url(/images/sub-hero.png) center bottom;
+        background-size: cover;
+        padding: 1rem 0;
+        background-color: $secondary-color;
+
+        .grid-block{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 20px;
+
+            .grid-item{
+                display: flex;
+                justify-content: center;
+
+                .title-sub-hero{
+                    font-size: 18px;
+                    color: $accent-color;
+                }
+
+                img{
+                    margin-right: 15px;
+                    width: 50px;
+                }
+            }
+        }
+    }
+
+    // Home - Kickoff //
+
+    .kick-off-section{
+        padding: 2rem 0;
+
+        .kick-off-block{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .title-kick-off{
+                color: $accent-color;
+                font-size: 24px;
+            }
+
+            .banner-kick-off {
+                margin-top: 2rem;
+                background: url(../images/kick-off-banner.png) center center;
+                background-size: cover;
+                min-height: 300px;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                width: 100%;
+
+                .left-block {
+                    display: flex;
+                    flex-direction: column;
+                    width: 20%;
+                    padding-left: 5rem;
+                }
+
+                .right-block {
+                    width: 80%;
+                }
+            }
+        }
+    }
+
+    // Home - New Releases Slider //
+
+    .new-releases-section{
+        .new-releases-block{
+            .title-new-releases{
+                color: $primary-color;
+                font-size: 26px;
+            }
+
+            #card-slider{
+                .splide__arrows{
+                    .splide__arrow--prev {
+                        left: -4rem;
+                        background-color: transparent;
+                    }
+
+                    .splide__arrow--next {
+                        right: -4rem;
+                        background-color: transparent;
+                    }
+                }
+
+                .splide__pagination{
+                    display: none;
+                }
+            }
+        }
+    }
+
+    // Home - Hot Product Slider //
+
+    .hot-product-section {
+        padding: 4rem 0;
+        background: url(../images/bg-hot-product.png) center center;
+        background-size: cover;
+
+        .hot-product-block{
+            .title-hot-product {
+                text-align: center;
+                color: $primary-color;
+                font-size: 26px;
+                margin-bottom: 2rem;
+            }
+
+            &.g-container{
+                max-width: 1000px;
+
+                #card-hot-slider{
+                    .post-items.-card{
+                        background:url(/images/bg-loop.png) center center;
+                        background-size: cover;
+                        padding: 15px;
+                    }
+
+                    .splide__arrows{
+                        .splide__arrow--prev {
+                            left: -4rem;
+                            background-color: transparent;
+                        }
+    
+                        .splide__arrow--next {
+                            right: -4rem;
+                            background-color: transparent;
+                        }
+                    }
+
+                    .splide__pagination{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+    // Home - Categories //
+
+    .categories-section{
+        padding: 4rem 0;
+
+        .categories-block{
+            .title-categories{
+                color: $primary-color;
+                font-size: 26px;
+                margin-bottom: 2rem;
+            }
+
+            .grid-block{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                gap: 20px;
+
+                .grid-item{
+                    &:first-child{
+                        .img-cate-block{
+                            height: 400px;
+                        }
+                    }
+
+                    .img-cate-block{
+                        height: 170px;
+                        overflow: hidden;
+
+                        &:hover{
+                            .img-cate{
+                                transform: scale(1.15);
+                            }
+                        }
+
+                        .img-cate{
+                            height: 100%;
+                            transition: all .5s ease-in-out;
+
+                            &.-cate1{
+                                background: url(../images/arigear.png) center center;
+                                background-size: cover;
+                            }
+
+                            &.-cate2{
+                                background: url(../images/nike.png) center center;
+                                background-size: cover;
+                            }
+
+                            &.-cate3{
+                                background: url(../images/shirt-premiere-league.png) center center;
+                                background-size: cover;
+                            }
+
+                            &.-cate4{
+                                background: url(../images/adidas.png) center center;
+                                background-size: cover;
+                            }
+
+                            &.-cate5{
+                                background: url(../images/sale30.png) center center;
+                                background-size: cover;
+                            }
+
+                            &.-cate6{
+                                background: url(../images/black-friday-week.png) center center;
+                                background-size: cover;
+                            }
+
+                            &.-cate7{
+                                background: url(../images/shirt-thai-league.png) center center;
+                                background-size: cover;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // Home - Ari X //
+
+    .ari-x-section{
+        .ari-x-block{
+            .grid-block{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 30px;
+
+                .grid-item{
+                    min-height: 550px;
+                    display: flex;
+                    align-items: center;
+
+                    &.-item1{
+                        background: url(../images/bg-ari-x-burirum.png) center center;
+                        background-size: cover;
+                    }
+
+                    &.-item2{
+                        background: url(../images/bg-ari-x-true.png) center center;
+                        background-size: cover;
+                    }
+
+                    .content-block {
+                        max-width: 450px;
+                        width: 100%;
+                        margin: 0 auto;
+                        font-family: 'Agency FB';
+                        padding: 0 20px;
+
+                        h2.title-ari-x{
+                            font-size: 32px;
+                            color: $accent-color;
+                            margin: 2rem 0;
+                            margin-top: 1rem;
+                        }
+
+                        .btn-border{
+                            border: 1px solid $accent-color;
+
+                            &:hover{
+                                border: 1px solid $accent-color;
+                                background-color: $accent-color;
+                                color: #000;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // Home - News //
+
+    .news-section{
+        padding: 4rem 0;
+        
+        .title-news{
+            color: $primary-color;
+            font-size: 26px;
+            margin-bottom: 2rem;
+        }
+
+        .news-block{
+            .grid-block{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                gap: 25px;
+
+                .grid-item{
+                    .featured-img-block{
+                        height: 170px;
+                        overflow: hidden;
+
+                        &:hover{
+                            .featured-img{
+                                transform: scale(1.15);
+                            }
+                        }
+
+                        .featured-img{
+                            height: 100%;
+                            transition: all .5s ease-in-out;
+                        }
+                    }
+
+                    .title-item {
+                        .title{
+                            font-size: 16px;
+                            display: -webkit-box;
+                            -webkit-line-clamp: 3;
+                            -webkit-box-orient: vertical;  
+                            overflow: hidden;
+                            height: 60px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .read-more-block{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 2rem;
+
+            .btn-border{
+                font-family: 'Prachason';
+                border: 1px solid $accent-color;
+                border-radius: 5px;
+                width: 15%;
+
+                .chevron-right {
+                    transform: rotate(-90deg);
+                    margin-bottom: 2px;
+                }
+
+                &:hover{
+                    border: 1px solid $accent-color;
+                    background-color: $accent-color;
+                    color: #000;
+                }
+            }
+        }
+    }
+
+    // Home - Video Presentation //
+
+    .video-present-section{
+        .video-present-block{
+            .index-video-wrapper {
+                height: 100%;
+                width: 100%;
+                background-size: cover;
+
+                .playpause {
+                    position: absolute;
+                    width: 100%;
+                    height: 74%;
+                    margin: 0;
+                    padding: 0;
+                    cursor: pointer;
+                    border: 0;
+                    outline: none;
+                    background-position: 50% 50%;
+                    background-size: 100% 100%;
+                    background-size: cover;
+                    text-indent: -999em;
+                    overflow: hidden;
+                    opacity: 1;
+                    transition: opacity 800ms,height 0s;
+                    transition-delay: 0s,0s;
+                    border-radius: 0;
+                    z-index: 2;
+
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        top: 45%;
+                        left: 50%;
+                        width: 80px;
+                        height: 80px;
+                        margin: -40px 0 0 -40px;
+                        border: 5px solid #fff;
+                        border-radius: 100%;
+                        transition: border-color 300ms;
+                    }
+
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        top: 45.8%;
+                        left: 50.3%;
+                        width: 0;
+                        height: 0;
+                        margin: -15px 0 0 -8px;
+                        border-left: 25px solid #fff;
+                        border-top: 15px solid transparent;
+                        border-bottom: 15px solid transparent;
+                        transition: border-color 300ms;
+                    }
+                }
+
+                #index-video {
+                    height: 100%;
+                    width: 100%;
+                    -o-object-fit: cover;
+                    object-fit: cover;
+                    z-index: -100;
+                    right: 0;
+                    bottom: 0;
+                    background-size: cover;
+                    overflow: hidden;
+                }
+            }
+        }
+    }
+
+    // Home - Partner //
+
+    .partner-section{
+        padding: 4rem 0;
+        background: url(/images/bg-partner.png) center center;
+        background-size: cover;
+
+        .partner-block{
+            #card-partner-slider{
+                .slider-partner{
+                    .grid-block {
+                        display: grid;
+                        gap: 20px;
+
+                        .grid-item {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+
+                        &.-top {
+                            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+                            width: 70%;
+                            margin: 0 auto;
+                        }
+
+                        &.-bottom {
+                            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+                            width: 100%;
+                        }
+                    }
+                }
+
+                .splide__arrows{
+                    display: none;
+                }
+
+                .splide__pagination{
+                    bottom: -2rem;
+
+                    .splide__pagination__page {
+                        background: transparent;
+                        border: 1px solid $accent-color;
+                        width: 12px;
+                        height: 12px;
+                        margin: 0px 5px;
+                        margin-bottom: 15px;
+                        opacity: 1;
+        
+                        &.is-active{
+                            transform: scale(1);
+                            border: 1px solid $primary-color;
+                            background-color: $primary-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // Home - Subscibe //
+
+    .subscibe-section{
+        padding: 2rem 0;
+        background-color: #2B2B2B;
+
+        .subscibe-block{
+            display: flex;
+            justify-content: center;
+
+            .title-subscibe{
+                margin-right: 1rem;
+                font-family: 'Agency FB';
+                font-weight: bold;
+                font-size: 18px;
+                color: $accent-color;
+                display: flex;
+                align-items: center;
+            }
+
+            .sub-form{
+                width: 40%;
+                display: flex;
+
+                .inp-sub{
+                    width: 65%;
+                    height: 30px;
+                    padding: 5px 15px;
+                    border: 0;
+                    border-radius: 0;
+                }
+
+                .btn-submit{
+                    background-color: #191919;
+                    font-size: 18px;
+                    font-family: 'Agency FB';
+                    font-weight: bold;
+                    color: $accent-color;
+                    border:0;
+                    border-radius: 0;
+                    padding: 7px 25px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+/* ====================== Main Footer ====================== */
+
+footer.main-footer {
+    background-color: #030303;
+    padding: 4rem 0;
+    padding-bottom: 1rem;
+
+    .main-footer-block{
+        .grid-block {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            gap: 25px;
+    
+            .grid-item{
+                .m-list{
+                    li{
+                        display: grid;
+                        grid-template-columns: .2fr 1fr;
+                        gap: 15px;
+                        justify-items: center;
+    
+                        .content-r{
+                            a{
+                                font-size: 18px;
+                                font-weight: bold;
+                                text-decoration: underline;
+                                font-family: 'Agency FB';
+                            }
+    
+                            p{
+                                margin: 0;
+                                margin-top: 5px;
+                                color: $accent-color;
+                                font-family: 'Agency FB';
+                            }
+                        }
+                    }
+                }
+    
+                h5{
+                    margin: 0;
+                    margin-top: 30px;
+                    font-size: 16px;
+                    color: $primary-color;
+                }
+    
+                .menu-ft{
+                    li{
+                        margin: 7px 0;
+                    }
+                }
+    
+                ul.social-icon-block {
+                    columns: 4;
+    
+                    .social-icon{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+    
+                        a{
+                            width: 100%;
+                            
+                            img{
+                                width: 85%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .bottom-ft{
+        padding: 1rem 20px;
+
+        p{
+            margin: 0;
+            text-align: center;
+            color: $accent-color;
+            font-family: 'Agency FB';
+        }
+    }
+}

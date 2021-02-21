@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="54.089" height="46.087" viewBox="0 0 54.089 46.087">
+  <defs>
+    <filter id="Path_69" x="0" y="0" width="54.089" height="46.087" filterUnits="userSpaceOnUse">
+      <feOffset dx="1" dy="2" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1" result="blur"/>
+      <feFlood flood-opacity="0.169"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Path_70" x="20.067" y="11.007" width="19.371" height="24.244" filterUnits="userSpaceOnUse">
+      <feOffset dx="1" dy="2" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1" result="blur-2"/>
+      <feFlood flood-opacity="0.169"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Component_220_1" data-name="Component 220 – 1" transform="translate(2 1)">
+    <g id="Group_2905" data-name="Group 2905">
+      <g transform="matrix(1, 0, 0, 1, -2, -1)" filter="url(#Path_69)">
+        <g id="Path_69-2" data-name="Path 69" transform="translate(-226.7 -350.47)" fill="none">
+          <path d="M260.476,351.466l16.312,10.305-7.423,21.066-26.023,8.715L228.7,378.282l9.475-19Z" stroke="none"/>
+          <path d="M 260.350341796875 352.56982421875 L 238.8872375488281 360.0879821777344 L 229.931640625 378.0502014160156 L 243.5792541503906 390.4188842773438 L 268.5838012695313 382.044921875 L 275.57958984375 362.191162109375 L 260.350341796875 352.56982421875 M 260.4758911132813 351.4662780761719 L 276.7876892089844 361.7715759277344 L 269.3645935058594 382.8380126953125 L 243.3415832519531 391.5530700683594 L 228.6985473632813 378.2822570800781 L 238.1734619140625 359.2784423828125 L 260.4758911132813 351.4662780761719 Z" stroke="none" fill="#fff"/>
+        </g>
+      </g>
+      <g transform="matrix(1, 0, 0, 1, -2, -1)" filter="url(#Path_70)">
+        <path id="Path_70-2" data-name="Path 70" d="M1301.679,374.1l12.175,8.426-12.175,8.426" transform="translate(-1278.92 -361.4)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+    </g>
+  </g>
+</svg>
