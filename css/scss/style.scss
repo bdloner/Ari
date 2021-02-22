@@ -67,6 +67,10 @@ body, html{
     height: 150vh;
 }
 
+input:focus {
+    outline: 0;
+}
+
 ul{
     padding: 0;
     list-style: none;
@@ -100,6 +104,15 @@ a{
     }
 }
 
+.btn-global{
+    background-color: $primary-color;
+    border-radius: 5px;
+    text-align: center;
+    padding: 7px;
+    color: #000;
+    font-size: 14px;
+}
+
 // Dropdown
 
 .d-btn {
@@ -128,6 +141,299 @@ a{
         padding: 12px 16px;
         text-decoration: none;
         display: block;
+    }
+}
+
+// Mega Menu
+
+#dd-boots, #dd-keepers,
+#dd-jerseys, #dd-equipments,
+#dd-apperels, #dd-arigear, #dd-sales{
+    &:hover {
+        > .dropdown-content {
+            display: block;
+        }
+    }
+}
+
+
+.dropdown-content {
+    display: none;
+    transition: display 0s, opacity 0.3s linear;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 100%;
+    left: 0;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 99;
+    margin-top: 20px;
+
+    .grid-block{
+        display: grid;
+        grid-template-columns: .4fr 1fr .6fr;
+
+        .grid-item{
+            &.-mega-main-menu{
+                background-color: #333333;
+                border-right: 1px solid #4B4B4B;
+                padding: 20px 0;
+                padding-left: 5rem;
+
+                ul{
+                    li{
+                        padding: 0 !important;
+                        text-align: left !important;
+                        cursor: pointer;
+
+                        &.active{
+                            > a{
+                                color: $primary-color;
+                            }
+
+                            &::after{
+                                content: '>';
+                                color: $primary-color;
+                                position: absolute;
+                                left: 18%;
+                            }
+
+                            &:hover{
+                                > a{
+                                    color: $primary-color;
+    
+                                    &::after{
+                                        content: '>';
+                                        position: absolute;
+                                        left: 18%;
+                                    }
+                                }
+                            }
+                        }
+
+                        .mega-menu-content {
+                            visibility: hidden;
+                            opacity: 0;
+                            transition: visibility 0s, opacity 0.3s linear;
+                            position: absolute;
+                            left: 20%;
+                            top: 15px;
+                            width: 45%;
+                            padding: 0 30px;
+
+                            &.active{
+                                visibility: visible;
+                                opacity: 1;
+                            }
+
+                            .sub-grid-block{
+                                display: grid;
+                                grid-template-columns: 1fr 1fr 1fr 1fr;
+                                gap: 25px;
+
+                                .sub-grid-item{
+                                    h5{
+                                        margin: 5px 0;
+                                        font-size: 18px;
+                                        color: $accent-color;
+                                        font-weight: normal;
+                                        border-bottom: 1px solid #707070;
+                                    }
+
+                                    .sub-football{
+                                        a{
+                                            font-weight: 300;
+
+                                            &:hover{
+                                                color: $primary-color;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            &.-mega-sub-menu{
+                background-color: #333333;
+            }
+
+            &.-mega-bg-01{
+                background: url(../images/mega-bg-01.png) center center;
+                background-size: cover;
+                min-height: 450px;
+            }
+
+            &.-mega-bg-02{
+                background: url(../images/mega-bg-02.png) center center;
+                background-size: cover;
+                min-height: 450px;
+            }
+
+            &.-mega-bg-03{
+                background: url(../images/mega-bg-03.png) center center;
+                background-size: cover;
+                min-height: 450px;
+            }
+
+            &.-mega-bg-04{
+                background: url(../images/mega-bg-04.png) center center;
+                background-size: cover;
+                min-height: 450px;
+            }
+
+            &.-mega-bg-05{
+                background: url(../images/mega-bg-05.png) center center;
+                background-size: cover;
+                min-height: 450px;
+            }
+
+            &.-mega-bg-06{
+                background: url(../images/mega-bg-06.png) center center;
+                background-size: cover;
+                min-height: 450px;
+            }
+
+            &.-mega-bg-07{
+                background: url(../images/mega-bg-07.png) center center;
+                background-size: cover;
+                min-height: 450px;
+            }
+        }
+    }
+}
+
+//Search Box
+
+#search-popup{
+    display:  none;
+
+    .search-block{
+        .search-box{
+            background-color: #262626;
+            border:0;
+            border-radius: 5px;
+            width: 100%;
+            height: 40px;
+            color: $accent-color;
+    
+            &::placeholder{
+                color: #C6C6C6;
+            }
+        }
+    }
+}
+
+.close-icon {
+    border:1px solid transparent;
+    background-color: transparent;
+    display: inline-block;
+    vertical-align: middle;
+    outline: 0;
+    cursor: pointer;
+}
+
+.close-icon:after {
+	content: "\d7";
+    display: block;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    z-index: 1;
+    right: 30px;
+    top: 16px;
+    bottom: 0;
+    padding: 2px;
+    text-align: center;
+    color: $accent-color;
+    font-weight: normal;
+    font-size: 30px;
+}
+
+.search-box:not(:valid) ~ .close-icon {
+	display: none;
+}
+
+// Popup Search
+
+.featherlight {
+    .featherlight-close-icon{
+        display: none;
+    }
+
+    .featherlight-content {
+        max-width: 850px;
+        width: 100%;
+        padding: 0 !important;
+        background-color: transparent !important;
+
+        #search-popup{
+            display: block;
+
+            .search-block{
+                .search-box{
+                    background-color: #262626;
+                    border: 0;
+                    border-radius: 5px;
+                    width: 100%;
+                    height: 70px;
+                    color: #fff;
+                    padding: 0 20px;
+                    font-size: 18px;
+            
+                    &::placeholder{
+                        color: #C6C6C6;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Login Register Dropdown
+
+.-acc {
+    &:hover{
+        #dd-unlogin{
+            display: block;
+        }
+    }
+}
+
+#dd-unlogin {
+    display: none;
+    position: absolute;
+    z-index: 99999;
+    background-color: #262626;
+    padding: 15px 20px;
+    margin-left: -8rem;
+
+    .lr-block {
+        display: flex;
+        flex-direction: column;
+
+        .desc-lr{
+            text-align: center;
+            color: #fff;
+            font-size: 14px;
+        }
+
+        .btn-reg{
+            color: $primary-color;
+            font-size: 14px;
+            font-family: 'Prachason';
+            border-radius: 5px;
+            border: 1px solid $primary-color;
+            text-align: center;
+            padding: 7px;
+            transition: .3s;
+
+            &:hover{
+                background-color: $primary-color;
+                color: $accent-color;
+            }
+        }
     }
 }
 
@@ -199,15 +505,6 @@ a{
       }
   }
 
-  
-  /* Show the checkmark when checked */
-  .container input
-  
-  /* Style the checkmark/indicator */
-  .container .checkmark:after {
-    
-  }
-
 /* ====================== Nav Global Site ====================== */
 
 .site-header{
@@ -272,19 +569,20 @@ a{
                         display: flex;
                         margin: 0;
 
-                        li{
+                        > li{
                             flex: 1 1 auto;
                             text-align: center;
                             padding: 20px 0;
 
-                            a {
+                            > a {
                                 position: relative;
                                 transition: .3s;
+                                padding: 20px 0;
 
                                 &::after{
                                     content: '';
                                     position: absolute;
-                                    bottom: -20.5px;
+                                    bottom: 0;
                                     left: 0;
                                     height: 4px;
                                     width: 100%;
@@ -345,12 +643,12 @@ a{
                     width: 100%;
                     margin: 0;
 
-                    li{
+                    > li{
                         flex: 1 1 auto;
                         text-align: center;
                         padding: 30px 0;
 
-                        a {
+                        > a {
                             position: relative;
                             transition: .3s;
 
@@ -594,7 +892,7 @@ a{
     // Home - Sub Hero //
 
     .sub-hero-section{
-        background: url(/images/sub-hero.png) center bottom;
+        background: url(../images/sub-hero.png) center bottom;
         background-size: cover;
         padding: 1rem 0;
         background-color: $secondary-color;
@@ -711,7 +1009,7 @@ a{
 
                 #card-hot-slider{
                     .post-items.-card{
-                        background:url(/images/bg-loop.png) center center;
+                        background:url(../images/bg-loop.png) center center;
                         background-size: cover;
                         padding: 15px;
                     }
@@ -1018,7 +1316,7 @@ a{
 
     .partner-section{
         padding: 4rem 0;
-        background: url(/images/bg-partner.png) center center;
+        background: url(../images/bg-partner.png) center center;
         background-size: cover;
 
         .partner-block{

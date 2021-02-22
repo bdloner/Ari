@@ -70,4 +70,22 @@ jQuery(document).ready(function($) {
     }
   });
 
+  $( ".top-menu" ).hover(
+    function() {
+      $( '.active' ).removeClass('active');
+      $( this ).addClass('active');
+      $( this ).find('.mega-menu-content').addClass('active');
+    }, function() {
+      $( this ).removeClass('active');
+      $( this ).find('.mega-menu-content').removeClass('active');
+      $( '.main' ).addClass('active');
+    }
+  );
+
+  $('.acc-btn').click(function () {
+    $('#dd-unlogin').fadeIn();
+  });
+
+  
+
 });

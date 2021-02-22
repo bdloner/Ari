@@ -8,6 +8,7 @@
 
     <link rel="stylesheet" href="../css/style.min.css" type="text/css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+    <link href="//cdn.jsdelivr.net/npm/featherlight@1.7.14/release/featherlight.min.css" type="text/css" rel="stylesheet" />
 
     <script src="../js/components/header.js" type="text/javascript" defer></script>
     <script src="../js/components/footer.js" type="text/javascript" defer></script>
@@ -69,7 +70,7 @@
                     <img src="../images/sep-icon.svg" alt="Seperate Icon" />
                     <div class="banner-kick-off">
                         <div class="left-block">
-                            <img src="/images/phantoms-logo.svg" alt="Phantoms Logo" />
+                            <img src="../images/phantoms-logo.svg" alt="Phantoms Logo" />
                             <a class="btn-border" href="#">Shop Now</a> 
                         </div>
                         <div class="right-block"></div>
@@ -407,13 +408,20 @@
                     </form>
                 </div>
             </section>
-
         </main>
+
+        <div id="search-popup">
+            <form action="#" class="search-block">
+                <input type="text" name="focus" required class="search-box" placeholder="Search for" />
+		        <button class="close-icon" type="reset"></button>
+            </form>
+        </div>
 
         <footer-component></footer-component>
     
-        <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js" defer></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" defer></script>
+        <script src="//cdn.jsdelivr.net/npm/featherlight@1.7.14/release/featherlight.min.js" type="text/javascript" charset="utf-8" defer></script>
         <script src="../js/main.js" type="text/javascript" defer></script>
     </body>
 </html>
