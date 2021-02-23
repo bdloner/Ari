@@ -3,9 +3,9 @@ window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    document.getElementById("navbar").style.top = "0";
+    document.getElementById("navbar").classList.add("-show");
   } else {
-    document.getElementById("navbar").style.top = "-150px";
+    document.getElementById("navbar").classList.remove("-show");
   }
 }
 
@@ -28,7 +28,8 @@ document.addEventListener( 'DOMContentLoaded', function () {
           perPage:  2,
         },
         500: {
-          perPage:  1,
+          fixedWidth: '16rem',
+          gap : 15,
         }
       }
     } ).mount();
@@ -43,7 +44,8 @@ document.addEventListener( 'DOMContentLoaded', function () {
           perPage:  2,
         },
         500: {
-          perPage:  1,
+          fixedWidth: '17rem',
+          gap : 15,
         }
       }
     } ).mount();
@@ -70,6 +72,8 @@ jQuery(document).ready(function($) {
     }
   });
 
+  // Hover Megamenu
+
   $( ".top-menu" ).hover(
     function() {
       $( '.active' ).removeClass('active');
@@ -82,10 +86,45 @@ jQuery(document).ready(function($) {
     }
   );
 
-  $('.acc-btn').click(function () {
-    $('#dd-unlogin').fadeIn();
+  // Mini Cart Sidebar
+
+  let menu = $("#mini-cart-sidebar");
+
+  $(".-minic").click(function() {
+      $(menu).show().animate({right: 0}, 500); 
   });
 
+  $(".close-btn").click(function() {
+    if ($(menu).is(":visible")) {
+        $(menu).animate({right: -450}, 500, function() {$(menu).hide();});
+    } 
+  });
+
+  // burger menu
+
+  let menu_burger_sidebar = $(".menu-burger-sidebar");
+
+  $(".menu-burger").click(function() {
+      $(this).toggleClass('active');
+      $(menu_burger_sidebar).toggleClass('active');
+  });
+
+  // Input Counter
+
+  $('.minus').click(function () {
+    var $input = $(this).parent().find('input');
+    var count = parseInt($input.val()) - 1;
+    count = count < 1 ? 1 : count;
+    $input.val(count);
+    $input.change();
+    return false;
+  });
   
+  $('.plus').click(function () {
+    var $input = $(this).parent().find('input');
+    $input.val(parseInt($input.val()) + 1);
+    $input.change();
+    return false;
+  });
 
 });
