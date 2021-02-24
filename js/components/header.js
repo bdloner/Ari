@@ -444,36 +444,91 @@ class Header extends HTMLElement {
                 </div>
 
                 <div class="action-right">
-                    <div class="menu-burger"><b></b></div>
+                    <a href="#menu-mb"><div class="menu-burger"><b></b></div></a>
                 </div>
 
-                <div class="menu-burger-sidebar">
+                <div id="menu-mb" class="menu-burger-sidebar mm-main">
+                    <div class="close-btn"><img src="/images/x-icon.svg" alt="" /></div>
+                    <div class="title-nav"></div>
                     <div class="menu-burger-sidebar-block">
                         <ul class="main-menu-mb">
                             <li>
-                                <a href="#">รองเท้าฟุตบอล <img class="chev-right" src="/images/dd-icon.svg" alt="Chevright Icon"></a>
+                                <span>รองเท้าฟุตบอล</span>
+                                <ul>
+                                    <li><a href="#about/team/management">Management</a></li>
+                                    <li><a href="#about/team/sales">Sales</a></li>
+                                    <li><a href="#about/team/development">Development</a></li>
+                                </ul>
                             </li>
                             <li>
-                                <a href="#">อุปกรณ์ผู้รักษาประตู <img class="chev-right" src="/images/dd-icon.svg" alt="Chevright Icon"></a>
+                                <span>อุปกรณ์ผู้รักษาประตู</span>
+                                <ul>
+                                    <li><a href="#about/team/management">Management</a></li>
+                                    <li><a href="#about/team/sales">Sales</a></li>
+                                    <li><a href="#about/team/development">Development</a></li>
+                                </ul>
                             </li>
                             <li>
-                                <a href="#">ชุดแข่ง <img class="chev-right" src="/images/dd-icon.svg" alt="Chevright Icon"></a>
+                                <span>ชุดแข่ง</span>
+                                <ul>
+                                    <li><a href="#about/team/management">Management</a></li>
+                                    <li><a href="#about/team/sales">Sales</a></li>
+                                    <li><a href="#about/team/development">Development</a></li>
+                                </ul>
                             </li>
                             <li>
-                                <a href="#">อุปกรณ์ฟุตบอล <img class="chev-right" src="/images/dd-icon.svg" alt="Chevright Icon"></a>
+                                <span>อุปกรณ์ฟุตบอล</span>
+                                <ul>
+                                    <li><a href="#about/team/management">Management</a></li>
+                                    <li><a href="#about/team/sales">Sales</a></li>
+                                    <li><a href="#about/team/development">Development</a></li>
+                                </ul>
                             </li>
                             <li>
-                                <a href="#">เสื้อผ้า <img class="chev-right" src="/images/dd-icon.svg" alt="Chevright Icon"></a>
+                                <span>เสื้อผ้า</span>
+                                <ul>
+                                    <li><a href="#about/team/management">Management</a></li>
+                                    <li><a href="#about/team/sales">Sales</a></li>
+                                    <li><a href="#about/team/development">Development</a></li>
+                                </ul>
                             </li>
                             <li>
-                                <a href="#">อาริเกียร์ <img class="chev-right" src="/images/dd-icon.svg" alt="Chevright Icon"></a>
+                                <span>อาริเกียร์</span>
+                                <ul>
+                                    <li><a href="#about/team/management">Management</a></li>
+                                    <li><a href="#about/team/sales">Sales</a></li>
+                                    <li><a href="#about/team/development">Development</a></li>
+                                </ul>
                             </li>
                             <li>
-                                <a href="#">ลดราคา <img class="chev-right" src="/images/dd-icon.svg" alt="Chevright Icon"></a>
+                                <span>ลดราคา</span>
+                                <ul>
+                                    <li><a href="#about/team/management">Management</a></li>
+                                    <li><a href="#about/team/sales">Sales</a></li>
+                                    <li><a href="#about/team/development">Development</a></li>
+                                </ul>
                             </li>
-                            <li>
-                                <a href="#">รองเท้าฟุตบอล <img class="chev-right" src="/images/dd-icon.svg" alt="Chevright Icon"></a>
-                            </li>
+
+                            <div class="sale-block">
+                            <a href="#">
+                                <img src="../images/sale-icon.svg" alt="" /> <span>โปรโมชั่น End of year sale</span>
+                            </a>
+                        </div>
+
+                        <div class="dd-lang-block">
+                            <a href="#" class="d-btn"><img class="img-flag" src="/images/thai-flag.svg" alt="th" /> ไทย <img class="dd-icon"src="/images/dd-icon.svg" alt="Dropdown Icon"></a>
+                            <div class="dd-content-block">
+                                <a href="#"><img class="img-flag" src="/images/us-flag.svg" alt="en" /> EN</a>
+                            </div>
+                        </div>
+
+                        <div id="dd-unlogin">
+                            <div class="lr-block">
+                                <a href="#" class="btn-global">เข้าสู่ระบบ</a>
+                                <p class="desc-lr">หรือสมัครสมาชิกเพื่อรับ<br/>ส่วนลดและสิทธิพิเศษจากเรา</p>
+                                <a href="#" class="btn-reg">สมัครสมาชิก</a>
+                            </div>
+                        </div>
                         </ul>
                     </div>
                 </div>
