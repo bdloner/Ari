@@ -60,6 +60,34 @@ class Footer extends HTMLElement {
                     </ul>
                 </div>
 
+                <div class="acc -mb">
+                    <div class="acc__card">
+                        <div class="acc__title">เกี่ยวกับเรา</div>
+                            <div class="acc__panel">
+                                <ul>
+                                    <li><a href="#">เกี่ยวกับอาริ</a></li>
+                                    <li><a href="#">ที่ต้ังสาขา</a></li>
+                                    <li><a href="#">ติดต่อเรา</a></li>
+                                    <li><a href="#">ร่วมงานกับเรา</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    <div class="acc__card">
+                        <div class="acc__title">ช่วยเหลือและข้อมูล</div>
+                            <div class="acc__panel">
+                                <ul>
+                                    <li><a href="#">นโยบายความเป็นส่วนตัว</a></li>
+                                    <li><a href="#">ข้อตกลงและเงื่อนไข</a></li>
+                                    <li><a href="#">คําถามที่พบบ่อย</a></li>
+                                    <li><a href="#">วิธีการสั่งซื้อสินค้า</a></li>
+                                    <li><a href="#">คำแนะนำการเลือกซื้อสินค้า</a></li>
+                                    <li><a href="#">การจัดส่งสินค้าและการคืนสินค้า</a></li>
+                                    <li><a href="#">ตรวจสอบสถานะสินค้า</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
                 <div class="grid-item">
                     <h5 style="margin-bottom: 15px;">ชำระบัตรเครดิต / ผ่อนชำระ</h5>
                     <img width="75%" src="../images/credit-icon.svg" alt="Credit Icon">
@@ -73,7 +101,6 @@ class Footer extends HTMLElement {
                     </ul>
                 </div>
             </div>
-        </div>
         <div class="bottom-ft g-container">
             <p>© 2021 ARI FOOTBALL CONCEPT STORE. All Rights Reserved.</p>
         </div>

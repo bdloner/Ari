@@ -96,6 +96,7 @@ jQuery(document).ready(function($) {
 
   $(".close-btn").click(function() {
     $(menu).removeClass('active');
+    $('.home').removeClass('mm-ocd-opened');
   });
 
   // burger menu
@@ -109,13 +110,6 @@ jQuery(document).ready(function($) {
   $(".close-btn").click(function() {
     $(menu_burger_sidebar).removeClass('active');
     $('.mm-ocd').removeClass('mm-ocd--open');
-  });
-
-  $(".title-nav").click(function() {
-    $('.mm-spn.mm-spn--navbar').addClass('mm-main');
-    $('.mm-spn--open').removeClass('mm-spn--parent');
-    $('.main-menu-mb ul').removeClass('mm-spn--open');
-    
   });
 
   $(".mm-spn span").click(function() {
@@ -140,25 +134,44 @@ jQuery(document).ready(function($) {
     return false;
   });
 
+  // Acccordion
+
+  $('.acc__title').click(function(j) {
+    var dropDown = $(this).closest('.acc__card').find('.acc__panel');
+    $(this).closest('.acc').find('.acc__panel').not(dropDown).slideUp();
+  
+    if ($(this).hasClass('active')) {
+      $(this).removeClass('active');
+    } else {
+      $(this).closest('.acc').find('.acc__title.active').removeClass('active');
+      $(this).addClass('active');
+    }
+  
+    dropDown.stop(false, true).slideToggle();
+    j.preventDefault();
+  });
+
 });
 
-var menu = new MmenuLight(
+// Mmenu Library
+
+let menu = new MmenuLight(
   document.querySelector( '#menu-mb' ),
   'all'
 );
 
-var navigator = menu.navigation({
+let navigator = menu.navigation({
   selectedClass: 'Selected',
-  slidingSubmenus: true,
   theme: 'dark',
   title: ''
 });
 
-var drawer = menu.offcanvas({
+let drawer = menu.offcanvas({
   position: 'right'
 });
 
 //	Open the menu.
+
 let el = document.querySelector( 'a[href="#menu-mb"]' );
 
 if(el){
@@ -167,3 +180,20 @@ if(el){
     drawer.open();
   });
 }
+
+$('.mm-spn--open span').click(function () {
+  $('#menu-mb').removeClass('mm--main');
+});
+
+let menu_mb = document.getElementById('menu-mb');
+
+let observer = new MutationObserver(function(mutations) {
+  if($(menu_mb).attr('data-mm-spn-title') == ""){
+    $('#menu-mb').addClass('mm--main');
+  }
+});
+
+observer.observe(menu_mb, { 
+  attributes: true, 
+  attributeFilter: ['data-mm-spn-title'] });
+

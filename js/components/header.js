@@ -447,71 +447,190 @@ class Header extends HTMLElement {
                     <a href="#menu-mb"><div class="menu-burger"><b></b></div></a>
                 </div>
 
-                <div id="menu-mb" class="menu-burger-sidebar mm-main">
+                <div id="menu-mb" class="menu-burger-sidebar mm--main">
                     <div class="close-btn"><img src="/images/x-icon.svg" alt="" /></div>
-                    <div class="title-nav"></div>
                     <div class="menu-burger-sidebar-block">
                         <ul class="main-menu-mb">
                             <li>
                                 <span>รองเท้าฟุตบอล</span>
                                 <ul>
-                                    <li><a href="#about/team/management">Management</a></li>
-                                    <li><a href="#about/team/sales">Sales</a></li>
-                                    <li><a href="#about/team/development">Development</a></li>
+                                    <div class="hl-link"><a href="#">ดูไฮไลท์ในหมวดนี้</a></div>
+                                    <li><a href="/#">สินค้ามาใหม่</a></li>
+                                    <li><span>ฟุตบอล</span>
+                                        <ul>
+                                            <li class="last"><span>NIKE</span>
+                                                <ul>
+                                                    <li><a href="/#">Mercurial</a></li>
+                                                    <li><a href="/#">Phantom GT</a></li>
+                                                    <li><a href="/#">Phantom Vision</a></li>
+                                                    <li><a href="/#">Phantom Venom</a></li>
+                                                    <li><a href="/#">Tiempo</a></li>
+
+                                                    <a class="total-product" href="/#">ดูสินค้าทั้งหมด</a>
+                                                </ul>
+                                            </li>
+                                        </li>
+
+                                        <li><a href="/#">ADIDAS</a></li>
+                                        <li><a href="/#">PUMA</a></li>
+                                        <li><a href="/#">MIZUNO</a></li>
+
+                                        <a class="total-product" href="/#">ดูสินค้าทั้งหมด</a>
+                                    </ul>
+                                    <li><a href="/#">ฟุตซอล</a></li>
+                                    <li><a href="/#">เด็ก</a></li>
+
+                                    <a class="total-product" href="/#">ดูสินค้าทั้งหมด</a>
                                 </ul>
                             </li>
                             <li>
                                 <span>อุปกรณ์ผู้รักษาประตู</span>
                                 <ul>
-                                    <li><a href="#about/team/management">Management</a></li>
-                                    <li><a href="#about/team/sales">Sales</a></li>
-                                    <li><a href="#about/team/development">Development</a></li>
+                                    <div class="hl-link"><a href="#">ดูไฮไลท์ในหมวดนี้</a></div>
+                                    <li><a href="/#">สินค้ามาใหม่</a></li>
+                                    <li><span>ถุงมือผู้รักษาประตู</span>
+                                        <ul>
+                                            <li class="last"><span>NIKE</span>
+                                                <ul>
+                                                    <li><a href="/#">Day break</a></li>
+                                                    <li><a href="/#">GRIP3</a></li>
+
+                                                    <a class="total-product" href="/#">ดูสินค้าทั้งหมด</a>
+                                                </ul>
+                                            </li>
+                                        </li>
+
+                                        <li><a href="/#">ADIDAS</a></li>
+                                        <li><a href="/#">ADV</a></li>
+
+                                        <a class="total-product" href="/#">ดูสินค้าทั้งหมด</a>
+                                    </ul>
+                                    <li><a href="/#">อื่นๆ</a></li>
+
+                                    <a class="total-product" href="/#">ดูสินค้าทั้งหมด</a>
                                 </ul>
                             </li>
                             <li>
                                 <span>ชุดแข่ง</span>
                                 <ul>
-                                    <li><a href="#about/team/management">Management</a></li>
-                                    <li><a href="#about/team/sales">Sales</a></li>
-                                    <li><a href="#about/team/development">Development</a></li>
+                                    <div class="hl-link"><a href="#">ดูไฮไลท์ในหมวดนี้</a></div>
+                                    <li><a href="/#">สินค้ามาใหม่</a></li>
+                                    <li><a href="/#">ไทยลีก</a></li>
+                                    <li class="last"><span>พรีเมียร์ลีก</span>
+                                        <ul>
+                                            <li><a href="/#">Liverpool</a></li>
+                                            <li><a href="/#">Manchester City</a></li>
+                                            <li><a href="/#">Manchester United</a></li>
+                                            <li><a href="/#">Tottenham hotspur</a></li>
+                                            <li><a href="/#">Chelsea</a></li>
+                                            <li><a href="/#">Arsenal</a></li>
+                                            <li><a href="/#">Everton</a></li>
+                                            <li><a href="/#">Leicester City</a></li>
+
+                                            <a class="total-product" href="/#">ดูสินค้าทั้งหมด</a>
+                                        </li>
+
+                                        <li><a href="/#">ADIDAS</a></li>
+                                        <li><a href="/#">ADV</a></li>
+
+                                        <a class="total-product" href="/#">ดูสินค้าทั้งหมด</a>
+                                    </ul>
+                                    <li><a href="/#">ลีกยุโรป</a></li>
+                                    <li><a href="/#">ทีมชาติไทย</a></li>
+                                    <li><a href="/#">ทีมชาติ</a></li>
+                                    <li><a href="/#">ทีมอื่นๆ</a></li>
+                                    <li><a href="/#">เด็ก</a></li>
+
+                                    <a class="total-product" href="/#">ดูสินค้าทั้งหมด</a>
                                 </ul>
                             </li>
                             <li>
                                 <span>อุปกรณ์ฟุตบอล</span>
                                 <ul>
-                                    <li><a href="#about/team/management">Management</a></li>
-                                    <li><a href="#about/team/sales">Sales</a></li>
-                                    <li><a href="#about/team/development">Development</a></li>
+                                    <div class="hl-link"><a href="#">ดูไฮไลท์ในหมวดนี้</a></div>
+                                    <li><a href="/#">สินค้ามาใหม่</a></li>
+                                    <li><a href="/#">อุปกรณ์ฟุตบอล</a></li>
+                                    <li class="last"><span>อุปกรณ์ซัพพอร์ต</span>
+                                        <ul>
+                                            <li><a href="/#">สนับแข้ง</a></li>
+                                            <li><a href="/#">ลูกฟุตบอล</a></li>
+                                        </li>
+
+                                        <li><a href="/#">ADIDAS</a></li>
+                                        <li><a href="/#">ADV</a></li>
+
+                                        <a class="total-product" href="/#">ดูสินค้าทั้งหมด</a>
+                                    </ul>
+                                    <li><a href="/#">อุปกรณ์อื่นๆ</a></li>
+                                    <li><a href="/#">กระเป๋า</a></li>
+                                    <li><a href="/#">เด็ก</a></li>
+
+                                    <a class="total-product" href="/#">ดูสินค้าทั้งหมด</a>
                                 </ul>
                             </li>
                             <li>
                                 <span>เสื้อผ้า</span>
                                 <ul>
-                                    <li><a href="#about/team/management">Management</a></li>
-                                    <li><a href="#about/team/sales">Sales</a></li>
-                                    <li><a href="#about/team/development">Development</a></li>
+                                    <div class="hl-link"><a href="#">ดูไฮไลท์ในหมวดนี้</a></div>
+                                    <li><a href="/#">สินค้ามาใหม่</a></li>
+                                    <li class="last"><span>เสื้อ</span>
+                                        <ul>
+                                            <li><a href="/#">เสื้อยืด</a></li>
+                                            <li><a href="/#">เสื้อโปโล</a></li>
+                                            <li><a href="/#">เสื้อฝึกซ้อม</a></li>
+                                            <li><a href="/#">เสื้อฮู้ด</a></li>
+                                            <li><a href="/#">แจ็คเก็ต</a></li>
+
+                                            <a class="total-product" href="/#">ดูสินค้าทั้งหมด</a>
+
+                                        </li>
+                                    </ul>
+                                    <li><a href="/#">กางเกง</a></li>
+                                    <li><a href="/#">ถุงเท้า</a></li>
+                                    <li><a href="/#">กระเป๋า</a></li>
+                                    <li><a href="/#">อื่นๆ</a></li>
+
+                                    <a class="total-product" href="/#">ดูสินค้าทั้งหมด</a>
                                 </ul>
                             </li>
                             <li>
                                 <span>อาริเกียร์</span>
                                 <ul>
-                                    <li><a href="#about/team/management">Management</a></li>
-                                    <li><a href="#about/team/sales">Sales</a></li>
-                                    <li><a href="#about/team/development">Development</a></li>
+                                    <div class="hl-link"><a href="#">ดูไฮไลท์ในหมวดนี้</a></div>
+                                    <li><a href="/#">สินค้ามาใหม่</a></li>
+                                    <li class="last"><span>เสื้อ</span>
+                                        <ul>
+                                            <li><a href="/#">เสื้อยืด</a></li>
+                                            <li><a href="/#">เสื้อโปโล</a></li>
+                                            <li><a href="/#">เสื้อฝึกซ้อม</a></li>
+                                            <li><a href="/#">เสื้อฮู้ด</a></li>
+                                            <li><a href="/#">แจ็คเก็ต</a></li>
+
+                                            <a class="total-product" href="/#">ดูสินค้าทั้งหมด</a>
+
+                                        </li>
+                                    </ul>
+                                    <li><a href="/#">กางเกง</a></li>
+                                    <li><a href="/#">ถุงเท้า</a></li>
+                                    <li><a href="/#">กระเป๋า</a></li>
+                                    <li><a href="/#">อื่นๆ</a></li>
+
+                                    <a class="total-product" href="/#">ดูสินค้าทั้งหมด</a>
                                 </ul>
                             </li>
-                            <li>
+                            <li class="last">
                                 <span>ลดราคา</span>
                                 <ul>
-                                    <li><a href="#about/team/management">Management</a></li>
-                                    <li><a href="#about/team/sales">Sales</a></li>
-                                    <li><a href="#about/team/development">Development</a></li>
+                                    <div class="hl-link"><a href="#">ดูไฮไลท์ในหมวดนี้</a></div>
+                                    <li><a href="/#">NOVEMBER SALE 30%</a></li>
+                                    <li><a href="/#">12.12 Sale</a></li>
+                                    <li><a href="/#">BLack Friday</a></li>
                                 </ul>
                             </li>
 
                             <div class="sale-block">
                             <a href="#">
-                                <img src="../images/sale-icon.svg" alt="" /> <span>โปรโมชั่น End of year sale</span>
+                                <img src="../images/sale-icon.svg" alt="" /> โปรโมชั่น End of year sale
                             </a>
                         </div>
 

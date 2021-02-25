@@ -184,8 +184,8 @@ body.mm-ocd-opened {
 }
 
 .mm-spn ul.mm-spn--parent {
-    left: -110%;
-    overflow-y: hidden
+    left: -130%;
+    overflow-y: hidden;
 }
 
 .mm-spn li {
@@ -262,7 +262,7 @@ body.mm-ocd-opened {
     cursor: pointer
 }
 
-.mm-spn.mm-spn--navbar:before {
+/* .mm-spn.mm-spn--navbar:before {
     content: '';
     display: block;
     position: absolute;
@@ -279,7 +279,7 @@ body.mm-ocd-opened {
     -ms-transform: rotate(-45deg) translate(50%, -50%);
     transform: rotate(-45deg) translate(50%, -50%);
     opacity: .4
-}
+} */
 
 .mm-spn.mm-spn--navbar.mm-spn--main {
     cursor: default
@@ -290,6 +290,25 @@ body.mm-ocd-opened {
     display: none
 }
 
+/* .mm-spn.mm-spn--navbar:after {
+    content: attr(data-mm-spn-title);
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 15px;
+    right: 0;
+    height: var(--mm-spn-item-height);
+    padding: 0;
+    line-height: 50px;
+    line-height: var(--mm-spn-item-height);
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 25%;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis
+} */
+
 .mm-spn.mm-spn--navbar:after {
     content: attr(data-mm-spn-title);
     display: block;
@@ -297,19 +316,14 @@ body.mm-ocd-opened {
     top: 0;
     left: 0;
     right: 0;
-    height: 50px;
-    height: var(--mm-spn-item-height);
+    height: 10px;
+    font-size: 20px;
     padding: 0;
-    line-height: 50px;
-    line-height: var(--mm-spn-item-height);
-    opacity: .4;
-    text-align: center;
-    overflow: hidden;
-    white-space: nowrap;
-    width: 25%;
-    margin: 0 auto;
-    /* -o-text-overflow: ellipsis;
-    text-overflow: ellipsis */
+    color: #FFBE00;
+    border-bottom: 1px solid rgba(255,255,255,.1);
+    padding-bottom: 35px;
+    padding-top: 60px;
+    margin: 0 20px;
 }
 
 .mm-spn.mm-spn--navbar.mm-spn--main:after {
@@ -328,9 +342,10 @@ body.mm-ocd-opened {
     position: fixed;
     top: inherit;
     z-index: 2;
-    width: 100%;
+    width: 90%;
     border-top: 1px solid currentColor;
-    opacity: .15
+    opacity: .15;
+    margin-left: 5%;
 }
 
 .mm-spn.mm-spn--light {
