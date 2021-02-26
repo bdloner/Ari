@@ -9,53 +9,6 @@ function scrollFunction() {
   }
 }
 
-document.addEventListener( 'DOMContentLoaded', function () {
-
-    // Splidejs - Hero Banner
-
-    new Splide( '.splide', {
-        type   : 'loop',
-        autoplay : 'true'
-    } ).mount();
-
-    // Splidejs - New Releases Product
-
-    new Splide( '#card-slider', {
-      perPage    : 4,
-      gap : 25,
-      breakpoints: {
-        1000: {
-          perPage:  2,
-        },
-        500: {
-          fixedWidth: '16rem',
-          gap : 15,
-        }
-      }
-    } ).mount();
-
-    // Splidejs - Hot Product
-
-    new Splide( '#card-hot-slider', {
-      perPage    : 3,
-      gap : 50,
-      breakpoints: {
-        1000: {
-          perPage:  2,
-        },
-        500: {
-          fixedWidth: '17rem',
-          gap : 15,
-        }
-      }
-    } ).mount();
-
-    new Splide( '#card-partner-slider', {
-      perPage    : 1,
-    } ).mount();
-
-});
-
 // JQuery
 
 jQuery(document).ready(function($) {
