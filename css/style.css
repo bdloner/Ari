@@ -2433,8 +2433,26 @@ footer.main-footer .bottom-ft p {
   background-size: cover;
 }
 
-.football-shoes-product .hero-slider-section .splide .splide__slide .overlay-mb {
-  display: none;
+.football-shoes-product .hero-slider-section .splide .splide__slide h2, .football-shoes-product .hero-slider-section .splide .splide__slide img {
+  position: relative;
+  z-index: 2;
+}
+
+.football-shoes-product .hero-slider-section .splide .splide__slide .overlay {
+  display: block !important;
+  max-width: 60%;
+  -webkit-transition: max-height 0.15s ease-out;
+  transition: max-height 0.15s ease-out;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: -webkit-gradient(linear, right top, left top, from(rgba(22, 22, 22, 0)), to(#161616));
+  background: linear-gradient(270deg, rgba(22, 22, 22, 0) 0%, #161616 100%);
+  -webkit-transition: all height .5s ease-in-out;
+  transition: all height .5s ease-in-out;
 }
 
 .football-shoes-product .hero-slider-section .splide .splide__arrows .splide__arrow {
@@ -2472,32 +2490,6 @@ footer.main-footer .bottom-ft p {
   .football-shoes-product .hero-slider-section .splide .splide__slide.--slide-03 {
     background: url(../images/hero-bg-slider-mb-01.png) center center;
     background-size: cover;
-  }
-  .football-shoes-product .hero-slider-section .splide .splide__slide h2, .football-shoes-product .hero-slider-section .splide .splide__slide img {
-    position: relative;
-    z-index: 2;
-  }
-  .football-shoes-product .hero-slider-section .splide .splide__slide h2 {
-    font-size: 22px !important;
-  }
-  .football-shoes-product .hero-slider-section .splide .splide__slide img {
-    width: 220px;
-  }
-  .football-shoes-product .hero-slider-section .splide .splide__slide .overlay-mb {
-    display: block !important;
-    max-width: 60%;
-    -webkit-transition: max-height 0.15s ease-out;
-    transition: max-height 0.15s ease-out;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    background: -webkit-gradient(linear, right top, left top, from(rgba(22, 22, 22, 0)), to(#161616));
-    background: linear-gradient(270deg, rgba(22, 22, 22, 0) 0%, #161616 100%);
-    -webkit-transition: all height .5s ease-in-out;
-    transition: all height .5s ease-in-out;
   }
   .football-shoes-product .hero-slider-section .splide .splide__arrows .splide__arrow {
     opacity: 1;
@@ -2929,6 +2921,544 @@ footer.main-footer .bottom-ft p {
   .football-shoes-product .brand-section {
     padding: 0;
     padding-bottom: 4rem;
+  }
+}
+
+/* ====================== Goalkeeper Device Page ====================== */
+.goalkeeper-device-page {
+  background-color: #161616;
+}
+
+.goalkeeper-device-page .hero-slider-section .splide .splide__slide {
+  min-height: 600px;
+}
+
+.goalkeeper-device-page .hero-slider-section .splide .splide__slide .g-container {
+  max-width: 60vw;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.goalkeeper-device-page .hero-slider-section .splide .splide__slide .g-container .grid-block .grid-item h2 {
+  margin: 0;
+  margin-top: 10px;
+  font-size: 26px;
+}
+
+.goalkeeper-device-page .hero-slider-section .splide .splide__slide.--slide-01 {
+  background: url(../images/goalkeeper-device-slider.png) center center;
+  background-size: cover;
+}
+
+.goalkeeper-device-page .hero-slider-section .splide .splide__slide.--slide-02 {
+  background: url(../images/goalkeeper-device-slider.png) center center;
+  background-size: cover;
+}
+
+.goalkeeper-device-page .hero-slider-section .splide .splide__slide.--slide-03 {
+  background: url(../images/goalkeeper-device-slider.png) center center;
+  background-size: cover;
+}
+
+.goalkeeper-device-page .hero-slider-section .splide .splide__slide h2, .goalkeeper-device-page .hero-slider-section .splide .splide__slide img {
+  position: relative;
+  z-index: 2;
+}
+
+.goalkeeper-device-page .hero-slider-section .splide .splide__slide .overlay {
+  max-width: 60%;
+  -webkit-transition: max-height 0.15s ease-out;
+  transition: max-height 0.15s ease-out;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: -webkit-gradient(linear, right top, left top, from(rgba(22, 22, 22, 0)), to(#161616));
+  background: linear-gradient(270deg, rgba(22, 22, 22, 0) 0%, #161616 100%);
+  -webkit-transition: all height .5s ease-in-out;
+  transition: all height .5s ease-in-out;
+}
+
+.goalkeeper-device-page .hero-slider-section .splide .splide__arrows .splide__arrow {
+  opacity: 1;
+  background: transparent;
+}
+
+.goalkeeper-device-page .hero-slider-section .splide .splide__arrows .splide__arrow .arrow-left {
+  width: 100px;
+}
+
+.goalkeeper-device-page .hero-slider-section .splide .splide__arrows .splide__arrow--prev {
+  left: 13%;
+}
+
+.goalkeeper-device-page .hero-slider-section .splide .splide__arrows .splide__arrow--next {
+  right: 13%;
+}
+
+@media (max-width: 991px) {
+  .goalkeeper-device-page .hero-slider-section .splide .splide__slide {
+    min-height: 320px;
+  }
+  .goalkeeper-device-page .hero-slider-section .splide .splide__slide .g-container {
+    max-width: 1160px;
+  }
+  .goalkeeper-device-page .hero-slider-section .splide .splide__slide.--slide-01 {
+    background: url(/images/goalkeeper-device-slider-mb-01.png) center center;
+    background-size: cover;
+  }
+  .goalkeeper-device-page .hero-slider-section .splide .splide__slide.--slide-02 {
+    background: url(/images/goalkeeper-device-slider-mb-01.png) center center;
+    background-size: cover;
+  }
+  .goalkeeper-device-page .hero-slider-section .splide .splide__slide.--slide-03 {
+    background: url(/images/goalkeeper-device-slider-mb-01.png) center center;
+    background-size: cover;
+  }
+  .goalkeeper-device-page .hero-slider-section .splide .splide__arrows .splide__arrow {
+    opacity: 1;
+    background: transparent;
+  }
+  .goalkeeper-device-page .hero-slider-section .splide .splide__arrows .splide__arrow .arrow-left {
+    width: 100px;
+  }
+  .goalkeeper-device-page .hero-slider-section .splide .splide__arrows .splide__arrow--prev {
+    left: 13%;
+  }
+  .goalkeeper-device-page .hero-slider-section .splide .splide__arrows .splide__arrow--next {
+    right: 13%;
+  }
+}
+
+.goalkeeper-device-page .collection-section {
+  padding: 4rem 0;
+}
+
+.goalkeeper-device-page .collection-section .collection-block .grid-block {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  gap: 25px;
+}
+
+.goalkeeper-device-page .collection-section .collection-block .grid-block .grid-item {
+  position: relative;
+}
+
+.goalkeeper-device-page .collection-section .collection-block .grid-block .grid-item a:hover .collection .overlay {
+  max-height: 100%;
+  -webkit-transition: max-height 0.25s ease-in;
+  transition: max-height 0.25s ease-in;
+}
+
+.goalkeeper-device-page .collection-section .collection-block .grid-block .grid-item a:hover .collection h4.head-collection {
+  margin-bottom: 10rem;
+  color: #FFBE00;
+}
+
+.goalkeeper-device-page .collection-section .collection-block .grid-block .grid-item .collection {
+  min-height: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.goalkeeper-device-page .collection-section .collection-block .grid-block .grid-item .collection.-phantom-gt {
+  background: url(../images/PHANTOM-GT-Collection.png) center center;
+  background-size: cover;
+}
+
+.goalkeeper-device-page .collection-section .collection-block .grid-block .grid-item .collection.-mercurial {
+  background: url(../images/mercurial-superfly-collection.png) center center;
+  background-size: cover;
+}
+
+.goalkeeper-device-page .collection-section .collection-block .grid-block .grid-item .collection.-nemeziz {
+  background: url(../images/NEMEZIZ-collection.png) center center;
+  background-size: cover;
+}
+
+.goalkeeper-device-page .collection-section .collection-block .grid-block .grid-item .collection h4.head-collection {
+  width: 100%;
+  text-align: center;
+  font-size: 26px;
+  font-family: 'Agency FB';
+  z-index: 1;
+  margin-bottom: 2rem;
+  -webkit-transition: .5s;
+  transition: .5s;
+  text-transform: uppercase;
+}
+
+.goalkeeper-device-page .collection-section .collection-block .grid-block .grid-item .collection .overlay {
+  max-height: 40%;
+  -webkit-transition: max-height 0.15s ease-out;
+  transition: max-height 0.15s ease-out;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(black));
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, black 100%);
+  -webkit-transition: all height .5s ease-in-out;
+  transition: all height .5s ease-in-out;
+}
+
+@media (max-width: 991px) {
+  .goalkeeper-device-page .collection-section {
+    padding: 2rem 0;
+  }
+  .goalkeeper-device-page .collection-section .collection-block .title-collection {
+    text-align: center;
+  }
+  .goalkeeper-device-page .collection-section .collection-block .grid-block {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+.goalkeeper-device-page .hot-product-section {
+  padding: 4rem 0;
+}
+
+.goalkeeper-device-page .hot-product-section .hot-product-block .title-hot-product {
+  font-size: 26px;
+  margin-bottom: 1rem;
+}
+
+.goalkeeper-device-page .hot-product-section .hot-product-block.g-container #shoes-hot-slider .splide__arrows .splide__arrow--prev {
+  left: -4rem;
+  background-color: transparent;
+}
+
+.goalkeeper-device-page .hot-product-section .hot-product-block.g-container #shoes-hot-slider .splide__arrows .splide__arrow--next {
+  right: -4rem;
+  background-color: transparent;
+}
+
+.goalkeeper-device-page .hot-product-section .hot-product-block.g-container #shoes-hot-slider .splide__pagination {
+  display: none;
+}
+
+.goalkeeper-device-page .hot-product-section .hot-product-block .read-more-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 1rem;
+}
+
+.goalkeeper-device-page .hot-product-section .hot-product-block .read-more-block .btn-border {
+  border: 1px solid #fff;
+  width: auto;
+  display: block;
+  padding: 10px 3rem;
+  border-radius: 5px;
+  font-family: 'Prachason';
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.goalkeeper-device-page .hot-product-section .hot-product-block .read-more-block .btn-border:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+@media (max-width: 991px) {
+  .goalkeeper-device-page .hot-product-section {
+    padding: 0;
+  }
+  .goalkeeper-device-page .hot-product-section .hot-product-block {
+    padding-right: 0;
+  }
+  .goalkeeper-device-page .hot-product-section .hot-product-block .title-hot-product {
+    text-align: center;
+  }
+  .goalkeeper-device-page .hot-product-section #shoes-hot-slider .splide__arrows {
+    display: none;
+  }
+}
+
+.goalkeeper-device-page .hot-product-section-mb {
+  display: none;
+}
+
+@media (max-width: 991px) {
+  .goalkeeper-device-page .hot-product-section {
+    display: none;
+  }
+  .goalkeeper-device-page .hot-product-section-mb {
+    display: block;
+  }
+  .goalkeeper-device-page .hot-product-section-mb .hot-product-block .title-hot-product {
+    text-align: center;
+  }
+  .goalkeeper-device-page .hot-product-section-mb .hot-product-block .grid-block {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  .goalkeeper-device-page .hot-product-section-mb .hot-product-block .grid-block .featured-img-block {
+    height: 155px;
+  }
+  .goalkeeper-device-page .hot-product-section-mb .hot-product-block .grid-block .featured-img-block .badge {
+    font-size: 14px;
+  }
+  .goalkeeper-device-page .hot-product-section-mb .hot-product-block .grid-block .featured-img-block .badge.-r {
+    margin-top: 2rem;
+  }
+  .goalkeeper-device-page .hot-product-section-mb .read-more-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .goalkeeper-device-page .hot-product-section-mb .read-more-block .btn-border {
+    display: block;
+    width: auto;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: 10px 30px;
+    font-family: 'Prachason';
+    font-size: 16px;
+  }
+  .goalkeeper-device-page .hot-product-section-mb .read-more-block .btn-border:hover {
+    background-color: #fff;
+    color: #000;
+  }
+}
+
+.goalkeeper-device-page .cate-goalkeeper-section {
+  padding: 4rem 0;
+  padding-top: 1rem;
+}
+
+.goalkeeper-device-page .cate-goalkeeper-section .cate-goalkeeper-block .grid-block {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  gap: 25px;
+}
+
+.goalkeeper-device-page .cate-goalkeeper-section .cate-goalkeeper-block .grid-block .grid-item {
+  position: relative;
+}
+
+.goalkeeper-device-page .cate-goalkeeper-section .cate-goalkeeper-block .grid-block .grid-item a:hover .cate-goalkeeper .overlay {
+  max-height: 100%;
+  -webkit-transition: max-height 0.25s ease-in;
+  transition: max-height 0.25s ease-in;
+}
+
+.goalkeeper-device-page .cate-goalkeeper-section .cate-goalkeeper-block .grid-block .grid-item a:hover .cate-goalkeeper h4.head-cate-goalkeeper {
+  margin-bottom: 11rem;
+  color: #FFBE00;
+}
+
+.goalkeeper-device-page .cate-goalkeeper-section .cate-goalkeeper-block .grid-block .grid-item .cate-goalkeeper {
+  min-height: 380px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.goalkeeper-device-page .cate-goalkeeper-section .cate-goalkeeper-block .grid-block .grid-item .cate-goalkeeper.-gear-01 {
+  background: url(../images/gatekeeper-gear-01.png) center center;
+  background-size: cover;
+}
+
+.goalkeeper-device-page .cate-goalkeeper-section .cate-goalkeeper-block .grid-block .grid-item .cate-goalkeeper.-gear-02 {
+  background: url(../images/gatekeeper-gear-02.png) center center;
+  background-size: cover;
+}
+
+.goalkeeper-device-page .cate-goalkeeper-section .cate-goalkeeper-block .grid-block .grid-item .cate-goalkeeper.-gear-03 {
+  background: url(../images/gatekeeper-gear-03.png) center center;
+  background-size: cover;
+}
+
+.goalkeeper-device-page .cate-goalkeeper-section .cate-goalkeeper-block .grid-block .grid-item .cate-goalkeeper h4.head-cate-goalkeeper {
+  width: 100%;
+  text-align: center;
+  font-size: 20px;
+  font-family: 'Prachason';
+  z-index: 1;
+  margin-bottom: 2rem;
+  -webkit-transition: .5s;
+  transition: .5s;
+  text-transform: uppercase;
+}
+
+.goalkeeper-device-page .cate-goalkeeper-section .cate-goalkeeper-block .grid-block .grid-item .cate-goalkeeper .overlay {
+  max-height: 40%;
+  -webkit-transition: max-height 0.15s ease-out;
+  transition: max-height 0.15s ease-out;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(black));
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, black 100%);
+  -webkit-transition: all height .5s ease-in-out;
+  transition: all height .5s ease-in-out;
+}
+
+@media (max-width: 991px) {
+  .goalkeeper-device-page .cate-goalkeeper-section {
+    padding: 2rem 0;
+  }
+  .goalkeeper-device-page .cate-goalkeeper-section .cate-goalkeeper-block .title-cate-goalkeeper {
+    text-align: center;
+  }
+  .goalkeeper-device-page .cate-goalkeeper-section .cate-goalkeeper-block .grid-block {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .goalkeeper-device-page .cate-goalkeeper-section .cate-goalkeeper-block .grid-block .grid-item {
+    position: relative;
+  }
+  .goalkeeper-device-page .cate-goalkeeper-section .cate-goalkeeper-block .grid-block .grid-item .cate-goalkeeper {
+    min-height: 330px;
+  }
+  .goalkeeper-device-page .cate-goalkeeper-section .cate-goalkeeper-block .grid-block .grid-item a:hover .cate-goalkeeper h4.head-cate-goalkeeper {
+    margin-bottom: 9rem;
+  }
+}
+
+.goalkeeper-device-page .brand-section {
+  padding: 4rem 0;
+  padding-bottom: 8rem;
+}
+
+.goalkeeper-device-page .brand-section .brand-block .grid-block {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  gap: 25px;
+}
+
+.goalkeeper-device-page .brand-section .brand-block .grid-block .grid-item {
+  position: relative;
+}
+
+.goalkeeper-device-page .brand-section .brand-block .grid-block .grid-item a:hover .brand .overlay {
+  max-height: 100%;
+  -webkit-transition: max-height 0.25s ease-in;
+  transition: max-height 0.25s ease-in;
+}
+
+.goalkeeper-device-page .brand-section .brand-block .grid-block .grid-item a:hover .brand img {
+  margin-bottom: 8rem;
+  color: #FFBE00;
+}
+
+.goalkeeper-device-page .brand-section .brand-block .grid-block .grid-item .brand {
+  min-height: 280px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.goalkeeper-device-page .brand-section .brand-block .grid-block .grid-item .brand.-brand-01 {
+  background: url(../images/goalkeeper-brand-01.png) center center;
+  background-size: cover;
+}
+
+.goalkeeper-device-page .brand-section .brand-block .grid-block .grid-item .brand.-brand-02 {
+  background: url(../images/goalkeeper-brand-02.png) center center;
+  background-size: cover;
+}
+
+.goalkeeper-device-page .brand-section .brand-block .grid-block .grid-item .brand.-brand-03 {
+  background: url(../images/goalkeeper-brand-03.png) center center;
+  background-size: cover;
+}
+
+.goalkeeper-device-page .brand-section .brand-block .grid-block .grid-item .brand img {
+  z-index: 2;
+  position: relative;
+  margin-bottom: 2rem;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.goalkeeper-device-page .brand-section .brand-block .grid-block .grid-item .brand .overlay {
+  max-height: 40%;
+  -webkit-transition: max-height 0.15s ease-out;
+  transition: max-height 0.15s ease-out;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(black));
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, black 100%);
+  -webkit-transition: all height .5s ease-in-out;
+  transition: all height .5s ease-in-out;
+}
+
+@media (max-width: 991px) {
+  .goalkeeper-device-page .brand-section {
+    padding: 2rem 0;
+    padding-bottom: 4rem;
+  }
+  .goalkeeper-device-page .brand-section .brand-block .title-brand {
+    text-align: center;
+  }
+  .goalkeeper-device-page .brand-section .brand-block .grid-block {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .goalkeeper-device-page .brand-section .brand-block .grid-block .grid-item {
+    position: relative;
   }
 }
 /*# sourceMappingURL=style.css.map */
