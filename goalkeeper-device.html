@@ -8,7 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link rel="stylesheet" href="../css/style.min.css" type="text/css">
-    <link href="//cdn.jsdelivr.net/npm/featherlight@1.7.14/release/featherlight.min.css" type="text/css" rel="stylesheet" />
+    <link href="//cdn.jsdelivr.net/npm/featherlight@1.7.14/release/featherlight.min.css" type="text/css"
+        rel="stylesheet" />
     <link href="../js/splidejs/splide.min.css" type="text/css" rel="stylesheet" />
     <link href="../js/mmenu-light/mmenu-light.css" type="text/css" rel="stylesheet" />
 
@@ -31,11 +32,11 @@
             <div id="football-shoes-slider" class="splide">
                 <div class="splide__arrows">
                     <button class="splide__arrow splide__arrow--prev">
-                            <img class="arrow-left" src="../images/slider-arrow-left-icon.svg" alt="arrow icon">
-                        </button>
+                        <img class="arrow-left" src="../images/slider-arrow-left-icon.svg" alt="arrow icon">
+                    </button>
                     <button class="splide__arrow splide__arrow--next">
-                            <img class="arrow-right" src="../images/slider-arrow-right-icon.svg" alt="arrow icon">
-                        </button>
+                        <img class="arrow-right" src="../images/slider-arrow-right-icon.svg" alt="arrow icon">
+                    </button>
                 </div>
 
                 <div class="splide__track">
@@ -129,11 +130,11 @@
                 <div id="shoes-hot-slider" class="splide">
                     <div class="splide__arrows">
                         <button class="splide__arrow splide__arrow--prev">
-                                <img class="arrow-left" src="../images/slider-arrow-left-icon.svg" alt="arrow icon">
-                            </button>
+                            <img class="arrow-left" src="../images/slider-arrow-left-icon.svg" alt="arrow icon">
+                        </button>
                         <button class="splide__arrow splide__arrow--next">
-                                <img class="arrow-right" src="../images/slider-arrow-right-icon.svg" alt="arrow icon">
-                            </button>
+                            <img class="arrow-right" src="../images/slider-arrow-right-icon.svg" alt="arrow icon">
+                        </button>
                     </div>
 
                     <div class="splide__track">
@@ -177,18 +178,17 @@
         <section class="hot-product-section-mb">
             <div class="hot-product-block g-container">
                 <h2 class="title-hot-product">สินค้ายอดนิยม</h2>
-                    <div class="grid-block">
-                        <card-component></card-component>
-                        <card-component></card-component>
-                        <card-component></card-component>
-                        <card-component></card-component>
-                        <card-component></card-component>
-                        <card-component></card-component>
-                    </div>    
+                <div class="grid-block">
+                    <card-component></card-component>
+                    <card-component></card-component>
+                    <card-component></card-component>
+                    <card-component></card-component>
+                    <card-component></card-component>
+                    <card-component></card-component>
                 </div>
-                <div class="read-more-block">
-                    <a href="#" class="btn-border">ดูสินค้าทั้งหมด</a>
-                </div>
+            </div>
+            <div class="read-more-block">
+                <a href="#" class="btn-border">ดูสินค้าทั้งหมด</a>
             </div>
         </section>
 
@@ -267,40 +267,41 @@
     </main>
 
     <footer-component></footer-component>
-    
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" defer></script>
-    <script src="//cdn.jsdelivr.net/npm/featherlight@1.7.14/release/featherlight.min.js" type="text/javascript" charset="utf-8" defer></script>
+    <script src="//cdn.jsdelivr.net/npm/featherlight@1.7.14/release/featherlight.min.js" type="text/javascript"
+        charset="utf-8" defer></script>
     <script src="../js/splidejs/splide.min.js" defer></script>
     <script src="../js/mmenu-light/mmenu-light.min.js" type="text/javascript" defer></script>
     <script src="../js/mmenu-light/mmenu-light.polyfills.js" type="text/javascript" defer></script>
 
     <script>
-        document.addEventListener( 'DOMContentLoaded', function () {
+        document.addEventListener('DOMContentLoaded', function () {
 
-        // Splidejs - Hero Banner
+            // Splidejs - Hero Banner
 
-        new Splide( '#football-shoes-slider', {
-            type   : 'loop',
-            autoplay : 'true'
-        } ).mount();
+            new Splide('#football-shoes-slider', {
+                type: 'loop',
+                autoplay: 'true'
+            }).mount();
 
-        // Splidejs - Hot Football Shoes Product
+            // Splidejs - Hot Football Shoes Product
 
-        new Splide( '#shoes-hot-slider', {
-        perPage    : 4,
-        gap : 20,
-        breakpoints: {
-            1000: {
-            perPage:  2,
-            },
-            500: {
-            fixedWidth: '17rem',
-            gap : 15,
-            }
-        }
-        } ).mount();
+            new Splide('#shoes-hot-slider', {
+                perPage: 4,
+                gap: 20,
+                breakpoints: {
+                    1000: {
+                        perPage: 2,
+                    },
+                    500: {
+                        fixedWidth: '17rem',
+                        gap: 15,
+                    }
+                }
+            }).mount();
 
-    });
+        });
     </script>
 
     <script src="../js/main.js" type="text/javascript" defer></script>

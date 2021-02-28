@@ -3,39 +3,33 @@
 /* ====================== Fonts ====================== */
 
 @font-face {
-    font-family: 'Prachason';
-    src: url('../fonts/Prachason-Bold.eot');
-    src: url('../fonts/Prachason-Bold.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/Prachason-Bold.woff2') format('woff2'),
-        url('../fonts/Prachason-Bold.woff') format('woff'),
-        url('../fonts/Prachason-Bold.ttf') format('truetype'),
-        url('../fonts/Prachason-Bold.svg#.') format('svg');
+    font-family: "Prachason";
+    src: url("../fonts/Prachason-Bold.eot");
+    src: url("../fonts/Prachason-Bold.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/Prachason-Bold.woff2") format("woff2"), url("../fonts/Prachason-Bold.woff") format("woff"),
+        url("../fonts/Prachason-Bold.ttf") format("truetype"), url("../fonts/Prachason-Bold.svg#.") format("svg");
     font-weight: bold;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Prachason';
-    src: url('../fonts/Prachason-Light.eot');
-    src: url('../fonts/Prachason-Light.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/Prachason-Light.woff2') format('woff2'),
-        url('../fonts/Prachason-Light.woff') format('woff'),
-        url('../fonts/Prachason-Light.ttf') format('truetype'),
-        url('../fonts/Prachason-Light.svg#.') format('svg');
+    font-family: "Prachason";
+    src: url("../fonts/Prachason-Light.eot");
+    src: url("../fonts/Prachason-Light.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/Prachason-Light.woff2") format("woff2"), url("../fonts/Prachason-Light.woff") format("woff"),
+        url("../fonts/Prachason-Light.ttf") format("truetype"), url("../fonts/Prachason-Light.svg#.") format("svg");
     font-weight: 300;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Prachason';
-    src: url('../fonts/Prachason-Regular.eot');
-    src: url('../fonts/Prachason-Regular.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/Prachason-Regular.woff2') format('woff2'),
-        url('../fonts/Prachason-Regular.woff') format('woff'),
-        url('../fonts/Prachason-Regular.ttf') format('truetype'),
-        url('../fonts/Prachason-Regular.svg#.') format('svg');
+    font-family: "Prachason";
+    src: url("../fonts/Prachason-Regular.eot");
+    src: url("../fonts/Prachason-Regular.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/Prachason-Regular.woff2") format("woff2"), url("../fonts/Prachason-Regular.woff") format("woff"),
+        url("../fonts/Prachason-Regular.ttf") format("truetype"), url("../fonts/Prachason-Regular.svg#.") format("svg");
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -43,29 +37,42 @@
 
 /* ====================== Variables ====================== */
 
-$primary-color: #FFBE00;
+$primary-color: #ffbe00;
 $secondary-color: #161616;
 $accent-color: #fff;
 $g-container: 1160px;
 
 /* ====================== Global Settings ====================== */
 
-body, html{
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
+body,
+html {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     margin: 0;
     padding: 0;
     outline: 0;
     height: 150vh;
 }
 
-h1, h2, h3, h4, h5, h6{
-    font-family: 'Prachason';
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Prachason";
     font-weight: bold;
     color: $accent-color;
 }
 
-p, span, div, a, label, input, select, textarea {
-    font-family: 'Prachason';
+p,
+span,
+div,
+a,
+label,
+input,
+select,
+textarea {
+    font-family: "Prachason";
     font-weight: normal;
     color: $accent-color;
 }
@@ -74,12 +81,12 @@ input:focus {
     outline: 0;
 }
 
-ul{
+ul {
     padding: 0;
     list-style: none;
 }
 
-a{
+a {
     text-decoration: none;
     color: $accent-color;
 }
@@ -90,24 +97,24 @@ a{
     margin: 0 auto;
 }
 
-.btn-border{
-    font-family: 'Agency FB';
+.btn-border {
+    font-family: "Agency FB";
     font-weight: bold;
     font-size: 18px;
     margin-top: 20px;
     padding: 10px 20px;
     border: 1px solid $primary-color;
     text-transform: uppercase;
-    transition: all .3s ease-in-out;
+    transition: all 0.3s ease-in-out;
     width: 45%;
     text-align: center;
 
-    &:hover{
+    &:hover {
         background-color: $primary-color;
     }
 }
 
-.btn-global{
+.btn-global {
     background-color: $primary-color;
     border-radius: 5px;
     text-align: center;
@@ -129,8 +136,10 @@ a{
     position: relative;
     display: inline-block;
 
-    &:hover{
-        .dd-content-block {display: block;}
+    &:hover {
+        .dd-content-block {
+            display: block;
+        }
     }
 }
 
@@ -149,16 +158,19 @@ a{
 
 // Mega Menu
 
-#dd-boots, #dd-keepers,
-#dd-jerseys, #dd-equipments,
-#dd-apperels, #dd-arigear, #dd-sales{
+#dd-boots,
+#dd-keepers,
+#dd-jerseys,
+#dd-equipments,
+#dd-apperels,
+#dd-arigear,
+#dd-sales {
     &:hover {
         > .dropdown-content {
             display: block;
         }
     }
 }
-
 
 .dropdown-content {
     display: none;
@@ -167,45 +179,45 @@ a{
     background-color: #f9f9f9;
     width: 100%;
     left: 0;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 99;
     margin-top: 20px;
 
-    .grid-block{
+    .grid-block {
         display: grid;
-        grid-template-columns: .4fr 1fr .6fr;
+        grid-template-columns: 0.4fr 1fr 0.6fr;
 
-        .grid-item{
-            &.-mega-main-menu{
+        .grid-item {
+            &.-mega-main-menu {
                 background-color: #333333;
-                border-right: 1px solid #4B4B4B;
+                border-right: 1px solid #4b4b4b;
                 padding: 20px 0;
                 padding-left: 5rem;
 
-                ul{
-                    li{
+                ul {
+                    li {
                         padding: 0 !important;
                         text-align: left !important;
                         cursor: pointer;
 
-                        &.active{
-                            > a{
+                        &.active {
+                            > a {
                                 color: $primary-color;
                             }
 
-                            &::after{
-                                content: '>';
+                            &::after {
+                                content: ">";
                                 color: $primary-color;
                                 position: absolute;
                                 left: 18%;
                             }
 
-                            &:hover{
-                                > a{
+                            &:hover {
+                                > a {
                                     color: $primary-color;
-    
-                                    &::after{
-                                        content: '>';
+
+                                    &::after {
+                                        content: ">";
                                         position: absolute;
                                         left: 18%;
                                     }
@@ -223,18 +235,18 @@ a{
                             width: 45%;
                             padding: 0 30px;
 
-                            &.active{
+                            &.active {
                                 visibility: visible;
                                 opacity: 1;
                             }
 
-                            .sub-grid-block{
+                            .sub-grid-block {
                                 display: grid;
                                 grid-template-columns: 1fr 1fr 1fr 1fr;
                                 gap: 25px;
 
-                                .sub-grid-item{
-                                    h5{
+                                .sub-grid-item {
+                                    h5 {
                                         margin: 5px 0;
                                         font-size: 18px;
                                         color: $accent-color;
@@ -242,11 +254,11 @@ a{
                                         border-bottom: 1px solid #707070;
                                     }
 
-                                    .sub-football{
-                                        a{
+                                    .sub-football {
+                                        a {
                                             font-weight: 300;
 
-                                            &:hover{
+                                            &:hover {
                                                 color: $primary-color;
                                             }
                                         }
@@ -258,47 +270,47 @@ a{
                 }
             }
 
-            &.-mega-sub-menu{
+            &.-mega-sub-menu {
                 background-color: #333333;
             }
 
-            &.-mega-bg-01{
+            &.-mega-bg-01 {
                 background: url(../images/mega-bg-01.png) center center;
                 background-size: cover;
                 min-height: 450px;
             }
 
-            &.-mega-bg-02{
+            &.-mega-bg-02 {
                 background: url(../images/mega-bg-02.png) center center;
                 background-size: cover;
                 min-height: 450px;
             }
 
-            &.-mega-bg-03{
+            &.-mega-bg-03 {
                 background: url(../images/mega-bg-03.png) center center;
                 background-size: cover;
                 min-height: 450px;
             }
 
-            &.-mega-bg-04{
+            &.-mega-bg-04 {
                 background: url(../images/mega-bg-04.png) center center;
                 background-size: cover;
                 min-height: 450px;
             }
 
-            &.-mega-bg-05{
+            &.-mega-bg-05 {
                 background: url(../images/mega-bg-05.png) center center;
                 background-size: cover;
                 min-height: 450px;
             }
 
-            &.-mega-bg-06{
+            &.-mega-bg-06 {
                 background: url(../images/mega-bg-06.png) center center;
                 background-size: cover;
                 min-height: 450px;
             }
 
-            &.-mega-bg-07{
+            &.-mega-bg-07 {
                 background: url(../images/mega-bg-07.png) center center;
                 background-size: cover;
                 min-height: 450px;
@@ -309,27 +321,27 @@ a{
 
 //Search Box
 
-#search-popup{
-    display:  none;
+#search-popup {
+    display: none;
 
-    .search-block{
-        .search-box{
+    .search-block {
+        .search-box {
             background-color: #262626;
-            border:0;
+            border: 0;
             border-radius: 5px;
             width: 100%;
             height: 40px;
             color: $accent-color;
-    
-            &::placeholder{
-                color: #C6C6C6;
+
+            &::placeholder {
+                color: #c6c6c6;
             }
         }
     }
 }
 
 .close-icon {
-    border:1px solid transparent;
+    border: 1px solid transparent;
     background-color: transparent;
     display: inline-block;
     vertical-align: middle;
@@ -338,7 +350,7 @@ a{
 }
 
 .close-icon:after {
-	content: "\d7";
+    content: "\d7";
     display: block;
     width: 15px;
     height: 15px;
@@ -355,15 +367,15 @@ a{
 }
 
 .search-box:not(:valid) ~ .close-icon {
-	display: none;
+    display: none;
 }
 
 // Popup Search
 
 .featherlight {
     padding: 20px;
-    
-    .featherlight-close-icon{
+
+    .featherlight-close-icon {
         display: none;
     }
 
@@ -373,11 +385,11 @@ a{
         padding: 0 !important;
         background-color: transparent !important;
 
-        #search-popup{
+        #search-popup {
             display: block;
 
-            .search-block{
-                .search-box{
+            .search-block {
+                .search-box {
                     background-color: #262626;
                     border: 0;
                     border-radius: 5px;
@@ -386,9 +398,9 @@ a{
                     color: #fff;
                     padding: 0 20px;
                     font-size: 18px;
-            
-                    &::placeholder{
-                        color: #C6C6C6;
+
+                    &::placeholder {
+                        color: #c6c6c6;
                     }
                 }
             }
@@ -399,12 +411,12 @@ a{
 // Login Register Dropdown
 
 .-acc {
-    &:hover{
-        #dd-unlogin{
+    &:hover {
+        #dd-unlogin {
             display: block;
         }
 
-        img{
+        img {
             filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
         }
     }
@@ -422,23 +434,23 @@ a{
         display: flex;
         flex-direction: column;
 
-        .desc-lr{
+        .desc-lr {
             text-align: center;
             color: #fff;
             font-size: 14px;
         }
 
-        .btn-reg{
+        .btn-reg {
             color: $primary-color;
             font-size: 14px;
-            font-family: 'Prachason';
+            font-family: "Prachason";
             border-radius: 5px;
             border: 1px solid $primary-color;
             text-align: center;
             padding: 7px;
-            transition: .3s;
+            transition: 0.3s;
 
-            &:hover{
+            &:hover {
                 background-color: $primary-color;
                 color: $accent-color;
             }
@@ -468,7 +480,7 @@ a{
         }
     }
 
-    input{
+    input {
         position: absolute;
         opacity: 0;
         cursor: pointer;
@@ -525,14 +537,14 @@ a{
     background-color: #030303;
     z-index: 99999;
     padding: 20px;
-    transition: .5s;
-    
-    &.active{
+    transition: 0.5s;
+
+    &.active {
         right: 0;
     }
 
-    .mini-cart-block{
-        .close-block{
+    .mini-cart-block {
+        .close-block {
             display: flex;
             justify-content: flex-end;
 
@@ -543,10 +555,10 @@ a{
             }
         }
 
-        .minic-title-block{
+        .minic-title-block {
             margin-top: -1rem;
 
-            h5{
+            h5 {
                 margin: 0;
                 color: $accent-color;
                 display: flex;
@@ -556,15 +568,15 @@ a{
             }
         }
 
-        .head-table-block{
+        .head-table-block {
             margin-top: 1rem;
 
             .grid-block {
                 display: grid;
-                grid-template-columns: 1fr .3fr;
+                grid-template-columns: 1fr 0.3fr;
                 border-bottom: 1px solid #565656;
 
-                h5{
+                h5 {
                     color: $accent-color;
                     font-weight: normal;
                     font-size: 18px;
@@ -574,7 +586,7 @@ a{
             }
         }
 
-        .products-block{
+        .products-block {
             height: 72vh;
             overflow: auto;
             overflow-x: hidden;
@@ -583,111 +595,112 @@ a{
             &::-webkit-scrollbar {
                 width: 7px;
             }
-            
+
             /* Track */
             &::-webkit-scrollbar-track {
                 background: transparent;
-                border-radius: 5px; 
+                border-radius: 5px;
             }
-            
+
             /* Handle */
             &::-webkit-scrollbar-thumb {
-                background: #919191; 
-                border-radius: 5px; 
+                background: #919191;
+                border-radius: 5px;
             }
-            
+
             /* Handle on hover */
             &::-webkit-scrollbar-thumb:hover {
-                background: #555; 
+                background: #555;
             }
 
-            .grid-block{
+            .grid-block {
                 display: grid;
-                grid-template-columns: .6fr 1fr .6fr;
+                grid-template-columns: 0.6fr 1fr 0.6fr;
                 gap: 20px;
 
-                &.-item{
+                &.-item {
                     padding-bottom: 10px;
                     border-bottom: 1px solid #565656;
                     padding: 20px 0;
                 }
 
-                .cate{
+                .cate {
                     margin: 0;
                     font-size: 16px;
                     color: $primary-color;
-                    font-family: 'Agency FB';
+                    font-family: "Agency FB";
                     font-weight: normal;
                 }
 
                 .title-product {
                     margin: 0;
                     line-height: 1.3em;
-                    font-family: 'Agency FB';
+                    font-family: "Agency FB";
                 }
 
-                .sub-product{
+                .sub-product {
                     margin: 0;
                     margin-top: 10px;
                     line-height: 1.3em;
-                    font-family: 'Agency FB';
+                    font-family: "Agency FB";
                     font-weight: 300;
                 }
 
-                p{
+                p {
                     margin: 5px 0;
                 }
 
-                .sku{
+                .sku {
                     color: #606060;
                 }
 
-                .title-personalize{
+                .title-personalize {
                     margin: 0;
                     margin-top: 10px;
-                    font-family: 'Agency FB';
+                    font-family: "Agency FB";
                     font-size: 16px;
                 }
 
-                .price{
+                .price {
                     font-size: 18px;
-                    font-family: 'Agency FB';
-                    color:$primary-color;
+                    font-family: "Agency FB";
+                    color: $primary-color;
                     font-weight: bold;
                 }
 
-                .del-block{
+                .del-block {
                     text-align: right;
                     margin-right: -70%;
                     margin-top: -35px;
                 }
 
-                .-amount{
+                .-amount {
                     display: flex;
                     flex-direction: column;
 
-                    .number{
+                    .number {
                         border: 1px solid #343434;
                         border-radius: 7px;
                         display: flex;
                         justify-content: center;
                         align-items: center;
-    
-                        span{
+
+                        span {
                             cursor: pointer;
                         }
-    
-                        .minus, .plus{
-                            width:10px;
-                            height:10px;
+
+                        .minus,
+                        .plus {
+                            width: 10px;
+                            height: 10px;
                             padding: 0px 5px 22px 5px;
                             display: inline-block;
                             vertical-align: middle;
                             text-align: center;
                             font-size: 20px;
                         }
-    
-                        input{
+
+                        input {
                             height: 40px;
                             width: 60px;
                             text-align: center;
@@ -704,26 +717,26 @@ a{
         }
     }
 
-    .minic-bottom-block{
-        .summary-price-block{
-            .grid-block{
+    .minic-bottom-block {
+        .summary-price-block {
+            .grid-block {
                 display: grid;
                 grid-template-columns: 1fr 1fr;
-                gap:20px;
+                gap: 20px;
 
-                .grid-item{
-                    &.-item-total-price{
-                        p{
+                .grid-item {
+                    &.-item-total-price {
+                        p {
                             text-align: right;
                             font-size: 20px;
-                            font-family: 'Agency FB';
+                            font-family: "Agency FB";
                             color: $primary-color;
                             font-weight: bold;
                         }
                     }
                 }
 
-                &.-b-btn{
+                &.-b-btn {
                     .grid-item {
                         display: flex;
                         justify-content: center;
@@ -735,9 +748,9 @@ a{
                             border-radius: 5px;
                             border: 1px solid $accent-color;
                             font-size: 16px;
-                            font-family: 'Prachason';
+                            font-family: "Prachason";
 
-                            &:hover{
+                            &:hover {
                                 background-color: $accent-color;
                                 color: #000;
                             }
@@ -754,7 +767,7 @@ a{
         }
     }
 
-    @media(max-width: 991px){
+    @media (max-width: 991px) {
         width: 80vw;
         right: -90vw;
     }
@@ -762,25 +775,25 @@ a{
 
 // Space on Header mobile
 
-@media(max-width: 991px){
-    .spacer-mb{
+@media (max-width: 991px) {
+    .spacer-mb {
         height: 70px;
     }
 
-    .mm-ocd__content{
+    .mm-ocd__content {
         background-color: transparent !important;
     }
 }
 
 // hover arrow slider
-.splide__arrows{
-    .splide__arrow:hover{
-        img{
+.splide__arrows {
+    .splide__arrow:hover {
+        img {
             filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
         }
     }
 
-    @media(max-width: 991px){
+    @media (max-width: 991px) {
         display: none;
     }
 }
@@ -788,10 +801,10 @@ a{
 // Accordion
 
 .acc {
-    .acc__card{
+    .acc__card {
         margin: 1em 0em;
         position: relative;
-    
+
         .acc__title {
             background: transparent;
             color: #fff;
@@ -804,7 +817,7 @@ a{
             font-weight: 500;
             font-size: 18px;
             color: $primary-color;
-    
+
             &::after {
                 width: 12px;
                 height: 12px;
@@ -820,23 +833,23 @@ a{
                 transition: all 0.4s ease-in-out;
             }
 
-            &.active{
+            &.active {
                 &::after {
                     top: 22px;
-                    -webkit-transform: rotate( -135deg );
+                    -webkit-transform: rotate(-135deg);
                     transform: rotate(-135deg);
                     -webkit-transition: all 0.4s ease-in-out;
                     transition: all 0.4s ease-in-out;
                 }
             }
         }
-    
+
         .acc__panel {
             background: transparent;
             color: #212121;
             display: none;
             margin: 0;
-            padding: .5rem 0;
+            padding: 0.5rem 0;
             text-align: left;
             font-weight: 500;
             font-size: 16px;
@@ -844,10 +857,9 @@ a{
     }
 }
 
-
 /* ====================== Nav Global Site ====================== */
 
-.site-header{
+.site-header {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -855,19 +867,19 @@ a{
     background-color: $secondary-color;
     padding-top: 10px;
 
-    .main-nav{
+    .main-nav {
         width: 100%;
         display: flex;
         flex-direction: column;
 
-        .half-nav{
+        .half-nav {
             width: 100%;
             display: flex;
             justify-content: center;
             align-content: center;
 
-            &.top-menu{
-                .dt-col{
+            &.top-menu {
+                .dt-col {
                     display: flex;
                     justify-content: center;
                     align-items: center;
@@ -877,8 +889,8 @@ a{
                         width: 20%;
                         justify-content: flex-start;
 
-                        .dd-lang-block{
-                            .img-flag{
+                        .dd-lang-block {
+                            .img-flag {
                                 width: 20px;
                                 margin-right: 5px;
                             }
@@ -896,20 +908,22 @@ a{
                         .addon-block {
                             columns: 3;
 
-                            .-minic{
+                            .-minic {
                                 cursor: pointer;
 
-                                &:hover{
-                                    img{
-                                        filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
+                                &:hover {
+                                    img {
+                                        filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg)
+                                            brightness(104%) contrast(97%);
                                     }
                                 }
                             }
 
-                            .-search{
-                                &:hover{
-                                    img{
-                                        filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
+                            .-search {
+                                &:hover {
+                                    img {
+                                        filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg)
+                                            brightness(104%) contrast(97%);
                                     }
                                 }
                             }
@@ -918,27 +932,27 @@ a{
                 }
             }
 
-            &.main-menu{
+            &.main-menu {
                 .nav-menu-block {
                     width: 100%;
                     max-width: 680px;
 
-                    .nav-menu{
+                    .nav-menu {
                         display: flex;
                         margin: 0;
 
-                        > li{
+                        > li {
                             flex: 1 1 auto;
                             text-align: center;
                             padding: 20px 0;
 
                             > a {
                                 position: relative;
-                                transition: .3s;
+                                transition: 0.3s;
                                 padding: 20px 0;
 
-                                &::after{
-                                    content: '';
+                                &::after {
+                                    content: "";
                                     position: absolute;
                                     bottom: 0;
                                     left: 0;
@@ -946,13 +960,13 @@ a{
                                     width: 100%;
                                     background: $primary-color;
                                     opacity: 0;
-                                    transition: .3s all ease-in-out;
+                                    transition: 0.3s all ease-in-out;
                                 }
 
-                                &:hover{
+                                &:hover {
                                     color: $primary-color;
 
-                                    &::after{
+                                    &::after {
                                         opacity: 1;
                                     }
                                 }
@@ -965,7 +979,7 @@ a{
     }
 }
 
-.navbar-autoshow{
+.navbar-autoshow {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -976,7 +990,7 @@ a{
     transition: top 0.5s;
     z-index: 9999;
 
-    &.-show{
+    &.-show {
         top: 0px;
     }
 
@@ -992,36 +1006,36 @@ a{
             justify-content: center;
             align-items: center;
 
-            &.-logo{
+            &.-logo {
                 width: 10%;
                 justify-content: flex-start;
             }
 
-            &.-menu{
+            &.-menu {
                 width: 65%;
 
-                .nav{
+                .nav {
                     display: flex;
                     width: 100%;
                     margin: 0;
 
-                    li{
-                        .dropdown-content{
+                    li {
+                        .dropdown-content {
                             margin-top: 30px;
                         }
                     }
 
-                    > li{
+                    > li {
                         flex: 1 1 auto;
                         text-align: center;
                         padding: 30px 0;
 
                         > a {
                             position: relative;
-                            transition: .3s;
+                            transition: 0.3s;
 
-                            &::after{
-                                content: '';
+                            &::after {
+                                content: "";
                                 position: absolute;
                                 bottom: -30.5px;
                                 left: 0;
@@ -1029,13 +1043,13 @@ a{
                                 width: 100%;
                                 background: $primary-color;
                                 opacity: 0;
-                                transition: .3s all ease-in-out;
+                                transition: 0.3s all ease-in-out;
                             }
 
-                            &:hover{
+                            &:hover {
                                 color: $primary-color;
 
-                                &::after{
+                                &::after {
                                     opacity: 1;
                                 }
                             }
@@ -1044,7 +1058,7 @@ a{
                 }
             }
 
-            &.-addon{
+            &.-addon {
                 width: 25%;
                 justify-content: flex-end;
 
@@ -1054,42 +1068,44 @@ a{
                     align-items: center;
                     margin-right: 15px;
 
-                    .-minic{
+                    .-minic {
                         cursor: pointer;
-                        
-                        &:hover{
-                            img{
-                                filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
+
+                        &:hover {
+                            img {
+                                filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%)
+                                    contrast(97%);
                             }
                         }
                     }
 
-                    .-search{
-                        &:hover{
-                            img{
-                                filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
+                    .-search {
+                        &:hover {
+                            img {
+                                filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%)
+                                    contrast(97%);
                             }
                         }
                     }
                 }
 
-                .dd-lang-block{
-                    .img-flag{
+                .dd-lang-block {
+                    .img-flag {
                         width: 20px;
                         margin-right: 2px;
                     }
 
-                    .dd-icon{
+                    .dd-icon {
                         width: 10px;
                         margin-bottom: 2px;
                         margin-left: 2px;
                     }
 
-                    .dd-content-block{
+                    .dd-content-block {
                         background-color: $secondary-color;
                         padding-top: 20px;
 
-                        a{
+                        a {
                             padding-right: 20px;
                         }
                     }
@@ -1098,17 +1114,16 @@ a{
         }
     }
 
-    .menu-burger-sidebar{
+    .menu-burger-sidebar {
         display: none;
     }
 }
 
-@media(max-width: 991px){
-
-    //Custom arrow lib 
-    .mm-spn.mm-spn--navbar:before{
+@media (max-width: 991px) {
+    //Custom arrow lib
+    .mm-spn.mm-spn--navbar:before {
         display: block;
-        content: 'ย้อนกลับ';
+        content: "ย้อนกลับ";
         background: url(../images/chev-left-icon.svg) 5% 35%;
         background-repeat: no-repeat;
         height: 30px;
@@ -1124,18 +1139,18 @@ a{
         top: 0 !important;
         height: 70px;
 
-        .navbar-block{
+        .navbar-block {
             .dt-col.-logo {
                 position: absolute;
                 left: 20px;
 
-                .logo-img{
+                .logo-img {
                     height: 45px;
                 }
             }
 
-            .dt-col.-menu{
-                .nav{
+            .dt-col.-menu {
+                .nav {
                     display: none;
                 }
             }
@@ -1144,24 +1159,22 @@ a{
                 position: absolute;
                 right: 4rem;
                 width: auto;
-                border-right: 1px solid #7C7C7C;
+                border-right: 1px solid #7c7c7c;
                 padding-top: 10px;
                 height: 15px;
 
-                .addon-block{
+                .addon-block {
                     columns: 2;
-    
-                    .addon-col{
+
+                    .addon-col {
                         &.-acc {
                             display: none;
-                        }   
+                        }
                     }
-
-                    
                 }
             }
 
-            .dd-lang-block{
+            .dd-lang-block {
                 display: none;
             }
 
@@ -1179,28 +1192,28 @@ a{
                     font-size: 10px;
                     padding: 16px;
                     cursor: pointer;
-    
-                    b{
+
+                    b {
                         top: 50%;
                         margin-top: -1px;
                         z-index: 1;
                         left: 16px;
                         right: 16px;
 
-                        &::before{
+                        &::before {
                             top: -8px;
                             left: 0px;
                             width: 25px;
                         }
-                        &::after{
+                        &::after {
                             top: 8px;
                             left: 0px;
                             width: 25px;
                         }
                     }
-    
-                    &.active{
-                        b{
+
+                    &.active {
+                        b {
                             background-color: transparent;
 
                             &::before {
@@ -1217,15 +1230,20 @@ a{
                         }
                     }
                 }
-    
-                .menu-burger.active b, .menu-burger.active b:after, .menu-burger.active b:before {
+
+                .menu-burger.active b,
+                .menu-burger.active b:after,
+                .menu-burger.active b:before {
                     -webkit-transition: top 0.2s, left 0.2s, background-color 0.2s, -webkit-transform 0.2s 0.15s;
                     transition: top 0.2s, left 0.2s, background-color 0.2s, -webkit-transform 0.2s 0.15s;
                     transition: top 0.2s, left 0.2s, background-color 0.2s, transform 0.2s 0.15s;
-                    transition: top 0.2s, left 0.2s, background-color 0.2s, transform 0.2s 0.15s, -webkit-transform 0.2s 0.15s;
+                    transition: top 0.2s, left 0.2s, background-color 0.2s, transform 0.2s 0.15s,
+                        -webkit-transform 0.2s 0.15s;
                 }
-                
-                .menu-burger b, .menu-burger b:before, .menu-burger b:after {
+
+                .menu-burger b,
+                .menu-burger b:before,
+                .menu-burger b:after {
                     pointer-events: none;
                     display: block;
                     content: "";
@@ -1234,13 +1252,14 @@ a{
                     height: 2px;
                     position: absolute;
                     transform: rotate(0);
-                    transition: top 0.3s 0.15s, left 0.1s, background-color 0.3s 0.2s, transform 0.2s, -webkit-transform 0.2s;
+                    transition: top 0.3s 0.15s, left 0.1s, background-color 0.3s 0.2s, transform 0.2s,
+                        -webkit-transform 0.2s;
                 }
             }
         }
     }
 
-    .menu-burger-sidebar{
+    .menu-burger-sidebar {
         display: block !important;
         width: 90vw;
         height: 100vh;
@@ -1248,9 +1267,9 @@ a{
         top: 0;
         right: -90vw;
         background-color: #161616;
-        transition: .5s;
+        transition: 0.5s;
 
-        .title-nav{
+        .title-nav {
             position: absolute;
             width: 50px;
             height: 50px;
@@ -1265,37 +1284,37 @@ a{
             padding: 15px;
         }
 
-        &.active{
+        &.active {
             right: 0px;
         }
 
-        &.mm--main{
-            &::before{
+        &.mm--main {
+            &::before {
                 display: none !important;
             }
 
-            &::after{
+            &::after {
                 display: none !important;
             }
 
-            .main-menu-mb{
-                &::before{
+            .main-menu-mb {
+                &::before {
                     display: none !important;
                 }
             }
         }
 
-        .menu-burger-sidebar-block{
+        .menu-burger-sidebar-block {
             padding: 20px;
             height: 10px;
 
-            .main-menu-mb{
+            .main-menu-mb {
                 margin: 0;
                 padding-top: 2rem !important;
 
-                ul{
+                ul {
                     padding-top: 4rem !important;
-                    
+
                     .hl-link {
                         position: relative;
                         margin-top: -3.4rem;
@@ -1303,7 +1322,7 @@ a{
                         display: flex;
                         justify-content: flex-end;
 
-                        a{
+                        a {
                             text-decoration: underline;
                             font-size: 16px;
                             color: $primary-color;
@@ -1311,12 +1330,12 @@ a{
                     }
                 }
 
-                li{
-                    a{
+                li {
+                    a {
                         display: block;
                         padding: 5px 20px;
 
-                        .chev-right{
+                        .chev-right {
                             transform: rotate(-90deg);
                             position: absolute;
                             right: 25px;
@@ -1330,9 +1349,9 @@ a{
                     }
                 }
 
-                .last{
-                    li{
-                        &::before{
+                .last {
+                    li {
+                        &::before {
                             display: none;
                         }
                     }
@@ -1341,43 +1360,43 @@ a{
 
             .sale-block {
                 margin-top: 10px;
-    
-                a{
+
+                a {
                     display: flex;
-    
-                    img{
+
+                    img {
                         margin-right: 7px;
                     }
                 }
             }
-    
-            .dd-lang-block{
+
+            .dd-lang-block {
                 display: block !important;
                 margin-left: 20px;
-    
-                .d-btn{
+
+                .d-btn {
                     display: flex;
                     align-items: center;
                     padding: 15px 0;
-    
-                    .img-flag{
+
+                    .img-flag {
                         width: 30px;
                         height: 20px;
                         margin-right: 10px;
                     }
-    
+
                     .dd-icon {
                         margin-left: 7px;
                     }
                 }
-    
-                &:hover{
+
+                &:hover {
                     .dd-content-block {
-                        a{
+                        a {
                             padding: 0;
                         }
-    
-                        .img-flag{
+
+                        .img-flag {
                             width: 30px;
                             height: 20px;
                             margin-right: 10px;
@@ -1385,7 +1404,7 @@ a{
                     }
                 }
             }
-    
+
             #dd-unlogin {
                 display: block !important;
                 margin: 0 !important;
@@ -1396,17 +1415,17 @@ a{
                 z-index: unset;
                 background-color: transparent;
                 padding: 0;
-    
-                .lr-block{
+
+                .lr-block {
                     padding: 20px;
                     width: 100%;
 
-                    a.btn-global{
+                    a.btn-global {
                         background-color: $primary-color;
                         color: $accent-color;
                         width: auto !important;
                     }
-    
+
                     .btn-reg {
                         width: 50%;
                         margin: 0 auto;
@@ -1415,31 +1434,31 @@ a{
             }
         }
     }
-    
-    .site-header{
+
+    .site-header {
         display: none;
     }
 }
 
 /* ====================== Product Loop Template ====================== */
 
-.post-items{
-    &.-card{
+.post-items {
+    &.-card {
         .featured-img-block {
             height: 250px;
             position: relative;
             display: block;
             overflow: hidden;
 
-            &:hover{
-                .featured-img{
+            &:hover {
+                .featured-img {
                     transform: scale(1.15);
                 }
             }
 
             .featured-img {
                 height: 100%;
-                transition: all .5s ease-in-out;
+                transition: all 0.5s ease-in-out;
             }
 
             .badge {
@@ -1448,24 +1467,24 @@ a{
                 top: 25px;
                 padding: 5px 15px;
                 color: $accent-color;
-                font-family: 'Agency FB';
+                font-family: "Agency FB";
                 font-weight: bold;
                 font-size: 18px;
                 z-index: 2;
 
-                &.-g{
-                    background-color: #3ECB2C;
+                &.-g {
+                    background-color: #3ecb2c;
                 }
 
-                &.-r{
-                    background-color: #D32323;
+                &.-r {
+                    background-color: #d32323;
                     margin-top: 2.5rem;
                 }
             }
         }
 
-        .title-item{
-            font-family: 'Agency FB';
+        .title-item {
+            font-family: "Agency FB";
 
             .category {
                 margin: 0;
@@ -1484,35 +1503,38 @@ a{
                 overflow: hidden;
                 height: 55px;
                 color: $accent-color;
-                font-family: 'Agency FB';
+                font-family: "Agency FB";
             }
         }
-        .content-item{
-            font-family: 'Agency FB';
+        .content-item {
+            font-family: "Agency FB";
             display: flex;
 
-            .price-block{
+            .price-block {
                 width: 80%;
 
-                .price{
+                .price {
                     color: $primary-color;
                     font-weight: bold;
                     font-size: 22px;
                 }
             }
 
-            .fav-block{
+            .fav-block {
                 display: flex;
                 width: 20%;
                 justify-content: flex-end;
                 align-items: center;
 
-                .fav{
-                    path { transition: fill .4s ease; fill: transparent; }
-                    
-                    &:hover{
-                        svg{
-                            path{
+                .fav {
+                    path {
+                        transition: fill 0.4s ease;
+                        fill: transparent;
+                    }
+
+                    &:hover {
+                        svg {
+                            path {
                                 fill: $primary-color;
                             }
                         }
@@ -1526,13 +1548,13 @@ a{
             justify-content: center;
             margin-top: 15px;
             padding: 15px 0;
-            border-top: 1px solid #3B3B3B;
+            border-top: 1px solid #3b3b3b;
         }
     }
 
-    @media(max-width: 991px){
-        &.-card{
-            .featured-img-block{
+    @media (max-width: 991px) {
+        &.-card {
+            .featured-img-block {
                 height: 200px;
             }
         }
@@ -1541,48 +1563,46 @@ a{
 
 /* ====================== Home Page ====================== */
 
-
-.home{
+.home {
     background-color: $secondary-color;
 
-    .hero-slider-section{
-
+    .hero-slider-section {
         // Home - Hero Banner //
 
-        .splide{
-            .splide__slide{
+        .splide {
+            .splide__slide {
                 min-height: 600px;
-                
-                &.--slide-01{
+
+                &.--slide-01 {
                     background: url(../images/hero-banner-home.png) center center;
                     background-size: cover;
                 }
 
-                &.--slide-02{
+                &.--slide-02 {
                     background: url(../images/hero-banner-home.png) center center;
                     background-size: cover;
                 }
 
-                &.--slide-03{
+                &.--slide-03 {
                     background: url(../images/hero-banner-home.png) center center;
                     background-size: cover;
                 }
             }
 
-            .splide__arrows{
-                .splide__arrow{
+            .splide__arrows {
+                .splide__arrow {
                     opacity: 1;
                     background: transparent;
 
-                    .arrow-left{
+                    .arrow-left {
                         width: 100px;
                     }
 
-                    &--prev{
+                    &--prev {
                         left: 13%;
                     }
 
-                    &--next{
+                    &--next {
                         right: 13%;
                     }
                 }
@@ -1592,35 +1612,35 @@ a{
 
     // Home - Sub Hero //
 
-    .sub-hero-section{
+    .sub-hero-section {
         background: url(../images/sub-hero.png) center bottom;
         background-size: cover;
         padding: 1rem 0;
         background-color: $secondary-color;
 
-        .grid-block{
+        .grid-block {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
             gap: 20px;
 
-            .grid-item{
+            .grid-item {
                 display: flex;
                 justify-content: center;
 
-                .title-sub-hero{
+                .title-sub-hero {
                     font-size: 18px;
                     color: $accent-color;
                 }
 
-                img{
+                img {
                     margin-right: 15px;
                     width: 50px;
                 }
             }
         }
 
-        @media(max-width: 991px){
-            .grid-block{
+        @media (max-width: 991px) {
+            .grid-block {
                 .grid-item {
                     display: flex;
                     flex-direction: column;
@@ -1628,14 +1648,14 @@ a{
                     align-items: center;
                     text-align: center;
 
-                    .title-sub-hero{
+                    .title-sub-hero {
                         margin: 0;
                         font-size: 16px;
                         font-weight: normal;
                         line-height: 1.3em;
                     }
 
-                    img{
+                    img {
                         height: 75px;
                         margin: 0;
                     }
@@ -1646,17 +1666,17 @@ a{
 
     // Home - Kickoff //
 
-    .kick-off-section{
+    .kick-off-section {
         padding: 2rem 0;
 
-        .kick-off-block{
+        .kick-off-block {
             width: 100%;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
 
-            .title-kick-off{
+            .title-kick-off {
                 color: $accent-color;
                 font-size: 24px;
             }
@@ -1684,15 +1704,15 @@ a{
             }
         }
 
-        @media(max-width: 991px){
-            .kick-off-block{
+        @media (max-width: 991px) {
+            .kick-off-block {
                 padding: 0;
 
-                .banner-kick-off{
+                .banner-kick-off {
                     background: url(../images/kickoff-bg-mb.png) center center;
                     background-size: cover;
 
-                    .left-block{
+                    .left-block {
                         width: 50%;
                         padding-left: 20px;
                     }
@@ -1703,15 +1723,15 @@ a{
 
     // Home - New Releases Slider //
 
-    .new-releases-section{
-        .new-releases-block{
-            .title-new-releases{
+    .new-releases-section {
+        .new-releases-block {
+            .title-new-releases {
                 color: $primary-color;
                 font-size: 26px;
             }
 
-            #card-slider{
-                .splide__arrows{
+            #card-slider {
+                .splide__arrows {
                     .splide__arrow--prev {
                         left: -4rem;
                         background-color: transparent;
@@ -1723,22 +1743,22 @@ a{
                     }
                 }
 
-                .splide__pagination{
+                .splide__pagination {
                     display: none;
                 }
             }
         }
 
-        @media(max-width: 991px){
-            .new-releases-block{
+        @media (max-width: 991px) {
+            .new-releases-block {
                 padding-right: 0;
 
-                .title-new-releases{
+                .title-new-releases {
                     text-align: center;
                 }
-    
-                #card-slider{
-                    .splide__arrows{
+
+                #card-slider {
+                    .splide__arrows {
                         display: none;
                     }
                 }
@@ -1753,7 +1773,7 @@ a{
         background: url(../images/bg-hot-product.png) center center;
         background-size: cover;
 
-        .hot-product-block{
+        .hot-product-block {
             .title-hot-product {
                 text-align: center;
                 color: $primary-color;
@@ -1761,42 +1781,42 @@ a{
                 margin-bottom: 2rem;
             }
 
-            &.g-container{
+            &.g-container {
                 max-width: 1000px;
 
-                #card-hot-slider{
-                    .post-items.-card{
-                        background:url(../images/bg-loop.png) center center;
+                #card-hot-slider {
+                    .post-items.-card {
+                        background: url(../images/bg-loop.png) center center;
                         background-size: cover;
                         padding: 15px;
                     }
 
-                    .splide__arrows{
+                    .splide__arrows {
                         .splide__arrow--prev {
                             left: -4rem;
                             background-color: transparent;
                         }
-    
+
                         .splide__arrow--next {
                             right: -4rem;
                             background-color: transparent;
                         }
                     }
 
-                    .splide__pagination{
+                    .splide__pagination {
                         display: none;
                     }
                 }
             }
         }
 
-        @media(max-width: 991px){
-            .hot-product-block{
+        @media (max-width: 991px) {
+            .hot-product-block {
                 padding-right: 0;
             }
 
-            #card-hot-slider{
-                .splide__arrows{
+            #card-hot-slider {
+                .splide__arrows {
                     display: none;
                 }
             }
@@ -1805,73 +1825,73 @@ a{
 
     // Home - Categories //
 
-    .categories-section{
+    .categories-section {
         padding: 4rem 0;
 
-        .categories-block{
-            .title-categories{
+        .categories-block {
+            .title-categories {
                 color: $primary-color;
                 font-size: 26px;
                 margin-bottom: 2rem;
             }
 
-            .grid-block{
+            .grid-block {
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr 1fr;
                 gap: 20px;
 
-                .grid-item{
-                    &:first-child{
-                        .img-cate-block{
+                .grid-item {
+                    &:first-child {
+                        .img-cate-block {
                             height: 400px;
                         }
                     }
 
-                    .img-cate-block{
+                    .img-cate-block {
                         height: 170px;
                         overflow: hidden;
 
-                        &:hover{
-                            .img-cate{
+                        &:hover {
+                            .img-cate {
                                 transform: scale(1.15);
                             }
                         }
 
-                        .img-cate{
+                        .img-cate {
                             height: 100%;
-                            transition: all .5s ease-in-out;
+                            transition: all 0.5s ease-in-out;
 
-                            &.-cate1{
+                            &.-cate1 {
                                 background: url(../images/arigear.png) center center;
                                 background-size: cover;
                             }
 
-                            &.-cate2{
+                            &.-cate2 {
                                 background: url(../images/nike.png) center center;
                                 background-size: cover;
                             }
 
-                            &.-cate3{
+                            &.-cate3 {
                                 background: url(../images/shirt-premiere-league.png) center center;
                                 background-size: cover;
                             }
 
-                            &.-cate4{
+                            &.-cate4 {
                                 background: url(../images/adidas.png) center center;
                                 background-size: cover;
                             }
 
-                            &.-cate5{
+                            &.-cate5 {
                                 background: url(../images/sale30.png) center center;
                                 background-size: cover;
                             }
 
-                            &.-cate6{
+                            &.-cate6 {
                                 background: url(../images/black-friday-week.png) center center;
                                 background-size: cover;
                             }
 
-                            &.-cate7{
+                            &.-cate7 {
                                 background: url(../images/shirt-thai-league.png) center center;
                                 background-size: cover;
                             }
@@ -1881,7 +1901,7 @@ a{
             }
         }
 
-        @media(max-width: 991px){
+        @media (max-width: 991px) {
             .categories-block {
                 .grid-block {
                     grid-template-columns: 1fr 1fr;
@@ -1910,24 +1930,24 @@ a{
 
     // Home - Ari X //
 
-    .ari-x-section{
-        .ari-x-block{
-            .grid-block{
+    .ari-x-section {
+        .ari-x-block {
+            .grid-block {
                 display: grid;
                 grid-template-columns: 1fr 1fr;
                 gap: 30px;
 
-                .grid-item{
+                .grid-item {
                     min-height: 45vh;
                     display: flex;
                     align-items: center;
 
-                    &.-item1{
+                    &.-item1 {
                         background: url(../images/bg-ari-x-burirum.png) center center;
                         background-size: cover;
                     }
 
-                    &.-item2{
+                    &.-item2 {
                         background: url(../images/bg-ari-x-true.png) center center;
                         background-size: cover;
                     }
@@ -1936,21 +1956,21 @@ a{
                         max-width: 450px;
                         width: 100%;
                         margin: 0 auto;
-                        font-family: 'Agency FB';
+                        font-family: "Agency FB";
                         padding: 0 20px;
 
-                        h2.title-ari-x{
+                        h2.title-ari-x {
                             font-size: 32px;
                             color: $accent-color;
                             margin: 2rem 0;
                             margin-top: 1rem;
-                            font-family: 'Agency FB';
+                            font-family: "Agency FB";
                         }
 
-                        .btn-border{
+                        .btn-border {
                             border: 1px solid $accent-color;
 
-                            &:hover{
+                            &:hover {
                                 border: 1px solid $accent-color;
                                 background-color: $accent-color;
                                 color: #000;
@@ -1961,9 +1981,9 @@ a{
             }
         }
 
-        @media (max-width: 991px){
-            .ari-x-block{
-                .grid-block{
+        @media (max-width: 991px) {
+            .ari-x-block {
+                .grid-block {
                     grid-template-columns: 1fr;
 
                     .grid-item {
@@ -1982,44 +2002,44 @@ a{
 
     // Home - News //
 
-    .news-section{
+    .news-section {
         padding: 4rem 0;
-        
-        .title-news{
+
+        .title-news {
             color: $primary-color;
             font-size: 26px;
             margin-bottom: 2rem;
         }
 
-        .news-block{
-            .grid-block{
+        .news-block {
+            .grid-block {
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr 1fr;
                 gap: 25px;
 
-                .grid-item{
-                    .featured-img-block{
+                .grid-item {
+                    .featured-img-block {
                         height: 170px;
                         overflow: hidden;
 
-                        &:hover{
-                            .featured-img{
+                        &:hover {
+                            .featured-img {
                                 transform: scale(1.15);
                             }
                         }
 
-                        .featured-img{
+                        .featured-img {
                             height: 100%;
-                            transition: all .5s ease-in-out;
+                            transition: all 0.5s ease-in-out;
                         }
                     }
 
                     .title-item {
-                        .title{
+                        .title {
                             font-size: 16px;
                             display: -webkit-box;
                             -webkit-line-clamp: 3;
-                            -webkit-box-orient: vertical;  
+                            -webkit-box-orient: vertical;
                             overflow: hidden;
                             height: 60px;
                         }
@@ -2028,14 +2048,14 @@ a{
             }
         }
 
-        .read-more-block{
+        .read-more-block {
             display: flex;
             justify-content: center;
             align-items: center;
             margin-top: 2rem;
 
-            .btn-border{
-                font-family: 'Prachason';
+            .btn-border {
+                font-family: "Prachason";
                 border: 1px solid $accent-color;
                 border-radius: 5px;
                 width: 15%;
@@ -2045,7 +2065,7 @@ a{
                     margin-bottom: 2px;
                 }
 
-                &:hover{
+                &:hover {
                     border: 1px solid $accent-color;
                     background-color: $accent-color;
                     color: #000;
@@ -2053,14 +2073,14 @@ a{
             }
         }
 
-        @media(max-width: 991px){
+        @media (max-width: 991px) {
             .news-block {
                 .grid-block {
                     grid-template-columns: 1fr;
                     gap: 15px;
 
-                    .grid-item{
-                        .featured-img-block{
+                    .grid-item {
+                        .featured-img-block {
                             height: 200px;
                         }
                     }
@@ -2077,8 +2097,8 @@ a{
 
     // Home - Video Presentation //
 
-    .video-present-section{
-        .video-present-block{
+    .video-present-section {
+        .video-present-block {
             .index-video-wrapper {
                 height: 100%;
                 width: 100%;
@@ -2099,13 +2119,13 @@ a{
                     text-indent: -999em;
                     overflow: hidden;
                     opacity: 1;
-                    transition: opacity 800ms,height 0s;
-                    transition-delay: 0s,0s;
+                    transition: opacity 800ms, height 0s;
+                    transition-delay: 0s, 0s;
                     border-radius: 0;
                     z-index: 2;
 
                     &::after {
-                        content: '';
+                        content: "";
                         position: absolute;
                         top: 45.8%;
                         left: 50.3%;
@@ -2133,13 +2153,13 @@ a{
             }
         }
 
-        @media(max-width: 991px){
+        @media (max-width: 991px) {
             .video-present-block {
                 .index-video-wrapper {
                     .playpause {
                         height: 26%;
-                        
-                        &::before{
+
+                        &::before {
                             top: 50%;
                             left: 52%;
                             width: 65px;
@@ -2147,7 +2167,7 @@ a{
                             border: 3px solid #fff;
                         }
 
-                        &::after{
+                        &::after {
                             top: 40%;
                             left: 51%;
                             border-left: 25px solid #fff;
@@ -2162,14 +2182,14 @@ a{
 
     // Home - Partner //
 
-    .partner-section{
+    .partner-section {
         padding: 4rem 0;
         background: url(../images/bg-partner.png) center center;
         background-size: cover;
 
-        .partner-block{
-            #card-partner-slider{
-                .slider-partner{
+        .partner-block {
+            #card-partner-slider {
+                .slider-partner {
                     .grid-block {
                         display: grid;
                         gap: 20px;
@@ -2193,29 +2213,29 @@ a{
                     }
                 }
 
-                .splide__arrows{
+                .splide__arrows {
                     display: none;
                 }
 
-                .splide__pagination{
+                .splide__pagination {
                     bottom: -3rem;
                 }
             }
         }
 
-        @media(max-width: 991px){
+        @media (max-width: 991px) {
             .partner-block {
                 #card-partner-slider {
                     .slider-partner {
-                        .grid-block{
-                            &.-top{
+                        .grid-block {
+                            &.-top {
                                 display: flex;
                                 flex-wrap: wrap;
                                 width: 100%;
                                 justify-content: center;
                             }
 
-                            &.-bottom{
+                            &.-bottom {
                                 display: flex;
                                 flex-wrap: wrap;
                                 width: 100%;
@@ -2230,17 +2250,17 @@ a{
 
     // Home - Subscibe //
 
-    .subscibe-section{
+    .subscibe-section {
         padding: 2rem 0;
-        background-color: #2B2B2B;
+        background-color: #2b2b2b;
 
-        .subscibe-block{
+        .subscibe-block {
             display: flex;
             justify-content: center;
 
-            .title-subscibe{
+            .title-subscibe {
                 margin-right: 1rem;
-                font-family: 'Agency FB';
+                font-family: "Agency FB";
                 font-weight: bold;
                 font-size: 18px;
                 color: $accent-color;
@@ -2248,11 +2268,11 @@ a{
                 align-items: center;
             }
 
-            .sub-form{
+            .sub-form {
                 width: 40%;
                 display: flex;
 
-                .inp-sub{
+                .inp-sub {
                     width: 65%;
                     height: 30px;
                     padding: 5px 15px;
@@ -2260,13 +2280,13 @@ a{
                     border-radius: 0;
                 }
 
-                .btn-submit{
+                .btn-submit {
                     background-color: #191919;
                     font-size: 18px;
-                    font-family: 'Agency FB';
+                    font-family: "Agency FB";
                     font-weight: bold;
                     color: $accent-color;
-                    border:0;
+                    border: 0;
                     border-radius: 0;
                     padding: 7px 25px;
                     cursor: pointer;
@@ -2274,22 +2294,22 @@ a{
             }
         }
 
-        @media(max-width: 991px){
+        @media (max-width: 991px) {
             .subscibe-block {
                 flex-direction: column;
-     
-                .title-subscibe{
-                     margin-right: 0 !important;
+
+                .title-subscibe {
+                    margin-right: 0 !important;
                     margin-bottom: 10px;
                     justify-content: center;
                 }
-     
-                .sub-form{
+
+                .sub-form {
                     width: 100%;
                     justify-content: center;
                 }
             }
-         }
+        }
     }
 }
 
@@ -2300,63 +2320,63 @@ footer.main-footer {
     padding: 4rem 0;
     padding-bottom: 1rem;
 
-    .main-footer-block{
+    .main-footer-block {
         .grid-block {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
             gap: 25px;
-    
-            .grid-item{
-                .m-list{
-                    li{
+
+            .grid-item {
+                .m-list {
+                    li {
                         display: grid;
-                        grid-template-columns: .2fr 1fr;
+                        grid-template-columns: 0.2fr 1fr;
                         gap: 15px;
                         justify-items: center;
-    
-                        .content-r{
-                            a{
+
+                        .content-r {
+                            a {
                                 font-size: 18px;
                                 font-weight: bold;
                                 text-decoration: underline;
-                                font-family: 'Agency FB';
+                                font-family: "Agency FB";
                             }
-    
-                            p{
+
+                            p {
                                 margin: 0;
                                 margin-top: 5px;
                                 color: $accent-color;
-                                font-family: 'Agency FB';
+                                font-family: "Agency FB";
                             }
                         }
                     }
                 }
-    
-                h5{
+
+                h5 {
                     margin: 0;
                     margin-top: 30px;
                     font-size: 16px;
                     color: $primary-color;
                 }
-    
-                .menu-ft{
-                    li{
+
+                .menu-ft {
+                    li {
                         margin: 7px 0;
                     }
                 }
-    
+
                 ul.social-icon-block {
                     columns: 4;
-    
-                    .social-icon{
+
+                    .social-icon {
                         display: flex;
                         justify-content: center;
                         align-items: center;
-    
-                        a{
+
+                        a {
                             width: 100%;
-                            
-                            img{
+
+                            img {
                                 width: 85%;
                             }
                         }
@@ -2364,55 +2384,55 @@ footer.main-footer {
                 }
             }
 
-            .acc.-mb{
+            .acc.-mb {
                 display: none;
             }
         }
     }
 
-    .bottom-ft{
+    .bottom-ft {
         padding: 1rem 20px;
 
-        p{
+        p {
             margin: 0;
             text-align: center;
             color: $accent-color;
-            font-family: 'Agency FB';
+            font-family: "Agency FB";
         }
     }
 
-    @media(max-width: 991px){
+    @media (max-width: 991px) {
         .main-footer-block {
             .grid-block {
                 grid-template-columns: 1fr;
                 gap: 0;
 
                 .grid-item {
-                    &:first-child{
+                    &:first-child {
                         display: flex;
                         flex-direction: column;
                         justify-content: center;
                         align-items: center;
                     }
 
-                    &:nth-child(2){
-                        display: none;
-                    }
-                    
-                    &:nth-child(3){
-                        display: none;
-                    }
-                    
-                    &:nth-child(4){
+                    &:nth-child(2) {
                         display: none;
                     }
 
-                    &:last-child{
+                    &:nth-child(3) {
+                        display: none;
+                    }
+
+                    &:nth-child(4) {
+                        display: none;
+                    }
+
+                    &:last-child {
                         display: flex;
                         flex-direction: column;
                         align-items: center;
 
-                        img{
+                        img {
                             width: 40%;
                         }
 
@@ -2422,13 +2442,13 @@ footer.main-footer {
                     }
                 }
 
-                .acc.-mb{
+                .acc.-mb {
                     display: block;
 
-                    .acc__panel{
+                    .acc__panel {
                         ul {
-                            li{
-                                a{
+                            li {
+                                a {
                                     padding: 7px 0;
                                     display: block;
                                 }
@@ -2443,54 +2463,55 @@ footer.main-footer {
 
 /* ====================== Football Shoes Page ====================== */
 
-.football-shoes-product{
+.football-shoes-product {
     background-color: $secondary-color;
 
     // Football Shoes Page - Hero Banner //
 
-    .hero-slider-section{
-        .splide{
-            .splide__slide{
+    .hero-slider-section {
+        .splide {
+            .splide__slide {
                 min-height: 600px;
 
-                .g-container{
+                .g-container {
                     max-width: 60vw;
                     height: 100%;
                     display: flex;
                     align-items: center;
 
-                    .grid-block{
-                        .grid-item{
-                            h2{
-                                margin:0;
+                    .grid-block {
+                        .grid-item {
+                            h2 {
+                                margin: 0;
                                 margin-top: 10px;
                                 font-size: 26px;
                             }
                         }
                     }
                 }
-                
-                &.--slide-01{
+
+                &.--slide-01 {
                     background: url(../images/football-shoes-slider.png) center center;
                     background-size: cover;
                 }
 
-                &.--slide-02{
+                &.--slide-02 {
                     background: url(../images/football-shoes-slider.png) center center;
                     background-size: cover;
                 }
 
-                &.--slide-03{
+                &.--slide-03 {
                     background: url(../images/football-shoes-slider.png) center center;
                     background-size: cover;
                 }
-                
-                h2, img{
+
+                h2,
+                img {
                     position: relative;
                     z-index: 2;
                 }
 
-                .overlay{
+                .overlay {
                     display: block !important;
                     max-width: 60%;
                     transition: max-height 0.15s ease-out;
@@ -2500,70 +2521,70 @@ footer.main-footer {
                     bottom: 0;
                     right: 0;
                     left: 0;
-                    background: linear-gradient(270deg, rgba(22,22,22,0) 0%, rgba(22,22,22,1) 100%);
-                    transition: all height .5s ease-in-out;
+                    background: linear-gradient(270deg, rgba(22, 22, 22, 0) 0%, rgba(22, 22, 22, 1) 100%);
+                    transition: all height 0.5s ease-in-out;
                 }
             }
 
-            .splide__arrows{
-                .splide__arrow{
+            .splide__arrows {
+                .splide__arrow {
                     opacity: 1;
                     background: transparent;
 
-                    .arrow-left{
+                    .arrow-left {
                         width: 100px;
                     }
 
-                    &--prev{
+                    &--prev {
                         left: 13%;
                     }
 
-                    &--next{
+                    &--next {
                         right: 13%;
                     }
                 }
             }
         }
 
-        @media(max-width: 991px){
-            .splide{
-                .splide__slide{
+        @media (max-width: 991px) {
+            .splide {
+                .splide__slide {
                     min-height: 320px;
 
-                    .g-container{
+                    .g-container {
                         max-width: 1160px;
                     }
-                    
-                    &.--slide-01{
+
+                    &.--slide-01 {
                         background: url(../images/hero-bg-slider-mb-01.png) center center;
                         background-size: cover;
                     }
-    
-                    &.--slide-02{
+
+                    &.--slide-02 {
                         background: url(../images/hero-bg-slider-mb-01.png) center center;
                         background-size: cover;
                     }
-    
-                    &.--slide-03{
+
+                    &.--slide-03 {
                         background: url(../images/hero-bg-slider-mb-01.png) center center;
                         background-size: cover;
                     }
                 }
-    
-                .splide__arrows{
-                    .splide__arrow{
+
+                .splide__arrows {
+                    .splide__arrow {
                         opacity: 1;
                         background: transparent;
-    
-                        .arrow-left{
+
+                        .arrow-left {
                             width: 100px;
                         }
-    
-                        &--prev{
+
+                        &--prev {
                             left: 13%;
                         }
-    
-                        &--next{
+
+                        &--next {
                             right: 13%;
                         }
                     }
@@ -2571,25 +2592,25 @@ footer.main-footer {
             }
         }
     }
-    
-    // Football Shoes Page - Collection //    
 
-    .collection-section{
+    // Football Shoes Page - Collection //
+
+    .collection-section {
         padding: 4rem 0;
 
-        .collection-block{
-            .grid-block{
+        .collection-block {
+            .grid-block {
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr;
                 gap: 25px;
 
-                .grid-item{
+                .grid-item {
                     position: relative;
 
-                    a{
-                        &:hover{
+                    a {
+                        &:hover {
                             .collection {
-                                .overlay{
+                                .overlay {
                                     max-height: 100%;
                                     transition: max-height 0.25s ease-in;
                                 }
@@ -2598,17 +2619,17 @@ footer.main-footer {
                                     margin-bottom: 10rem;
                                     color: $primary-color;
                                 }
-                            } 
+                            }
                         }
                     }
 
-                    .collection{
+                    .collection {
                         min-height: 350px;
                         display: flex;
                         justify-content: center;
                         align-items: flex-end;
-                        transition: .5s;
-                
+                        transition: 0.5s;
+
                         &.-phantom-gt {
                             background: url(../images/PHANTOM-GT-Collection.png) center center;
                             background-size: cover;
@@ -2628,14 +2649,14 @@ footer.main-footer {
                             width: 100%;
                             text-align: center;
                             font-size: 26px;
-                            font-family: 'Agency FB';
+                            font-family: "Agency FB";
                             z-index: 1;
                             margin-bottom: 2rem;
-                            transition: .5s;
+                            transition: 0.5s;
                             text-transform: uppercase;
                         }
 
-                        .overlay{
+                        .overlay {
                             max-height: 40%;
                             transition: max-height 0.15s ease-out;
                             height: 100%;
@@ -2643,23 +2664,23 @@ footer.main-footer {
                             bottom: 0;
                             right: 0;
                             left: 0;
-                            background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
-                            transition: all height .5s ease-in-out;
+                            background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+                            transition: all height 0.5s ease-in-out;
                         }
                     }
                 }
             }
         }
 
-        @media(max-width: 991px){
+        @media (max-width: 991px) {
             padding: 2rem 0;
 
-            .collection-block{
+            .collection-block {
                 .title-collection {
                     text-align: center;
                 }
 
-                .grid-block{
+                .grid-block {
                     grid-template-columns: 1fr;
                 }
             }
@@ -2671,27 +2692,27 @@ footer.main-footer {
     .hot-product-section {
         padding: 4rem 0;
 
-        .hot-product-block{
+        .hot-product-block {
             .title-hot-product {
                 font-size: 26px;
                 margin-bottom: 1rem;
             }
 
-            &.g-container{
-                #shoes-hot-slider{
-                    .splide__arrows{
+            &.g-container {
+                #shoes-hot-slider {
+                    .splide__arrows {
                         .splide__arrow--prev {
                             left: -4rem;
                             background-color: transparent;
                         }
-    
+
                         .splide__arrow--next {
                             right: -4rem;
                             background-color: transparent;
                         }
                     }
 
-                    .splide__pagination{
+                    .splide__pagination {
                         display: none;
                     }
                 }
@@ -2703,17 +2724,17 @@ footer.main-footer {
                 align-items: center;
                 margin-top: 1rem;
 
-                .btn-border{
+                .btn-border {
                     border: 1px solid #fff;
                     width: auto;
                     display: block;
                     padding: 10px 3rem;
                     border-radius: 5px;
-                    font-family: 'Prachason';
+                    font-family: "Prachason";
                     font-size: 16px;
                     font-weight: normal;
 
-                    &:hover{
+                    &:hover {
                         background-color: $accent-color;
                         color: #000;
                     }
@@ -2721,10 +2742,10 @@ footer.main-footer {
             }
         }
 
-        @media(max-width: 991px){
+        @media (max-width: 991px) {
             padding: 0;
 
-            .hot-product-block{
+            .hot-product-block {
                 padding-right: 0;
 
                 .title-hot-product {
@@ -2732,33 +2753,33 @@ footer.main-footer {
                 }
             }
 
-            #shoes-hot-slider{
-                .splide__arrows{
+            #shoes-hot-slider {
+                .splide__arrows {
                     display: none;
                 }
             }
         }
     }
 
-    // Football Shoes Page - Categories of Shoes // 
+    // Football Shoes Page - Categories of Shoes //
 
-    .cate-shoes-section{
+    .cate-shoes-section {
         padding: 4rem 0;
         padding-top: 1rem;
 
-        .cate-shoes-block{
-            .grid-block{
+        .cate-shoes-block {
+            .grid-block {
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr 1fr;
                 gap: 25px;
 
-                .grid-item{
+                .grid-item {
                     position: relative;
 
-                    a{
-                        &:hover{
+                    a {
+                        &:hover {
                             .cate-shoes {
-                                .overlay{
+                                .overlay {
                                     max-height: 100%;
                                     transition: max-height 0.25s ease-in;
                                 }
@@ -2767,17 +2788,17 @@ footer.main-footer {
                                     margin-bottom: 11rem;
                                     color: $primary-color;
                                 }
-                            } 
+                            }
                         }
                     }
 
-                    .cate-shoes{
+                    .cate-shoes {
                         min-height: 380px;
                         display: flex;
                         justify-content: center;
                         align-items: flex-end;
-                        transition: .5s;
-                
+                        transition: 0.5s;
+
                         &.-football-shoes {
                             background: url(../images/football-shoes-cate.png) center center;
                             background-size: cover;
@@ -2802,14 +2823,14 @@ footer.main-footer {
                             width: 100%;
                             text-align: center;
                             font-size: 20px;
-                            font-family: 'Prachason';
+                            font-family: "Prachason";
                             z-index: 1;
                             margin-bottom: 2rem;
-                            transition: .5s;
+                            transition: 0.5s;
                             text-transform: uppercase;
                         }
 
-                        .overlay{
+                        .overlay {
                             max-height: 40%;
                             transition: max-height 0.15s ease-out;
                             height: 100%;
@@ -2817,26 +2838,26 @@ footer.main-footer {
                             bottom: 0;
                             right: 0;
                             left: 0;
-                            background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
-                            transition: all height .5s ease-in-out;
+                            background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+                            transition: all height 0.5s ease-in-out;
                         }
                     }
                 }
             }
         }
 
-        @media(max-width: 991px){
+        @media (max-width: 991px) {
             padding: 2rem 0;
 
-            .cate-shoes-block{
-                .title-cate-shoes{
+            .cate-shoes-block {
+                .title-cate-shoes {
                     text-align: center;
                 }
 
-                .grid-block{
+                .grid-block {
                     grid-template-columns: 1fr;
-    
-                    .grid-item{
+
+                    .grid-item {
                         position: relative;
                     }
                 }
@@ -2850,18 +2871,17 @@ footer.main-footer {
         padding: 4rem 0;
         padding-bottom: 8rem;
 
-        .brand-block{
+        .brand-block {
             .title-brand {
                 font-size: 26px;
                 margin-bottom: 1rem;
             }
 
-            
-            #brand-slider{
-                .splide__arrows{
+            #brand-slider {
+                .splide__arrows {
                     position: relative;
                     margin-top: 3rem;
-                    &.g-container{
+                    &.g-container {
                         max-width: 1100px;
 
                         .splide__arrow--prev {
@@ -2869,22 +2889,22 @@ footer.main-footer {
                             left: unset;
                             background-color: transparent;
                         }
-    
+
                         .splide__arrow--next {
                             background-color: transparent;
-                        }   
+                        }
                     }
                 }
 
-                .splide__pagination{
+                .splide__pagination {
                     display: none;
                 }
             }
 
             a {
-                &:hover{
+                &:hover {
                     .slider-brand {
-                        .overlay{
+                        .overlay {
                             max-height: 100%;
                             transition: max-height 0.25s ease-in;
                         }
@@ -2892,7 +2912,7 @@ footer.main-footer {
                         img {
                             margin-bottom: 10rem;
                         }
-                    } 
+                    }
                 }
             }
 
@@ -2903,38 +2923,38 @@ footer.main-footer {
                     justify-content: center;
                     align-items: flex-end;
 
-                    &.-brand-01{
+                    &.-brand-01 {
                         background: url(../images/brand-01.png) center center;
                         background-size: cover;
                     }
 
-                    &.-brand-02{
+                    &.-brand-02 {
                         background: url(../images/brand-02.png) center center;
                         background-size: cover;
                     }
 
-                    &.-brand-03{
+                    &.-brand-03 {
                         background: url(../images/brand-03.png) center center;
                         background-size: cover;
                     }
 
-                    &.-brand-04{
+                    &.-brand-04 {
                         background: url(../images/brand-04.png) center center;
                         background-size: cover;
                     }
 
-                    &.-brand-05{
+                    &.-brand-05 {
                         background: url(../images/brand-05.png) center center;
                         background-size: cover;
                     }
 
-                    img{
+                    img {
                         z-index: 2;
                         margin-bottom: 3rem;
-                        transition: .5s;
+                        transition: 0.5s;
                     }
 
-                    .overlay{
+                    .overlay {
                         max-height: 40%;
                         transition: max-height 0.15s ease-out;
                         height: 100%;
@@ -2942,8 +2962,8 @@ footer.main-footer {
                         bottom: 0;
                         right: 0;
                         left: 0;
-                        background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
-                        transition: all height .5s ease-in-out;
+                        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+                        transition: all height 0.5s ease-in-out;
                     }
                 }
             }
@@ -2954,17 +2974,17 @@ footer.main-footer {
                 align-items: center;
                 margin-top: 1rem;
 
-                .btn-border{
+                .btn-border {
                     border: 1px solid #fff;
                     width: auto;
                     display: block;
                     padding: 10px 3rem;
                     border-radius: 5px;
-                    font-family: 'Prachason';
+                    font-family: "Prachason";
                     font-size: 16px;
                     font-weight: normal;
 
-                    &:hover{
+                    &:hover {
                         background-color: $accent-color;
                         color: #000;
                     }
@@ -2972,19 +2992,19 @@ footer.main-footer {
             }
         }
 
-        @media(max-width: 991px){
-            .brand-block{
+        @media (max-width: 991px) {
+            .brand-block {
                 padding-right: 0;
             }
 
-            #card-hot-slider{
-                .brand__arrows{
+            #card-hot-slider {
+                .brand__arrows {
                     display: none;
                 }
             }
         }
 
-        @media(max-width: 991px){
+        @media (max-width: 991px) {
             padding: 0;
             padding-bottom: 4rem;
         }
@@ -2993,59 +3013,60 @@ footer.main-footer {
 
 /* ====================== Goalkeeper Device Page ====================== */
 
-.goalkeeper-device-page{
+.goalkeeper-device-page {
     background-color: $secondary-color;
 
     // Goalkeeper Device Page - Hero Banner //
 
-    .hero-slider-section{
-        .splide{
-            .splide__slide{
+    .hero-slider-section {
+        .splide {
+            .splide__slide {
                 min-height: 600px;
 
-                .g-container{
+                .g-container {
                     max-width: 60vw;
                     height: 100%;
                     display: flex;
                     align-items: center;
 
-                    .grid-block{
-                        .grid-item{
+                    .grid-block {
+                        .grid-item {
                             display: flex;
                             flex-direction: column;
                             justify-content: flex-start;
                             align-items: flex-start;
 
-                            h2{
-                                margin:0;
+                            h2 {
+                                margin: 0;
                                 margin-top: 10px;
                                 font-size: 26px;
                             }
                         }
                     }
                 }
-                
-                &.--slide-01{
+
+                &.--slide-01 {
                     background: url(../images/goalkeeper-device-slider.png) center center;
                     background-size: cover;
                 }
 
-                &.--slide-02{
+                &.--slide-02 {
                     background: url(../images/goalkeeper-device-slider.png) center center;
                     background-size: cover;
                 }
 
-                &.--slide-03{
+                &.--slide-03 {
                     background: url(../images/goalkeeper-device-slider.png) center center;
                     background-size: cover;
                 }
 
-                h2, img{
+                h2,
+                img {
                     position: relative;
                     z-index: 2;
                 }
 
-                .btn-border{
+                .btn-border {
                     display: block;
                     position: relative;
                     z-index: 2;
@@ -3053,18 +3074,18 @@ footer.main-footer {
                     border: 1px solid #fff;
                     padding: 7px 4rem;
                     border-radius: 5px;
-                    font-family: 'Prachason';
+                    font-family: "Prachason";
                     font-size: 16px;
                     margin: 0;
                     margin-top: 10px;
 
-                    &:hover{
+                    &:hover {
                         background-color: $accent-color;
                         color: #000;
                     }
                 }
-                
-                .overlay{
+
+                .overlay {
                     max-width: 60%;
                     transition: max-height 0.15s ease-out;
                     width: 100%;
@@ -3073,74 +3094,74 @@ footer.main-footer {
                     bottom: 0;
                     right: 0;
                     left: 0;
-                    background: linear-gradient(270deg, rgba(22,22,22,0) 0%, rgba(22,22,22,1) 100%);
-                    transition: all height .5s ease-in-out;
+                    background: linear-gradient(270deg, rgba(22, 22, 22, 0) 0%, rgba(22, 22, 22, 1) 100%);
+                    transition: all height 0.5s ease-in-out;
                 }
             }
 
-            .splide__arrows{
-                .splide__arrow{
+            .splide__arrows {
+                .splide__arrow {
                     opacity: 1;
                     background: transparent;
 
-                    .arrow-left{
+                    .arrow-left {
                         width: 100px;
                     }
 
-                    &--prev{
+                    &--prev {
                         left: 13%;
                     }
 
-                    &--next{
+                    &--next {
                         right: 13%;
                     }
                 }
             }
         }
 
-        @media(max-width: 991px){
-            .splide{
-                .splide__slide{
+        @media (max-width: 991px) {
+            .splide {
+                .splide__slide {
                     min-height: 320px;
 
-                    .g-container{
+                    .g-container {
                         max-width: 1160px;
                     }
-                    
-                    &.--slide-01{
-                        background: url(/images/goalkeeper-device-slider-mb-01.png) center center;
-                        background-size: cover;
-                    }
-    
-                    &.--slide-02{
-                        background: url(/images/goalkeeper-device-slider-mb-01.png) center center;
-                        background-size: cover;
-                    }
-    
-                    &.--slide-03{
+
+                    &.--slide-01 {
                         background: url(/images/goalkeeper-device-slider-mb-01.png) center center;
                         background-size: cover;
                     }
 
-                    h2{
+                    &.--slide-02 {
+                        background: url(/images/goalkeeper-device-slider-mb-01.png) center center;
+                        background-size: cover;
+                    }
+
+                    &.--slide-03 {
+                        background: url(/images/goalkeeper-device-slider-mb-01.png) center center;
+                        background-size: cover;
+                    }
+
+                    h2 {
                         font-size: 22px !important;
                     }
                 }
-    
-                .splide__arrows{
-                    .splide__arrow{
+
+                .splide__arrows {
+                    .splide__arrow {
                         opacity: 1;
                         background: transparent;
-    
-                        .arrow-left{
+
+                        .arrow-left {
                             width: 100px;
                         }
-    
-                        &--prev{
+
+                        &--prev {
                             left: 13%;
                         }
-    
-                        &--next{
+
+                        &--next {
                             right: 13%;
                         }
                     }
@@ -3148,25 +3169,25 @@ footer.main-footer {
             }
         }
     }
-    
-    // Goalkeeper Page - Collection //    
 
-    .collection-section{
+    // Goalkeeper Page - Collection //
+
+    .collection-section {
         padding: 4rem 0;
 
-        .collection-block{
-            .grid-block{
+        .collection-block {
+            .grid-block {
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr;
                 gap: 25px;
 
-                .grid-item{
+                .grid-item {
                     position: relative;
 
-                    a{
-                        &:hover{
+                    a {
+                        &:hover {
                             .collection {
-                                .overlay{
+                                .overlay {
                                     max-height: 100%;
                                     transition: max-height 0.25s ease-in;
                                 }
@@ -3175,17 +3196,17 @@ footer.main-footer {
                                     margin-bottom: 10rem;
                                     color: $primary-color;
                                 }
-                            } 
+                            }
                         }
                     }
 
-                    .collection{
+                    .collection {
                         min-height: 350px;
                         display: flex;
                         justify-content: center;
                         align-items: flex-end;
-                        transition: .5s;
-                
+                        transition: 0.5s;
+
                         &.-phantom-gt {
                             background: url(../images/PHANTOM-GT-Collection.png) center center;
                             background-size: cover;
@@ -3205,14 +3226,14 @@ footer.main-footer {
                             width: 100%;
                             text-align: center;
                             font-size: 26px;
-                            font-family: 'Agency FB';
+                            font-family: "Agency FB";
                             z-index: 1;
                             margin-bottom: 2rem;
-                            transition: .5s;
+                            transition: 0.5s;
                             text-transform: uppercase;
                         }
 
-                        .overlay{
+                        .overlay {
                             max-height: 40%;
                             transition: max-height 0.15s ease-out;
                             height: 100%;
@@ -3220,23 +3241,23 @@ footer.main-footer {
                             bottom: 0;
                             right: 0;
                             left: 0;
-                            background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
-                            transition: all height .5s ease-in-out;
+                            background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+                            transition: all height 0.5s ease-in-out;
                         }
                     }
                 }
             }
         }
 
-        @media(max-width: 991px){
+        @media (max-width: 991px) {
             padding: 2rem 0;
 
-            .collection-block{
+            .collection-block {
                 .title-collection {
                     text-align: center;
                 }
 
-                .grid-block{
+                .grid-block {
                     grid-template-columns: 1fr;
                 }
             }
@@ -3248,27 +3269,27 @@ footer.main-footer {
     .hot-product-section {
         padding: 4rem 0;
 
-        .hot-product-block{
+        .hot-product-block {
             .title-hot-product {
                 font-size: 26px;
                 margin-bottom: 1rem;
             }
 
-            &.g-container{
-                #shoes-hot-slider{
-                    .splide__arrows{
+            &.g-container {
+                #shoes-hot-slider {
+                    .splide__arrows {
                         .splide__arrow--prev {
                             left: -4rem;
                             background-color: transparent;
                         }
-    
+
                         .splide__arrow--next {
                             right: -4rem;
                             background-color: transparent;
                         }
                     }
 
-                    .splide__pagination{
+                    .splide__pagination {
                         display: none;
                     }
                 }
@@ -3280,17 +3301,17 @@ footer.main-footer {
                 align-items: center;
                 margin-top: 1rem;
 
-                .btn-border{
+                .btn-border {
                     border: 1px solid #fff;
                     width: auto;
                     display: block;
                     padding: 10px 3rem;
                     border-radius: 5px;
-                    font-family: 'Prachason';
+                    font-family: "Prachason";
                     font-size: 16px;
                     font-weight: normal;
 
-                    &:hover{
+                    &:hover {
                         background-color: $accent-color;
                         color: #000;
                     }
@@ -3298,10 +3319,10 @@ footer.main-footer {
             }
         }
 
-        @media(max-width: 991px){
+        @media (max-width: 991px) {
             padding: 0;
 
-            .hot-product-block{
+            .hot-product-block {
                 padding-right: 0;
 
                 .title-hot-product {
@@ -3309,8 +3330,8 @@ footer.main-footer {
                 }
             }
 
-            #shoes-hot-slider{
-                .splide__arrows{
+            #shoes-hot-slider {
+                .splide__arrows {
                     display: none;
                 }
             }
@@ -3319,24 +3340,24 @@ footer.main-footer {
 
     // Goalkeeper Page - Hot  Product Mobile //
 
-    .hot-product-section-mb{
+    .hot-product-section-mb {
         display: none;
     }
 
-    @media(max-width: 991px){
-        .hot-product-section{
+    @media (max-width: 991px) {
+        .hot-product-section {
             display: none;
         }
-        
-        .hot-product-section-mb{
+
+        .hot-product-section-mb {
             display: block;
 
-            .hot-product-block{
-                .title-hot-product{
+            .hot-product-block {
+                .title-hot-product {
                     text-align: center;
                 }
 
-                .grid-block{
+                .grid-block {
                     display: grid;
                     grid-template-columns: 1fr 1fr;
                     gap: 10px;
@@ -3344,10 +3365,10 @@ footer.main-footer {
                     .featured-img-block {
                         height: 155px;
 
-                        .badge{
+                        .badge {
                             font-size: 14px;
 
-                            &.-r{
+                            &.-r {
                                 margin-top: 2rem;
                             }
                         }
@@ -3360,44 +3381,43 @@ footer.main-footer {
                 justify-content: center;
                 align-items: center;
 
-                .btn-border{
+                .btn-border {
                     display: block;
                     width: auto;
                     border: 1px solid $accent-color;
                     border-radius: 5px;
                     padding: 10px 30px;
-                    font-family: 'Prachason';
+                    font-family: "Prachason";
                     font-size: 16px;
 
-                    &:hover{
+                    &:hover {
                         background-color: $accent-color;
                         color: #000;
                     }
-                    
                 }
             }
         }
     }
 
-    // Goalkeeper Page - Categories of Goalkeeper // 
+    // Goalkeeper Page - Categories of Goalkeeper //
 
-    .cate-goalkeeper-section{
+    .cate-goalkeeper-section {
         padding: 4rem 0;
         padding-top: 1rem;
 
-        .cate-goalkeeper-block{
-            .grid-block{
+        .cate-goalkeeper-block {
+            .grid-block {
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr;
                 gap: 25px;
 
-                .grid-item{
+                .grid-item {
                     position: relative;
 
-                    a{
-                        &:hover{
+                    a {
+                        &:hover {
                             .cate-goalkeeper {
-                                .overlay{
+                                .overlay {
                                     max-height: 100%;
                                     transition: max-height 0.25s ease-in;
                                 }
@@ -3406,17 +3426,17 @@ footer.main-footer {
                                     margin-bottom: 11rem;
                                     color: $primary-color;
                                 }
-                            } 
+                            }
                         }
                     }
 
-                    .cate-goalkeeper{
+                    .cate-goalkeeper {
                         min-height: 380px;
                         display: flex;
                         justify-content: center;
                         align-items: flex-end;
-                        transition: .5s;
-                
+                        transition: 0.5s;
+
                         &.-gear-01 {
                             background: url(../images/gatekeeper-gear-01.png) center center;
                             background-size: cover;
@@ -3436,14 +3456,14 @@ footer.main-footer {
                             width: 100%;
                             text-align: center;
                             font-size: 20px;
-                            font-family: 'Prachason';
+                            font-family: "Prachason";
                             z-index: 1;
                             margin-bottom: 2rem;
-                            transition: .5s;
+                            transition: 0.5s;
                             text-transform: uppercase;
                         }
 
-                        .overlay{
+                        .overlay {
                             max-height: 40%;
                             transition: max-height 0.15s ease-out;
                             height: 100%;
@@ -3451,39 +3471,39 @@ footer.main-footer {
                             bottom: 0;
                             right: 0;
                             left: 0;
-                            background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
-                            transition: all height .5s ease-in-out;
+                            background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+                            transition: all height 0.5s ease-in-out;
                         }
                     }
                 }
             }
         }
 
-        @media(max-width: 991px){
+        @media (max-width: 991px) {
             padding: 2rem 0;
 
-            .cate-goalkeeper-block{
-                .title-cate-goalkeeper{
+            .cate-goalkeeper-block {
+                .title-cate-goalkeeper {
                     text-align: center;
                 }
 
-                .grid-block{
+                .grid-block {
                     grid-template-columns: 1fr;
-    
-                    .grid-item{
+
+                    .grid-item {
                         position: relative;
 
-                        .cate-goalkeeper{
+                        .cate-goalkeeper {
                             min-height: 330px;
                         }
 
-                        a{
-                            &:hover{
+                        a {
+                            &:hover {
                                 .cate-goalkeeper {
                                     h4.head-cate-goalkeeper {
                                         margin-bottom: 9rem;
                                     }
-                                } 
+                                }
                             }
                         }
                     }
@@ -3498,61 +3518,61 @@ footer.main-footer {
         padding: 4rem 0;
         padding-bottom: 8rem;
 
-        .brand-block{
-            .grid-block{
+        .brand-block {
+            .grid-block {
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr;
                 gap: 25px;
-    
-                .grid-item{
+
+                .grid-item {
                     position: relative;
-    
-                    a{
-                        &:hover{
+
+                    a {
+                        &:hover {
                             .brand {
-                                .overlay{
+                                .overlay {
                                     max-height: 100%;
                                     transition: max-height 0.25s ease-in;
                                 }
-    
+
                                 img {
                                     margin-bottom: 8rem;
                                     color: $primary-color;
                                 }
-                            } 
+                            }
                         }
                     }
-    
-                    .brand{
+
+                    .brand {
                         min-height: 280px;
                         display: flex;
                         justify-content: center;
                         align-items: flex-end;
-                        transition: .5s;
-                
+                        transition: 0.5s;
+
                         &.-brand-01 {
                             background: url(../images/goalkeeper-brand-01.png) center center;
                             background-size: cover;
                         }
-    
+
                         &.-brand-02 {
                             background: url(../images/goalkeeper-brand-02.png) center center;
                             background-size: cover;
                         }
-    
+
                         &.-brand-03 {
                             background: url(../images/goalkeeper-brand-03.png) center center;
                             background-size: cover;
                         }
-    
+
                         img {
                             z-index: 2;
                             position: relative;
                             margin-bottom: 2rem;
-                            transition: .5s;
+                            transition: 0.5s;
                         }
-    
-                        .overlay{
+
+                        .overlay {
                             max-height: 40%;
                             transition: max-height 0.15s ease-out;
                             height: 100%;
@@ -3560,27 +3580,27 @@ footer.main-footer {
                             bottom: 0;
                             right: 0;
                             left: 0;
-                            background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
-                            transition: all height .5s ease-in-out;
+                            background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+                            transition: all height 0.5s ease-in-out;
                         }
                     }
                 }
             }
         }
-    
-        @media(max-width: 991px){
+
+        @media (max-width: 991px) {
             padding: 2rem 0;
             padding-bottom: 4rem;
-    
-            .brand-block{
-                .title-brand{
+
+            .brand-block {
+                .title-brand {
                     text-align: center;
                 }
-    
-                .grid-block{
+
+                .grid-block {
                     grid-template-columns: 1fr;
-    
-                    .grid-item{
+
+                    .grid-item {
                         position: relative;
                     }
                 }
@@ -4274,6 +4294,456 @@ footer.main-footer {
             #national-team-slider{
                 .splide__arrows{
                     display: none;
+                }
+            }
+        }
+    }
+}
+
+/* ====================== Football Equipment Page ====================== */
+
+.football-equipment-page {
+    background-color: $secondary-color;
+
+    // Football Equipment Page - Hero Banner //
+
+    .hero-slider-section {
+        .splide {
+            .splide__slide {
+                min-height: 600px;
+
+                .g-container {
+                    max-width: 60vw;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+
+                    .grid-block {
+                        .grid-item {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: flex-start;
+
+                            h2 {
+                                margin: 0;
+                                margin-top: 10px;
+                                font-size: 26px;
+                                font-family: 'Prachason';
+                            }
+                        }
+                    }
+                }
+
+                &.--slide-01 {
+                    background: url(../images/football-equipment-slider.png) center center;
+                    background-size: cover;
+                }
+
+                &.--slide-02 {
+                    background: url(../images/football-equipment-slider.png) center center;
+                    background-size: cover;
+                }
+
+                &.--slide-03 {
+                    background: url(../images/football-equipment-slider.png) center center;
+                    background-size: cover;
+                }
+
+                h2,
+                img {
+                    position: relative;
+                    z-index: 2;
+                }
+
+                h2 {
+                    font-family: "Agency FB";
+                }
+
+                .btn-border {
+                    border: 1px solid #fff;
+                    width: auto;
+                    display: block;
+                    position: relative;
+                    z-index: 2;
+                    padding: 7px 4rem;
+                    border-radius: 5px;
+                    font-family: "Prachason";
+                    font-size: 16px;
+                    font-weight: normal;
+
+                    &:hover {
+                        background-color: $accent-color;
+                        color: #000;
+                    }
+                }
+
+                .overlay {
+                    display: block !important;
+                    max-width: 60%;
+                    transition: max-height 0.15s ease-out;
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    left: 0;
+                    background: linear-gradient(270deg, rgba(22, 22, 22, 0) 0%, rgba(22, 22, 22, 1) 100%);
+                    transition: all height 0.5s ease-in-out;
+                }
+            }
+
+            .splide__arrows {
+                .splide__arrow {
+                    opacity: 1;
+                    background: transparent;
+
+                    .arrow-left {
+                        width: 100px;
+                    }
+
+                    &--prev {
+                        left: 13%;
+                    }
+
+                    &--next {
+                        right: 13%;
+                    }
+                }
+            }
+        }
+
+        @media (max-width: 991px) {
+            .splide {
+                .splide__slide {
+                    min-height: 320px;
+
+                    .g-container {
+                        max-width: 1160px;
+                    }
+
+                    &.--slide-01 {
+                        background: url(../images/football-equipment-slider-mb.png) center center;
+                        background-size: cover;
+                    }
+
+                    &.--slide-02 {
+                        background: url(../images/football-equipment-slider-mb.png) center center;
+                        background-size: cover;
+                    }
+
+                    &.--slide-03 {
+                        background: url(../images/football-equipment-slider-mb.png) center center;
+                        background-size: cover;
+                    }
+                }
+
+                .splide__arrows {
+                    .splide__arrow {
+                        opacity: 1;
+                        background: transparent;
+
+                        .arrow-left {
+                            width: 100px;
+                        }
+
+                        &--prev {
+                            left: 13%;
+                        }
+
+                        &--next {
+                            right: 13%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // Football Equipment Page - Pro //
+
+    .pro-section {
+        padding: 4rem 0;
+
+        .pro-block {
+            .grid-block {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 25px;
+
+                .grid-item {
+                    position: relative;
+
+                    a {
+                        &:hover {
+                            .pro {
+                                .overlay {
+                                    max-height: 100%;
+                                    transition: max-height 0.25s ease-in;
+                                }
+
+                                h4.head-pro {
+                                    margin-bottom: 10rem;
+                                    color: $primary-color;
+                                }
+                            }
+                        }
+                    }
+
+                    .pro {
+                        min-height: 400px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: flex-end;
+                        transition: 0.5s;
+
+                        .content-block {
+                            width: 100%;
+                            position: relative;
+                            z-index: 2;
+                            padding: 35px 30px;
+
+                            h4.head-pro {
+                                width: 100%;
+                                text-align: left;
+                                font-size: 26px;
+                                font-family: "Prachason";
+                                z-index: 1;
+                                margin-bottom: 2rem;
+                                transition: 0.5s;
+                                text-transform: uppercase;
+                                margin: 0;
+                                margin-bottom: 1rem;
+                            }
+
+                            a.btn-border{
+                                width: auto;
+                                font-family: 'Prachason';
+                                font-weight: normal;
+                                border: 1px solid $accent-color;
+                                padding: 7px 4rem;
+                                border-radius: 5px;
+
+                                &:hover{
+                                    background-color: $accent-color;
+                                    color: #000;
+                                }
+                            }
+                        }
+
+                        &.-pro-01 {
+                            background: url(../images/pro-01.png) center center;
+                            background-size: cover;
+                        }
+
+                        &.-pro-02 {
+                            background: url(../images/pro-02.png) center center;
+                            background-size: cover;
+                        }
+
+                        .overlay {
+                            max-height: 40%;
+                            transition: max-height 0.15s ease-out;
+                            height: 100%;
+                            position: absolute;
+                            bottom: 0;
+                            right: 0;
+                            left: 0;
+                            background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+                            transition: all height 0.5s ease-in-out;
+                        }
+                    }
+                }
+            }
+        }
+
+        @media (max-width: 991px) {
+            padding: 2rem 0;
+
+            .pro-block {
+                .title-pro {
+                    text-align: center;
+                }
+
+                .grid-block {
+                    grid-template-columns: 1fr;
+                }
+            }
+        }
+    }
+
+    // Football Equipment Page - Show Product //
+
+    .show-product-section{
+        padding-top: 4rem;
+
+        .show-product-block {
+            .grid-block{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                gap: 25px;
+            }
+        }
+
+        .read-more-block {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .btn-border{
+                width: auto;
+                padding: 10px 3rem;
+                border: 1px solid $accent-color;
+                border-radius: 5px;
+                font-family: 'Prachason';
+                font-weight: normal;
+
+                &:hover{
+                    background-color: $accent-color;
+                    color: #000;
+                }
+            }
+        }
+
+        @media(max-width: 991px){
+            .show-product-block {
+                .grid-block{
+                    grid-template-columns: 1fr 1fr;
+                    gap: 15px;
+                }
+            }
+        }
+    }
+
+    // Football Equipment Page - Football Equipment //
+
+    .football-equipment-section {
+        padding: 4rem 0;
+
+        .football-equipment-block {
+            .grid-block {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                gap: 25px;
+
+                .grid-item {
+                    position: relative;
+
+                    a {
+                        &:hover {
+                            .football-equipment {
+                                .overlay {
+                                    max-height: 100%;
+                                    transition: max-height 0.25s ease-in;
+                                }
+
+                                h4.head-football-equipment {
+                                    margin-bottom: 5rem;
+                                    color: $primary-color;
+                                }
+                            }
+                        }
+                    }
+
+                    .football-equipment {
+                        min-height: 200px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: flex-end;
+                        transition: 0.5s;
+
+                        h4.head-football-equipment {
+                            width: 100%;
+                            text-align: center;
+                            font-size: 18px;
+                            font-family: "Prachason";
+                            z-index: 1;
+                            margin-bottom: 2rem;
+                            transition: 0.5s;
+                            text-transform: uppercase;
+                            margin: 0;
+                            margin-bottom: 1rem;
+                            position: relative;
+                        }
+
+                        a.btn-border{
+                            width: auto;
+                            font-family: 'Prachason';
+                            font-weight: normal;
+                            border: 1px solid $accent-color;
+                            padding: 7px 4rem;
+                            border-radius: 5px;
+
+                            &:hover{
+                                background-color: $accent-color;
+                                color: #000;
+                            }
+                        }
+
+                        &.-equipment-01 {
+                            background: url(../images/equipment-01.png) center center;
+                            background-size: cover;
+                        }
+
+                        &.-equipment-02 {
+                            background: url(../images/equipment-02.png) center center;
+                            background-size: cover;
+                        }
+
+                        &.-equipment-03 {
+                            background: url(../images/equipment-03.png) center center;
+                            background-size: cover;
+                        }
+
+                        &.-equipment-04 {
+                            background: url(../images/equipment-04.png) center center;
+                            background-size: cover;
+                        }
+
+                        .overlay {
+                            max-height: 40%;
+                            transition: max-height 0.15s ease-out;
+                            height: 100%;
+                            position: absolute;
+                            bottom: 0;
+                            right: 0;
+                            left: 0;
+                            background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+                            transition: all height 0.5s ease-in-out;
+                        }
+                    }
+                }
+            }
+        }
+
+        .read-more-block {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .btn-border {
+                display: block;
+                width: auto;
+                border: 1px solid $accent-color;
+                border-radius: 5px;
+                padding: 7px 3rem;
+                font-family: "Prachason";
+                font-size: 16px;
+
+                &:hover {
+                    background-color: $accent-color;
+                    color: #000;
+                }
+            }
+        }
+
+        @media (max-width: 991px) {
+            .football-equipment-block {
+                .title-football-equipment{
+                    text-align: center;
+                }
+
+                .grid-block {
+                    grid-template-columns: 1fr;
                 }
             }
         }

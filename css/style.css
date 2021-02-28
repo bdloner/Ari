@@ -2,7 +2,7 @@
 /* ====================== Copyright © Build by BDLoneR ====================== */
 /* ====================== Fonts ====================== */
 @font-face {
-  font-family: 'Prachason';
+  font-family: "Prachason";
   src: url("../fonts/Prachason-Bold.eot");
   src: url("../fonts/Prachason-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Prachason-Bold.woff2") format("woff2"), url("../fonts/Prachason-Bold.woff") format("woff"), url("../fonts/Prachason-Bold.ttf") format("truetype"), url("../fonts/Prachason-Bold.svg#.") format("svg");
   font-weight: bold;
@@ -11,7 +11,7 @@
 }
 
 @font-face {
-  font-family: 'Prachason';
+  font-family: "Prachason";
   src: url("../fonts/Prachason-Light.eot");
   src: url("../fonts/Prachason-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Prachason-Light.woff2") format("woff2"), url("../fonts/Prachason-Light.woff") format("woff"), url("../fonts/Prachason-Light.ttf") format("truetype"), url("../fonts/Prachason-Light.svg#.") format("svg");
   font-weight: 300;
@@ -20,7 +20,7 @@
 }
 
 @font-face {
-  font-family: 'Prachason';
+  font-family: "Prachason";
   src: url("../fonts/Prachason-Regular.eot");
   src: url("../fonts/Prachason-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Prachason-Regular.woff2") format("woff2"), url("../fonts/Prachason-Regular.woff") format("woff"), url("../fonts/Prachason-Regular.ttf") format("truetype"), url("../fonts/Prachason-Regular.svg#.") format("svg");
   font-weight: normal;
@@ -30,7 +30,8 @@
 
 /* ====================== Variables ====================== */
 /* ====================== Global Settings ====================== */
-body, html {
+body,
+html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   margin: 0;
   padding: 0;
@@ -38,14 +39,26 @@ body, html {
   height: 150vh;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Prachason';
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Prachason";
   font-weight: bold;
   color: #fff;
 }
 
-p, span, div, a, label, input, select, textarea {
-  font-family: 'Prachason';
+p,
+span,
+div,
+a,
+label,
+input,
+select,
+textarea {
+  font-family: "Prachason";
   font-weight: normal;
   color: #fff;
 }
@@ -71,25 +84,25 @@ a {
 }
 
 .btn-border {
-  font-family: 'Agency FB';
+  font-family: "Agency FB";
   font-weight: bold;
   font-size: 18px;
   margin-top: 20px;
   padding: 10px 20px;
-  border: 1px solid #FFBE00;
+  border: 1px solid #ffbe00;
   text-transform: uppercase;
-  -webkit-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   width: 45%;
   text-align: center;
 }
 
 .btn-border:hover {
-  background-color: #FFBE00;
+  background-color: #ffbe00;
 }
 
 .btn-global {
-  background-color: #FFBE00;
+  background-color: #ffbe00;
   border-radius: 5px;
   text-align: center;
   padding: 7px;
@@ -126,9 +139,13 @@ a {
   display: block;
 }
 
-#dd-boots:hover > .dropdown-content, #dd-keepers:hover > .dropdown-content,
-#dd-jerseys:hover > .dropdown-content, #dd-equipments:hover > .dropdown-content,
-#dd-apperels:hover > .dropdown-content, #dd-arigear:hover > .dropdown-content, #dd-sales:hover > .dropdown-content {
+#dd-boots:hover > .dropdown-content,
+#dd-keepers:hover > .dropdown-content,
+#dd-jerseys:hover > .dropdown-content,
+#dd-equipments:hover > .dropdown-content,
+#dd-apperels:hover > .dropdown-content,
+#dd-arigear:hover > .dropdown-content,
+#dd-sales:hover > .dropdown-content {
   display: block;
 }
 
@@ -149,13 +166,13 @@ a {
 .dropdown-content .grid-block {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: .4fr 1fr .6fr;
-      grid-template-columns: .4fr 1fr .6fr;
+  -ms-grid-columns: 0.4fr 1fr 0.6fr;
+      grid-template-columns: 0.4fr 1fr 0.6fr;
 }
 
 .dropdown-content .grid-block .grid-item.-mega-main-menu {
   background-color: #333333;
-  border-right: 1px solid #4B4B4B;
+  border-right: 1px solid #4b4b4b;
   padding: 20px 0;
   padding-left: 5rem;
 }
@@ -167,22 +184,22 @@ a {
 }
 
 .dropdown-content .grid-block .grid-item.-mega-main-menu ul li.active > a {
-  color: #FFBE00;
+  color: #ffbe00;
 }
 
 .dropdown-content .grid-block .grid-item.-mega-main-menu ul li.active::after {
-  content: '>';
-  color: #FFBE00;
+  content: ">";
+  color: #ffbe00;
   position: absolute;
   left: 18%;
 }
 
 .dropdown-content .grid-block .grid-item.-mega-main-menu ul li.active:hover > a {
-  color: #FFBE00;
+  color: #ffbe00;
 }
 
 .dropdown-content .grid-block .grid-item.-mega-main-menu ul li.active:hover > a::after {
-  content: '>';
+  content: ">";
   position: absolute;
   left: 18%;
 }
@@ -225,7 +242,7 @@ a {
 }
 
 .dropdown-content .grid-block .grid-item.-mega-main-menu ul li .mega-menu-content .sub-grid-block .sub-grid-item .sub-football a:hover {
-  color: #FFBE00;
+  color: #ffbe00;
 }
 
 .dropdown-content .grid-block .grid-item.-mega-sub-menu {
@@ -288,19 +305,19 @@ a {
 }
 
 #search-popup .search-block .search-box::-webkit-input-placeholder {
-  color: #C6C6C6;
+  color: #c6c6c6;
 }
 
 #search-popup .search-block .search-box:-ms-input-placeholder {
-  color: #C6C6C6;
+  color: #c6c6c6;
 }
 
 #search-popup .search-block .search-box::-ms-input-placeholder {
-  color: #C6C6C6;
+  color: #c6c6c6;
 }
 
 #search-popup .search-block .search-box::placeholder {
-  color: #C6C6C6;
+  color: #c6c6c6;
 }
 
 .close-icon {
@@ -364,19 +381,19 @@ a {
 }
 
 .featherlight .featherlight-content #search-popup .search-block .search-box::-webkit-input-placeholder {
-  color: #C6C6C6;
+  color: #c6c6c6;
 }
 
 .featherlight .featherlight-content #search-popup .search-block .search-box:-ms-input-placeholder {
-  color: #C6C6C6;
+  color: #c6c6c6;
 }
 
 .featherlight .featherlight-content #search-popup .search-block .search-box::-ms-input-placeholder {
-  color: #C6C6C6;
+  color: #c6c6c6;
 }
 
 .featherlight .featherlight-content #search-popup .search-block .search-box::placeholder {
-  color: #C6C6C6;
+  color: #c6c6c6;
 }
 
 .-acc:hover #dd-unlogin {
@@ -414,19 +431,19 @@ a {
 }
 
 #dd-unlogin .lr-block .btn-reg {
-  color: #FFBE00;
+  color: #ffbe00;
   font-size: 14px;
-  font-family: 'Prachason';
+  font-family: "Prachason";
   border-radius: 5px;
-  border: 1px solid #FFBE00;
+  border: 1px solid #ffbe00;
   text-align: center;
   padding: 7px;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 #dd-unlogin .lr-block .btn-reg:hover {
-  background-color: #FFBE00;
+  background-color: #ffbe00;
   color: #fff;
 }
 
@@ -445,7 +462,7 @@ a {
 }
 
 .compare:hover input ~ .checkmark {
-  border-color: #FFBE00;
+  border-color: #ffbe00;
 }
 
 .compare input {
@@ -483,7 +500,7 @@ a {
   top: 2px;
   width: 5px;
   height: 10px;
-  border: solid #FFBE00;
+  border: solid #ffbe00;
   border-width: 0 3px 3px 0;
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
@@ -498,8 +515,8 @@ a {
   background-color: #030303;
   z-index: 99999;
   padding: 20px;
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 #mini-cart-sidebar.active {
@@ -551,8 +568,8 @@ a {
 #mini-cart-sidebar .mini-cart-block .head-table-block .grid-block {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr .3fr;
-      grid-template-columns: 1fr .3fr;
+  -ms-grid-columns: 1fr 0.3fr;
+      grid-template-columns: 1fr 0.3fr;
   border-bottom: 1px solid #565656;
 }
 
@@ -595,8 +612,8 @@ a {
 #mini-cart-sidebar .mini-cart-block .products-block .grid-block {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: .6fr 1fr .6fr;
-      grid-template-columns: .6fr 1fr .6fr;
+  -ms-grid-columns: 0.6fr 1fr 0.6fr;
+      grid-template-columns: 0.6fr 1fr 0.6fr;
   gap: 20px;
 }
 
@@ -609,22 +626,22 @@ a {
 #mini-cart-sidebar .mini-cart-block .products-block .grid-block .cate {
   margin: 0;
   font-size: 16px;
-  color: #FFBE00;
-  font-family: 'Agency FB';
+  color: #ffbe00;
+  font-family: "Agency FB";
   font-weight: normal;
 }
 
 #mini-cart-sidebar .mini-cart-block .products-block .grid-block .title-product {
   margin: 0;
   line-height: 1.3em;
-  font-family: 'Agency FB';
+  font-family: "Agency FB";
 }
 
 #mini-cart-sidebar .mini-cart-block .products-block .grid-block .sub-product {
   margin: 0;
   margin-top: 10px;
   line-height: 1.3em;
-  font-family: 'Agency FB';
+  font-family: "Agency FB";
   font-weight: 300;
 }
 
@@ -639,14 +656,14 @@ a {
 #mini-cart-sidebar .mini-cart-block .products-block .grid-block .title-personalize {
   margin: 0;
   margin-top: 10px;
-  font-family: 'Agency FB';
+  font-family: "Agency FB";
   font-size: 16px;
 }
 
 #mini-cart-sidebar .mini-cart-block .products-block .grid-block .price {
   font-size: 18px;
-  font-family: 'Agency FB';
-  color: #FFBE00;
+  font-family: "Agency FB";
+  color: #ffbe00;
   font-weight: bold;
 }
 
@@ -684,7 +701,8 @@ a {
   cursor: pointer;
 }
 
-#mini-cart-sidebar .mini-cart-block .products-block .grid-block .-amount .number .minus, #mini-cart-sidebar .mini-cart-block .products-block .grid-block .-amount .number .plus {
+#mini-cart-sidebar .mini-cart-block .products-block .grid-block .-amount .number .minus,
+#mini-cart-sidebar .mini-cart-block .products-block .grid-block .-amount .number .plus {
   width: 10px;
   height: 10px;
   padding: 0px 5px 22px 5px;
@@ -717,8 +735,8 @@ a {
 #mini-cart-sidebar .minic-bottom-block .summary-price-block .grid-block .grid-item.-item-total-price p {
   text-align: right;
   font-size: 20px;
-  font-family: 'Agency FB';
-  color: #FFBE00;
+  font-family: "Agency FB";
+  color: #ffbe00;
   font-weight: bold;
 }
 
@@ -740,7 +758,7 @@ a {
   border-radius: 5px;
   border: 1px solid #fff;
   font-size: 16px;
-  font-family: 'Prachason';
+  font-family: "Prachason";
 }
 
 #mini-cart-sidebar .minic-bottom-block .summary-price-block .grid-block.-b-btn .grid-item .btn-border:hover {
@@ -797,14 +815,14 @@ a {
   border-bottom: 1px solid #626262;
   font-weight: 500;
   font-size: 18px;
-  color: #FFBE00;
+  color: #ffbe00;
 }
 
 .acc .acc__card .acc__title::after {
   width: 12px;
   height: 12px;
-  border-right: 1px solid #FFBE00;
-  border-bottom: 1px solid #FFBE00;
+  border-right: 1px solid #ffbe00;
+  border-bottom: 1px solid #ffbe00;
   position: absolute;
   right: 10px;
   content: " ";
@@ -828,7 +846,7 @@ a {
   color: #212121;
   display: none;
   margin: 0;
-  padding: .5rem 0;
+  padding: 0.5rem 0;
   text-align: left;
   font-weight: 500;
   font-size: 16px;
@@ -950,26 +968,26 @@ a {
 
 .site-header .main-nav .half-nav.main-menu .nav-menu-block .nav-menu > li > a {
   position: relative;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   padding: 20px 0;
 }
 
 .site-header .main-nav .half-nav.main-menu .nav-menu-block .nav-menu > li > a::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
   height: 4px;
   width: 100%;
-  background: #FFBE00;
+  background: #ffbe00;
   opacity: 0;
-  -webkit-transition: .3s all ease-in-out;
-  transition: .3s all ease-in-out;
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
 }
 
 .site-header .main-nav .half-nav.main-menu .nav-menu-block .nav-menu > li > a:hover {
-  color: #FFBE00;
+  color: #ffbe00;
 }
 
 .site-header .main-nav .half-nav.main-menu .nav-menu-block .nav-menu > li > a:hover::after {
@@ -1059,25 +1077,25 @@ a {
 
 .navbar-autoshow .navbar-block .dt-col.-menu .nav > li > a {
   position: relative;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .navbar-autoshow .navbar-block .dt-col.-menu .nav > li > a::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -30.5px;
   left: 0;
   height: 4px;
   width: 100%;
-  background: #FFBE00;
+  background: #ffbe00;
   opacity: 0;
-  -webkit-transition: .3s all ease-in-out;
-  transition: .3s all ease-in-out;
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
 }
 
 .navbar-autoshow .navbar-block .dt-col.-menu .nav > li > a:hover {
-  color: #FFBE00;
+  color: #ffbe00;
 }
 
 .navbar-autoshow .navbar-block .dt-col.-menu .nav > li > a:hover::after {
@@ -1142,7 +1160,7 @@ a {
 @media (max-width: 991px) {
   .mm-spn.mm-spn--navbar:before {
     display: block;
-    content: 'ย้อนกลับ';
+    content: "ย้อนกลับ";
     background: url(../images/chev-left-icon.svg) 5% 35%;
     background-repeat: no-repeat;
     height: 30px;
@@ -1171,7 +1189,7 @@ a {
     position: absolute;
     right: 4rem;
     width: auto;
-    border-right: 1px solid #7C7C7C;
+    border-right: 1px solid #7c7c7c;
     padding-top: 10px;
     height: 15px;
   }
@@ -1232,13 +1250,18 @@ a {
     top: 0;
     left: 0;
   }
-  .navbar-autoshow .navbar-block .action-right .menu-burger.active b, .navbar-autoshow .navbar-block .action-right .menu-burger.active b:after, .navbar-autoshow .navbar-block .action-right .menu-burger.active b:before {
+  .navbar-autoshow .navbar-block .action-right .menu-burger.active b,
+  .navbar-autoshow .navbar-block .action-right .menu-burger.active b:after,
+  .navbar-autoshow .navbar-block .action-right .menu-burger.active b:before {
     -webkit-transition: top 0.2s, left 0.2s, background-color 0.2s, -webkit-transform 0.2s 0.15s;
     transition: top 0.2s, left 0.2s, background-color 0.2s, -webkit-transform 0.2s 0.15s;
     transition: top 0.2s, left 0.2s, background-color 0.2s, transform 0.2s 0.15s;
     transition: top 0.2s, left 0.2s, background-color 0.2s, transform 0.2s 0.15s, -webkit-transform 0.2s 0.15s;
+    transition: top 0.2s, left 0.2s, background-color 0.2s, transform 0.2s 0.15s, -webkit-transform 0.2s 0.15s;
   }
-  .navbar-autoshow .navbar-block .action-right .menu-burger b, .navbar-autoshow .navbar-block .action-right .menu-burger b:before, .navbar-autoshow .navbar-block .action-right .menu-burger b:after {
+  .navbar-autoshow .navbar-block .action-right .menu-burger b,
+  .navbar-autoshow .navbar-block .action-right .menu-burger b:before,
+  .navbar-autoshow .navbar-block .action-right .menu-burger b:after {
     pointer-events: none;
     display: block;
     content: "";
@@ -1248,7 +1271,7 @@ a {
     position: absolute;
     -webkit-transform: rotate(0);
             transform: rotate(0);
-    transition: top 0.3s 0.15s, left 0.1s, background-color 0.3s 0.2s, transform 0.2s, -webkit-transform 0.2s;
+    transition: top 0.3s 0.15s, left 0.1s, background-color 0.3s 0.2s, transform 0.2s, -webkit-transform 0.2s;
   }
   .menu-burger-sidebar {
     display: block !important;
@@ -1258,8 +1281,8 @@ a {
     top: 0;
     right: -90vw;
     background-color: #161616;
-    -webkit-transition: .5s;
-    transition: .5s;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
   }
   .menu-burger-sidebar .title-nav {
     position: absolute;
@@ -1311,7 +1334,7 @@ a {
   .menu-burger-sidebar .menu-burger-sidebar-block .main-menu-mb ul .hl-link a {
     text-decoration: underline;
     font-size: 16px;
-    color: #FFBE00;
+    color: #ffbe00;
   }
   .menu-burger-sidebar .menu-burger-sidebar-block .main-menu-mb li a {
     display: block;
@@ -1387,7 +1410,7 @@ a {
     width: 100%;
   }
   .menu-burger-sidebar .menu-burger-sidebar-block #dd-unlogin .lr-block a.btn-global {
-    background-color: #FFBE00;
+    background-color: #ffbe00;
     color: #fff;
     width: auto !important;
   }
@@ -1415,8 +1438,8 @@ a {
 
 .post-items.-card .featured-img-block .featured-img {
   height: 100%;
-  -webkit-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .post-items.-card .featured-img-block .badge {
@@ -1425,30 +1448,30 @@ a {
   top: 25px;
   padding: 5px 15px;
   color: #fff;
-  font-family: 'Agency FB';
+  font-family: "Agency FB";
   font-weight: bold;
   font-size: 18px;
   z-index: 2;
 }
 
 .post-items.-card .featured-img-block .badge.-g {
-  background-color: #3ECB2C;
+  background-color: #3ecb2c;
 }
 
 .post-items.-card .featured-img-block .badge.-r {
-  background-color: #D32323;
+  background-color: #d32323;
   margin-top: 2.5rem;
 }
 
 .post-items.-card .title-item {
-  font-family: 'Agency FB';
+  font-family: "Agency FB";
 }
 
 .post-items.-card .title-item .category {
   margin: 0;
   margin-top: 15px;
   font-size: 16px;
-  color: #FFBE00;
+  color: #ffbe00;
   font-weight: normal;
 }
 
@@ -1461,11 +1484,11 @@ a {
   overflow: hidden;
   height: 55px;
   color: #fff;
-  font-family: 'Agency FB';
+  font-family: "Agency FB";
 }
 
 .post-items.-card .content-item {
-  font-family: 'Agency FB';
+  font-family: "Agency FB";
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1476,7 +1499,7 @@ a {
 }
 
 .post-items.-card .content-item .price-block .price {
-  color: #FFBE00;
+  color: #ffbe00;
   font-weight: bold;
   font-size: 22px;
 }
@@ -1495,13 +1518,13 @@ a {
 }
 
 .post-items.-card .content-item .fav-block .fav path {
-  -webkit-transition: fill .4s ease;
-  transition: fill .4s ease;
+  -webkit-transition: fill 0.4s ease;
+  transition: fill 0.4s ease;
   fill: transparent;
 }
 
 .post-items.-card .content-item .fav-block .fav:hover svg path {
-  fill: #FFBE00;
+  fill: #ffbe00;
 }
 
 .post-items.-card .compare-block {
@@ -1513,7 +1536,7 @@ a {
           justify-content: center;
   margin-top: 15px;
   padding: 15px 0;
-  border-top: 1px solid #3B3B3B;
+  border-top: 1px solid #3b3b3b;
 }
 
 @media (max-width: 991px) {
@@ -1700,7 +1723,7 @@ a {
 }
 
 .home .new-releases-section .new-releases-block .title-new-releases {
-  color: #FFBE00;
+  color: #ffbe00;
   font-size: 26px;
 }
 
@@ -1738,7 +1761,7 @@ a {
 
 .home .hot-product-section .hot-product-block .title-hot-product {
   text-align: center;
-  color: #FFBE00;
+  color: #ffbe00;
   font-size: 26px;
   margin-bottom: 2rem;
 }
@@ -1781,7 +1804,7 @@ a {
 }
 
 .home .categories-section .categories-block .title-categories {
-  color: #FFBE00;
+  color: #ffbe00;
   font-size: 26px;
   margin-bottom: 2rem;
 }
@@ -1810,8 +1833,8 @@ a {
 
 .home .categories-section .categories-block .grid-block .grid-item .img-cate-block .img-cate {
   height: 100%;
-  -webkit-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .home .categories-section .categories-block .grid-block .grid-item .img-cate-block .img-cate.-cate1 {
@@ -1899,7 +1922,7 @@ a {
   max-width: 450px;
   width: 100%;
   margin: 0 auto;
-  font-family: 'Agency FB';
+  font-family: "Agency FB";
   padding: 0 20px;
 }
 
@@ -1908,7 +1931,7 @@ a {
   color: #fff;
   margin: 2rem 0;
   margin-top: 1rem;
-  font-family: 'Agency FB';
+  font-family: "Agency FB";
 }
 
 .home .ari-x-section .ari-x-block .grid-block .grid-item .content-block .btn-border {
@@ -1939,7 +1962,7 @@ a {
 }
 
 .home .news-section .title-news {
-  color: #FFBE00;
+  color: #ffbe00;
   font-size: 26px;
   margin-bottom: 2rem;
 }
@@ -1964,8 +1987,8 @@ a {
 
 .home .news-section .news-block .grid-block .grid-item .featured-img-block .featured-img {
   height: 100%;
-  -webkit-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .home .news-section .news-block .grid-block .grid-item .title-item .title {
@@ -1991,7 +2014,7 @@ a {
 }
 
 .home .news-section .read-more-block .btn-border {
-  font-family: 'Prachason';
+  font-family: "Prachason";
   border: 1px solid #fff;
   border-radius: 5px;
   width: 15%;
@@ -2044,16 +2067,16 @@ a {
   text-indent: -999em;
   overflow: hidden;
   opacity: 1;
-  -webkit-transition: opacity 800ms,height 0s;
-  transition: opacity 800ms,height 0s;
-  -webkit-transition-delay: 0s,0s;
-          transition-delay: 0s,0s;
+  -webkit-transition: opacity 800ms, height 0s;
+  transition: opacity 800ms, height 0s;
+  -webkit-transition-delay: 0s, 0s;
+          transition-delay: 0s, 0s;
   border-radius: 0;
   z-index: 2;
 }
 
 .home .video-present-section .video-present-block .index-video-wrapper .playpause::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 45.8%;
   left: 50.3%;
@@ -2171,7 +2194,7 @@ a {
 
 .home .subscibe-section {
   padding: 2rem 0;
-  background-color: #2B2B2B;
+  background-color: #2b2b2b;
 }
 
 .home .subscibe-section .subscibe-block {
@@ -2185,7 +2208,7 @@ a {
 
 .home .subscibe-section .subscibe-block .title-subscibe {
   margin-right: 1rem;
-  font-family: 'Agency FB';
+  font-family: "Agency FB";
   font-weight: bold;
   font-size: 18px;
   color: #fff;
@@ -2215,7 +2238,7 @@ a {
 .home .subscibe-section .subscibe-block .sub-form .btn-submit {
   background-color: #191919;
   font-size: 18px;
-  font-family: 'Agency FB';
+  font-family: "Agency FB";
   font-weight: bold;
   color: #fff;
   border: 0;
@@ -2264,8 +2287,8 @@ footer.main-footer .main-footer-block .grid-block {
 footer.main-footer .main-footer-block .grid-block .grid-item .m-list li {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: .2fr 1fr;
-      grid-template-columns: .2fr 1fr;
+  -ms-grid-columns: 0.2fr 1fr;
+      grid-template-columns: 0.2fr 1fr;
   gap: 15px;
   justify-items: center;
 }
@@ -2274,21 +2297,21 @@ footer.main-footer .main-footer-block .grid-block .grid-item .m-list li .content
   font-size: 18px;
   font-weight: bold;
   text-decoration: underline;
-  font-family: 'Agency FB';
+  font-family: "Agency FB";
 }
 
 footer.main-footer .main-footer-block .grid-block .grid-item .m-list li .content-r p {
   margin: 0;
   margin-top: 5px;
   color: #fff;
-  font-family: 'Agency FB';
+  font-family: "Agency FB";
 }
 
 footer.main-footer .main-footer-block .grid-block .grid-item h5 {
   margin: 0;
   margin-top: 30px;
   font-size: 16px;
-  color: #FFBE00;
+  color: #ffbe00;
 }
 
 footer.main-footer .main-footer-block .grid-block .grid-item .menu-ft li {
@@ -2332,7 +2355,7 @@ footer.main-footer .bottom-ft p {
   margin: 0;
   text-align: center;
   color: #fff;
-  font-family: 'Agency FB';
+  font-family: "Agency FB";
 }
 
 @media (max-width: 991px) {
@@ -2433,7 +2456,8 @@ footer.main-footer .bottom-ft p {
   background-size: cover;
 }
 
-.football-shoes-product .hero-slider-section .splide .splide__slide h2, .football-shoes-product .hero-slider-section .splide .splide__slide img {
+.football-shoes-product .hero-slider-section .splide .splide__slide h2,
+.football-shoes-product .hero-slider-section .splide .splide__slide img {
   position: relative;
   z-index: 2;
 }
@@ -2451,8 +2475,8 @@ footer.main-footer .bottom-ft p {
   left: 0;
   background: -webkit-gradient(linear, right top, left top, from(rgba(22, 22, 22, 0)), to(#161616));
   background: linear-gradient(270deg, rgba(22, 22, 22, 0) 0%, #161616 100%);
-  -webkit-transition: all height .5s ease-in-out;
-  transition: all height .5s ease-in-out;
+  -webkit-transition: all height 0.5s ease-in-out;
+  transition: all height 0.5s ease-in-out;
 }
 
 .football-shoes-product .hero-slider-section .splide .splide__arrows .splide__arrow {
@@ -2530,7 +2554,7 @@ footer.main-footer .bottom-ft p {
 
 .football-shoes-product .collection-section .collection-block .grid-block .grid-item a:hover .collection h4.head-collection {
   margin-bottom: 10rem;
-  color: #FFBE00;
+  color: #ffbe00;
 }
 
 .football-shoes-product .collection-section .collection-block .grid-block .grid-item .collection {
@@ -2544,8 +2568,8 @@ footer.main-footer .bottom-ft p {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .football-shoes-product .collection-section .collection-block .grid-block .grid-item .collection.-phantom-gt {
@@ -2567,11 +2591,11 @@ footer.main-footer .bottom-ft p {
   width: 100%;
   text-align: center;
   font-size: 26px;
-  font-family: 'Agency FB';
+  font-family: "Agency FB";
   z-index: 1;
   margin-bottom: 2rem;
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   text-transform: uppercase;
 }
 
@@ -2586,8 +2610,8 @@ footer.main-footer .bottom-ft p {
   left: 0;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(black));
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, black 100%);
-  -webkit-transition: all height .5s ease-in-out;
-  transition: all height .5s ease-in-out;
+  -webkit-transition: all height 0.5s ease-in-out;
+  transition: all height 0.5s ease-in-out;
 }
 
 @media (max-width: 991px) {
@@ -2645,7 +2669,7 @@ footer.main-footer .bottom-ft p {
   display: block;
   padding: 10px 3rem;
   border-radius: 5px;
-  font-family: 'Prachason';
+  font-family: "Prachason";
   font-size: 16px;
   font-weight: normal;
 }
@@ -2695,7 +2719,7 @@ footer.main-footer .bottom-ft p {
 
 .football-shoes-product .cate-shoes-section .cate-shoes-block .grid-block .grid-item a:hover .cate-shoes h4.head-cate-shoes {
   margin-bottom: 11rem;
-  color: #FFBE00;
+  color: #ffbe00;
 }
 
 .football-shoes-product .cate-shoes-section .cate-shoes-block .grid-block .grid-item .cate-shoes {
@@ -2709,8 +2733,8 @@ footer.main-footer .bottom-ft p {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .football-shoes-product .cate-shoes-section .cate-shoes-block .grid-block .grid-item .cate-shoes.-football-shoes {
@@ -2737,11 +2761,11 @@ footer.main-footer .bottom-ft p {
   width: 100%;
   text-align: center;
   font-size: 20px;
-  font-family: 'Prachason';
+  font-family: "Prachason";
   z-index: 1;
   margin-bottom: 2rem;
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   text-transform: uppercase;
 }
 
@@ -2756,8 +2780,8 @@ footer.main-footer .bottom-ft p {
   left: 0;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(black));
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, black 100%);
-  -webkit-transition: all height .5s ease-in-out;
-  transition: all height .5s ease-in-out;
+  -webkit-transition: all height 0.5s ease-in-out;
+  transition: all height 0.5s ease-in-out;
 }
 
 @media (max-width: 991px) {
@@ -2860,8 +2884,8 @@ footer.main-footer .bottom-ft p {
 .football-shoes-product .brand-section .brand-block .splide__slide .slider-brand img {
   z-index: 2;
   margin-bottom: 3rem;
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .football-shoes-product .brand-section .brand-block .splide__slide .slider-brand .overlay {
@@ -2875,8 +2899,8 @@ footer.main-footer .bottom-ft p {
   left: 0;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(black));
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, black 100%);
-  -webkit-transition: all height .5s ease-in-out;
-  transition: all height .5s ease-in-out;
+  -webkit-transition: all height 0.5s ease-in-out;
+  transition: all height 0.5s ease-in-out;
 }
 
 .football-shoes-product .brand-section .brand-block .read-more-block {
@@ -2898,7 +2922,7 @@ footer.main-footer .bottom-ft p {
   display: block;
   padding: 10px 3rem;
   border-radius: 5px;
-  font-family: 'Prachason';
+  font-family: "Prachason";
   font-size: 16px;
   font-weight: normal;
 }
@@ -2981,7 +3005,8 @@ footer.main-footer .bottom-ft p {
   background-size: cover;
 }
 
-.goalkeeper-device-page .hero-slider-section .splide .splide__slide h2, .goalkeeper-device-page .hero-slider-section .splide .splide__slide img {
+.goalkeeper-device-page .hero-slider-section .splide .splide__slide h2,
+.goalkeeper-device-page .hero-slider-section .splide .splide__slide img {
   position: relative;
   z-index: 2;
 }
@@ -2994,7 +3019,7 @@ footer.main-footer .bottom-ft p {
   border: 1px solid #fff;
   padding: 7px 4rem;
   border-radius: 5px;
-  font-family: 'Prachason';
+  font-family: "Prachason";
   font-size: 16px;
   margin: 0;
   margin-top: 10px;
@@ -3017,8 +3042,8 @@ footer.main-footer .bottom-ft p {
   left: 0;
   background: -webkit-gradient(linear, right top, left top, from(rgba(22, 22, 22, 0)), to(#161616));
   background: linear-gradient(270deg, rgba(22, 22, 22, 0) 0%, #161616 100%);
-  -webkit-transition: all height .5s ease-in-out;
-  transition: all height .5s ease-in-out;
+  -webkit-transition: all height 0.5s ease-in-out;
+  transition: all height 0.5s ease-in-out;
 }
 
 .goalkeeper-device-page .hero-slider-section .splide .splide__arrows .splide__arrow {
@@ -3099,7 +3124,7 @@ footer.main-footer .bottom-ft p {
 
 .goalkeeper-device-page .collection-section .collection-block .grid-block .grid-item a:hover .collection h4.head-collection {
   margin-bottom: 10rem;
-  color: #FFBE00;
+  color: #ffbe00;
 }
 
 .goalkeeper-device-page .collection-section .collection-block .grid-block .grid-item .collection {
@@ -3113,8 +3138,8 @@ footer.main-footer .bottom-ft p {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .goalkeeper-device-page .collection-section .collection-block .grid-block .grid-item .collection.-phantom-gt {
@@ -3136,11 +3161,11 @@ footer.main-footer .bottom-ft p {
   width: 100%;
   text-align: center;
   font-size: 26px;
-  font-family: 'Agency FB';
+  font-family: "Agency FB";
   z-index: 1;
   margin-bottom: 2rem;
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   text-transform: uppercase;
 }
 
@@ -3155,8 +3180,8 @@ footer.main-footer .bottom-ft p {
   left: 0;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(black));
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, black 100%);
-  -webkit-transition: all height .5s ease-in-out;
-  transition: all height .5s ease-in-out;
+  -webkit-transition: all height 0.5s ease-in-out;
+  transition: all height 0.5s ease-in-out;
 }
 
 @media (max-width: 991px) {
@@ -3214,7 +3239,7 @@ footer.main-footer .bottom-ft p {
   display: block;
   padding: 10px 3rem;
   border-radius: 5px;
-  font-family: 'Prachason';
+  font-family: "Prachason";
   font-size: 16px;
   font-weight: normal;
 }
@@ -3286,7 +3311,7 @@ footer.main-footer .bottom-ft p {
     border: 1px solid #fff;
     border-radius: 5px;
     padding: 10px 30px;
-    font-family: 'Prachason';
+    font-family: "Prachason";
     font-size: 16px;
   }
   .goalkeeper-device-page .hot-product-section-mb .read-more-block .btn-border:hover {
@@ -3320,7 +3345,7 @@ footer.main-footer .bottom-ft p {
 
 .goalkeeper-device-page .cate-goalkeeper-section .cate-goalkeeper-block .grid-block .grid-item a:hover .cate-goalkeeper h4.head-cate-goalkeeper {
   margin-bottom: 11rem;
-  color: #FFBE00;
+  color: #ffbe00;
 }
 
 .goalkeeper-device-page .cate-goalkeeper-section .cate-goalkeeper-block .grid-block .grid-item .cate-goalkeeper {
@@ -3334,8 +3359,8 @@ footer.main-footer .bottom-ft p {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .goalkeeper-device-page .cate-goalkeeper-section .cate-goalkeeper-block .grid-block .grid-item .cate-goalkeeper.-gear-01 {
@@ -3357,11 +3382,11 @@ footer.main-footer .bottom-ft p {
   width: 100%;
   text-align: center;
   font-size: 20px;
-  font-family: 'Prachason';
+  font-family: "Prachason";
   z-index: 1;
   margin-bottom: 2rem;
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   text-transform: uppercase;
 }
 
@@ -3376,8 +3401,8 @@ footer.main-footer .bottom-ft p {
   left: 0;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(black));
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, black 100%);
-  -webkit-transition: all height .5s ease-in-out;
-  transition: all height .5s ease-in-out;
+  -webkit-transition: all height 0.5s ease-in-out;
+  transition: all height 0.5s ease-in-out;
 }
 
 @media (max-width: 991px) {
@@ -3427,7 +3452,7 @@ footer.main-footer .bottom-ft p {
 
 .goalkeeper-device-page .brand-section .brand-block .grid-block .grid-item a:hover .brand img {
   margin-bottom: 8rem;
-  color: #FFBE00;
+  color: #ffbe00;
 }
 
 .goalkeeper-device-page .brand-section .brand-block .grid-block .grid-item .brand {
@@ -3441,8 +3466,8 @@ footer.main-footer .bottom-ft p {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .goalkeeper-device-page .brand-section .brand-block .grid-block .grid-item .brand.-brand-01 {
@@ -3464,8 +3489,8 @@ footer.main-footer .bottom-ft p {
   z-index: 2;
   position: relative;
   margin-bottom: 2rem;
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .goalkeeper-device-page .brand-section .brand-block .grid-block .grid-item .brand .overlay {
@@ -3479,8 +3504,8 @@ footer.main-footer .bottom-ft p {
   left: 0;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(black));
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, black 100%);
-  -webkit-transition: all height .5s ease-in-out;
-  transition: all height .5s ease-in-out;
+  -webkit-transition: all height 0.5s ease-in-out;
+  transition: all height 0.5s ease-in-out;
 }
 
 @media (max-width: 991px) {
@@ -3675,7 +3700,7 @@ footer.main-footer .bottom-ft p {
 
 .racing-suit-page .hot-team-section .hot-team-block #hot-team-slider .slider-hot-team a:hover .hot-team h4.head-hot-team {
   margin-bottom: 9rem;
-  color: #FFBE00;
+  color: #ffbe00;
 }
 
 .racing-suit-page .hot-team-section .hot-team-block #hot-team-slider .slider-hot-team .hot-team {
@@ -3772,7 +3797,7 @@ footer.main-footer .bottom-ft p {
 }
 
 .racing-suit-page .your-fav-section .your-fav-block h2 {
-  color: #FFBE00;
+  color: #ffbe00;
 }
 
 .racing-suit-page .your-fav-section .your-fav-block .grid-block {
@@ -3807,8 +3832,8 @@ footer.main-footer .bottom-ft p {
 
 .racing-suit-page .your-fav-section .your-fav-block .grid-block .grid-item .btn-border:hover {
   background: transparent;
-  border: 1px solid #FFBE00;
-  color: #FFBE00;
+  border: 1px solid #ffbe00;
+  color: #ffbe00;
 }
 
 @media (max-width: 991px) {
@@ -3837,7 +3862,7 @@ footer.main-footer .bottom-ft p {
 
 .racing-suit-page .shirt-premier-section .shirt-premier-block.g-container #shirt-premier-slider a:hover .slider-shirt-premier h5 {
   margin-bottom: 7rem;
-  color: #FFBE00;
+  color: #ffbe00;
 }
 
 .racing-suit-page .shirt-premier-section .shirt-premier-block.g-container #shirt-premier-slider .slider-shirt-premier {
@@ -4046,7 +4071,7 @@ footer.main-footer .bottom-ft p {
 
 .racing-suit-page .national-team-section .national-team-block.g-container #national-team-slider a:hover .slider-national-team h5 {
   margin-bottom: 7rem;
-  color: #FFBE00;
+  color: #ffbe00;
 }
 
 .racing-suit-page .national-team-section .national-team-block.g-container #national-team-slider .slider-national-team {
@@ -4176,6 +4201,461 @@ footer.main-footer .bottom-ft p {
   }
   .racing-suit-page .national-team-section #national-team-slider .splide__arrows {
     display: none;
+  }
+}
+
+/* ====================== Football Equipment Page ====================== */
+.football-equipment-page {
+  background-color: #161616;
+}
+
+.football-equipment-page .hero-slider-section .splide .splide__slide {
+  min-height: 600px;
+}
+
+.football-equipment-page .hero-slider-section .splide .splide__slide .g-container {
+  max-width: 60vw;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.football-equipment-page .hero-slider-section .splide .splide__slide .g-container .grid-block .grid-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.football-equipment-page .hero-slider-section .splide .splide__slide .g-container .grid-block .grid-item h2 {
+  margin: 0;
+  margin-top: 10px;
+  font-size: 26px;
+  font-family: 'Prachason';
+}
+
+.football-equipment-page .hero-slider-section .splide .splide__slide.--slide-01 {
+  background: url(../images/football-equipment-slider.png) center center;
+  background-size: cover;
+}
+
+.football-equipment-page .hero-slider-section .splide .splide__slide.--slide-02 {
+  background: url(../images/football-equipment-slider.png) center center;
+  background-size: cover;
+}
+
+.football-equipment-page .hero-slider-section .splide .splide__slide.--slide-03 {
+  background: url(../images/football-equipment-slider.png) center center;
+  background-size: cover;
+}
+
+.football-equipment-page .hero-slider-section .splide .splide__slide h2,
+.football-equipment-page .hero-slider-section .splide .splide__slide img {
+  position: relative;
+  z-index: 2;
+}
+
+.football-equipment-page .hero-slider-section .splide .splide__slide h2 {
+  font-family: "Agency FB";
+}
+
+.football-equipment-page .hero-slider-section .splide .splide__slide .btn-border {
+  border: 1px solid #fff;
+  width: auto;
+  display: block;
+  position: relative;
+  z-index: 2;
+  padding: 7px 4rem;
+  border-radius: 5px;
+  font-family: "Prachason";
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.football-equipment-page .hero-slider-section .splide .splide__slide .btn-border:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.football-equipment-page .hero-slider-section .splide .splide__slide .overlay {
+  display: block !important;
+  max-width: 60%;
+  -webkit-transition: max-height 0.15s ease-out;
+  transition: max-height 0.15s ease-out;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: -webkit-gradient(linear, right top, left top, from(rgba(22, 22, 22, 0)), to(#161616));
+  background: linear-gradient(270deg, rgba(22, 22, 22, 0) 0%, #161616 100%);
+  -webkit-transition: all height 0.5s ease-in-out;
+  transition: all height 0.5s ease-in-out;
+}
+
+.football-equipment-page .hero-slider-section .splide .splide__arrows .splide__arrow {
+  opacity: 1;
+  background: transparent;
+}
+
+.football-equipment-page .hero-slider-section .splide .splide__arrows .splide__arrow .arrow-left {
+  width: 100px;
+}
+
+.football-equipment-page .hero-slider-section .splide .splide__arrows .splide__arrow--prev {
+  left: 13%;
+}
+
+.football-equipment-page .hero-slider-section .splide .splide__arrows .splide__arrow--next {
+  right: 13%;
+}
+
+@media (max-width: 991px) {
+  .football-equipment-page .hero-slider-section .splide .splide__slide {
+    min-height: 320px;
+  }
+  .football-equipment-page .hero-slider-section .splide .splide__slide .g-container {
+    max-width: 1160px;
+  }
+  .football-equipment-page .hero-slider-section .splide .splide__slide.--slide-01 {
+    background: url(../images/football-equipment-slider-mb.png) center center;
+    background-size: cover;
+  }
+  .football-equipment-page .hero-slider-section .splide .splide__slide.--slide-02 {
+    background: url(../images/football-equipment-slider-mb.png) center center;
+    background-size: cover;
+  }
+  .football-equipment-page .hero-slider-section .splide .splide__slide.--slide-03 {
+    background: url(../images/football-equipment-slider-mb.png) center center;
+    background-size: cover;
+  }
+  .football-equipment-page .hero-slider-section .splide .splide__arrows .splide__arrow {
+    opacity: 1;
+    background: transparent;
+  }
+  .football-equipment-page .hero-slider-section .splide .splide__arrows .splide__arrow .arrow-left {
+    width: 100px;
+  }
+  .football-equipment-page .hero-slider-section .splide .splide__arrows .splide__arrow--prev {
+    left: 13%;
+  }
+  .football-equipment-page .hero-slider-section .splide .splide__arrows .splide__arrow--next {
+    right: 13%;
+  }
+}
+
+.football-equipment-page .pro-section {
+  padding: 4rem 0;
+}
+
+.football-equipment-page .pro-section .pro-block .grid-block {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 25px;
+}
+
+.football-equipment-page .pro-section .pro-block .grid-block .grid-item {
+  position: relative;
+}
+
+.football-equipment-page .pro-section .pro-block .grid-block .grid-item a:hover .pro .overlay {
+  max-height: 100%;
+  -webkit-transition: max-height 0.25s ease-in;
+  transition: max-height 0.25s ease-in;
+}
+
+.football-equipment-page .pro-section .pro-block .grid-block .grid-item a:hover .pro h4.head-pro {
+  margin-bottom: 10rem;
+  color: #ffbe00;
+}
+
+.football-equipment-page .pro-section .pro-block .grid-block .grid-item .pro {
+  min-height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.football-equipment-page .pro-section .pro-block .grid-block .grid-item .pro .content-block {
+  width: 100%;
+  position: relative;
+  z-index: 2;
+  padding: 35px 30px;
+}
+
+.football-equipment-page .pro-section .pro-block .grid-block .grid-item .pro .content-block h4.head-pro {
+  width: 100%;
+  text-align: left;
+  font-size: 26px;
+  font-family: "Prachason";
+  z-index: 1;
+  margin-bottom: 2rem;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+.football-equipment-page .pro-section .pro-block .grid-block .grid-item .pro .content-block a.btn-border {
+  width: auto;
+  font-family: 'Prachason';
+  font-weight: normal;
+  border: 1px solid #fff;
+  padding: 7px 4rem;
+  border-radius: 5px;
+}
+
+.football-equipment-page .pro-section .pro-block .grid-block .grid-item .pro .content-block a.btn-border:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.football-equipment-page .pro-section .pro-block .grid-block .grid-item .pro.-pro-01 {
+  background: url(../images/pro-01.png) center center;
+  background-size: cover;
+}
+
+.football-equipment-page .pro-section .pro-block .grid-block .grid-item .pro.-pro-02 {
+  background: url(../images/pro-02.png) center center;
+  background-size: cover;
+}
+
+.football-equipment-page .pro-section .pro-block .grid-block .grid-item .pro .overlay {
+  max-height: 40%;
+  -webkit-transition: max-height 0.15s ease-out;
+  transition: max-height 0.15s ease-out;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(black));
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, black 100%);
+  -webkit-transition: all height 0.5s ease-in-out;
+  transition: all height 0.5s ease-in-out;
+}
+
+@media (max-width: 991px) {
+  .football-equipment-page .pro-section {
+    padding: 2rem 0;
+  }
+  .football-equipment-page .pro-section .pro-block .title-pro {
+    text-align: center;
+  }
+  .football-equipment-page .pro-section .pro-block .grid-block {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+.football-equipment-page .show-product-section {
+  padding-top: 4rem;
+}
+
+.football-equipment-page .show-product-section .show-product-block .grid-block {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 25px;
+}
+
+.football-equipment-page .show-product-section .read-more-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.football-equipment-page .show-product-section .read-more-block .btn-border {
+  width: auto;
+  padding: 10px 3rem;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  font-family: 'Prachason';
+  font-weight: normal;
+}
+
+.football-equipment-page .show-product-section .read-more-block .btn-border:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+@media (max-width: 991px) {
+  .football-equipment-page .show-product-section .show-product-block .grid-block {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    gap: 15px;
+  }
+}
+
+.football-equipment-page .football-equipment-section {
+  padding: 4rem 0;
+}
+
+.football-equipment-page .football-equipment-section .football-equipment-block .grid-block {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 25px;
+}
+
+.football-equipment-page .football-equipment-section .football-equipment-block .grid-block .grid-item {
+  position: relative;
+}
+
+.football-equipment-page .football-equipment-section .football-equipment-block .grid-block .grid-item a:hover .football-equipment .overlay {
+  max-height: 100%;
+  -webkit-transition: max-height 0.25s ease-in;
+  transition: max-height 0.25s ease-in;
+}
+
+.football-equipment-page .football-equipment-section .football-equipment-block .grid-block .grid-item a:hover .football-equipment h4.head-football-equipment {
+  margin-bottom: 5rem;
+  color: #ffbe00;
+}
+
+.football-equipment-page .football-equipment-section .football-equipment-block .grid-block .grid-item .football-equipment {
+  min-height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.football-equipment-page .football-equipment-section .football-equipment-block .grid-block .grid-item .football-equipment h4.head-football-equipment {
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  font-family: "Prachason";
+  z-index: 1;
+  margin-bottom: 2rem;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.football-equipment-page .football-equipment-section .football-equipment-block .grid-block .grid-item .football-equipment a.btn-border {
+  width: auto;
+  font-family: 'Prachason';
+  font-weight: normal;
+  border: 1px solid #fff;
+  padding: 7px 4rem;
+  border-radius: 5px;
+}
+
+.football-equipment-page .football-equipment-section .football-equipment-block .grid-block .grid-item .football-equipment a.btn-border:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.football-equipment-page .football-equipment-section .football-equipment-block .grid-block .grid-item .football-equipment.-equipment-01 {
+  background: url(../images/equipment-01.png) center center;
+  background-size: cover;
+}
+
+.football-equipment-page .football-equipment-section .football-equipment-block .grid-block .grid-item .football-equipment.-equipment-02 {
+  background: url(../images/equipment-02.png) center center;
+  background-size: cover;
+}
+
+.football-equipment-page .football-equipment-section .football-equipment-block .grid-block .grid-item .football-equipment.-equipment-03 {
+  background: url(../images/equipment-03.png) center center;
+  background-size: cover;
+}
+
+.football-equipment-page .football-equipment-section .football-equipment-block .grid-block .grid-item .football-equipment.-equipment-04 {
+  background: url(../images/equipment-04.png) center center;
+  background-size: cover;
+}
+
+.football-equipment-page .football-equipment-section .football-equipment-block .grid-block .grid-item .football-equipment .overlay {
+  max-height: 40%;
+  -webkit-transition: max-height 0.15s ease-out;
+  transition: max-height 0.15s ease-out;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(black));
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, black 100%);
+  -webkit-transition: all height 0.5s ease-in-out;
+  transition: all height 0.5s ease-in-out;
+}
+
+.football-equipment-page .football-equipment-section .read-more-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.football-equipment-page .football-equipment-section .read-more-block .btn-border {
+  display: block;
+  width: auto;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  padding: 7px 3rem;
+  font-family: "Prachason";
+  font-size: 16px;
+}
+
+.football-equipment-page .football-equipment-section .read-more-block .btn-border:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+@media (max-width: 991px) {
+  .football-equipment-page .football-equipment-section .football-equipment-block .title-football-equipment {
+    text-align: center;
+  }
+  .football-equipment-page .football-equipment-section .football-equipment-block .grid-block {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
   }
 }
 /*# sourceMappingURL=style.css.map */
