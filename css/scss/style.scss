@@ -5639,7 +5639,217 @@ footer.main-footer {
                 h2{
                     text-align: center;
                 }
-                
+
+                .grid-block{
+                    grid-template-columns: 1fr 1fr;
+                    gap: 15px;
+                }
+            }
+        }
+    }
+}
+
+/* ====================== Discount Page ====================== */
+
+.discount-page {
+    background-color: $secondary-color;
+
+    // Discount Page - Hero Banner //
+
+    .hero-slider-section {
+        .splide {
+            .splide__slide {
+                min-height: 600px;
+
+                .g-container {
+                    max-width: 60vw;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+
+                    .grid-block {
+                        .grid-item {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: flex-start;
+
+                            h2 {
+                                margin: 0;
+                                margin-top: 10px;
+                                font-size: 26px;
+                                font-family: 'Prachason';
+                            }
+                        }
+                    }
+                }
+
+                &.--slide-01 {
+                    background: url(../images/discount-slider.png) center center;
+                    background-size: cover;
+                }
+
+                &.--slide-02 {
+                    background: url(../images/discount-slider.png) center center;
+                    background-size: cover;
+                }
+
+                &.--slide-03 {
+                    background: url(../images/discount-slider.png) center center;
+                    background-size: cover;
+                }
+
+                h2,
+                img {
+                    position: relative;
+                    z-index: 2;
+                }
+
+                h2 {
+                    font-family: "Agency FB";
+                }
+
+                .btn-border {
+                    border: 1px solid #fff;
+                    width: auto;
+                    display: block;
+                    position: relative;
+                    z-index: 2;
+                    padding: 7px 4rem;
+                    border-radius: 5px;
+                    font-family: "Prachason";
+                    font-size: 16px;
+                    font-weight: normal;
+
+                    &:hover {
+                        background-color: $accent-color;
+                        color: #000;
+                    }
+                }
+
+                .overlay {
+                    display: block !important;
+                    max-width: 60%;
+                    transition: max-height 0.15s ease-out;
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    left: 0;
+                    background: linear-gradient(270deg, rgba(22, 22, 22, 0) 0%, rgba(22, 22, 22, 1) 100%);
+                    transition: all height 0.5s ease-in-out;
+                }
+            }
+
+            .splide__arrows {
+                .splide__arrow {
+                    opacity: 1;
+                    background: transparent;
+
+                    .arrow-left {
+                        width: 100px;
+                    }
+
+                    &--prev {
+                        left: 13%;
+                    }
+
+                    &--next {
+                        right: 13%;
+                    }
+                }
+            }
+        }
+
+        @media (max-width: 991px) {
+            .splide {
+                .splide__slide {
+                    min-height: 320px;
+
+                    .g-container {
+                        max-width: 1160px;
+                    }
+
+                    &.--slide-01 {
+                        background: url(../images/discount-slider-mb.png) center center;
+                        background-size: cover;
+                    }
+
+                    &.--slide-02 {
+                        background: url(../images/discount-slider-mb.png) center center;
+                        background-size: cover;
+                    }
+
+                    &.--slide-03 {
+                        background: url(../images/discount-slider-mb.png) center center;
+                        background-size: cover;
+                    }
+                }
+
+                .splide__arrows {
+                    .splide__arrow {
+                        opacity: 1;
+                        background: transparent;
+
+                        .arrow-left {
+                            width: 100px;
+                        }
+
+                        &--prev {
+                            left: 13%;
+                        }
+
+                        &--next {
+                            right: 13%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // Discount Page - Show Product //
+
+    .show-product-section{
+        padding: 4rem 0;
+        padding-bottom: 7rem;
+
+        .show-product-block {
+            .grid-block{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                gap: 25px;
+            }
+        }
+
+        .read-more-block {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .btn-border{
+                width: auto;
+                padding: 10px 3rem;
+                border: 1px solid $accent-color;
+                border-radius: 5px;
+                font-family: 'Prachason';
+                font-weight: normal;
+
+                &:hover{
+                    background-color: $accent-color;
+                    color: #000;
+                }
+            }
+        }
+
+        @media(max-width: 991px){
+            padding-top: 2rem;
+
+            .show-product-block {
+                h2{
+                    text-align: center;
+                }
+
                 .grid-block{
                     grid-template-columns: 1fr 1fr;
                     gap: 15px;
