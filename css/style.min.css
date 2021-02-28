@@ -4658,4 +4658,451 @@ footer.main-footer .bottom-ft p {
         grid-template-columns: 1fr;
   }
 }
+
+/* ====================== T-Shirt Page ====================== */
+.t-shirt-page {
+  background-color: #161616;
+}
+
+.t-shirt-page .hero-slider-section .splide .splide__slide {
+  min-height: 600px;
+}
+
+.t-shirt-page .hero-slider-section .splide .splide__slide .g-container {
+  max-width: 60vw;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.t-shirt-page .hero-slider-section .splide .splide__slide .g-container .grid-block .grid-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.t-shirt-page .hero-slider-section .splide .splide__slide .g-container .grid-block .grid-item h2 {
+  margin: 0;
+  margin-top: 10px;
+  font-size: 26px;
+  font-family: 'Prachason';
+}
+
+.t-shirt-page .hero-slider-section .splide .splide__slide.--slide-01 {
+  background: url(../images/t-shirt-slider.png) center center;
+  background-size: cover;
+}
+
+.t-shirt-page .hero-slider-section .splide .splide__slide.--slide-02 {
+  background: url(../images/t-shirt-slider.png) center center;
+  background-size: cover;
+}
+
+.t-shirt-page .hero-slider-section .splide .splide__slide.--slide-03 {
+  background: url(../images/t-shirt-slider.png) center center;
+  background-size: cover;
+}
+
+.t-shirt-page .hero-slider-section .splide .splide__slide h2,
+.t-shirt-page .hero-slider-section .splide .splide__slide img {
+  position: relative;
+  z-index: 2;
+}
+
+.t-shirt-page .hero-slider-section .splide .splide__slide h2 {
+  font-family: "Agency FB";
+}
+
+.t-shirt-page .hero-slider-section .splide .splide__slide .btn-border {
+  border: 1px solid #fff;
+  width: auto;
+  display: block;
+  position: relative;
+  z-index: 2;
+  padding: 7px 4rem;
+  border-radius: 5px;
+  font-family: "Prachason";
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.t-shirt-page .hero-slider-section .splide .splide__slide .btn-border:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.t-shirt-page .hero-slider-section .splide .splide__slide .overlay {
+  display: block !important;
+  max-width: 60%;
+  -webkit-transition: max-height 0.15s ease-out;
+  transition: max-height 0.15s ease-out;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: -webkit-gradient(linear, right top, left top, from(rgba(22, 22, 22, 0)), to(#161616));
+  background: linear-gradient(270deg, rgba(22, 22, 22, 0) 0%, #161616 100%);
+  -webkit-transition: all height 0.5s ease-in-out;
+  transition: all height 0.5s ease-in-out;
+}
+
+.t-shirt-page .hero-slider-section .splide .splide__arrows .splide__arrow {
+  opacity: 1;
+  background: transparent;
+}
+
+.t-shirt-page .hero-slider-section .splide .splide__arrows .splide__arrow .arrow-left {
+  width: 100px;
+}
+
+.t-shirt-page .hero-slider-section .splide .splide__arrows .splide__arrow--prev {
+  left: 13%;
+}
+
+.t-shirt-page .hero-slider-section .splide .splide__arrows .splide__arrow--next {
+  right: 13%;
+}
+
+@media (max-width: 991px) {
+  .t-shirt-page .hero-slider-section .splide .splide__slide {
+    min-height: 320px;
+  }
+  .t-shirt-page .hero-slider-section .splide .splide__slide .g-container {
+    max-width: 1160px;
+  }
+  .t-shirt-page .hero-slider-section .splide .splide__slide.--slide-01 {
+    background: url(../images/t-shirt-slider-mb.png) center center;
+    background-size: cover;
+  }
+  .t-shirt-page .hero-slider-section .splide .splide__slide.--slide-02 {
+    background: url(../images/t-shirt-slider-mb.png) center center;
+    background-size: cover;
+  }
+  .t-shirt-page .hero-slider-section .splide .splide__slide.--slide-03 {
+    background: url(../images/t-shirt-slider-mb.png) center center;
+    background-size: cover;
+  }
+  .t-shirt-page .hero-slider-section .splide .splide__arrows .splide__arrow {
+    opacity: 1;
+    background: transparent;
+  }
+  .t-shirt-page .hero-slider-section .splide .splide__arrows .splide__arrow .arrow-left {
+    width: 100px;
+  }
+  .t-shirt-page .hero-slider-section .splide .splide__arrows .splide__arrow--prev {
+    left: 13%;
+  }
+  .t-shirt-page .hero-slider-section .splide .splide__arrows .splide__arrow--next {
+    right: 13%;
+  }
+}
+
+.t-shirt-page .t-shirt-brand-section {
+  padding: 4rem 0;
+}
+
+.t-shirt-page .t-shirt-brand-section .t-shirt-brand-block .grid-block {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 25px;
+}
+
+.t-shirt-page .t-shirt-brand-section .t-shirt-brand-block .grid-block .grid-item {
+  position: relative;
+}
+
+.t-shirt-page .t-shirt-brand-section .t-shirt-brand-block .grid-block .grid-item a:hover .t-shirt-brand .overlay {
+  max-height: 100%;
+  -webkit-transition: max-height 0.25s ease-in;
+  transition: max-height 0.25s ease-in;
+}
+
+.t-shirt-page .t-shirt-brand-section .t-shirt-brand-block .grid-block .grid-item a:hover .t-shirt-brand img {
+  margin-bottom: 12rem;
+}
+
+.t-shirt-page .t-shirt-brand-section .t-shirt-brand-block .grid-block .grid-item .t-shirt-brand {
+  min-height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.t-shirt-page .t-shirt-brand-section .t-shirt-brand-block .grid-block .grid-item .t-shirt-brand img {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 2rem;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.t-shirt-page .t-shirt-brand-section .t-shirt-brand-block .grid-block .grid-item .t-shirt-brand a.btn-border {
+  width: auto;
+  font-family: 'Prachason';
+  font-weight: normal;
+  border: 1px solid #fff;
+  padding: 7px 4rem;
+  border-radius: 5px;
+}
+
+.t-shirt-page .t-shirt-brand-section .t-shirt-brand-block .grid-block .grid-item .t-shirt-brand a.btn-border:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.t-shirt-page .t-shirt-brand-section .t-shirt-brand-block .grid-block .grid-item .t-shirt-brand.-t-shirt-brand-01 {
+  background: url(../images/t-shirt-brand-01.png) center center;
+  background-size: cover;
+}
+
+.t-shirt-page .t-shirt-brand-section .t-shirt-brand-block .grid-block .grid-item .t-shirt-brand.-t-shirt-brand-02 {
+  background: url(../images/t-shirt-brand-02.png) center center;
+  background-size: cover;
+}
+
+.t-shirt-page .t-shirt-brand-section .t-shirt-brand-block .grid-block .grid-item .t-shirt-brand.-t-shirt-brand-03 {
+  background: url(../images/t-shirt-brand-03.png) center center;
+  background-size: cover;
+}
+
+.t-shirt-page .t-shirt-brand-section .t-shirt-brand-block .grid-block .grid-item .t-shirt-brand.-t-shirt-brand-04 {
+  background: url(../images/t-shirt-brand-04.png) center center;
+  background-size: cover;
+}
+
+.t-shirt-page .t-shirt-brand-section .t-shirt-brand-block .grid-block .grid-item .t-shirt-brand .overlay {
+  max-height: 40%;
+  -webkit-transition: max-height 0.15s ease-out;
+  transition: max-height 0.15s ease-out;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(black));
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, black 100%);
+  -webkit-transition: all height 0.5s ease-in-out;
+  transition: all height 0.5s ease-in-out;
+}
+
+@media (max-width: 991px) {
+  .t-shirt-page .t-shirt-brand-section {
+    padding: 2rem 0;
+  }
+  .t-shirt-page .t-shirt-brand-section .t-shirt-brand-block .title-t-shirt-brand {
+    text-align: center;
+  }
+  .t-shirt-page .t-shirt-brand-section .t-shirt-brand-block .grid-block {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+.t-shirt-page .show-product-section .show-product-block .grid-block {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 25px;
+}
+
+.t-shirt-page .show-product-section .read-more-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.t-shirt-page .show-product-section .read-more-block .btn-border {
+  width: auto;
+  padding: 10px 3rem;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  font-family: 'Prachason';
+  font-weight: normal;
+}
+
+.t-shirt-page .show-product-section .read-more-block .btn-border:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+@media (max-width: 991px) {
+  .t-shirt-page .show-product-section .show-product-block .grid-block {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    gap: 15px;
+  }
+}
+
+.t-shirt-page .your-style-section {
+  padding: 4rem 0;
+}
+
+.t-shirt-page .your-style-section .your-style-block .grid-block {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 25px;
+}
+
+.t-shirt-page .your-style-section .your-style-block .grid-block .grid-item {
+  position: relative;
+}
+
+.t-shirt-page .your-style-section .your-style-block .grid-block .grid-item a:hover .your-style .overlay {
+  max-height: 100%;
+  -webkit-transition: max-height 0.25s ease-in;
+  transition: max-height 0.25s ease-in;
+}
+
+.t-shirt-page .your-style-section .your-style-block .grid-block .grid-item a:hover .your-style h4.head-your-style {
+  margin-bottom: 5rem;
+  color: #ffbe00;
+}
+
+.t-shirt-page .your-style-section .your-style-block .grid-block .grid-item .your-style {
+  min-height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.t-shirt-page .your-style-section .your-style-block .grid-block .grid-item .your-style h4.head-your-style {
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  font-family: "Prachason";
+  z-index: 1;
+  margin-bottom: 2rem;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.t-shirt-page .your-style-section .your-style-block .grid-block .grid-item .your-style a.btn-border {
+  width: auto;
+  font-family: 'Prachason';
+  font-weight: normal;
+  border: 1px solid #fff;
+  padding: 7px 4rem;
+  border-radius: 5px;
+}
+
+.t-shirt-page .your-style-section .your-style-block .grid-block .grid-item .your-style a.btn-border:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.t-shirt-page .your-style-section .your-style-block .grid-block .grid-item .your-style.-your-style-01 {
+  background: url(../images/your-style-t-shirt-01.png) center center;
+  background-size: cover;
+}
+
+.t-shirt-page .your-style-section .your-style-block .grid-block .grid-item .your-style.-your-style-02 {
+  background: url(../images/your-style-t-shirt-02.png) center center;
+  background-size: cover;
+}
+
+.t-shirt-page .your-style-section .your-style-block .grid-block .grid-item .your-style.-your-style-03 {
+  background: url(../images/your-style-t-shirt-03.png) center center;
+  background-size: cover;
+}
+
+.t-shirt-page .your-style-section .your-style-block .grid-block .grid-item .your-style.-your-style-04 {
+  background: url(../images/your-style-t-shirt-04.png) center center;
+  background-size: cover;
+}
+
+.t-shirt-page .your-style-section .your-style-block .grid-block .grid-item .your-style .overlay {
+  max-height: 40%;
+  -webkit-transition: max-height 0.15s ease-out;
+  transition: max-height 0.15s ease-out;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(black));
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, black 100%);
+  -webkit-transition: all height 0.5s ease-in-out;
+  transition: all height 0.5s ease-in-out;
+}
+
+.t-shirt-page .your-style-section .read-more-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.t-shirt-page .your-style-section .read-more-block .btn-border {
+  display: block;
+  width: auto;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  padding: 7px 3rem;
+  font-family: "Prachason";
+  font-size: 16px;
+}
+
+.t-shirt-page .your-style-section .read-more-block .btn-border:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+@media (max-width: 991px) {
+  .t-shirt-page .your-style-section .your-style-block .title-your-style {
+    text-align: center;
+  }
+  .t-shirt-page .your-style-section .your-style-block .grid-block {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
 /*# sourceMappingURL=style.min.css.map */
