@@ -36,7 +36,7 @@ class Card extends HTMLElement {
             </div>
 
             <div class="compare-block">
-                <label class="compare">เปรียบเทียบสินค้า
+                <label class="checkbox compare">เปรียบเทียบสินค้า
                     <input type="checkbox">
                     <span class="checkmark"></span>
                 </label>

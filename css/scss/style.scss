@@ -460,7 +460,7 @@ a {
 
 // Checkbox input
 
-.compare {
+.checkbox {
     display: block;
     position: relative;
     padding-left: 35px;
@@ -5853,6 +5853,211 @@ footer.main-footer {
                 .grid-block{
                     grid-template-columns: 1fr 1fr;
                     gap: 15px;
+                }
+            }
+        }
+    }
+}
+
+/* ====================== Login Page ====================== */
+
+.login-page {
+    background-color: $secondary-color;
+
+    // Discount Page - Hero Banner //
+
+    .login-section {
+        padding: 4rem 0;
+        padding-bottom: 8rem;
+
+        .login-block{
+            .grid-block{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 25px;
+
+                .grid-item{
+                    &.-left{
+                        padding: 0 35px;
+
+                        .heading-welcome{
+                            font-size: 16px;
+                            font-weight: normal;
+                            margin: 0;
+                        }
+
+                        .heading-login{
+                            font-size: 24px;
+                            margin: 0;
+                        }
+
+                        .login-in-form{
+                            display: flex;
+                            flex-direction: column;
+
+                            .remember-login{
+                                font-family: 'Agency FB';
+                                font-weight: bold;
+                                font-size: 18px;
+                                text-transform: uppercase;
+                            }
+
+                            label{
+                                font-size: 18px;
+                                margin: 5px 0;
+                            }
+
+                            input{
+                                border: 1px solid #606060;
+                                background: transparent;
+                                padding: 7px 15px;
+                                border-radius: 5px;
+                                font-size: 16px;
+                            }
+
+                            .grid-block {
+                                &.-rem {
+                                    margin: 7px 0;
+                                    margin-bottom: 1rem;
+
+                                    .grid-item{
+                                        display: flex;
+                                        align-items: center;
+
+                                        &:last-child{
+                                            justify-content: flex-end;
+
+                                            a{
+                                                text-decoration: underline;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            .btn-global{
+                                border: 0;
+                                font-family: 'Prachason';
+                                padding: 10px 0;
+                                cursor: pointer;
+                            }
+                        }
+
+                        .social-login-block{
+                            hr{
+                                border: 0;
+                                border-bottom: 1px solid #3E3E3E;
+                                margin-bottom: -20px;
+                                margin-top: 30px;
+                            }
+                            
+                            p{
+                                width: 180px;
+                                margin: 0 auto;
+                                padding: 7px 15px;
+                                background-color: #161616;
+                            }
+
+                            .grid-block {
+                                &.-btn{
+                                    margin-top: 2rem;
+
+                                    .btn-login{
+                                        text-align: center;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        padding: 10px;
+                                        border-radius: 5px;
+
+                                        img{
+                                            margin-right:15px;
+                                        }
+                                        
+                                        &.btn-login-fb{
+                                            background-color: #1877F2;
+                                            color: #fff;
+                                        }
+                                        &.btn-login-gg{
+                                            background-color: $accent-color;
+                                            color: #000;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .reg-mb{
+                            display: none;
+                        }
+                    }
+
+                    &.-right {
+                        padding: 0 30px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background: url(../images/login-right-bg.png) center center;
+                        background-size: cover;
+
+                        .reg-side-block{
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+
+                            .title-reg{
+                                text-align: center;
+                            }
+
+                            .desc-reg{
+                                text-align: center;
+                            }
+
+                            a.btn-border{
+                                width: 80%;
+                                border: 1px solid $accent-color;
+                                border-radius: 5px;
+                                padding: 10px;
+                                display: block;
+                                font-family: 'Prachason';
+                                font-size: 16px;
+
+                                &:hover{
+                                    background-color: $accent-color;
+                                    color: #000;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        @media(max-width: 991px){
+            .login-block{
+                .grid-block {
+                    grid-template-columns: 1fr;
+
+                    .reg-mb{
+                        margin-top: 2rem;
+                        display: flex !important;
+                        justify-content: center;
+                        font-size: 18px;
+
+                        a{
+                            margin-left: 10px;
+                            color: $primary-color;
+                            text-decoration: underline;
+                        }
+                    }
+
+                    .-rem{
+                        grid-template-columns: 1fr 1fr;
+                    }
+
+                    .-right{
+                        display: none !important;
+                    }
                 }
             }
         }

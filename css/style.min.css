@@ -447,7 +447,7 @@ a {
   color: #fff;
 }
 
-.compare {
+.checkbox {
   display: block;
   position: relative;
   padding-left: 35px;
@@ -461,11 +461,11 @@ a {
   user-select: none;
 }
 
-.compare:hover input ~ .checkmark {
+.checkbox:hover input ~ .checkmark {
   border-color: #ffbe00;
 }
 
-.compare input {
+.checkbox input {
   position: absolute;
   opacity: 0;
   cursor: pointer;
@@ -473,15 +473,15 @@ a {
   width: 0;
 }
 
-.compare input:checked ~ .checkmark {
+.checkbox input:checked ~ .checkmark {
   background-color: transparent;
 }
 
-.compare input:checked ~ .checkmark::after {
+.checkbox input:checked ~ .checkmark::after {
   display: block;
 }
 
-.compare .checkmark {
+.checkbox .checkmark {
   position: absolute;
   top: 0;
   left: 0;
@@ -492,7 +492,7 @@ a {
   border-radius: 5px;
 }
 
-.compare .checkmark::after {
+.checkbox .checkmark::after {
   content: "";
   position: absolute;
   display: none;
@@ -5765,6 +5765,234 @@ footer.main-footer .bottom-ft p {
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
     gap: 15px;
+  }
+}
+
+/* ====================== Login Page ====================== */
+.login-page {
+  background-color: #161616;
+}
+
+.login-page .login-section {
+  padding: 4rem 0;
+  padding-bottom: 8rem;
+}
+
+.login-page .login-section .login-block .grid-block {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 25px;
+}
+
+.login-page .login-section .login-block .grid-block .grid-item.-left {
+  padding: 0 35px;
+}
+
+.login-page .login-section .login-block .grid-block .grid-item.-left .heading-welcome {
+  font-size: 16px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.login-page .login-section .login-block .grid-block .grid-item.-left .heading-login {
+  font-size: 24px;
+  margin: 0;
+}
+
+.login-page .login-section .login-block .grid-block .grid-item.-left .login-in-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.login-page .login-section .login-block .grid-block .grid-item.-left .login-in-form .remember-login {
+  font-family: 'Agency FB';
+  font-weight: bold;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.login-page .login-section .login-block .grid-block .grid-item.-left .login-in-form label {
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+.login-page .login-section .login-block .grid-block .grid-item.-left .login-in-form input {
+  border: 1px solid #606060;
+  background: transparent;
+  padding: 7px 15px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.login-page .login-section .login-block .grid-block .grid-item.-left .login-in-form .grid-block.-rem {
+  margin: 7px 0;
+  margin-bottom: 1rem;
+}
+
+.login-page .login-section .login-block .grid-block .grid-item.-left .login-in-form .grid-block.-rem .grid-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.login-page .login-section .login-block .grid-block .grid-item.-left .login-in-form .grid-block.-rem .grid-item:last-child {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.login-page .login-section .login-block .grid-block .grid-item.-left .login-in-form .grid-block.-rem .grid-item:last-child a {
+  text-decoration: underline;
+}
+
+.login-page .login-section .login-block .grid-block .grid-item.-left .login-in-form .btn-global {
+  border: 0;
+  font-family: 'Prachason';
+  padding: 10px 0;
+  cursor: pointer;
+}
+
+.login-page .login-section .login-block .grid-block .grid-item.-left .social-login-block hr {
+  border: 0;
+  border-bottom: 1px solid #3E3E3E;
+  margin-bottom: -20px;
+  margin-top: 30px;
+}
+
+.login-page .login-section .login-block .grid-block .grid-item.-left .social-login-block p {
+  width: 180px;
+  margin: 0 auto;
+  padding: 7px 15px;
+  background-color: #161616;
+}
+
+.login-page .login-section .login-block .grid-block .grid-item.-left .social-login-block .grid-block.-btn {
+  margin-top: 2rem;
+}
+
+.login-page .login-section .login-block .grid-block .grid-item.-left .social-login-block .grid-block.-btn .btn-login {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.login-page .login-section .login-block .grid-block .grid-item.-left .social-login-block .grid-block.-btn .btn-login img {
+  margin-right: 15px;
+}
+
+.login-page .login-section .login-block .grid-block .grid-item.-left .social-login-block .grid-block.-btn .btn-login.btn-login-fb {
+  background-color: #1877F2;
+  color: #fff;
+}
+
+.login-page .login-section .login-block .grid-block .grid-item.-left .social-login-block .grid-block.-btn .btn-login.btn-login-gg {
+  background-color: #fff;
+  color: #000;
+}
+
+.login-page .login-section .login-block .grid-block .grid-item.-left .reg-mb {
+  display: none;
+}
+
+.login-page .login-section .login-block .grid-block .grid-item.-right {
+  padding: 0 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: url(../images/login-right-bg.png) center center;
+  background-size: cover;
+}
+
+.login-page .login-section .login-block .grid-block .grid-item.-right .reg-side-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.login-page .login-section .login-block .grid-block .grid-item.-right .reg-side-block .title-reg {
+  text-align: center;
+}
+
+.login-page .login-section .login-block .grid-block .grid-item.-right .reg-side-block .desc-reg {
+  text-align: center;
+}
+
+.login-page .login-section .login-block .grid-block .grid-item.-right .reg-side-block a.btn-border {
+  width: 80%;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  padding: 10px;
+  display: block;
+  font-family: 'Prachason';
+  font-size: 16px;
+}
+
+.login-page .login-section .login-block .grid-block .grid-item.-right .reg-side-block a.btn-border:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+@media (max-width: 991px) {
+  .login-page .login-section .login-block .grid-block {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .login-page .login-section .login-block .grid-block .reg-mb {
+    margin-top: 2rem;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 18px;
+  }
+  .login-page .login-section .login-block .grid-block .reg-mb a {
+    margin-left: 10px;
+    color: #ffbe00;
+    text-decoration: underline;
+  }
+  .login-page .login-section .login-block .grid-block .-rem {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  .login-page .login-section .login-block .grid-block .-right {
+    display: none !important;
   }
 }
 /*# sourceMappingURL=style.min.css.map */
