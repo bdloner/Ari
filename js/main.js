@@ -104,49 +104,72 @@ jQuery(document).ready(function($) {
     j.preventDefault();
   });
 
-});
+  // Mmenu Library
 
-// Mmenu Library
+  let mmenu = new MmenuLight(
+    document.querySelector( '#menu-mb' ),
+    'all'
+  );
 
-let menu = new MmenuLight(
-  document.querySelector( '#menu-mb' ),
-  'all'
-);
-
-let navigator = menu.navigation({
-  selectedClass: 'Selected',
-  theme: 'dark',
-  title: ''
-});
-
-let drawer = menu.offcanvas({
-  position: 'right'
-});
-
-//	Open the menu.
-
-let el = document.querySelector( 'a[href="#menu-mb"]' );
-
-if(el){
-  el.addEventListener( 'click', evnt => {
-    evnt.preventDefault();
-    drawer.open();
+  let navigator = mmenu.navigation({
+    selectedClass: 'Selected',
+    theme: 'dark',
+    title: ''
   });
-}
 
-$('.mm-spn--open span').click(function () {
-  $('#menu-mb').removeClass('mm--main');
-});
+  let drawer = mmenu.offcanvas({
+    position: 'right'
+  });
 
-let menu_mb = document.getElementById('menu-mb');
+  //	Open the menu.
 
-let observer = new MutationObserver(function(mutations) {
-  if($(menu_mb).attr('data-mm-spn-title') == ""){
-    $('#menu-mb').addClass('mm--main');
+  let el = document.querySelector( 'a[href="#menu-mb"]' );
+
+  if(el){
+    el.addEventListener( 'click', evnt => {
+      evnt.preventDefault();
+      drawer.open();
+    });
   }
-});
 
-observer.observe(menu_mb, { 
+  $('.mm-spn--open span').click(function () {
+    $('#menu-mb').removeClass('mm--main');
+  });
+
+  let menu_mb = document.getElementById('menu-mb');
+
+  let observer = new MutationObserver(function(mutations) {
+    if($(menu_mb).attr('data-mm-spn-title') == ""){
+      $('#menu-mb').addClass('mm--main');
+    }
+  });
+
+  observer.observe(menu_mb, { 
   attributes: true, 
   attributeFilter: ['data-mm-spn-title'] });
 
+  // Attribute Single Product : Size Type
+
+  $('.size-type-block .size-type').click(function(){
+		let tab_id = $(this).attr('data-tab');
+
+		$('.size-type-block .size-type').removeClass('active');
+		$('.size-content').removeClass('active');
+
+		$(this).addClass('active');
+		$("#"+tab_id).addClass('active');
+	});
+
+  // Tab Desciption Single Product
+
+  $('.description-block .desc-type').click(function(){
+		let tab_dsec_id = $(this).attr('data-tab');
+
+		$('.description-block .desc-type').removeClass('active');
+		$('.desc-content').removeClass('active');
+
+		$(this).addClass('active');
+		$("#"+tab_dsec_id).addClass('active');
+	});
+
+});

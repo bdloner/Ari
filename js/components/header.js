@@ -9,7 +9,7 @@ class Header extends HTMLElement {
             <div class="navbar-block g-container">
                 <div class="dt-col -logo">
                     <div class="logo-block">
-                        <a href="/"><img class="logo-img" src="images/ari-logo.svg" alt="Ari Logo"></a>
+                        <a href="/"><img class="logo-img" src="../../images/ari-logo.svg" alt="Ari Logo"></a>
                     </div>
                 </div>
                 <div class="dt-col -menu">
@@ -419,10 +419,10 @@ class Header extends HTMLElement {
                 <div class="dt-col -addon">
                     <ul class="addon-block">
                         <li class="addon-col -search">
-                            <a href="#" data-featherlight="#search-popup"><img src="images/search-icon.svg" alt="Search Icon"></a>
+                            <a href="#" data-featherlight="#search-popup"><img src="../../images/search-icon.svg" alt="Search Icon"></a>
                         </li>
                         <li class="addon-col -acc">
-                            <a href="#" class="acc-btn"><img src="images/acc-icon.svg" alt="Account Icon"></a>
+                            <a href="#" class="acc-btn"><img src="../../images/acc-icon.svg" alt="Account Icon"></a>
                             <div id="dd-unlogin">
                                 <div class="lr-block">
                                     <a href="#" class="btn-global">เข้าสู่ระบบ</a>
@@ -432,13 +432,13 @@ class Header extends HTMLElement {
                             </div>
                         </li>
                         <li class="addon-col -minic">
-                            <img src="images/minic-icon.svg" alt="Mini Cart Icon">
+                            <img src="../../images/minic-icon.svg" alt="Mini Cart Icon">
                         </li>
                     </ul>
                     <div class="dd-lang-block">
-                        <a href="#" class="d-btn"><img class="img-flag" src="images/thai-flag.svg" alt="th" /> ไทย <img class="dd-icon"src="images/dd-icon.svg" alt="Dropdown Icon"></a>
+                        <a href="#" class="d-btn"><img class="img-flag" src="../../images/thai-flag.svg" alt="th" /> ไทย <img class="dd-icon"src="../../images/dd-icon.svg" alt="Dropdown Icon"></a>
                         <div class="dd-content-block">
-                            <a href="#"><img class="img-flag" src="images/us-flag.svg" alt="en" /> EN</a>
+                            <a href="#"><img class="img-flag" src="../../images/us-flag.svg" alt="en" /> EN</a>
                         </div>
                     </div>
                 </div>
@@ -448,7 +448,7 @@ class Header extends HTMLElement {
                 </div>
 
                 <div id="menu-mb" class="menu-burger-sidebar mm--main">
-                    <div class="close-btn"><img src="images/x-icon.svg" alt="" /></div>
+                    <div class="close-btn"><img src="../../images/x-icon.svg" alt="" /></div>
                     <div class="menu-burger-sidebar-block">
                         <ul class="main-menu-mb">
                             <li>
@@ -630,14 +630,14 @@ class Header extends HTMLElement {
 
                             <div class="sale-block">
                             <a href="#">
-                                <img src="images/sale-icon.svg" alt="" /> โปรโมชั่น End of year sale
+                                <img src="../../images/sale-icon.svg" alt="" /> โปรโมชั่น End of year sale
                             </a>
                         </div>
 
                         <div class="dd-lang-block">
-                            <a href="#" class="d-btn"><img class="img-flag" src="images/thai-flag.svg" alt="th" /> ไทย <img class="dd-icon"src="images/dd-icon.svg" alt="Dropdown Icon"></a>
+                            <a href="#" class="d-btn"><img class="img-flag" src="../../images/thai-flag.svg" alt="th" /> ไทย <img class="dd-icon"src="../../images/dd-icon.svg" alt="Dropdown Icon"></a>
                             <div class="dd-content-block">
-                                <a href="#"><img class="img-flag" src="images/us-flag.svg" alt="en" /> EN</a>
+                                <a href="#"><img class="img-flag" src="../../images/us-flag.svg" alt="en" /> EN</a>
                             </div>
                         </div>
 
@@ -659,24 +659,24 @@ class Header extends HTMLElement {
               <div class="half-nav top-menu">
                   <div class="dt-col -lang">
                       <div class="dd-lang-block">
-                          <a href="#" class="d-btn"><img class="img-flag" src="images/thai-flag.svg" alt="th" /> ไทย <img src="images/dd-icon.svg" alt="Dropdown Icon"></a>
+                          <a href="#" class="d-btn"><img class="img-flag" src="../../images/thai-flag.svg" alt="th" /> ไทย <img src="../../images/dd-icon.svg" alt="Dropdown Icon"></a>
                           <div class="dd-content-block">
-                            <a href="#"><img class="img-flag" src="images/us-flag.svg" alt="en" /> EN</a>
+                            <a href="#"><img class="img-flag" src="../../images/us-flag.svg" alt="en" /> EN</a>
                           </div>
                       </div>
                   </div>
                   <div class="dt-col -logo">
                       <div class="logo-block">
-                          <a href="/"><img class="logo-img" src="images/ari-logo.svg" alt="Ari Logo"></a>
+                          <a href="/"><img class="logo-img" src="../../images/ari-logo.svg" alt="Ari Logo"></a>
                       </div>
                   </div>
                   <div class="dt-col -addon">
                       <ul class="addon-block">
                           <li class="addon-col -search">
-                            <a href="#" data-featherlight="#search-popup"><img src="images/search-icon.svg" alt="Search Icon"></a>
+                            <a href="#" data-featherlight="#search-popup"><img src="../../images/search-icon.svg" alt="Search Icon"></a>
                         </li>
                           <li class="addon-col -acc">
-                            <a href="#"><img src="images/acc-icon.svg" alt="Account Icon"></a>
+                            <a href="#"><img src="../../images/acc-icon.svg" alt="Account Icon"></a>
                             <div id="dd-unlogin">
                                 <div class="lr-block">
                                     <a href="#" class="btn-global">เข้าสู่ระบบ</a>
@@ -686,7 +686,7 @@ class Header extends HTMLElement {
                             </div>
                         </li>
                         <li class="addon-col -minic">
-                            <img src="images/minic-icon.svg" alt="Mini Cart Icon"></a>
+                            <img src="../../images/minic-icon.svg" alt="Mini Cart Icon"></a>
                         </li>
                       </ul>
                   </div>

@@ -77,6 +77,56 @@ textarea {
     color: $accent-color;
 }
 
+// Radio Button Size
+
+[type="radio"]:checked,
+[type="radio"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+
+.radio-size:checked + label,
+.radio-size:not(:checked) + label {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    padding: 5px 12px;
+    padding-bottom: 0px;
+    margin: 0 auto;
+    margin-right: 10px;
+    text-align: center;
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+    text-transform: uppercase;
+    -webkit-transition: all 200ms linear;
+    transition: all 200ms linear;
+}
+
+.radio-size:checked + label,
+.radio-size:not(:checked) + label:hover {
+    background-color: transparent;
+    border: 1px solid $primary-color;
+    color: $primary-color;
+}
+
+.for-radio-size span {
+    transition: all 200ms linear;
+}
+
+.radio-size:checked + label span,
+.radio-size + label:hover span {
+    color: $primary-color;
+}
+
+.radio-size:not(:checked) + label {
+    border: 1px solid $accent-color;
+    color: $accent-color;
+}
+
 input:focus {
     outline: 0;
 }
@@ -321,9 +371,10 @@ a {
 
 // Select box
 
-select{
+select {
     appearance: none;
-    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='13.439' height='7.702' viewBox='0 0 13.439 7.702'%3E%3Cpath id='Path_9392' data-name='Path 9392' d='M1301.679,374.1l6.5,6.013-6.5,6.013' transform='translate(386.83 -1300.973) rotate(90)' fill='none' stroke='%23ffbe00' stroke-linecap='round' stroke-linejoin='round' stroke-width='1'/%3E%3C/svg%3E%0A") no-repeat;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='13.439' height='7.702' viewBox='0 0 13.439 7.702'%3E%3Cpath id='Path_9392' data-name='Path 9392' d='M1301.679,374.1l6.5,6.013-6.5,6.013' transform='translate(386.83 -1300.973) rotate(90)' fill='none' stroke='%23ffbe00' stroke-linecap='round' stroke-linejoin='round' stroke-width='1'/%3E%3C/svg%3E%0A")
+        no-repeat;
     background-size: 15px;
     background-position: calc(100% - 10px) center;
     height: 45px;
@@ -337,7 +388,8 @@ select{
         text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
     }
 
-    &:focus, &:active{
+    &:focus,
+    &:active {
         outline: 0;
     }
 }
@@ -3634,62 +3686,63 @@ footer.main-footer {
 
 /* ====================== Racing suit Page ====================== */
 
-.racing-suit-page{
+.racing-suit-page {
     background-color: $secondary-color;
 
     // Racing suit Page - Hero Banner //
 
-    .hero-slider-section{
-        .splide{
-            .splide__slide{
+    .hero-slider-section {
+        .splide {
+            .splide__slide {
                 min-height: 600px;
 
-                .g-container{
+                .g-container {
                     max-width: 60vw;
                     height: 100%;
                     display: flex;
                     align-items: center;
 
-                    .grid-block{
-                        .grid-item{
+                    .grid-block {
+                        .grid-item {
                             display: flex;
                             flex-direction: column;
                             align-items: flex-start;
 
-                            h2{
-                                margin:0;
+                            h2 {
+                                margin: 0;
                                 margin-top: 10px;
                                 font-size: 26px;
                             }
                         }
                     }
                 }
-                
-                &.--slide-01{
+
+                &.--slide-01 {
                     background: url(../images/racing-suit-hero-slider.png) center center;
                     background-size: cover;
                 }
 
-                &.--slide-02{
+                &.--slide-02 {
                     background: url(../images/racing-suit-hero-slider.png) center center;
                     background-size: cover;
                 }
 
-                &.--slide-03{
+                &.--slide-03 {
                     background: url(../images/racing-suit-hero-slider.png) center center;
                     background-size: cover;
                 }
-                
-                h2, img{
+
+                h2,
+                img {
                     position: relative;
                     z-index: 2;
                 }
 
-                h2{
-                    font-family: 'Agency FB';
+                h2 {
+                    font-family: "Agency FB";
                 }
 
-                .btn-border{
+                .btn-border {
                     border: 1px solid #fff;
                     width: auto;
                     display: block;
@@ -3697,17 +3750,17 @@ footer.main-footer {
                     z-index: 2;
                     padding: 7px 4rem;
                     border-radius: 5px;
-                    font-family: 'Prachason';
+                    font-family: "Prachason";
                     font-size: 16px;
                     font-weight: normal;
 
-                    &:hover{
+                    &:hover {
                         background-color: $accent-color;
                         color: #000;
                     }
                 }
 
-                .overlay{
+                .overlay {
                     display: block !important;
                     max-width: 60%;
                     transition: max-height 0.15s ease-out;
@@ -3717,70 +3770,70 @@ footer.main-footer {
                     bottom: 0;
                     right: 0;
                     left: 0;
-                    background: linear-gradient(270deg, rgba(22,22,22,0) 0%, rgba(22,22,22,1) 100%);
-                    transition: all height .5s ease-in-out;
+                    background: linear-gradient(270deg, rgba(22, 22, 22, 0) 0%, rgba(22, 22, 22, 1) 100%);
+                    transition: all height 0.5s ease-in-out;
                 }
             }
 
-            .splide__arrows{
-                .splide__arrow{
+            .splide__arrows {
+                .splide__arrow {
                     opacity: 1;
                     background: transparent;
 
-                    .arrow-left{
+                    .arrow-left {
                         width: 100px;
                     }
 
-                    &--prev{
+                    &--prev {
                         left: 13%;
                     }
 
-                    &--next{
+                    &--next {
                         right: 13%;
                     }
                 }
             }
         }
 
-        @media(max-width: 991px){
-            .splide{
-                .splide__slide{
+        @media (max-width: 991px) {
+            .splide {
+                .splide__slide {
                     min-height: 320px;
 
-                    .g-container{
+                    .g-container {
                         max-width: 1160px;
                     }
-                    
-                    &.--slide-01{
+
+                    &.--slide-01 {
                         background: url(../images/racing-suit-hero-slider-mb-01.png) center center;
                         background-size: cover;
                     }
-    
-                    &.--slide-02{
+
+                    &.--slide-02 {
                         background: url(../images/racing-suit-hero-slider-mb-01.png) center center;
                         background-size: cover;
                     }
-    
-                    &.--slide-03{
+
+                    &.--slide-03 {
                         background: url(../images/racing-suit-hero-slider-mb-01.png) center center;
                         background-size: cover;
                     }
                 }
-    
-                .splide__arrows{
-                    .splide__arrow{
+
+                .splide__arrows {
+                    .splide__arrow {
                         opacity: 1;
                         background: transparent;
-    
-                        .arrow-left{
+
+                        .arrow-left {
                             width: 100px;
                         }
-    
-                        &--prev{
+
+                        &--prev {
                             left: 13%;
                         }
-    
-                        &--next{
+
+                        &--next {
                             right: 13%;
                         }
                     }
@@ -3788,15 +3841,15 @@ footer.main-footer {
             }
         }
     }
-    
-    // Racing suit Page - Hot Team //    
 
-    .hot-team-section{
+    // Racing suit Page - Hot Team //
+
+    .hot-team-section {
         padding: 4rem 0;
 
-        .hot-team-block{
-            #hot-team-slider{
-                .splide__arrows{
+        .hot-team-block {
+            #hot-team-slider {
+                .splide__arrows {
                     .splide__arrow--prev {
                         left: -4rem;
                         background-color: transparent;
@@ -3808,15 +3861,15 @@ footer.main-footer {
                     }
                 }
 
-                .splide__pagination{
+                .splide__pagination {
                     display: none;
                 }
 
-                .slider-hot-team{
-                    a{
-                        &:hover{
+                .slider-hot-team {
+                    a {
+                        &:hover {
                             .hot-team {
-                                .overlay{
+                                .overlay {
                                     max-height: 100%;
                                     transition: max-height 0.25s ease-in;
                                 }
@@ -3825,17 +3878,17 @@ footer.main-footer {
                                     margin-bottom: 9rem;
                                     color: $primary-color;
                                 }
-                            } 
+                            }
                         }
                     }
 
-                    .hot-team{
+                    .hot-team {
                         min-height: 290px;
                         display: flex;
                         justify-content: center;
                         align-items: flex-end;
-                        transition: .5s;
-                
+                        transition: 0.5s;
+
                         &.-hot-team-01 {
                             background: url(../images/hot-team-01.png) center center;
                             background-size: cover;
@@ -3865,15 +3918,15 @@ footer.main-footer {
                             width: 100%;
                             text-align: center;
                             font-size: 20px;
-                            font-family: 'Agency FB';
+                            font-family: "Agency FB";
                             font-weight: normal;
                             z-index: 1;
                             margin-bottom: 2rem;
-                            transition: .5s;
+                            transition: 0.5s;
                             text-transform: uppercase;
                         }
 
-                        .overlay{
+                        .overlay {
                             max-height: 40%;
                             transition: max-height 0.15s ease-out;
                             height: 100%;
@@ -3881,23 +3934,23 @@ footer.main-footer {
                             bottom: 0;
                             right: 0;
                             left: 0;
-                            background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
-                            transition: all height .5s ease-in-out;
+                            background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+                            transition: all height 0.5s ease-in-out;
                         }
                     }
                 }
             }
         }
 
-        @media(max-width: 991px){
+        @media (max-width: 991px) {
             padding: 2rem 0;
 
-            .hot-team-block{
+            .hot-team-block {
                 .title-hot-team {
                     text-align: center;
                 }
 
-                .grid-block{
+                .grid-block {
                     grid-template-columns: 1fr;
                 }
             }
@@ -3906,23 +3959,24 @@ footer.main-footer {
 
     // Racing suit Page - Your Fav //
 
-    .your-fav-section{
+    .your-fav-section {
         padding: 5rem 0;
         padding-bottom: 8rem;
         background: url(../images/bg-your-fav.png) center center;
         background-size: cover;
 
-        .your-fav-block{
-            h2,h4{
+        .your-fav-block {
+            h2,
+            h4 {
                 text-align: center;
                 margin: 5px 10px;
             }
 
-            h2{
+            h2 {
                 color: $primary-color;
             }
 
-            .grid-block{
+            .grid-block {
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
                 gap: 20px;
@@ -3938,11 +3992,11 @@ footer.main-footer {
                         border: 1px solid $accent-color;
                         padding: 10px 2rem;
                         border-radius: 5px;
-                        font-family: 'Prachason';
+                        font-family: "Prachason";
                         font-weight: normal;
 
-                        &:hover{
-                            background:transparent;
+                        &:hover {
+                            background: transparent;
                             border: 1px solid $primary-color;
                             color: $primary-color;
                         }
@@ -3951,9 +4005,9 @@ footer.main-footer {
             }
         }
 
-        @media(max-width: 991px){
-            .your-fav-block{
-                .grid-block{
+        @media (max-width: 991px) {
+            .your-fav-block {
+                .grid-block {
                     display: grid;
                     grid-template-columns: 1fr 1fr;
                 }
@@ -3961,10 +4015,10 @@ footer.main-footer {
         }
     }
 
-     // Racing suit Page - Shirt Premier Slider //
+    // Racing suit Page - Shirt Premier Slider //
 
-     .shirt-premier-section {
-         padding-top: 4rem;
+    .shirt-premier-section {
+        padding-top: 4rem;
 
         .shirt-premier-block {
             .title-shirt-premier {
@@ -3972,12 +4026,12 @@ footer.main-footer {
                 margin-bottom: 1rem;
             }
 
-            &.g-container{
-                #shirt-premier-slider{
-                     a{
-                        &:hover{
+            &.g-container {
+                #shirt-premier-slider {
+                    a {
+                        &:hover {
                             .slider-shirt-premier {
-                                .overlay{
+                                .overlay {
                                     max-height: 100%;
                                     transition: max-height 0.25s ease-in;
                                 }
@@ -3986,11 +4040,11 @@ footer.main-footer {
                                     margin-bottom: 7rem;
                                     color: $primary-color;
                                 }
-                            } 
+                            }
                         }
                     }
 
-                    .slider-shirt-premier{
+                    .slider-shirt-premier {
                         min-height: 250px;
                         display: flex;
                         align-items: flex-end;
@@ -3999,40 +4053,40 @@ footer.main-footer {
                             background: url(../images/shirt-01.png) center center;
                             background-size: cover;
                         }
-    
+
                         &.-shirt-premier-02 {
                             background: url(../images/shirt-02.png) center center;
                             background-size: cover;
                         }
-    
+
                         &.-shirt-premier-03 {
                             background: url(../images/shirt-03.png) center center;
                             background-size: cover;
                         }
-    
+
                         &.-shirt-premier-04 {
                             background: url(../images/shirt-04.png) center center;
                             background-size: cover;
                         }
-    
+
                         &.-shirt-premier-05 {
                             background: url(../images/shirt-05.png) center center;
                             background-size: cover;
                         }
-    
+
                         h5 {
                             width: 100%;
                             text-align: center;
                             font-size: 26px;
-                            font-family: 'Agency FB';
+                            font-family: "Agency FB";
                             z-index: 1;
                             margin-bottom: 2rem;
-                            transition: .5s;
+                            transition: 0.5s;
                             text-transform: uppercase;
                             font-weight: normal;
                         }
-    
-                        .overlay{
+
+                        .overlay {
                             max-height: 40%;
                             transition: max-height 0.15s ease-out;
                             height: 100%;
@@ -4040,31 +4094,31 @@ footer.main-footer {
                             bottom: 0;
                             right: 0;
                             left: 0;
-                            background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
-                            transition: all height .5s ease-in-out;
+                            background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+                            transition: all height 0.5s ease-in-out;
                         }
                     }
-                    
-                    .splide__arrows{
+
+                    .splide__arrows {
                         position: relative;
                         margin-top: 3rem;
-                        
-                        &.g-container{
+
+                        &.g-container {
                             max-width: 1100px;
-    
+
                             .splide__arrow--prev {
                                 right: 4rem;
                                 left: unset;
                                 background-color: transparent;
                             }
-        
+
                             .splide__arrow--next {
                                 background-color: transparent;
-                            }   
+                            }
                         }
                     }
 
-                    .splide__pagination{
+                    .splide__pagination {
                         display: none;
                     }
                 }
@@ -4076,17 +4130,17 @@ footer.main-footer {
                 align-items: center;
                 margin-top: 1rem;
 
-                .btn-border{
+                .btn-border {
                     border: 1px solid #fff;
                     width: auto;
                     display: block;
                     padding: 10px 3rem;
                     border-radius: 5px;
-                    font-family: 'Prachason';
+                    font-family: "Prachason";
                     font-size: 16px;
                     font-weight: normal;
 
-                    &:hover{
+                    &:hover {
                         background-color: $accent-color;
                         color: #000;
                     }
@@ -4094,10 +4148,10 @@ footer.main-footer {
             }
         }
 
-        @media(max-width: 991px){
+        @media (max-width: 991px) {
             padding: 0;
 
-            .shirt-premier-block{
+            .shirt-premier-block {
                 padding-right: 0;
 
                 .title-shirt-premier {
@@ -4105,21 +4159,21 @@ footer.main-footer {
                 }
             }
 
-            #shirt-premier-slider{
-                .splide__arrows{
+            #shirt-premier-slider {
+                .splide__arrows {
                     display: none;
                 }
             }
         }
-     }
+    }
 
     // Racing suit Page - Shirt Product //
 
     .hot-product-section {
         padding: 4rem 0;
 
-        .hot-product-block{
-            .grid-block{
+        .hot-product-block {
+            .grid-block {
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr 1fr;
                 gap: 25px;
@@ -4127,10 +4181,10 @@ footer.main-footer {
                 .featured-img-block {
                     height: 270px;
 
-                    .badge{
+                    .badge {
                         font-size: 14px;
 
-                        &.-r{
+                        &.-r {
                             margin-top: 2rem;
                         }
                     }
@@ -4143,26 +4197,25 @@ footer.main-footer {
             justify-content: center;
             align-items: center;
 
-            .btn-border{
+            .btn-border {
                 display: block;
                 width: auto;
                 border: 1px solid $accent-color;
                 border-radius: 5px;
                 padding: 7px 3rem;
-                font-family: 'Prachason';
+                font-family: "Prachason";
                 font-size: 16px;
 
-                &:hover{
+                &:hover {
                     background-color: $accent-color;
                     color: #000;
                 }
-                
             }
         }
 
-        @media(max-width: 991px){
-            .hot-product-block{
-                .grid-block{
+        @media (max-width: 991px) {
+            .hot-product-block {
+                .grid-block {
                     grid-template-columns: 1fr 1fr;
                 }
             }
@@ -4181,12 +4234,12 @@ footer.main-footer {
                 margin-bottom: 1rem;
             }
 
-            &.g-container{
-                #national-team-slider{
-                    a{
-                        &:hover{
+            &.g-container {
+                #national-team-slider {
+                    a {
+                        &:hover {
                             .slider-national-team {
-                                .overlay{
+                                .overlay {
                                     max-height: 100%;
                                     transition: max-height 0.25s ease-in;
                                 }
@@ -4195,11 +4248,11 @@ footer.main-footer {
                                     margin-bottom: 7rem;
                                     color: $primary-color;
                                 }
-                            } 
+                            }
                         }
                     }
 
-                    .slider-national-team{
+                    .slider-national-team {
                         min-height: 250px;
                         display: flex;
                         align-items: flex-end;
@@ -4208,40 +4261,40 @@ footer.main-footer {
                             background: url(../images/national-team-01.png) center center;
                             background-size: cover;
                         }
-    
+
                         &.-national-team-02 {
                             background: url(../images/national-team-02.png) center center;
                             background-size: cover;
                         }
-    
+
                         &.-national-team-03 {
                             background: url(../images/national-team-03.png) center center;
                             background-size: cover;
                         }
-    
+
                         &.-national-team-04 {
                             background: url(../images/national-team-04.png) center center;
                             background-size: cover;
                         }
-    
+
                         &.-national-team-05 {
                             background: url(../images/national-team-05.png) center center;
                             background-size: cover;
                         }
-    
+
                         h5 {
                             width: 100%;
                             text-align: center;
                             font-size: 26px;
-                            font-family: 'Agency FB';
+                            font-family: "Agency FB";
                             z-index: 1;
                             margin-bottom: 2rem;
-                            transition: .5s;
+                            transition: 0.5s;
                             text-transform: uppercase;
                             font-weight: normal;
                         }
-    
-                        .overlay{
+
+                        .overlay {
                             max-height: 40%;
                             transition: max-height 0.15s ease-out;
                             height: 100%;
@@ -4249,31 +4302,31 @@ footer.main-footer {
                             bottom: 0;
                             right: 0;
                             left: 0;
-                            background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
-                            transition: all height .5s ease-in-out;
+                            background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+                            transition: all height 0.5s ease-in-out;
                         }
                     }
-                    
-                    .splide__arrows{
+
+                    .splide__arrows {
                         position: relative;
                         margin-top: 3rem;
-                        
-                        &.g-container{
+
+                        &.g-container {
                             max-width: 1100px;
-    
+
                             .splide__arrow--prev {
                                 right: 4rem;
                                 left: unset;
                                 background-color: transparent;
                             }
-        
+
                             .splide__arrow--next {
                                 background-color: transparent;
-                            }   
+                            }
                         }
                     }
 
-                    .splide__pagination{
+                    .splide__pagination {
                         display: none;
                     }
                 }
@@ -4285,17 +4338,17 @@ footer.main-footer {
                 align-items: center;
                 margin-top: 1rem;
 
-                .btn-border{
+                .btn-border {
                     border: 1px solid #fff;
                     width: auto;
                     display: block;
                     padding: 10px 3rem;
                     border-radius: 5px;
-                    font-family: 'Prachason';
+                    font-family: "Prachason";
                     font-size: 16px;
                     font-weight: normal;
 
-                    &:hover{
+                    &:hover {
                         background-color: $accent-color;
                         color: #000;
                     }
@@ -4303,10 +4356,10 @@ footer.main-footer {
             }
         }
 
-        @media(max-width: 991px){
+        @media (max-width: 991px) {
             padding: 0;
 
-            .national-team-block{
+            .national-team-block {
                 padding-right: 0;
 
                 .title-national-team {
@@ -4314,8 +4367,8 @@ footer.main-footer {
                 }
             }
 
-            #national-team-slider{
-                .splide__arrows{
+            #national-team-slider {
+                .splide__arrows {
                     display: none;
                 }
             }
@@ -4351,7 +4404,7 @@ footer.main-footer {
                                 margin: 0;
                                 margin-top: 10px;
                                 font-size: 26px;
-                                font-family: 'Prachason';
+                                font-family: "Prachason";
                             }
                         }
                     }
@@ -4538,15 +4591,15 @@ footer.main-footer {
                                 margin-bottom: 1rem;
                             }
 
-                            a.btn-border{
+                            a.btn-border {
                                 width: auto;
-                                font-family: 'Prachason';
+                                font-family: "Prachason";
                                 font-weight: normal;
                                 border: 1px solid $accent-color;
                                 padding: 7px 4rem;
                                 border-radius: 5px;
 
-                                &:hover{
+                                &:hover {
                                     background-color: $accent-color;
                                     color: #000;
                                 }
@@ -4596,11 +4649,11 @@ footer.main-footer {
 
     // Football Equipment Page - Show Product //
 
-    .show-product-section{
+    .show-product-section {
         padding-top: 4rem;
 
         .show-product-block {
-            .grid-block{
+            .grid-block {
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr 1fr;
                 gap: 25px;
@@ -4612,24 +4665,24 @@ footer.main-footer {
             justify-content: center;
             align-items: center;
 
-            .btn-border{
+            .btn-border {
                 width: auto;
                 padding: 10px 3rem;
                 border: 1px solid $accent-color;
                 border-radius: 5px;
-                font-family: 'Prachason';
+                font-family: "Prachason";
                 font-weight: normal;
 
-                &:hover{
+                &:hover {
                     background-color: $accent-color;
                     color: #000;
                 }
             }
         }
 
-        @media(max-width: 991px){
+        @media (max-width: 991px) {
             .show-product-block {
-                .grid-block{
+                .grid-block {
                     grid-template-columns: 1fr 1fr;
                     gap: 15px;
                 }
@@ -4688,15 +4741,15 @@ footer.main-footer {
                             position: relative;
                         }
 
-                        a.btn-border{
+                        a.btn-border {
                             width: auto;
-                            font-family: 'Prachason';
+                            font-family: "Prachason";
                             font-weight: normal;
                             border: 1px solid $accent-color;
                             padding: 7px 4rem;
                             border-radius: 5px;
 
-                            &:hover{
+                            &:hover {
                                 background-color: $accent-color;
                                 color: #000;
                             }
@@ -4761,7 +4814,7 @@ footer.main-footer {
 
         @media (max-width: 991px) {
             .football-equipment-block {
-                .title-football-equipment{
+                .title-football-equipment {
                     text-align: center;
                 }
 
@@ -4801,7 +4854,7 @@ footer.main-footer {
                                 margin: 0;
                                 margin-top: 10px;
                                 font-size: 26px;
-                                font-family: 'Prachason';
+                                font-family: "Prachason";
                             }
                         }
                     }
@@ -4975,15 +5028,15 @@ footer.main-footer {
                             transition: 0.5s;
                         }
 
-                        a.btn-border{
+                        a.btn-border {
                             width: auto;
-                            font-family: 'Prachason';
+                            font-family: "Prachason";
                             font-weight: normal;
                             border: 1px solid $accent-color;
                             padding: 7px 4rem;
                             border-radius: 5px;
 
-                            &:hover{
+                            &:hover {
                                 background-color: $accent-color;
                                 color: #000;
                             }
@@ -5042,9 +5095,9 @@ footer.main-footer {
 
     // T-Shirt Page - Show Product //
 
-    .show-product-section{
+    .show-product-section {
         .show-product-block {
-            .grid-block{
+            .grid-block {
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr 1fr;
                 gap: 25px;
@@ -5056,24 +5109,24 @@ footer.main-footer {
             justify-content: center;
             align-items: center;
 
-            .btn-border{
+            .btn-border {
                 width: auto;
                 padding: 10px 3rem;
                 border: 1px solid $accent-color;
                 border-radius: 5px;
-                font-family: 'Prachason';
+                font-family: "Prachason";
                 font-weight: normal;
 
-                &:hover{
+                &:hover {
                     background-color: $accent-color;
                     color: #000;
                 }
             }
         }
 
-        @media(max-width: 991px){
+        @media (max-width: 991px) {
             .show-product-block {
-                .grid-block{
+                .grid-block {
                     grid-template-columns: 1fr 1fr;
                     gap: 15px;
                 }
@@ -5132,15 +5185,15 @@ footer.main-footer {
                             position: relative;
                         }
 
-                        a.btn-border{
+                        a.btn-border {
                             width: auto;
-                            font-family: 'Prachason';
+                            font-family: "Prachason";
                             font-weight: normal;
                             border: 1px solid $accent-color;
                             padding: 7px 4rem;
                             border-radius: 5px;
 
-                            &:hover{
+                            &:hover {
                                 background-color: $accent-color;
                                 color: #000;
                             }
@@ -5205,7 +5258,7 @@ footer.main-footer {
 
         @media (max-width: 991px) {
             .your-style-block {
-                .title-your-style{
+                .title-your-style {
                     text-align: center;
                 }
 
@@ -5245,7 +5298,7 @@ footer.main-footer {
                                 margin: 0;
                                 margin-top: 10px;
                                 font-size: 26px;
-                                font-family: 'Prachason';
+                                font-family: "Prachason";
                             }
                         }
                     }
@@ -5432,15 +5485,15 @@ footer.main-footer {
                                 margin-bottom: 1rem;
                             }
 
-                            a.btn-border{
+                            a.btn-border {
                                 width: auto;
-                                font-family: 'Prachason';
+                                font-family: "Prachason";
                                 font-weight: normal;
                                 border: 1px solid $accent-color;
                                 padding: 7px 4rem;
                                 border-radius: 5px;
 
-                                &:hover{
+                                &:hover {
                                     background-color: $accent-color;
                                     color: #000;
                                 }
@@ -5537,15 +5590,15 @@ footer.main-footer {
                             position: relative;
                         }
 
-                        a.btn-border{
+                        a.btn-border {
                             width: auto;
-                            font-family: 'Prachason';
+                            font-family: "Prachason";
                             font-weight: normal;
                             border: 1px solid $accent-color;
                             padding: 7px 4rem;
                             border-radius: 5px;
 
-                            &:hover{
+                            &:hover {
                                 background-color: $accent-color;
                                 color: #000;
                             }
@@ -5610,7 +5663,7 @@ footer.main-footer {
 
         @media (max-width: 991px) {
             .your-style-block {
-                .title-your-style{
+                .title-your-style {
                     text-align: center;
                 }
 
@@ -5623,12 +5676,12 @@ footer.main-footer {
 
     // Ari Gear Page - Show Product //
 
-    .show-product-section{
+    .show-product-section {
         padding: 4rem 0;
         padding-bottom: 7rem;
 
         .show-product-block {
-            .grid-block{
+            .grid-block {
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr 1fr;
                 gap: 25px;
@@ -5640,30 +5693,30 @@ footer.main-footer {
             justify-content: center;
             align-items: center;
 
-            .btn-border{
+            .btn-border {
                 width: auto;
                 padding: 10px 3rem;
                 border: 1px solid $accent-color;
                 border-radius: 5px;
-                font-family: 'Prachason';
+                font-family: "Prachason";
                 font-weight: normal;
 
-                &:hover{
+                &:hover {
                     background-color: $accent-color;
                     color: #000;
                 }
             }
         }
 
-        @media(max-width: 991px){
+        @media (max-width: 991px) {
             padding-top: 2rem;
 
             .show-product-block {
-                h2{
+                h2 {
                     text-align: center;
                 }
 
-                .grid-block{
+                .grid-block {
                     grid-template-columns: 1fr 1fr;
                     gap: 15px;
                 }
@@ -5700,7 +5753,7 @@ footer.main-footer {
                                 margin: 0;
                                 margin-top: 10px;
                                 font-size: 26px;
-                                font-family: 'Prachason';
+                                font-family: "Prachason";
                             }
                         }
                     }
@@ -5833,12 +5886,12 @@ footer.main-footer {
 
     // Discount Page - Show Product //
 
-    .show-product-section{
+    .show-product-section {
         padding: 4rem 0;
         padding-bottom: 7rem;
 
         .show-product-block {
-            .grid-block{
+            .grid-block {
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr 1fr;
                 gap: 25px;
@@ -5850,30 +5903,30 @@ footer.main-footer {
             justify-content: center;
             align-items: center;
 
-            .btn-border{
+            .btn-border {
                 width: auto;
                 padding: 10px 3rem;
                 border: 1px solid $accent-color;
                 border-radius: 5px;
-                font-family: 'Prachason';
+                font-family: "Prachason";
                 font-weight: normal;
 
-                &:hover{
+                &:hover {
                     background-color: $accent-color;
                     color: #000;
                 }
             }
         }
 
-        @media(max-width: 991px){
+        @media (max-width: 991px) {
             padding-top: 2rem;
 
             .show-product-block {
-                h2{
+                h2 {
                     text-align: center;
                 }
 
-                .grid-block{
+                .grid-block {
                     grid-template-columns: 1fr 1fr;
                     gap: 15px;
                 }
@@ -5893,44 +5946,44 @@ footer.main-footer {
         padding: 4rem 0;
         padding-bottom: 8rem;
 
-        .login-block{
-            .grid-block{
+        .login-block {
+            .grid-block {
                 display: grid;
                 grid-template-columns: 1fr 1fr;
                 gap: 25px;
 
-                .grid-item{
-                    &.-left{
+                .grid-item {
+                    &.-left {
                         padding: 0 35px;
 
-                        .heading-welcome{
+                        .heading-welcome {
                             font-size: 16px;
                             font-weight: normal;
                             margin: 0;
                         }
 
-                        .heading-login{
+                        .heading-login {
                             font-size: 24px;
                             margin: 0;
                         }
 
-                        .login-in-form{
+                        .login-in-form {
                             display: flex;
                             flex-direction: column;
 
-                            .remember-login{
-                                font-family: 'Agency FB';
+                            .remember-login {
+                                font-family: "Agency FB";
                                 font-weight: bold;
                                 font-size: 18px;
                                 text-transform: uppercase;
                             }
 
-                            label{
+                            label {
                                 font-size: 18px;
                                 margin: 5px 0;
                             }
 
-                            input{
+                            input {
                                 border: 1px solid #606060;
                                 background: transparent;
                                 padding: 7px 15px;
@@ -5943,14 +5996,14 @@ footer.main-footer {
                                     margin: 7px 0;
                                     margin-bottom: 1rem;
 
-                                    .grid-item{
+                                    .grid-item {
                                         display: flex;
                                         align-items: center;
 
-                                        &:last-child{
+                                        &:last-child {
                                             justify-content: flex-end;
 
-                                            a{
+                                            a {
                                                 text-decoration: underline;
                                             }
                                         }
@@ -5958,23 +6011,23 @@ footer.main-footer {
                                 }
                             }
 
-                            .btn-global{
+                            .btn-global {
                                 border: 0;
-                                font-family: 'Prachason';
+                                font-family: "Prachason";
                                 padding: 10px 0;
                                 cursor: pointer;
                             }
                         }
 
-                        .social-login-block{
-                            hr{
+                        .social-login-block {
+                            hr {
                                 border: 0;
-                                border-bottom: 1px solid #3E3E3E;
+                                border-bottom: 1px solid #3e3e3e;
                                 margin-bottom: -20px;
                                 margin-top: 30px;
                             }
-                            
-                            p{
+
+                            p {
                                 width: 180px;
                                 margin: 0 auto;
                                 padding: 7px 15px;
@@ -5982,10 +6035,10 @@ footer.main-footer {
                             }
 
                             .grid-block {
-                                &.-btn{
+                                &.-btn {
                                     margin-top: 2rem;
 
-                                    .btn-login{
+                                    .btn-login {
                                         text-align: center;
                                         display: flex;
                                         justify-content: center;
@@ -5993,15 +6046,15 @@ footer.main-footer {
                                         padding: 10px;
                                         border-radius: 5px;
 
-                                        img{
-                                            margin-right:15px;
+                                        img {
+                                            margin-right: 15px;
                                         }
-                                        
-                                        &.btn-login-fb{
-                                            background-color: #1877F2;
+
+                                        &.btn-login-fb {
+                                            background-color: #1877f2;
                                             color: #fff;
                                         }
-                                        &.btn-login-gg{
+                                        &.btn-login-gg {
                                             background-color: $accent-color;
                                             color: #000;
                                         }
@@ -6009,7 +6062,7 @@ footer.main-footer {
                                 }
                             }
                         }
-                        .reg-mb{
+                        .reg-mb {
                             display: none;
                         }
                     }
@@ -6022,30 +6075,30 @@ footer.main-footer {
                         background: url(../images/login-right-bg.png) center center;
                         background-size: cover;
 
-                        .reg-side-block{
+                        .reg-side-block {
                             display: flex;
                             flex-direction: column;
                             justify-content: center;
                             align-items: center;
 
-                            .title-reg{
+                            .title-reg {
                                 text-align: center;
                             }
 
-                            .desc-reg{
+                            .desc-reg {
                                 text-align: center;
                             }
 
-                            a.btn-border{
+                            a.btn-border {
                                 width: 80%;
                                 border: 1px solid $accent-color;
                                 border-radius: 5px;
                                 padding: 10px;
                                 display: block;
-                                font-family: 'Prachason';
+                                font-family: "Prachason";
                                 font-size: 16px;
 
-                                &:hover{
+                                &:hover {
                                     background-color: $accent-color;
                                     color: #000;
                                 }
@@ -6056,29 +6109,29 @@ footer.main-footer {
             }
         }
 
-        @media(max-width: 991px){
-            .login-block{
+        @media (max-width: 991px) {
+            .login-block {
                 .grid-block {
                     grid-template-columns: 1fr;
 
-                    .reg-mb{
+                    .reg-mb {
                         margin-top: 2rem;
                         display: flex !important;
                         justify-content: center;
                         font-size: 18px;
 
-                        a{
+                        a {
                             margin-left: 10px;
                             color: $primary-color;
                             text-decoration: underline;
                         }
                     }
 
-                    .-rem{
+                    .-rem {
                         grid-template-columns: 1fr 1fr;
                     }
 
-                    .-right{
+                    .-right {
                         display: none !important;
                     }
                 }
@@ -6098,51 +6151,51 @@ footer.main-footer {
         padding: 4rem 0;
         padding-bottom: 8rem;
 
-        .reg-block{
-            .grid-block{
+        .reg-block {
+            .grid-block {
                 display: grid;
                 grid-template-columns: 1fr 1fr;
                 gap: 25px;
 
-                .grid-item{
-                    &.-left{
+                .grid-item {
+                    &.-left {
                         padding: 0 35px;
 
-                        .heading-welcome{
+                        .heading-welcome {
                             font-size: 16px;
                             font-weight: normal;
                             margin: 0;
                         }
 
-                        .heading-reg{
+                        .heading-reg {
                             font-size: 24px;
                             margin: 0;
                         }
 
-                        .reg-in-form{
+                        .reg-in-form {
                             display: flex;
                             flex-direction: column;
 
-                            .remember-reg{
+                            .remember-reg {
                                 margin-top: 2rem;
-                                font-family: 'Prachason';
+                                font-family: "Prachason";
                                 font-weight: normal;
                                 font-size: 18px;
                                 text-transform: uppercase;
 
-                                a{
+                                a {
                                     color: $primary-color;
                                     text-decoration: underline;
                                 }
                             }
 
-                            label{
+                            label {
                                 font-size: 18px;
                                 margin: 5px 0;
                                 margin-top: 10px;
                             }
 
-                            input{
+                            input {
                                 border: 1px solid #606060;
                                 background: transparent;
                                 padding: 7px 15px;
@@ -6150,36 +6203,36 @@ footer.main-footer {
                                 font-size: 16px;
                             }
 
-                            .grid-block{
-                                &.-select-items{
+                            .grid-block {
+                                &.-select-items {
                                     grid-template-columns: 1fr 1fr 1fr;
                                     gap: 10px;
 
-                                    .selectbox{
+                                    .selectbox {
                                         width: 100%;
                                         font-size: 16px;
                                     }
                                 }
                             }
 
-                            .btn-global{
+                            .btn-global {
                                 border: 0;
-                                font-family: 'Prachason';
+                                font-family: "Prachason";
                                 padding: 10px 0;
                                 cursor: pointer;
                                 margin-top: 1rem;
                             }
                         }
 
-                        .social-reg-block{
-                            hr{
+                        .social-reg-block {
+                            hr {
                                 border: 0;
-                                border-bottom: 1px solid #3E3E3E;
+                                border-bottom: 1px solid #3e3e3e;
                                 margin-bottom: -20px;
                                 margin-top: 30px;
                             }
-                            
-                            p{
+
+                            p {
                                 width: 180px;
                                 margin: 0 auto;
                                 padding: 7px 15px;
@@ -6187,10 +6240,10 @@ footer.main-footer {
                             }
 
                             .grid-block {
-                                &.-btn{
+                                &.-btn {
                                     margin-top: 2rem;
 
-                                    .btn-reg{
+                                    .btn-reg {
                                         text-align: center;
                                         display: flex;
                                         justify-content: center;
@@ -6198,15 +6251,15 @@ footer.main-footer {
                                         padding: 10px;
                                         border-radius: 5px;
 
-                                        img{
-                                            margin-right:15px;
+                                        img {
+                                            margin-right: 15px;
                                         }
-                                        
-                                        &.btn-login-fb{
-                                            background-color: #1877F2;
+
+                                        &.btn-login-fb {
+                                            background-color: #1877f2;
                                             color: #fff;
                                         }
-                                        &.btn-login-gg{
+                                        &.btn-login-gg {
                                             background-color: $accent-color;
                                             color: #000;
                                         }
@@ -6214,7 +6267,7 @@ footer.main-footer {
                                 }
                             }
                         }
-                        .login-mb{
+                        .login-mb {
                             display: none;
                         }
                     }
@@ -6224,7 +6277,7 @@ footer.main-footer {
                         justify-content: center;
                         align-items: flex-start;
 
-                        .login-side-block{
+                        .login-side-block {
                             display: flex;
                             flex-direction: column;
                             justify-content: center;
@@ -6234,24 +6287,24 @@ footer.main-footer {
                             min-height: 500px;
                             padding: 0 30px;
 
-                            .title-login{
+                            .title-login {
                                 text-align: center;
                             }
 
-                            .desc-login{
+                            .desc-login {
                                 text-align: center;
                             }
 
-                            a.btn-border{
+                            a.btn-border {
                                 width: 80%;
                                 border: 1px solid $accent-color;
                                 border-radius: 5px;
                                 padding: 10px;
                                 display: block;
-                                font-family: 'Prachason';
+                                font-family: "Prachason";
                                 font-size: 16px;
 
-                                &:hover{
+                                &:hover {
                                     background-color: $accent-color;
                                     color: #000;
                                 }
@@ -6262,30 +6315,965 @@ footer.main-footer {
             }
         }
 
-        @media(max-width: 991px){
-            .reg-block{
+        @media (max-width: 991px) {
+            .reg-block {
                 .grid-block {
                     grid-template-columns: 1fr;
 
-                    .login-mb{
+                    .login-mb {
                         margin-top: 2rem;
                         display: flex !important;
                         justify-content: center;
                         font-size: 18px;
 
-                        a{
+                        a {
                             margin-left: 10px;
                             color: $primary-color;
                             text-decoration: underline;
                         }
                     }
 
-                    .-rem{
+                    .-rem {
                         grid-template-columns: 1fr 1fr;
                     }
 
-                    .-right{
+                    .-right {
                         display: none !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ====================== Products Detail Boots Page ====================== */
+
+.product-detail-boots-page {
+    background-color: $secondary-color;
+
+    .main-product-section {
+        .single-product-section {
+            .single-product-block {
+                .grid-block {
+                    display: grid;
+                    grid-template-columns: 1fr 0.8fr;
+                    gap: 20px;
+
+                    .grid-item {
+                        display: grid;
+
+                        &.-gallery {
+                            grid-template-columns: 0.1fr 1fr;
+                            gap: 10px;
+
+                            #secondary-slider {
+                                .splide__track > .splide__list > .splide__slide.is-active {
+                                    border: 3px solid $primary-color;
+                                }
+
+                                .splide__list {
+                                    flex-direction: column;
+
+                                    .splide__slide {
+                                        margin-bottom: 15px;
+                                        opacity: 0.5;
+
+                                        &.is-active {
+                                            opacity: 1;
+                                        }
+
+                                        &.--slide-01 {
+                                            background: url(../images/phantom-gt-ex-01.png) center center;
+                                            background-size: cover;
+                                            background-repeat: no-repeat !important;
+                                        }
+
+                                        &.--slide-02 {
+                                            background: url(../images/phantom-gt-ex-02.png) center center;
+                                            background-size: cover;
+                                            background-repeat: no-repeat !important;
+                                        }
+
+                                        &.--slide-03 {
+                                            background: url(../images/phantom-gt-ex-03.png) center center;
+                                            background-size: cover;
+                                            background-repeat: no-repeat !important;
+                                        }
+
+                                        &.--slide-04 {
+                                            background: url(../images/phantom-gt-ex-04.png) center center;
+                                            background-size: cover;
+                                            background-repeat: no-repeat !important;
+                                        }
+
+                                        &.--slide-05 {
+                                            background: url(../images/phantom-gt-ex-05.png) center center;
+                                            background-size: cover;
+                                            background-repeat: no-repeat !important;
+                                        }
+
+                                        &.--slide-06 {
+                                            background: url(../images/phantom-gt-ex-06.png) center center;
+                                            background-size: cover;
+                                            background-repeat: no-repeat !important;
+                                        }
+                                    }
+                                }
+
+                                .splide__arrows {
+                                    .splide__arrow {
+                                        background-color: transparent;
+                                        right: 30px;
+                                        bottom: -25px;
+                                        top: unset;
+                                        transform: scale(1.5);
+
+                                        &.splide__arrow--prev {
+                                            display: none;
+                                        }
+
+                                        &.splide__arrow--next {
+                                        }
+                                    }
+                                }
+                            }
+
+                            #primary-slider {
+                                .btn-360 {
+                                    position: absolute;
+                                    z-index: 3;
+                                    bottom: 33px;
+                                    right: 15px;
+                                }
+
+                                .splide__slide {
+                                    min-height: 552px;
+
+                                    &.--slide-01 {
+                                        background: url(../images/phantom-gt-ex-01.png) center center;
+                                        background-size: cover;
+                                        background-repeat: no-repeat !important;
+                                    }
+
+                                    &.--slide-02 {
+                                        background: url(../images/phantom-gt-ex-02.png) center center;
+                                        background-size: cover;
+                                        background-repeat: no-repeat !important;
+                                    }
+
+                                    &.--slide-03 {
+                                        background: url(../images/phantom-gt-ex-03.png) center center;
+                                        background-size: cover;
+                                        background-repeat: no-repeat !important;
+                                    }
+
+                                    &.--slide-04 {
+                                        background: url(../images/phantom-gt-ex-04.png) center center;
+                                        background-size: cover;
+                                        background-repeat: no-repeat !important;
+                                    }
+
+                                    &.--slide-05 {
+                                        background: url(../images/phantom-gt-ex-05.png) center center;
+                                        background-size: cover;
+                                        background-repeat: no-repeat !important;
+                                    }
+
+                                    &.--slide-06 {
+                                        background: url(../images/phantom-gt-ex-06.png) center center;
+                                        background-size: cover;
+                                        background-repeat: no-repeat !important;
+                                    }
+                                }
+                            }
+                        }
+
+                        &.-detail {
+                            display: flex;
+                            flex-direction: column;
+                            width: 100%;
+
+                            .title-block {
+                                h5 {
+                                    margin: 0;
+                                    color: $primary-color;
+                                    font-size: 20px;
+                                    font-family: "Agency FB";
+                                    font-weight: normal;
+                                }
+
+                                h1 {
+                                    margin: 0;
+                                    font-size: 28px;
+                                    font-family: "Agency FB";
+                                }
+
+                                h3 {
+                                    margin: 0;
+                                    font-size: 18px;
+                                    font-family: "Agency FB";
+                                    font-weight: normal;
+                                    margin-bottom: 7px;
+                                }
+
+                                p {
+                                    margin: 0;
+                                    font-size: 18px;
+                                }
+                            }
+
+                            .price-block {
+                                margin: 1rem 0;
+                                padding: 1rem 0;
+                                border-top: 1px solid #5c5c5c;
+
+                                .price {
+                                    display: flex;
+
+                                    .fav-block {
+                                        width: 40%;
+                                        display: flex;
+                                        justify-content: flex-end;
+                                        align-items: center;
+                                        padding-top: 15px;
+
+                                        .fav {
+                                            path {
+                                                transition: fill 0.4s ease;
+                                                fill: transparent;
+                                            }
+                        
+                                            &:hover {
+                                                svg {
+                                                    path {
+                                                        fill: $primary-color;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+
+                                    .regular-price {
+                                        margin: 0;
+                                        font-size: 36px;
+                                        font-family: "Agency FB";
+                                        font-weight: bold;
+                                        color: $primary-color;
+                                        width: 60%;
+                                    }
+
+                                    .sale-price {
+                                        margin: 0;
+                                        font-size: 24px;
+                                        font-family: "Agency FB";
+                                        font-weight: bold;
+                                        color: #6c6c6c;
+                                        text-decoration: line-through;
+                                    }
+                                }
+                            }
+
+                            .attributes-block {
+                                .size-type-block {
+                                    ul {
+                                        display: flex;
+                                        float: left;
+                                        margin: 0;
+
+                                        li {
+                                            margin: 0 7px;
+                                            border: 1px solid #5c5c5c;
+                                            color: #5c5c5c;
+                                            padding: 5px 10px;
+                                            border-radius: 5px;
+                                            font-family: "Agency FB";
+                                            font-weight: normal;
+                                            cursor: pointer;
+                                            transition: 0.5s;
+
+                                            &:hover {
+                                                border: 1px solid $primary-color;
+                                                color: $primary-color;
+                                            }
+
+                                            &.active {
+                                                border: 1px solid $primary-color;
+                                                color: $primary-color;
+                                            }
+                                        }
+                                    }
+
+                                    .table-size {
+                                        display: block;
+                                        float: right;
+                                        text-decoration: underline;
+                                    }
+
+                                    .size-content {
+                                        display: none;
+                                        margin-top: 1rem;
+                                        width: 100%;
+
+                                        &.active {
+                                            display: inline-block;
+                                        }
+
+                                        .for-radio-size {
+                                            span {
+                                                font-family: "Agency FB";
+                                                font-weight: normal;
+                                                font-size: 18px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            .amount-block {
+                                .grid-block {
+                                    display: grid;
+                                    grid-template-columns: 0.8fr 1fr;
+                                    gap: 25px;
+
+                                    .grid-item {
+                                        &.-amount {
+                                            display: flex;
+                                            align-items: center;
+
+                                            span.text-amount {
+                                                margin-right: 15px;
+                                            }
+
+                                            .number {
+                                                border: 1px solid #343434;
+                                                border-radius: 7px;
+                                                display: flex;
+                                                justify-content: center;
+                                                align-items: center;
+
+                                                span {
+                                                    cursor: pointer;
+                                                }
+
+                                                .minus,
+                                                .plus {
+                                                    width: 10px;
+                                                    height: 10px;
+                                                    padding: 0px 5px 22px 5px;
+                                                    display: inline-block;
+                                                    vertical-align: middle;
+                                                    text-align: center;
+                                                    font-size: 20px;
+                                                }
+
+                                                input {
+                                                    height: 42px;
+                                                    width: 80px;
+                                                    text-align: center;
+                                                    font-size: 20px;
+                                                    border-radius: 4px;
+                                                    display: inline-block;
+                                                    vertical-align: middle;
+                                                    background-color: transparent;
+                                                    border: 0;
+                                                }
+                                            }
+                                        }
+
+                                        &.-personalization {
+                                            display: flex;
+                                            align-items: center;
+
+                                            .personalization-btn {
+                                                display: block;
+                                                text-align: center;
+                                                width: 100%;
+                                                padding: 7px 15px;
+                                                border: 1px solid $primary-color;
+                                                color: $primary-color;
+                                                border-radius: 5px;
+                                                transition: 0.5s;
+
+                                                img {
+                                                    margin-right: 10px;
+                                                }
+
+                                                &:hover {
+                                                    background-color: $accent-color;
+                                                    color: #000;
+                                                    border: 1px solid $accent-color;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            .add-to-cart-btn {
+                                margin-top: 1.5rem;
+                                background-color: $primary-color;
+                                color: #000;
+                                border-radius: 5px;
+                                padding: 7px 3rem;
+                                border: 0;
+                                font-family: "Prachason";
+                                font-size: 18px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .desciption-product-section {
+            padding: 4rem 0;
+
+            .desciption-product-block {
+                .grid-block {
+                    display: grid;
+                    grid-template-columns: 1fr 0.5fr;
+                    gap: 25px;
+
+                    .grid-item {
+                        .description-block {
+                            ul {
+                                display: flex;
+                                margin: 0;
+                                padding-bottom: 1rem;
+                                border-bottom: 1px solid #5c5c5c;
+                                margin-bottom: 2rem;
+
+                                .desc-type {
+                                    margin-right: 3rem;
+                                    font-size: 18px;
+                                    cursor: pointer;
+
+                                    &.active {
+                                        text-decoration: underline;
+                                        color: $primary-color;
+                                    }
+                                }
+                            }
+
+                            .desc-content {
+                                display: none;
+
+                                .grid-block {
+                                    &.-sub-content {
+                                        display: grid;
+                                        grid-template-columns: 1fr 1fr;
+                                        gap: 25px;
+
+                                        .grid-item {
+                                            &:last-child {
+                                                padding: 2rem 0px;
+                                            }
+
+                                            img {
+                                                width: 100%;
+                                            }
+
+                                            .title-product {
+                                                font-family: "Agency FB";
+                                                margin-top: 9rem;
+                                            }
+                                        }
+                                    }
+
+                                    &.-img-sep {
+                                        grid-template-columns: 1fr 1fr;
+                                    }
+                                }
+
+                                h5 {
+                                    font-size: 18px;
+                                    margin: 0;
+                                    margin-top: 2rem;
+                                }
+
+                                p {
+                                    font-size: 16px;
+                                }
+
+                                &.active {
+                                    display: block;
+                                }
+                            }
+                        }
+
+                        &.-right {
+                            h4 {
+                                margin: 0;
+                                border-bottom: 1px solid #5c5c5c;
+                                padding-bottom: 16px;
+                                font-size: 18px;
+                                font-weight: normal;
+                            }
+
+                            .review-block {
+                                .head-review-block {
+                                    margin: 1.5rem 15px;
+
+                                    .grid-block {
+                                        display: grid;
+                                        grid-template-columns: 0.4fr 1fr 0.6fr;
+                                        gap: 30px;
+
+                                        .grid-item {
+                                            display: flex;
+                                            justify-content: center;
+                                            align-items: center;
+
+                                            &:last-child{
+                                                justify-content: flex-start;
+                                            }
+
+                                            &.-center {
+                                                justify-content: flex-start;
+                                            }
+
+                                            span.rate-average {
+                                                font-size: 32px;
+                                                font-family: "Agency FB";
+                                                font-weight: bold;
+                                            }
+
+                                            .total-review {
+                                                font-size: 18px;
+                                                font-family: "Agency FB";
+                                                font-weight: normal;
+                                                text-transform: uppercase;
+                                            }
+                                        }
+
+                                        &.-sub{
+                                            .grid-item {
+                                                span.rate-average {
+                                                    font-size: 16px;
+                                                }
+
+                                                .progress-bar{
+                                                    width: 100%;
+
+                                                    .progress {
+                                                        width: 100%;
+                                                        background-color: #5C5C5C;
+                                                        height: 5px;
+                                                        display: block;
+                                                        border-radius: 5px;
+
+                                                        &::before {
+                                                            content: '';
+                                                            display: block;
+                                                            height: 5px;
+                                                            background-color: $primary-color;
+                                                            position: relative;
+                                                            border-radius: 5px;
+                                                        }
+
+                                                        &.--star5{
+                                                            &::before {
+                                                                width: 80%;
+                                                            }
+                                                        }
+
+                                                        &.--star4{
+                                                            &::before {
+                                                                width: 40%;
+                                                            }
+                                                        }
+
+                                                        &.--star3{
+                                                            &::before {
+                                                                width: 10%;
+                                                            }
+                                                        }
+
+                                                        &.--star2{
+                                                            &::before {
+                                                                width: 0%;
+                                                            }
+                                                        }
+
+                                                        &.--star1{
+                                                            &::before {
+                                                                width: 0%;
+                                                            }
+                                                        }
+                                                        
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            .attribute-block{
+                                padding: 0 1.5rem;
+
+                                .attribute {
+                                    &.-quality{
+                                        .average-product {
+                                            width: 100%;
+                                            height: 2px;
+                                            background-color: #5C5C5C;
+                                            border-radius: 5px;
+                                            margin: 10px 0;
+
+                                            &::after{
+                                                content: url(../js/splidejs/src/pagination-active.svg);
+                                                width: 20px;
+                                                height: 20px;
+                                                margin-left: 15%;
+                                                margin-top: -9px;
+                                                position: absolute;
+                                            }
+                                        }
+
+                                        .grid-block{
+                                            grid-template-columns: 1fr 1fr;
+                                            gap: 25px;
+
+                                            .grid-item{
+                                                display: flex;
+
+                                                span{
+                                                    font-size: 14px;
+                                                    color: #5C5C5C;
+                                                }
+
+                                                &:first-child{
+                                                    justify-content: flex-start;
+                                                }
+
+                                                &:last-child{
+                                                    justify-content: flex-end;
+                                                }
+                                            }
+                                        }
+                                    }
+
+                                    &.-size{
+                                        .average-product {
+                                            width: 100%;
+                                            height: 2px;
+                                            background-color: #5C5C5C;
+                                            border-radius: 5px;
+                                            margin: 10px 0;
+
+                                            &::after{
+                                                content: url(../js/splidejs/src/pagination-active.svg);
+                                                width: 20px;
+                                                height: 20px;
+                                                margin-left: 10%;
+                                                margin-top: -9px;
+                                                position: absolute;
+                                            }
+                                        }
+
+                                        .grid-block{
+                                            grid-template-columns: 1fr 1fr 1fr;
+                                            gap: 25px;
+
+                                            .grid-item{
+                                                display: flex;
+
+                                                span{
+                                                    font-size: 14px;
+                                                    color: #5C5C5C;
+                                                }
+
+                                                &:first-child{
+                                                    justify-content: flex-start;
+                                                }
+
+                                                &:nth-child(2){
+                                                    justify-content: center;
+                                                }
+
+                                                &:last-child{
+                                                    justify-content: flex-end;
+                                                }
+                                            }
+                                        }
+                                    }
+                                    
+                                    &.-comfort{
+                                        .average-product {
+                                            width: 100%;
+                                            height: 2px;
+                                            background-color: #5C5C5C;
+                                            border-radius: 5px;
+                                            margin: 10px 0;
+
+                                            &::after{
+                                                content: url(../js/splidejs/src/pagination-active.svg);
+                                                width: 20px;
+                                                height: 20px;
+                                                margin-left: 15%;
+                                                margin-top: -9px;
+                                                position: absolute;
+                                            }
+                                        }
+
+                                        .grid-block{
+                                            grid-template-columns: 1fr 1fr;
+                                            gap: 25px;
+
+                                            .grid-item{
+                                                display: flex;
+
+                                                span{
+                                                    font-size: 14px;
+                                                    color: #5C5C5C;
+                                                }
+
+                                                &:first-child{
+                                                    justify-content: flex-start;
+                                                }
+
+                                                &:last-child{
+                                                    justify-content: flex-end;
+
+                                                    .mini-score{
+                                                        span{
+                                                            margin-right: 7px;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                } 
+
+                                padding-bottom: 1rem;
+                                border-bottom: 1px solid #1D1D1D;
+                            }
+
+                            .people-review-block{
+                                padding: 1rem 0;
+                                border-bottom: 1px solid #1D1D1D;
+                                
+                                .head-people-review{
+                                    .grid-block{
+                                        .grid-item{
+                                            display: flex;
+
+                                            .people{
+                                                font-size: 14px;
+                                                color: #5C5C5C;
+                                            }
+
+                                            &:last-child{
+                                                justify-content: flex-end;
+                                                
+                                                span{
+                                                    margin-right: 7px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+
+                                .people-review{
+                                    p{
+                                        margin:0;
+                                    }
+                                }
+                            }
+
+                            .read-more-review{
+                                display: flex;
+                                justify-content: center;
+                                margin-top: 2rem;
+
+                                a{
+                                    text-decoration: underline;
+
+                                    img{
+                                        margin-left: 7px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .suggest-product-section {
+            padding-bottom: 4rem;
+    
+            .suggest-product-block {
+                .title-suggest-product {
+                    color: $primary-color;
+                    font-size: 24px;
+                    margin-bottom: 2rem;
+                }
+    
+                &.g-container {
+                    #card-suggest-slider {
+                        .splide__arrows {
+                            .splide__arrow--prev {
+                                left: -4rem;
+                                background-color: transparent;
+                            }
+    
+                            .splide__arrow--next {
+                                right: -4rem;
+                                background-color: transparent;
+                            }
+                        }
+    
+                        .splide__pagination {
+                            display: none;
+                        }
+                    }
+                }
+            }
+    
+            @media (max-width: 991px) {
+                .suggest-product-block {
+                    padding-right: 0;
+                }
+    
+                #card-suggest-slider {
+                    .splide__arrows {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+    @media(max-width: 991px){
+        .main-product-section{
+            .single-product-section{
+                .single-product-block{
+
+                    &.g-container{
+                        .grid-block{
+                            grid-template-columns: 1fr;
+    
+                            .grid-item{
+                                &.-gallery{
+                                    width: 100vw;
+                                    position: relative;
+                                    left: 50%;
+                                    right: 50%;
+                                    margin-left: -50vw;
+                                    margin-right: -50vw;
+
+                                    display: flex;
+                                    flex-direction: column-reverse;
+
+                                    #secondary-slider{
+                                        .splide__list{
+                                            flex-direction: row;
+                                        }
+                                    }
+
+                                    #primary-slider{
+                                        .splide__slide {
+                                            min-height: 425px;
+                                        }
+
+                                        .btn-360 {
+                                            bottom: 7px;
+                                        }
+                                    }
+
+                                    
+                                }
+
+                                &.-detail{
+                                    .action-add-to-cart{
+                                        .amount-block{
+                                            margin: 1rem 0;
+
+                                            .grid-block{
+                                                grid-template-columns: 1fr;
+
+                                                .grid-item{
+                                                    &.-amount{
+                                                        align-items: flex-start;
+                                                        flex-direction: column;
+
+                                                        .number {
+                                                            width: 100%;
+
+                                                            input{
+                                                                width: 80%;
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                    
+                                    .add-to-cart-btn{
+                                        width: 100%;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    
+                }
+            }
+
+            .desciption-product-section{
+                .desciption-product-block{
+                    .grid-block{
+                        grid-template-columns: 1fr;
+
+                        .grid-item {
+                            .description-block {
+                                ul{
+                                    flex-direction: column;
+                                    border:0;
+
+                                    li{
+                                        padding: 1rem 0;
+                                        border-bottom: 1px solid #5C5C5C;
+                                        width: 100%;
+                                    }
+                                }
+
+                                .desc-content {
+                                    .grid-block{
+                                        &.-sub-content{
+                                            grid-template-columns: 1fr;
+                                            
+                                            .grid-item{
+                                                &:last-child{
+                                                    display: flex;
+                                                    justify-content: center;
+                                                    align-items: center;
+                                                    flex-direction: column;
+
+                                                    img{
+                                                        width: 20% !important;
+                                                    }
+
+                                                    .title-product{
+                                                        margin: 0;
+                                                        margin-top: 2rem;
+                                                        text-align: center;
+                                                    }
+                                                }
+                                            }
+                                        }
+
+                                        &.-img-sep{
+                                            grid-template-columns: 1fr;
+                                        }
+                                    }
+                                }
+                            }
+                        }
                     }
                 }
             }
