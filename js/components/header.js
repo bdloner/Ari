@@ -630,7 +630,7 @@ class Header extends HTMLElement {
 
                             <div class="sale-block">
                             <a href="#">
-                                <img src="../images/sale-icon.svg" alt="" /> โปรโมชั่น End of year sale
+                                <img src="/images/sale-icon.svg" alt="" /> โปรโมชั่น End of year sale
                             </a>
                         </div>
 

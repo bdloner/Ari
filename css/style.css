@@ -3,8 +3,8 @@
 /* ====================== Fonts ====================== */
 @font-face {
   font-family: "Prachason";
-  src: url("../fonts/Prachason-Bold.eot");
-  src: url("../fonts/Prachason-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Prachason-Bold.woff2") format("woff2"), url("../fonts/Prachason-Bold.woff") format("woff"), url("../fonts/Prachason-Bold.ttf") format("truetype"), url("../fonts/Prachason-Bold.svg#.") format("svg");
+  src: url("/fonts/Prachason-Bold.eot");
+  src: url("/fonts/Prachason-Bold.eot?#iefix") format("embedded-opentype"), url("/fonts/Prachason-Bold.woff2") format("woff2"), url("/fonts/Prachason-Bold.woff") format("woff"), url("/fonts/Prachason-Bold.ttf") format("truetype"), url("/fonts/Prachason-Bold.svg#.") format("svg");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -12,8 +12,8 @@
 
 @font-face {
   font-family: "Prachason";
-  src: url("../fonts/Prachason-Light.eot");
-  src: url("../fonts/Prachason-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Prachason-Light.woff2") format("woff2"), url("../fonts/Prachason-Light.woff") format("woff"), url("../fonts/Prachason-Light.ttf") format("truetype"), url("../fonts/Prachason-Light.svg#.") format("svg");
+  src: url("/fonts/Prachason-Light.eot");
+  src: url("/fonts/Prachason-Light.eot?#iefix") format("embedded-opentype"), url("/fonts/Prachason-Light.woff2") format("woff2"), url("/fonts/Prachason-Light.woff") format("woff"), url("/fonts/Prachason-Light.ttf") format("truetype"), url("/fonts/Prachason-Light.svg#.") format("svg");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -21,8 +21,8 @@
 
 @font-face {
   font-family: "Prachason";
-  src: url("../fonts/Prachason-Regular.eot");
-  src: url("../fonts/Prachason-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Prachason-Regular.woff2") format("woff2"), url("../fonts/Prachason-Regular.woff") format("woff"), url("../fonts/Prachason-Regular.ttf") format("truetype"), url("../fonts/Prachason-Regular.svg#.") format("svg");
+  src: url("/fonts/Prachason-Regular.eot");
+  src: url("/fonts/Prachason-Regular.eot?#iefix") format("embedded-opentype"), url("/fonts/Prachason-Regular.woff2") format("woff2"), url("/fonts/Prachason-Regular.woff") format("woff"), url("/fonts/Prachason-Regular.ttf") format("truetype"), url("/fonts/Prachason-Regular.svg#.") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -250,45 +250,68 @@ a {
 }
 
 .dropdown-content .grid-block .grid-item.-mega-bg-01 {
-  background: url(../images/mega-bg-01.png) center center;
+  background: url(/images/mega-bg-01.png) center center;
   background-size: cover;
   min-height: 450px;
 }
 
 .dropdown-content .grid-block .grid-item.-mega-bg-02 {
-  background: url(../images/mega-bg-02.png) center center;
+  background: url(/images/mega-bg-02.png) center center;
   background-size: cover;
   min-height: 450px;
 }
 
 .dropdown-content .grid-block .grid-item.-mega-bg-03 {
-  background: url(../images/mega-bg-03.png) center center;
+  background: url(/images/mega-bg-03.png) center center;
   background-size: cover;
   min-height: 450px;
 }
 
 .dropdown-content .grid-block .grid-item.-mega-bg-04 {
-  background: url(../images/mega-bg-04.png) center center;
+  background: url(/images/mega-bg-04.png) center center;
   background-size: cover;
   min-height: 450px;
 }
 
 .dropdown-content .grid-block .grid-item.-mega-bg-05 {
-  background: url(../images/mega-bg-05.png) center center;
+  background: url(/images/mega-bg-05.png) center center;
   background-size: cover;
   min-height: 450px;
 }
 
 .dropdown-content .grid-block .grid-item.-mega-bg-06 {
-  background: url(../images/mega-bg-06.png) center center;
+  background: url(/images/mega-bg-06.png) center center;
   background-size: cover;
   min-height: 450px;
 }
 
 .dropdown-content .grid-block .grid-item.-mega-bg-07 {
-  background: url(../images/mega-bg-07.png) center center;
+  background: url(/images/mega-bg-07.png) center center;
   background-size: cover;
   min-height: 450px;
+}
+
+select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='13.439' height='7.702' viewBox='0 0 13.439 7.702'%3E%3Cpath id='Path_9392' data-name='Path 9392' d='M1301.679,374.1l6.5,6.013-6.5,6.013' transform='translate(386.83 -1300.973) rotate(90)' fill='none' stroke='%23ffbe00' stroke-linecap='round' stroke-linejoin='round' stroke-width='1'/%3E%3C/svg%3E%0A") no-repeat;
+  background-size: 15px;
+  background-position: calc(100% - 10px) center;
+  height: 45px;
+  padding: 7px 15px;
+  border-radius: 5px;
+}
+
+select option {
+  margin: 40px;
+  background: black;
+  color: #fff;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+}
+
+select:focus, select:active {
+  outline: 0;
 }
 
 #search-popup {
@@ -1161,7 +1184,7 @@ a {
   .mm-spn.mm-spn--navbar:before {
     display: block;
     content: "ย้อนกลับ";
-    background: url(../images/chev-left-icon.svg) 5% 35%;
+    background: url(/images/chev-left-icon.svg) 5% 35%;
     background-repeat: no-repeat;
     height: 30px;
     width: 80px;
@@ -1555,17 +1578,17 @@ a {
 }
 
 .home .hero-slider-section .splide .splide__slide.--slide-01 {
-  background: url(../images/hero-banner-home.png) center center;
+  background: url(/images/hero-banner-home.png) center center;
   background-size: cover;
 }
 
 .home .hero-slider-section .splide .splide__slide.--slide-02 {
-  background: url(../images/hero-banner-home.png) center center;
+  background: url(/images/hero-banner-home.png) center center;
   background-size: cover;
 }
 
 .home .hero-slider-section .splide .splide__slide.--slide-03 {
-  background: url(../images/hero-banner-home.png) center center;
+  background: url(/images/hero-banner-home.png) center center;
   background-size: cover;
 }
 
@@ -1587,7 +1610,7 @@ a {
 }
 
 .home .sub-hero-section {
-  background: url(../images/sub-hero.png) center bottom;
+  background: url(/images/sub-hero.png) center bottom;
   background-size: cover;
   padding: 1rem 0;
   background-color: #161616;
@@ -1677,7 +1700,7 @@ a {
 
 .home .kick-off-section .kick-off-block .banner-kick-off {
   margin-top: 2rem;
-  background: url(../images/kick-off-banner.png) center center;
+  background: url(/images/kick-off-banner.png) center center;
   background-size: cover;
   min-height: 300px;
   display: -webkit-box;
@@ -1713,7 +1736,7 @@ a {
     padding: 0;
   }
   .home .kick-off-section .kick-off-block .banner-kick-off {
-    background: url(../images/kickoff-bg-mb.png) center center;
+    background: url(/images/kickoff-bg-mb.png) center center;
     background-size: cover;
   }
   .home .kick-off-section .kick-off-block .banner-kick-off .left-block {
@@ -1755,7 +1778,7 @@ a {
 
 .home .hot-product-section {
   padding: 4rem 0;
-  background: url(../images/bg-hot-product.png) center center;
+  background: url(/images/bg-hot-product.png) center center;
   background-size: cover;
 }
 
@@ -1771,7 +1794,7 @@ a {
 }
 
 .home .hot-product-section .hot-product-block.g-container #card-hot-slider .post-items.-card {
-  background: url(../images/bg-loop.png) center center;
+  background: url(/images/bg-loop.png) center center;
   background-size: cover;
   padding: 15px;
 }
@@ -1838,37 +1861,37 @@ a {
 }
 
 .home .categories-section .categories-block .grid-block .grid-item .img-cate-block .img-cate.-cate1 {
-  background: url(../images/arigear.png) center center;
+  background: url(/images/arigear.png) center center;
   background-size: cover;
 }
 
 .home .categories-section .categories-block .grid-block .grid-item .img-cate-block .img-cate.-cate2 {
-  background: url(../images/nike.png) center center;
+  background: url(/images/nike.png) center center;
   background-size: cover;
 }
 
 .home .categories-section .categories-block .grid-block .grid-item .img-cate-block .img-cate.-cate3 {
-  background: url(../images/shirt-premiere-league.png) center center;
+  background: url(/images/shirt-premiere-league.png) center center;
   background-size: cover;
 }
 
 .home .categories-section .categories-block .grid-block .grid-item .img-cate-block .img-cate.-cate4 {
-  background: url(../images/adidas.png) center center;
+  background: url(/images/adidas.png) center center;
   background-size: cover;
 }
 
 .home .categories-section .categories-block .grid-block .grid-item .img-cate-block .img-cate.-cate5 {
-  background: url(../images/sale30.png) center center;
+  background: url(/images/sale30.png) center center;
   background-size: cover;
 }
 
 .home .categories-section .categories-block .grid-block .grid-item .img-cate-block .img-cate.-cate6 {
-  background: url(../images/black-friday-week.png) center center;
+  background: url(/images/black-friday-week.png) center center;
   background-size: cover;
 }
 
 .home .categories-section .categories-block .grid-block .grid-item .img-cate-block .img-cate.-cate7 {
-  background: url(../images/shirt-thai-league.png) center center;
+  background: url(/images/shirt-thai-league.png) center center;
   background-size: cover;
 }
 
@@ -1909,12 +1932,12 @@ a {
 }
 
 .home .ari-x-section .ari-x-block .grid-block .grid-item.-item1 {
-  background: url(../images/bg-ari-x-burirum.png) center center;
+  background: url(/images/bg-ari-x-burirum.png) center center;
   background-size: cover;
 }
 
 .home .ari-x-section .ari-x-block .grid-block .grid-item.-item2 {
-  background: url(../images/bg-ari-x-true.png) center center;
+  background: url(/images/bg-ari-x-true.png) center center;
   background-size: cover;
 }
 
@@ -2124,7 +2147,7 @@ a {
 
 .home .partner-section {
   padding: 4rem 0;
-  background: url(../images/bg-partner.png) center center;
+  background: url(/images/bg-partner.png) center center;
   background-size: cover;
 }
 
@@ -2442,17 +2465,17 @@ footer.main-footer .bottom-ft p {
 }
 
 .football-shoes-product .hero-slider-section .splide .splide__slide.--slide-01 {
-  background: url(../images/football-shoes-slider.png) center center;
+  background: url(/images/football-shoes-slider.png) center center;
   background-size: cover;
 }
 
 .football-shoes-product .hero-slider-section .splide .splide__slide.--slide-02 {
-  background: url(../images/football-shoes-slider.png) center center;
+  background: url(/images/football-shoes-slider.png) center center;
   background-size: cover;
 }
 
 .football-shoes-product .hero-slider-section .splide .splide__slide.--slide-03 {
-  background: url(../images/football-shoes-slider.png) center center;
+  background: url(/images/football-shoes-slider.png) center center;
   background-size: cover;
 }
 
@@ -2504,15 +2527,15 @@ footer.main-footer .bottom-ft p {
     max-width: 1160px;
   }
   .football-shoes-product .hero-slider-section .splide .splide__slide.--slide-01 {
-    background: url(../images/hero-bg-slider-mb-01.png) center center;
+    background: url(/images/hero-bg-slider-mb-01.png) center center;
     background-size: cover;
   }
   .football-shoes-product .hero-slider-section .splide .splide__slide.--slide-02 {
-    background: url(../images/hero-bg-slider-mb-01.png) center center;
+    background: url(/images/hero-bg-slider-mb-01.png) center center;
     background-size: cover;
   }
   .football-shoes-product .hero-slider-section .splide .splide__slide.--slide-03 {
-    background: url(../images/hero-bg-slider-mb-01.png) center center;
+    background: url(/images/hero-bg-slider-mb-01.png) center center;
     background-size: cover;
   }
   .football-shoes-product .hero-slider-section .splide .splide__arrows .splide__arrow {
@@ -2573,17 +2596,17 @@ footer.main-footer .bottom-ft p {
 }
 
 .football-shoes-product .collection-section .collection-block .grid-block .grid-item .collection.-phantom-gt {
-  background: url(../images/PHANTOM-GT-Collection.png) center center;
+  background: url(/images/PHANTOM-GT-Collection.png) center center;
   background-size: cover;
 }
 
 .football-shoes-product .collection-section .collection-block .grid-block .grid-item .collection.-mercurial {
-  background: url(../images/mercurial-superfly-collection.png) center center;
+  background: url(/images/mercurial-superfly-collection.png) center center;
   background-size: cover;
 }
 
 .football-shoes-product .collection-section .collection-block .grid-block .grid-item .collection.-nemeziz {
-  background: url(../images/NEMEZIZ-collection.png) center center;
+  background: url(/images/NEMEZIZ-collection.png) center center;
   background-size: cover;
 }
 
@@ -2738,22 +2761,22 @@ footer.main-footer .bottom-ft p {
 }
 
 .football-shoes-product .cate-shoes-section .cate-shoes-block .grid-block .grid-item .cate-shoes.-football-shoes {
-  background: url(../images/football-shoes-cate.png) center center;
+  background: url(/images/football-shoes-cate.png) center center;
   background-size: cover;
 }
 
 .football-shoes-product .cate-shoes-section .cate-shoes-block .grid-block .grid-item .cate-shoes.-futsal-shoes {
-  background: url(../images/futsal-shoes-cate.png) center center;
+  background: url(/images/futsal-shoes-cate.png) center center;
   background-size: cover;
 }
 
 .football-shoes-product .cate-shoes-section .cate-shoes-block .grid-block .grid-item .cate-shoes.-artificial-shoes {
-  background: url(../images/artificial-shoes-cate.png) center center;
+  background: url(/images/artificial-shoes-cate.png) center center;
   background-size: cover;
 }
 
 .football-shoes-product .cate-shoes-section .cate-shoes-block .grid-block .grid-item .cate-shoes.-other {
-  background: url(../images/other-shoes-cate.png) center center;
+  background: url(/images/other-shoes-cate.png) center center;
   background-size: cover;
 }
 
@@ -2857,27 +2880,27 @@ footer.main-footer .bottom-ft p {
 }
 
 .football-shoes-product .brand-section .brand-block .splide__slide .slider-brand.-brand-01 {
-  background: url(../images/brand-01.png) center center;
+  background: url(/images/brand-01.png) center center;
   background-size: cover;
 }
 
 .football-shoes-product .brand-section .brand-block .splide__slide .slider-brand.-brand-02 {
-  background: url(../images/brand-02.png) center center;
+  background: url(/images/brand-02.png) center center;
   background-size: cover;
 }
 
 .football-shoes-product .brand-section .brand-block .splide__slide .slider-brand.-brand-03 {
-  background: url(../images/brand-03.png) center center;
+  background: url(/images/brand-03.png) center center;
   background-size: cover;
 }
 
 .football-shoes-product .brand-section .brand-block .splide__slide .slider-brand.-brand-04 {
-  background: url(../images/brand-04.png) center center;
+  background: url(/images/brand-04.png) center center;
   background-size: cover;
 }
 
 .football-shoes-product .brand-section .brand-block .splide__slide .slider-brand.-brand-05 {
-  background: url(../images/brand-05.png) center center;
+  background: url(/images/brand-05.png) center center;
   background-size: cover;
 }
 
@@ -2991,17 +3014,17 @@ footer.main-footer .bottom-ft p {
 }
 
 .goalkeeper-device-page .hero-slider-section .splide .splide__slide.--slide-01 {
-  background: url(../images/goalkeeper-device-slider.png) center center;
+  background: url(/images/goalkeeper-device-slider.png) center center;
   background-size: cover;
 }
 
 .goalkeeper-device-page .hero-slider-section .splide .splide__slide.--slide-02 {
-  background: url(../images/goalkeeper-device-slider.png) center center;
+  background: url(/images/goalkeeper-device-slider.png) center center;
   background-size: cover;
 }
 
 .goalkeeper-device-page .hero-slider-section .splide .splide__slide.--slide-03 {
-  background: url(../images/goalkeeper-device-slider.png) center center;
+  background: url(/images/goalkeeper-device-slider.png) center center;
   background-size: cover;
 }
 
@@ -3143,17 +3166,17 @@ footer.main-footer .bottom-ft p {
 }
 
 .goalkeeper-device-page .collection-section .collection-block .grid-block .grid-item .collection.-phantom-gt {
-  background: url(../images/PHANTOM-GT-Collection.png) center center;
+  background: url(/images/PHANTOM-GT-Collection.png) center center;
   background-size: cover;
 }
 
 .goalkeeper-device-page .collection-section .collection-block .grid-block .grid-item .collection.-mercurial {
-  background: url(../images/mercurial-superfly-collection.png) center center;
+  background: url(/images/mercurial-superfly-collection.png) center center;
   background-size: cover;
 }
 
 .goalkeeper-device-page .collection-section .collection-block .grid-block .grid-item .collection.-nemeziz {
-  background: url(../images/NEMEZIZ-collection.png) center center;
+  background: url(/images/NEMEZIZ-collection.png) center center;
   background-size: cover;
 }
 
@@ -3364,17 +3387,17 @@ footer.main-footer .bottom-ft p {
 }
 
 .goalkeeper-device-page .cate-goalkeeper-section .cate-goalkeeper-block .grid-block .grid-item .cate-goalkeeper.-gear-01 {
-  background: url(../images/gatekeeper-gear-01.png) center center;
+  background: url(/images/gatekeeper-gear-01.png) center center;
   background-size: cover;
 }
 
 .goalkeeper-device-page .cate-goalkeeper-section .cate-goalkeeper-block .grid-block .grid-item .cate-goalkeeper.-gear-02 {
-  background: url(../images/gatekeeper-gear-02.png) center center;
+  background: url(/images/gatekeeper-gear-02.png) center center;
   background-size: cover;
 }
 
 .goalkeeper-device-page .cate-goalkeeper-section .cate-goalkeeper-block .grid-block .grid-item .cate-goalkeeper.-gear-03 {
-  background: url(../images/gatekeeper-gear-03.png) center center;
+  background: url(/images/gatekeeper-gear-03.png) center center;
   background-size: cover;
 }
 
@@ -3471,17 +3494,17 @@ footer.main-footer .bottom-ft p {
 }
 
 .goalkeeper-device-page .brand-section .brand-block .grid-block .grid-item .brand.-brand-01 {
-  background: url(../images/goalkeeper-brand-01.png) center center;
+  background: url(/images/goalkeeper-brand-01.png) center center;
   background-size: cover;
 }
 
 .goalkeeper-device-page .brand-section .brand-block .grid-block .grid-item .brand.-brand-02 {
-  background: url(../images/goalkeeper-brand-02.png) center center;
+  background: url(/images/goalkeeper-brand-02.png) center center;
   background-size: cover;
 }
 
 .goalkeeper-device-page .brand-section .brand-block .grid-block .grid-item .brand.-brand-03 {
-  background: url(../images/goalkeeper-brand-03.png) center center;
+  background: url(/images/goalkeeper-brand-03.png) center center;
   background-size: cover;
 }
 
@@ -3565,17 +3588,17 @@ footer.main-footer .bottom-ft p {
 }
 
 .racing-suit-page .hero-slider-section .splide .splide__slide.--slide-01 {
-  background: url(../images/racing-suit-hero-slider.png) center center;
+  background: url(/images/racing-suit-hero-slider.png) center center;
   background-size: cover;
 }
 
 .racing-suit-page .hero-slider-section .splide .splide__slide.--slide-02 {
-  background: url(../images/racing-suit-hero-slider.png) center center;
+  background: url(/images/racing-suit-hero-slider.png) center center;
   background-size: cover;
 }
 
 .racing-suit-page .hero-slider-section .splide .splide__slide.--slide-03 {
-  background: url(../images/racing-suit-hero-slider.png) center center;
+  background: url(/images/racing-suit-hero-slider.png) center center;
   background-size: cover;
 }
 
@@ -3648,15 +3671,15 @@ footer.main-footer .bottom-ft p {
     max-width: 1160px;
   }
   .racing-suit-page .hero-slider-section .splide .splide__slide.--slide-01 {
-    background: url(../images/racing-suit-hero-slider-mb-01.png) center center;
+    background: url(/images/racing-suit-hero-slider-mb-01.png) center center;
     background-size: cover;
   }
   .racing-suit-page .hero-slider-section .splide .splide__slide.--slide-02 {
-    background: url(../images/racing-suit-hero-slider-mb-01.png) center center;
+    background: url(/images/racing-suit-hero-slider-mb-01.png) center center;
     background-size: cover;
   }
   .racing-suit-page .hero-slider-section .splide .splide__slide.--slide-03 {
-    background: url(../images/racing-suit-hero-slider-mb-01.png) center center;
+    background: url(/images/racing-suit-hero-slider-mb-01.png) center center;
     background-size: cover;
   }
   .racing-suit-page .hero-slider-section .splide .splide__arrows .splide__arrow {
@@ -3719,27 +3742,27 @@ footer.main-footer .bottom-ft p {
 }
 
 .racing-suit-page .hot-team-section .hot-team-block #hot-team-slider .slider-hot-team .hot-team.-hot-team-01 {
-  background: url(../images/hot-team-01.png) center center;
+  background: url(/images/hot-team-01.png) center center;
   background-size: cover;
 }
 
 .racing-suit-page .hot-team-section .hot-team-block #hot-team-slider .slider-hot-team .hot-team.-hot-team-02 {
-  background: url(../images/hot-team-02.png) center center;
+  background: url(/images/hot-team-02.png) center center;
   background-size: cover;
 }
 
 .racing-suit-page .hot-team-section .hot-team-block #hot-team-slider .slider-hot-team .hot-team.-hot-team-03 {
-  background: url(../images/hot-team-03.png) center center;
+  background: url(/images/hot-team-03.png) center center;
   background-size: cover;
 }
 
 .racing-suit-page .hot-team-section .hot-team-block #hot-team-slider .slider-hot-team .hot-team.-hot-team-04 {
-  background: url(../images/hot-team-04.png) center center;
+  background: url(/images/hot-team-04.png) center center;
   background-size: cover;
 }
 
 .racing-suit-page .hot-team-section .hot-team-block #hot-team-slider .slider-hot-team .hot-team.-hot-team-05 {
-  background: url(../images/hot-team-05.png) center center;
+  background: url(/images/hot-team-05.png) center center;
   background-size: cover;
 }
 
@@ -3876,27 +3899,27 @@ footer.main-footer .bottom-ft p {
 }
 
 .racing-suit-page .shirt-premier-section .shirt-premier-block.g-container #shirt-premier-slider .slider-shirt-premier.-shirt-premier-01 {
-  background: url(../images/shirt-01.png) center center;
+  background: url(/images/shirt-01.png) center center;
   background-size: cover;
 }
 
 .racing-suit-page .shirt-premier-section .shirt-premier-block.g-container #shirt-premier-slider .slider-shirt-premier.-shirt-premier-02 {
-  background: url(../images/shirt-02.png) center center;
+  background: url(/images/shirt-02.png) center center;
   background-size: cover;
 }
 
 .racing-suit-page .shirt-premier-section .shirt-premier-block.g-container #shirt-premier-slider .slider-shirt-premier.-shirt-premier-03 {
-  background: url(../images/shirt-03.png) center center;
+  background: url(/images/shirt-03.png) center center;
   background-size: cover;
 }
 
 .racing-suit-page .shirt-premier-section .shirt-premier-block.g-container #shirt-premier-slider .slider-shirt-premier.-shirt-premier-04 {
-  background: url(../images/shirt-04.png) center center;
+  background: url(/images/shirt-04.png) center center;
   background-size: cover;
 }
 
 .racing-suit-page .shirt-premier-section .shirt-premier-block.g-container #shirt-premier-slider .slider-shirt-premier.-shirt-premier-05 {
-  background: url(../images/shirt-05.png) center center;
+  background: url(/images/shirt-05.png) center center;
   background-size: cover;
 }
 
@@ -4085,27 +4108,27 @@ footer.main-footer .bottom-ft p {
 }
 
 .racing-suit-page .national-team-section .national-team-block.g-container #national-team-slider .slider-national-team.-national-team-01 {
-  background: url(../images/national-team-01.png) center center;
+  background: url(/images/national-team-01.png) center center;
   background-size: cover;
 }
 
 .racing-suit-page .national-team-section .national-team-block.g-container #national-team-slider .slider-national-team.-national-team-02 {
-  background: url(../images/national-team-02.png) center center;
+  background: url(/images/national-team-02.png) center center;
   background-size: cover;
 }
 
 .racing-suit-page .national-team-section .national-team-block.g-container #national-team-slider .slider-national-team.-national-team-03 {
-  background: url(../images/national-team-03.png) center center;
+  background: url(/images/national-team-03.png) center center;
   background-size: cover;
 }
 
 .racing-suit-page .national-team-section .national-team-block.g-container #national-team-slider .slider-national-team.-national-team-04 {
-  background: url(../images/national-team-04.png) center center;
+  background: url(/images/national-team-04.png) center center;
   background-size: cover;
 }
 
 .racing-suit-page .national-team-section .national-team-block.g-container #national-team-slider .slider-national-team.-national-team-05 {
-  background: url(../images/national-team-05.png) center center;
+  background: url(/images/national-team-05.png) center center;
   background-size: cover;
 }
 
@@ -4245,17 +4268,17 @@ footer.main-footer .bottom-ft p {
 }
 
 .football-equipment-page .hero-slider-section .splide .splide__slide.--slide-01 {
-  background: url(../images/football-equipment-slider.png) center center;
+  background: url(/images/football-equipment-slider.png) center center;
   background-size: cover;
 }
 
 .football-equipment-page .hero-slider-section .splide .splide__slide.--slide-02 {
-  background: url(../images/football-equipment-slider.png) center center;
+  background: url(/images/football-equipment-slider.png) center center;
   background-size: cover;
 }
 
 .football-equipment-page .hero-slider-section .splide .splide__slide.--slide-03 {
-  background: url(../images/football-equipment-slider.png) center center;
+  background: url(/images/football-equipment-slider.png) center center;
   background-size: cover;
 }
 
@@ -4329,15 +4352,15 @@ footer.main-footer .bottom-ft p {
     max-width: 1160px;
   }
   .football-equipment-page .hero-slider-section .splide .splide__slide.--slide-01 {
-    background: url(../images/football-equipment-slider-mb.png) center center;
+    background: url(/images/football-equipment-slider-mb.png) center center;
     background-size: cover;
   }
   .football-equipment-page .hero-slider-section .splide .splide__slide.--slide-02 {
-    background: url(../images/football-equipment-slider-mb.png) center center;
+    background: url(/images/football-equipment-slider-mb.png) center center;
     background-size: cover;
   }
   .football-equipment-page .hero-slider-section .splide .splide__slide.--slide-03 {
-    background: url(../images/football-equipment-slider-mb.png) center center;
+    background: url(/images/football-equipment-slider-mb.png) center center;
     background-size: cover;
   }
   .football-equipment-page .hero-slider-section .splide .splide__arrows .splide__arrow {
@@ -4433,12 +4456,12 @@ footer.main-footer .bottom-ft p {
 }
 
 .football-equipment-page .pro-section .pro-block .grid-block .grid-item .pro.-pro-01 {
-  background: url(../images/pro-01.png) center center;
+  background: url(/images/pro-01.png) center center;
   background-size: cover;
 }
 
 .football-equipment-page .pro-section .pro-block .grid-block .grid-item .pro.-pro-02 {
-  background: url(../images/pro-02.png) center center;
+  background: url(/images/pro-02.png) center center;
   background-size: cover;
 }
 
@@ -4588,22 +4611,22 @@ footer.main-footer .bottom-ft p {
 }
 
 .football-equipment-page .football-equipment-section .football-equipment-block .grid-block .grid-item .football-equipment.-equipment-01 {
-  background: url(../images/equipment-01.png) center center;
+  background: url(/images/equipment-01.png) center center;
   background-size: cover;
 }
 
 .football-equipment-page .football-equipment-section .football-equipment-block .grid-block .grid-item .football-equipment.-equipment-02 {
-  background: url(../images/equipment-02.png) center center;
+  background: url(/images/equipment-02.png) center center;
   background-size: cover;
 }
 
 .football-equipment-page .football-equipment-section .football-equipment-block .grid-block .grid-item .football-equipment.-equipment-03 {
-  background: url(../images/equipment-03.png) center center;
+  background: url(/images/equipment-03.png) center center;
   background-size: cover;
 }
 
 .football-equipment-page .football-equipment-section .football-equipment-block .grid-block .grid-item .football-equipment.-equipment-04 {
-  background: url(../images/equipment-04.png) center center;
+  background: url(/images/equipment-04.png) center center;
   background-size: cover;
 }
 
@@ -4700,17 +4723,17 @@ footer.main-footer .bottom-ft p {
 }
 
 .t-shirt-page .hero-slider-section .splide .splide__slide.--slide-01 {
-  background: url(../images/t-shirt-slider.png) center center;
+  background: url(/images/t-shirt-slider.png) center center;
   background-size: cover;
 }
 
 .t-shirt-page .hero-slider-section .splide .splide__slide.--slide-02 {
-  background: url(../images/t-shirt-slider.png) center center;
+  background: url(/images/t-shirt-slider.png) center center;
   background-size: cover;
 }
 
 .t-shirt-page .hero-slider-section .splide .splide__slide.--slide-03 {
-  background: url(../images/t-shirt-slider.png) center center;
+  background: url(/images/t-shirt-slider.png) center center;
   background-size: cover;
 }
 
@@ -4784,15 +4807,15 @@ footer.main-footer .bottom-ft p {
     max-width: 1160px;
   }
   .t-shirt-page .hero-slider-section .splide .splide__slide.--slide-01 {
-    background: url(../images/t-shirt-slider-mb.png) center center;
+    background: url(/images/t-shirt-slider-mb.png) center center;
     background-size: cover;
   }
   .t-shirt-page .hero-slider-section .splide .splide__slide.--slide-02 {
-    background: url(../images/t-shirt-slider-mb.png) center center;
+    background: url(/images/t-shirt-slider-mb.png) center center;
     background-size: cover;
   }
   .t-shirt-page .hero-slider-section .splide .splide__slide.--slide-03 {
-    background: url(../images/t-shirt-slider-mb.png) center center;
+    background: url(/images/t-shirt-slider-mb.png) center center;
     background-size: cover;
   }
   .t-shirt-page .hero-slider-section .splide .splide__arrows .splide__arrow {
@@ -4874,22 +4897,22 @@ footer.main-footer .bottom-ft p {
 }
 
 .t-shirt-page .t-shirt-brand-section .t-shirt-brand-block .grid-block .grid-item .t-shirt-brand.-t-shirt-brand-01 {
-  background: url(../images/t-shirt-brand-01.png) center center;
+  background: url(/images/t-shirt-brand-01.png) center center;
   background-size: cover;
 }
 
 .t-shirt-page .t-shirt-brand-section .t-shirt-brand-block .grid-block .grid-item .t-shirt-brand.-t-shirt-brand-02 {
-  background: url(../images/t-shirt-brand-02.png) center center;
+  background: url(/images/t-shirt-brand-02.png) center center;
   background-size: cover;
 }
 
 .t-shirt-page .t-shirt-brand-section .t-shirt-brand-block .grid-block .grid-item .t-shirt-brand.-t-shirt-brand-03 {
-  background: url(../images/t-shirt-brand-03.png) center center;
+  background: url(/images/t-shirt-brand-03.png) center center;
   background-size: cover;
 }
 
 .t-shirt-page .t-shirt-brand-section .t-shirt-brand-block .grid-block .grid-item .t-shirt-brand.-t-shirt-brand-04 {
-  background: url(../images/t-shirt-brand-04.png) center center;
+  background: url(/images/t-shirt-brand-04.png) center center;
   background-size: cover;
 }
 
@@ -5035,22 +5058,22 @@ footer.main-footer .bottom-ft p {
 }
 
 .t-shirt-page .your-style-section .your-style-block .grid-block .grid-item .your-style.-your-style-01 {
-  background: url(../images/your-style-t-shirt-01.png) center center;
+  background: url(/images/your-style-t-shirt-01.png) center center;
   background-size: cover;
 }
 
 .t-shirt-page .your-style-section .your-style-block .grid-block .grid-item .your-style.-your-style-02 {
-  background: url(../images/your-style-t-shirt-02.png) center center;
+  background: url(/images/your-style-t-shirt-02.png) center center;
   background-size: cover;
 }
 
 .t-shirt-page .your-style-section .your-style-block .grid-block .grid-item .your-style.-your-style-03 {
-  background: url(../images/your-style-t-shirt-03.png) center center;
+  background: url(/images/your-style-t-shirt-03.png) center center;
   background-size: cover;
 }
 
 .t-shirt-page .your-style-section .your-style-block .grid-block .grid-item .your-style.-your-style-04 {
-  background: url(../images/your-style-t-shirt-04.png) center center;
+  background: url(/images/your-style-t-shirt-04.png) center center;
   background-size: cover;
 }
 
@@ -5147,17 +5170,17 @@ footer.main-footer .bottom-ft p {
 }
 
 .ari-gear-page .hero-slider-section .splide .splide__slide.--slide-01 {
-  background: url(../images/ari-gear-slider.png) center center;
+  background: url(/images/ari-gear-slider.png) center center;
   background-size: cover;
 }
 
 .ari-gear-page .hero-slider-section .splide .splide__slide.--slide-02 {
-  background: url(../images/ari-gear-slider.png) center center;
+  background: url(/images/ari-gear-slider.png) center center;
   background-size: cover;
 }
 
 .ari-gear-page .hero-slider-section .splide .splide__slide.--slide-03 {
-  background: url(../images/ari-gear-slider.png) center center;
+  background: url(/images/ari-gear-slider.png) center center;
   background-size: cover;
 }
 
@@ -5231,15 +5254,15 @@ footer.main-footer .bottom-ft p {
     max-width: 1160px;
   }
   .ari-gear-page .hero-slider-section .splide .splide__slide.--slide-01 {
-    background: url(../images/ari-gear-slider-mb.png) center center;
+    background: url(/images/ari-gear-slider-mb.png) center center;
     background-size: cover;
   }
   .ari-gear-page .hero-slider-section .splide .splide__slide.--slide-02 {
-    background: url(../images/ari-gear-slider-mb.png) center center;
+    background: url(/images/ari-gear-slider-mb.png) center center;
     background-size: cover;
   }
   .ari-gear-page .hero-slider-section .splide .splide__slide.--slide-03 {
-    background: url(../images/ari-gear-slider-mb.png) center center;
+    background: url(/images/ari-gear-slider-mb.png) center center;
     background-size: cover;
   }
   .ari-gear-page .hero-slider-section .splide .splide__arrows .splide__arrow {
@@ -5335,12 +5358,12 @@ footer.main-footer .bottom-ft p {
 }
 
 .ari-gear-page .hot-collection-section .hot-collection-block .grid-block .grid-item .hot-collection.-hot-collection-01 {
-  background: url(../images/hot-collection-01.png) center center;
+  background: url(/images/hot-collection-01.png) center center;
   background-size: cover;
 }
 
 .ari-gear-page .hot-collection-section .hot-collection-block .grid-block .grid-item .hot-collection.-hot-collection-02 {
-  background: url(../images/hot-collection-02.png) center center;
+  background: url(/images/hot-collection-02.png) center center;
   background-size: cover;
 }
 
@@ -5440,22 +5463,22 @@ footer.main-footer .bottom-ft p {
 }
 
 .ari-gear-page .your-style-section .your-style-block .grid-block .grid-item .your-style.-your-style-01 {
-  background: url(../images/your-style-t-shirt-01.png) center center;
+  background: url(/images/your-style-t-shirt-01.png) center center;
   background-size: cover;
 }
 
 .ari-gear-page .your-style-section .your-style-block .grid-block .grid-item .your-style.-your-style-02 {
-  background: url(../images/your-style-t-shirt-02.png) center center;
+  background: url(/images/your-style-t-shirt-02.png) center center;
   background-size: cover;
 }
 
 .ari-gear-page .your-style-section .your-style-block .grid-block .grid-item .your-style.-your-style-03 {
-  background: url(../images/your-style-t-shirt-03.png) center center;
+  background: url(/images/your-style-t-shirt-03.png) center center;
   background-size: cover;
 }
 
 .ari-gear-page .your-style-section .your-style-block .grid-block .grid-item .your-style.-your-style-04 {
-  background: url(../images/your-style-t-shirt-04.png) center center;
+  background: url(/images/your-style-t-shirt-04.png) center center;
   background-size: cover;
 }
 
@@ -5605,17 +5628,17 @@ footer.main-footer .bottom-ft p {
 }
 
 .discount-page .hero-slider-section .splide .splide__slide.--slide-01 {
-  background: url(../images/discount-slider.png) center center;
+  background: url(/images/discount-slider.png) center center;
   background-size: cover;
 }
 
 .discount-page .hero-slider-section .splide .splide__slide.--slide-02 {
-  background: url(../images/discount-slider.png) center center;
+  background: url(/images/discount-slider.png) center center;
   background-size: cover;
 }
 
 .discount-page .hero-slider-section .splide .splide__slide.--slide-03 {
-  background: url(../images/discount-slider.png) center center;
+  background: url(/images/discount-slider.png) center center;
   background-size: cover;
 }
 
@@ -5689,15 +5712,15 @@ footer.main-footer .bottom-ft p {
     max-width: 1160px;
   }
   .discount-page .hero-slider-section .splide .splide__slide.--slide-01 {
-    background: url(../images/discount-slider-mb.png) center center;
+    background: url(/images/discount-slider-mb.png) center center;
     background-size: cover;
   }
   .discount-page .hero-slider-section .splide .splide__slide.--slide-02 {
-    background: url(../images/discount-slider-mb.png) center center;
+    background: url(/images/discount-slider-mb.png) center center;
     background-size: cover;
   }
   .discount-page .hero-slider-section .splide .splide__slide.--slide-03 {
-    background: url(../images/discount-slider-mb.png) center center;
+    background: url(/images/discount-slider-mb.png) center center;
     background-size: cover;
   }
   .discount-page .hero-slider-section .splide .splide__arrows .splide__arrow {
@@ -5924,7 +5947,7 @@ footer.main-footer .bottom-ft p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: url(../images/login-right-bg.png) center center;
+  background: url(/images/login-right-bg.png) center center;
   background-size: cover;
 }
 
@@ -5992,6 +6015,230 @@ footer.main-footer .bottom-ft p {
         grid-template-columns: 1fr 1fr;
   }
   .login-page .login-section .login-block .grid-block .-right {
+    display: none !important;
+  }
+}
+
+/* ====================== Register Page ====================== */
+.register-page {
+  background-color: #161616;
+}
+
+.register-page .reg-section {
+  padding: 4rem 0;
+  padding-bottom: 8rem;
+}
+
+.register-page .reg-section .reg-block .grid-block {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 25px;
+}
+
+.register-page .reg-section .reg-block .grid-block .grid-item.-left {
+  padding: 0 35px;
+}
+
+.register-page .reg-section .reg-block .grid-block .grid-item.-left .heading-welcome {
+  font-size: 16px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.register-page .reg-section .reg-block .grid-block .grid-item.-left .heading-reg {
+  font-size: 24px;
+  margin: 0;
+}
+
+.register-page .reg-section .reg-block .grid-block .grid-item.-left .reg-in-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.register-page .reg-section .reg-block .grid-block .grid-item.-left .reg-in-form .remember-reg {
+  margin-top: 2rem;
+  font-family: 'Prachason';
+  font-weight: normal;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.register-page .reg-section .reg-block .grid-block .grid-item.-left .reg-in-form .remember-reg a {
+  color: #ffbe00;
+  text-decoration: underline;
+}
+
+.register-page .reg-section .reg-block .grid-block .grid-item.-left .reg-in-form label {
+  font-size: 18px;
+  margin: 5px 0;
+  margin-top: 10px;
+}
+
+.register-page .reg-section .reg-block .grid-block .grid-item.-left .reg-in-form input {
+  border: 1px solid #606060;
+  background: transparent;
+  padding: 7px 15px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.register-page .reg-section .reg-block .grid-block .grid-item.-left .reg-in-form .grid-block.-select-items {
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+.register-page .reg-section .reg-block .grid-block .grid-item.-left .reg-in-form .grid-block.-select-items .selectbox {
+  width: 100%;
+  font-size: 16px;
+}
+
+.register-page .reg-section .reg-block .grid-block .grid-item.-left .reg-in-form .btn-global {
+  border: 0;
+  font-family: 'Prachason';
+  padding: 10px 0;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.register-page .reg-section .reg-block .grid-block .grid-item.-left .social-reg-block hr {
+  border: 0;
+  border-bottom: 1px solid #3E3E3E;
+  margin-bottom: -20px;
+  margin-top: 30px;
+}
+
+.register-page .reg-section .reg-block .grid-block .grid-item.-left .social-reg-block p {
+  width: 180px;
+  margin: 0 auto;
+  padding: 7px 15px;
+  background-color: #161616;
+}
+
+.register-page .reg-section .reg-block .grid-block .grid-item.-left .social-reg-block .grid-block.-btn {
+  margin-top: 2rem;
+}
+
+.register-page .reg-section .reg-block .grid-block .grid-item.-left .social-reg-block .grid-block.-btn .btn-reg {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.register-page .reg-section .reg-block .grid-block .grid-item.-left .social-reg-block .grid-block.-btn .btn-reg img {
+  margin-right: 15px;
+}
+
+.register-page .reg-section .reg-block .grid-block .grid-item.-left .social-reg-block .grid-block.-btn .btn-reg.btn-login-fb {
+  background-color: #1877F2;
+  color: #fff;
+}
+
+.register-page .reg-section .reg-block .grid-block .grid-item.-left .social-reg-block .grid-block.-btn .btn-reg.btn-login-gg {
+  background-color: #fff;
+  color: #000;
+}
+
+.register-page .reg-section .reg-block .grid-block .grid-item.-left .login-mb {
+  display: none;
+}
+
+.register-page .reg-section .reg-block .grid-block .grid-item.-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.register-page .reg-section .reg-block .grid-block .grid-item.-right .login-side-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: url(/images/reg-right-bg.png) center center;
+  background-size: cover;
+  min-height: 500px;
+  padding: 0 30px;
+}
+
+.register-page .reg-section .reg-block .grid-block .grid-item.-right .login-side-block .title-login {
+  text-align: center;
+}
+
+.register-page .reg-section .reg-block .grid-block .grid-item.-right .login-side-block .desc-login {
+  text-align: center;
+}
+
+.register-page .reg-section .reg-block .grid-block .grid-item.-right .login-side-block a.btn-border {
+  width: 80%;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  padding: 10px;
+  display: block;
+  font-family: 'Prachason';
+  font-size: 16px;
+}
+
+.register-page .reg-section .reg-block .grid-block .grid-item.-right .login-side-block a.btn-border:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+@media (max-width: 991px) {
+  .register-page .reg-section .reg-block .grid-block {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .register-page .reg-section .reg-block .grid-block .login-mb {
+    margin-top: 2rem;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 18px;
+  }
+  .register-page .reg-section .reg-block .grid-block .login-mb a {
+    margin-left: 10px;
+    color: #ffbe00;
+    text-decoration: underline;
+  }
+  .register-page .reg-section .reg-block .grid-block .-rem {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  .register-page .reg-section .reg-block .grid-block .-right {
     display: none !important;
   }
 }

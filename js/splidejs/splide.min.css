@@ -186,13 +186,13 @@
 }
 
 .splide__pagination__page::after{
-    content:url(../splidejs/src/pagination-empty.svg);
+    content:url(/splidejs/src/pagination-empty.svg);
     width: 40px;
     height: 40px;
 }
 
 .splide__pagination__page.is-active::after{
-    content:url(../splidejs/src/pagination-active.svg);
+    content:url(/splidejs/src/pagination-active.svg);
     width: 40px;
     height: 40px;
 }

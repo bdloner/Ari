@@ -11,7 +11,7 @@ class Card extends HTMLElement {
                 <span class="badge -r">40%</span>
 
                 <a href="#">
-                    <div class="featured-img" style="background: url(../images/ex-shoes-01.png) center center; background-size: cover;"></div>
+                    <div class="featured-img" style="background: url(/images/ex-shoes-01.png) center center; background-size: cover;"></div>
                 </a>
             </div>
 

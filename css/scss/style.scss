@@ -4,10 +4,10 @@
 
 @font-face {
     font-family: "Prachason";
-    src: url("../fonts/Prachason-Bold.eot");
-    src: url("../fonts/Prachason-Bold.eot?#iefix") format("embedded-opentype"),
-        url("../fonts/Prachason-Bold.woff2") format("woff2"), url("../fonts/Prachason-Bold.woff") format("woff"),
-        url("../fonts/Prachason-Bold.ttf") format("truetype"), url("../fonts/Prachason-Bold.svg#.") format("svg");
+    src: url("/fonts/Prachason-Bold.eot");
+    src: url("/fonts/Prachason-Bold.eot?#iefix") format("embedded-opentype"),
+        url("/fonts/Prachason-Bold.woff2") format("woff2"), url("/fonts/Prachason-Bold.woff") format("woff"),
+        url("/fonts/Prachason-Bold.ttf") format("truetype"), url("/fonts/Prachason-Bold.svg#.") format("svg");
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -15,10 +15,10 @@
 
 @font-face {
     font-family: "Prachason";
-    src: url("../fonts/Prachason-Light.eot");
-    src: url("../fonts/Prachason-Light.eot?#iefix") format("embedded-opentype"),
-        url("../fonts/Prachason-Light.woff2") format("woff2"), url("../fonts/Prachason-Light.woff") format("woff"),
-        url("../fonts/Prachason-Light.ttf") format("truetype"), url("../fonts/Prachason-Light.svg#.") format("svg");
+    src: url("/fonts/Prachason-Light.eot");
+    src: url("/fonts/Prachason-Light.eot?#iefix") format("embedded-opentype"),
+        url("/fonts/Prachason-Light.woff2") format("woff2"), url("/fonts/Prachason-Light.woff") format("woff"),
+        url("/fonts/Prachason-Light.ttf") format("truetype"), url("/fonts/Prachason-Light.svg#.") format("svg");
     font-weight: 300;
     font-style: normal;
     font-display: swap;
@@ -26,10 +26,10 @@
 
 @font-face {
     font-family: "Prachason";
-    src: url("../fonts/Prachason-Regular.eot");
-    src: url("../fonts/Prachason-Regular.eot?#iefix") format("embedded-opentype"),
-        url("../fonts/Prachason-Regular.woff2") format("woff2"), url("../fonts/Prachason-Regular.woff") format("woff"),
-        url("../fonts/Prachason-Regular.ttf") format("truetype"), url("../fonts/Prachason-Regular.svg#.") format("svg");
+    src: url("/fonts/Prachason-Regular.eot");
+    src: url("/fonts/Prachason-Regular.eot?#iefix") format("embedded-opentype"),
+        url("/fonts/Prachason-Regular.woff2") format("woff2"), url("/fonts/Prachason-Regular.woff") format("woff"),
+        url("/fonts/Prachason-Regular.ttf") format("truetype"), url("/fonts/Prachason-Regular.svg#.") format("svg");
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -275,43 +275,43 @@ a {
             }
 
             &.-mega-bg-01 {
-                background: url(../images/mega-bg-01.png) center center;
+                background: url(/images/mega-bg-01.png) center center;
                 background-size: cover;
                 min-height: 450px;
             }
 
             &.-mega-bg-02 {
-                background: url(../images/mega-bg-02.png) center center;
+                background: url(/images/mega-bg-02.png) center center;
                 background-size: cover;
                 min-height: 450px;
             }
 
             &.-mega-bg-03 {
-                background: url(../images/mega-bg-03.png) center center;
+                background: url(/images/mega-bg-03.png) center center;
                 background-size: cover;
                 min-height: 450px;
             }
 
             &.-mega-bg-04 {
-                background: url(../images/mega-bg-04.png) center center;
+                background: url(/images/mega-bg-04.png) center center;
                 background-size: cover;
                 min-height: 450px;
             }
 
             &.-mega-bg-05 {
-                background: url(../images/mega-bg-05.png) center center;
+                background: url(/images/mega-bg-05.png) center center;
                 background-size: cover;
                 min-height: 450px;
             }
 
             &.-mega-bg-06 {
-                background: url(../images/mega-bg-06.png) center center;
+                background: url(/images/mega-bg-06.png) center center;
                 background-size: cover;
                 min-height: 450px;
             }
 
             &.-mega-bg-07 {
-                background: url(../images/mega-bg-07.png) center center;
+                background: url(/images/mega-bg-07.png) center center;
                 background-size: cover;
                 min-height: 450px;
             }
@@ -319,7 +319,30 @@ a {
     }
 }
 
-//Search Box
+// Select box
+
+select{
+    appearance: none;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='13.439' height='7.702' viewBox='0 0 13.439 7.702'%3E%3Cpath id='Path_9392' data-name='Path 9392' d='M1301.679,374.1l6.5,6.013-6.5,6.013' transform='translate(386.83 -1300.973) rotate(90)' fill='none' stroke='%23ffbe00' stroke-linecap='round' stroke-linejoin='round' stroke-width='1'/%3E%3C/svg%3E%0A") no-repeat;
+    background-size: 15px;
+    background-position: calc(100% - 10px) center;
+    height: 45px;
+    padding: 7px 15px;
+    border-radius: 5px;
+
+    option {
+        margin: 40px;
+        background: rgba(0, 0, 0, 1);
+        color: #fff;
+        text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+    }
+
+    &:focus, &:active{
+        outline: 0;
+    }
+}
+
+// Search Box
 
 #search-popup {
     display: none;
@@ -1124,7 +1147,7 @@ a {
     .mm-spn.mm-spn--navbar:before {
         display: block;
         content: "ย้อนกลับ";
-        background: url(../images/chev-left-icon.svg) 5% 35%;
+        background: url(/images/chev-left-icon.svg) 5% 35%;
         background-repeat: no-repeat;
         height: 30px;
         width: 80px;
@@ -1574,17 +1597,17 @@ a {
                 min-height: 600px;
 
                 &.--slide-01 {
-                    background: url(../images/hero-banner-home.png) center center;
+                    background: url(/images/hero-banner-home.png) center center;
                     background-size: cover;
                 }
 
                 &.--slide-02 {
-                    background: url(../images/hero-banner-home.png) center center;
+                    background: url(/images/hero-banner-home.png) center center;
                     background-size: cover;
                 }
 
                 &.--slide-03 {
-                    background: url(../images/hero-banner-home.png) center center;
+                    background: url(/images/hero-banner-home.png) center center;
                     background-size: cover;
                 }
             }
@@ -1613,7 +1636,7 @@ a {
     // Home - Sub Hero //
 
     .sub-hero-section {
-        background: url(../images/sub-hero.png) center bottom;
+        background: url(/images/sub-hero.png) center bottom;
         background-size: cover;
         padding: 1rem 0;
         background-color: $secondary-color;
@@ -1683,7 +1706,7 @@ a {
 
             .banner-kick-off {
                 margin-top: 2rem;
-                background: url(../images/kick-off-banner.png) center center;
+                background: url(/images/kick-off-banner.png) center center;
                 background-size: cover;
                 min-height: 300px;
                 display: flex;
@@ -1709,7 +1732,7 @@ a {
                 padding: 0;
 
                 .banner-kick-off {
-                    background: url(../images/kickoff-bg-mb.png) center center;
+                    background: url(/images/kickoff-bg-mb.png) center center;
                     background-size: cover;
 
                     .left-block {
@@ -1770,7 +1793,7 @@ a {
 
     .hot-product-section {
         padding: 4rem 0;
-        background: url(../images/bg-hot-product.png) center center;
+        background: url(/images/bg-hot-product.png) center center;
         background-size: cover;
 
         .hot-product-block {
@@ -1786,7 +1809,7 @@ a {
 
                 #card-hot-slider {
                     .post-items.-card {
-                        background: url(../images/bg-loop.png) center center;
+                        background: url(/images/bg-loop.png) center center;
                         background-size: cover;
                         padding: 15px;
                     }
@@ -1862,37 +1885,37 @@ a {
                             transition: all 0.5s ease-in-out;
 
                             &.-cate1 {
-                                background: url(../images/arigear.png) center center;
+                                background: url(/images/arigear.png) center center;
                                 background-size: cover;
                             }
 
                             &.-cate2 {
-                                background: url(../images/nike.png) center center;
+                                background: url(/images/nike.png) center center;
                                 background-size: cover;
                             }
 
                             &.-cate3 {
-                                background: url(../images/shirt-premiere-league.png) center center;
+                                background: url(/images/shirt-premiere-league.png) center center;
                                 background-size: cover;
                             }
 
                             &.-cate4 {
-                                background: url(../images/adidas.png) center center;
+                                background: url(/images/adidas.png) center center;
                                 background-size: cover;
                             }
 
                             &.-cate5 {
-                                background: url(../images/sale30.png) center center;
+                                background: url(/images/sale30.png) center center;
                                 background-size: cover;
                             }
 
                             &.-cate6 {
-                                background: url(../images/black-friday-week.png) center center;
+                                background: url(/images/black-friday-week.png) center center;
                                 background-size: cover;
                             }
 
                             &.-cate7 {
-                                background: url(../images/shirt-thai-league.png) center center;
+                                background: url(/images/shirt-thai-league.png) center center;
                                 background-size: cover;
                             }
                         }
@@ -1943,12 +1966,12 @@ a {
                     align-items: center;
 
                     &.-item1 {
-                        background: url(../images/bg-ari-x-burirum.png) center center;
+                        background: url(/images/bg-ari-x-burirum.png) center center;
                         background-size: cover;
                     }
 
                     &.-item2 {
-                        background: url(../images/bg-ari-x-true.png) center center;
+                        background: url(/images/bg-ari-x-true.png) center center;
                         background-size: cover;
                     }
 
@@ -2184,7 +2207,7 @@ a {
 
     .partner-section {
         padding: 4rem 0;
-        background: url(../images/bg-partner.png) center center;
+        background: url(/images/bg-partner.png) center center;
         background-size: cover;
 
         .partner-block {
@@ -2491,17 +2514,17 @@ footer.main-footer {
                 }
 
                 &.--slide-01 {
-                    background: url(../images/football-shoes-slider.png) center center;
+                    background: url(/images/football-shoes-slider.png) center center;
                     background-size: cover;
                 }
 
                 &.--slide-02 {
-                    background: url(../images/football-shoes-slider.png) center center;
+                    background: url(/images/football-shoes-slider.png) center center;
                     background-size: cover;
                 }
 
                 &.--slide-03 {
-                    background: url(../images/football-shoes-slider.png) center center;
+                    background: url(/images/football-shoes-slider.png) center center;
                     background-size: cover;
                 }
 
@@ -2556,17 +2579,17 @@ footer.main-footer {
                     }
 
                     &.--slide-01 {
-                        background: url(../images/hero-bg-slider-mb-01.png) center center;
+                        background: url(/images/hero-bg-slider-mb-01.png) center center;
                         background-size: cover;
                     }
 
                     &.--slide-02 {
-                        background: url(../images/hero-bg-slider-mb-01.png) center center;
+                        background: url(/images/hero-bg-slider-mb-01.png) center center;
                         background-size: cover;
                     }
 
                     &.--slide-03 {
-                        background: url(../images/hero-bg-slider-mb-01.png) center center;
+                        background: url(/images/hero-bg-slider-mb-01.png) center center;
                         background-size: cover;
                     }
                 }
@@ -2631,17 +2654,17 @@ footer.main-footer {
                         transition: 0.5s;
 
                         &.-phantom-gt {
-                            background: url(../images/PHANTOM-GT-Collection.png) center center;
+                            background: url(/images/PHANTOM-GT-Collection.png) center center;
                             background-size: cover;
                         }
 
                         &.-mercurial {
-                            background: url(../images/mercurial-superfly-collection.png) center center;
+                            background: url(/images/mercurial-superfly-collection.png) center center;
                             background-size: cover;
                         }
 
                         &.-nemeziz {
-                            background: url(../images/NEMEZIZ-collection.png) center center;
+                            background: url(/images/NEMEZIZ-collection.png) center center;
                             background-size: cover;
                         }
 
@@ -2800,22 +2823,22 @@ footer.main-footer {
                         transition: 0.5s;
 
                         &.-football-shoes {
-                            background: url(../images/football-shoes-cate.png) center center;
+                            background: url(/images/football-shoes-cate.png) center center;
                             background-size: cover;
                         }
 
                         &.-futsal-shoes {
-                            background: url(../images/futsal-shoes-cate.png) center center;
+                            background: url(/images/futsal-shoes-cate.png) center center;
                             background-size: cover;
                         }
 
                         &.-artificial-shoes {
-                            background: url(../images/artificial-shoes-cate.png) center center;
+                            background: url(/images/artificial-shoes-cate.png) center center;
                             background-size: cover;
                         }
 
                         &.-other {
-                            background: url(../images/other-shoes-cate.png) center center;
+                            background: url(/images/other-shoes-cate.png) center center;
                             background-size: cover;
                         }
 
@@ -2924,27 +2947,27 @@ footer.main-footer {
                     align-items: flex-end;
 
                     &.-brand-01 {
-                        background: url(../images/brand-01.png) center center;
+                        background: url(/images/brand-01.png) center center;
                         background-size: cover;
                     }
 
                     &.-brand-02 {
-                        background: url(../images/brand-02.png) center center;
+                        background: url(/images/brand-02.png) center center;
                         background-size: cover;
                     }
 
                     &.-brand-03 {
-                        background: url(../images/brand-03.png) center center;
+                        background: url(/images/brand-03.png) center center;
                         background-size: cover;
                     }
 
                     &.-brand-04 {
-                        background: url(../images/brand-04.png) center center;
+                        background: url(/images/brand-04.png) center center;
                         background-size: cover;
                     }
 
                     &.-brand-05 {
-                        background: url(../images/brand-05.png) center center;
+                        background: url(/images/brand-05.png) center center;
                         background-size: cover;
                     }
 
@@ -3046,17 +3069,17 @@ footer.main-footer {
                 }
 
                 &.--slide-01 {
-                    background: url(../images/goalkeeper-device-slider.png) center center;
+                    background: url(/images/goalkeeper-device-slider.png) center center;
                     background-size: cover;
                 }
 
                 &.--slide-02 {
-                    background: url(../images/goalkeeper-device-slider.png) center center;
+                    background: url(/images/goalkeeper-device-slider.png) center center;
                     background-size: cover;
                 }
 
                 &.--slide-03 {
-                    background: url(../images/goalkeeper-device-slider.png) center center;
+                    background: url(/images/goalkeeper-device-slider.png) center center;
                     background-size: cover;
                 }
 
@@ -3208,17 +3231,17 @@ footer.main-footer {
                         transition: 0.5s;
 
                         &.-phantom-gt {
-                            background: url(../images/PHANTOM-GT-Collection.png) center center;
+                            background: url(/images/PHANTOM-GT-Collection.png) center center;
                             background-size: cover;
                         }
 
                         &.-mercurial {
-                            background: url(../images/mercurial-superfly-collection.png) center center;
+                            background: url(/images/mercurial-superfly-collection.png) center center;
                             background-size: cover;
                         }
 
                         &.-nemeziz {
-                            background: url(../images/NEMEZIZ-collection.png) center center;
+                            background: url(/images/NEMEZIZ-collection.png) center center;
                             background-size: cover;
                         }
 
@@ -3438,17 +3461,17 @@ footer.main-footer {
                         transition: 0.5s;
 
                         &.-gear-01 {
-                            background: url(../images/gatekeeper-gear-01.png) center center;
+                            background: url(/images/gatekeeper-gear-01.png) center center;
                             background-size: cover;
                         }
 
                         &.-gear-02 {
-                            background: url(../images/gatekeeper-gear-02.png) center center;
+                            background: url(/images/gatekeeper-gear-02.png) center center;
                             background-size: cover;
                         }
 
                         &.-gear-03 {
-                            background: url(../images/gatekeeper-gear-03.png) center center;
+                            background: url(/images/gatekeeper-gear-03.png) center center;
                             background-size: cover;
                         }
 
@@ -3551,17 +3574,17 @@ footer.main-footer {
                         transition: 0.5s;
 
                         &.-brand-01 {
-                            background: url(../images/goalkeeper-brand-01.png) center center;
+                            background: url(/images/goalkeeper-brand-01.png) center center;
                             background-size: cover;
                         }
 
                         &.-brand-02 {
-                            background: url(../images/goalkeeper-brand-02.png) center center;
+                            background: url(/images/goalkeeper-brand-02.png) center center;
                             background-size: cover;
                         }
 
                         &.-brand-03 {
-                            background: url(../images/goalkeeper-brand-03.png) center center;
+                            background: url(/images/goalkeeper-brand-03.png) center center;
                             background-size: cover;
                         }
 
@@ -3643,17 +3666,17 @@ footer.main-footer {
                 }
                 
                 &.--slide-01{
-                    background: url(../images/racing-suit-hero-slider.png) center center;
+                    background: url(/images/racing-suit-hero-slider.png) center center;
                     background-size: cover;
                 }
 
                 &.--slide-02{
-                    background: url(../images/racing-suit-hero-slider.png) center center;
+                    background: url(/images/racing-suit-hero-slider.png) center center;
                     background-size: cover;
                 }
 
                 &.--slide-03{
-                    background: url(../images/racing-suit-hero-slider.png) center center;
+                    background: url(/images/racing-suit-hero-slider.png) center center;
                     background-size: cover;
                 }
                 
@@ -3729,17 +3752,17 @@ footer.main-footer {
                     }
                     
                     &.--slide-01{
-                        background: url(../images/racing-suit-hero-slider-mb-01.png) center center;
+                        background: url(/images/racing-suit-hero-slider-mb-01.png) center center;
                         background-size: cover;
                     }
     
                     &.--slide-02{
-                        background: url(../images/racing-suit-hero-slider-mb-01.png) center center;
+                        background: url(/images/racing-suit-hero-slider-mb-01.png) center center;
                         background-size: cover;
                     }
     
                     &.--slide-03{
-                        background: url(../images/racing-suit-hero-slider-mb-01.png) center center;
+                        background: url(/images/racing-suit-hero-slider-mb-01.png) center center;
                         background-size: cover;
                     }
                 }
@@ -3814,27 +3837,27 @@ footer.main-footer {
                         transition: .5s;
                 
                         &.-hot-team-01 {
-                            background: url(../images/hot-team-01.png) center center;
+                            background: url(/images/hot-team-01.png) center center;
                             background-size: cover;
                         }
 
                         &.-hot-team-02 {
-                            background: url(../images/hot-team-02.png) center center;
+                            background: url(/images/hot-team-02.png) center center;
                             background-size: cover;
                         }
 
                         &.-hot-team-03 {
-                            background: url(../images/hot-team-03.png) center center;
+                            background: url(/images/hot-team-03.png) center center;
                             background-size: cover;
                         }
 
                         &.-hot-team-04 {
-                            background: url(../images/hot-team-04.png) center center;
+                            background: url(/images/hot-team-04.png) center center;
                             background-size: cover;
                         }
 
                         &.-hot-team-05 {
-                            background: url(../images/hot-team-05.png) center center;
+                            background: url(/images/hot-team-05.png) center center;
                             background-size: cover;
                         }
 
@@ -3973,27 +3996,27 @@ footer.main-footer {
                         align-items: flex-end;
 
                         &.-shirt-premier-01 {
-                            background: url(../images/shirt-01.png) center center;
+                            background: url(/images/shirt-01.png) center center;
                             background-size: cover;
                         }
     
                         &.-shirt-premier-02 {
-                            background: url(../images/shirt-02.png) center center;
+                            background: url(/images/shirt-02.png) center center;
                             background-size: cover;
                         }
     
                         &.-shirt-premier-03 {
-                            background: url(../images/shirt-03.png) center center;
+                            background: url(/images/shirt-03.png) center center;
                             background-size: cover;
                         }
     
                         &.-shirt-premier-04 {
-                            background: url(../images/shirt-04.png) center center;
+                            background: url(/images/shirt-04.png) center center;
                             background-size: cover;
                         }
     
                         &.-shirt-premier-05 {
-                            background: url(../images/shirt-05.png) center center;
+                            background: url(/images/shirt-05.png) center center;
                             background-size: cover;
                         }
     
@@ -4182,27 +4205,27 @@ footer.main-footer {
                         align-items: flex-end;
 
                         &.-national-team-01 {
-                            background: url(../images/national-team-01.png) center center;
+                            background: url(/images/national-team-01.png) center center;
                             background-size: cover;
                         }
     
                         &.-national-team-02 {
-                            background: url(../images/national-team-02.png) center center;
+                            background: url(/images/national-team-02.png) center center;
                             background-size: cover;
                         }
     
                         &.-national-team-03 {
-                            background: url(../images/national-team-03.png) center center;
+                            background: url(/images/national-team-03.png) center center;
                             background-size: cover;
                         }
     
                         &.-national-team-04 {
-                            background: url(../images/national-team-04.png) center center;
+                            background: url(/images/national-team-04.png) center center;
                             background-size: cover;
                         }
     
                         &.-national-team-05 {
-                            background: url(../images/national-team-05.png) center center;
+                            background: url(/images/national-team-05.png) center center;
                             background-size: cover;
                         }
     
@@ -4335,17 +4358,17 @@ footer.main-footer {
                 }
 
                 &.--slide-01 {
-                    background: url(../images/football-equipment-slider.png) center center;
+                    background: url(/images/football-equipment-slider.png) center center;
                     background-size: cover;
                 }
 
                 &.--slide-02 {
-                    background: url(../images/football-equipment-slider.png) center center;
+                    background: url(/images/football-equipment-slider.png) center center;
                     background-size: cover;
                 }
 
                 &.--slide-03 {
-                    background: url(../images/football-equipment-slider.png) center center;
+                    background: url(/images/football-equipment-slider.png) center center;
                     background-size: cover;
                 }
 
@@ -4422,17 +4445,17 @@ footer.main-footer {
                     }
 
                     &.--slide-01 {
-                        background: url(../images/football-equipment-slider-mb.png) center center;
+                        background: url(/images/football-equipment-slider-mb.png) center center;
                         background-size: cover;
                     }
 
                     &.--slide-02 {
-                        background: url(../images/football-equipment-slider-mb.png) center center;
+                        background: url(/images/football-equipment-slider-mb.png) center center;
                         background-size: cover;
                     }
 
                     &.--slide-03 {
-                        background: url(../images/football-equipment-slider-mb.png) center center;
+                        background: url(/images/football-equipment-slider-mb.png) center center;
                         background-size: cover;
                     }
                 }
@@ -4531,12 +4554,12 @@ footer.main-footer {
                         }
 
                         &.-pro-01 {
-                            background: url(../images/pro-01.png) center center;
+                            background: url(/images/pro-01.png) center center;
                             background-size: cover;
                         }
 
                         &.-pro-02 {
-                            background: url(../images/pro-02.png) center center;
+                            background: url(/images/pro-02.png) center center;
                             background-size: cover;
                         }
 
@@ -4680,22 +4703,22 @@ footer.main-footer {
                         }
 
                         &.-equipment-01 {
-                            background: url(../images/equipment-01.png) center center;
+                            background: url(/images/equipment-01.png) center center;
                             background-size: cover;
                         }
 
                         &.-equipment-02 {
-                            background: url(../images/equipment-02.png) center center;
+                            background: url(/images/equipment-02.png) center center;
                             background-size: cover;
                         }
 
                         &.-equipment-03 {
-                            background: url(../images/equipment-03.png) center center;
+                            background: url(/images/equipment-03.png) center center;
                             background-size: cover;
                         }
 
                         &.-equipment-04 {
-                            background: url(../images/equipment-04.png) center center;
+                            background: url(/images/equipment-04.png) center center;
                             background-size: cover;
                         }
 
@@ -4785,17 +4808,17 @@ footer.main-footer {
                 }
 
                 &.--slide-01 {
-                    background: url(../images/t-shirt-slider.png) center center;
+                    background: url(/images/t-shirt-slider.png) center center;
                     background-size: cover;
                 }
 
                 &.--slide-02 {
-                    background: url(../images/t-shirt-slider.png) center center;
+                    background: url(/images/t-shirt-slider.png) center center;
                     background-size: cover;
                 }
 
                 &.--slide-03 {
-                    background: url(../images/t-shirt-slider.png) center center;
+                    background: url(/images/t-shirt-slider.png) center center;
                     background-size: cover;
                 }
 
@@ -4872,17 +4895,17 @@ footer.main-footer {
                     }
 
                     &.--slide-01 {
-                        background: url(../images/t-shirt-slider-mb.png) center center;
+                        background: url(/images/t-shirt-slider-mb.png) center center;
                         background-size: cover;
                     }
 
                     &.--slide-02 {
-                        background: url(../images/t-shirt-slider-mb.png) center center;
+                        background: url(/images/t-shirt-slider-mb.png) center center;
                         background-size: cover;
                     }
 
                     &.--slide-03 {
-                        background: url(../images/t-shirt-slider-mb.png) center center;
+                        background: url(/images/t-shirt-slider-mb.png) center center;
                         background-size: cover;
                     }
                 }
@@ -4967,22 +4990,22 @@ footer.main-footer {
                         }
 
                         &.-t-shirt-brand-01 {
-                            background: url(../images/t-shirt-brand-01.png) center center;
+                            background: url(/images/t-shirt-brand-01.png) center center;
                             background-size: cover;
                         }
 
                         &.-t-shirt-brand-02 {
-                            background: url(../images/t-shirt-brand-02.png) center center;
+                            background: url(/images/t-shirt-brand-02.png) center center;
                             background-size: cover;
                         }
 
                         &.-t-shirt-brand-03 {
-                            background: url(../images/t-shirt-brand-03.png) center center;
+                            background: url(/images/t-shirt-brand-03.png) center center;
                             background-size: cover;
                         }
 
                         &.-t-shirt-brand-04 {
-                            background: url(../images/t-shirt-brand-04.png) center center;
+                            background: url(/images/t-shirt-brand-04.png) center center;
                             background-size: cover;
                         }
 
@@ -5124,22 +5147,22 @@ footer.main-footer {
                         }
 
                         &.-your-style-01 {
-                            background: url(../images/your-style-t-shirt-01.png) center center;
+                            background: url(/images/your-style-t-shirt-01.png) center center;
                             background-size: cover;
                         }
 
                         &.-your-style-02 {
-                            background: url(../images/your-style-t-shirt-02.png) center center;
+                            background: url(/images/your-style-t-shirt-02.png) center center;
                             background-size: cover;
                         }
 
                         &.-your-style-03 {
-                            background: url(../images/your-style-t-shirt-03.png) center center;
+                            background: url(/images/your-style-t-shirt-03.png) center center;
                             background-size: cover;
                         }
 
                         &.-your-style-04 {
-                            background: url(../images/your-style-t-shirt-04.png) center center;
+                            background: url(/images/your-style-t-shirt-04.png) center center;
                             background-size: cover;
                         }
 
@@ -5229,17 +5252,17 @@ footer.main-footer {
                 }
 
                 &.--slide-01 {
-                    background: url(../images/ari-gear-slider.png) center center;
+                    background: url(/images/ari-gear-slider.png) center center;
                     background-size: cover;
                 }
 
                 &.--slide-02 {
-                    background: url(../images/ari-gear-slider.png) center center;
+                    background: url(/images/ari-gear-slider.png) center center;
                     background-size: cover;
                 }
 
                 &.--slide-03 {
-                    background: url(../images/ari-gear-slider.png) center center;
+                    background: url(/images/ari-gear-slider.png) center center;
                     background-size: cover;
                 }
 
@@ -5316,17 +5339,17 @@ footer.main-footer {
                     }
 
                     &.--slide-01 {
-                        background: url(../images/ari-gear-slider-mb.png) center center;
+                        background: url(/images/ari-gear-slider-mb.png) center center;
                         background-size: cover;
                     }
 
                     &.--slide-02 {
-                        background: url(../images/ari-gear-slider-mb.png) center center;
+                        background: url(/images/ari-gear-slider-mb.png) center center;
                         background-size: cover;
                     }
 
                     &.--slide-03 {
-                        background: url(../images/ari-gear-slider-mb.png) center center;
+                        background: url(/images/ari-gear-slider-mb.png) center center;
                         background-size: cover;
                     }
                 }
@@ -5425,12 +5448,12 @@ footer.main-footer {
                         }
 
                         &.-hot-collection-01 {
-                            background: url(../images/hot-collection-01.png) center center;
+                            background: url(/images/hot-collection-01.png) center center;
                             background-size: cover;
                         }
 
                         &.-hot-collection-02 {
-                            background: url(../images/hot-collection-02.png) center center;
+                            background: url(/images/hot-collection-02.png) center center;
                             background-size: cover;
                         }
 
@@ -5529,22 +5552,22 @@ footer.main-footer {
                         }
 
                         &.-your-style-01 {
-                            background: url(../images/your-style-t-shirt-01.png) center center;
+                            background: url(/images/your-style-t-shirt-01.png) center center;
                             background-size: cover;
                         }
 
                         &.-your-style-02 {
-                            background: url(../images/your-style-t-shirt-02.png) center center;
+                            background: url(/images/your-style-t-shirt-02.png) center center;
                             background-size: cover;
                         }
 
                         &.-your-style-03 {
-                            background: url(../images/your-style-t-shirt-03.png) center center;
+                            background: url(/images/your-style-t-shirt-03.png) center center;
                             background-size: cover;
                         }
 
                         &.-your-style-04 {
-                            background: url(../images/your-style-t-shirt-04.png) center center;
+                            background: url(/images/your-style-t-shirt-04.png) center center;
                             background-size: cover;
                         }
 
@@ -5684,17 +5707,17 @@ footer.main-footer {
                 }
 
                 &.--slide-01 {
-                    background: url(../images/discount-slider.png) center center;
+                    background: url(/images/discount-slider.png) center center;
                     background-size: cover;
                 }
 
                 &.--slide-02 {
-                    background: url(../images/discount-slider.png) center center;
+                    background: url(/images/discount-slider.png) center center;
                     background-size: cover;
                 }
 
                 &.--slide-03 {
-                    background: url(../images/discount-slider.png) center center;
+                    background: url(/images/discount-slider.png) center center;
                     background-size: cover;
                 }
 
@@ -5771,17 +5794,17 @@ footer.main-footer {
                     }
 
                     &.--slide-01 {
-                        background: url(../images/discount-slider-mb.png) center center;
+                        background: url(/images/discount-slider-mb.png) center center;
                         background-size: cover;
                     }
 
                     &.--slide-02 {
-                        background: url(../images/discount-slider-mb.png) center center;
+                        background: url(/images/discount-slider-mb.png) center center;
                         background-size: cover;
                     }
 
                     &.--slide-03 {
-                        background: url(../images/discount-slider-mb.png) center center;
+                        background: url(/images/discount-slider-mb.png) center center;
                         background-size: cover;
                     }
                 }
@@ -5996,7 +6019,7 @@ footer.main-footer {
                         display: flex;
                         justify-content: center;
                         align-items: center;
-                        background: url(../images/login-right-bg.png) center center;
+                        background: url(/images/login-right-bg.png) center center;
                         background-size: cover;
 
                         .reg-side-block{
@@ -6039,6 +6062,212 @@ footer.main-footer {
                     grid-template-columns: 1fr;
 
                     .reg-mb{
+                        margin-top: 2rem;
+                        display: flex !important;
+                        justify-content: center;
+                        font-size: 18px;
+
+                        a{
+                            margin-left: 10px;
+                            color: $primary-color;
+                            text-decoration: underline;
+                        }
+                    }
+
+                    .-rem{
+                        grid-template-columns: 1fr 1fr;
+                    }
+
+                    .-right{
+                        display: none !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ====================== Register Page ====================== */
+
+.register-page {
+    background-color: $secondary-color;
+
+    // Discount Page - Hero Banner //
+
+    .reg-section {
+        padding: 4rem 0;
+        padding-bottom: 8rem;
+
+        .reg-block{
+            .grid-block{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 25px;
+
+                .grid-item{
+                    &.-left{
+                        padding: 0 35px;
+
+                        .heading-welcome{
+                            font-size: 16px;
+                            font-weight: normal;
+                            margin: 0;
+                        }
+
+                        .heading-reg{
+                            font-size: 24px;
+                            margin: 0;
+                        }
+
+                        .reg-in-form{
+                            display: flex;
+                            flex-direction: column;
+
+                            .remember-reg{
+                                margin-top: 2rem;
+                                font-family: 'Prachason';
+                                font-weight: normal;
+                                font-size: 18px;
+                                text-transform: uppercase;
+
+                                a{
+                                    color: $primary-color;
+                                    text-decoration: underline;
+                                }
+                            }
+
+                            label{
+                                font-size: 18px;
+                                margin: 5px 0;
+                                margin-top: 10px;
+                            }
+
+                            input{
+                                border: 1px solid #606060;
+                                background: transparent;
+                                padding: 7px 15px;
+                                border-radius: 5px;
+                                font-size: 16px;
+                            }
+
+                            .grid-block{
+                                &.-select-items{
+                                    grid-template-columns: 1fr 1fr 1fr;
+                                    gap: 10px;
+
+                                    .selectbox{
+                                        width: 100%;
+                                        font-size: 16px;
+                                    }
+                                }
+                            }
+
+                            .btn-global{
+                                border: 0;
+                                font-family: 'Prachason';
+                                padding: 10px 0;
+                                cursor: pointer;
+                                margin-top: 1rem;
+                            }
+                        }
+
+                        .social-reg-block{
+                            hr{
+                                border: 0;
+                                border-bottom: 1px solid #3E3E3E;
+                                margin-bottom: -20px;
+                                margin-top: 30px;
+                            }
+                            
+                            p{
+                                width: 180px;
+                                margin: 0 auto;
+                                padding: 7px 15px;
+                                background-color: #161616;
+                            }
+
+                            .grid-block {
+                                &.-btn{
+                                    margin-top: 2rem;
+
+                                    .btn-reg{
+                                        text-align: center;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        padding: 10px;
+                                        border-radius: 5px;
+
+                                        img{
+                                            margin-right:15px;
+                                        }
+                                        
+                                        &.btn-login-fb{
+                                            background-color: #1877F2;
+                                            color: #fff;
+                                        }
+                                        &.btn-login-gg{
+                                            background-color: $accent-color;
+                                            color: #000;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .login-mb{
+                            display: none;
+                        }
+                    }
+
+                    &.-right {
+                        display: flex;
+                        justify-content: center;
+                        align-items: flex-start;
+
+                        .login-side-block{
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            background: url(/images/reg-right-bg.png) center center;
+                            background-size: cover;
+                            min-height: 500px;
+                            padding: 0 30px;
+
+                            .title-login{
+                                text-align: center;
+                            }
+
+                            .desc-login{
+                                text-align: center;
+                            }
+
+                            a.btn-border{
+                                width: 80%;
+                                border: 1px solid $accent-color;
+                                border-radius: 5px;
+                                padding: 10px;
+                                display: block;
+                                font-family: 'Prachason';
+                                font-size: 16px;
+
+                                &:hover{
+                                    background-color: $accent-color;
+                                    color: #000;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        @media(max-width: 991px){
+            .reg-block{
+                .grid-block {
+                    grid-template-columns: 1fr;
+
+                    .login-mb{
                         margin-top: 2rem;
                         display: flex !important;
                         justify-content: center;
