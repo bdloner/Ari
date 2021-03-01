@@ -10,11 +10,11 @@ class Footer extends HTMLElement {
             <div class="grid-block">
                 <div class="grid-item">
                     <a href="/">
-                        <img src="/images/ari-logo.svg" alt="Ari Logo" />
+                        <img src="images/ari-logo.svg" alt="Ari Logo" />
                     </a>
                     <ul class="m-list">
                         <li>
-                            <img src="/images/phone-icon-ft.svg" alt="Phone Icon" />
+                            <img src="images/phone-icon-ft.svg" alt="Phone Icon" />
                             <div class="content-r">
                                 <a href="tel:0968458690">096-845-8690</a>
                                 <p>MON - SAT : 10:30 AM - 18:00 PM</p>
@@ -24,7 +24,7 @@ class Footer extends HTMLElement {
 
                     <ul class="m-list">
                         <li>
-                            <img src="/images/email-icon-ft.svg" alt="Email Icon" />
+                            <img src="images/email-icon-ft.svg" alt="Email Icon" />
                             <div class="content-r">
                                 <a href="mailto:help@arifootballstore.com">help@arifootballstore.com</a>
                             </div>
@@ -90,14 +90,14 @@ class Footer extends HTMLElement {
 
                 <div class="grid-item">
                     <h5 style="margin-bottom: 15px;">ชำระบัตรเครดิต / ผ่อนชำระ</h5>
-                    <img width="75%" src="/images/credit-icon.svg" alt="Credit Icon">
+                    <img width="75%" src="images/credit-icon.svg" alt="Credit Icon">
                     
                     <h5 style="margin-bottom: 15px;">โซเชียลมีเดีย</h5>
                     <ul class="social-icon-block">
-                        <li class="social-icon"><a href="#"><img src="/images/fb-icon.svg" alt="FB icon"></a></li>
-                        <li class="social-icon"><a href="#"><img src="/images/ig-icon.svg" alt="IG icon"></a></li>
-                        <li class="social-icon"><a href="#"><img src="/images/line-icon.svg" alt="Line icon"></a></li>
-                        <li class="social-icon"><a href="#"><img src="/images/yt-icon.svg" alt="YT icon"></a></li>
+                        <li class="social-icon"><a href="#"><img src="images/fb-icon.svg" alt="FB icon"></a></li>
+                        <li class="social-icon"><a href="#"><img src="images/ig-icon.svg" alt="IG icon"></a></li>
+                        <li class="social-icon"><a href="#"><img src="images/line-icon.svg" alt="Line icon"></a></li>
+                        <li class="social-icon"><a href="#"><img src="images/yt-icon.svg" alt="YT icon"></a></li>
                     </ul>
                 </div>
             </div>
@@ -116,11 +116,11 @@ class Footer extends HTMLElement {
         <div id="mini-cart-sidebar">
             <div class="mini-cart-block">
                 <div class="close-block">
-                    <div class="close-btn"><img src="/images/x-icon.svg" alt="X"></div>
+                    <div class="close-btn"><img src="images/x-icon.svg" alt="X"></div>
                 </div>
 
                 <div class="minic-title-block">
-                    <h5><img style="margin-right: 10px;" src="/images/minic-icon.svg" alt=""> ตะกร้าสินค้า</h5>
+                    <h5><img style="margin-right: 10px;" src="images/minic-icon.svg" alt=""> ตะกร้าสินค้า</h5>
                 </div>
 
                 <div class="head-table-block">
@@ -138,7 +138,7 @@ class Footer extends HTMLElement {
                     <div class="grid-block -item">
                         <div class="grid-item">
                             <a href="#">
-                                <img width="120" height="120" src="/images/ex-shoes-01.png" alt="Ex Product" />
+                                <img width="120" height="120" src="images/ex-shoes-01.png" alt="Ex Product" />
                             </a>
                         </div>
 
@@ -156,7 +156,7 @@ class Footer extends HTMLElement {
                             </ul>
                             <p class="price">9,400 THB</p>
                             <div class="del-block">
-                                <a href="#"><img src="/images/bin.svg" alt="Delete"></a>
+                                <a href="#"><img src="images/bin.svg" alt="Delete"></a>
                             </div>
                         </div>
 
@@ -171,7 +171,7 @@ class Footer extends HTMLElement {
                     <div class="grid-block -item">
                         <div class="grid-item">
                             <a href="#">
-                                <img width="120" height="120" src="/images/ex-shoes-01.png" alt="Ex Product" />
+                                <img width="120" height="120" src="images/ex-shoes-01.png" alt="Ex Product" />
                             </a>
                         </div>
 
@@ -189,7 +189,7 @@ class Footer extends HTMLElement {
                             </ul>
                             <p class="price">9,400 THB</p>
                             <div class="del-block">
-                                <a href="#"><img src="/images/bin.svg" alt="Delete"></a>
+                                <a href="#"><img src="images/bin.svg" alt="Delete"></a>
                             </div>
                         </div>
 
