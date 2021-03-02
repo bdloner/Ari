@@ -153,11 +153,11 @@ jQuery(document).ready(function($) {
   $('.size-type-block .size-type').click(function(){
 		let tab_id = $(this).attr('data-tab');
 
-		$('.size-type-block .size-type').removeClass('active');
-		$('.size-content').removeClass('active');
+		$('.size-type-block .size-type').removeClass('current');
+		$('.size-content').removeClass('current');
 
-		$(this).addClass('active');
-		$("#"+tab_id).addClass('active');
+		$(this).addClass('current');
+		$("#"+tab_id).addClass('current');
 	});
 
   // Tab Desciption Single Product
@@ -165,11 +165,71 @@ jQuery(document).ready(function($) {
   $('.description-block .desc-type').click(function(){
 		let tab_dsec_id = $(this).attr('data-tab');
 
-		$('.description-block .desc-type').removeClass('active');
-		$('.desc-content').removeClass('active');
+		$('.description-block .desc-type').removeClass('current');
+		$('.desc-content').removeClass('current');
 
-		$(this).addClass('active');
-		$("#"+tab_dsec_id).addClass('active');
+		$(this).addClass('current');
+		$("#"+tab_dsec_id).addClass('current');
 	});
+
+  // Product Categories Boots Page - Show/Hide Filter
+
+  $('.filter-btn-block .filter-btn').click(function(e){
+    e.preventDefault();
+		
+    $('.product-section .-side-left').toggleClass('show');
+    $('.product-section .-side-right').toggleClass('show');
+	});
+
+  // Product Categories Boots Page - Show/Hide Filter Mobile
+
+  $('.filter-btn-block-mb .filter-btn').click(function(e){
+    e.preventDefault();
+		
+    $('.product-section .-side-left').addClass('mb-show');
+    $('.product-section .-side-right').addClass('mb-show');
+	});
+
+  $('.grid-item.-side-left.show .close-btn-mb').click(function(e){
+    e.preventDefault();
+		
+    $('.product-section .-side-left').removeClass('mb-show');
+    $('.product-section .-side-right').removeClass('mb-show');
+	});
+
+  $('.product-section .-side-right .overlay-mb').click(function(e){
+    e.preventDefault();
+		
+    $('.product-section .-side-left').removeClass('mb-show');
+    $('.product-section .-side-right').removeClass('mb-show');
+	});
+
+  // Menu Toggle
+
+  $('.menu-tg .tg__title').click(function(j) {
+    let tg = $(this).closest('.tg__card').find('.tg__panel');
+  
+    if ($(this).hasClass('toggle')) {
+      $(this).removeClass('toggle');
+    } else {
+      $(this).addClass('toggle');
+    }
+  
+    tg.stop(false, true).slideToggle();
+    j.preventDefault();
+  });
+
+  // Price Range
+
+  $('.range-slider').jRange({
+      from: 0,
+      to: 20000,
+      step: 1,
+      scale: [0,10000,20000],
+      format: '%s',
+      width: 260,
+      showLabels: true,
+      isRange : true
+  });
 
 });

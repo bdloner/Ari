@@ -549,9 +549,27 @@ select {
     -ms-user-select: none;
     user-select: none;
 
+    &.tg-filter{
+        margin:0;
+        margin-bottom: 5px;
+
+        span.txt{
+            font-size: 18px;
+
+            .s-txt{
+                margin-left:3px;
+                color: #939393;
+            }
+        }
+    }
+
     &:hover {
         input ~ .checkmark {
             border-color: $primary-color;
+        }
+
+        input ~ span.txt{
+            color: $primary-color;
         }
     }
 
@@ -564,6 +582,15 @@ select {
 
         &:checked ~ .checkmark {
             background-color: transparent;
+        }
+
+        &:checked ~ span.txt{
+            color: $primary-color;
+        }
+
+        &:checked ~ .checkmark.-tg{
+            background-color: $primary-color;
+            border-color: $primary-color;
         }
 
         &:checked ~ .checkmark {
@@ -582,6 +609,16 @@ select {
         background-color: transparent;
         border: 1px solid $accent-color;
         border-radius: 5px;
+
+        &.-tg{
+            top: 2px;
+
+            &::after{
+                left: 6px;
+                border: solid #161616;
+                border-width: 0 3px 3px 0;
+            }
+        }
 
         &::after {
             content: "";
@@ -925,6 +962,64 @@ select {
             display: none;
             margin: 0;
             padding: 0.5rem 0;
+            text-align: left;
+            font-weight: 500;
+            font-size: 16px;
+        }
+    }
+}
+
+// Menu Toggle
+
+.menu-tg {
+    .tg__card {
+        margin: 1em 0em;
+        position: relative;
+
+        .tg__title {
+            background: transparent;
+            color: #fff;
+            cursor: pointer;
+            display: block;
+            padding-top: 1rem;
+            position: relative;
+            text-align: left;
+            border-top: 1px solid #626262;
+            font-weight: 500;
+            font-size: 18px;
+            color: $accent-color;
+
+            &::after {
+                width: 12px;
+                height: 12px;
+                border-right: 1px solid $accent-color;
+                border-bottom: 1px solid $accent-color;
+                position: absolute;
+                right: 10px;
+                content: " ";
+                top: 20px;
+                -webkit-transform: rotate(45deg);
+                transform: rotate(45deg);
+                -webkit-transition: all 0.4s ease-in-out;
+                transition: all 0.4s ease-in-out;
+            }
+
+            &.toggle {
+                &::after {
+                    top: 28px;
+                    -webkit-transform: rotate(-135deg);
+                    transform: rotate(-135deg);
+                    -webkit-transition: all 0.4s ease-in-out;
+                    transition: all 0.4s ease-in-out;
+                }
+            }
+        }
+
+        .tg__panel {
+            background: transparent;
+            color: #212121;
+            display: none;
+            margin: 0;
             text-align: left;
             font-weight: 500;
             font-size: 16px;
@@ -6596,7 +6691,7 @@ footer.main-footer {
                                                 color: $primary-color;
                                             }
 
-                                            &.active {
+                                            &.current {
                                                 border: 1px solid $primary-color;
                                                 color: $primary-color;
                                             }
@@ -6614,7 +6709,7 @@ footer.main-footer {
                                         margin-top: 1rem;
                                         width: 100%;
 
-                                        &.active {
+                                        &.current {
                                             display: inline-block;
                                         }
 
@@ -6748,7 +6843,7 @@ footer.main-footer {
                                     font-size: 18px;
                                     cursor: pointer;
 
-                                    &.active {
+                                    &.current {
                                         text-decoration: underline;
                                         color: $primary-color;
                                     }
@@ -6795,7 +6890,7 @@ footer.main-footer {
                                     font-size: 16px;
                                 }
 
-                                &.active {
+                                &.current {
                                     display: block;
                                 }
                             }
@@ -7276,6 +7371,515 @@ footer.main-footer {
                         }
                     }
                 }
+            }
+        }
+    }
+}
+
+/* ====================== Products Categories Boots Page ====================== */
+
+.product-categories-boots-page{
+    background-color: $secondary-color;
+
+    .main-content{
+        .top-section{
+            padding: 1rem 0;
+
+            .breadcrumb-block{
+                .breadcrumb{
+                    color: #B5B5B5;
+
+                    a{
+                        color:#B5B5B5;
+                        transition: .5s;
+
+                        &:hover{
+                            color: $primary-color;
+                        }
+                    }
+                }
+            }
+
+            .filter-btn-block{
+                display: flex;
+                justify-content: flex-start;
+                
+                .filter-btn{
+                    display: flex;
+                    padding: 7px 6rem;
+                    border: 1px solid #5C5C5C;
+                    border-radius: 5px;
+                    align-items: center;
+                    transition: .5s;
+
+                    &:hover{
+                        .filter-icon{
+                            background-color: $primary-color;
+                        }
+
+                        color: $primary-color;
+                        border: 1px solid $primary-color;
+                    }
+
+                    .filter-icon{
+                        display: inline-block;
+                        width: 20px;
+                        height: 17px;
+                        margin-right: 7px;
+                        background: $accent-color;
+                        mask-size: cover;
+                        mask: url(../images/filter-icon.svg);
+                        transition: .5s;
+                    }
+                }
+            }
+        }
+
+        .product-section{
+            .product-block{
+                .grid-block{
+                    display: flex;
+                    flex-wrap: wrap;
+
+                    .grid-item{
+                        &.show{
+                            &.-side-left{
+                                min-width: 290px;
+                                margin-left: 0%;
+                                visibility: visible;
+                                opacity: 1;
+                            }
+
+                            &.-side-right{
+                                width: 75%;
+                                margin-left: 25%;
+                                padding-left: 20px;
+
+                                .results-product{
+                                    .grid-block{
+                                        display: grid;
+                                        grid-template-columns: 1fr 1fr 1fr !important;
+                                        gap: 20px;
+                                    }
+                                }
+                            }
+                        }
+                        
+                        &.-side-left{
+                            position: absolute;
+                            visibility: hidden;
+                            margin-left: -30%;
+                            opacity: 0;
+                            transition: all .5s linear;
+
+                            .close-btn-mb{
+                                display: none;
+                            }
+
+                            .main-head-block{
+                                .grid-block{
+                                    display:grid;
+                                    grid-template-columns: 1fr 1fr;
+                                    gap: 25px;
+
+                                    .grid-item{
+                                        display: flex;
+                                        align-items: center;
+
+                                        h3{
+                                            margin:0;
+                                            font-size: 22px;
+                                            font-weight: normal;
+                                        }
+
+                                        &:last-child{
+                                            justify-content: flex-end;
+
+                                            a{
+                                                text-decoration: underline;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            .menu-toggle-content-block{
+                                .menu-tg{
+                                    .tg-filter{
+                                        &.-color{
+                                            &::after {
+                                                width: 20px;
+                                                height: 20px;
+                                                content: '';
+                                                position: absolute;
+                                                right: 0;
+                                                border-radius: 50%;
+                                            }
+
+                                            &.--c01{
+                                                &::after {
+                                                    border: 1px solid #fff;
+                                                    background-color: #161616;
+                                                }
+                                            }
+
+                                            &.--c02{
+                                                &::after {
+                                                    border: 1px solid #fff;
+                                                    background-color: $primary-color;
+                                                }
+                                            }
+
+                                            &.--c03{
+                                                &::after {
+                                                    border: 1px solid #fff;
+                                                    background-color: #9D0E0E;
+                                                }
+                                            }
+                                            &.--c04{
+                                                &::after {
+                                                    border: 1px solid #fff;
+                                                    background-color: #65E22D;
+                                                }
+                                            }
+
+                                            &.--c05{
+                                                &::after {
+                                                    border: 1px solid #fff;
+                                                    background-color: #467630;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+
+                                .range-slider-block{
+                                    padding: 35px 0;
+                                    display: flex;
+                                    justify-content: center;
+                                }
+                            }
+                        }
+
+                        &.-side-right{
+                            width: 100%;
+                            transition: all .5s linear;
+
+                            .overlay-mb{
+                                display: none;
+                            }
+                            
+                            .filter-btn-block-mb{
+                                display: none;
+                            }
+
+                            .results-product-block{
+                                .banner-categories{
+                                    min-height: 200px;
+                                    background: url(/images/ex-banner-filter-01.png) center center;
+                                    background-size: cover;
+                                }
+
+                                .head-categories{
+                                    border-bottom: 1px solid #E3E3E3;
+
+                                    .grid-block{
+                                        display: grid;
+                                        grid-template-columns: .5fr 1fr;
+                                        gap: 10px;
+
+                                        .grid-item{
+                                            display: flex;
+                                            align-items: center;
+
+                                            h2{
+                                                margin: 15px 0;
+                                            }
+                                            
+                                            &:last-child{
+                                                justify-content: flex-end;
+                                            }
+
+                                            h2{
+                                                span{
+                                                    font-size: 16px;
+                                                    color: #B5B5B5;
+                                                }
+                                            }
+
+                                            div{
+                                                span{
+                                                    margin: 0 7px;
+                                                }
+
+                                                select{
+                                                    padding: 5px 25px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+
+                                .results-product{
+                                    padding: 1rem 0;
+                                    padding-bottom: 5rem;
+
+                                    .grid-block{
+                                        display: grid;
+                                        grid-template-columns: 1fr 1fr 1fr 1fr;
+                                        gap: 20px;
+                                    }
+
+                                    .pagination-block{
+                                        ul.pagination{
+                                            display: flex;
+                                            justify-content: center;
+
+                                            li:first-child{
+                                                a{
+                                                    text-decoration: underline;
+                                                }
+
+                                                img{
+                                                    transform: rotate(90deg);
+                                                    margin-right: 7px;
+                                                }
+                                            }
+
+                                            li{
+                                                padding: 0px 15px;
+
+                                                a{
+                                                    display: flex;
+
+                                                    &:hover{
+                                                        color: $primary-color;
+                                                    }
+                                                }
+
+                                                &.current-page{
+                                                    &::before {
+                                                        content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='34.174' height='28.487' viewBox='0 0 34.174 28.487'%3E%3Cg id='Path_9535' data-name='Path 9535' transform='translate(-228.698 -351.466)' fill='none'%3E%3Cpath d='M251.281,351.466l11.592,7.323L257.6,373.76,239.1,379.953,228.7,370.523l6.733-13.5Z' stroke='none'/%3E%3Cpath d='M 251.1863403320313 352.2939453125 L 235.9670257568359 357.6249389648438 L 229.623291015625 370.3486633300781 L 239.2825775146484 379.102783203125 L 257.0113830566406 373.1653137207031 L 261.9660034179688 359.1043090820313 L 251.1863403320313 352.2939453125 M 251.2805023193359 351.4662780761719 L 262.8720703125 358.7896118164063 L 257.5969848632813 373.7601318359375 L 239.1043243408203 379.9534301757813 L 228.698486328125 370.522705078125 L 235.4317016601563 357.0177917480469 L 251.2805023193359 351.4662780761719 Z' stroke='none' fill='%23ffbe00'/%3E%3C/g%3E%3C/svg%3E");
+                                                        position: absolute;
+                                                        margin-left: -13px;
+                                                        z-index: -1;
+                                                    }
+
+                                                    a{
+                                                        color: $primary-color;
+                                                    }
+                                                }
+                                            }
+
+                                            li:last-child{
+                                                a{
+                                                    text-decoration: underline;
+                                                }
+
+                                                img{
+                                                    transform: rotate(-90deg);
+                                                    margin-left: 7px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        @media(max-width: 1150px){
+            .top-section{
+                padding: 0;
+
+                .filter-btn-block{
+                    display: none;
+                }
+            }
+
+            .product-section{
+                .product-block{
+                    .grid-block{
+                        .grid-item{
+                            &.-side-left{
+                                &.show{
+                                    display: block;
+                                    top: 0;
+                                    width: 80vw !important;
+                                    right: -150%;
+                                    position: fixed;
+                                    background-color: #161616;
+                                    z-index: 99999;
+                                    height: 100vh;
+                                    padding: 3rem 20px;
+                                    overflow: auto;
+
+                                    .close-btn-mb{
+                                        display: block;
+                                        position: absolute;
+                                        right: 0px;
+                                        top: 0px;
+                                        padding: 20px;
+                                    }
+                                }
+
+                                &.mb-show{
+                                    right: 0;
+                                }
+                            }
+
+                            &.-side-right{
+                                @keyframes fadeIn {
+                                    from { opacity: 0; }
+                                      to { opacity: 1; }
+                                }
+
+                                &.show{
+                                    width: 100%;
+                                    margin: 0;
+                                    padding: 0;
+                                }
+
+                                .overlay-mb {
+                                    width: 100%;
+                                    height: 100vh;
+                                    position: fixed;
+                                    background-color: rgba(0,0,0,0.8);
+                                    z-index: 9999;
+                                    left: 0;
+                                    top: 0;
+                                    animation: fadeIn .5s linear forwards;
+                                }
+
+                                &.mb-show{
+                                    .overlay-mb{
+                                        display: block;
+                                    }
+                                }
+                                
+                                .results-product-block{
+                                    .banner-categories{
+                                        min-height: 200px;
+                                        background: url(../images/ex-banner-filter-mb-01.png) center center;
+                                        background-size: cover;
+                                        width: 100vw;
+                                        position: relative;
+                                        left: 50%;
+                                        right: 50%;
+                                        margin-left: -50vw;
+                                        margin-right: -50vw;
+                                    }
+
+                                    .head-categories{
+                                        border-bottom: 0;
+
+                                        .filter-btn-block-mb{
+                                            display: flex;
+                                            justify-content: flex-start;
+                                            
+                                            .filter-btn{
+                                                display: flex;
+                                                padding: 7px 0;
+                                                width: 100%;
+                                                justify-content: center;
+                                                border: 1px solid #5C5C5C;
+                                                border-radius: 5px;
+                                                align-items: center;
+                                                transition: .5s;
+
+                                                &:hover{
+                                                    .filter-icon{
+                                                        background-color: $primary-color;
+                                                    }
+
+                                                    color: $primary-color;
+                                                    border: 1px solid $primary-color;
+                                                }
+
+                                                .filter-icon{
+                                                    display: inline-block;
+                                                    width: 20px;
+                                                    height: 17px;
+                                                    margin-right: 7px;
+                                                    background: $accent-color;
+                                                    mask-size: cover;
+                                                    mask: url(../images/filter-icon.svg);
+                                                    transition: .5s;
+                                                }
+                                            }
+                                        }
+
+                                        .grid-block{
+                                            grid-template-columns: 1fr;
+                                            gap: 0;
+                                            padding-bottom: 1rem;
+
+                                            .grid-item{
+                                                h2{
+                                                    width: 100%;
+                                                    border-bottom: 1px solid #E3E3E3;
+                                                }
+                                                &:last-child{
+                                                    .by-item-block{
+                                                        flex: 1 1 auto;
+                                                    }
+
+                                                    .by-sert-block{
+                                                        flex: 1 1 auto;
+                                                    }
+
+                                                    div{
+                                                        span{
+                                                            margin: 0 3px;
+                                                            font-size: 12px;
+                                                        }
+
+                                                        select{
+                                                            padding: 5px 7px;
+                                                            padding-right: 15px;
+                                                            background-size: 10px;
+                                                            background-position: calc(100% - 5px) center;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+
+                                    .results-product{
+                                        .grid-block{
+                                            grid-template-columns: 1fr 1fr !important;
+                                            gap: 10px;
+
+                                            .post-items.-card{
+                                                .featured-img-block {
+                                                    height: 275px;
+
+                                                    .badge{
+                                                        font-size: 14px;
+
+                                                        &.-r{
+                                                            margin-top: 2rem;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        @media(max-width: 500px){
+            .featured-img-block {
+                height: 175px !important;
             }
         }
     }
