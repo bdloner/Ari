@@ -219,17 +219,4 @@ jQuery(document).ready(function($) {
     j.preventDefault();
   });
 
-  // Price Range
-
-  $('.range-slider').jRange({
-      from: 0,
-      to: 20000,
-      step: 1,
-      scale: [0,10000,20000],
-      format: '%s',
-      width: 260,
-      showLabels: true,
-      isRange : true
-  });
-
 });

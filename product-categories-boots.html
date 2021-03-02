@@ -508,8 +508,27 @@
     <script src="js/mmenu-light/mmenu-light.polyfills.js" type="text/javascript" defer></script>
     <script src="js/jRange/jquery.range.min.js" type="text/javascript" defer></script>
 
-
     <script src="js/main.js" type="text/javascript" defer></script>
+
+    <script type="text/javascript" defer>
+
+        document.addEventListener( 'DOMContentLoaded', function () {
+
+            // Price Range
+            $('.product-categories-boots-page .range-slider').jRange({
+                from: 0,
+                to: 20000,
+                step: 1,
+                scale: [0,10000,20000],
+                format: '%s',
+                width: 260,
+                showLabels: true,
+                isRange : true
+            });
+        });
+        
+    </script>
+
 </body>
 
 </html>
