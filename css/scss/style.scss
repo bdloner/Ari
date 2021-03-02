@@ -7414,7 +7414,7 @@ footer.main-footer {
 
                     &:hover{
                         .filter-icon{
-                            background-color: $primary-color;
+                            filter: invert(27%) sepia(51%) saturate(2878%);
                         }
 
                         color: $primary-color;
@@ -7427,8 +7427,8 @@ footer.main-footer {
                         height: 17px;
                         margin-right: 7px;
                         background: $accent-color;
-                        mask-size: cover;
-                        mask: url(../images/filter-icon.svg);
+                        background-size: cover;
+                        background: url(../images/filter-icon.svg);
                         transition: .5s;
                     }
                 }
@@ -7576,7 +7576,7 @@ footer.main-footer {
                             .results-product-block{
                                 .banner-categories{
                                     min-height: 200px;
-                                    background: url(/images/ex-banner-filter-01.png) center center;
+                                    background: url(../images/ex-banner-filter-01.png) center center;
                                     background-size: cover;
                                 }
 
@@ -7792,7 +7792,7 @@ footer.main-footer {
 
                                                 &:hover{
                                                     .filter-icon{
-                                                        background-color: $primary-color;
+                                                        filter: invert(27%) sepia(51%) saturate(2878%);
                                                     }
 
                                                     color: $primary-color;
@@ -7805,8 +7805,8 @@ footer.main-footer {
                                                     height: 17px;
                                                     margin-right: 7px;
                                                     background: $accent-color;
-                                                    mask-size: cover;
-                                                    mask: url(../images/filter-icon.svg);
+                                                    background-size: cover;
+                                                    background: url(../images/filter-icon.svg);
                                                     transition: .5s;
                                                 }
                                             }

@@ -7344,7 +7344,8 @@ footer.main-footer .bottom-ft p {
 }
 
 .product-categories-boots-page .main-content .top-section .filter-btn-block .filter-btn:hover .filter-icon {
-  background-color: #ffbe00;
+  -webkit-filter: invert(27%) sepia(51%) saturate(2878%);
+          filter: invert(27%) sepia(51%) saturate(2878%);
 }
 
 .product-categories-boots-page .main-content .top-section .filter-btn-block .filter-btn .filter-icon {
@@ -7353,10 +7354,8 @@ footer.main-footer .bottom-ft p {
   height: 17px;
   margin-right: 7px;
   background: #fff;
-  -webkit-mask-size: cover;
-          mask-size: cover;
-  -webkit-mask: url(../images/filter-icon.svg);
-          mask: url(../images/filter-icon.svg);
+  background-size: cover;
+  background: url(../images/filter-icon.svg);
   -webkit-transition: .5s;
   transition: .5s;
 }
@@ -7496,7 +7495,7 @@ footer.main-footer .bottom-ft p {
 
 .product-categories-boots-page .main-content .product-section .product-block .grid-block .grid-item.-side-right .results-product-block .banner-categories {
   min-height: 200px;
-  background: url(/images/ex-banner-filter-01.png) center center;
+  background: url(../images/ex-banner-filter-01.png) center center;
   background-size: cover;
 }
 
@@ -7719,7 +7718,8 @@ footer.main-footer .bottom-ft p {
     border: 1px solid #ffbe00;
   }
   .product-categories-boots-page .main-content .product-section .product-block .grid-block .grid-item.-side-right .results-product-block .head-categories .filter-btn-block-mb .filter-btn:hover .filter-icon {
-    background-color: #ffbe00;
+    -webkit-filter: invert(27%) sepia(51%) saturate(2878%);
+            filter: invert(27%) sepia(51%) saturate(2878%);
   }
   .product-categories-boots-page .main-content .product-section .product-block .grid-block .grid-item.-side-right .results-product-block .head-categories .filter-btn-block-mb .filter-btn .filter-icon {
     display: inline-block;
@@ -7727,10 +7727,8 @@ footer.main-footer .bottom-ft p {
     height: 17px;
     margin-right: 7px;
     background: #fff;
-    -webkit-mask-size: cover;
-            mask-size: cover;
-    -webkit-mask: url(../images/filter-icon.svg);
-            mask: url(../images/filter-icon.svg);
+    background-size: cover;
+    background: url(../images/filter-icon.svg);
     -webkit-transition: .5s;
     transition: .5s;
   }
