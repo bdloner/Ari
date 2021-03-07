@@ -219,4 +219,30 @@ jQuery(document).ready(function($) {
     j.preventDefault();
   });
 
+  $('.product-detail-boots-page .btn-360').click(function(j) {
+    $('#view-360').addClass('show');
+
+    $('html, body').addClass('popup-360');
+  });
+
+  $('#view-360 .close-btn').click(function(j) {
+    $('#view-360').removeClass('show');
+
+    $('html, body').removeClass('popup-360');
+  });
+
+  $('.product-detail-boots-page .personalization-btn').click(function(j) {
+    $('.popup-personalize').addClass('show');
+
+    $('html, body').addClass('popup-360');
+  });
+
+  $('.popup-personalize .close-btn').click(function(j) {
+    $('.popup-personalize').removeClass('show');
+
+    $('html, body').removeClass('popup-360');
+  });
+
+  
+
 });

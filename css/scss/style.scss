@@ -140,6 +140,65 @@ textarea {
     color: $accent-color;
 }
 
+// Radio Choose Color
+
+[type="radio"]:checked,
+[type="radio"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+
+.choose-color:checked + label,
+.choose-color:not(:checked) + label {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    padding: 5px 12px;
+    padding-bottom: 0px;
+    margin: 0 auto;
+    margin-right: 10px;
+    text-align: center;
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+    text-transform: uppercase;
+    -webkit-transition: all 200ms linear;
+    transition: all 200ms linear;
+}
+
+.choose-color:checked + label,
+.choose-color:not(:checked) + label:hover {
+    background-color: transparent;
+    border: 1px solid $primary-color;
+    color: $primary-color;
+}
+
+.choose-color:checked + label::after{
+    content: url(../images/checked-icon.svg);
+    position: absolute;
+    left: 10px;
+    top: 8px;
+}
+
+.choose-color:checked + label[for="choose-color-02"]::after{
+    filter: invert(27%) sepia(51%) saturate(2878%);
+}
+
+.choose-color:checked + label span,
+.choose-color + label:hover span {
+    color: $primary-color;
+}
+
+.choose-color:not(:checked) + label {
+    border: 1px solid $accent-color;
+    color: $accent-color;
+}
+
+// ----------------------------------- //
+
 input:focus {
     outline: 0;
 }
@@ -184,6 +243,8 @@ a {
     padding: 7px;
     color: #000;
     font-size: 14px;
+    border: 0;
+    padding: 15px;
 }
 
 // Dropdown
@@ -6456,6 +6517,12 @@ footer.main-footer {
 
 /* ====================== Products Detail Boots Page ====================== */
 
+body, html{
+    &.popup-360{
+        overflow: hidden;
+    }
+}
+
 .product-detail-boots-page {
     background-color: $secondary-color;
 
@@ -6539,9 +6606,6 @@ footer.main-footer {
                                         &.splide__arrow--prev {
                                             display: none;
                                         }
-
-                                        &.splide__arrow--next {
-                                        }
                                     }
                                 }
                             }
@@ -6552,6 +6616,51 @@ footer.main-footer {
                                     z-index: 3;
                                     bottom: 33px;
                                     right: 15px;
+                                }
+
+                                #view-360 {
+                                    position: fixed;
+                                    top: 0;
+                                    left: 0;
+                                    width: 100vw;
+                                    height: 100vh;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    background-color: #fff;
+                                    z-index: 99;
+                                    opacity: 0;
+                                    visibility: hidden;
+                                    transition: .5s;
+
+                                    &.show{
+                                        opacity: 1;
+                                        visibility: visible;
+
+                                        .close-btn{
+                                            display: block;
+                                            position: absolute;
+                                            right: 0px;
+                                            top: 0px;
+                                            padding: 50px;
+                                            cursor: pointer;
+
+                                            img{
+                                                filter: brightness(0.5);
+                                                transform: scale(1.5);
+                                            }
+                                        }
+
+                                        .cloudimage-360.initialized {
+                                            width: 70% !important;
+                                            margin: 0 auto;
+
+                                            canvas {
+                                                width: 100% !important;
+                                                height: 100% !important;
+                                            }
+                                        }
+                                    }
                                 }
 
                                 .splide__slide {
@@ -6738,6 +6847,35 @@ footer.main-footer {
                             }
 
                             .amount-block {
+                                &.-process{
+                                    .-personalization{
+                                        display: none !important;
+                                    }
+
+                                    .complete-personalize{
+                                        padding: 20px;
+                                        border: 1px solid $primary-color;
+                                        border-radius: 5px;
+                                        margin-top: 1rem;
+
+                                        .grid-block{
+                                            .grid-item{
+                                                h3{
+                                                    font-family: 'Agency FB';
+                                                    font-size: 24px;
+                                                    margin: 0;
+                                                }
+
+                                                .edit-block{
+                                                    display: flex;
+                                                    justify-content: flex-end;
+                                                    align-items: center;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+
                                 .grid-block {
                                     display: grid;
                                     grid-template-columns: 0.8fr 1fr;
@@ -6792,6 +6930,164 @@ footer.main-footer {
                                             display: flex;
                                             align-items: center;
 
+                                            .popup-personalize{
+                                                display: flex;
+                                                justify-content: center;
+                                                align-items: center;
+                                                position: fixed;
+                                                top: 0;
+                                                left: 0;
+                                                background-color: #fff;
+                                                z-index: 9999;
+                                                width: 100vw;
+                                                height: 100vh;
+                                                visibility: hidden;
+                                                opacity: 0;
+                                                transition: .5s;
+
+                                                &.show{
+                                                    visibility: visible;
+                                                    opacity: 1;
+                                                }
+
+                                                .close-btn{
+                                                    position: absolute;
+                                                    right: 20px;
+                                                    top: 10px;
+                                                    padding: 20px;
+                                                    filter: brightness(0.5);
+                                                    transform: scale(1.5);
+                                                    cursor: pointer;
+                                                    display: flex;
+                                                }
+
+                                                .title-personalize{
+                                                    color: #161616;
+                                                    font-family: 'Agency FB';
+                                                    font-size: 28px;
+                                                }
+
+                                                .grid-block{
+                                                    display: grid;
+                                                    grid-template-columns: 1fr .7fr;
+                                                    gap: 30px;
+
+                                                    .grid-item{
+                                                        display: flex;
+                                                        flex-direction: column;
+
+                                                        &:first-child{
+                                                            display:flex;
+                                                            justify-content: center;
+                                                            align-items: center;
+                                                            border-right:1px solid #F0F0F0;
+                                                        }
+
+                                                        .btn-global {
+                                                            width: 45%;
+                                                            font-family: 'Prachason';
+                                                            cursor: pointer;
+                                                            font-size: 16px;
+                                                            padding: 5px 15px;
+                                                            margin-top: 1rem;
+                                                        }
+
+                                                        .ip-box {
+                                                            display: flex;
+                                                            flex-direction: column;
+                                                            margin-bottom: 20px;
+
+                                                            label.label-ip-block{
+                                                                display: flex;
+                                                                align-items: center;
+                                                                margin-bottom: 7px;
+
+                                                                span{
+                                                                    font-size: 16px;
+                                                                    color: #161616;
+                                                                }
+                                                            }
+
+                                                            input{
+                                                                border: 1px solid #E8E8E8;
+                                                                border-radius: 5px;
+                                                                padding: 10px 15px;
+                                                                font-size: 16px;
+                                                                color: #000;
+
+                                                                &::placeholder{
+                                                                    color: #BFBFBF;
+                                                                }
+                                                            }
+
+                                                            .reccommend-txt{
+                                                                color: #FF4B4B;
+                                                                font-size: 14px;
+                                                                margin-top: 5px;
+                                                            }
+
+                                                            .color-content{
+                                                                display: grid;
+                                                                grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+                                                                gap: 10px; 
+
+                                                                .color-block{
+                                                                    display: flex;
+                                                                    justify-content: center;
+                                                                    align-items: center;
+                                                                    flex-direction: column;
+
+                                                                    .color-txt{
+                                                                        margin-top: 5px;
+                                                                        color: #161616;
+                                                                    }
+
+                                                                    .for-choose-color{
+                                                                        width: 40px;
+                                                                        height: 40px;
+                                                                        border-radius: 50%;
+                                                                        padding: 0;
+                                                                        border: 3px solid #F4F6FC;
+                                                                        margin: 0;
+    
+                                                                        &[for="choose-color-01"]{
+                                                                            background-color: #2E2E2E;
+                                                                        }
+                                                                        &[for="choose-color-02"]{
+                                                                            background-color: #FFFFFF;
+                                                                        }
+                                                                        &[for="choose-color-03"]{
+                                                                            background-color: #DE861F;
+                                                                        }
+                                                                        &[for="choose-color-04"]{
+                                                                            background-color: #FFBE00;
+                                                                        }
+                                                                        &[for="choose-color-05"]{
+                                                                            background-color: #4ECFD5;
+                                                                        }
+                                                                        &[for="choose-color-06"]{
+                                                                            background-color: #45B976;
+                                                                        }
+                                                                        &[for="choose-color-07"]{
+                                                                            background-color: #122489;
+                                                                        }
+                                                                        &[for="choose-color-08"]{
+                                                                            background-color: #0062FF;
+                                                                        }
+                                                                        &[for="choose-color-09"]{
+                                                                            background-color: #801EFF;
+                                                                        }
+                                                                        &[for="choose-color-10"]{
+                                                                            background-color: #AE58CE;
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+
                                             .personalization-btn {
                                                 display: block;
                                                 text-align: center;
@@ -6826,6 +7122,9 @@ footer.main-footer {
                                 border: 0;
                                 font-family: "Prachason";
                                 font-size: 18px;
+                                outline: 0;
+                                cursor: pointer;
+                                width: 190px;
                             }
                         }
                     }
@@ -7299,6 +7598,42 @@ footer.main-footer {
                                     .action-add-to-cart{
                                         .amount-block{
                                             margin: 1rem 0;
+
+                                            &.-process{
+                                                .complete-personalize{
+                                                    .grid-block{
+                                                        grid-template-columns: 1fr 1fr;
+
+                                                        &:first-child{
+                                                            margin-bottom: 1rem;
+                                                        }
+
+                                                        .grid-item{
+                                                            &:last-child{
+                                                                span{
+                                                                    text-align: right;
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+
+                                            .popup-personalize{
+                                                .grid-block{
+                                                    grid-template-columns: 1fr !important;
+
+                                                    .grid-item{
+                                                        &:first-child{
+                                                            border-right: 0 !important;
+
+                                                            img {
+                                                                width: 50%;
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
 
                                             .grid-block{
                                                 grid-template-columns: 1fr;
