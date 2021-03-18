@@ -239,10 +239,75 @@ jQuery(document).ready(function($) {
 
   $('.popup-personalize .close-btn').click(function(j) {
     $('.popup-personalize').removeClass('show');
+    
+    $('html, body').removeClass('popup-360');
+  });
+
+  $('.product-detail-jersey-page .popup-personalize .close-btn').click(function(j) {
+    $('.popup-personalize').removeClass('show');
+    $('#step-01').fadeIn();
+    $('#step-number').fadeOut();
+    $('#step-logo').fadeOut();
 
     $('html, body').removeClass('popup-360');
   });
 
-  
+  $('.product-detail-jersey-page .personalization-btn').click(function(j) {
+    $('.popup-personalize').addClass('show');
+
+    $('html, body').addClass('popup-360');
+  });
+
+  $('#next-step-01').click(function(){
+    $('#step-01').fadeOut();
+    $('#step-02').fadeIn();
+  });
+
+  $('.back-btn').click(function(){
+    $('#step-01').fadeIn();
+    $('#step-number').fadeOut();
+    $('#step-logo').fadeOut();
+  });
+
+  $('input[name="radio-group"]').click(function(){
+      if($(this).attr("value")=="screen-soccers"){
+        $(".screen-num").fadeOut('slow');
+        $(".screen-box").fadeIn('slow');
+      } else if ($(this).attr("value")=="screen-num"){
+        $(".screen-box").fadeOut('slow');
+        $(".screen-num").fadeIn('slow');
+      } else{
+        $(".screen-box").fadeOut('slow');
+        $(".screen-num").fadeOut('slow');
+      }
+  });
+
+  $('input[name="radio-way"]').click(function(){
+      if($(this).attr("value")=="step-number"){
+        $("#step-number").fadeIn('slow');
+        $("#step-01").fadeOut('slow');
+      } else {
+        $("#step-logo").fadeIn('slow');
+        $("#step-01").fadeOut('slow');
+      }
+  });
+
+  $('.-submit').click(function(){
+    $('#step-01').fadeIn();
+    $('#step-number').fadeOut();
+    $('#step-logo').fadeOut();
+  });
+
+  // $('#submit-step').click(function(){
+  //   let way = $('input[name="radio-way"]:checked').val();
+
+  //     if(way == "step-number"){
+  //       $("#step-number").fadeIn('slow');
+  //       $("#step-01").fadeOut('slow');
+  //     } else {
+  //       $("#step-logo").fadeIn('slow');
+  //       $("#step-01").fadeOut('slow');
+  //     }
+  // });
 
 });

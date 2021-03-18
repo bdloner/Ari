@@ -112,7 +112,7 @@
 
                                     </div>
                                 </div>
-                                <div class="amount-block">
+                                <div class="amount-block -process">
                                     <div class="grid-block">
                                         <div class="grid-item -amount">
                                             <span class="text-amount">จำนวน : </span>
@@ -122,137 +122,32 @@
                                                 <span class="plus">+</span>
                                             </div>
                                         </div>
-                                        <div class="grid-item -personalization">
-                                            <a href="#" class="personalization-btn"><img
-                                                    src="images/shirt-personalize.svg" alt="" /> ออกแบบ
-                                                PERSONALIZATION</a>
-                                            <div class="popup-personalize">
-                                                <div class="close-btn"><img src="images/x-icon.svg" alt=""></div>
-                                                <div id="step-01" class="popup-personalize-block g-container">
-                                                    <h2 class="title-personalize">PERSONALIZATION</h2>
-                                                    <div class="grid-block">
-                                                        <div class="grid-item">
-                                                            <img width="70%" src="images/personalize-jersey-01.png" alt="" />
-                                                        </div>
-                                                        <div class="grid-item">
-                                                            <h3 class="title-personalize-jersey">ส่วนที่ต้องการ Personalize</h3>
-                                                            <form action="#" id="choose-way" class="form-personalize">
-                                                                <div class="choose-way">
-                                                                    <input class="radio-size" type="radio" name="radio-way" id="screen-num-type" value="step-number"
-                                                                    required>
-                                                                    <label class="for-screen-num" for="screen-num-type">
-                                                                        <img src="images/choose-name-num-icon.svg" alt=""> <span>ชื่อนักเตะและเบอร์</span> 
-                                                                    </label>
-                                                                    <input class="radio-size" type="radio" name="radio-way" id="screen-logo-type" value="step-logo"
-                                                                        required>
-                                                                    <label class="for-screen-logo" for="screen-logo-type">
-                                                                        <img src="images/choose-logo-icon.svg" alt=""> <span>ตราลีก/อาร์มสโมสร</span> 
-                                                                    </label>
-                                                                </div>
-                                                                <a href="/products-detail-jersey-complete-personalize.html" id="submit-step-complete" class="btn-global" type="submit">ยืนยัน Personalize</a>
-                                                            </form>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div id="step-number" class="popup-personalize-block g-container" style="display: none;">
-                                                    <h2 class="title-personalize">PERSONALIZATION</h2>
-                                                    <div class="grid-block">
-                                                        <div class="grid-item">
-                                                            <img width="70%" src="images/personalize-jersey-01.png" alt="" />
-                                                        </div>
-                                                        <div class="grid-item">
-                                                            <h3 class="title-personalize-jersey">ชื่อนักเตะและเบอร์</h3>
-                                                            <form action="#" id="choose-screen" class="form-personalize">
-                                                                <div class="choose-radio-way">
-                                                                    <p>
-                                                                        <input type="radio" id="no-screen" name="radio-group" value="no-screen" checked>
-                                                                        <label for="no-screen">ไม่สกรีนชื่อและเบอร์</label>
-                                                                    </p>
-                                                                    <p>
-                                                                        <input type="radio" id="screen-soccers" value="screen-soccers" name="radio-group">
-                                                                        <label for="screen-soccers">สกรีนชื่อนักเตะ</label>
-                                                                    </p>
-                                                                    <p>
-                                                                        <input type="radio" id="screen-num" value="screen-num" name="radio-group">
-                                                                        <label for="screen-num">ระบุชื่อ และเบอร์ของคุณ</label>
-                                                                    </p>
-                                                                </div>
+                                    </div>
 
-                                                                <div class="screen-box" style="display: none;">
-                                                                    <h4>ระบุฟอนต์</h4>
-                                                                    <select name="font-screen" id="font-screen" class="select-screen">
-                                                                        <option value="default">Select Option</option>
-                                                                        <option value="default">ฟอนต์ Premier League</option>
-                                                                    </select>
+                                    <div class="complete-personalize -jersey">
+                                        <div class="grid-block">
+                                            <div class="grid-item">
+                                                <h3>PERSONALIZATION</h3>
+                                            </div>
+                                            <div class="grid-item">
+                                                <div class="edit-block"><a href="products-detail-jersey.html">แก้ไข <img src="images/edit-icon.svg" alt=""></a></div>
+                                            </div>
+                                        </div> 
 
-                                                                    <h4>สกรีนชื่อนักเตะ</h4>
-                                                                    <select name="soccer-screen" id="soccer-screen" class="select-screen">
-                                                                        <option value="default">Select Option</option>
-                                                                        <option value="default">17 - DE BRUYNE</option>
-                                                                    </select>
-                                                                </div>
-
-                                                                <div class="screen-num" style="display: none;">
-                                                                    <h4>ระบุฟอนต์</h4>
-                                                                    <input type="text" value="ฟอนต์ Premier League" class="fixed-font" disabled/>
-
-                                                                    <div class="grid-block">
-                                                                        <div class="grid-item">
-                                                                            <h4>ระบุชื่อ</h4>
-                                                                            <input type="text" value="BRU" class="inp inp-name"/>
-                                                                        </div>
-                                                                        <div class="grid-item">
-                                                                            <h4>เบอร์</h4>
-                                                                            <input type="text" value="1" class="inp inp-num"/>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-
-                                                                <a href="#" id="next-step-02" class="btn-global -submit" type="submit">ยืนยันการเลือก</a>
-                                                            
-                                                                <a href="#" id="back-main" class="back-btn">ย้อนกลับ</a>
-                                                            </form>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div id="step-logo" class="popup-personalize-block g-container" style="display: none;">
-                                                    <h2 class="title-personalize">PERSONALIZATION</h2>
-                                                    <div class="grid-block">
-                                                        <div class="grid-item">
-                                                            <img width="70%" src="images/personalize-jersey-01.png" alt="" />
-                                                        </div>
-                                                        <div class="grid-item">
-                                                            <h3 class="title-personalize-jersey">ตราลีก/อาร์มสโมสร</h3>
-                                                            <form action="#" id="choose-way" class="form-personalize">
-                                                                <div class="choose-way">
-                                                                    <input class="radio-size" type="radio" name="radio-way" id="epl" value="step-number"
-                                                                    required>
-                                                                    <label class="for-screen" for="epl">
-                                                                        <img width="55" src="images/epl.png" alt=""> <span>EPL 2019/20 CHAMPION BADGE</span> <span class="price">350 THB</span>
-                                                                    </label>
-                                                                    <input class="radio-size" type="radio" name="radio-way" id="epl-room" value="step-logo"
-                                                                        required>
-                                                                    <label class="for-screen" for="epl-room">
-                                                                        <img width="75" src="images/epl-noroom.png" alt=""> <span>EPL 2019/20 CHAMPION / ROOM FOR  RACISM BADGE</span> <span class="price">650 THB</span>
-                                                                    </label>
-                                                                    <input class="radio-size" type="radio" name="radio-way" id="no-room" value="step-logo"
-                                                                        required>
-                                                                    <label class="for-screen" for="no-room">
-                                                                        <img width="75" src="images/no-room.png" alt=""> <span>NO ROOM FOR RACISM BADGE</span> <span class="price">300 THB</span>
-                                                                    </label>
-                                                                    <input class="radio-size" type="radio" name="radio-way" id="no-logo" value="step-logo"
-                                                                        required>
-                                                                    <label class="for-screen" for="no-logo">
-                                                                        <img width="45" src="images/no-logo.png" alt=""> <span>ไม่ติดอาร์มสโมสร</span> <span class="price">0 THB</span>
-                                                                    </label>
-                                                                </div>
-                                                                <a href="#" id="submit-step" class="btn-global -submit" type="submit">ยืนยันการเลือก</a>
-
-                                                                <a href="#" id="back-main" class="back-btn">ย้อนกลับ</a>
-                                                            </form>
-                                                        </div>
-                                                    </div>
-                                                </div>
+                                        <div class="grid-block">
+                                            <div class="grid-item">
+                                                <span>ชื่อนักเตะและเบอร์</span>
+                                            </div>
+                                            <div class="grid-item">
+                                                <span>17 - DE BRUYNE</span>
+                                            </div>
+                                        </div>
+                                        <div class="grid-block">
+                                            <div class="grid-item">
+                                                <span>ตราลีก</span>
+                                            </div>
+                                            <div class="grid-item">
+                                                <span>EPL 2019/20 CHAMPION BADGE</span>
                                             </div>
                                         </div>
                                     </div>

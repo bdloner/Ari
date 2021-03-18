@@ -72,6 +72,29 @@ textarea {
   color: #fff;
 }
 
+.grid-block {
+  display: -ms-grid;
+  display: grid;
+}
+
+.grid-block.-c1 {
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.grid-block.-c2 {
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.grid-block.-c3 {
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
 [type="radio"]:checked,
 [type="radio"]:not(:checked) {
   position: absolute;
@@ -502,6 +525,38 @@ select:focus, select:active {
   width: 100%;
   padding: 0 !important;
   background-color: transparent !important;
+}
+
+.featherlight .featherlight-content .featherlight-close-icon {
+  display: block;
+  color: #fff;
+  background-color: transparent;
+  font-size: 25px;
+}
+
+.featherlight .featherlight-content #term-condition {
+  background-color: #000;
+  padding: 20px;
+}
+
+.featherlight .featherlight-content #term-condition h3 {
+  margin: 0;
+  margin-top: 1rem;
+}
+
+.featherlight .featherlight-content #term-condition .condition-content {
+  height: 160px;
+  overflow: auto;
+  margin: 1rem 0;
+  padding: 0px 20px;
+  background-color: #363636;
+}
+
+.featherlight .featherlight-content #term-condition a.accept-btn {
+  display: block;
+  padding: 7px 0;
+  width: 25%;
+  margin: 2rem auto;
 }
 
 .featherlight .featherlight-content #search-popup {
@@ -9756,6 +9811,11 @@ body.popup-360, html.popup-360 {
   margin-top: 1rem;
 }
 
+.product-detail-jersey-page .main-product-section .single-product-section .single-product-block .grid-block .grid-item.-detail .amount-block.-process .complete-personalize.-jersey .grid-block {
+  -ms-grid-columns: .5fr 1fr;
+      grid-template-columns: .5fr 1fr;
+}
+
 .product-detail-jersey-page .main-product-section .single-product-section .single-product-block .grid-block .grid-item.-detail .amount-block.-process .complete-personalize .grid-block .grid-item h3 {
   font-family: 'Agency FB';
   font-size: 24px;
@@ -9845,6 +9905,251 @@ body.popup-360, html.popup-360 {
           align-items: center;
 }
 
+.product-detail-jersey-page .main-product-section .single-product-section .single-product-block .grid-block .grid-item.-detail .amount-block .grid-block .grid-item.-personalization #step-01 .btn-global {
+  width: 70%;
+  display: block;
+  font-family: 'Prachason';
+  cursor: pointer;
+  font-size: 16px;
+  padding: 5px 15px;
+  margin: 0 auto;
+  margin-top: 8rem;
+}
+
+.product-detail-jersey-page .main-product-section .single-product-section .single-product-block .grid-block .grid-item.-detail .amount-block .grid-block .grid-item.-personalization #step-logo .choose-way {
+  width: 85%;
+}
+
+.product-detail-jersey-page .main-product-section .single-product-section .single-product-block .grid-block .grid-item.-detail .amount-block .grid-block .grid-item.-personalization #step-logo .choose-way .radio-size:checked + label {
+  border: 1px solid #ffbe00;
+  color: #fff;
+}
+
+.product-detail-jersey-page .main-product-section .single-product-section .single-product-block .grid-block .grid-item.-detail .amount-block .grid-block .grid-item.-personalization #step-logo .choose-way .for-screen {
+  width: 100%;
+  border: 1px solid #B5B5B5;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 25% 55% 20%;
+      grid-template-columns: 25% 55% 20%;
+  gap: 5px;
+  padding: 5px 0;
+  justify-items: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 20px 0;
+  height: 55px;
+  text-align: left;
+}
+
+.product-detail-jersey-page .main-product-section .single-product-section .single-product-block .grid-block .grid-item.-detail .amount-block .grid-block .grid-item.-personalization #step-logo .choose-way .for-screen img {
+  padding: 0px 15px;
+}
+
+.product-detail-jersey-page .main-product-section .single-product-section .single-product-block .grid-block .grid-item.-detail .amount-block .grid-block .grid-item.-personalization #step-logo .choose-way .for-screen span {
+  color: #161616;
+}
+
+.product-detail-jersey-page .main-product-section .single-product-section .single-product-block .grid-block .grid-item.-detail .amount-block .grid-block .grid-item.-personalization #step-logo .choose-way .for-screen span.price {
+  color: #ffbe00;
+}
+
+.product-detail-jersey-page .main-product-section .single-product-section .single-product-block .grid-block .grid-item.-detail .amount-block .grid-block .grid-item.-personalization #step-logo #submit-step {
+  display: block;
+  padding: 0;
+  width: 40%;
+  margin: 0 auto;
+  padding: 7px 0;
+  margin-top: 4rem;
+}
+
+.product-detail-jersey-page .main-product-section .single-product-section .single-product-block .grid-block .grid-item.-detail .amount-block .grid-block .grid-item.-personalization #step-logo .back-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-decoration: underline;
+  color: #000;
+  margin-top: 4rem;
+}
+
+.product-detail-jersey-page .main-product-section .single-product-section .single-product-block .grid-block .grid-item.-detail .amount-block .grid-block .grid-item.-personalization .popup-personalize-block {
+  position: absolute;
+}
+
+.product-detail-jersey-page .main-product-section .single-product-section .single-product-block .grid-block .grid-item.-detail .amount-block .grid-block .grid-item.-personalization .popup-personalize-block #choose-screen {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.product-detail-jersey-page .main-product-section .single-product-section .single-product-block .grid-block .grid-item.-detail .amount-block .grid-block .grid-item.-personalization .popup-personalize-block #choose-screen .choose-radio-way {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.product-detail-jersey-page .main-product-section .single-product-section .single-product-block .grid-block .grid-item.-detail .amount-block .grid-block .grid-item.-personalization .popup-personalize-block #choose-screen .screen-box {
+  margin: 2rem 0;
+}
+
+.product-detail-jersey-page .main-product-section .single-product-section .single-product-block .grid-block .grid-item.-detail .amount-block .grid-block .grid-item.-personalization .popup-personalize-block #choose-screen .screen-box h4 {
+  color: #161616;
+  font-size: 16px;
+  text-align: center;
+  font-weight: normal;
+  margin: 1rem 0;
+}
+
+.product-detail-jersey-page .main-product-section .single-product-section .single-product-block .grid-block .grid-item.-detail .amount-block .grid-block .grid-item.-personalization .popup-personalize-block #choose-screen .screen-box .select-screen {
+  width: 100%;
+  font-size: 16px;
+  color: #161616;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='13.439' height='7.702' viewBox='0 0 13.439 7.702'%3E%3Cpath id='Path_9392' data-name='Path 9392' d='M1301.679,374.1l6.5,6.013-6.5,6.013' transform='translate(386.83 -1300.973) rotate(90)' fill='none' stroke='black' stroke-linecap='round' stroke-linejoin='round' stroke-width='1'/%3E%3C/svg%3E%0A") no-repeat;
+  background-size: 15px;
+  background-position: calc(100% - 10px) center;
+  border-color: #E8E8E8;
+}
+
+.product-detail-jersey-page .main-product-section .single-product-section .single-product-block .grid-block .grid-item.-detail .amount-block .grid-block .grid-item.-personalization .popup-personalize-block #choose-screen .screen-num {
+  margin-top: 2rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.product-detail-jersey-page .main-product-section .single-product-section .single-product-block .grid-block .grid-item.-detail .amount-block .grid-block .grid-item.-personalization .popup-personalize-block #choose-screen .screen-num .fixed-font {
+  width: auto;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid #d0d0d0;
+  color: #000;
+  padding: 3px 20px;
+  font-size: 16px;
+}
+
+.product-detail-jersey-page .main-product-section .single-product-section .single-product-block .grid-block .grid-item.-detail .amount-block .grid-block .grid-item.-personalization .popup-personalize-block #choose-screen .screen-num h4 {
+  color: #161616;
+  font-size: 16px;
+  text-align: center;
+  font-weight: normal;
+  margin: 1rem 0;
+  margin-bottom: .5rem;
+}
+
+.product-detail-jersey-page .main-product-section .single-product-section .single-product-block .grid-block .grid-item.-detail .amount-block .grid-block .grid-item.-personalization .popup-personalize-block #choose-screen .screen-num .grid-block {
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  justify-items: center;
+}
+
+.product-detail-jersey-page .main-product-section .single-product-section .single-product-block .grid-block .grid-item.-detail .amount-block .grid-block .grid-item.-personalization .popup-personalize-block #choose-screen .screen-num .grid-block .grid-item {
+  width: 100%;
+  border: 0;
+}
+
+.product-detail-jersey-page .main-product-section .single-product-section .single-product-block .grid-block .grid-item.-detail .amount-block .grid-block .grid-item.-personalization .popup-personalize-block #choose-screen .screen-num .grid-block .grid-item .inp {
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid #d0d0d0;
+  color: #000;
+  font-size: 16px;
+  text-align: center;
+}
+
+.product-detail-jersey-page .main-product-section .single-product-section .single-product-block .grid-block .grid-item.-detail .amount-block .grid-block .grid-item.-personalization .popup-personalize-block #choose-screen [type="radio"]:checked,
+.product-detail-jersey-page .main-product-section .single-product-section .single-product-block .grid-block .grid-item.-detail .amount-block .grid-block .grid-item.-personalization .popup-personalize-block #choose-screen [type="radio"]:not(:checked) {
+  position: absolute;
+  left: -9999px;
+}
+
+.product-detail-jersey-page .main-product-section .single-product-section .single-product-block .grid-block .grid-item.-detail .amount-block .grid-block .grid-item.-personalization .popup-personalize-block #choose-screen [type="radio"]:checked + label,
+.product-detail-jersey-page .main-product-section .single-product-section .single-product-block .grid-block .grid-item.-detail .amount-block .grid-block .grid-item.-personalization .popup-personalize-block #choose-screen [type="radio"]:not(:checked) + label {
+  position: relative;
+  padding-left: 28px;
+  cursor: pointer;
+  line-height: 20px;
+  display: inline-block;
+  color: #666;
+}
+
+.product-detail-jersey-page .main-product-section .single-product-section .single-product-block .grid-block .grid-item.-detail .amount-block .grid-block .grid-item.-personalization .popup-personalize-block #choose-screen [type="radio"]:checked + label:before,
+.product-detail-jersey-page .main-product-section .single-product-section .single-product-block .grid-block .grid-item.-detail .amount-block .grid-block .grid-item.-personalization .popup-personalize-block #choose-screen [type="radio"]:not(:checked) + label:before {
+  content: '';
+  position: absolute;
+  left: -4px;
+  top: -4px;
+  width: 23px;
+  height: 23px;
+  border: 1px solid #ddd;
+  border-radius: 100%;
+  background: #fff;
+}
+
+.product-detail-jersey-page .main-product-section .single-product-section .single-product-block .grid-block .grid-item.-detail .amount-block .grid-block .grid-item.-personalization .popup-personalize-block #choose-screen [type="radio"]:checked + label:before {
+  border-color: #ffbe00;
+}
+
+.product-detail-jersey-page .main-product-section .single-product-section .single-product-block .grid-block .grid-item.-detail .amount-block .grid-block .grid-item.-personalization .popup-personalize-block #choose-screen [type="radio"]:checked + label:after,
+.product-detail-jersey-page .main-product-section .single-product-section .single-product-block .grid-block .grid-item.-detail .amount-block .grid-block .grid-item.-personalization .popup-personalize-block #choose-screen [type="radio"]:not(:checked) + label:after {
+  content: '';
+  width: 17px;
+  height: 17px;
+  background: #ffbe00;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border-radius: 100%;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.product-detail-jersey-page .main-product-section .single-product-section .single-product-block .grid-block .grid-item.-detail .amount-block .grid-block .grid-item.-personalization .popup-personalize-block #choose-screen [type="radio"]:not(:checked) + label:after {
+  opacity: 0;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+
+.product-detail-jersey-page .main-product-section .single-product-section .single-product-block .grid-block .grid-item.-detail .amount-block .grid-block .grid-item.-personalization .popup-personalize-block #choose-screen [type="radio"]:checked + label:after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.product-detail-jersey-page .main-product-section .single-product-section .single-product-block .grid-block .grid-item.-detail .amount-block .grid-block .grid-item.-personalization .popup-personalize-block #choose-screen label {
+  color: #000;
+}
+
+.product-detail-jersey-page .main-product-section .single-product-section .single-product-block .grid-block .grid-item.-detail .amount-block .grid-block .grid-item.-personalization .popup-personalize-block #choose-screen .btn-global {
+  display: block;
+  font-family: 'Prachason';
+  cursor: pointer;
+  font-size: 16px;
+  padding: 5px 15px;
+  width: 45%;
+  margin: 0 auto;
+  margin-top: 3rem;
+}
+
+.product-detail-jersey-page .main-product-section .single-product-section .single-product-block .grid-block .grid-item.-detail .amount-block .grid-block .grid-item.-personalization .popup-personalize-block #choose-screen .back-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-decoration: underline;
+  color: #000;
+  margin-top: 4rem;
+}
+
 .product-detail-jersey-page .main-product-section .single-product-section .single-product-block .grid-block .grid-item.-detail .amount-block .grid-block .grid-item.-personalization .popup-personalize {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -9894,6 +10199,60 @@ body.popup-360, html.popup-360 {
   font-size: 28px;
 }
 
+.product-detail-jersey-page .main-product-section .single-product-section .single-product-block .grid-block .grid-item.-detail .amount-block .grid-block .grid-item.-personalization .popup-personalize .title-personalize-jersey {
+  color: #161616;
+  font-size: 24px;
+  text-align: center;
+}
+
+.product-detail-jersey-page .main-product-section .single-product-section .single-product-block .grid-block .grid-item.-detail .amount-block .grid-block .grid-item.-personalization .popup-personalize .choose-way {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.product-detail-jersey-page .main-product-section .single-product-section .single-product-block .grid-block .grid-item.-detail .amount-block .grid-block .grid-item.-personalization .popup-personalize .choose-way .radio-size:checked + label, .product-detail-jersey-page .main-product-section .single-product-section .single-product-block .grid-block .grid-item.-detail .amount-block .grid-block .grid-item.-personalization .popup-personalize .choose-way .radio-size:not(:checked) + label:hover {
+  border: 1px solid #ffbe00;
+}
+
+.product-detail-jersey-page .main-product-section .single-product-section .single-product-block .grid-block .grid-item.-detail .amount-block .grid-block .grid-item.-personalization .popup-personalize .choose-way .for-screen-num {
+  width: 100%;
+  border: 1px solid #B5B5B5;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: .7fr 1fr;
+      grid-template-columns: .7fr 1fr;
+  gap: 10px;
+  padding: 5px 0;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 20px 0;
+}
+
+.product-detail-jersey-page .main-product-section .single-product-section .single-product-block .grid-block .grid-item.-detail .amount-block .grid-block .grid-item.-personalization .popup-personalize .choose-way .for-screen-num span {
+  color: #000;
+}
+
+.product-detail-jersey-page .main-product-section .single-product-section .single-product-block .grid-block .grid-item.-detail .amount-block .grid-block .grid-item.-personalization .popup-personalize .choose-way .for-screen-logo {
+  width: 100%;
+  border: 1px solid #B5B5B5;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: .7fr 1fr;
+      grid-template-columns: .7fr 1fr;
+  gap: 10px;
+  padding: 5px 0;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.product-detail-jersey-page .main-product-section .single-product-section .single-product-block .grid-block .grid-item.-detail .amount-block .grid-block .grid-item.-personalization .popup-personalize .choose-way .for-screen-logo span {
+  color: #000;
+}
+
 .product-detail-jersey-page .main-product-section .single-product-section .single-product-block .grid-block .grid-item.-detail .amount-block .grid-block .grid-item.-personalization .popup-personalize .grid-block {
   display: -ms-grid;
   display: grid;
@@ -9923,15 +10282,6 @@ body.popup-360, html.popup-360 {
       -ms-flex-align: center;
           align-items: center;
   border-right: 1px solid #F0F0F0;
-}
-
-.product-detail-jersey-page .main-product-section .single-product-section .single-product-block .grid-block .grid-item.-detail .amount-block .grid-block .grid-item.-personalization .popup-personalize .grid-block .grid-item .btn-global {
-  width: 45%;
-  font-family: 'Prachason';
-  cursor: pointer;
-  font-size: 16px;
-  padding: 5px 15px;
-  margin-top: 1rem;
 }
 
 .product-detail-jersey-page .main-product-section .single-product-section .single-product-block .grid-block .grid-item.-detail .amount-block .grid-block .grid-item.-personalization .popup-personalize .grid-block .grid-item .ip-box {
@@ -14373,5 +14723,69 @@ body.popup-360, html.popup-360 {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }
+}
+
+.cart-page {
+  background-color: #161616;
+}
+
+.cart-page .main-content .main-cart {
+  margin: 3rem 0;
+}
+
+.cart-page .main-content .main-cart .grid-block {
+  -ms-grid-columns: 1fr .5fr;
+      grid-template-columns: 1fr .5fr;
+  gap: 20px;
+}
+
+.cart-page .main-content .main-cart .grid-block .-cart-table .--head-title {
+  margin-bottom: 1rem;
+}
+
+.cart-page .main-content .main-cart .grid-block .-cart-table .--head-title .grid-item:last-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cart-page .main-content .main-cart .grid-block .-cart-table .--head-title .grid-item h3 {
+  margin: 0;
+  font-weight: normal;
+  font-size: 20px;
+}
+
+.cart-page .main-content .main-cart .grid-block .-cart-table .cart-table {
+  border-collapse: collapse;
+  table-layout: auto;
+  width: 100%;
+}
+
+.cart-page .main-content .main-cart .grid-block .-cart-table .cart-table .h-table {
+  background-color: #373737;
+}
+
+.cart-page .main-content .main-cart .grid-block .-cart-table .cart-table .h-table td {
+  padding: 0 15px;
+}
+
+.cart-page .main-content .main-cart .grid-block .-cart-table .cart-table .b-table .cell-item {
+  vertical-align: top;
+  padding: 20px 15px;
+}
+
+.cart-page .main-content .main-cart .grid-block .-cart-summary .summary-block {
+  background-color: #363636;
+  padding: 20px;
+}
+
+.cart-page .main-content .main-cart .grid-block .-cart-summary .summary-block h3 {
+  margin: 0;
 }
 /*# sourceMappingURL=style.min.css.map */
