@@ -72,8 +72,8 @@ jQuery(document).ready(function($) {
   // Input Counter
 
   $('.minus').click(function () {
-    var $input = $(this).parent().find('input');
-    var count = parseInt($input.val()) - 1;
+    let $input = $(this).parent().find('input');
+    let count = parseInt($input.val()) - 1;
     count = count < 1 ? 1 : count;
     $input.val(count);
     $input.change();
@@ -81,7 +81,7 @@ jQuery(document).ready(function($) {
   });
   
   $('.plus').click(function () {
-    var $input = $(this).parent().find('input');
+    let $input = $(this).parent().find('input');
     $input.val(parseInt($input.val()) + 1);
     $input.change();
     return false;
@@ -90,7 +90,7 @@ jQuery(document).ready(function($) {
   // Acccordion
 
   $('.acc__title').click(function(j) {
-    var dropDown = $(this).closest('.acc__card').find('.acc__panel');
+    let dropDown = $(this).closest('.acc__card').find('.acc__panel');
     $(this).closest('.acc').find('.acc__panel').not(dropDown).slideUp();
   
     if ($(this).hasClass('active')) {
@@ -298,16 +298,80 @@ jQuery(document).ready(function($) {
     $('#step-logo').fadeOut();
   });
 
-  // $('#submit-step').click(function(){
-  //   let way = $('input[name="radio-way"]:checked').val();
+  // About Ari - Menu Tab Content
 
-  //     if(way == "step-number"){
-  //       $("#step-number").fadeIn('slow');
-  //       $("#step-01").fadeOut('slow');
-  //     } else {
-  //       $("#step-logo").fadeIn('slow');
-  //       $("#step-01").fadeOut('slow');
-  //     }
-  // });
+  // a temp value to cache *what* we're about to show
+  let target = null;
+
+  // collect all the tabs
+  let tabs = $('.tab').on('click', function () {
+    target = $(this.hash).removeAttr('id');
+
+    // if the URL isn't going to change, then hashchange
+    // event doesn't fire, so we trigger the update manually
+    if (location.hash === this.hash) {
+      // but this has to happen after the DOM update has
+      // completed, so we wrap it in a setTimeout 0
+      setTimeout(update, 0);
+    }
+  });
+
+  // get an array of the panel ids (from the anchor hash)
+  let targets = tabs.map(function () {
+    return this.hash;
+  }).get();
+
+  // use those ids to get a jQuery collection of panels
+  let panels = $(targets.join(',')).each(function () {
+    // keep a copy of what the original el.id was
+    $(this).data('old-id', this.id);
+  });
+
+  function update() {
+    if (target) {
+      target.attr('id', target.data('old-id'));
+      target = null;
+    }
+
+    let hash = window.location.hash;
+    if (targets.indexOf(hash) !== -1) {
+      show(hash);
+    }
+  }
+
+  function show(id) {
+    // if no value was given, let's take the first panel
+    if (!id) {
+      id = targets[0];
+    }
+    // remove the selected class from the tabs,
+    // and add it back to the one the user selected
+    tabs.removeClass('current').filter(function () {
+      return (this.hash === id);
+    }).addClass('current');
+
+    // now hide all the panels, then filter to
+    // the one we're interested in, and show it
+    panels.hide().filter(id).show();
+  }
+
+  $(window).on('hashchange', update);
+
+  // initialise
+  if (targets.indexOf(window.location.hash) !== -1) {
+    update();
+  } else {
+    show();
+  }
+
+  // Convert Tabs to Select option on Mobile
+
+  if ($(window).width() <= 991) {
+    $('.tabs li').click(function() {
+      $(this).siblings().addBack().children();
+      var a = $(this).siblings().toggle();
+      $(this).parent().prepend(this);
+    });
+  }
 
 });

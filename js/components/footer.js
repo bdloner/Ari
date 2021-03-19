@@ -35,10 +35,10 @@ class Footer extends HTMLElement {
                 <div class="grid-item">
                     <h5>เกี่ยวกับเรา</h5>
                     <ul class="menu-ft">
-                        <li><a href="#">เกี่ยวกับอาริ</a></li>
-                        <li><a href="#">ที่ต้ังสาขา</a></li>
-                        <li><a href="#">ติดต่อเรา</a></li>
-                        <li><a href="#">ร่วมงานกับเรา</a></li>
+                        <li><a href="/about-ari.html#tab-about-ari">เกี่ยวกับอาริ</a></li>
+                        <li><a href="/about-ari.html#tab-location">ที่ต้ังสาขา</a></li>
+                        <li><a href="/about-ari.html#tab-contact-us">ติดต่อเรา</a></li>
+                        <li><a href="/about-ari.html#tab-join-us">ร่วมงานกับเรา</a></li>
                     </ul>
                 </div>
 
@@ -65,10 +65,10 @@ class Footer extends HTMLElement {
                         <div class="acc__title">เกี่ยวกับเรา</div>
                             <div class="acc__panel">
                                 <ul>
-                                    <li><a href="#">เกี่ยวกับอาริ</a></li>
-                                    <li><a href="#">ที่ต้ังสาขา</a></li>
-                                    <li><a href="#">ติดต่อเรา</a></li>
-                                    <li><a href="#">ร่วมงานกับเรา</a></li>
+                                    <li><a href="/about-ari.html#tab-about-ari">เกี่ยวกับอาริ</a></li>
+                                    <li><a href="/about-ari.html#tab-location">ที่ต้ังสาขา</a></li>
+                                    <li><a href="/about-ari.html#tab-contact-us">ติดต่อเรา</a></li>
+                                    <li><a href="/about-ari.html#tab-join-us">ร่วมงานกับเรา</a></li>
                                 </ul>
                             </div>
                         </div>

@@ -27,14 +27,14 @@
 
         <section class="main-cart">
             <div class="g-container">
-                <div class="grid-block -c2">
+                <div class="grid-block -c2 -mc1">
                     <div class="grid-item -cart-table">
                         <div class="grid-block -c2 --head-title">
                             <div class="grid-item">
                                 <h3>ตะกร้าสินค้า <span>(3 รายการ)</span></h3>
                             </div>
                             <div class="grid-item">
-                                <a href="#">เลือกดูสินค้าต่อ</a>
+                                <a href="#"><img class="dd-back" src="images/dd-icon.svg" alt=""> เลือกดูสินค้าต่อ</a>
                             </div>
                         </div>
 
@@ -66,6 +66,40 @@
                                             <li>ฉลากซ้าย: NNOON</li>
                                             <li>สีด้าย: น้ำเงิน</li>
                                         </ul>
+                                        <p class="promotion">*ส่วนลด 10% จาก Promotion END YEAR</p>
+                                    </td>
+            
+                                    <td class="cell-item -amount">
+                                        <div class="number">
+                                            <span class="minus">-</span>
+                                            <input type="text" value="1"/>
+                                            <span class="plus">+</span>
+                                        </div>
+                                    </td>
+
+                                    <td class="cell-item -price">9,400 THB</td>
+                                    <td class="cell-item -del-block">
+                                        <a href="#"><img src="images/bin.svg" alt="Delete"></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="cell-item -img">
+                                        <img width="120" height="120" src="images/ex-shoes-01.png" alt="Ex Product" />
+                                    </td>
+            
+                                    <td class="cell-item -desc">
+                                        <h5 class="cate">NIKE</h5>
+                                        <h3 class="title-product">NIKE PHANTOM GT ELITE DYNAMIC FIT SCORPION FG</h3>
+                                        <h4 class="sub-product">PURE PLATINUM/METALLIC SILVER-BLACK</h4>
+                                        <p class="sku">รหัสสินค้า: CZ3844-001</p>
+                                        <p class="size">ไซส์ : 42EU</p>
+                                        <h5 class="title-personalize">PERSONALIZE</h5>
+                                        <ul class="personalize-block">
+                                            <li>ฉลากขวา: NNOON</li>
+                                            <li>ฉลากซ้าย: NNOON</li>
+                                            <li>สีด้าย: น้ำเงิน</li>
+                                        </ul>
+                                        <p class="promotion">*ส่วนลด 10% จาก Promotion END YEAR</p>
                                     </td>
             
                                     <td class="cell-item -amount">
@@ -83,12 +117,96 @@
                                 </tr>
                             </tbody>
                         </table>
+                        <div class="update-btn-block">
+                            <a href="#" class="btn-border -update-btn"><img src="images/update-arrow.svg" alt=""> อัพเดทตะกร้า</a>
+                        </div>
                     </div>
                     <div class="grid-item -cart-summary">
                         <div class="summary-block">
                             <h3>ใช้รหัสส่วนลด</h3>
+                            <form class="sub-form" action="#">
+                                <input type="text" class="inp-sub" placeholder="กรุณาระบุคูปองส่วนลด">
+                                <button class="btn-submit">ใช้</button>
+                            </form>
+
+                            <div class="sub-summary-price">
+                                <div class="grid-block -c2">
+                                    <div class="grid-item">
+                                        <h5>ราคารวม</h5>
+                                    </div>
+                                    <div class="grid-item">
+                                        <span class="price">24,870 THB</span>
+                                    </div>
+                                </div>
+                                <div class="grid-block -c2">
+                                    <div class="grid-item">
+                                        <h5>ค่าจัดส่ง</h5>
+                                    </div>
+                                    <div class="grid-item">
+                                        <span class="address">ถูกคำนวนจากที่อยู่ของคุณ</span>
+                                    </div>
+                                </div>
+                                <div class="grid-block -c2">
+                                    <div class="grid-item">
+                                        <h5>ส่วนลด</h5>
+                                    </div>
+                                    <div class="grid-item">
+                                        <span class="price">870 THB</span>
+                                    </div>
+                                </div>
+                                <div class="grid-block -c2 --total">
+                                    <div class="grid-item">
+                                        <h5>รวม</h5>
+                                    </div>
+                                    <div class="grid-item">
+                                        <span class="price">24,000 THB</span>
+                                    </div>
+                                </div>
+                                <div class="grid-block -c2">
+                                    <div class="grid-item">
+                                        <h5>ภาษีมูลค่าเพิ่ม 7%</h5>
+                                    </div>
+                                    <div class="grid-item">
+                                        <span class="price">870 THB</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="total-summary-block">
+                                <div class="grid-block -c2">
+                                    <div class="grid-item -head-total">
+                                        <h5>ยอดรวมสุทธิ</h5>
+                                    </div>
+                                    <div class="grid-item -price-total">
+                                        <span class="price">24,870 THB</span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
+                </div>
+                <div class="term-condition">
+                    <form action="#" class="term-condition-form">
+                        <h3>ข้อตกลงและเงื่อนไข<span class="required">*</span></h3>
+                        <div class="condition-content">
+                            <p>
+                                การทำ Personalize Your Gear
+                                แสดงความเป็นเอกลักษณ์ในตัวคุณด้วยการใช้บริการทำชื่อบนสินค้า ที่แรกของเมืองไทย อาริมีความภูมิใจนำเสนอ การบริการทำชื่อบนสินค้าด้วยการปักชื่อและสกรีนชื่อที่สามารถช่วยบ่งบอกความเป็นตัวคุณขณะสวมใส่อุปกรณ์กีฬาฟุตบอลต่างๆในสนาม อักษรที่ใช้ในการทำชื่อจะเป็นแบบเดียวกันกับตัวอย่างที่แสดงให้คุณเห็นบนหน้าจอ ในแบบที่คุณเลือกโปรดทำการตรวจสอบการพิมพ์อักษรรวมไปถึงการเว้นวรรคให้ถูกต้อง การทำชื่อดังกล่าวไม่สามารถแก้ไขปรับเปลี่ยนได้หลังจากที่คุณได้ทำการสั่งซื้อสินค้า จำนวนตัวอักษรและตัวเลขของการทำชื่อนั้นขึ้นอยู่กับพื้นที่ของสินค้าในแต่ละแบรนด์แต่ละรุ่น อาจจะมีความคลาดเคลื่อนของตำแหน่งจากตัวอย่างเล็กน้อยโปรดเข้าใจว่าการทำชื่อบนรองเท้าอาจต้องใช้เวลาในการทำ ซึ่งอาจส่งผลต่อการจัดส่งสินค้าที่ล่าช้าและในช่วงเวลาที่มีการสั่งซื้อสินค้าเป็นจำนวนมาก สินค้าที่ได้รับการทำชื่อ ไม่สามารถเปลี่ยนหรือคืนได้ในทุกกรณี
+                                <br><br>
+                                การจัดส่ง
+                                กรุณากรอกที่อยู่จัดส่งให้ครบถ้วนและถูกต้อง เพื่อป้องกันการผิดพลาดในการจัดส่งสินค้า
+                                ช่วงเวลาการจัดส่งที่กำหนดไว้เป็นการประมาณเบื้องต้น คุณอาจได้รับสินค้าก่อนเวลา หรือ อาจจะล่าช้ากว่ากำหนด โดยเฉพาะช่วงเวลาที่มีลูกค้าสั่งซื้อเป็นจำนวนมาก ถ้าหากว่าคุณไม่ได้รับสินค้าหลังจากวันที่กำหนดเกิน 2วัน กรุณาแจ้งให้เราทราบ เราจะทำการติดตามแก้ไขให้อย่างเร็วที่สุด
+                            </p>
+                        </div>
+
+                        <label for="accept" class="checkbox">
+                            <input id="accept" type="checkbox" required/>
+                            <span class="txt">เข้าใจและยอมรับในข้อตกลงและเงื่อนไขว่า สินค้าที่ได้รับการทำชื่อไม่สามารถเปลี่ยนหรือคืนได้ทุกกรณี </span>
+                            <span class="checkmark -tg"></span>
+                        </label>
+                        
+                        <a href="checkout.html" class="accept-btn btn-global">ยอมรับและดำเนินการชำระเงิน</a>
+                    </form>
                 </div>
             </div>
         </section>
