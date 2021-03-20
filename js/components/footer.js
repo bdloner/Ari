@@ -45,18 +45,18 @@ class Footer extends HTMLElement {
                 <div class="grid-item">
                     <h5>ช่วยเหลือและข้อมูล</h5>
                     <ul class="menu-ft">
-                        <li><a href="#">นโยบายความเป็นส่วนตัว</a></li>
-                        <li><a href="#">ข้อตกลงและเงื่อนไข</a></li>
-                        <li><a href="#">คําถามที่พบบ่อย</a></li>
-                        <li><a href="#">วิธีการสั่งซื้อสินค้า</a></li>
+                        <li><a href="/help-information.html#tab-policy">นโยบายความเป็นส่วนตัว</a></li>
+                        <li><a href="/help-information.html#tab-term-condition">ข้อตกลงและเงื่อนไข</a></li>
+                        <li><a href="/help-information.html#tab-faq">คําถามที่พบบ่อย</a></li>
+                        <li><a href="/help-information.html#tab-how-to-buy">วิธีการสั่งซื้อสินค้า</a></li>
                     </ul>
                 </div>
 
                 <div class="grid-item">
                     <ul class="menu-ft" style="margin-top: 4.3rem;">
-                        <li><a href="#">คำแนะนำการเลือกซื้อสินค้า</a></li>
-                        <li><a href="#">การจัดส่งสินค้าและการคืนสินค้า</a></li>
-                        <li><a href="#">ตรวจสอบสถานะสินค้า</a></li>
+                        <li><a href="/help-information.html#tab-suggest">คำแนะนำการเลือกซื้อสินค้า</a></li>
+                        <li><a href="/help-information.html#tab-shipping">การจัดส่งสินค้าและการคืนสินค้า</a></li>
+                        <li><a href="/help-information.html#tab-status">ตรวจสอบสถานะสินค้า</a></li>
                     </ul>
                 </div>
 
@@ -76,13 +76,13 @@ class Footer extends HTMLElement {
                         <div class="acc__title">ช่วยเหลือและข้อมูล</div>
                             <div class="acc__panel">
                                 <ul>
-                                    <li><a href="#">นโยบายความเป็นส่วนตัว</a></li>
-                                    <li><a href="#">ข้อตกลงและเงื่อนไข</a></li>
-                                    <li><a href="#">คําถามที่พบบ่อย</a></li>
-                                    <li><a href="#">วิธีการสั่งซื้อสินค้า</a></li>
-                                    <li><a href="#">คำแนะนำการเลือกซื้อสินค้า</a></li>
-                                    <li><a href="#">การจัดส่งสินค้าและการคืนสินค้า</a></li>
-                                    <li><a href="#">ตรวจสอบสถานะสินค้า</a></li>
+                                    <li><a href="/help-information.html#tab-policy">นโยบายความเป็นส่วนตัว</a></li>
+                                    <li><a href="/help-information.html#tab-term-condition">ข้อตกลงและเงื่อนไข</a></li>
+                                    <li><a href="/help-information.html#tab-faq">คําถามที่พบบ่อย</a></li>
+                                    <li><a href="/help-information.html#tab-how-to-buy">วิธีการสั่งซื้อสินค้า</a></li>
+                                    <li><a href="/help-information.html#tab-suggest">คำแนะนำการเลือกซื้อสินค้า</a></li>
+                                    <li><a href="/help-information.html#tab-shipping">การจัดส่งสินค้าและการคืนสินค้า</a></li>
+                                    <li><a href="/help-information.html#tab-status">ตรวจสอบสถานะสินค้า</a></li>
                                 </ul>
                             </div>
                         </div>

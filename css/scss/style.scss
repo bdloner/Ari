@@ -15147,12 +15147,24 @@ body, html{
 
                                     &:hover {
                                         background-color: #353535;
-                                        color: #fff;
+                                        color: $primary-color;
+
+                                        svg{
+                                            path{
+                                                fill: $primary-color;
+                                            }
+                                        }
                                     }
 
                                     &.current {
                                         background-color: #353535;
-                                        color: #fff;
+                                        color: $primary-color;
+
+                                        svg{
+                                            path{
+                                                fill: $primary-color;
+                                            }
+                                        }
                                     }
                                 }
                             }
@@ -15346,6 +15358,16 @@ body, html{
                                     &:hover{
                                         background-color: transparent !important;
                                     }
+    
+                                    &.current {
+                                        color: #fff;
+    
+                                        svg{
+                                            path{
+                                                fill: #fff;
+                                            }
+                                        }
+                                    }
                                 }
 
                                 li {
@@ -15374,6 +15396,453 @@ body, html{
                                 li{
                                     grid-template-columns: 0.1fr 1fr !important;
                                 }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ====================== Help Information Page ====================== */
+
+.help-information-page{
+    background-color: #161616;
+
+    .main-content{
+        .main-about-ari{
+            margin: 3rem 0;
+            margin-bottom: 7rem;
+
+            .grid-block{
+                &.-c2{
+                    grid-template-columns: .35fr 1fr;
+                    gap: 30px;
+                }
+
+                .grid-item{
+                    &.-side-menu{
+                        .side-menu-block{
+                            position: sticky;
+                            top: 6rem;
+                            
+                            h4{
+                                margin: 0;
+                                margin-bottom: 10px;
+                                font-weight: normal;
+                            }
+
+                            ul {
+                                display: flex;
+                                flex-direction: column;
+                                margin: 0;
+
+                                a {
+                                    display: grid;
+                                    grid-template-columns: 20% 80%;
+                                    align-items: center;
+                                    color: #fff;
+                                    padding: 10px 20px;
+                                    margin: 3px 0;
+                                    border-radius: 5px;
+                                    font-family: "Prachason";
+                                    font-weight: normal;
+                                    cursor: pointer;
+                                    transition: 0.5s;
+
+                                    &:hover {
+                                        background-color: #353535;
+                                        color: $primary-color;
+
+                                        svg {
+                                            path {
+                                                fill: $primary-color;
+                                            }
+                                        }
+                                    }
+
+                                    &.current {
+                                        background-color: #353535;
+                                        color: $primary-color;
+
+                                        svg {
+                                            path {
+                                                fill: $primary-color;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    &.-side-content{
+                        #tab-contact-us{
+                            .grid-block{
+                                &.-c2{
+                                    grid-template-columns: 1fr 1fr;
+                                    gap: 20px;
+                                }
+                            }
+                        }
+
+                        #tab-join-us{
+                            .grid-block{
+                                &.-c2{
+                                    grid-template-columns: 1fr 1fr;
+                                    gap: 40px;
+                                }
+                            }
+
+                            a{
+                                color: $primary-color;
+                            }
+
+                            h5{
+                                font-size: 22px;
+                                font-weight: normal;
+                            }
+
+                            h3{
+                                color: $primary-color;
+                                font-size: 22px;
+                                font-weight: normal;
+                            }
+                        }
+
+                        .sub-content {
+                            display: none;
+                            margin-top: 1rem;
+                            width: 100%;
+
+                            h4{
+                                color: $primary-color;
+                                font-size: 22px;
+
+                                img{
+                                    width: auto;
+                                }
+                            }
+
+                            &#tab-policy{
+                                .banner-policy{
+                                    background: url(../images/ex-banner-policy-01.png) center center;
+                                    background-size: cover;
+                                    min-height: 180px;
+                                    width: 100%;
+                                }
+                            }
+
+                            &#tab-term-condition{
+                                .banner-term-condition{
+                                    background: url(../images/ex-banner-term-condition-01.png) center center;
+                                    background-size: cover;
+                                    min-height: 180px;
+                                    width: 100%;
+                                }
+
+                                .acc{
+                                    &.-faq-policy{
+                                        .acc__card{
+                                            .acc__title{
+                                                padding: .5rem 0;
+                                                color: #fff;
+
+                                                &::after {
+                                                    top: 15px;
+                                                    border-right: 1px solid #fff;
+                                                    border-bottom: 1px solid #fff;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            &#tab-faq{
+                                .banner-faq{
+                                    background: url(../images/ex-banner-faq-01.png) center center;
+                                    background-size: cover;
+                                    min-height: 180px;
+                                    width: 100%;
+                                }
+
+                                .acc{
+                                    &.-faq{
+                                        .acc__card{
+                                            .acc__title{
+                                                padding: .5rem 0;
+                                                color: #fff;
+
+                                                &::after {
+                                                    top: 15px;
+                                                    border-right: 1px solid #fff;
+                                                    border-bottom: 1px solid #fff;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            &#tab-how-to-buy{
+                                .banner-how-to-buy{
+                                    background: url(../images/ex-banner-how-to-buy-01.png) center center;
+                                    background-size: cover;
+                                    min-height: 180px;
+                                    width: 100%;
+                                }
+
+                                .step-buy-block {
+                                    ul{
+                                        padding-left: 45px;
+
+                                        &::before {
+                                            position: absolute;
+                                            margin-left: -45px;
+                                            margin-top: 10px;
+                                            font-family: 'Agency FB';
+                                            font-size: 42px;
+                                            color: $primary-color;
+                                        }
+
+                                        &.step-01{
+                                            &::before {
+                                                content: '01';
+                                            }
+                                        }
+
+                                        &.step-02{
+                                            &::before {
+                                                content: '02';
+                                            }
+                                        }
+
+                                        &.step-03{
+                                            &::before {
+                                                content: '03';
+                                            }
+                                        }
+
+                                        li{
+                                            padding: 1rem 0;
+
+                                            h4{
+                                                margin: 0;
+                                                margin-bottom: 1rem;
+                                                font-size: 22px;
+                                                color: #fff;
+                                                font-weight: normal;
+                                            }
+                                        }
+                                    }
+                                }
+
+                                .how-to-pay-block{
+                                    h5{
+                                        font-size: 22px;
+                                        color: $primary-color;
+                                        margin: 0;
+                                        margin-bottom: 1rem;
+                                    }
+
+                                    .credit-pay{
+                                        width: 20%;
+                                    }
+
+                                    p{
+                                        margin: 0;
+                                        margin-bottom: 2rem;
+                                    }
+                                }
+                            }
+
+                            &#tab-suggest{
+                                .banner-suggest{
+                                    background: url(../images/ex-banner-suggest-01.png) center center;
+                                    background-size: cover;
+                                    min-height: 180px;
+                                    width: 100%;
+                                }
+
+                                .step-buy-block {
+                                    ul{
+                                        padding-left: 45px;
+
+                                        &::before {
+                                            position: absolute;
+                                            margin-left: -45px;
+                                            margin-top: 10px;
+                                            font-family: 'Agency FB';
+                                            font-size: 42px;
+                                            color: $primary-color;
+                                        }
+
+                                        &.step-01{
+                                            &::before {
+                                                content: '01';
+                                            }
+                                        }
+
+                                        &.step-02{
+                                            &::before {
+                                                content: '02';
+                                            }
+                                        }
+
+                                        li{
+                                            padding: 1rem 0;
+
+                                            h4{
+                                                margin: 0;
+                                                margin-bottom: 1rem;
+                                                font-size: 22px;
+                                                color: #fff;
+                                                font-weight: normal;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            &#tab-shipping{
+                                .banner-shipping{
+                                    background: url(../images/ex-banner-shipping-01.png) center center;
+                                    background-size: cover;
+                                    min-height: 180px;
+                                    width: 100%;
+                                }
+
+                                h5{
+                                    font-size: 22px;
+                                    color: $primary-color;
+                                    margin: 0;
+                                    margin-bottom: 1rem;
+                                }
+                            }
+
+                            &#tab-status{
+                                .banner-status{
+                                    background: url(../images/ex-banner-status-01.png) center center;
+                                    background-size: cover;
+                                    min-height: 180px;
+                                    width: 100%;
+                                }
+
+                                a{
+                                    color: $primary-color;
+                                    text-decoration: underline;
+                                }
+
+                                .kerry-logo{
+                                    width: 20%;
+                                    margin: -2rem 0;
+                                }
+
+                                .dhl-logo{
+                                    width: 20%;
+                                }
+
+                                h5{
+                                    font-size: 22px;
+                                    color: $primary-color;
+                                    margin: 0;
+                                    margin-bottom: 1rem;
+                                }
+                            }
+
+                            img{
+                                width: 100%;
+                            }
+
+                            &.current {
+                                display: inline-block;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media(max-width: 991px){
+        .main-content{
+            .main-about-ari{
+                margin: 1rem 0;
+                margin-bottom: 7rem;
+    
+                .grid-block{
+                    &.-mc1{
+                        grid-template-columns: 1fr !important;
+                        gap: 30px;
+                    }
+
+                    .-side-menu{
+                        .side-menu-block{
+                            h4{
+                                text-align: center;
+                                font-size: 22px;
+                                margin-bottom: 1.5rem !important;
+                            }
+
+                           .m-tabs{
+                                background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14.955' height='8' viewBox='0 0 14.955 8'%3E%3Cpath id='Icon_metro-chevron-thin-down' data-name='Icon metro-chevron-thin-down' d='M18.657,10.83a.606.606,0,0,1,.851,0,.591.591,0,0,1,0,.843L12.632,18.48a.606.606,0,0,1-.851,0L4.905,11.672a.592.592,0,0,1,0-.843.606.606,0,0,1,.851,0l6.451,6.209Z' transform='translate(-4.729 -10.655)' fill='%23fff'/%3E%3C/svg%3E%0A") no-repeat;
+                                background-size: 15px;
+                                background-position: calc(100% - 10px) 20px;
+                                padding: 5px 10px;
+                                border-radius: 5px;
+                                background-color: #353535;
+
+                                .tab{
+                                    grid-template-columns: .15fr 1fr;
+                                    background-color: transparent !important;
+                                    padding: 5px 10px;
+                                    margin: 0;
+                                    border-radius: 0;
+                                    background-color: #353535;
+
+                                    &:hover{
+                                        background-color: transparent !important;
+                                    }
+
+                                    &.current {
+                                        color: #fff;
+    
+                                        svg{
+                                            path{
+                                                fill: #fff;
+                                            }
+                                        }
+                                    }
+                                }
+
+                                li {
+                                    z-index: 1;
+                                    display: none;
+
+                                    &:first-child{
+                                        display: block;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .-side-content{
+                        h4{
+                            text-align: center;
+
+                            &.head-mb{
+                                text-align: left;
+                            }
+                        }
+
+                        h5{
+                            text-align: center;
+
+                            &.head-mb{
+                                text-align: left;
                             }
                         }
                     }

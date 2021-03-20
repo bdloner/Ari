@@ -15364,12 +15364,20 @@ body.popup-360, html.popup-360 {
 
 .about-ari-page .main-content .main-about-ari .grid-block .grid-item.-side-menu .side-menu-block ul a:hover {
   background-color: #353535;
-  color: #fff;
+  color: #ffbe00;
+}
+
+.about-ari-page .main-content .main-about-ari .grid-block .grid-item.-side-menu .side-menu-block ul a:hover svg path {
+  fill: #ffbe00;
 }
 
 .about-ari-page .main-content .main-about-ari .grid-block .grid-item.-side-menu .side-menu-block ul a.current {
   background-color: #353535;
-  color: #fff;
+  color: #ffbe00;
+}
+
+.about-ari-page .main-content .main-about-ari .grid-block .grid-item.-side-menu .side-menu-block ul a.current svg path {
+  fill: #ffbe00;
 }
 
 .about-ari-page .main-content .main-about-ari .grid-block .grid-item.-side-content #tab-contact-us .grid-block.-c2 {
@@ -15538,6 +15546,12 @@ body.popup-360, html.popup-360 {
   .about-ari-page .main-content .main-about-ari .grid-block .-side-menu .side-menu-block .m-tabs .tab:hover {
     background-color: transparent !important;
   }
+  .about-ari-page .main-content .main-about-ari .grid-block .-side-menu .side-menu-block .m-tabs .tab.current {
+    color: #fff;
+  }
+  .about-ari-page .main-content .main-about-ari .grid-block .-side-menu .side-menu-block .m-tabs .tab.current svg path {
+    fill: #fff;
+  }
   .about-ari-page .main-content .main-about-ari .grid-block .-side-menu .side-menu-block .m-tabs li {
     z-index: 1;
     display: none;
@@ -15554,6 +15568,379 @@ body.popup-360, html.popup-360 {
   .about-ari-page .main-content .main-about-ari .grid-block .-side-content .m-list.-outside li {
     -ms-grid-columns: 0.1fr 1fr !important;
         grid-template-columns: 0.1fr 1fr !important;
+  }
+}
+
+/* ====================== Help Information Page ====================== */
+.help-information-page {
+  background-color: #161616;
+}
+
+.help-information-page .main-content .main-about-ari {
+  margin: 3rem 0;
+  margin-bottom: 7rem;
+}
+
+.help-information-page .main-content .main-about-ari .grid-block.-c2 {
+  -ms-grid-columns: .35fr 1fr;
+      grid-template-columns: .35fr 1fr;
+  gap: 30px;
+}
+
+.help-information-page .main-content .main-about-ari .grid-block .grid-item.-side-menu .side-menu-block {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 6rem;
+}
+
+.help-information-page .main-content .main-about-ari .grid-block .grid-item.-side-menu .side-menu-block h4 {
+  margin: 0;
+  margin-bottom: 10px;
+  font-weight: normal;
+}
+
+.help-information-page .main-content .main-about-ari .grid-block .grid-item.-side-menu .side-menu-block ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0;
+}
+
+.help-information-page .main-content .main-about-ari .grid-block .grid-item.-side-menu .side-menu-block ul a {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20% 80%;
+      grid-template-columns: 20% 80%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  padding: 10px 20px;
+  margin: 3px 0;
+  border-radius: 5px;
+  font-family: "Prachason";
+  font-weight: normal;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.help-information-page .main-content .main-about-ari .grid-block .grid-item.-side-menu .side-menu-block ul a:hover {
+  background-color: #353535;
+  color: #ffbe00;
+}
+
+.help-information-page .main-content .main-about-ari .grid-block .grid-item.-side-menu .side-menu-block ul a:hover svg path {
+  fill: #ffbe00;
+}
+
+.help-information-page .main-content .main-about-ari .grid-block .grid-item.-side-menu .side-menu-block ul a.current {
+  background-color: #353535;
+  color: #ffbe00;
+}
+
+.help-information-page .main-content .main-about-ari .grid-block .grid-item.-side-menu .side-menu-block ul a.current svg path {
+  fill: #ffbe00;
+}
+
+.help-information-page .main-content .main-about-ari .grid-block .grid-item.-side-content #tab-contact-us .grid-block.-c2 {
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.help-information-page .main-content .main-about-ari .grid-block .grid-item.-side-content #tab-join-us .grid-block.-c2 {
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.help-information-page .main-content .main-about-ari .grid-block .grid-item.-side-content #tab-join-us a {
+  color: #ffbe00;
+}
+
+.help-information-page .main-content .main-about-ari .grid-block .grid-item.-side-content #tab-join-us h5 {
+  font-size: 22px;
+  font-weight: normal;
+}
+
+.help-information-page .main-content .main-about-ari .grid-block .grid-item.-side-content #tab-join-us h3 {
+  color: #ffbe00;
+  font-size: 22px;
+  font-weight: normal;
+}
+
+.help-information-page .main-content .main-about-ari .grid-block .grid-item.-side-content .sub-content {
+  display: none;
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.help-information-page .main-content .main-about-ari .grid-block .grid-item.-side-content .sub-content h4 {
+  color: #ffbe00;
+  font-size: 22px;
+}
+
+.help-information-page .main-content .main-about-ari .grid-block .grid-item.-side-content .sub-content h4 img {
+  width: auto;
+}
+
+.help-information-page .main-content .main-about-ari .grid-block .grid-item.-side-content .sub-content#tab-policy .banner-policy {
+  background: url(../images/ex-banner-policy-01.png) center center;
+  background-size: cover;
+  min-height: 180px;
+  width: 100%;
+}
+
+.help-information-page .main-content .main-about-ari .grid-block .grid-item.-side-content .sub-content#tab-term-condition .banner-term-condition {
+  background: url(../images/ex-banner-term-condition-01.png) center center;
+  background-size: cover;
+  min-height: 180px;
+  width: 100%;
+}
+
+.help-information-page .main-content .main-about-ari .grid-block .grid-item.-side-content .sub-content#tab-term-condition .acc.-faq-policy .acc__card .acc__title {
+  padding: .5rem 0;
+  color: #fff;
+}
+
+.help-information-page .main-content .main-about-ari .grid-block .grid-item.-side-content .sub-content#tab-term-condition .acc.-faq-policy .acc__card .acc__title::after {
+  top: 15px;
+  border-right: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+}
+
+.help-information-page .main-content .main-about-ari .grid-block .grid-item.-side-content .sub-content#tab-faq .banner-faq {
+  background: url(../images/ex-banner-faq-01.png) center center;
+  background-size: cover;
+  min-height: 180px;
+  width: 100%;
+}
+
+.help-information-page .main-content .main-about-ari .grid-block .grid-item.-side-content .sub-content#tab-faq .acc.-faq .acc__card .acc__title {
+  padding: .5rem 0;
+  color: #fff;
+}
+
+.help-information-page .main-content .main-about-ari .grid-block .grid-item.-side-content .sub-content#tab-faq .acc.-faq .acc__card .acc__title::after {
+  top: 15px;
+  border-right: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+}
+
+.help-information-page .main-content .main-about-ari .grid-block .grid-item.-side-content .sub-content#tab-how-to-buy .banner-how-to-buy {
+  background: url(../images/ex-banner-how-to-buy-01.png) center center;
+  background-size: cover;
+  min-height: 180px;
+  width: 100%;
+}
+
+.help-information-page .main-content .main-about-ari .grid-block .grid-item.-side-content .sub-content#tab-how-to-buy .step-buy-block ul {
+  padding-left: 45px;
+}
+
+.help-information-page .main-content .main-about-ari .grid-block .grid-item.-side-content .sub-content#tab-how-to-buy .step-buy-block ul::before {
+  position: absolute;
+  margin-left: -45px;
+  margin-top: 10px;
+  font-family: 'Agency FB';
+  font-size: 42px;
+  color: #ffbe00;
+}
+
+.help-information-page .main-content .main-about-ari .grid-block .grid-item.-side-content .sub-content#tab-how-to-buy .step-buy-block ul.step-01::before {
+  content: '01';
+}
+
+.help-information-page .main-content .main-about-ari .grid-block .grid-item.-side-content .sub-content#tab-how-to-buy .step-buy-block ul.step-02::before {
+  content: '02';
+}
+
+.help-information-page .main-content .main-about-ari .grid-block .grid-item.-side-content .sub-content#tab-how-to-buy .step-buy-block ul.step-03::before {
+  content: '03';
+}
+
+.help-information-page .main-content .main-about-ari .grid-block .grid-item.-side-content .sub-content#tab-how-to-buy .step-buy-block ul li {
+  padding: 1rem 0;
+}
+
+.help-information-page .main-content .main-about-ari .grid-block .grid-item.-side-content .sub-content#tab-how-to-buy .step-buy-block ul li h4 {
+  margin: 0;
+  margin-bottom: 1rem;
+  font-size: 22px;
+  color: #fff;
+  font-weight: normal;
+}
+
+.help-information-page .main-content .main-about-ari .grid-block .grid-item.-side-content .sub-content#tab-how-to-buy .how-to-pay-block h5 {
+  font-size: 22px;
+  color: #ffbe00;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+.help-information-page .main-content .main-about-ari .grid-block .grid-item.-side-content .sub-content#tab-how-to-buy .how-to-pay-block .credit-pay {
+  width: 20%;
+}
+
+.help-information-page .main-content .main-about-ari .grid-block .grid-item.-side-content .sub-content#tab-how-to-buy .how-to-pay-block p {
+  margin: 0;
+  margin-bottom: 2rem;
+}
+
+.help-information-page .main-content .main-about-ari .grid-block .grid-item.-side-content .sub-content#tab-suggest .banner-suggest {
+  background: url(../images/ex-banner-suggest-01.png) center center;
+  background-size: cover;
+  min-height: 180px;
+  width: 100%;
+}
+
+.help-information-page .main-content .main-about-ari .grid-block .grid-item.-side-content .sub-content#tab-suggest .step-buy-block ul {
+  padding-left: 45px;
+}
+
+.help-information-page .main-content .main-about-ari .grid-block .grid-item.-side-content .sub-content#tab-suggest .step-buy-block ul::before {
+  position: absolute;
+  margin-left: -45px;
+  margin-top: 10px;
+  font-family: 'Agency FB';
+  font-size: 42px;
+  color: #ffbe00;
+}
+
+.help-information-page .main-content .main-about-ari .grid-block .grid-item.-side-content .sub-content#tab-suggest .step-buy-block ul.step-01::before {
+  content: '01';
+}
+
+.help-information-page .main-content .main-about-ari .grid-block .grid-item.-side-content .sub-content#tab-suggest .step-buy-block ul.step-02::before {
+  content: '02';
+}
+
+.help-information-page .main-content .main-about-ari .grid-block .grid-item.-side-content .sub-content#tab-suggest .step-buy-block ul li {
+  padding: 1rem 0;
+}
+
+.help-information-page .main-content .main-about-ari .grid-block .grid-item.-side-content .sub-content#tab-suggest .step-buy-block ul li h4 {
+  margin: 0;
+  margin-bottom: 1rem;
+  font-size: 22px;
+  color: #fff;
+  font-weight: normal;
+}
+
+.help-information-page .main-content .main-about-ari .grid-block .grid-item.-side-content .sub-content#tab-shipping .banner-shipping {
+  background: url(../images/ex-banner-shipping-01.png) center center;
+  background-size: cover;
+  min-height: 180px;
+  width: 100%;
+}
+
+.help-information-page .main-content .main-about-ari .grid-block .grid-item.-side-content .sub-content#tab-shipping h5 {
+  font-size: 22px;
+  color: #ffbe00;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+.help-information-page .main-content .main-about-ari .grid-block .grid-item.-side-content .sub-content#tab-status .banner-status {
+  background: url(../images/ex-banner-status-01.png) center center;
+  background-size: cover;
+  min-height: 180px;
+  width: 100%;
+}
+
+.help-information-page .main-content .main-about-ari .grid-block .grid-item.-side-content .sub-content#tab-status a {
+  color: #ffbe00;
+  text-decoration: underline;
+}
+
+.help-information-page .main-content .main-about-ari .grid-block .grid-item.-side-content .sub-content#tab-status .kerry-logo {
+  width: 20%;
+  margin: -2rem 0;
+}
+
+.help-information-page .main-content .main-about-ari .grid-block .grid-item.-side-content .sub-content#tab-status .dhl-logo {
+  width: 20%;
+}
+
+.help-information-page .main-content .main-about-ari .grid-block .grid-item.-side-content .sub-content#tab-status h5 {
+  font-size: 22px;
+  color: #ffbe00;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+.help-information-page .main-content .main-about-ari .grid-block .grid-item.-side-content .sub-content img {
+  width: 100%;
+}
+
+.help-information-page .main-content .main-about-ari .grid-block .grid-item.-side-content .sub-content.current {
+  display: inline-block;
+}
+
+@media (max-width: 991px) {
+  .help-information-page .main-content .main-about-ari {
+    margin: 1rem 0;
+    margin-bottom: 7rem;
+  }
+  .help-information-page .main-content .main-about-ari .grid-block.-mc1 {
+    -ms-grid-columns: 1fr !important;
+        grid-template-columns: 1fr !important;
+    gap: 30px;
+  }
+  .help-information-page .main-content .main-about-ari .grid-block .-side-menu .side-menu-block h4 {
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 1.5rem !important;
+  }
+  .help-information-page .main-content .main-about-ari .grid-block .-side-menu .side-menu-block .m-tabs {
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14.955' height='8' viewBox='0 0 14.955 8'%3E%3Cpath id='Icon_metro-chevron-thin-down' data-name='Icon metro-chevron-thin-down' d='M18.657,10.83a.606.606,0,0,1,.851,0,.591.591,0,0,1,0,.843L12.632,18.48a.606.606,0,0,1-.851,0L4.905,11.672a.592.592,0,0,1,0-.843.606.606,0,0,1,.851,0l6.451,6.209Z' transform='translate(-4.729 -10.655)' fill='%23fff'/%3E%3C/svg%3E%0A") no-repeat;
+    background-size: 15px;
+    background-position: calc(100% - 10px) 20px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #353535;
+  }
+  .help-information-page .main-content .main-about-ari .grid-block .-side-menu .side-menu-block .m-tabs .tab {
+    -ms-grid-columns: .15fr 1fr;
+        grid-template-columns: .15fr 1fr;
+    background-color: transparent !important;
+    padding: 5px 10px;
+    margin: 0;
+    border-radius: 0;
+    background-color: #353535;
+  }
+  .help-information-page .main-content .main-about-ari .grid-block .-side-menu .side-menu-block .m-tabs .tab:hover {
+    background-color: transparent !important;
+  }
+  .help-information-page .main-content .main-about-ari .grid-block .-side-menu .side-menu-block .m-tabs .tab.current {
+    color: #fff;
+  }
+  .help-information-page .main-content .main-about-ari .grid-block .-side-menu .side-menu-block .m-tabs .tab.current svg path {
+    fill: #fff;
+  }
+  .help-information-page .main-content .main-about-ari .grid-block .-side-menu .side-menu-block .m-tabs li {
+    z-index: 1;
+    display: none;
+  }
+  .help-information-page .main-content .main-about-ari .grid-block .-side-menu .side-menu-block .m-tabs li:first-child {
+    display: block;
+  }
+  .help-information-page .main-content .main-about-ari .grid-block .-side-content h4 {
+    text-align: center;
+  }
+  .help-information-page .main-content .main-about-ari .grid-block .-side-content h4.head-mb {
+    text-align: left;
+  }
+  .help-information-page .main-content .main-about-ari .grid-block .-side-content h5 {
+    text-align: center;
+  }
+  .help-information-page .main-content .main-about-ari .grid-block .-side-content h5.head-mb {
+    text-align: left;
   }
 }
 /*# sourceMappingURL=style.css.map */
