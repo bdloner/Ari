@@ -217,7 +217,7 @@ class Footer extends HTMLElement {
 
                     <div class="grid-block -b-btn">
                         <div class="grid-item">
-                            <a href="#" class="btn-border">ดูตะกร้าสินค้า</a>
+                            <a href="/cart.html" class="btn-border">ดูตะกร้าสินค้า</a>
                         </div>
                         <div class="grid-item">
                             <a href="#" class="btn-global" id="checkout-btn" data-featherlight='

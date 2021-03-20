@@ -15851,3 +15851,472 @@ body, html{
         }
     }
 }
+
+/* ====================== News Blog Page ====================== */
+
+.news-blog-page{
+    background-color: #161616;
+
+    .main-content{
+        .main-blog{
+
+            h1{
+                text-align: center;
+                margin-bottom: 1.5rem;
+            }
+
+            .head-line-blog{
+                a{
+                    transition: .3s;
+
+                    h2{
+                        transition: .3s;
+                    }
+
+                    &:hover{
+                        color: $primary-color;
+
+                        h2{
+                            color: $primary-color;
+                        }
+
+                        svg{
+                            path{
+                                stroke: $primary-color;
+                            }
+                        }
+                    }
+                }
+
+                h5.date{
+                    font-family: 'Agency FB';
+                    font-size: 16px;
+                    width: 100%;
+                    text-align: left;
+                    margin: 0;
+                }
+    
+                h2 {
+                    line-height: 1.3em;
+                    width: 100%;
+                }
+                            
+    
+                .featured-img-block {
+                    display: block;
+                    height: 320px;
+                    overflow: hidden;
+
+                    &:hover{
+                        .featured-img{
+                            transform: scale(1.15);
+                        }
+                    }
+
+                    .featured-img{
+                        transition: .5s;
+                    }
+                }
+
+                .content{
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    height: 100%;
+                    justify-content: center;
+
+                    .read-more-btn{
+                        display: flex;
+                        width: 100%;
+                        align-items: center;
+                        font-family: 'Agency FB';
+                        text-decoration: underline;
+                        font-weight: bold;
+                        font-size: 16px;
+
+                        svg{
+                            margin-right: 10px;
+                        }
+                    }
+                }
+            }
+
+            .loop-blog{
+                padding: 2rem 0;
+    
+                h2 {
+                    line-height: 1.5em;
+                    width: 100%;
+                    font-size: 18px;
+                    font-weight: normal;
+                }
+                            
+    
+                .featured-img-block {
+                    display: block;
+                    height: 230px;
+                    overflow: hidden;
+
+                    &:hover{
+                        .featured-img{
+                            transform: scale(1.15);
+                        }
+                    }
+
+                    .featured-img{
+                        transition: .5s;
+                    }
+                }
+
+                .content{
+                    a{
+                        transition: .3s;
+    
+                        h2{
+                            transition: .3s;
+                        }
+    
+                        &:hover{
+                            color: $primary-color;
+    
+                            h2{
+                                color: $primary-color;
+                            }
+    
+                            svg{
+                                path{
+                                    fill: $primary-color;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .pagination-block{
+                margin-bottom: 6rem ;
+
+                ul.pagination{
+                    display: flex;
+                    justify-content: center;
+
+                    li:first-child{
+                        a{
+                            text-decoration: underline;
+                        }
+
+                        img{
+                            transform: rotate(90deg);
+                            margin-right: 7px;
+                        }
+                    }
+
+                    li{
+                        padding: 0px 15px;
+
+                        a{
+                            display: flex;
+
+                            &:hover{
+                                color: $primary-color;
+                            }
+                        }
+
+                        &.current-page{
+                            &::before {
+                                content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='34.174' height='28.487' viewBox='0 0 34.174 28.487'%3E%3Cg id='Path_9535' data-name='Path 9535' transform='translate(-228.698 -351.466)' fill='none'%3E%3Cpath d='M251.281,351.466l11.592,7.323L257.6,373.76,239.1,379.953,228.7,370.523l6.733-13.5Z' stroke='none'/%3E%3Cpath d='M 251.1863403320313 352.2939453125 L 235.9670257568359 357.6249389648438 L 229.623291015625 370.3486633300781 L 239.2825775146484 379.102783203125 L 257.0113830566406 373.1653137207031 L 261.9660034179688 359.1043090820313 L 251.1863403320313 352.2939453125 M 251.2805023193359 351.4662780761719 L 262.8720703125 358.7896118164063 L 257.5969848632813 373.7601318359375 L 239.1043243408203 379.9534301757813 L 228.698486328125 370.522705078125 L 235.4317016601563 357.0177917480469 L 251.2805023193359 351.4662780761719 Z' stroke='none' fill='%23ffbe00'/%3E%3C/g%3E%3C/svg%3E");
+                                position: absolute;
+                                margin-left: -13px;
+                                z-index: -1;
+                            }
+
+                            a{
+                                color: $primary-color;
+                            }
+                        }
+                    }
+
+                    li:last-child{
+                        a{
+                            text-decoration: underline;
+                        }
+
+                        img{
+                            transform: rotate(-90deg);
+                            margin-left: 7px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media(max-width: 991px){
+        .main-content{
+            .main-blog{
+                .grid-block{
+                    &.-mc1{
+                        grid-template-columns: 1fr !important;
+                    }
+
+                    .grid-item{
+                        .content{
+                            .read-more-btn {
+                                justify-content: center;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ====================== Single Blog Page ====================== */
+
+.single-blog-page{
+    background-color: #161616;
+    
+    .main-content{
+        .banner-single-blog{
+            min-height: 290px;
+            background: url(../images/ex-banner-single-blog.png) center center;
+            background-size: cover;
+        }
+
+        .main-single-blog{
+            .g-container{
+                max-width: 1000px;
+            }
+            .head-blog{
+                margin: 1rem 0;
+                margin-top: 3rem;
+
+                .grid-block{
+                    .grid-item{
+                        .tag {
+                            border: 1px solid #fff;
+                            padding: 3px 10px;
+                            font-family: 'Agency FB';
+                        }
+    
+                        &:last-child{
+                            display: flex;
+                            justify-content: flex-end;
+    
+                            .date{
+                                font-family: 'Agency FB';
+                            }
+                        }
+                    }
+                }
+            }
+
+            .content-blog{
+                h1{
+                    font-size: 24px;
+                    font-weight: normal;
+                }
+
+                img{
+                    width: 100%;
+                }
+            }
+        }
+
+        .brand-section {
+            padding-top: 4rem;
+            padding-bottom: 6rem;
+    
+            .brand-block {
+                .title-brand {
+                    font-size: 26px;
+                    margin-bottom: 1rem;
+                }
+    
+                #brand-slider {
+                    .splide__arrows {
+                        position: relative;
+                        margin-top: -3rem;
+
+                        &.g-container {
+                            max-width: 1000px;
+    
+                            .splide__arrow--prev {
+                                right: 4rem;
+                                left: unset;
+                                background-color: transparent;
+
+                                &:hover{
+                                    opacity: 1;
+
+                                    svg{
+                                        path{
+                                            stroke: $primary-color;
+                                        }
+                                    }
+                                }
+
+                                svg{
+                                    transform: scale(3.5);
+                                }
+                            }
+    
+                            .splide__arrow--next {
+                                background-color: transparent;
+
+                                &:hover{
+                                    opacity: 1;
+
+                                    svg{
+                                        path{
+                                            stroke: $primary-color;
+                                        }
+                                    }
+                                }
+
+                                svg{
+                                    transform: scale(3.5);
+                                }
+                            }
+                        }
+                    }
+    
+                    .splide__pagination {
+                        display: none;
+                    }
+                }
+    
+                .splide__slide {
+                    .slider-brand {
+                        min-height: 50vh;
+                        display: flex;
+                        justify-content: center;
+                        align-items: flex-end;
+    
+                        &.-brand-01 {
+                            background: url(../images/ex-single-blog-03.png) center center;
+                            background-size: cover;
+                        }
+    
+                        &.-brand-02 {
+                            background: url(../images/ex-single-blog-04.png) center center;
+                            background-size: cover;
+                        }
+    
+                        &.-brand-03 {
+                            background: url(../images/ex-single-blog-05.png) center center;
+                            background-size: cover;
+                        }
+    
+                        img {
+                            z-index: 2;
+                            margin-bottom: 3rem;
+                            transition: 0.5s;
+                        }
+                    }
+                }
+            }
+        }
+
+        .bottom-single-blog{
+            margin-bottom: 6rem;
+
+            .g-container{
+                max-width: 1000px;
+            }
+
+            .grid-block{
+                .grid-item{
+                    ul {
+                        display: flex;
+                        flex-wrap: wrap;
+                        align-items: center;
+        
+                        &.tag{
+                            span{
+                                color: #B5B5B5;
+                            }
+            
+                            a{
+                                border: 1px solid #fff;
+                                margin: 5px 7px;
+                                padding: 3px 10px;
+                            }
+                        }
+        
+                        &.social{
+                            a{
+                                margin: 0 7px;
+                            }
+                        }
+                    }
+
+                    &:last-child{
+                        display: flex;
+                        justify-content: flex-end;
+
+                        .m-share-btn{
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media(max-width: 991px){
+        .main-content{
+            .brand-section{
+                padding-bottom: 2rem;
+
+                .brand-block {
+                    .splide__slide {
+                        .slider-brand {
+                            min-height: 25vh;
+                        }
+                    }
+                }
+            }
+
+            .bottom-single-blog{
+                .grid-block{
+                    &.-mc1{
+                        grid-template-columns: 1fr !important;
+                    }
+
+                    .grid-item{
+                        ul{
+                            &.tag{
+                                a{
+                                    padding: 3px 10px;
+                                    display: flex;
+                                }
+                            }
+
+                            &.social{
+                                display: none;
+                            }
+                        }
+
+                        &:last-child{
+                            justify-content: center;
+
+                            .social-block {
+                                width: 100%;
+
+                                .m-share-btn{
+                                    display: flex;
+                                    justify-content: center;
+                                    width: 100%;
+                                    border: 1px solid #fff;
+                                    padding: 5px 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

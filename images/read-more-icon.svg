@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="33.012" height="27.518" viewBox="0 0 33.012 27.518">
+  <g id="Group_6053" data-name="Group 6053" transform="translate(-697.999 -501.849)">
+    <g id="Path_103" data-name="Path 103" transform="translate(469.301 150.383)" fill="none">
+      <path d="M250.513,351.466l11.2,7.074L256.614,373l-17.864,5.983-10.052-9.11,6.5-13.045Z" stroke="none"/>
+      <path d="M 250.41845703125 352.2939758300781 L 235.7380676269531 357.4362487792969 L 229.6233520507813 369.7005004882813 L 238.9287261962891 378.1338806152344 L 256.02880859375 372.4071044921875 L 260.8040161132813 358.8552551269531 L 250.41845703125 352.2939758300781 M 250.5126037597656 351.46630859375 L 261.7100830078125 358.5405578613281 L 256.6144104003906 373.0019226074219 L 238.7504730224609 378.9845275878906 L 228.6985168457031 369.8745422363281 L 235.2027435302734 356.8290710449219 L 250.5126037597656 351.46630859375 Z" stroke="none" fill="#fff"/>
+    </g>
+    <g id="Group_94" data-name="Group 94" transform="translate(-1 -3583)">
+      <path id="Path_104" data-name="Path 104" d="M0,0V8" transform="translate(715.5 4094.5)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="1"/>
+      <path id="Path_105" data-name="Path 105" d="M0,0H8" transform="translate(711.5 4098.5)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="1"/>
+    </g>
+  </g>
+</svg>
