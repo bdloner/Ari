@@ -374,4 +374,111 @@ jQuery(document).ready(function($) {
     });
   }
 
+  // My Account - Edit Account
+
+  $('.my-account-page .-edit-btn').click(function(e){
+    e.preventDefault();
+    
+    $("#inform").hide();
+    $("#edit-inform").show();
+  });
+
+  $('.my-account-page .tab').click(function(){
+    
+    $("#edit-inform").hide();
+    $("#edit-pass").hide();
+    $(".detail-last-history-block").hide();
+    $(".new-address-block").hide();
+    $(".edit-address-block").hide();
+    
+    $(".address-block").show();
+    $(".last-history-block").show();
+    $("#inform").show();
+  });
+
+  $('.my-account-page .back-btn').click(function(){
+    $("#edit-inform").hide();
+    $("#edit-pass").hide();
+    $(".detail-last-history-block").hide();
+    $(".new-address-block").hide();
+    $(".edit-address-block").hide();
+    
+    $(".address-block").show();
+    $(".last-history-block").show();
+    $("#inform").show();
+  });
+
+  $('.my-account-page .chg-pass').click(function(){
+    
+    $("#edit-inform").hide();
+    $("#inform").hide();
+
+    $("#edit-pass").show();
+  });
+
+  $('.my-account-page .more-detail').click(function(){
+    
+    $(".last-history-block").hide();
+
+    $(".detail-last-history-block").show();
+    
+  });
+
+  $('.my-account-page #add-address').click(function(e){
+    e.preventDefault();
+    
+    $(".address-block").hide();
+    $(".new-address-block").show();
+  });
+
+  $('.my-account-page #edit-address-shipping-btn').click(function(e){
+    e.preventDefault();
+    
+    $(".address-block").hide();
+    $("#edit-billing-form").hide();
+
+    $(".edit-address-block").show();
+    $("#edit-shipping-form").show();
+  });
+
+  $('.my-account-page #edit-address-billing-btn').click(function(e){
+    e.preventDefault();
+    
+    $(".address-block").hide();
+    $("#edit-shipping-form").hide();
+    
+    $(".edit-address-block").show();
+    $("#edit-billing-form").show();
+  });
+
+  $('#add-shipping').click(function(){
+      $(".new-address-block #add-shipping-form").show();
+      $(".new-address-block #add-billing-form").hide();
+  });
+
+  $('#add-billing').click(function(){
+      $(".new-address-block #add-shipping-form").hide();
+      $(".new-address-block #add-billing-form").show();
+  });
+
+  $('#for-personal').click(function(){
+      $("#personal").show();
+      $("#company").hide();
+  });
+
+  $('#for-company').click(function(){
+    $("#personal").hide();
+    $("#company").show();
+  });
+
+  $('#for-personal-edit').click(function(){
+      $("#personal-edit").show();
+      $("#company-edit").hide();
+  });
+
+  $('#for-company-edit').click(function(){
+    $("#personal-edit").hide();
+    $("#company-edit").show();
+  });
+
 });

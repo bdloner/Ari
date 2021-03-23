@@ -15371,12 +15371,20 @@ body.popup-360, html.popup-360 {
   fill: #ffbe00;
 }
 
+.about-ari-page .main-content .main-about-ari .grid-block .grid-item.-side-menu .side-menu-block ul a:hover svg circle {
+  fill: #ffbe00;
+}
+
 .about-ari-page .main-content .main-about-ari .grid-block .grid-item.-side-menu .side-menu-block ul a.current {
   background-color: #353535;
   color: #ffbe00;
 }
 
 .about-ari-page .main-content .main-about-ari .grid-block .grid-item.-side-menu .side-menu-block ul a.current svg path {
+  fill: #ffbe00;
+}
+
+.about-ari-page .main-content .main-about-ari .grid-block .grid-item.-side-menu .side-menu-block ul a.current svg circle {
   fill: #ffbe00;
 }
 
@@ -16385,6 +16393,1489 @@ body.popup-360, html.popup-360 {
     width: 100%;
     border: 1px solid #fff;
     padding: 5px 0;
+  }
+}
+
+/* ====================== My Account Page ====================== */
+.my-account-page {
+  background-color: #161616;
+}
+
+.my-account-page .main-content .main-my-account {
+  margin: 3rem 0;
+  margin-bottom: 7rem;
+}
+
+.my-account-page .main-content .main-my-account .hello-word-block {
+  margin: 2rem 0;
+  margin-bottom: 4rem;
+}
+
+.my-account-page .main-content .main-my-account .hello-word-block h3 {
+  font-weight: normal;
+  font-size: 24px;
+  margin: 0;
+}
+
+.my-account-page .main-content .main-my-account .hello-word-block p {
+  margin: 5px 0;
+}
+
+.my-account-page .main-content .main-my-account .grid-block.-c2 {
+  -ms-grid-columns: .25fr 1fr;
+      grid-template-columns: .25fr 1fr;
+  gap: 60px;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-menu .side-menu-block {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 6rem;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-menu .side-menu-block h4 {
+  margin: 0;
+  margin-bottom: 10px;
+  font-weight: normal;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-menu .side-menu-block ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-menu .side-menu-block ul a {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20% 80%;
+      grid-template-columns: 20% 80%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  padding: 10px 20px;
+  margin: 3px 0;
+  border-radius: 5px;
+  font-family: "Prachason";
+  font-weight: normal;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-menu .side-menu-block ul a:hover {
+  background-color: #353535;
+  color: #ffbe00;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-menu .side-menu-block ul a:hover svg path {
+  stroke: #ffbe00;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-menu .side-menu-block ul a:hover svg text {
+  stroke: #ffbe00;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-menu .side-menu-block ul a.current {
+  background-color: #353535;
+  color: #ffbe00;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-menu .side-menu-block ul a.current svg path {
+  stroke: #ffbe00;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-menu .side-menu-block ul a.current svg text {
+  stroke: #ffbe00;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .title-tab {
+  font-size: 24px;
+  margin: 0;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content hr {
+  margin: 1rem 0;
+  margin-bottom: 2rem;
+  border: 0;
+  border-bottom: 1px solid #DBDBDB;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-my-account .section-block {
+  margin-bottom: 2rem;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-my-account .section-block .grid-block.--head {
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-my-account .section-block .grid-block.--head .grid-item:last-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-my-account .section-block .grid-block h5 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-my-account .section-block .grid-block a {
+  text-decoration: underline;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-my-account .section-block.-reward-point .grid-block {
+  -ms-grid-columns: .7fr 1fr;
+      grid-template-columns: .7fr 1fr;
+  gap: 20px;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-my-account .section-block.-reward-point .grid-block.--body .grid-item .img-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-my-account .section-block.-reward-point .grid-block.--body .grid-item.-detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #2C2C2C;
+  padding: 20px;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-my-account .section-block.-reward-point .grid-block.--body .grid-item .point-block {
+  border: 0;
+  border-bottom: 1px solid #7E7E7E;
+  padding-bottom: 1rem;
+  width: 100%;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-my-account .section-block.-reward-point .grid-block.--body .grid-item .point-block .grid-block {
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-my-account .section-block.-reward-point .grid-block.--body .grid-item .point-block ul {
+  margin: 0;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-my-account .section-block.-reward-point .grid-block.--body .grid-item .point-block ul.score-point {
+  padding-left: 4.5rem;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-my-account .section-block.-reward-point .grid-block.--body .grid-item .point-block ul.score-point li .point-title {
+  font-size: 14px;
+  color: #B5B5B5;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-my-account .section-block.-reward-point .grid-block.--body .grid-item .point-block ul.score-point li .score {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffbe00;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-my-account .section-block.-reward-point .grid-block.--body .grid-item .point-block ul.score-point::before {
+  content: url(../images/point-icon.svg);
+  position: absolute;
+  margin-left: -4.5rem;
+  margin-top: 7px;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-my-account .section-block.-reward-point .grid-block.--body .grid-item .point-block ul li .type {
+  font-family: 'Agency FB';
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-my-account .section-block.-reward-point .last-score-block {
+  padding-top: 1rem;
+  width: 100%;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-my-account .section-block.-reward-point .last-score-block .grid-block {
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-my-account .section-block.-reward-point .last-score-block .grid-block .grid-item span.point-title {
+  color: #B5B5B5;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-my-account .section-block.-reward-point .last-score-block .grid-block .grid-item:first-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-my-account .section-block.-reward-point .last-score-block .grid-block .grid-item:first-child ul {
+  margin: 0;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-my-account .section-block.-reward-point .last-score-block .grid-block .grid-item:last-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-my-account .section-block.-reward-point .last-score-block .grid-block .grid-item:last-child p {
+  margin: 0;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-my-account .section-block .--body .table-default {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-my-account .section-block .--body .table-default thead {
+  background-color: #353535;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-my-account .section-block .--body .table-default thead tr th {
+  text-align: left;
+  padding: 10px 20px;
+  font-weight: normal;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-my-account .section-block .--body .table-default tbody {
+  background-color: #484848;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-my-account .section-block .--body .table-default tbody tr td {
+  padding: 10px 20px;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-my-account .section-block .--body .table-default tbody tr td a {
+  text-decoration: underline;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-my-account .section-block .--body .table-default tbody tr td span.default {
+  color: #ffbe00;
+  margin-top: 1rem;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-my-account .section-block .--body .table-default tbody tr td.f-en {
+  font-family: 'Agency FB';
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-reward-point h5 {
+  font-size: 18px;
+  font-weight: normal;
+  margin: 15px 0;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-reward-point .table-default {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-reward-point .table-default thead {
+  background-color: #161616;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-reward-point .table-default thead tr th {
+  text-align: left;
+  padding: 10px 20px;
+  font-weight: normal;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-reward-point .table-default tbody {
+  background-color: #2C2C2C;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-reward-point .table-default tbody tr:last-child td::after {
+  margin-bottom: 25px;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-reward-point .table-default tbody tr td {
+  padding: 0;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-reward-point .table-default tbody tr td::before {
+  content: '';
+  height: 15px;
+  display: block;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-reward-point .table-default tbody tr td::after {
+  content: '';
+  height: 15px;
+  display: block;
+  border-bottom: 1px solid #494949;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-reward-point .table-default tbody tr td:first-child {
+  padding-left: 25px;
+  padding-right: 0;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-reward-point .table-default tbody tr td:last-child {
+  padding-right: 25px;
+  padding-left: 0;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-reward-point .table-default tbody tr td a {
+  text-decoration: underline;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-reward-point .table-default tbody tr td span.default {
+  color: #ffbe00;
+  margin-top: 1rem;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-reward-point .table-default tbody tr td.f-en {
+  font-family: 'Agency FB';
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-reward-point .pagination-block {
+  margin-top: 2rem;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-reward-point .pagination-block ul.pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-reward-point .pagination-block ul.pagination li:first-child a {
+  text-decoration: underline;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-reward-point .pagination-block ul.pagination li:first-child img {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  margin-right: 7px;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-reward-point .pagination-block ul.pagination li {
+  padding: 0px 15px;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-reward-point .pagination-block ul.pagination li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-reward-point .pagination-block ul.pagination li a:hover {
+  color: #ffbe00;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-reward-point .pagination-block ul.pagination li.current-page::before {
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='34.174' height='28.487' viewBox='0 0 34.174 28.487'%3E%3Cg id='Path_9535' data-name='Path 9535' transform='translate(-228.698 -351.466)' fill='none'%3E%3Cpath d='M251.281,351.466l11.592,7.323L257.6,373.76,239.1,379.953,228.7,370.523l6.733-13.5Z' stroke='none'/%3E%3Cpath d='M 251.1863403320313 352.2939453125 L 235.9670257568359 357.6249389648438 L 229.623291015625 370.3486633300781 L 239.2825775146484 379.102783203125 L 257.0113830566406 373.1653137207031 L 261.9660034179688 359.1043090820313 L 251.1863403320313 352.2939453125 M 251.2805023193359 351.4662780761719 L 262.8720703125 358.7896118164063 L 257.5969848632813 373.7601318359375 L 239.1043243408203 379.9534301757813 L 228.698486328125 370.522705078125 L 235.4317016601563 357.0177917480469 L 251.2805023193359 351.4662780761719 Z' stroke='none' fill='%23ffbe00'/%3E%3C/g%3E%3C/svg%3E");
+  position: absolute;
+  margin-left: -13px;
+  z-index: -1;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-reward-point .pagination-block ul.pagination li.current-page a {
+  color: #ffbe00;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-reward-point .pagination-block ul.pagination li:last-child a {
+  text-decoration: underline;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-reward-point .pagination-block ul.pagination li:last-child img {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  margin-left: 7px;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-information .--title .grid-item:last-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-information .--title .grid-item:last-child .btn-border {
+  border: 1px solid #fff;
+  border-radius: 5px;
+  display: block;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  display: block;
+  width: auto;
+  margin: 0;
+  padding: 7px 30px;
+  font-family: 'Prachason';
+  font-weight: normal;
+  font-size: 16px;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-information .--title .grid-item:last-child .btn-border:hover {
+  border: 1px solid #ffbe00;
+  color: #ffbe00;
+  background-color: transparent;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-information .table-default {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-information .table-default thead {
+  background-color: #353535;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-information .table-default thead tr th {
+  text-align: left;
+  padding: 10px 20px;
+  font-weight: normal;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-information .table-default tbody {
+  background-color: #484848;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-information .table-default tbody tr td {
+  padding: 15px 20px;
+  width: 20%;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-information .table-default tbody tr td h5 {
+  font-weight: normal;
+  font-size: 16px;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-information .table-default tbody tr td h5, .my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-information .table-default tbody tr td p {
+  margin: 0;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-information .table-default tbody tr td select {
+  width: 100%;
+  border: 1px solid #DBDBDB;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-information .table-default tbody tr td #chg-pass {
+  display: block;
+  text-align: right;
+  padding-right: 25px;
+  margin-top: -35px;
+  margin-bottom: 5px;
+  color: #ffbe00;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-information .table-default tbody tr td .inp-typing {
+  width: 93%;
+  background-color: transparent;
+  color: #fff;
+  padding: 7px 10px;
+  border: 1px solid #DBDBDB;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-information .table-default tbody tr td a {
+  text-decoration: underline;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-information .table-default tbody tr td a.chg-pass {
+  color: #ffbe00;
+  margin-left: 15px;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-information .table-default tbody tr td span.default {
+  color: #ffbe00;
+  margin-top: 1rem;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-information .table-default .choose-gender [type="radio"]:checked,
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-information .table-default .choose-gender [type="radio"]:not(:checked) {
+  position: absolute;
+  left: -9999px;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-information .table-default .choose-gender [type="radio"]:checked + label,
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-information .table-default .choose-gender [type="radio"]:not(:checked) + label {
+  position: relative;
+  padding-left: 28px;
+  cursor: pointer;
+  line-height: 20px;
+  display: inline-block;
+  color: #fff;
+  margin-right: 15px;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-information .table-default .choose-gender [type="radio"]:checked + label:before,
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-information .table-default .choose-gender [type="radio"]:not(:checked) + label:before {
+  content: '';
+  position: absolute;
+  left: -4px;
+  top: -4px;
+  width: 23px;
+  height: 23px;
+  border: 1px solid #fff;
+  border-radius: 100%;
+  background: transparent;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-information .table-default .choose-gender [type="radio"]:checked + label:before {
+  border-color: #ffbe00;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-information .table-default .choose-gender [type="radio"]:checked + label:after,
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-information .table-default .choose-gender [type="radio"]:not(:checked) + label:after {
+  content: '';
+  width: 17px;
+  height: 17px;
+  background: #ffbe00;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border-radius: 100%;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-information .table-default .choose-gender [type="radio"]:not(:checked) + label:after {
+  opacity: 0;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-information .table-default .choose-gender [type="radio"]:checked + label:after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-information .edit-form .save-btn-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 2rem;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-information .edit-form .save-btn-block .btn-global {
+  width: 20%;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-information .edit-form .back-btn-block {
+  margin-top: -35px;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-information .edit-form .back-btn-block .back-btn {
+  text-decoration: underline;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-information .edit-pass-form .table-default tr td {
+  width: 100%;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-information .edit-pass-form .table-default tr td .inp-typing {
+  width: 50%;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-information .edit-pass-form .save-btn-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 2rem;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-information .edit-pass-form .save-btn-block .btn-global {
+  width: 20%;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-information .edit-pass-form .back-btn-block {
+  margin-top: -35px;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-information .edit-pass-form .back-btn-block .back-btn {
+  text-decoration: underline;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-history .-last-history {
+  border: 1px solid #434343;
+  padding: 20px;
+  padding-bottom: 40px;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-history .-last-history h3 {
+  font-weight: normal;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-history .-last-history h3 span {
+  font-family: 'Agency FB';
+  font-weight: bold;
+  color: #ffbe00;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-history .-last-history .grid-block.-c2 {
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-history .-last-history .grid-block.-c2 .grid-item h5 {
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-history .-last-history .grid-block.-c2 .grid-item h3 {
+  margin: 0;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-history .-last-history .grid-block.-c2 .grid-item:last-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-history .-last-history .grid-block.-c2 .grid-item:last-child .btn-border {
+  margin: 0;
+  width: auto;
+  margin-right: 15px;
+  padding: 7px 20px;
+  border: 1px solid #fff;
+  font-family: 'Prachason';
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-history .-last-history .grid-block.-c2 .grid-item:last-child .btn-border:hover {
+  background-color: transparent;
+  border: 1px solid #ffbe00;
+  color: #ffbe00;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-history .-last-history .grid-block.-c2 .grid-item:last-child .btn-global {
+  padding: 9px 40px;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-history .-last-history .progress-block .grid-block.-c5 {
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 30px;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-history .-last-history .progress-block .grid-block.-status-icon {
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-history .-last-history .progress-block .grid-block.-status-icon p {
+  margin: 0;
+  text-align: center;
+  line-height: 1.3em;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-history .-last-history .progress-block .grid-block.-status-icon p.date {
+  color: #7C7C7C;
+  font-size: 14px;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-history .-last-history .progress-block .grid-block.-status-icon img {
+  width: 100%;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-history .-last-history .progress-block .grid-block.-status-icon::after {
+  content: '';
+  height: 5px;
+  margin-left: -50px;
+  margin-top: 2.5rem;
+  background-color: #ffbe00;
+  width: 700px;
+  position: absolute;
+  z-index: -1;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-history .-last-history .progress-block .status-text-block {
+  padding: 10px;
+  background-color: #2E2E2E;
+  max-width: 680px;
+  margin: 0 auto;
+  margin-top: 1.5rem;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-history .-last-history .progress-block .status-text-block p {
+  margin: 0;
+  text-align: center;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-history .history-table-block {
+  margin-top: 2rem;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-history .history-table-block .table-default {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-history .history-table-block .table-default thead {
+  background-color: #353535;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-history .history-table-block .table-default thead tr th {
+  text-align: left;
+  padding: 10px 20px;
+  font-weight: normal;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-history .history-table-block .table-default tbody {
+  background-color: #484848;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-history .history-table-block .table-default tbody tr td {
+  padding: 10px 20px;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-history .history-table-block .table-default tbody tr td .copy-icon {
+  cursor: pointer;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-history .history-table-block .table-default tbody tr td a {
+  text-decoration: underline;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-history .history-table-block .table-default tbody tr td span.default {
+  color: #ffbe00;
+  margin-top: 1rem;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-history .history-table-block .table-default tbody tr td.f-en {
+  font-family: 'Agency FB';
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-history .pagination-block {
+  margin-top: 3rem;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-history .pagination-block ul.pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-history .pagination-block ul.pagination li:first-child a {
+  text-decoration: underline;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-history .pagination-block ul.pagination li:first-child img {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  margin-right: 7px;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-history .pagination-block ul.pagination li {
+  padding: 0px 15px;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-history .pagination-block ul.pagination li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-history .pagination-block ul.pagination li a:hover {
+  color: #ffbe00;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-history .pagination-block ul.pagination li.current-page::before {
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='34.174' height='28.487' viewBox='0 0 34.174 28.487'%3E%3Cg id='Path_9535' data-name='Path 9535' transform='translate(-228.698 -351.466)' fill='none'%3E%3Cpath d='M251.281,351.466l11.592,7.323L257.6,373.76,239.1,379.953,228.7,370.523l6.733-13.5Z' stroke='none'/%3E%3Cpath d='M 251.1863403320313 352.2939453125 L 235.9670257568359 357.6249389648438 L 229.623291015625 370.3486633300781 L 239.2825775146484 379.102783203125 L 257.0113830566406 373.1653137207031 L 261.9660034179688 359.1043090820313 L 251.1863403320313 352.2939453125 M 251.2805023193359 351.4662780761719 L 262.8720703125 358.7896118164063 L 257.5969848632813 373.7601318359375 L 239.1043243408203 379.9534301757813 L 228.698486328125 370.522705078125 L 235.4317016601563 357.0177917480469 L 251.2805023193359 351.4662780761719 Z' stroke='none' fill='%23ffbe00'/%3E%3C/g%3E%3C/svg%3E");
+  position: absolute;
+  margin-left: -13px;
+  z-index: -1;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-history .pagination-block ul.pagination li.current-page a {
+  color: #ffbe00;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-history .pagination-block ul.pagination li:last-child a {
+  text-decoration: underline;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-history .pagination-block ul.pagination li:last-child img {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  margin-left: 7px;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content .detail-last-history-block .-last-history {
+  border: 0 !important;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content .detail-last-history-block .-last-history h3 {
+  text-align: center;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content .detail-last-history-block .-last-history h3 span {
+  color: #fff;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content .detail-last-history-block .-last-history .btn-border {
+  display: block;
+  margin: 0 auto;
+  width: 20%;
+  margin-top: -4rem;
+  margin-right: 0;
+  padding: 7px 20px;
+  border: 1px solid #fff;
+  font-family: 'Prachason';
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content .detail-last-history-block .-last-history .btn-border:hover {
+  background-color: transparent;
+  border: 1px solid #ffbe00;
+  color: #ffbe00;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content .detail-last-history-block .-last-history .status-text-block .check-track {
+  text-decoration: underline;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content .detail-last-history-block .table-default {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content .detail-last-history-block .table-default thead {
+  background-color: #353535;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content .detail-last-history-block .table-default thead tr th {
+  text-align: left;
+  padding: 10px 20px;
+  font-weight: normal;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content .detail-last-history-block .table-default .b-table tr {
+  border-bottom: 1px solid #636363;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content .detail-last-history-block .table-default .b-table .cell-item {
+  vertical-align: top;
+  padding: 20px 15px;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content .detail-last-history-block .table-default .b-table .cell-item.-img {
+  width: 20%;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content .detail-last-history-block .table-default .b-table .cell-item.-img img {
+  width: 100%;
+  height: auto;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content .detail-last-history-block .table-default .b-table .cell-item.-desc .cate {
+  margin: 0;
+  font-size: 16px;
+  color: #ffbe00;
+  font-family: "Agency FB";
+  font-weight: normal;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content .detail-last-history-block .table-default .b-table .cell-item.-desc .title-product {
+  margin: 0;
+  line-height: 1.3em;
+  font-family: "Agency FB";
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content .detail-last-history-block .table-default .b-table .cell-item.-desc .sub-product {
+  margin: 0;
+  margin-top: 10px;
+  line-height: 1.3em;
+  font-family: "Agency FB";
+  font-weight: 300;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content .detail-last-history-block .table-default .b-table .cell-item.-desc p {
+  margin: 5px 0;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content .detail-last-history-block .table-default .b-table .cell-item.-desc .sku {
+  color: #606060;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content .detail-last-history-block .table-default .b-table .cell-item.-desc .title-personalize {
+  margin: 0;
+  margin-top: 10px;
+  font-family: "Agency FB";
+  font-size: 16px;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content .detail-last-history-block .table-default .b-table .cell-item.-desc .promotion {
+  color: #ffbe00;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content .detail-last-history-block .table-default .b-table .cell-item.-price {
+  font-size: 18px;
+  font-family: "Agency FB";
+  font-weight: bold;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content .detail-last-history-block .-total-desc {
+  margin-top: 3rem;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content .detail-last-history-block .-total-desc .-main-item.-c2 {
+  gap: 100px !important;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content .detail-last-history-block .-total-desc .grid-block.-c2 {
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content .detail-last-history-block .-total-desc .grid-block.-c2 h4 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content .detail-last-history-block .-total-desc .grid-block.-sub-item {
+  gap: 10px;
+  margin-top: 1.5rem;
+  border-bottom: 1px solid #636363;
+  padding-bottom: 2rem;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content .detail-last-history-block .-total-desc .grid-block.-sub-item .grid-item:nth-child(2n) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content .detail-last-history-block .-total-desc .grid-block.-sub-item:last-child {
+  border-bottom: 0px;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content .detail-last-history-block .-total-desc .grid-block.-sub-item h5 {
+  font-size: 16px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content .detail-last-history-block .-total-desc .grid-block.-sub-item h4 {
+  margin: 0;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content .detail-last-history-block .-total-desc .grid-block.-sub-item p {
+  margin: 0;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content .detail-last-history-block .summary-block {
+  padding: 20px;
+  background-color: #363636;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content .detail-last-history-block .summary-block .grid-block.-sub-item {
+  margin: 0;
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content .detail-last-history-block .summary-block .grid-block.-sub-item span {
+  font-family: 'Agency FB';
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content .detail-last-history-block .summary-block .grid-block.--sub-total {
+  margin-top: 1.5rem;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content .detail-last-history-block .summary-block .grid-block.--total {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #636363;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content .detail-last-history-block .summary-block .grid-block.--total h5 {
+  font-size: 24px;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content .detail-last-history-block .summary-block .grid-block.--total span {
+  font-family: 'Agency FB';
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffbe00;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content .detail-last-history-block .phone-contact-block {
+  margin-top: 2rem;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content .detail-last-history-block .phone-contact-block ul {
+  padding-left: 80px;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content .detail-last-history-block .phone-contact-block ul::before {
+  content: url(../images/phone-icon-ft.svg);
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  position: absolute;
+  margin-left: -60px;
+  margin-top: 1rem;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content .back-btn-block {
+  border-top: 1px solid #636363;
+  padding-top: 2rem;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content .back-btn-block .back-btn {
+  text-decoration: underline;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-address .-primary-address .table-default {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-address .-primary-address .table-default thead {
+  background-color: #353535;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-address .-primary-address .table-default thead tr th {
+  text-align: left;
+  padding: 10px 20px;
+  font-weight: normal;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-address .-primary-address .table-default tbody {
+  background-color: #484848;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-address .-primary-address .table-default tbody tr td {
+  padding: 10px 20px;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-address .-primary-address .table-default tbody tr td p {
+  position: relative;
+  margin: 0;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-address .-primary-address .table-default tbody tr td p.make-main::after {
+  content: 'ที่อยู่หลัก';
+  display: block;
+  font-size: 16px;
+  color: #ffbe00;
+  position: absolute;
+  right: 0;
+  margin-top: -30px;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-address .-primary-address .table-default tbody tr td a {
+  text-decoration: underline;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-address .-primary-address .table-default tbody tr td.f-en {
+  font-family: 'Agency FB';
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-address .-primary-address .table-default tbody tr td ul {
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: -30px;
+  z-index: 1;
+  position: relative;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-address .-primary-address .table-default tbody tr td ul li {
+  margin-left: 15px;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-address .-primary-address .table-default.-billing {
+  margin-top: 2rem;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-address .optional-billing-block {
+  margin-top: 4rem;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-address .optional-billing-block tbody tr {
+  border-bottom: 1px solid #636363;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-address .optional-billing-block tbody tr td {
+  padding: 20px !important;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-address .optional-billing-block .btn-border {
+  display: block;
+  width: 15%;
+  border: 1px solid #fff;
+  font-family: 'Prachason';
+  font-size: 16px;
+  font-weight: normal;
+  border-radius: 5px;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-address .optional-billing-block .btn-border:hover {
+  border: 1px solid #ffbe00;
+  background-color: transparent;
+  color: #ffbe00;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-address .optional-billing-block .address-content {
+  float: left;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-address .optional-billing-block .add-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  float: right;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-address .optional-billing-block .add-block .btn-border {
+  margin: 0;
+  width: auto;
+  margin-left: 15px;
+  text-decoration: none;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-address .optional-billing-block ul {
+  width: 100%;
+  float: right;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-address .new-address-block .choose-to-add, .my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-address .edit-address-block .choose-to-add {
+  display: -ms-grid;
+  display: grid;
+  gap: 25px;
+  padding-left: 5px;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #DBDBDB;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-address .new-address-block .choose-to-add [type="radio"]:checked,
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-address .new-address-block .choose-to-add [type="radio"]:not(:checked), .my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-address .edit-address-block .choose-to-add [type="radio"]:checked,
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-address .edit-address-block .choose-to-add [type="radio"]:not(:checked) {
+  position: absolute;
+  left: -9999px;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-address .new-address-block .choose-to-add [type="radio"]:checked + label,
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-address .new-address-block .choose-to-add [type="radio"]:not(:checked) + label, .my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-address .edit-address-block .choose-to-add [type="radio"]:checked + label,
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-address .edit-address-block .choose-to-add [type="radio"]:not(:checked) + label {
+  position: relative;
+  padding-left: 28px;
+  cursor: pointer;
+  line-height: 20px;
+  display: inline-block;
+  color: #fff;
+  margin-right: 15px;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-address .new-address-block .choose-to-add [type="radio"]:checked + label:before,
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-address .new-address-block .choose-to-add [type="radio"]:not(:checked) + label:before, .my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-address .edit-address-block .choose-to-add [type="radio"]:checked + label:before,
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-address .edit-address-block .choose-to-add [type="radio"]:not(:checked) + label:before {
+  content: '';
+  position: absolute;
+  left: -4px;
+  top: -4px;
+  width: 23px;
+  height: 23px;
+  border: 1px solid #fff;
+  border-radius: 100%;
+  background: transparent;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-address .new-address-block .choose-to-add [type="radio"]:checked + label:before, .my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-address .edit-address-block .choose-to-add [type="radio"]:checked + label:before {
+  border-color: #ffbe00;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-address .new-address-block .choose-to-add [type="radio"]:checked + label:after,
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-address .new-address-block .choose-to-add [type="radio"]:not(:checked) + label:after, .my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-address .edit-address-block .choose-to-add [type="radio"]:checked + label:after,
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-address .edit-address-block .choose-to-add [type="radio"]:not(:checked) + label:after {
+  content: '';
+  width: 17px;
+  height: 17px;
+  background: #ffbe00;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border-radius: 100%;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-address .new-address-block .choose-to-add [type="radio"]:not(:checked) + label:after, .my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-address .edit-address-block .choose-to-add [type="radio"]:not(:checked) + label:after {
+  opacity: 0;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-address .new-address-block .choose-to-add [type="radio"]:checked + label:after, .my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-address .edit-address-block .choose-to-add [type="radio"]:checked + label:after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-address .new-address-block .form-to-add-block, .my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-address .new-address-block .form-to-edit-block, .my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-address .edit-address-block .form-to-add-block, .my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-address .edit-address-block .form-to-edit-block {
+  padding: 30px 0;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-address .new-address-block .form-to-add-block .title-block h4, .my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-address .new-address-block .form-to-edit-block .title-block h4, .my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-address .edit-address-block .form-to-add-block .title-block h4, .my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-address .edit-address-block .form-to-edit-block .title-block h4 {
+  margin: 0;
+  margin-top: -2rem;
+  margin-bottom: 1rem;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-address .new-address-block .form-to-add-block form select, .my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-address .new-address-block .form-to-edit-block form select, .my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-address .edit-address-block .form-to-add-block form select, .my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-address .edit-address-block .form-to-edit-block form select {
+  width: 100%;
+  font-size: 16px;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='13.439' height='7.702' viewBox='0 0 13.439 7.702'%3E%3Cpath id='Path_9392' data-name='Path 9392' d='M1301.679,374.1l6.5,6.013-6.5,6.013' transform='translate(386.83 -1300.973) rotate(90)' fill='none' stroke='rgb(96,96,96)' stroke-linecap='round' stroke-linejoin='round' stroke-width='1'/%3E%3C/svg%3E%0A") no-repeat;
+  background-size: 15px;
+  background-position: calc(100% - 10px) center;
+  border-color: #606060;
+  color: #606060;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-address .new-address-block .form-to-add-block form input, .my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-address .new-address-block .form-to-edit-block form input, .my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-address .edit-address-block .form-to-add-block form input, .my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-address .edit-address-block .form-to-edit-block form input {
+  border: 1px solid #606060;
+  width: 100%;
+  padding: 10px 20px;
+  border-radius: 5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: transparent;
+  -webkit-transition: .3s;
+  transition: .3s;
+  color: #fff;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-address .new-address-block .form-to-add-block form input::-webkit-input-placeholder, .my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-address .new-address-block .form-to-edit-block form input::-webkit-input-placeholder, .my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-address .edit-address-block .form-to-add-block form input::-webkit-input-placeholder, .my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-address .edit-address-block .form-to-edit-block form input::-webkit-input-placeholder {
+  color: #9F9F9F;
+  font-size: 16px;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-address .new-address-block .form-to-add-block form input:-ms-input-placeholder, .my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-address .new-address-block .form-to-edit-block form input:-ms-input-placeholder, .my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-address .edit-address-block .form-to-add-block form input:-ms-input-placeholder, .my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-address .edit-address-block .form-to-edit-block form input:-ms-input-placeholder {
+  color: #9F9F9F;
+  font-size: 16px;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-address .new-address-block .form-to-add-block form input::-ms-input-placeholder, .my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-address .new-address-block .form-to-edit-block form input::-ms-input-placeholder, .my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-address .edit-address-block .form-to-add-block form input::-ms-input-placeholder, .my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-address .edit-address-block .form-to-edit-block form input::-ms-input-placeholder {
+  color: #9F9F9F;
+  font-size: 16px;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-address .new-address-block .form-to-add-block form input::placeholder, .my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-address .new-address-block .form-to-edit-block form input::placeholder, .my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-address .edit-address-block .form-to-add-block form input::placeholder, .my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-address .edit-address-block .form-to-edit-block form input::placeholder {
+  color: #9F9F9F;
+  font-size: 16px;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-address .new-address-block .form-to-add-block form input:focus, .my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-address .new-address-block .form-to-edit-block form input:focus, .my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-address .edit-address-block .form-to-add-block form input:focus, .my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-address .edit-address-block .form-to-edit-block form input:focus {
+  border-color: #ffbe00;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-address .new-address-block .form-to-add-block form .grid-block.-c2, .my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-address .new-address-block .form-to-edit-block form .grid-block.-c2, .my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-address .edit-address-block .form-to-add-block form .grid-block.-c2, .my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-address .edit-address-block .form-to-edit-block form .grid-block.-c2 {
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 0;
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-address .new-address-block .form-to-add-block form .grid-block.-c1, .my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-address .new-address-block .form-to-edit-block form .grid-block.-c1, .my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-address .edit-address-block .form-to-add-block form .grid-block.-c1, .my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-address .edit-address-block .form-to-edit-block form .grid-block.-c1 {
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  gap: 0;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-address .new-address-block .form-to-add-block form .grid-block .grid-item h5, .my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-address .new-address-block .form-to-edit-block form .grid-block .grid-item h5, .my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-address .edit-address-block .form-to-add-block form .grid-block .grid-item h5, .my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-address .edit-address-block .form-to-edit-block form .grid-block .grid-item h5 {
+  margin: 12px 0;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-address .new-address-block .form-to-add-block form .grid-block.-submit-block, .my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-address .new-address-block .form-to-edit-block form .grid-block.-submit-block, .my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-address .edit-address-block .form-to-add-block form .grid-block.-submit-block, .my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-address .edit-address-block .form-to-edit-block form .grid-block.-submit-block {
+  margin-top: 3rem;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-address .new-address-block .form-to-add-block form .grid-block.-submit-block .grid-item .back-btn, .my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-address .new-address-block .form-to-edit-block form .grid-block.-submit-block .grid-item .back-btn, .my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-address .edit-address-block .form-to-add-block form .grid-block.-submit-block .grid-item .back-btn, .my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-address .edit-address-block .form-to-edit-block form .grid-block.-submit-block .grid-item .back-btn {
+  text-decoration: underline;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-address .new-address-block .form-to-add-block form .grid-block.-submit-block .grid-item:last-child, .my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-address .new-address-block .form-to-edit-block form .grid-block.-submit-block .grid-item:last-child, .my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-address .edit-address-block .form-to-add-block form .grid-block.-submit-block .grid-item:last-child, .my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-address .edit-address-block .form-to-edit-block form .grid-block.-submit-block .grid-item:last-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-address .new-address-block .form-to-add-block form .grid-block.-submit-block .grid-item:last-child .submit-btn, .my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-address .new-address-block .form-to-edit-block form .grid-block.-submit-block .grid-item:last-child .submit-btn, .my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-address .edit-address-block .form-to-add-block form .grid-block.-submit-block .grid-item:last-child .submit-btn, .my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-address .edit-address-block .form-to-edit-block form .grid-block.-submit-block .grid-item:last-child .submit-btn {
+  width: auto;
+  padding: 10px 5rem;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-address .new-address-block .form-to-add-block .choose-cate-block, .my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-address .new-address-block .form-to-edit-block .choose-cate-block, .my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-address .edit-address-block .form-to-add-block .choose-cate-block, .my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-address .edit-address-block .form-to-edit-block .choose-cate-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-address .new-address-block .form-to-add-block .choose-cate-block .choose-to-add, .my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-address .new-address-block .form-to-edit-block .choose-cate-block .choose-to-add, .my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-address .edit-address-block .form-to-add-block .choose-cate-block .choose-to-add, .my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-address .edit-address-block .form-to-edit-block .choose-cate-block .choose-to-add {
+  margin-left: 15px;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 0;
+  gap: 0;
+  padding: 0;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-favorite .filter-block {
+  margin-top: -1rem;
+  margin-bottom: 2rem;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-favorite .filter-block #filter-product {
+  width: auto;
+  padding-right: 50px;
+  padding-left: 0;
+  font-size: 16px;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='13.439' height='7.702' viewBox='0 0 13.439 7.702'%3E%3Cpath id='Path_9392' data-name='Path 9392' d='M1301.679,374.1l6.5,6.013-6.5,6.013' transform='translate(386.83 -1300.973) rotate(90)' fill='none' stroke='rgb(255,255,255)' stroke-linecap='round' stroke-linejoin='round' stroke-width='1'/%3E%3C/svg%3E%0A") no-repeat;
+  background-size: 15px;
+  background-position: calc(100% - 10px) center;
+  border-color: transparent;
+  color: #fff;
+}
+
+@media (max-width: 991px) {
+  .my-account-page .main-content .main-about-ari {
+    margin: 1rem 0;
+    margin-bottom: 7rem;
+  }
+  .my-account-page .main-content .main-about-ari .grid-block.-mc1 {
+    -ms-grid-columns: 1fr !important;
+        grid-template-columns: 1fr !important;
+    gap: 30px;
+  }
+  .my-account-page .main-content .main-about-ari .grid-block .-side-menu .side-menu-block h4 {
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 1.5rem !important;
+  }
+  .my-account-page .main-content .main-about-ari .grid-block .-side-menu .side-menu-block .m-tabs {
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14.955' height='8' viewBox='0 0 14.955 8'%3E%3Cpath id='Icon_metro-chevron-thin-down' data-name='Icon metro-chevron-thin-down' d='M18.657,10.83a.606.606,0,0,1,.851,0,.591.591,0,0,1,0,.843L12.632,18.48a.606.606,0,0,1-.851,0L4.905,11.672a.592.592,0,0,1,0-.843.606.606,0,0,1,.851,0l6.451,6.209Z' transform='translate(-4.729 -10.655)' fill='%23fff'/%3E%3C/svg%3E%0A") no-repeat;
+    background-size: 15px;
+    background-position: calc(100% - 10px) 20px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #353535;
+  }
+  .my-account-page .main-content .main-about-ari .grid-block .-side-menu .side-menu-block .m-tabs .tab {
+    -ms-grid-columns: .15fr 1fr;
+        grid-template-columns: .15fr 1fr;
+    background-color: transparent !important;
+    padding: 5px 10px;
+    margin: 0;
+    border-radius: 0;
+    background-color: #353535;
+  }
+  .my-account-page .main-content .main-about-ari .grid-block .-side-menu .side-menu-block .m-tabs .tab:hover {
+    background-color: transparent !important;
+  }
+  .my-account-page .main-content .main-about-ari .grid-block .-side-menu .side-menu-block .m-tabs .tab.current {
+    color: #fff;
+  }
+  .my-account-page .main-content .main-about-ari .grid-block .-side-menu .side-menu-block .m-tabs .tab.current svg path {
+    stroke: #fff;
+  }
+  .my-account-page .main-content .main-about-ari .grid-block .-side-menu .side-menu-block .m-tabs .tab.current svg text {
+    stroke: #fff;
+  }
+  .my-account-page .main-content .main-about-ari .grid-block .-side-menu .side-menu-block .m-tabs li {
+    z-index: 1;
+    display: none;
+  }
+  .my-account-page .main-content .main-about-ari .grid-block .-side-menu .side-menu-block .m-tabs li:first-child {
+    display: block;
   }
 }
 /*# sourceMappingURL=style.min.css.map */
