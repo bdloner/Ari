@@ -29,6 +29,15 @@
 }
 
 @font-face {
+  font-family: "Prachason";
+  src: url("../fonts/Prachason-SemiBold.woff2");
+  src: url("../fonts/Prachason-SemiBold.woff2") format("woff2"), url("../fonts/Prachason-SemiBold.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
   font-family: 'Agency FB';
   src: url("../fonts/AgencyFB-Reg.eot");
   src: url("../fonts/AgencyFB-Reg.eot?#iefix") format("embedded-opentype"), url("../fonts/AgencyFB-Reg.woff2") format("woff2"), url("../fonts/AgencyFB-Reg.woff") format("woff"), url("../fonts/AgencyFB-Reg.ttf") format("truetype"), url("../fonts/AgencyFB-Reg.svg#AgencyFB-Reg") format("svg");
@@ -1581,7 +1590,8 @@ select:focus, select:active {
     transition: top 0.2s, left 0.2s, background-color 0.2s, -webkit-transform 0.2s 0.15s;
     transition: top 0.2s, left 0.2s, background-color 0.2s, transform 0.2s 0.15s;
     transition: top 0.2s, left 0.2s, background-color 0.2s, transform 0.2s 0.15s, -webkit-transform 0.2s 0.15s;
-    transition: top 0.2s, left 0.2s, background-color 0.2s, transform 0.2s 0.15s, -webkit-transform 0.2s 0.15s;
+    transition: top 0.2s, left 0.2s, background-color 0.2s, transform 0.2s 0.15s,
+ -webkit-transform 0.2s 0.15s;
   }
   .navbar-autoshow .navbar-block .action-right .menu-burger b,
   .navbar-autoshow .navbar-block .action-right .menu-burger b:before,
@@ -1595,7 +1605,8 @@ select:focus, select:active {
     position: absolute;
     -webkit-transform: rotate(0);
             transform: rotate(0);
-    transition: top 0.3s 0.15s, left 0.1s, background-color 0.3s 0.2s, transform 0.2s, -webkit-transform 0.2s;
+    transition: top 0.3s 0.15s, left 0.1s, background-color 0.3s 0.2s, transform 0.2s,
+ -webkit-transform 0.2s;
   }
   .menu-burger-sidebar {
     display: block !important;
@@ -3937,11 +3948,11 @@ footer.main-footer .bottom-ft p {
 }
 
 .racing-suit-page .hero-slider-section .splide .splide__slide {
-  min-height: 600px;
+  min-height: 467px;
 }
 
 .racing-suit-page .hero-slider-section .splide .splide__slide .g-container {
-  max-width: 60vw;
+  max-width: calc(100vw - 212px);
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3967,7 +3978,7 @@ footer.main-footer .bottom-ft p {
 .racing-suit-page .hero-slider-section .splide .splide__slide .g-container .grid-block .grid-item h2 {
   margin: 0;
   margin-top: 10px;
-  font-size: 26px;
+  font-size: 32px;
 }
 
 .racing-suit-page .hero-slider-section .splide .splide__slide.--slide-01 {
@@ -4178,6 +4189,92 @@ footer.main-footer .bottom-ft p {
   transition: all height 0.5s ease-in-out;
 }
 
+.racing-suit-page .collection-section {
+  padding: 4rem 0 148px;
+}
+
+.racing-suit-page .collection-section .collection-block .grid-block {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  gap: 25px;
+}
+
+.racing-suit-page .collection-section .collection-block .grid-block .grid-item {
+  position: relative;
+}
+
+.racing-suit-page .collection-section .collection-block .grid-block .grid-item a:hover .collection .overlay {
+  max-height: 100%;
+  -webkit-transition: max-height 0.25s ease-in;
+  transition: max-height 0.25s ease-in;
+}
+
+.racing-suit-page .collection-section .collection-block .grid-block .grid-item a:hover .collection h4.head-collection {
+  margin-bottom: 10rem;
+  color: #ffbe00;
+}
+
+.racing-suit-page .collection-section .collection-block .grid-block .grid-item .collection {
+  min-height: 278px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.racing-suit-page .collection-section .collection-block .grid-block .grid-item .collection.-phantom-gt {
+  background: url(../images/nike-uniform.png) center center;
+  background-size: cover;
+}
+
+.racing-suit-page .collection-section .collection-block .grid-block .grid-item .collection.-mercurial {
+  background: url(../images/adidas-uniform.png) center center;
+  background-size: cover;
+}
+
+.racing-suit-page .collection-section .collection-block .grid-block .grid-item .collection.-nemeziz {
+  background: url(../images/puma-uniform.png) center center;
+  background-size: cover;
+}
+
+.racing-suit-page .collection-section .collection-block .grid-block .grid-item .collection h4.head-collection {
+  width: 100%;
+  text-align: center;
+  font-size: 26px;
+  font-family: "Agency FB";
+  z-index: 1;
+  margin-bottom: 2rem;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.racing-suit-page .collection-section .collection-block .grid-block .grid-item .collection .overlay {
+  max-height: 40%;
+  -webkit-transition: max-height 0.15s ease-out;
+  transition: max-height 0.15s ease-out;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(black));
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, black 100%);
+  -webkit-transition: all height 0.5s ease-in-out;
+  transition: all height 0.5s ease-in-out;
+}
+
+
 @media (max-width: 991px) {
   .racing-suit-page .hot-team-section {
     padding: 2rem 0;
@@ -4189,30 +4286,53 @@ footer.main-footer .bottom-ft p {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }
+  .racing-suit-page .collection-section {
+    padding: 2rem 0;
+  }
+  .racing-suit-page .collection-section .collection-block .title-collection {
+    text-align: center;
+  }
+  .racing-suit-page .collection-section .collection-block .grid-block {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
 }
 
-.racing-suit-page .your-fav-section {
-  padding: 5rem 0;
+.racing-suit-page .your-fav-section .your-fav-bg  {
+  padding: 59px 0 155px;
   padding-bottom: 8rem;
-  background: url(../images/bg-your-fav.png) center center;
+  background: url(../images/bg-your-fav-new.png) bottom;
   background-size: cover;
 }
 
-.racing-suit-page .your-fav-section .your-fav-block h2,
-.racing-suit-page .your-fav-section .your-fav-block h4 {
+.racing-suit-page .your-fav-section .your-fav-heading {
+  padding-top: 126px;
+  padding-bottom: 16px;
+}
+.racing-suit-page .your-fav-section .your-fav-heading h2,
+.racing-suit-page .your-fav-section .your-fav-heading h4 {
   text-align: center;
   margin: 5px 10px;
 }
 
-.racing-suit-page .your-fav-section .your-fav-block h2 {
+.racing-suit-page .your-fav-section .your-fav-heading h2 {
   color: #ffbe00;
+}
+.racing-suit-page .your-fav-section .your-fav-block h3 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #FFBE00;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+  line-height: 1.25;
 }
 
 .racing-suit-page .your-fav-section .your-fav-block .grid-block {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   gap: 20px;
 }
 
@@ -4226,22 +4346,13 @@ footer.main-footer .bottom-ft p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  flex-direction: column;
 }
 
-.racing-suit-page .your-fav-section .your-fav-block .grid-block .grid-item .btn-border {
-  width: 100px;
-  display: block;
-  border: 1px solid #fff;
-  padding: 10px 2rem;
-  border-radius: 5px;
-  font-family: "Prachason";
-  font-weight: normal;
-}
-
-.racing-suit-page .your-fav-section .your-fav-block .grid-block .grid-item .btn-border:hover {
-  background: transparent;
-  border: 1px solid #ffbe00;
-  color: #ffbe00;
+.racing-suit-page .title-collection {
+  font-size: 26px;
+  font-weight: 500;
+  margin-bottom: 25px;
 }
 
 @media (max-width: 991px) {
@@ -4254,9 +4365,19 @@ footer.main-footer .bottom-ft p {
 }
 
 .racing-suit-page .shirt-premier-section {
-  padding-top: 4rem;
+  padding-top: 6px;
 }
 
+.racing-suit-page .shirt-premier-section .shirt-premier-block.g-container {
+  max-width: 100%;
+  padding: 0;
+}
+.racing-suit-page .shirt-premier-section .shirt-premier-block > .title-brand {
+  max-width: 1160px;
+  margin: 20px auto 30px;
+  font-size: 26px;
+  font-weight: 500;
+}
 .racing-suit-page .shirt-premier-section .shirt-premier-block .title-shirt-premier {
   font-size: 26px;
   margin-bottom: 1rem;
@@ -4334,6 +4455,11 @@ footer.main-footer .bottom-ft p {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, black 100%);
   -webkit-transition: all height 0.5s ease-in-out;
   transition: all height 0.5s ease-in-out;
+}
+
+.racing-suit-page #shirt-premier-slider .splide__slide {
+  width: 370px !important;
+  height: 278px !important;
 }
 
 .racing-suit-page .shirt-premier-section .shirt-premier-block.g-container #shirt-premier-slider .splide__arrows {
@@ -4595,6 +4721,10 @@ footer.main-footer .bottom-ft p {
 .racing-suit-page .national-team-section .national-team-block .read-more-block .btn-border:hover {
   background-color: #fff;
   color: #000;
+}
+.racing-suit-page .hot-product-section .post-items.-card .featured-img-block {
+  height: 270px;
+  width: 270px;
 }
 
 @media (max-width: 991px) {
