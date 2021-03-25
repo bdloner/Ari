@@ -48,6 +48,7 @@
                                             JERSEYS 2020/21</h2>
                                         <a href="#" class="btn-border">ดูสินค้า</a>
                                     </div>
+                                    <div class="overlay"></div>
                                     <div class="grid-item"></div>
                                 </div>
                             </div>
@@ -60,6 +61,7 @@
                                             JERSEYS 2020/21</h2>
                                         <a href="#" class="btn-border">ดูสินค้า</a>
                                     </div>
+                                    <div class="overlay"></div>
                                     <div class="grid-item"></div>
                                 </div>
                             </div>
@@ -72,6 +74,7 @@
                                             JERSEYS 2020/21</h2>
                                         <a href="#" class="btn-border">ดูสินค้า</a>
                                     </div>
+                                    <div class="overlay"></div>
                                     <div class="grid-item"></div>
                                 </div>
                             </div>
@@ -88,51 +91,56 @@
             </div>
             <div class="your-fav-bg">
                 <div class="your-fav-block g-container">
-                    <div class="grid-block">
-                        <div class="grid-item">
-                            <a href="#">
-                                <img src="./images/premier-league.svg" />
-                                <h3>Premier league<br />&nbsp;</h3>
-                            </a>
-                        </div>
-    
-                        <div class="grid-item">
-                            <a href="#">
-                                <img src="./images/european-league.svg" />
-                                <h3>European League</h3>
-                            </a>
-                        </div>
-    
-                        <div class="grid-item">
-                            <a href="#">
-                                <img src="./images/toyota-thai-league.svg" />
-                                <h3>Toyata THAI LEAGUE</h3>
-                            </a>
-                        </div>
-    
-                        <div class="grid-item">
-                            <a href="#">
-                                <img src="./images/national-footbal-team.svg" />
-                                <h3>National football Team</h3>
-                            </a>
-                        </div>
-    
-                        <div class="grid-item">
-                            <a href="#">
-                                <img src="./images/thailand-team.svg" />
-                                <h3 style="font-size: 22px; font-weight: 500; line-height: 30px;">
-                                    Thailand national Football team
-                                </h3>
-                            </a>
+                    <div id="your-fav-slider" class="splide">
+                        <div class="splide__track">
+                            <ul class="splide__list">
+                                <li class="splide__slide">
+                                    <a href="#">
+                                        <div class="slider-shirt-premier -shirt-premier-01">
+                                        </div>
+                                        <h3>Premier league</h3>
+                                    </a>
+                                </li>
+                                <li class="splide__slide">
+                                    <a href="#">
+                                        <div class="slider-shirt-premier -shirt-premier-02">
+                                        </div>
+                                        <h3>European League</h3>
+                                    </a>
+                                </li>
+                                <li class="splide__slide">
+                                    <a href="#">
+                                        <div class="slider-shirt-premier -shirt-premier-03">
+                                        </div>
+                                        <h3>Toyata THAI LEAGUE</h3>
+                                    </a>
+                                </li>
+                                <li class="splide__slide">
+                                    <a href="#">
+                                        <div class="slider-shirt-premier -shirt-premier-04">
+                                        </div>
+                                        <h3>National football Team</h3>
+                                    </a>
+                                </li>
+                                <li class="splide__slide">
+                                    <a href="#">
+                                        <div class="slider-shirt-premier -shirt-premier-05">
+                                        </div>
+                                        <h3 style="font-weight: 500; font-size: 21px;">
+                                            Thailand national Football team
+                                        </h3>
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-           <!-- Section Hot Product -->
+           <!-- Section Hot Product for desktop -->
 
-           <section class="hot-product-section">
+           <section class="hot-product-section d-sm-none">
             <div class="hot-product-block g-container">
                 <h2 class="title-hot-product">สินค้ายอดนิยม</h2>
 
@@ -179,6 +187,27 @@
                 <div class="read-more-block">
                     <a href="#" class="btn-border">ดูสินค้าทั้งหมด</a>
                 </div>
+            </div>
+        </section>
+
+        <!-- Section Hot Product for mobile -->
+
+        <section class="show-product-section d-md-none">
+            <div class="show-product-block g-container">
+                <h2 class="title-hot-product">สินค้ายอดนิยม</h2>
+                <div class="grid-block">
+                    <card-component></card-component>
+                    <card-component></card-component>
+                    <card-component></card-component>
+                    <card-component></card-component>
+                    <card-component></card-component>
+                    <card-component></card-component>
+                    <card-component></card-component>
+                    <card-component></card-component>
+                </div>
+            </div>
+            <div class="read-more-block">
+                <a href="#" class="btn-border">ดูสินค้าทั้งหมด</a>
             </div>
         </section>
 
@@ -244,9 +273,9 @@
             </div>
         </section>
 
-         <!-- Section Collection -->
+         <!-- Section Collection for desktop -->
 
-         <section class="collection-section">
+         <section class="collection-section d-sm-none">
             <div class="collection-block g-container">
                 <h2 class="title-collection">แบรนด์</h2>
                 <div class="grid-block">
@@ -275,6 +304,52 @@
                                 <div class="overlay"></div>
                             </div>
                         </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Collection for mobile -->
+
+        <section class="shirt-premier-section d-md-none">
+            <div class="shirt-premier-block brand-block g-container">
+                <h2 class="title-brand">แบรนด์</h2>
+                <div id="brand-slider" class="splide">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide">
+                                <a href="#">
+                                    <div class="slider-shirt-premier -shirt-premier-01">
+                                        <h5>NIKE</h5>
+                                        <div class="overlay"></div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="splide__slide">
+                                <a href="#">
+                                    <div class="slider-shirt-premier -shirt-premier-02">
+                                        <h5>ADIDAS</h5>
+                                        <div class="overlay"></div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="splide__slide">
+                                <a href="#">
+                                    <div class="slider-shirt-premier -shirt-premier-03">
+                                        <h5>PUMA</h5>
+                                        <div class="overlay"></div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="splide__arrows g-container">
+                        <button class="splide__arrow splide__arrow--prev">
+                                <img class="arrow-left" src="images/slider-arrow-left-icon.svg" alt="arrow icon">
+                            </button>
+                        <button class="splide__arrow splide__arrow--next">
+                                <img class="arrow-right" src="images/slider-arrow-right-icon.svg" alt="arrow icon">
+                            </button>
                     </div>
                 </div>
             </div>
@@ -340,6 +415,53 @@
             gap : 15,
             }
         }
+        } ).mount();
+
+        new Splide( '#your-fav-slider', {
+            perPage: 5,
+            perMove: 1,
+            gap: 25,
+            focus  : 'center',
+
+            breakpoints: {
+                1000: {
+                    perPage:  2,
+                },
+                500: {
+                    perPage:  1,
+                    padding: {
+                        right: '1rem',
+                        left : '1rem',
+                    },
+                    gap : 35,
+                }
+            }
+        } ).mount();
+
+        new Splide( '#brand-slider', {
+            type   : 'loop',
+            perPage: 3,
+            perMove: 1,
+            gap: 25,
+            focus  : 'center',
+            padding: {
+                right: '5rem',
+                left : '5rem',
+            },
+
+            breakpoints: {
+                1000: {
+                    perPage:  2,
+                },
+                500: {
+                    perPage:  1,
+                    padding: {
+                        right: '2rem',
+                        left : '2rem',
+                    },
+                    gap : 15,
+                }
+            }
         } ).mount();
 
     });
