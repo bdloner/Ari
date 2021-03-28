@@ -2675,6 +2675,169 @@ select:focus, select:active {
   }
 }
 
+#bottom-compare {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #1D1D1D;
+  z-index: 50;
+  padding: 10px 0;
+}
+
+#bottom-compare.show-compare {
+  display: block !important;
+}
+
+#bottom-compare .bottom-compare-block {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 0.3fr;
+      grid-template-columns: 1fr 0.3fr;
+  gap: 20px;
+}
+
+#bottom-compare .bottom-compare-block .product-compare-block {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20% 80%;
+      grid-template-columns: 20% 80%;
+  margin: 0;
+}
+
+#bottom-compare .bottom-compare-block .product-compare-block .compare-line {
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+}
+
+#bottom-compare .bottom-compare-block .product-compare-block .compare-line:first-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#bottom-compare .bottom-compare-block .product-compare-block .compare-line:last-child {
+  overflow-x: scroll;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#bottom-compare .bottom-compare-block .product-compare-block .compare-line::-webkit-scrollbar {
+  height: 5px;
+}
+
+#bottom-compare .bottom-compare-block .product-compare-block .compare-line::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 5px;
+}
+
+#bottom-compare .bottom-compare-block .product-compare-block .compare-line::-webkit-scrollbar-thumb {
+  background: #919191;
+  border-radius: 5px;
+}
+
+#bottom-compare .bottom-compare-block .product-compare-block .compare-line::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+#bottom-compare .bottom-compare-block .product-compare-block .product-compare-list {
+  display: -webkit-inline-box;
+  max-width: 800px;
+  width: 100%;
+}
+
+#bottom-compare .bottom-compare-block .product-compare-block .product-compare-list .grid-block.-c2 {
+  -ms-grid-columns: 25% 75%;
+      grid-template-columns: 25% 75%;
+  gap: 0;
+  max-width: 220px;
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #707070;
+  border-radius: 5px;
+  margin-right: 10px;
+  position: relative;
+}
+
+#bottom-compare .bottom-compare-block .product-compare-block .product-compare-list .grid-block .img-compare {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#bottom-compare .bottom-compare-block .product-compare-block .product-compare-list .grid-block .img-compare img {
+  width: 100%;
+}
+
+#bottom-compare .bottom-compare-block .product-compare-block .product-compare-list .grid-block .desc-compare {
+  padding-left: 7px;
+}
+
+#bottom-compare .bottom-compare-block .product-compare-block .product-compare-list .grid-block .desc-compare h4 {
+  margin: 0;
+  font-size: 14px;
+  font-family: 'Agency FB';
+}
+
+#bottom-compare .bottom-compare-block .product-compare-block .product-compare-list .grid-block .desc-compare p {
+  margin: 0;
+  font-size: 16px;
+  font-family: 'Agency FB';
+  color: #ffbe00;
+}
+
+#bottom-compare .bottom-compare-block .product-compare-block .product-compare-list .grid-block a.del-btn {
+  display: block;
+  position: absolute;
+  bottom: 15px;
+  right: 0;
+  text-align: right;
+  padding-right: 7px;
+}
+
+#bottom-compare .bottom-compare-block .product-compare-block .product-compare-list .grid-block a.del-btn img {
+  width: 10px;
+}
+
+#bottom-compare .bottom-compare-block ul.compare-btn-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin: 0;
+}
+
+#bottom-compare .bottom-compare-block ul.compare-btn-block .clear-btn-block {
+  margin-right: 20px;
+}
+
+#bottom-compare .bottom-compare-block ul.compare-btn-block .clear-btn-block .clear-btn {
+  text-decoration: underline;
+}
+
+#bottom-compare .bottom-compare-block ul.compare-btn-block .compare-btn-block .compare-btn {
+  display: block;
+  background-color: #ffbe00;
+  color: #000;
+  padding: 5px 25px;
+  border-radius: 5px;
+}
+
 /* ====================== Main Footer ====================== */
 footer.main-footer {
   background-color: #030303;
@@ -16815,6 +16978,10 @@ body.popup-360, html.popup-360 {
   margin-left: 7px;
 }
 
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-information .-edit-btn.rsm {
+  display: none !important;
+}
+
 .my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-information .--title .grid-item:last-child {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -16993,7 +17160,7 @@ body.popup-360, html.popup-360 {
 }
 
 .my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-information .edit-form .back-btn-block {
-  margin-top: -35px;
+  margin-top: -70px;
 }
 
 .my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-information .edit-form .back-btn-block .back-btn {
@@ -17025,7 +17192,7 @@ body.popup-360, html.popup-360 {
 }
 
 .my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-information .edit-pass-form .back-btn-block {
-  margin-top: -35px;
+  margin-top: -70px;
 }
 
 .my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-information .edit-pass-form .back-btn-block .back-btn {
@@ -17479,7 +17646,6 @@ body.popup-360, html.popup-360 {
 }
 
 .my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content .back-btn-block {
-  border-top: 1px solid #636363;
   padding-top: 2rem;
 }
 
@@ -17567,6 +17733,10 @@ body.popup-360, html.popup-360 {
 
 .my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-address .optional-billing-block tbody tr td {
   padding: 20px !important;
+}
+
+.my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-address .optional-billing-block tbody tr td ul {
+  margin-top: 1rem !important;
 }
 
 .my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-address .optional-billing-block .btn-border {
@@ -17827,21 +17997,21 @@ body.popup-360, html.popup-360 {
 }
 
 @media (max-width: 991px) {
-  .my-account-page .main-content .main-about-ari {
+  .my-account-page .main-content .main-my-account {
     margin: 1rem 0;
     margin-bottom: 7rem;
   }
-  .my-account-page .main-content .main-about-ari .grid-block.-mc1 {
+  .my-account-page .main-content .main-my-account .grid-block.-mc1 {
     -ms-grid-columns: 1fr !important;
         grid-template-columns: 1fr !important;
     gap: 30px;
   }
-  .my-account-page .main-content .main-about-ari .grid-block .-side-menu .side-menu-block h4 {
+  .my-account-page .main-content .main-my-account .grid-block .-side-menu .side-menu-block h4 {
     text-align: center;
     font-size: 22px;
     margin-bottom: 1.5rem !important;
   }
-  .my-account-page .main-content .main-about-ari .grid-block .-side-menu .side-menu-block .m-tabs {
+  .my-account-page .main-content .main-my-account .grid-block .-side-menu .side-menu-block .m-tabs {
     background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14.955' height='8' viewBox='0 0 14.955 8'%3E%3Cpath id='Icon_metro-chevron-thin-down' data-name='Icon metro-chevron-thin-down' d='M18.657,10.83a.606.606,0,0,1,.851,0,.591.591,0,0,1,0,.843L12.632,18.48a.606.606,0,0,1-.851,0L4.905,11.672a.592.592,0,0,1,0-.843.606.606,0,0,1,.851,0l6.451,6.209Z' transform='translate(-4.729 -10.655)' fill='%23fff'/%3E%3C/svg%3E%0A") no-repeat;
     background-size: 15px;
     background-position: calc(100% - 10px) 20px;
@@ -17849,7 +18019,7 @@ body.popup-360, html.popup-360 {
     border-radius: 5px;
     background-color: #353535;
   }
-  .my-account-page .main-content .main-about-ari .grid-block .-side-menu .side-menu-block .m-tabs .tab {
+  .my-account-page .main-content .main-my-account .grid-block .-side-menu .side-menu-block .m-tabs .tab {
     -ms-grid-columns: .15fr 1fr;
         grid-template-columns: .15fr 1fr;
     background-color: transparent !important;
@@ -17858,24 +18028,667 @@ body.popup-360, html.popup-360 {
     border-radius: 0;
     background-color: #353535;
   }
-  .my-account-page .main-content .main-about-ari .grid-block .-side-menu .side-menu-block .m-tabs .tab:hover {
+  .my-account-page .main-content .main-my-account .grid-block .-side-menu .side-menu-block .m-tabs .tab:hover {
     background-color: transparent !important;
   }
-  .my-account-page .main-content .main-about-ari .grid-block .-side-menu .side-menu-block .m-tabs .tab.current {
+  .my-account-page .main-content .main-my-account .grid-block .-side-menu .side-menu-block .m-tabs .tab.current {
     color: #fff;
   }
-  .my-account-page .main-content .main-about-ari .grid-block .-side-menu .side-menu-block .m-tabs .tab.current svg path {
+  .my-account-page .main-content .main-my-account .grid-block .-side-menu .side-menu-block .m-tabs .tab.current svg path {
     stroke: #fff;
   }
-  .my-account-page .main-content .main-about-ari .grid-block .-side-menu .side-menu-block .m-tabs .tab.current svg text {
+  .my-account-page .main-content .main-my-account .grid-block .-side-menu .side-menu-block .m-tabs .tab.current svg text {
     stroke: #fff;
   }
-  .my-account-page .main-content .main-about-ari .grid-block .-side-menu .side-menu-block .m-tabs li {
+  .my-account-page .main-content .main-my-account .grid-block .-side-menu .side-menu-block .m-tabs li {
     z-index: 1;
     display: none;
   }
-  .my-account-page .main-content .main-about-ari .grid-block .-side-menu .side-menu-block .m-tabs li:first-child {
+  .my-account-page .main-content .main-my-account .grid-block .-side-menu .side-menu-block .m-tabs li:first-child {
     display: block;
   }
+  .my-account-page .main-content .main-my-account .grid-block .-side-content .-reward-point > .grid-block:first-child {
+    -ms-grid-columns: 0.4fr 1fr !important;
+        grid-template-columns: 0.4fr 1fr !important;
+  }
+  .my-account-page .main-content .main-my-account .grid-block .-side-content .-reward-point .grid-block.--body .grid-item.-detail {
+    margin-top: -5rem;
+    z-index: -1;
+    padding-top: 4rem !important;
+  }
+  .my-account-page .main-content .main-my-account .grid-block .-side-content .-reward-point .grid-block.--body .grid-item:last-child {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .my-account-page .main-content .main-my-account .grid-block .-side-content .-reward-point .grid-block.--body > .grid-item:first-child {
+    padding: 30px;
+  }
+  .my-account-page .main-content .main-my-account .grid-block .-side-content .-reward-point .grid-block.--body > .grid-item:first-child .img-card {
+    -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.17);
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.17);
+  }
+  .my-account-page .main-content .main-my-account .grid-block .-side-content .-reward-point .point-block > .grid-block {
+    -ms-grid-columns: 1fr .5fr !important;
+        grid-template-columns: 1fr .5fr !important;
+  }
+  .my-account-page .main-content .main-my-account .grid-block .-side-content .-information:nth-child(4) .table-default thead {
+    display: none;
+  }
+  .my-account-page .main-content .main-my-account .grid-block .-side-content .-information:nth-child(4) .table-default tbody tr {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  .my-account-page .main-content .main-my-account .grid-block .-side-content .-information:nth-child(4) .table-default tbody tr td:nth-child(1)::before {
+    content: 'ชื่อ - นามสกุล';
+    display: block;
+  }
+  .my-account-page .main-content .main-my-account .grid-block .-side-content .-information:nth-child(4) .table-default tbody tr td:nth-child(2)::before {
+    content: 'อีเมล';
+    display: block;
+  }
+  .my-account-page .main-content .main-my-account .grid-block .-side-content .-information:nth-child(4) .table-default tbody tr td:nth-child(3)::before {
+    content: 'รหัสผ่าน';
+    display: block;
+  }
+  .my-account-page .main-content .main-my-account .grid-block .-side-content .-information:nth-child(4) .table-default tbody tr td:nth-child(4) a {
+    position: absolute;
+    margin-left: -20%;
+    margin-top: 25px;
+    color: #ffbe00;
+  }
+  .my-account-page .main-content .main-my-account .grid-block .-side-content .-information:nth-child(5) .table-default thead tr th:nth-child(2) {
+    display: none;
+  }
+  .my-account-page .main-content .main-my-account .grid-block .-side-content .-information:nth-child(5) .table-default thead tr th:nth-child(3) {
+    display: none;
+  }
+  .my-account-page .main-content .main-my-account .grid-block .-side-content .-information:nth-child(5) .table-default thead tr th:last-child {
+    display: none;
+  }
+  .my-account-page .main-content .main-my-account .grid-block .-side-content .-information:nth-child(5) .table-default tbody tr td:nth-child(2) {
+    display: none;
+  }
+  .my-account-page .main-content .main-my-account .grid-block .-side-content .-information:nth-child(5) .table-default tbody tr td:nth-child(3) {
+    display: none;
+  }
+  .my-account-page .main-content .main-my-account .grid-block .-side-content .-information:nth-child(5) .table-default tbody tr td:last-child {
+    display: none;
+  }
+  .my-account-page .main-content .main-my-account .grid-block .-side-content .-information:last-child .inform.--body thead {
+    display: none;
+  }
+  .my-account-page .main-content .main-my-account .grid-block .-side-content .-information:last-child .inform.--body tbody {
+    background-color: transparent !important;
+  }
+  .my-account-page .main-content .main-my-account .grid-block .-side-content .-information:last-child .inform.--body tbody td {
+    padding: 0 !important;
+    display: block;
+    width: 100%;
+  }
+  .my-account-page .main-content .main-my-account .grid-block .-side-content .-information:last-child .inform.--body tbody td p {
+    padding: 0px 20px;
+  }
+  .my-account-page .main-content .main-my-account .grid-block .-side-content .-information:last-child .inform.--body tbody td span {
+    padding: 0px 20px;
+  }
+  .my-account-page .main-content .main-my-account .grid-block .-side-content .-information:last-child .inform.--body tbody td:first-child {
+    background-color: #484848;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem !important;
+  }
+  .my-account-page .main-content .main-my-account .grid-block .-side-content .-information:last-child .inform.--body tbody td:first-child::before {
+    content: 'ที่อยู่จัดส่งสินค้า';
+    background-color: #353535;
+    display: block;
+    padding: 10px 20px;
+  }
+  .my-account-page .main-content .main-my-account .grid-block .-side-content .-information:last-child .inform.--body tbody td:last-child {
+    background-color: #484848;
+    padding-bottom: 1rem !important;
+  }
+  .my-account-page .main-content .main-my-account .grid-block .-side-content .-information:last-child .inform.--body tbody td:last-child::before {
+    content: 'ที่อยู่ออกใบเสร็จ';
+    background-color: #353535;
+    display: block;
+    padding: 10px 20px;
+  }
+  .my-account-page .main-content .main-my-account .grid-block .-side-content #tab-reward-point .table-default thead, .my-account-page .main-content .main-my-account .grid-block .-side-content #tab-reward-point .table-default tbody, .my-account-page .main-content .main-my-account .grid-block .-side-content #tab-reward-point .table-default th, .my-account-page .main-content .main-my-account .grid-block .-side-content #tab-reward-point .table-default td, .my-account-page .main-content .main-my-account .grid-block .-side-content #tab-reward-point .table-default tr {
+    display: block;
+  }
+  .my-account-page .main-content .main-my-account .grid-block .-side-content #tab-reward-point .table-default thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  .my-account-page .main-content .main-my-account .grid-block .-side-content #tab-reward-point .table-default tbody td {
+    border: none;
+    position: relative;
+    padding-left: 45% !important;
+    white-space: normal;
+    text-align: left;
+  }
+  .my-account-page .main-content .main-my-account .grid-block .-side-content #tab-reward-point .table-default tbody td a {
+    color: #ffbe00;
+  }
+  .my-account-page .main-content .main-my-account .grid-block .-side-content #tab-reward-point .table-default tbody td::before {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: 50%;
+    padding-right: 10px;
+    white-space: nowrap;
+    text-align: left;
+  }
+  .my-account-page .main-content .main-my-account .grid-block .-side-content #tab-reward-point .table-default tbody tr {
+    padding: 15px 20px;
+    padding-bottom: 0;
+  }
+  .my-account-page .main-content .main-my-account .grid-block .-side-content #tab-reward-point .table-default tbody tr:last-child::after {
+    border-bottom: 0;
+  }
+  .my-account-page .main-content .main-my-account .grid-block .-side-content #tab-reward-point .table-default tbody tr::after {
+    content: '';
+    height: 20px;
+    display: block;
+    border-bottom: 1px solid #606060;
+  }
+  .my-account-page .main-content .main-my-account .grid-block .-side-content #tab-reward-point .table-default tbody tr td:nth-child(1)::before {
+    content: 'เลขที่สั่งซื้อ' !important;
+  }
+  .my-account-page .main-content .main-my-account .grid-block .-side-content #tab-reward-point .table-default tbody tr td:nth-child(2)::before {
+    content: 'วันที่สั่งซื้อ' !important;
+  }
+  .my-account-page .main-content .main-my-account .grid-block .-side-content #tab-reward-point .table-default tbody tr td:nth-child(3)::before {
+    content: 'ราคา' !important;
+  }
+  .my-account-page .main-content .main-my-account .grid-block .-side-content #tab-reward-point .table-default tbody tr td:nth-child(4)::before {
+    content: 'คะแนน' !important;
+  }
+  .my-account-page .main-content .main-my-account .grid-block .-side-content #tab-reward-point .table-default tbody tr td::after {
+    content: unset !important;
+    height: unset !important;
+    display: unset !important;
+    border-bottom: 0 !important;
+  }
+  .my-account-page .main-content .main-my-account .grid-block .-side-content #tab-information .--title h2.title-tab {
+    padding-bottom: 15px;
+    border-bottom: 1px solid #606060;
+  }
+  .my-account-page .main-content .main-my-account .grid-block .-side-content #tab-information .--title .btn-border {
+    margin-bottom: 2rem !important;
+  }
+  .my-account-page .main-content .main-my-account .grid-block .-side-content #tab-information .--title .btn-border.-edit-btn {
+    border-color: #ffbe00 !important;
+    color: #ffbe00;
+    width: 100% !important;
+  }
+  .my-account-page .main-content .main-my-account .grid-block .-side-content #tab-information .--title .btn-border.-edit-btn.rsm {
+    display: none !important;
+  }
+  .my-account-page .main-content .main-my-account .grid-block .-side-content #tab-information hr {
+    display: none;
+  }
+  .my-account-page .main-content .main-my-account .grid-block .-side-content #tab-information #inform .table-default {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .my-account-page .main-content .main-my-account .grid-block .-side-content #tab-information #inform .table-default tr {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .my-account-page .main-content .main-my-account .grid-block .-side-content #tab-information #inform .table-default tr th:last-child {
+    display: none;
+  }
+  .my-account-page .main-content .main-my-account .grid-block .-side-content #tab-information #inform .table-default tr td {
+    width: 100%;
+  }
+  .my-account-page .main-content .main-my-account .grid-block .-side-content #edit-inform .edit-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .my-account-page .main-content .main-my-account .grid-block .-side-content #edit-inform .edit-form .table-default tr {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .my-account-page .main-content .main-my-account .grid-block .-side-content #edit-inform .edit-form .table-default td {
+    width: 100% !important;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .my-account-page .main-content .main-my-account .grid-block .-side-content #edit-inform .edit-form .table-default th:last-child {
+    display: none;
+  }
+  .my-account-page .main-content .main-my-account .grid-block .-side-content #edit-inform .edit-form .save-btn-block {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  .my-account-page .main-content .main-my-account .grid-block .-side-content #edit-inform .edit-form .save-btn-block input.btn-global {
+    width: 100% !important;
+  }
+  .my-account-page .main-content .main-my-account .grid-block .-side-content #edit-inform .edit-form .back-btn-block {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    margin: 0 !important;
+    text-align: center;
+  }
+  .my-account-page .main-content .main-my-account .grid-block .-side-content #edit-pass .edit-pass-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .my-account-page .main-content .main-my-account .grid-block .-side-content #edit-pass .edit-pass-form .table-default {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .my-account-page .main-content .main-my-account .grid-block .-side-content #edit-pass .edit-pass-form .table-default thead tr th:last-child {
+    display: none;
+  }
+  .my-account-page .main-content .main-my-account .grid-block .-side-content #edit-pass .edit-pass-form .table-default tbody tr td .inp-typing {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 100% !important;
+  }
+  .my-account-page .main-content .main-my-account .grid-block .-side-content #edit-pass .edit-pass-form .table-default tbody tr td:last-child {
+    display: none;
+  }
+  .my-account-page .main-content .main-my-account .grid-block .-side-content #edit-pass .edit-pass-form .save-btn-block {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  .my-account-page .main-content .main-my-account .grid-block .-side-content #edit-pass .edit-pass-form .save-btn-block .btn-global {
+    width: 100% !important;
+  }
+  .my-account-page .main-content .main-my-account .grid-block .-side-content #edit-pass .edit-pass-form .back-btn-block {
+    margin: 0 !important;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    border: 0;
+    text-align: center;
+  }
+  .my-account-page .main-content .main-my-account .grid-block .-side-content #tab-history .last-history-block .-last-history {
+    padding-bottom: 20px !important;
+  }
+  .my-account-page .main-content .main-my-account .grid-block .-side-content #tab-history .last-history-block .-last-history > .grid-block .grid-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+  .my-account-page .main-content .main-my-account .grid-block .-side-content #tab-history .last-history-block .-last-history > .grid-block .grid-item:last-child a.btn-border {
+    margin: 0 !important;
+  }
+  .my-account-page .main-content .main-my-account .grid-block .-side-content #tab-history .last-history-block .-last-history > .grid-block .grid-item:last-child a.btn-global.more-detail {
+    margin-top: 1rem;
+    padding: 10px 60px !important;
+  }
+  .my-account-page .main-content .main-my-account .grid-block .-side-content #tab-history .progress-block .-status-icon {
+    max-width: 100% !important;
+    width: 100%;
+  }
+  .my-account-page .main-content .main-my-account .grid-block .-side-content #tab-history .progress-block .-status-icon::after {
+    height: 70vh !important;
+    width: 5px !important;
+    margin-left: 12% !important;
+  }
+  .my-account-page .main-content .main-my-account .grid-block .-side-content #tab-history .progress-block .-status-icon .grid-item {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: .4fr 1fr;
+        grid-template-columns: .4fr 1fr;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .my-account-page .main-content .main-my-account .grid-block .-side-content #tab-history .progress-block .-status-icon .grid-item img {
+    width: 100% !important;
+  }
+  .my-account-page .main-content .main-my-account .grid-block .-side-content #tab-history .progress-block .-status-icon .grid-item p {
+    text-align: left !important;
+    padding-left: 20px;
+  }
+  .my-account-page .main-content .main-my-account .grid-block .-side-content #tab-history .history-table-block .table-default thead, .my-account-page .main-content .main-my-account .grid-block .-side-content #tab-history .history-table-block .table-default tbody, .my-account-page .main-content .main-my-account .grid-block .-side-content #tab-history .history-table-block .table-default th, .my-account-page .main-content .main-my-account .grid-block .-side-content #tab-history .history-table-block .table-default td, .my-account-page .main-content .main-my-account .grid-block .-side-content #tab-history .history-table-block .table-default tr {
+    display: block;
+  }
+  .my-account-page .main-content .main-my-account .grid-block .-side-content #tab-history .history-table-block .table-default thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  .my-account-page .main-content .main-my-account .grid-block .-side-content #tab-history .history-table-block .table-default tbody td {
+    border: none;
+    position: relative;
+    padding-left: 45% !important;
+    white-space: normal;
+    text-align: left;
+  }
+  .my-account-page .main-content .main-my-account .grid-block .-side-content #tab-history .history-table-block .table-default tbody td a {
+    color: #ffbe00;
+  }
+  .my-account-page .main-content .main-my-account .grid-block .-side-content #tab-history .history-table-block .table-default tbody td::before {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: 50%;
+    padding-right: 10px;
+    white-space: nowrap;
+    text-align: left;
+  }
+  .my-account-page .main-content .main-my-account .grid-block .-side-content #tab-history .history-table-block .table-default tbody tr {
+    padding: 15px 20px;
+    padding-bottom: 0;
+  }
+  .my-account-page .main-content .main-my-account .grid-block .-side-content #tab-history .history-table-block .table-default tbody tr:last-child::after {
+    border-bottom: 0;
+  }
+  .my-account-page .main-content .main-my-account .grid-block .-side-content #tab-history .history-table-block .table-default tbody tr::after {
+    content: '';
+    height: 20px;
+    display: block;
+    border-bottom: 1px solid #606060;
+  }
+  .my-account-page .main-content .main-my-account .grid-block .-side-content #tab-history .history-table-block .table-default tbody tr td::before {
+    font-family: 'Prachason';
+  }
+  .my-account-page .main-content .main-my-account .grid-block .-side-content #tab-history .history-table-block .table-default tbody tr td:nth-child(1)::before {
+    content: 'เลขที่สั่งซื้อ' !important;
+  }
+  .my-account-page .main-content .main-my-account .grid-block .-side-content #tab-history .history-table-block .table-default tbody tr td:nth-child(2)::before {
+    content: 'วันที่สั่งซื้อ' !important;
+  }
+  .my-account-page .main-content .main-my-account .grid-block .-side-content #tab-history .history-table-block .table-default tbody tr td:nth-child(3)::before {
+    content: 'ราคา' !important;
+  }
+  .my-account-page .main-content .main-my-account .grid-block .-side-content #tab-history .history-table-block .table-default tbody tr td:nth-child(4)::before {
+    content: 'คะแนน' !important;
+  }
+  .my-account-page .main-content .main-my-account .grid-block .-side-content #tab-history .history-table-block .table-default tbody tr td:nth-child(5) {
+    padding: 5px 20px !important;
+    padding-left: 45% !important;
+  }
+  .my-account-page .main-content .main-my-account .grid-block .-side-content #tab-history .history-table-block .table-default tbody tr td:nth-child(5)::before {
+    content: 'เลขติดตามพัสดุ' !important;
+  }
+  .my-account-page .main-content .main-my-account .grid-block .-side-content #tab-history .history-table-block .table-default tbody tr td:nth-child(6) {
+    display: inline-block;
+    padding: 10px 5px !important;
+  }
+  .my-account-page .main-content .main-my-account .grid-block .-side-content #tab-history .history-table-block .table-default tbody tr td:nth-child(7) {
+    display: inline-block;
+    padding: 0 !important;
+    padding-left: 20% !important;
+  }
+  .my-account-page .main-content .main-my-account .grid-block .-side-content #tab-history .history-table-block .table-default tbody tr td::after {
+    content: unset !important;
+    height: unset !important;
+    display: unset !important;
+    border-bottom: 0 !important;
+  }
+  .my-account-page .main-content .main-my-account .grid-block .-side-content #tab-history .detail-last-history-block .btn-border {
+    width: 100%;
+    margin: 0 !important;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .my-account-page .main-content .main-my-account .grid-block .-side-content #tab-history .detail-last-history-block .table-default thead tr th:nth-child(1)::before {
+    content: 'รายการสินค้า';
+  }
+  .my-account-page .main-content .main-my-account .grid-block .-side-content #tab-history .detail-last-history-block .table-default thead tr th:nth-child(2) {
+    display: none;
+  }
+  .my-account-page .main-content .main-my-account .grid-block .-side-content #tab-history .detail-last-history-block .table-default thead tr th:nth-child(3) {
+    display: none;
+  }
+  .my-account-page .main-content .main-my-account .grid-block .-side-content #tab-history .detail-last-history-block .table-default thead tr th:last-child {
+    display: none;
+  }
+  .my-account-page .main-content .main-my-account .grid-block .-side-content #tab-history .detail-last-history-block .table-default tbody tr {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .my-account-page .main-content .main-my-account .grid-block .-side-content #tab-history .detail-last-history-block .table-default tbody tr td {
+    padding: 0 !important;
+  }
+  .my-account-page .main-content .main-my-account .grid-block .-side-content #tab-history .detail-last-history-block .table-default tbody tr td:nth-child(1) {
+    padding-top: 20px !important;
+    -webkit-box-flex: .4;
+        -ms-flex: .4;
+            flex: .4;
+  }
+  .my-account-page .main-content .main-my-account .grid-block .-side-content #tab-history .detail-last-history-block .table-default tbody tr td:nth-child(2) {
+    padding-left: 20px !important;
+    padding-top: 20px !important;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  .my-account-page .main-content .main-my-account .grid-block .-side-content #tab-history .detail-last-history-block .table-default tbody tr td:nth-child(3) {
+    width: 100%;
+    padding-left: 33% !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 5px 0;
+  }
+  .my-account-page .main-content .main-my-account .grid-block .-side-content #tab-history .detail-last-history-block .table-default tbody tr td:nth-child(3)::before {
+    content: 'จำนวน';
+    font-family: 'Prachason';
+  }
+  .my-account-page .main-content .main-my-account .grid-block .-side-content #tab-history .detail-last-history-block .table-default tbody tr td:last-child {
+    width: 100%;
+    padding-left: 33% !important;
+    padding-bottom: 20px !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 5px 0;
+  }
+  .my-account-page .main-content .main-my-account .grid-block .-side-content #tab-history .detail-last-history-block .table-default tbody tr td:last-child::before {
+    content: 'ราคา';
+    font-family: 'Prachason';
+    font-weight: normal;
+  }
+  .my-account-page .main-content .main-my-account .grid-block .-side-content #tab-history .-total-desc .-mc1 {
+    gap: 20px !important;
+  }
+  .my-account-page .main-content .main-my-account .grid-block .-side-content #tab-history .-total-desc .back-btn-block {
+    text-align: center;
+  }
+  .my-account-page .main-content .main-my-account .grid-block .-side-content #tab-address .-primary-address a#add-address {
+    width: 100%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    color: #ffbe00;
+    border-color: #ffbe00;
+  }
+  .my-account-page .main-content .main-my-account .grid-block .-side-content #tab-address .-primary-address .-billing .add-block {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding-top: 1rem;
+  }
+  .my-account-page .main-content .main-my-account .grid-block .-side-content #tab-address .-primary-address .-billing .add-block a {
+    width: 100% !important;
+    margin: 0 !important;
+    margin-bottom: 1rem !important;
+  }
+  .my-account-page .main-content .main-my-account .grid-block .-side-content #tab-address .-primary-address .-billing tr td ul {
+    margin-top: 1rem !important;
+  }
+  .my-account-page .main-content .main-my-account .grid-block .-side-content #tab-address .-submit-block .grid-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .my-account-page .main-content .main-my-account .grid-block .-side-content #tab-address .-submit-block .grid-item:last-child {
+    margin-top: 2rem;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+  .my-account-page .main-content .main-my-account .grid-block .-side-content #tab-address .-submit-block .grid-item:last-child .submit-btn {
+    width: 100% !important;
+  }
 }
-/*# sourceMappingURL=style.css.map */
+
+/* ====================== Compare Product Page ====================== */
+.compare-product-page {
+  background-color: #161616;
+}
+
+.compare-product-page .main-content .main-compare-product {
+  padding-bottom: 7rem;
+}
+
+.compare-product-page .main-content .main-compare-product .compare-title {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 2.5rem;
+}
+
+.compare-product-page .main-content .main-compare-product .compare-product-table .compare-table {
+  width: 90%;
+  table-layout: fixed;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+.compare-product-page .main-content .main-compare-product .compare-product-table .compare-table thead {
+  float: left;
+  width: 28.5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.compare-product-page .main-content .main-compare-product .compare-product-table .compare-table thead th {
+  display: block;
+  color: #B5B5B5;
+  font-size: 16px;
+  font-weight: normal;
+  text-align: left;
+  padding: 0 10px;
+  width: 100%;
+}
+
+.compare-product-page .main-content .main-compare-product .compare-product-table .compare-table thead th:first-child {
+  padding-top: 42.35vh;
+}
+
+.compare-product-page .main-content .main-compare-product .compare-product-table .compare-table thead th:nth-child(2n+2) {
+  background-color: #2C2C2C;
+}
+
+.compare-product-page .main-content .main-compare-product .compare-product-table .compare-table tbody {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  float: right;
+  width: 70%;
+  overflow-x: auto;
+}
+
+.compare-product-page .main-content .main-compare-product .compare-product-table .compare-table tbody tr {
+  width: 40%;
+}
+
+.compare-product-page .main-content .main-compare-product .compare-product-table .compare-table tbody td {
+  display: block;
+  padding: 0 10px;
+  overflow-wrap: break-word;
+}
+
+.compare-product-page .main-content .main-compare-product .compare-product-table .compare-table tbody td:first-child {
+  padding-bottom: 2rem;
+  background-color: transparent !important;
+}
+
+.compare-product-page .main-content .main-compare-product .compare-product-table .compare-table tbody td:first-child img {
+  height: 180px;
+}
+
+.compare-product-page .main-content .main-compare-product .compare-product-table .compare-table tbody td:first-child h5 {
+  margin: 0;
+  color: #ffbe00;
+  font-family: 'Agency FB';
+  font-size: 16px;
+}
+
+.compare-product-page .main-content .main-compare-product .compare-product-table .compare-table tbody td:first-child h3 {
+  margin: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  height: 60px;
+  font-size: 24px;
+  font-family: 'Agency FB';
+}
+
+.compare-product-page .main-content .main-compare-product .compare-product-table .compare-table tbody td:nth-child(2n+1) {
+  background-color: #2C2C2C;
+}
+
+.compare-product-page .main-content .main-compare-product .compare-product-table .compare-table tbody td .buy-btn {
+  display: block;
+  width: 80%;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+.compare-product-page .main-content .main-compare-product .compare-product-table .compare-table tbody td .buy-btn:hover {
+  border-color: #ffbe00;
+  color: #ffbe00;
+}
