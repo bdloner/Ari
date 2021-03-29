@@ -376,8 +376,9 @@ jQuery(document).ready(function($) {
 
   // My Account - Edit Account
 
-  $('.my-account-page .-edit-btn').click(function(e){
-    e.preventDefault();
+  $('.my-account-page .-edit-btn').click(function(){
+
+    $('.my-account-page .-edit-btn').addClass('rsm');
     
     $("#inform").hide();
     $("#edit-inform").show();
@@ -390,6 +391,7 @@ jQuery(document).ready(function($) {
     $(".detail-last-history-block").hide();
     $(".new-address-block").hide();
     $(".edit-address-block").hide();
+    $(".-edit-btn").removeClass('rsm');
     
     $(".address-block").show();
     $(".last-history-block").show();
@@ -402,6 +404,7 @@ jQuery(document).ready(function($) {
     $(".detail-last-history-block").hide();
     $(".new-address-block").hide();
     $(".edit-address-block").hide();
+    $(".-edit-btn").removeClass('rsm');
     
     $(".address-block").show();
     $(".last-history-block").show();
@@ -413,6 +416,7 @@ jQuery(document).ready(function($) {
     $("#edit-inform").hide();
     $("#inform").hide();
 
+  $(".-edit-btn").addClass('rsm');
     $("#edit-pass").show();
   });
 
@@ -479,6 +483,20 @@ jQuery(document).ready(function($) {
   $('#for-company-edit').click(function(){
     $("#personal-edit").hide();
     $("#company-edit").show();
+  });
+
+  //Check box - Compare 
+
+  $('label.checkbox.compare').click(function(){
+    $("#bottom-compare").show();
+
+  });
+
+  $('.clear-btn').click(function(e){
+    e.preventDefault();
+
+    $("#bottom-compare").hide();
+    $( ".checkbox input" ).prop( "checked", false );
   });
 
 });

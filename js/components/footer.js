@@ -106,6 +106,47 @@ class Footer extends HTMLElement {
         </div>
     </footer>
 
+    <div id="bottom-compare" style="display: none;">
+        <div class="g-container">
+            <div class="bottom-compare-block">
+                <ul class="product-compare-block">
+                    <li class="compare-line"><span>เปรียบเทียบสินค้า</span></li>
+                    <li class="compare-line">
+                        <ul class="product-compare-list">
+                            <li class="grid-block -item-compare -c2">
+                                <div class="img-compare">
+                                    <img src="images/ex-shoes-01.png" alt="">
+                                </div>
+                                <div class="desc-compare">
+                                    <h4>PHANTOM GT ELITE DYNAMIC FIT
+                                    SCORPION FG</h4>
+                                    <p class="price">9,400 THB</p>
+                                </div>
+                                <a href="#" class="del-btn"><img src="images/x-icon.svg" alt=""></a>
+                            </li>
+                            <li class="grid-block -item-compare -c2">
+                                <div class="img-compare">
+                                    <img src="images/ex-shoes-01.png" alt="">
+                                </div>
+                                <div class="desc-compare">
+                                    <h4>PHANTOM GT ELITE DYNAMIC FIT
+                                    SCORPION FG</h4>
+                                    <p class="price">9,400 THB</p>
+                                </div>
+                                <a href="#" class="del-btn"><img src="images/x-icon.svg" alt=""></a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <ul class="compare-btn-block">
+                    <li class="clear-btn-block"><a href="#" class="clear-btn">ล้างทั้งหมด</a></li>
+                    <li class="compare-btn-block"><a href="#" class="compare-btn">เปรียบเทียบ</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
     <div id="search-popup">
             <form action="#" class="search-block">
                 <input type="text" name="focus" required class="search-box" placeholder="Search for" />
