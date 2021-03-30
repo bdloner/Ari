@@ -5151,28 +5151,34 @@ footer.main-footer {
 		}
 	}
 }
-.racing-suit-page .hero-slider-section .splide .splide__slide h2, .racing-suit-page .hero-slider-section .splide .splide__slide img {
+.racing-suit-page .hero-slider-section .splide .splide__slide h2, 
+.racing-suit-page .hero-slider-section .splide .splide__slide img {
 	position: relative;
 	z-index: 2;
 }
 @media (max-width: 991px) {
-			.racing-suit-page .hero-slider-section .splide .splide__slide {
-    min-height: 311px;
-			.racing-suit-page .hot-team-section {
-    padding: 2rem 0;
-			.racing-suit-page .your-fav-section .your-fav-block.g-container {
-    padding: 0;
-			.racing-suit-page .shirt-premier-section {
-    padding: 0;
-			.racing-suit-page .hot-product-section .hot-product-block .grid-block {
-    -ms-grid-columns: 1fr 1fr;
-			grid-template-columns: 1fr 1fr;
-			.racing-suit-page .main-content {
-    padding-bottom: 60px;
-		}
+	.racing-suit-page .hero-slider-section .splide .splide__slide {
+        min-height: 311px;
+    }
+	.racing-suit-page .hot-team-section {
+        padding: 2rem 0;
+    }
+	.racing-suit-page .your-fav-section .your-fav-block.g-container {
+        padding: 0;
+    }
+	.racing-suit-page .shirt-premier-section {
+        padding: 0;
+    }
+	.racing-suit-page .hot-product-section .hot-product-block .grid-block {
+        -ms-grid-columns: 1fr 1fr;
+		grid-template-columns: 1fr 1fr;
+    }
+	.racing-suit-page .main-content {
+        padding-bottom: 60px;
 	}
 }
-}.racing-suit-page {
+
+.racing-suit-page {
 	.hot-team-section {
 		padding: 4rem 0;
 	}
@@ -5195,11 +5201,15 @@ footer.main-footer {
 		padding-bottom: 7rem;
 	}
 }
-.racing-suit-page .your-fav-section .your-fav-heading h2, .racing-suit-page .your-fav-section .your-fav-heading h4 {
+
+.racing-suit-page .your-fav-section .your-fav-heading h2, 
+.racing-suit-page .your-fav-section .your-fav-heading h4 {
 	text-align: center;
 	margin: 5px 10px;
 }
-, .racing-suit-page .shirt-premier-section #brand-slider .splide__arrows, .racing-suit-page .shirt-premier-section #shirt-premier-slider .splide__arrows, .racing-suit-page .your-fav-section #your-fav-slider .splide__arrows {
+.racing-suit-page .shirt-premier-section #brand-slider .splide__arrows, 
+.racing-suit-page .shirt-premier-section #shirt-premier-slider .splide__arrows, 
+.racing-suit-page .your-fav-section #your-fav-slider .splide__arrows {
 	display: none;
 }
 .d-md-none {
@@ -5946,25 +5956,28 @@ footer.main-footer {
 		}
 	}
 }
-.football-equipment-page .hero-slider-section .splide .splide__slide h2, .football-equipment-page .hero-slider-section .splide .splide__slide img {
+.football-equipment-page .hero-slider-section .splide .splide__slide h2, 
+.football-equipment-page .hero-slider-section .splide .splide__slide img {
 	position: relative;
 	z-index: 2;
 }
 @media (max-width: 991px) {
-			.football-equipment-page .hero-slider-section .splide .splide__slide {
-    min-height: 311px;
-			.football-equipment-page .pro-section {
-    padding: 2rem 0 58px;
-			.football-equipment-page .show-product-section .show-product-block .grid-block {
-    -ms-grid-columns: 1fr 1fr;
-			grid-template-columns: 1fr 1fr;
-			gap: 15px;
-			.football-equipment-page .football-equipment-section .football-equipment-block .title-football-equipment {
-    text-align: center;
-		}
-	}
+	.football-equipment-page .hero-slider-section .splide .splide__slide {
+        min-height: 311px;
+    }
+	.football-equipment-page .pro-section {
+        padding: 2rem 0 58px;
+    }
+	.football-equipment-page .show-product-section .show-product-block .grid-block {
+        -ms-grid-columns: 1fr 1fr;
+		grid-template-columns: 1fr 1fr;
+		gap: 15px;
+    }
+	.football-equipment-page .football-equipment-section .football-equipment-block .title-football-equipment {
+        text-align: center;
+    }
 }
-}.football-equipment-page {
+.football-equipment-page {
 	.pro-section {
 		padding: 4px 0 54px;
 	}
