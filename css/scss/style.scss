@@ -18562,3 +18562,402 @@ body, html{
         }
     }
 }
+
+/* Custom 18/3/2021 */
+@font-face {
+    font-family: 'Prachason';
+    font-weight: 500;
+    src:  url('/static/version1615962574/frontend/Vision/ari/th_TH/fonts/Prachason-SemiBold.woff2') format('woff2'),
+          url('/static/version1615962574/frontend/Vision/ari/th_TH/fonts/Prachason-SemiBold.woff') format('woff');
+  }
+  
+  .site-header .main-nav .half-nav.main-menu .nav-menu-block .nav-menu > li,
+  .site-header .main-nav .half-nav.main-menu .nav-menu-block .nav-menu > li > a {
+    padding-bottom: 9px;
+  }
+  .main p {
+    margin: 0;
+  }
+  .title-sub-hero,
+  .title-kick-off {
+    font-weight: 400;
+  }
+  .owl-height,
+  .owl-carousel {
+    max-height: 550px;
+  }
+  .post-items.-card .featured-img-block .badge {
+    top: 14px;
+    border-radius: 2px 0 0 2px;
+  }
+  .category,
+  .price {
+    font-family: "Agency FB";
+  }
+  .splide__pagination {
+    display: none;
+  }
+  .title-cate,
+  .title {
+    font-weight: 400;
+    font-size: 18px;
+    margin: 3px 0 20px;
+  }
+  .home .categories-section .categories-block .grid-block .grid-item:first-child .img-cate-block {
+    height: 395px;
+  }
+  .home .news-section .read-more-block {
+    margin-top: -5px;
+  }
+  .home .news-section .title-news,
+  .home .categories-section .categories-block .title-categories {
+    margin-bottom: 14px;
+  }
+  
+  .splide__arrows .splide__arrow,
+  .splide__arrows .splide__arrow img {
+    width: 48px;
+    height: 40px;
+  }
+  .splide__arrows .splide__arrow,
+  .product-categories-boots-page .hero-slider-section .splide .splide__arrows .splide__arrow,
+  .owl-nav span {
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: all .3s;
+  }
+  .splide__arrows .splide__arrow.splide__arrow--prev,
+  .product-categories-boots-page .hero-slider-section .splide .splide__arrows .splide__arrow--prev.splide__arrow,
+  .owl-prev > span {
+    background-image: url('/static/version1615962574/frontend/Vision/ari/th_TH/images/slider-arrow-left-icon.svg');
+  }
+  .splide__arrows .splide__arrow.splide__arrow--next,
+  .product-categories-boots-page .hero-slider-section .splide .splide__arrows .splide__arrow--next.splide__arrow,
+  .owl-next > span {
+    background-image: url('/static/version1615962574/frontend/Vision/ari/th_TH/images/slider-arrow-right-icon.svg');
+  }
+  .splide__arrows .splide__arrow img {
+    visibility: hidden;
+  }
+  .splide__arrows .splide__arrow:hover,
+  .product-categories-boots-page .hero-slider-section .splide .splide__arrows .splide__arrow--prev.splide__arrow:hover,
+  .owl-next > span:hover {
+    background-image: url('/static/version1615962574/frontend/Vision/ari/th_TH/images/slider-arrow-right-icon-hover.svg');
+  }
+  .splide__arrows .splide__arrow.splide__arrow--prev:hover,
+  .product-categories-boots-page .hero-slider-section .splide .splide__arrows .splide__arrow--next.splide__arrow:hover,
+  button.owl-prev > span:hover {
+    background-image: url('/static/version1615962574/frontend/Vision/ari/th_TH/images/slider-arrow-left-icon-hover.svg');
+  }
+  
+  .compare-block {
+    width: 100%;
+    margin: 15px auto;
+    position: relative;
+    display: block;
+  }
+  .compare-block label {
+    position: relative;
+    min-height: 29px;
+    display: block;
+    padding-left: 33px;
+    margin-bottom: 0;
+    font-weight: normal;
+    cursor: pointer;
+  }
+  .compare-block label:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 4px;
+    width: 19px;
+    height: 19px;
+    transition: transform 0.28s ease;
+    border-radius: 5px;
+    border: 1px solid #fff;
+  }
+  .compare-block .checkmark:after {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 5px;
+    border-bottom: 2px solid #FFBE00;
+    border-left: 2px solid #FFBE00;
+    transform: rotate(-45deg) scale(0);
+    transition: transform ease 0.25s;
+    position: absolute;
+    top: 10px;
+    left: 9px;
+  }
+  .compare-block input[type=checkbox] {
+    width: auto;
+    position: absolute;
+    left: 5px;
+    margin-left: -20px;
+    opacity: 0;
+  }
+  .compare-block input[type=checkbox]:checked ~ label:before {
+    border: 2px solid #FFBE00;
+  }
+  .compare-block input[type=checkbox]:checked ~ .checkmark:after {
+    transform: rotate(-45deg) scale(1);
+  }
+  .compare-block input[type=checkbox]:focus + label::before {
+    outline: 0;
+  }
+  .post-items.-card .compare-block {
+    padding: 9px 0 15px;
+  }
+  #splide01-track {
+    padding-bottom: 60px;
+  }
+  .home .subscibe-section .subscibe-block .sub-form .inp-sub {
+    background: #fff;
+    height: 23px !important;
+    width: 340px;
+  }
+  .home .subscibe-section .subscibe-block .sub-form .inp-sub::placeholder {
+    color: #fff;
+    opacity: 1; 
+  }
+  .home .subscibe-section .subscibe-block .sub-form .inp-sub:-ms-input-placeholder { 
+   color: #fff;
+  }
+  .home .subscibe-section .subscibe-block .sub-form .inp-sub::-ms-input-placeholder {
+   color: #fff;
+  }
+  .home .subscibe-section .subscibe-block .title-subscibe {
+    margin-right: 45px;
+  }
+  
+  body h2 {
+    font-weight: 500;
+    font-size: 26px;
+  }
+  
+  .home.product-categories-boots-page .hot-product-section {
+    background: none;
+    padding: 3px 0 0;
+  }
+  .home.product-categories-boots-page .hot-product-section .hot-product-block.g-container {
+    max-width: 1160px;
+  }
+  .home.product-categories-boots-page .hot-product-section .title-hot-product {
+    font-weight: 500;
+    color: #fff;
+    text-align: left;
+  }
+  .home.product-categories-boots-page .hot-product-section .title-hot-product > img {
+    display: none;
+  }
+  .home.product-categories-boots-page .hot-product-section .hot-product-block.g-container .post-items.-card {
+    background: none;
+    padding: 0;
+  }
+  .home.product-categories-boots-page .hot-product-section .compare-block,
+  .home.product-categories-boots-page .show-product-section .compare-block {
+    display: none;
+  }
+  .home.product-categories-boots-page #splide01-track {
+    padding-bottom: 35px;
+  }
+  .category-football-shoes .brand-section .brand-block #brand-slider .splide__arrows.g-container button.splide__arrow--prev {
+    right: -17px;
+  }
+  #football-shoes-slider .splide__pagination {
+    display: inline-flex;
+  }
+  
+  .splide__pagination button.splide__pagination__page,
+  .owl-theme .owl-dots button.owl-dot span {
+      width: 12px;
+      height: 10px;
+      background: url(/static/version1615962574/frontend/Vision/ari/th_TH/js/splidejs/src/pagination-empty.svg);
+      background-size: contain;
+      background-repeat: no-repeat;
+  }
+  .splide__pagination button.splide__pagination__page.is-active,
+  .owl-theme .owl-dots button.owl-dot.active span {
+      background: url(/static/version1615962574/frontend/Vision/ari/th_TH/js/splidejs/src/pagination-active.svg);
+      background-size: contain;
+      background-repeat: no-repeat;
+  }
+  .splide__pagination button.splide__pagination__page:hover,
+  .owl-theme .owl-dots button.owl-dot:hover span {
+    background: url(/static/version1615962574/frontend/Vision/ari/th_TH/js/splidejs/src/pagination-empty.svg);
+    opacity: .75;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .splide__pagination button.splide__pagination__page.is-active:hover,
+  .owl-theme .owl-dots button.owl-dot.active:hover span {
+      background: url(/static/version1615962574/frontend/Vision/ari/th_TH/js/splidejs/src/pagination-active.svg);
+      opacity: .75;
+      background-size: contain;
+      background-repeat: no-repeat;
+  }
+  .splide__pagination button.splide__pagination__page::after,
+  .splide__pagination button.splide__pagination__page.is-active::after {
+    content: none;
+  }
+  .product-categories-boots-page .hero-slider-section .splide .splide__arrows .splide__arrow--prev.splide__arrow,
+  .mp-banner-slider .owl-nav button.owl-prev span {
+    left: 30px;
+  }
+  .product-categories-boots-page .hero-slider-section .splide .splide__arrows .splide__arrow--next.splide__arrow,
+  .mp-banner-slider .owl-nav button.owl-next span {
+    right: 30px;
+  }
+  
+  .owl-prev > span,
+  .owl-next > span {
+    color: transparent !important;
+    width: 48px;
+  }
+  .owl-theme .owl-dots button.owl-dot span,
+  .owl-theme .owl-dots button.owl-dot.active span {
+    margin: 0 2px;
+    background-size: contain;
+  }
+  .mp-banner-slider div.owl-dots {
+    top: unset;
+    bottom: 10px;
+  }
+  .title-cate-goalkeeper {
+    margin-bottom: 20px;
+  }
+  .title-brand {
+    margin-bottom: 14px;
+  }
+  .category-goalkeeper section.brand-section {
+    margin-bottom: 137px;
+  }
+  
+  .category-uniform .hero-slider-section .splide .splide__slide div.overlay {
+    display: none !important;
+  }
+  .category-uniform .hero-slider-section .splide .splide__slide div.g-container {
+    max-width: calc(100vw - 212px);
+  }
+  .category-uniform .hero-slider-section .splide .splide__slide .g-container .grid-block .grid-item h2 {
+    font-weight: 600;
+    font-size: 32px;
+  }
+  .category-uniform .hero-slider-section .splide .splide__slide .g-container .grid-block .grid-item .btn-border {
+    margin-top: 26px;
+    padding: 5.5px 63px;
+  }
+  .category-uniform section.hot-team-section {
+    padding: 40px 0 74px;
+  }
+  .your-fav-block h4 {
+    font-size: 21px;
+    font-weight: 400;
+  }
+  .category-uniform section.your-fav-section {
+    background: url(/static/version1615962574/frontend/Vision/ari/th_TH/images/bg-your-fav.png);
+    padding-bottom: 152px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .shirt-premier-block > .title-brand,
+  .national-team-block > .title-national-team {
+    margin: 0 auto 25px;
+    max-width: 1160px;
+  }
+  .shirt-premier-block.g-container,
+  .national-team-block.g-container {
+    max-width: 100%;
+    padding: 0;
+    margin-bottom: 50px;
+  }
+  .category-uniform .shirt-premier-section .shirt-premier-block.g-container #shirt-premier-slider div.slider-shirt-premier {
+    height: 278px;
+  }
+  #shirt-premier-slider .splide__slide,
+  #national-team-slider .splide__slide {
+    margin-right: 30px !important;
+    width: 370px !important;
+  }
+  .category-uniform .shirt-premier-section .shirt-premier-block.g-container #shirt-premier-slider div.slider-shirt-premier h5 {
+    margin-bottom: 26px;
+  }
+  .category-uniform .shirt-premier-section .shirt-premier-block.g-container #shirt-premier-slider div.splide__arrows {
+    margin-top: 33px;
+  }
+  .splide__arrows button.splide__arrow--next {
+    right: -48px;
+  }
+  .category-uniform .shirt-premier-section .shirt-premier-block.g-container #shirt-premier-slider .splide__arrows.g-container button.splide__arrow--prev,
+  .category-uniform .national-team-section .national-team-block.g-container #national-team-slider .splide__arrows.g-container .splide__arrow--prev {
+    right: -1px;
+  }
+  .home.product-categories-boots-page.categorypath-uniform .hot-product-section .title-hot-product {
+    margin: 60px 0 25px;
+  }
+  .category-uniform .hot-product-section .hot-product-block .grid-block .featured-img-block .badge {
+    width: 30px;
+    text-align: center;
+    font-size: 18px;
+  }
+  .category-uniform .hot-product-section .hot-product-block .grid-block .featured-img-block .badge.-r {
+    margin-top: 37px;
+  }
+  .post-items.-card .title-item .category {
+    font-size: 14px;
+  }
+  .post-items.-card .title-item .title {
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+    height: 45px;
+  }
+  .post-items.-card .content-item .price-block .price {
+    font-size: 21px;
+  }
+  .home.product-categories-boots-page .hot-product-section .btn-border {
+    margin-top: 45px;
+  }
+  .read-more-block .btn-border {
+    font-weight: 400;
+  }
+  .category-uniform .hot-product-section .read-more-block .btn-border {
+    padding: 7px 40px;
+  }
+  .category-uniform .national-team-section {
+    margin-top: 70px;
+  }
+  .category-uniform .national-team-section .national-team-block .title-national-team {
+    margin-bottom: 30px;
+  }
+  .category-uniform .national-team-section {
+    padding-bottom: 119px;
+  }
+  
+  .category-football-equipments .pro-section {
+    padding-top: 44px;
+    padding-bottom: 0;
+  }
+  .category-football-equipments .pro-section .pro-block .grid-block,
+  .category-football-equipments .show-product-section .show-product-block .grid-block {
+    gap: 30px;
+  }
+  .category-football-equipments .show-product-section .show-product-block .grid-block {
+    row-gap: 80px;
+  }
+  .category-football-equipments .pro-section .pro-block .grid-block .grid-item .pro .content-block h4.head-pro {
+    font-weight: 500;
+  }
+  .category-football-equipments .pro-section .pro-block .grid-block .grid-item .pro .content-block a.btn-border {
+    font-size: 16px;
+  }
+  .categorypath-football-equipments .title-hot-product {
+    display: none;
+  }
+  .category-football-equipments .show-product-section {
+    padding-top: 59.5px;
+  }
+  .category-football-equipments .show-product-section .title-item {
+    margin-bottom: 22px;
+  }
