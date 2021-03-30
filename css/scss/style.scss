@@ -4420,8 +4420,6 @@ footer.main-footer {
 				-ms-grid-columns: 1fr 1fr 1fr;
 				grid-template-columns: 1fr 1fr 1fr;
 				gap: 25px;
-				-ms-grid-columns: 1fr;
-				grid-template-columns: 1fr;
 				.grid-item {
 					position: relative;
 					a {
@@ -5102,9 +5100,6 @@ footer.main-footer {
 				-ms-grid-columns: 1fr 1fr 1fr 1fr;
 				grid-template-columns: 1fr 1fr 1fr 1fr;
 				gap: 25px;
-				-ms-grid-columns: 1fr 1fr;
-				grid-template-columns: 1fr 1fr;
-				gap: 19px;
 			}
 		}
 		.read-more-block {
@@ -5176,6 +5171,12 @@ footer.main-footer {
 	.racing-suit-page .main-content {
         padding-bottom: 60px;
 	}
+    .d-md-none {
+        display: block !important;
+    }
+    .d-sm-none {
+        display: none !important;
+    }
 }
 
 .racing-suit-page {
@@ -5214,7 +5215,6 @@ footer.main-footer {
 }
 .d-md-none {
 	display: none!important;
-	display: block!important;
 }
 .post-items {
 	&.-card {
@@ -5242,7 +5242,7 @@ footer.main-footer {
 	padding: 0 10px;
 }
 .d-sm-none {
-	display: none!important;
+	display: block !important;
 }
 
 /* ====================== Football Equipment Page ====================== */
@@ -5369,8 +5369,6 @@ footer.main-footer {
 				-ms-grid-columns: 1fr 1fr;
 				grid-template-columns: 1fr 1fr;
 				gap: 25px;
-				-ms-grid-columns: 1fr;
-				grid-template-columns: 1fr;
 				row-gap: 16px;
 				.grid-item {
 					position: relative;
@@ -5483,14 +5481,6 @@ footer.main-footer {
 				-ms-grid-columns: 1fr 1fr 1fr 1fr;
 				grid-template-columns: 1fr 1fr 1fr 1fr;
 				gap: 25px;
-				display: -ms-grid;
-				display: grid;
-				-ms-grid-columns: 1fr 1fr 1fr 1fr;
-				grid-template-columns: 1fr 1fr 1fr 1fr;
-				gap: 25px;
-				-ms-grid-columns: 1fr 1fr;
-				grid-template-columns: 1fr 1fr;
-				gap: 19px;
 			}
 		}
 		.read-more-block {
@@ -5544,8 +5534,6 @@ footer.main-footer {
 				-ms-grid-columns: 1fr 1fr 1fr 1fr;
 				grid-template-columns: 1fr 1fr 1fr 1fr;
 				gap: 25px;
-				-ms-grid-columns: 1fr;
-				grid-template-columns: 1fr;
 				.grid-item {
 					position: relative;
 					a {
