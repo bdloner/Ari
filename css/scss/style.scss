@@ -5155,9 +5155,7 @@ footer.main-footer {
 	position: relative;
 	z-index: 2;
 }
-@media {
-	(max-width {
-		&:991px) {
+@media (max-width: 991px) {
 			.racing-suit-page .hero-slider-section .splide .splide__slide {
     min-height: 311px;
 			.racing-suit-page .hot-team-section {
@@ -5952,9 +5950,7 @@ footer.main-footer {
 	position: relative;
 	z-index: 2;
 }
-@media {
-	(max-width {
-		&:991px) {
+@media (max-width: 991px) {
 			.football-equipment-page .hero-slider-section .splide .splide__slide {
     min-height: 311px;
 			.football-equipment-page .pro-section {
