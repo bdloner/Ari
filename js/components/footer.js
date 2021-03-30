@@ -141,7 +141,7 @@ class Footer extends HTMLElement {
 
                 <ul class="compare-btn-block">
                     <li class="clear-btn-block"><a href="#" class="clear-btn">ล้างทั้งหมด</a></li>
-                    <li class="compare-btn-block"><a href="#" class="compare-btn">เปรียบเทียบ</a></li>
+                    <li class="compare-btn-block"><a href="/compare-product.html" class="compare-btn">เปรียบเทียบ</a></li>
                 </ul>
             </div>
         </div>

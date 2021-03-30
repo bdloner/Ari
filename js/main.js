@@ -499,4 +499,16 @@ jQuery(document).ready(function($) {
     $( ".checkbox input" ).prop( "checked", false );
   });
 
+    // Checkout Accordion Payment Method
+
+$(".accordion_options").click(function() {
+  let current = $(this).attr("rel");
+  let next = parseInt(current)+1;
+  
+  $('#c'+current).removeClass('collapse');
+
+  $('#c'+next).prev().addClass('collapse');
+  $('#c'+next).addClass('collapse');
+});
+
 });

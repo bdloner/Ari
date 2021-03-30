@@ -319,7 +319,7 @@ a {
   -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 99;
-  margin-top: 20px;
+  margin-top: 9px;
 }
 
 .dropdown-content .grid-block {
@@ -1581,7 +1581,6 @@ select:focus, select:active {
     transition: top 0.2s, left 0.2s, background-color 0.2s, -webkit-transform 0.2s 0.15s;
     transition: top 0.2s, left 0.2s, background-color 0.2s, transform 0.2s 0.15s;
     transition: top 0.2s, left 0.2s, background-color 0.2s, transform 0.2s 0.15s, -webkit-transform 0.2s 0.15s;
-    transition: top 0.2s, left 0.2s, background-color 0.2s, transform 0.2s 0.15s, -webkit-transform 0.2s 0.15s;
   }
   .navbar-autoshow .navbar-block .action-right .menu-burger b,
   .navbar-autoshow .navbar-block .action-right .menu-burger b:before,
@@ -1595,7 +1594,7 @@ select:focus, select:active {
     position: absolute;
     -webkit-transform: rotate(0);
             transform: rotate(0);
-    transition: top 0.3s 0.15s, left 0.1s, background-color 0.3s 0.2s, transform 0.2s, -webkit-transform 0.2s;
+    transition: top 0.3s 0.15s, left 0.1s, background-color 0.3s 0.2s, transform 0.2s, -webkit-transform 0.2s;
   }
   .menu-burger-sidebar {
     display: block !important;
@@ -1793,14 +1792,14 @@ select:focus, select:active {
 
 .post-items.-card .title-item .category {
   margin: 0;
-  margin-top: 15px;
+  margin-top: 10px;
   font-size: 16px;
   color: #ffbe00;
   font-weight: normal;
 }
 
 .post-items.-card .title-item .title {
-  margin: 5px 0;
+  margin: 0;
   margin-bottom: 20px;
   display: -webkit-box;
   -webkit-line-clamp: 2;
@@ -1825,7 +1824,8 @@ select:focus, select:active {
 .post-items.-card .content-item .price-block .price {
   color: #ffbe00;
   font-weight: bold;
-  font-size: 22px;
+  font-size: 21px;
+  font-family: "Agency FB";
 }
 
 .post-items.-card .content-item .fav-block {
@@ -4095,70 +4095,71 @@ footer.main-footer .bottom-ft p {
 }
 
 /* ====================== Racing suit Page ====================== */
-.racing-suit-page {
+.category-uniform {
   background-color: #161616;
 }
 
-.racing-suit-page .hero-slider-section .splide .splide__slide {
-  min-height: 600px;
+.category-uniform .hero-slider-section .splide .splide__slide {
+  min-height: 467px;
 }
 
-.racing-suit-page .hero-slider-section .splide .splide__slide .g-container {
-  max-width: 60vw;
+.category-uniform .hero-slider-section .splide .splide__slide .g-container {
+  max-width: calc(100vw - 212px);
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  max-width: 1160px;
 }
 
-.racing-suit-page .hero-slider-section .splide .splide__slide .g-container .grid-block .grid-item {
+.category-uniform .hero-slider-section .splide .splide__slide .g-container .grid-block .grid-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
 }
 
-.racing-suit-page .hero-slider-section .splide .splide__slide .g-container .grid-block .grid-item h2 {
+.category-uniform .hero-slider-section .splide .splide__slide .g-container .grid-block .grid-item h2 {
   margin: 0;
   margin-top: 10px;
-  font-size: 26px;
+  font-size: 32px;
 }
 
-.racing-suit-page .hero-slider-section .splide .splide__slide.--slide-01 {
+.category-uniform .hero-slider-section .splide .splide__slide.--slide-01 {
+  background: url(../images/racing-suit-hero-slider.png) center center;
+  background-size: cover;
   background: url(../images/racing-suit-hero-slider.png) center center;
   background-size: cover;
 }
 
-.racing-suit-page .hero-slider-section .splide .splide__slide.--slide-02 {
+.category-uniform .hero-slider-section .splide .splide__slide.--slide-02 {
+  background: url(../images/racing-suit-hero-slider.png) center center;
+  background-size: cover;
   background: url(../images/racing-suit-hero-slider.png) center center;
   background-size: cover;
 }
 
-.racing-suit-page .hero-slider-section .splide .splide__slide.--slide-03 {
+.category-uniform .hero-slider-section .splide .splide__slide.--slide-03 {
+  background: url(../images/racing-suit-hero-slider.png) center center;
+  background-size: cover;
   background: url(../images/racing-suit-hero-slider.png) center center;
   background-size: cover;
 }
 
-.racing-suit-page .hero-slider-section .splide .splide__slide h2,
-.racing-suit-page .hero-slider-section .splide .splide__slide img {
-  position: relative;
-  z-index: 2;
-}
-
-.racing-suit-page .hero-slider-section .splide .splide__slide h2 {
+.category-uniform .hero-slider-section .splide .splide__slide h2 {
   font-family: "Agency FB";
 }
 
-.racing-suit-page .hero-slider-section .splide .splide__slide .btn-border {
+.category-uniform .hero-slider-section .splide .splide__slide .btn-border {
   border: 1px solid #fff;
   width: auto;
   display: block;
@@ -4166,613 +4167,1024 @@ footer.main-footer .bottom-ft p {
   z-index: 2;
   padding: 7px 4rem;
   border-radius: 5px;
-  font-family: "Prachason";
+  font-family: Prachason;
   font-size: 16px;
-  font-weight: normal;
+  font-weight: 400;
 }
 
-.racing-suit-page .hero-slider-section .splide .splide__slide .btn-border:hover {
+.category-uniform .hero-slider-section .splide .splide__slide .btn-border:hover {
   background-color: #fff;
   color: #000;
 }
 
-.racing-suit-page .hero-slider-section .splide .splide__slide .overlay {
-  display: block !important;
+.category-uniform .hero-slider-section .splide .splide__slide .overlay {
+  display: none !important;
   max-width: 60%;
-  -webkit-transition: max-height 0.15s ease-out;
-  transition: max-height 0.15s ease-out;
+  -webkit-transition: max-height .15s ease-out;
+  transition: max-height .15s ease-out;
   width: 100%;
   height: 100%;
   position: absolute;
   bottom: 0;
   right: 0;
   left: 0;
-  background: -webkit-gradient(linear, right top, left top, from(rgba(22, 22, 22, 0)), to(#161616));
-  background: linear-gradient(270deg, rgba(22, 22, 22, 0) 0%, #161616 100%);
-  -webkit-transition: all height 0.5s ease-in-out;
-  transition: all height 0.5s ease-in-out;
+  background: -webkit-gradient(linear, right top, left top, color-stop(0, rgba(22, 22, 22, 0)), to(#161616));
+  background: linear-gradient(270deg, rgba(22, 22, 22, 0) 0, #161616 100%);
+  -webkit-transition: all height .5s ease-in-out;
+  transition: all height .5s ease-in-out;
+  display: block !important;
 }
 
-.racing-suit-page .hero-slider-section .splide .splide__arrows .splide__arrow {
+.category-uniform .hero-slider-section .splide .splide__arrows .splide__arrow {
   opacity: 1;
-  background: transparent;
+  background: 0 0;
+  opacity: 1;
+  background: 0 0;
 }
 
-.racing-suit-page .hero-slider-section .splide .splide__arrows .splide__arrow .arrow-left {
+.category-uniform .hero-slider-section .splide .splide__arrows .splide__arrow .arrow-left {
+  width: 100px;
   width: 100px;
 }
 
-.racing-suit-page .hero-slider-section .splide .splide__arrows .splide__arrow--prev {
+.category-uniform .hero-slider-section .splide .splide__arrows .splide__arrow--prev {
+  left: 13%;
   left: 13%;
 }
 
-.racing-suit-page .hero-slider-section .splide .splide__arrows .splide__arrow--next {
+.category-uniform .hero-slider-section .splide .splide__arrows .splide__arrow--next {
+  right: 13%;
   right: 13%;
 }
 
-@media (max-width: 991px) {
-  .racing-suit-page .hero-slider-section .splide .splide__slide {
-    min-height: 320px;
-  }
-  .racing-suit-page .hero-slider-section .splide .splide__slide .g-container {
-    max-width: 1160px;
-  }
-  .racing-suit-page .hero-slider-section .splide .splide__slide.--slide-01 {
-    background: url(../images/racing-suit-hero-slider-mb-01.png) center center;
-    background-size: cover;
-  }
-  .racing-suit-page .hero-slider-section .splide .splide__slide.--slide-02 {
-    background: url(../images/racing-suit-hero-slider-mb-01.png) center center;
-    background-size: cover;
-  }
-  .racing-suit-page .hero-slider-section .splide .splide__slide.--slide-03 {
-    background: url(../images/racing-suit-hero-slider-mb-01.png) center center;
-    background-size: cover;
-  }
-  .racing-suit-page .hero-slider-section .splide .splide__arrows .splide__arrow {
-    opacity: 1;
-    background: transparent;
-  }
-  .racing-suit-page .hero-slider-section .splide .splide__arrows .splide__arrow .arrow-left {
-    width: 100px;
-  }
-  .racing-suit-page .hero-slider-section .splide .splide__arrows .splide__arrow--prev {
-    left: 13%;
-  }
-  .racing-suit-page .hero-slider-section .splide .splide__arrows .splide__arrow--next {
-    right: 13%;
-  }
-}
-
-.racing-suit-page .hot-team-section {
-  padding: 4rem 0;
-}
-
-.racing-suit-page .hot-team-section .hot-team-block #hot-team-slider .splide__arrows .splide__arrow--prev {
+.category-uniform .hot-team-section .hot-team-block #hot-team-slider .splide__arrows .splide__arrow--prev {
   left: -4rem;
   background-color: transparent;
 }
 
-.racing-suit-page .hot-team-section .hot-team-block #hot-team-slider .splide__arrows .splide__arrow--next {
+.category-uniform .hot-team-section .hot-team-block #hot-team-slider .splide__arrows .splide__arrow--next {
   right: -4rem;
   background-color: transparent;
 }
 
-.racing-suit-page .hot-team-section .hot-team-block #hot-team-slider .splide__pagination {
+.category-uniform .hot-team-section .hot-team-block #hot-team-slider .splide__pagination {
   display: none;
 }
 
-.racing-suit-page .hot-team-section .hot-team-block #hot-team-slider .slider-hot-team a:hover .hot-team .overlay {
+.category-uniform .hot-team-section .hot-team-block #hot-team-slider .slider-hot-team a:hover .hot-team .overlay {
   max-height: 100%;
-  -webkit-transition: max-height 0.25s ease-in;
-  transition: max-height 0.25s ease-in;
+  -webkit-transition: max-height .25s ease-in;
+  transition: max-height .25s ease-in;
 }
 
-.racing-suit-page .hot-team-section .hot-team-block #hot-team-slider .slider-hot-team a:hover .hot-team h4.head-hot-team {
+.category-uniform .hot-team-section .hot-team-block #hot-team-slider .slider-hot-team a:hover .hot-team h4.head-hot-team {
   margin-bottom: 9rem;
   color: #ffbe00;
 }
 
-.racing-suit-page .hot-team-section .hot-team-block #hot-team-slider .slider-hot-team .hot-team {
+.category-uniform .hot-team-section .hot-team-block #hot-team-slider .slider-hot-team .hot-team {
   min-height: 290px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
-.racing-suit-page .hot-team-section .hot-team-block #hot-team-slider .slider-hot-team .hot-team.-hot-team-01 {
+.category-uniform .hot-team-section .hot-team-block #hot-team-slider .slider-hot-team .hot-team.-hot-team-01 {
   background: url(../images/hot-team-01.png) center center;
   background-size: cover;
 }
 
-.racing-suit-page .hot-team-section .hot-team-block #hot-team-slider .slider-hot-team .hot-team.-hot-team-02 {
+.category-uniform .hot-team-section .hot-team-block #hot-team-slider .slider-hot-team .hot-team.-hot-team-02 {
   background: url(../images/hot-team-02.png) center center;
   background-size: cover;
 }
 
-.racing-suit-page .hot-team-section .hot-team-block #hot-team-slider .slider-hot-team .hot-team.-hot-team-03 {
+.category-uniform .hot-team-section .hot-team-block #hot-team-slider .slider-hot-team .hot-team.-hot-team-03 {
   background: url(../images/hot-team-03.png) center center;
   background-size: cover;
 }
 
-.racing-suit-page .hot-team-section .hot-team-block #hot-team-slider .slider-hot-team .hot-team.-hot-team-04 {
+.category-uniform .hot-team-section .hot-team-block #hot-team-slider .slider-hot-team .hot-team.-hot-team-04 {
   background: url(../images/hot-team-04.png) center center;
   background-size: cover;
 }
 
-.racing-suit-page .hot-team-section .hot-team-block #hot-team-slider .slider-hot-team .hot-team.-hot-team-05 {
+.category-uniform .hot-team-section .hot-team-block #hot-team-slider .slider-hot-team .hot-team.-hot-team-05 {
   background: url(../images/hot-team-05.png) center center;
   background-size: cover;
 }
 
-.racing-suit-page .hot-team-section .hot-team-block #hot-team-slider .slider-hot-team .hot-team h4.head-hot-team {
+.category-uniform .hot-team-section .hot-team-block #hot-team-slider .slider-hot-team .hot-team h4.head-hot-team {
   width: 100%;
   text-align: center;
   font-size: 20px;
   font-family: "Agency FB";
-  font-weight: normal;
+  font-weight: 400;
   z-index: 1;
   margin-bottom: 2rem;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: .5s;
+  transition: .5s;
   text-transform: uppercase;
 }
 
-.racing-suit-page .hot-team-section .hot-team-block #hot-team-slider .slider-hot-team .hot-team .overlay {
+.category-uniform .hot-team-section .hot-team-block #hot-team-slider .slider-hot-team .hot-team .overlay {
   max-height: 40%;
-  -webkit-transition: max-height 0.15s ease-out;
-  transition: max-height 0.15s ease-out;
+  -webkit-transition: max-height .15s ease-out;
+  transition: max-height .15s ease-out;
   height: 100%;
   position: absolute;
   bottom: 0;
   right: 0;
   left: 0;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(black));
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, black 100%);
-  -webkit-transition: all height 0.5s ease-in-out;
-  transition: all height 0.5s ease-in-out;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0)), to(#000));
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0, #000 100%);
+  -webkit-transition: all height .5s ease-in-out;
+  transition: all height .5s ease-in-out;
 }
 
-@media (max-width: 991px) {
-  .racing-suit-page .hot-team-section {
-    padding: 2rem 0;
-  }
-  .racing-suit-page .hot-team-section .hot-team-block .title-hot-team {
-    text-align: center;
-  }
-  .racing-suit-page .hot-team-section .hot-team-block .grid-block {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-  }
-}
-
-.racing-suit-page .your-fav-section {
-  padding: 5rem 0;
-  padding-bottom: 8rem;
-  background: url(../images/bg-your-fav.png) center center;
-  background-size: cover;
-}
-
-.racing-suit-page .your-fav-section .your-fav-block h2,
-.racing-suit-page .your-fav-section .your-fav-block h4 {
+.category-uniform .hot-team-section .hot-team-block .title-hot-team {
   text-align: center;
-  margin: 5px 10px;
 }
 
-.racing-suit-page .your-fav-section .your-fav-block h2 {
+.category-uniform .hot-team-section .hot-team-block .grid-block {
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr;
+}
+
+.category-uniform .collection-section {
+  padding: 4rem 0 148px;
+  padding: 2rem 0;
+}
+
+.category-uniform .collection-section .collection-block .grid-block {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 25px;
+}
+
+.category-uniform .collection-section .collection-block .grid-block .grid-item {
+  position: relative;
+}
+
+.category-uniform .collection-section .collection-block .grid-block .grid-item a:hover .collection .overlay {
+  max-height: 100%;
+  -webkit-transition: max-height .25s ease-in;
+  transition: max-height .25s ease-in;
+}
+
+.category-uniform .collection-section .collection-block .grid-block .grid-item a:hover .collection h4.head-collection {
+  margin-bottom: 10rem;
   color: #ffbe00;
 }
 
-.racing-suit-page .your-fav-section .your-fav-block .grid-block {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  gap: 20px;
-}
-
-.racing-suit-page .your-fav-section .your-fav-block .grid-block .grid-item {
+.category-uniform .collection-section .collection-block .grid-block .grid-item .collection {
+  min-height: 278px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.racing-suit-page .your-fav-section .your-fav-block .grid-block .grid-item .btn-border {
-  width: 100px;
-  display: block;
-  border: 1px solid #fff;
-  padding: 10px 2rem;
-  border-radius: 5px;
-  font-family: "Prachason";
-  font-weight: normal;
-}
-
-.racing-suit-page .your-fav-section .your-fav-block .grid-block .grid-item .btn-border:hover {
-  background: transparent;
-  border: 1px solid #ffbe00;
-  color: #ffbe00;
-}
-
-@media (max-width: 991px) {
-  .racing-suit-page .your-fav-section .your-fav-block .grid-block {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-  }
-}
-
-.racing-suit-page .shirt-premier-section {
-  padding-top: 4rem;
-}
-
-.racing-suit-page .shirt-premier-section .shirt-premier-block .title-shirt-premier {
-  font-size: 26px;
-  margin-bottom: 1rem;
-}
-
-.racing-suit-page .shirt-premier-section .shirt-premier-block.g-container #shirt-premier-slider a:hover .slider-shirt-premier .overlay {
-  max-height: 100%;
-  -webkit-transition: max-height 0.25s ease-in;
-  transition: max-height 0.25s ease-in;
-}
-
-.racing-suit-page .shirt-premier-section .shirt-premier-block.g-container #shirt-premier-slider a:hover .slider-shirt-premier h5 {
-  margin-bottom: 7rem;
-  color: #ffbe00;
-}
-
-.racing-suit-page .shirt-premier-section .shirt-premier-block.g-container #shirt-premier-slider .slider-shirt-premier {
-  min-height: 250px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
-.racing-suit-page .shirt-premier-section .shirt-premier-block.g-container #shirt-premier-slider .slider-shirt-premier.-shirt-premier-01 {
-  background: url(../images/shirt-01.png) center center;
+.category-uniform .collection-section .collection-block .grid-block .grid-item .collection.-phantom-gt {
+  background: url(../images/nike-uniform.png) center center;
   background-size: cover;
 }
 
-.racing-suit-page .shirt-premier-section .shirt-premier-block.g-container #shirt-premier-slider .slider-shirt-premier.-shirt-premier-02 {
-  background: url(../images/shirt-02.png) center center;
+.category-uniform .collection-section .collection-block .grid-block .grid-item .collection.-mercurial {
+  background: url(../images/adidas-uniform.png) center center;
   background-size: cover;
 }
 
-.racing-suit-page .shirt-premier-section .shirt-premier-block.g-container #shirt-premier-slider .slider-shirt-premier.-shirt-premier-03 {
-  background: url(../images/shirt-03.png) center center;
+.category-uniform .collection-section .collection-block .grid-block .grid-item .collection.-nemeziz {
+  background: url(../images/puma-uniform.png) center center;
   background-size: cover;
 }
 
-.racing-suit-page .shirt-premier-section .shirt-premier-block.g-container #shirt-premier-slider .slider-shirt-premier.-shirt-premier-04 {
-  background: url(../images/shirt-04.png) center center;
-  background-size: cover;
-}
-
-.racing-suit-page .shirt-premier-section .shirt-premier-block.g-container #shirt-premier-slider .slider-shirt-premier.-shirt-premier-05 {
-  background: url(../images/shirt-05.png) center center;
-  background-size: cover;
-}
-
-.racing-suit-page .shirt-premier-section .shirt-premier-block.g-container #shirt-premier-slider .slider-shirt-premier h5 {
+.category-uniform .collection-section .collection-block .grid-block .grid-item .collection h4.head-collection {
   width: 100%;
   text-align: center;
   font-size: 26px;
   font-family: "Agency FB";
   z-index: 1;
   margin-bottom: 2rem;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: .5s;
+  transition: .5s;
   text-transform: uppercase;
-  font-weight: normal;
+  font-weight: 400;
 }
 
-.racing-suit-page .shirt-premier-section .shirt-premier-block.g-container #shirt-premier-slider .slider-shirt-premier .overlay {
+.category-uniform .collection-section .collection-block .grid-block .grid-item .collection .overlay {
   max-height: 40%;
-  -webkit-transition: max-height 0.15s ease-out;
-  transition: max-height 0.15s ease-out;
+  -webkit-transition: max-height .15s ease-out;
+  transition: max-height .15s ease-out;
   height: 100%;
   position: absolute;
   bottom: 0;
   right: 0;
   left: 0;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(black));
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, black 100%);
-  -webkit-transition: all height 0.5s ease-in-out;
-  transition: all height 0.5s ease-in-out;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0)), to(#000));
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0, #000 100%);
+  -webkit-transition: all height .5s ease-in-out;
+  transition: all height .5s ease-in-out;
 }
 
-.racing-suit-page .shirt-premier-section .shirt-premier-block.g-container #shirt-premier-slider .splide__arrows {
-  position: relative;
-  margin-top: 3rem;
+.category-uniform .collection-section .collection-block .title-collection {
+  text-align: center;
 }
 
-.racing-suit-page .shirt-premier-section .shirt-premier-block.g-container #shirt-premier-slider .splide__arrows.g-container {
+.category-uniform .your-fav-section .your-fav-heading {
+  padding-top: 126px;
+  padding-bottom: 16px;
+  padding-top: 63px;
+}
+
+.category-uniform .your-fav-section .your-fav-heading h2 {
+  font-weight: 500;
+  font-size: 26px;
+  color: #ffbe00;
+  font-size: 22px;
+}
+
+.category-uniform .your-fav-section .your-fav-heading h4 {
+  font-weight: 400;
+  font-size: 21px;
+  font-size: 20px;
+}
+
+.category-uniform .your-fav-section .your-fav-block h3 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #ffbe00;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+  line-height: 1.25;
+  margin-top: 19px;
+}
+
+.category-uniform .your-fav-section .your-fav-block .grid-block {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.category-uniform .your-fav-section .your-fav-block .grid-block .grid-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.category-uniform .your-fav-section .your-fav-block.g-container #your-fav-slider a:hover .slider-shirt-premier .overlay {
+  max-height: 100%;
+  -webkit-transition: max-height .25s ease-in;
+  transition: max-height .25s ease-in;
+}
+
+.category-uniform .your-fav-section .your-fav-block.g-container #your-fav-slider a:hover .slider-shirt-premier h5 {
+  margin-bottom: 7rem;
+  color: #ffbe00;
+}
+
+.category-uniform .your-fav-section .your-fav-block.g-container #your-fav-slider .slider-shirt-premier {
+  min-height: 270px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  border-radius: 5px;
+}
+
+.category-uniform .your-fav-section .your-fav-block.g-container #your-fav-slider .slider-shirt-premier.-shirt-premier-01 {
+  background: url(../images/premier-league.svg) center center;
+}
+
+.category-uniform .your-fav-section .your-fav-block.g-container #your-fav-slider .slider-shirt-premier.-shirt-premier-02 {
+  background: url(../images/european-league.svg) center center;
+  background-size: cover;
+}
+
+.category-uniform .your-fav-section .your-fav-block.g-container #your-fav-slider .slider-shirt-premier.-shirt-premier-03 {
+  background: url(../images/toyota-thai-league.svg) center center;
+  background-size: cover;
+}
+
+.category-uniform .your-fav-section .your-fav-block.g-container #your-fav-slider .slider-shirt-premier.-shirt-premier-04 {
+  background: url(../images/national-footbal-team.svg) center center;
+  background-size: cover;
+}
+
+.category-uniform .your-fav-section .your-fav-block.g-container #your-fav-slider .slider-shirt-premier.-shirt-premier-05 {
+  background: url(../images/thailand-team.svg) center center;
+  background-size: cover;
+}
+
+.category-uniform .your-fav-section .your-fav-block.g-container #your-fav-slider .slider-shirt-premier h5 {
+  width: 100%;
+  text-align: center;
+  font-size: 26px;
+  font-family: "Agency FB";
+  z-index: 1;
+  margin-bottom: 2rem;
+  -webkit-transition: .5s;
+  transition: .5s;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.category-uniform .your-fav-section .your-fav-block.g-container #your-fav-slider .slider-shirt-premier .overlay {
+  max-height: 40%;
+  -webkit-transition: max-height .15s ease-out;
+  transition: max-height .15s ease-out;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0)), to(#000));
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0, #000 100%);
+  -webkit-transition: all height .5s ease-in-out;
+  transition: all height .5s ease-in-out;
+}
+
+.category-uniform .your-fav-section .your-fav-block.g-container #your-fav-slider .splide__arrows {
+  display: none;
+}
+
+.category-uniform .your-fav-section .your-fav-block.g-container #your-fav-slider .splide__arrows.g-container {
   max-width: 1100px;
 }
 
-.racing-suit-page .shirt-premier-section .shirt-premier-block.g-container #shirt-premier-slider .splide__arrows.g-container .splide__arrow--prev {
+.category-uniform .your-fav-section .your-fav-block.g-container #your-fav-slider .splide__arrows.g-container .splide__arrow--prev {
   right: 4rem;
   left: unset;
   background-color: transparent;
 }
 
-.racing-suit-page .shirt-premier-section .shirt-premier-block.g-container #shirt-premier-slider .splide__arrows.g-container .splide__arrow--next {
+.category-uniform .your-fav-section .your-fav-block.g-container #your-fav-slider .splide__arrows.g-container .splide__arrow--next {
   background-color: transparent;
 }
 
-.racing-suit-page .shirt-premier-section .shirt-premier-block.g-container #shirt-premier-slider .splide__pagination {
+.category-uniform .your-fav-section .your-fav-block.g-container #your-fav-slider .splide__pagination {
   display: none;
 }
 
-.racing-suit-page .shirt-premier-section .shirt-premier-block .read-more-block {
+.category-uniform .your-fav-section .your-fav-bg {
+  padding: 25px 0 60px;
+}
+
+.category-uniform .title-collection {
+  font-size: 26px;
+  font-weight: 500;
+  margin-bottom: 25px;
+}
+
+.category-uniform .shirt-premier-section .shirt-premier-block {
+  padding-right: 0;
+}
+
+.category-uniform .shirt-premier-section .shirt-premier-block.g-container {
+  max-width: 100%;
+  padding: 0;
+}
+
+.category-uniform .shirt-premier-section .shirt-premier-block.g-container.test {
+  max-width: 1160px;
+}
+
+.category-uniform .shirt-premier-section .shirt-premier-block.g-container #shirt-premier-slider a:hover .slider-shirt-premier .overlay {
+  max-height: 100%;
+  -webkit-transition: max-height .25s ease-in;
+  transition: max-height .25s ease-in;
+}
+
+.category-uniform .shirt-premier-section .shirt-premier-block.g-container #shirt-premier-slider a:hover .slider-shirt-premier h5 {
+  margin-bottom: 7rem;
+  color: #ffbe00;
+}
+
+.category-uniform .shirt-premier-section .shirt-premier-block.g-container #shirt-premier-slider .slider-shirt-premier {
+  min-height: 278px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+}
+
+.category-uniform .shirt-premier-section .shirt-premier-block.g-container #shirt-premier-slider .slider-shirt-premier.-shirt-premier-01 {
+  background: url(../images/shirt-01.png) center center;
+  background-size: cover;
+}
+
+.category-uniform .shirt-premier-section .shirt-premier-block.g-container #shirt-premier-slider .slider-shirt-premier.-shirt-premier-02 {
+  background: url(../images/shirt-02.png) center center;
+  background-size: cover;
+}
+
+.category-uniform .shirt-premier-section .shirt-premier-block.g-container #shirt-premier-slider .slider-shirt-premier.-shirt-premier-03 {
+  background: url(../images/shirt-03.png) center center;
+  background-size: cover;
+}
+
+.category-uniform .shirt-premier-section .shirt-premier-block.g-container #shirt-premier-slider .slider-shirt-premier.-shirt-premier-04 {
+  background: url(../images/shirt-04.png) center center;
+  background-size: cover;
+}
+
+.category-uniform .shirt-premier-section .shirt-premier-block.g-container #shirt-premier-slider .slider-shirt-premier.-shirt-premier-05 {
+  background: url(../images/shirt-05.png) center center;
+  background-size: cover;
+}
+
+.category-uniform .shirt-premier-section .shirt-premier-block.g-container #shirt-premier-slider .slider-shirt-premier h5 {
+  width: 100%;
+  text-align: center;
+  font-size: 26px;
+  font-family: "Agency FB";
+  z-index: 1;
+  margin-bottom: 2rem;
+  -webkit-transition: .5s;
+  transition: .5s;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.category-uniform .shirt-premier-section .shirt-premier-block.g-container #shirt-premier-slider .slider-shirt-premier .overlay {
+  max-height: 40%;
+  -webkit-transition: max-height .15s ease-out;
+  transition: max-height .15s ease-out;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0)), to(#000));
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0, #000 100%);
+  -webkit-transition: all height .5s ease-in-out;
+  transition: all height .5s ease-in-out;
+}
+
+.category-uniform .shirt-premier-section .shirt-premier-block.g-container #shirt-premier-slider .splide__arrows {
+  position: relative;
+  margin-top: 3rem;
+}
+
+.category-uniform .shirt-premier-section .shirt-premier-block.g-container #shirt-premier-slider .splide__arrows.g-container {
+  max-width: 1100px;
+}
+
+.category-uniform .shirt-premier-section .shirt-premier-block.g-container #shirt-premier-slider .splide__arrows.g-container .splide__arrow--prev {
+  right: 4rem;
+  left: unset;
+  background-color: transparent;
+}
+
+.category-uniform .shirt-premier-section .shirt-premier-block.g-container #shirt-premier-slider .splide__arrows.g-container .splide__arrow--next {
+  background-color: transparent;
+}
+
+.category-uniform .shirt-premier-section .shirt-premier-block.g-container #shirt-premier-slider .splide__pagination {
+  display: none;
+}
+
+.category-uniform .shirt-premier-section .shirt-premier-block.g-container #brand-slider a:hover .slider-shirt-premier .overlay {
+  max-height: 100%;
+  -webkit-transition: max-height .25s ease-in;
+  transition: max-height .25s ease-in;
+}
+
+.category-uniform .shirt-premier-section .shirt-premier-block.g-container #brand-slider a:hover .slider-shirt-premier h5 {
+  margin-bottom: 7rem;
+  color: #ffbe00;
+}
+
+.category-uniform .shirt-premier-section .shirt-premier-block.g-container #brand-slider .slider-shirt-premier {
+  min-height: 278px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+}
+
+.category-uniform .shirt-premier-section .shirt-premier-block.g-container #brand-slider .slider-shirt-premier.-shirt-premier-01 {
+  background: url(../images/nike-uniform.png) center center;
+  background-size: cover;
+}
+
+.category-uniform .shirt-premier-section .shirt-premier-block.g-container #brand-slider .slider-shirt-premier.-shirt-premier-02 {
+  background: url(../images/adidas-uniform.png) center center;
+  background-size: cover;
+}
+
+.category-uniform .shirt-premier-section .shirt-premier-block.g-container #brand-slider .slider-shirt-premier.-shirt-premier-03 {
+  background: url(../images/puma-uniform.png) center center;
+  background-size: cover;
+}
+
+.category-uniform .shirt-premier-section .shirt-premier-block.g-container #brand-slider .slider-shirt-premier h5 {
+  width: 100%;
+  text-align: center;
+  font-size: 26px;
+  font-family: "Agency FB";
+  z-index: 1;
+  margin-bottom: 2rem;
+  -webkit-transition: .5s;
+  transition: .5s;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.category-uniform .shirt-premier-section .shirt-premier-block.g-container #brand-slider .slider-shirt-premier .overlay {
+  max-height: 40%;
+  -webkit-transition: max-height .15s ease-out;
+  transition: max-height .15s ease-out;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0)), to(#000));
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0, #000 100%);
+  -webkit-transition: all height .5s ease-in-out;
+  transition: all height .5s ease-in-out;
+}
+
+.category-uniform .shirt-premier-section .shirt-premier-block.g-container #brand-slider .splide__arrows {
+  position: relative;
+  margin-top: 3rem;
+}
+
+.category-uniform .shirt-premier-section .shirt-premier-block.g-container #brand-slider .splide__arrows.g-container {
+  max-width: 1100px;
+}
+
+.category-uniform .shirt-premier-section .shirt-premier-block.g-container #brand-slider .splide__arrows.g-container .splide__arrow--prev {
+  right: 4rem;
+  left: unset;
+  background-color: transparent;
+}
+
+.category-uniform .shirt-premier-section .shirt-premier-block.g-container #brand-slider .splide__arrows.g-container .splide__arrow--next {
+  background-color: transparent;
+}
+
+.category-uniform .shirt-premier-section .shirt-premier-block.g-container #brand-slider .splide__pagination {
+  display: none;
+}
+
+.category-uniform .shirt-premier-section .shirt-premier-block > .title-brand {
+  max-width: 1160px;
+  margin: 20px auto 30px;
+  font-size: 26px;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 107px;
+  font-size: 24px;
+}
+
+.category-uniform .shirt-premier-section .shirt-premier-block .title-shirt-premier {
+  font-size: 26px;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.category-uniform .shirt-premier-section .shirt-premier-block .read-more-block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   margin-top: 1rem;
 }
 
-.racing-suit-page .shirt-premier-section .shirt-premier-block .read-more-block .btn-border {
+.category-uniform .shirt-premier-section .shirt-premier-block .read-more-block .btn-border {
   border: 1px solid #fff;
   width: auto;
   display: block;
   padding: 10px 3rem;
   border-radius: 5px;
-  font-family: "Prachason";
+  font-family: Prachason;
   font-size: 16px;
-  font-weight: normal;
+  font-weight: 400;
 }
 
-.racing-suit-page .shirt-premier-section .shirt-premier-block .read-more-block .btn-border:hover {
+.category-uniform .shirt-premier-section .shirt-premier-block .read-more-block .btn-border:hover {
   background-color: #fff;
   color: #000;
 }
 
-@media (max-width: 991px) {
-  .racing-suit-page .shirt-premier-section {
-    padding: 0;
-  }
-  .racing-suit-page .shirt-premier-section .shirt-premier-block {
-    padding-right: 0;
-  }
-  .racing-suit-page .shirt-premier-section .shirt-premier-block .title-shirt-premier {
-    text-align: center;
-  }
-  .racing-suit-page .shirt-premier-section #shirt-premier-slider .splide__arrows {
-    display: none;
-  }
+.category-uniform .shirt-premier-section .shirt-premier-block.brand-block > .title-brand {
+  margin-top: 58px;
 }
 
-.racing-suit-page .hot-product-section {
-  padding: 4rem 0;
+.category-uniform #shirt-premier-slider .splide__slide {
+  width: 370px !important;
+  height: 278px !important;
 }
 
-.racing-suit-page .hot-product-section .hot-product-block .grid-block {
+.category-uniform #brand-slider .splide__slide {
+  width: 370px !important;
+  height: 278px !important;
+}
+
+.category-uniform #your-fav-slider .splide__slide {
+  width: 210px !important;
+  height: 345px !important;
+}
+
+.category-uniform .hot-product-section .hot-product-block .grid-block {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 25px;
 }
 
-.racing-suit-page .hot-product-section .hot-product-block .grid-block .featured-img-block {
+.category-uniform .hot-product-section .hot-product-block .grid-block .featured-img-block {
   height: 270px;
 }
 
-.racing-suit-page .hot-product-section .hot-product-block .grid-block .featured-img-block .badge {
+.category-uniform .hot-product-section .hot-product-block .grid-block .featured-img-block .badge {
   font-size: 14px;
 }
 
-.racing-suit-page .hot-product-section .hot-product-block .grid-block .featured-img-block .badge.-r {
+.category-uniform .hot-product-section .hot-product-block .grid-block .featured-img-block .badge.-r {
   margin-top: 2rem;
 }
 
-.racing-suit-page .hot-product-section .read-more-block {
+.category-uniform .hot-product-section .read-more-block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
-.racing-suit-page .hot-product-section .read-more-block .btn-border {
+.category-uniform .hot-product-section .read-more-block .btn-border {
   display: block;
   width: auto;
   border: 1px solid #fff;
   border-radius: 5px;
   padding: 7px 3rem;
-  font-family: "Prachason";
+  font-family: Prachason;
   font-size: 16px;
+  margin-top: 63px;
 }
 
-.racing-suit-page .hot-product-section .read-more-block .btn-border:hover {
+.category-uniform .hot-product-section .read-more-block .btn-border:hover {
   background-color: #fff;
   color: #000;
 }
 
-@media (max-width: 991px) {
-  .racing-suit-page .hot-product-section .hot-product-block .grid-block {
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-  }
+.category-uniform .hot-product-section .post-items.-card .featured-img-block {
+  height: 270px;
+  width: 270px;
 }
 
-.racing-suit-page .national-team-section {
-  padding: 1rem 0;
-  padding-bottom: 7rem;
+.category-uniform .title-hot-product {
+  margin-bottom: 26px;
+  font-weight: 500;
+  font-size: 26px;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 0 0 34px;
 }
 
-.racing-suit-page .national-team-section .national-team-block .title-national-team {
+.category-uniform .national-team-section {
+  padding: 0;
+}
+
+.category-uniform .national-team-section .national-team-block {
+  padding-right: 0;
+}
+
+.category-uniform .national-team-section .national-team-block .title-national-team {
   font-size: 26px;
   margin-bottom: 1rem;
+  text-align: center;
 }
 
-.racing-suit-page .national-team-section .national-team-block.g-container #national-team-slider a:hover .slider-national-team .overlay {
+.category-uniform .national-team-section .national-team-block.g-container #national-team-slider a:hover .slider-national-team .overlay {
   max-height: 100%;
-  -webkit-transition: max-height 0.25s ease-in;
-  transition: max-height 0.25s ease-in;
+  -webkit-transition: max-height .25s ease-in;
+  transition: max-height .25s ease-in;
 }
 
-.racing-suit-page .national-team-section .national-team-block.g-container #national-team-slider a:hover .slider-national-team h5 {
+.category-uniform .national-team-section .national-team-block.g-container #national-team-slider a:hover .slider-national-team h5 {
   margin-bottom: 7rem;
   color: #ffbe00;
 }
 
-.racing-suit-page .national-team-section .national-team-block.g-container #national-team-slider .slider-national-team {
+.category-uniform .national-team-section .national-team-block.g-container #national-team-slider .slider-national-team {
   min-height: 250px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end;
 }
 
-.racing-suit-page .national-team-section .national-team-block.g-container #national-team-slider .slider-national-team.-national-team-01 {
+.category-uniform .national-team-section .national-team-block.g-container #national-team-slider .slider-national-team.-national-team-01 {
   background: url(../images/national-team-01.png) center center;
   background-size: cover;
 }
 
-.racing-suit-page .national-team-section .national-team-block.g-container #national-team-slider .slider-national-team.-national-team-02 {
+.category-uniform .national-team-section .national-team-block.g-container #national-team-slider .slider-national-team.-national-team-02 {
   background: url(../images/national-team-02.png) center center;
   background-size: cover;
 }
 
-.racing-suit-page .national-team-section .national-team-block.g-container #national-team-slider .slider-national-team.-national-team-03 {
+.category-uniform .national-team-section .national-team-block.g-container #national-team-slider .slider-national-team.-national-team-03 {
   background: url(../images/national-team-03.png) center center;
   background-size: cover;
 }
 
-.racing-suit-page .national-team-section .national-team-block.g-container #national-team-slider .slider-national-team.-national-team-04 {
+.category-uniform .national-team-section .national-team-block.g-container #national-team-slider .slider-national-team.-national-team-04 {
   background: url(../images/national-team-04.png) center center;
   background-size: cover;
 }
 
-.racing-suit-page .national-team-section .national-team-block.g-container #national-team-slider .slider-national-team.-national-team-05 {
+.category-uniform .national-team-section .national-team-block.g-container #national-team-slider .slider-national-team.-national-team-05 {
   background: url(../images/national-team-05.png) center center;
   background-size: cover;
 }
 
-.racing-suit-page .national-team-section .national-team-block.g-container #national-team-slider .slider-national-team h5 {
+.category-uniform .national-team-section .national-team-block.g-container #national-team-slider .slider-national-team h5 {
   width: 100%;
   text-align: center;
   font-size: 26px;
   font-family: "Agency FB";
   z-index: 1;
   margin-bottom: 2rem;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: .5s;
+  transition: .5s;
   text-transform: uppercase;
-  font-weight: normal;
+  font-weight: 400;
 }
 
-.racing-suit-page .national-team-section .national-team-block.g-container #national-team-slider .slider-national-team .overlay {
+.category-uniform .national-team-section .national-team-block.g-container #national-team-slider .slider-national-team .overlay {
   max-height: 40%;
-  -webkit-transition: max-height 0.15s ease-out;
-  transition: max-height 0.15s ease-out;
+  -webkit-transition: max-height .15s ease-out;
+  transition: max-height .15s ease-out;
   height: 100%;
   position: absolute;
   bottom: 0;
   right: 0;
   left: 0;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(black));
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, black 100%);
-  -webkit-transition: all height 0.5s ease-in-out;
-  transition: all height 0.5s ease-in-out;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0)), to(#000));
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0, #000 100%);
+  -webkit-transition: all height .5s ease-in-out;
+  transition: all height .5s ease-in-out;
 }
 
-.racing-suit-page .national-team-section .national-team-block.g-container #national-team-slider .splide__arrows {
+.category-uniform .national-team-section .national-team-block.g-container #national-team-slider .splide__arrows {
   position: relative;
   margin-top: 3rem;
 }
 
-.racing-suit-page .national-team-section .national-team-block.g-container #national-team-slider .splide__arrows.g-container {
+.category-uniform .national-team-section .national-team-block.g-container #national-team-slider .splide__arrows.g-container {
   max-width: 1100px;
 }
 
-.racing-suit-page .national-team-section .national-team-block.g-container #national-team-slider .splide__arrows.g-container .splide__arrow--prev {
+.category-uniform .national-team-section .national-team-block.g-container #national-team-slider .splide__arrows.g-container .splide__arrow--prev {
   right: 4rem;
   left: unset;
   background-color: transparent;
 }
 
-.racing-suit-page .national-team-section .national-team-block.g-container #national-team-slider .splide__arrows.g-container .splide__arrow--next {
+.category-uniform .national-team-section .national-team-block.g-container #national-team-slider .splide__arrows.g-container .splide__arrow--next {
   background-color: transparent;
 }
 
-.racing-suit-page .national-team-section .national-team-block.g-container #national-team-slider .splide__pagination {
+.category-uniform .national-team-section .national-team-block.g-container #national-team-slider .splide__pagination {
   display: none;
 }
 
-.racing-suit-page .national-team-section .national-team-block .read-more-block {
+.category-uniform .national-team-section .national-team-block .read-more-block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   margin-top: 1rem;
 }
 
-.racing-suit-page .national-team-section .national-team-block .read-more-block .btn-border {
+.category-uniform .national-team-section .national-team-block .read-more-block .btn-border {
   border: 1px solid #fff;
   width: auto;
   display: block;
   padding: 10px 3rem;
   border-radius: 5px;
-  font-family: "Prachason";
+  font-family: Prachason;
   font-size: 16px;
-  font-weight: normal;
+  font-weight: 400;
 }
 
-.racing-suit-page .national-team-section .national-team-block .read-more-block .btn-border:hover {
+.category-uniform .national-team-section .national-team-block .read-more-block .btn-border:hover {
   background-color: #fff;
   color: #000;
 }
 
+.category-uniform .national-team-section #national-team-slider .splide__arrows {
+  display: none;
+}
+
+.category-uniform .show-product-section {
+  padding-top: 4rem;
+  padding-top: 0;
+}
+
+.category-uniform .show-product-section .show-product-block .grid-block {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 25px;
+}
+
+.category-uniform .show-product-section .read-more-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.category-uniform .show-product-section .read-more-block .btn-border {
+  width: auto;
+  padding: 10px 3rem;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  font-family: Prachason;
+  font-weight: 400;
+  margin-top: 40px;
+  font-size: 16px;
+}
+
+.category-uniform .show-product-section .read-more-block .btn-border:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.category-uniform .post-items.-card .compare-block {
+  display: none;
+}
+
+.category-uniform .post-items.-card .title-item .title {
+  margin-bottom: -10px;
+}
+
+.category-uniform #football-shoes-slider-list .splide__slide {
+  padding: 0 40px;
+}
+
+.category-uniform .hero-slider-section .splide .splide__slide h2,
+.category-uniform .hero-slider-section .splide .splide__slide img {
+  position: relative;
+  z-index: 2;
+}
+
 @media (max-width: 991px) {
-  .racing-suit-page .national-team-section {
+  .category-uniform .hero-slider-section .splide .splide__slide {
+    min-height: 311px;
+  }
+  .category-uniform .hot-team-section {
+    padding: 2rem 0;
+  }
+  .category-uniform .your-fav-section .your-fav-block.g-container {
     padding: 0;
   }
-  .racing-suit-page .national-team-section .national-team-block {
-    padding-right: 0;
+  .category-uniform .shirt-premier-section {
+    padding: 0;
   }
-  .racing-suit-page .national-team-section .national-team-block .title-national-team {
-    text-align: center;
+  .category-uniform .hot-product-section .hot-product-block .grid-block {
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
   }
-  .racing-suit-page .national-team-section #national-team-slider .splide__arrows {
-    display: none;
+  .category-uniform .main-content {
+    padding-bottom: 60px;
   }
+  .d-md-none {
+    display: block !important;
+  }
+  .d-sm-none {
+    display: none !important;
+  }
+}
+
+.category-uniform .hot-team-section {
+  padding: 4rem 0;
+}
+
+.category-uniform .your-fav-section .your-fav-bg {
+  padding: 59px 0 155px;
+  background: url(../images/bg-your-fav-new.png) bottom;
+  background-size: cover;
+}
+
+.category-uniform .shirt-premier-section {
+  padding-top: 6px;
+}
+
+.category-uniform .hot-product-section {
+  padding: 0 0 4rem;
+  margin-top: -42px;
+}
+
+.category-uniform .national-team-section {
+  padding: 1rem 0;
+  padding-bottom: 7rem;
+}
+
+.category-uniform .your-fav-section .your-fav-heading h2,
+.category-uniform .your-fav-section .your-fav-heading h4 {
+  text-align: center;
+  margin: 5px 10px;
+}
+
+.category-uniform .shirt-premier-section #brand-slider .splide__arrows,
+.category-uniform .shirt-premier-section #shirt-premier-slider .splide__arrows,
+.category-uniform .your-fav-section #your-fav-slider .splide__arrows {
+  display: none;
+}
+
+.d-md-none {
+  display: none !important;
+}
+
+.post-items.-card .title-item .category {
+  font-size: 14px;
+}
+
+.post-items.-card .title-item .title {
+  font-size: 16px;
+}
+
+.post-items.-card .content-item .price-block .price {
+  font-size: 14px;
+}
+
+.post-items.-card .featured-img-block {
+  max-height: 187px;
+}
+
+.g-container {
+  padding: 0 10px;
+}
+
+.d-sm-none {
+  display: block !important;
 }
 
 /* ====================== Football Equipment Page ====================== */
@@ -4781,7 +5193,8 @@ footer.main-footer .bottom-ft p {
 }
 
 .football-equipment-page .hero-slider-section .splide .splide__slide {
-  min-height: 600px;
+  min-height: 467px;
+  max-height: 311px;
 }
 
 .football-equipment-page .hero-slider-section .splide .splide__slide .g-container {
@@ -4791,8 +5204,9 @@ footer.main-footer .bottom-ft p {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  max-width: 1160px;
 }
 
 .football-equipment-page .hero-slider-section .splide .splide__slide .g-container .grid-block .grid-item {
@@ -4801,39 +5215,39 @@ footer.main-footer .bottom-ft p {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
 }
 
 .football-equipment-page .hero-slider-section .splide .splide__slide .g-container .grid-block .grid-item h2 {
   margin: 0;
   margin-top: 10px;
   font-size: 26px;
-  font-family: "Prachason";
+  font-family: Prachason;
 }
 
 .football-equipment-page .hero-slider-section .splide .splide__slide.--slide-01 {
   background: url(../images/football-equipment-slider.png) center center;
+  background-size: cover;
+  background: url(../images/football-equipment-slider-mb.png) center center;
   background-size: cover;
 }
 
 .football-equipment-page .hero-slider-section .splide .splide__slide.--slide-02 {
   background: url(../images/football-equipment-slider.png) center center;
   background-size: cover;
+  background: url(../images/football-equipment-slider-mb.png) center center;
+  background-size: cover;
 }
 
 .football-equipment-page .hero-slider-section .splide .splide__slide.--slide-03 {
   background: url(../images/football-equipment-slider.png) center center;
   background-size: cover;
-}
-
-.football-equipment-page .hero-slider-section .splide .splide__slide h2,
-.football-equipment-page .hero-slider-section .splide .splide__slide img {
-  position: relative;
-  z-index: 2;
+  background: url(../images/football-equipment-slider-mb.png) center center;
+  background-size: cover;
 }
 
 .football-equipment-page .hero-slider-section .splide .splide__slide h2 {
@@ -4848,9 +5262,9 @@ footer.main-footer .bottom-ft p {
   z-index: 2;
   padding: 7px 4rem;
   border-radius: 5px;
-  font-family: "Prachason";
+  font-family: Prachason;
   font-size: 16px;
-  font-weight: normal;
+  font-weight: 400;
 }
 
 .football-equipment-page .hero-slider-section .splide .splide__slide .btn-border:hover {
@@ -4861,81 +5275,49 @@ footer.main-footer .bottom-ft p {
 .football-equipment-page .hero-slider-section .splide .splide__slide .overlay {
   display: block !important;
   max-width: 60%;
-  -webkit-transition: max-height 0.15s ease-out;
-  transition: max-height 0.15s ease-out;
+  -webkit-transition: max-height .15s ease-out;
+  transition: max-height .15s ease-out;
   width: 100%;
   height: 100%;
   position: absolute;
   bottom: 0;
   right: 0;
   left: 0;
-  background: -webkit-gradient(linear, right top, left top, from(rgba(22, 22, 22, 0)), to(#161616));
-  background: linear-gradient(270deg, rgba(22, 22, 22, 0) 0%, #161616 100%);
-  -webkit-transition: all height 0.5s ease-in-out;
-  transition: all height 0.5s ease-in-out;
+  background: -webkit-gradient(linear, right top, left top, color-stop(0, rgba(22, 22, 22, 0)), to(#161616));
+  background: linear-gradient(270deg, rgba(22, 22, 22, 0) 0, #161616 100%);
+  -webkit-transition: all height .5s ease-in-out;
+  transition: all height .5s ease-in-out;
 }
 
 .football-equipment-page .hero-slider-section .splide .splide__arrows .splide__arrow {
   opacity: 1;
-  background: transparent;
+  background: 0 0;
+  opacity: 1;
+  background: 0 0;
 }
 
 .football-equipment-page .hero-slider-section .splide .splide__arrows .splide__arrow .arrow-left {
+  width: 100px;
   width: 100px;
 }
 
 .football-equipment-page .hero-slider-section .splide .splide__arrows .splide__arrow--prev {
   left: 13%;
+  left: 13%;
 }
 
 .football-equipment-page .hero-slider-section .splide .splide__arrows .splide__arrow--next {
   right: 13%;
-}
-
-@media (max-width: 991px) {
-  .football-equipment-page .hero-slider-section .splide .splide__slide {
-    min-height: 320px;
-  }
-  .football-equipment-page .hero-slider-section .splide .splide__slide .g-container {
-    max-width: 1160px;
-  }
-  .football-equipment-page .hero-slider-section .splide .splide__slide.--slide-01 {
-    background: url(../images/football-equipment-slider-mb.png) center center;
-    background-size: cover;
-  }
-  .football-equipment-page .hero-slider-section .splide .splide__slide.--slide-02 {
-    background: url(../images/football-equipment-slider-mb.png) center center;
-    background-size: cover;
-  }
-  .football-equipment-page .hero-slider-section .splide .splide__slide.--slide-03 {
-    background: url(../images/football-equipment-slider-mb.png) center center;
-    background-size: cover;
-  }
-  .football-equipment-page .hero-slider-section .splide .splide__arrows .splide__arrow {
-    opacity: 1;
-    background: transparent;
-  }
-  .football-equipment-page .hero-slider-section .splide .splide__arrows .splide__arrow .arrow-left {
-    width: 100px;
-  }
-  .football-equipment-page .hero-slider-section .splide .splide__arrows .splide__arrow--prev {
-    left: 13%;
-  }
-  .football-equipment-page .hero-slider-section .splide .splide__arrows .splide__arrow--next {
-    right: 13%;
-  }
-}
-
-.football-equipment-page .pro-section {
-  padding: 4rem 0;
+  right: 13%;
 }
 
 .football-equipment-page .pro-section .pro-block .grid-block {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 25px;
+  row-gap: 16px;
 }
 
 .football-equipment-page .pro-section .pro-block .grid-block .grid-item {
@@ -4944,8 +5326,8 @@ footer.main-footer .bottom-ft p {
 
 .football-equipment-page .pro-section .pro-block .grid-block .grid-item a:hover .pro .overlay {
   max-height: 100%;
-  -webkit-transition: max-height 0.25s ease-in;
-  transition: max-height 0.25s ease-in;
+  -webkit-transition: max-height .25s ease-in;
+  transition: max-height .25s ease-in;
 }
 
 .football-equipment-page .pro-section .pro-block .grid-block .grid-item a:hover .pro h4.head-pro {
@@ -4959,13 +5341,13 @@ footer.main-footer .bottom-ft p {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 .football-equipment-page .pro-section .pro-block .grid-block .grid-item .pro .content-block {
@@ -4979,23 +5361,25 @@ footer.main-footer .bottom-ft p {
   width: 100%;
   text-align: left;
   font-size: 26px;
-  font-family: "Prachason";
+  font-family: Prachason;
   z-index: 1;
   margin-bottom: 2rem;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: .5s;
+  transition: .5s;
   text-transform: uppercase;
   margin: 0;
   margin-bottom: 1rem;
+  font-weight: 500;
 }
 
 .football-equipment-page .pro-section .pro-block .grid-block .grid-item .pro .content-block a.btn-border {
   width: auto;
-  font-family: "Prachason";
-  font-weight: normal;
+  font-family: Prachason;
+  font-weight: 400;
   border: 1px solid #fff;
   padding: 7px 4rem;
   border-radius: 5px;
+  font-size: 16px;
 }
 
 .football-equipment-page .pro-section .pro-block .grid-block .grid-item .pro .content-block a.btn-border:hover {
@@ -5015,41 +5399,35 @@ footer.main-footer .bottom-ft p {
 
 .football-equipment-page .pro-section .pro-block .grid-block .grid-item .pro .overlay {
   max-height: 40%;
-  -webkit-transition: max-height 0.15s ease-out;
-  transition: max-height 0.15s ease-out;
+  -webkit-transition: max-height .15s ease-out;
+  transition: max-height .15s ease-out;
   height: 100%;
   position: absolute;
   bottom: 0;
   right: 0;
   left: 0;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(black));
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, black 100%);
-  -webkit-transition: all height 0.5s ease-in-out;
-  transition: all height 0.5s ease-in-out;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0)), to(#000));
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0, #000 100%);
+  -webkit-transition: all height .5s ease-in-out;
+  transition: all height .5s ease-in-out;
 }
 
-@media (max-width: 991px) {
-  .football-equipment-page .pro-section {
-    padding: 2rem 0;
-  }
-  .football-equipment-page .pro-section .pro-block .title-pro {
-    text-align: center;
-  }
-  .football-equipment-page .pro-section .pro-block .grid-block {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-  }
+.football-equipment-page .pro-section .pro-block .title-pro {
+  text-align: center;
+  margin-top: 64px;
+  margin-bottom: 38px;
 }
 
 .football-equipment-page .show-product-section {
   padding-top: 4rem;
+  padding-top: 43px;
 }
 
 .football-equipment-page .show-product-section .show-product-block .grid-block {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 25px;
 }
 
@@ -5058,11 +5436,20 @@ footer.main-footer .bottom-ft p {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .football-equipment-page .show-product-section .read-more-block .btn-border {
@@ -5070,32 +5457,30 @@ footer.main-footer .bottom-ft p {
   padding: 10px 3rem;
   border: 1px solid #fff;
   border-radius: 5px;
-  font-family: "Prachason";
-  font-weight: normal;
+  font-family: Prachason;
+  font-weight: 400;
+  width: auto;
+  padding: 10px 3rem;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  font-family: Prachason;
+  font-weight: 400;
+  margin-top: 65px;
+  font-size: 16px;
 }
 
 .football-equipment-page .show-product-section .read-more-block .btn-border:hover {
   background-color: #fff;
   color: #000;
-}
-
-@media (max-width: 991px) {
-  .football-equipment-page .show-product-section .show-product-block .grid-block {
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-    gap: 15px;
-  }
-}
-
-.football-equipment-page .football-equipment-section {
-  padding: 4rem 0;
+  background-color: #fff;
+  color: #000;
 }
 
 .football-equipment-page .football-equipment-section .football-equipment-block .grid-block {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 25px;
 }
 
@@ -5105,8 +5490,8 @@ footer.main-footer .bottom-ft p {
 
 .football-equipment-page .football-equipment-section .football-equipment-block .grid-block .grid-item a:hover .football-equipment .overlay {
   max-height: 100%;
-  -webkit-transition: max-height 0.25s ease-in;
-  transition: max-height 0.25s ease-in;
+  -webkit-transition: max-height .25s ease-in;
+  transition: max-height .25s ease-in;
 }
 
 .football-equipment-page .football-equipment-section .football-equipment-block .grid-block .grid-item a:hover .football-equipment h4.head-football-equipment {
@@ -5120,24 +5505,24 @@ footer.main-footer .bottom-ft p {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 .football-equipment-page .football-equipment-section .football-equipment-block .grid-block .grid-item .football-equipment h4.head-football-equipment {
   width: 100%;
   text-align: center;
   font-size: 18px;
-  font-family: "Prachason";
+  font-family: Prachason;
   z-index: 1;
   margin-bottom: 2rem;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: .5s;
+  transition: .5s;
   text-transform: uppercase;
   margin: 0;
   margin-bottom: 1rem;
@@ -5146,8 +5531,8 @@ footer.main-footer .bottom-ft p {
 
 .football-equipment-page .football-equipment-section .football-equipment-block .grid-block .grid-item .football-equipment a.btn-border {
   width: auto;
-  font-family: "Prachason";
-  font-weight: normal;
+  font-family: Prachason;
+  font-weight: 400;
   border: 1px solid #fff;
   padding: 7px 4rem;
   border-radius: 5px;
@@ -5180,17 +5565,17 @@ footer.main-footer .bottom-ft p {
 
 .football-equipment-page .football-equipment-section .football-equipment-block .grid-block .grid-item .football-equipment .overlay {
   max-height: 40%;
-  -webkit-transition: max-height 0.15s ease-out;
-  transition: max-height 0.15s ease-out;
+  -webkit-transition: max-height .15s ease-out;
+  transition: max-height .15s ease-out;
   height: 100%;
   position: absolute;
   bottom: 0;
   right: 0;
   left: 0;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(black));
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, black 100%);
-  -webkit-transition: all height 0.5s ease-in-out;
-  transition: all height 0.5s ease-in-out;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0)), to(#000));
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0, #000 100%);
+  -webkit-transition: all height .5s ease-in-out;
+  transition: all height .5s ease-in-out;
 }
 
 .football-equipment-page .football-equipment-section .read-more-block {
@@ -5198,11 +5583,11 @@ footer.main-footer .bottom-ft p {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .football-equipment-page .football-equipment-section .read-more-block .btn-border {
@@ -5211,7 +5596,7 @@ footer.main-footer .bottom-ft p {
   border: 1px solid #fff;
   border-radius: 5px;
   padding: 7px 3rem;
-  font-family: "Prachason";
+  font-family: Prachason;
   font-size: 16px;
 }
 
@@ -5220,919 +5605,357 @@ footer.main-footer .bottom-ft p {
   color: #000;
 }
 
+.football-equipment-page .shirt-premier-section .shirt-premier-block.g-container {
+  max-width: 100%;
+  padding: 0;
+}
+
+.football-equipment-page .shirt-premier-section .shirt-premier-block.g-container #shirt-premier-slider a:hover .slider-shirt-premier .overlay {
+  max-height: 100%;
+  -webkit-transition: max-height .25s ease-in;
+  transition: max-height .25s ease-in;
+}
+
+.football-equipment-page .shirt-premier-section .shirt-premier-block.g-container #shirt-premier-slider a:hover .slider-shirt-premier h5 {
+  margin-bottom: 7rem;
+  color: #ffbe00;
+}
+
+.football-equipment-page .shirt-premier-section .shirt-premier-block.g-container #shirt-premier-slider .slider-shirt-premier {
+  min-height: 278px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+}
+
+.football-equipment-page .shirt-premier-section .shirt-premier-block.g-container #shirt-premier-slider .slider-shirt-premier.-shirt-premier-01 {
+  background: url(../images/shin-guard.png) center center;
+  background-size: cover;
+}
+
+.football-equipment-page .shirt-premier-section .shirt-premier-block.g-container #shirt-premier-slider .slider-shirt-premier.-shirt-premier-02 {
+  background: url(../images/bag.png) center center;
+  background-size: cover;
+}
+
+.football-equipment-page .shirt-premier-section .shirt-premier-block.g-container #shirt-premier-slider .slider-shirt-premier.-shirt-premier-03 {
+  background: url(../images/stud.png) center center;
+  background-size: cover;
+}
+
+.football-equipment-page .shirt-premier-section .shirt-premier-block.g-container #shirt-premier-slider .slider-shirt-premier.-shirt-premier-04 {
+  background: url(../images/knee-support.png) center center;
+  background-size: cover;
+}
+
+.football-equipment-page .shirt-premier-section .shirt-premier-block.g-container #shirt-premier-slider .slider-shirt-premier.-shirt-premier-05 {
+  background: url(../images/football.png) center center;
+  background-size: cover;
+}
+
+.football-equipment-page .shirt-premier-section .shirt-premier-block.g-container #shirt-premier-slider .slider-shirt-premier h5 {
+  width: 100%;
+  text-align: center;
+  font-size: 24px;
+  font-family: Prachason;
+  z-index: 1;
+  margin-bottom: 2rem;
+  -webkit-transition: .5s;
+  transition: .5s;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.football-equipment-page .shirt-premier-section .shirt-premier-block.g-container #shirt-premier-slider .slider-shirt-premier .overlay {
+  max-height: 40%;
+  -webkit-transition: max-height .15s ease-out;
+  transition: max-height .15s ease-out;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0)), to(#000));
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0, #000 100%);
+  -webkit-transition: all height .5s ease-in-out;
+  transition: all height .5s ease-in-out;
+}
+
+.football-equipment-page .shirt-premier-section .shirt-premier-block.g-container #shirt-premier-slider .splide__arrows {
+  position: relative;
+  margin-top: 3rem;
+}
+
+.football-equipment-page .shirt-premier-section .shirt-premier-block.g-container #shirt-premier-slider .splide__arrows.g-container {
+  max-width: 1100px;
+}
+
+.football-equipment-page .shirt-premier-section .shirt-premier-block.g-container #shirt-premier-slider .splide__arrows.g-container .splide__arrow--prev {
+  right: 4rem;
+  left: unset;
+  background-color: transparent;
+}
+
+.football-equipment-page .shirt-premier-section .shirt-premier-block.g-container #shirt-premier-slider .splide__arrows.g-container .splide__arrow--next {
+  background-color: transparent;
+}
+
+.football-equipment-page .shirt-premier-section .shirt-premier-block.g-container #shirt-premier-slider .splide__pagination {
+  display: none;
+}
+
+.football-equipment-page .shirt-premier-section .shirt-premier-block.g-container #brand-slider {
+  margin-bottom: 141px;
+  margin-bottom: 101px;
+}
+
+.football-equipment-page .shirt-premier-section .shirt-premier-block.g-container #brand-slider .slider-shirt-premier {
+  min-height: 278px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+}
+
+.football-equipment-page .shirt-premier-section .shirt-premier-block.g-container #brand-slider .slider-shirt-premier.-shirt-premier-01 {
+  background: url(../images/bag.png) center center;
+  background-size: cover;
+}
+
+.football-equipment-page .shirt-premier-section .shirt-premier-block.g-container #brand-slider .slider-shirt-premier.-shirt-premier-02 {
+  background: url(../images/crep.png) center center;
+  background-size: cover;
+}
+
+.football-equipment-page .shirt-premier-section .shirt-premier-block.g-container #brand-slider .slider-shirt-premier.-shirt-premier-03 {
+  background: url(../images/shirt-05.png) center center;
+  background-size: cover;
+}
+
+.football-equipment-page .shirt-premier-section .shirt-premier-block.g-container #brand-slider .slider-shirt-premier.-shirt-premier-04 {
+  background: url(../images/stud.png) center center;
+  background-size: cover;
+}
+
+.football-equipment-page .shirt-premier-section .shirt-premier-block.g-container #brand-slider .slider-shirt-premier.-shirt-premier-05 {
+  background: url(../images/knee-support.png) center center;
+  background-size: cover;
+}
+
+.football-equipment-page .shirt-premier-section .shirt-premier-block.g-container #brand-slider .slider-shirt-premier h5 {
+  width: 100%;
+  text-align: center;
+  font-size: 24px;
+  font-family: Prachason;
+  z-index: 1;
+  margin-bottom: 2rem;
+  -webkit-transition: .5s;
+  transition: .5s;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.football-equipment-page .shirt-premier-section .shirt-premier-block.g-container #brand-slider .slider-shirt-premier .overlay {
+  max-height: 40%;
+  -webkit-transition: max-height .15s ease-out;
+  transition: max-height .15s ease-out;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0)), to(#000));
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0, #000 100%);
+  -webkit-transition: all height .5s ease-in-out;
+  transition: all height .5s ease-in-out;
+}
+
+.football-equipment-page .shirt-premier-section .shirt-premier-block.g-container #brand-slider .splide__arrows {
+  position: relative;
+  margin-top: 3rem;
+}
+
+.football-equipment-page .shirt-premier-section .shirt-premier-block.g-container #brand-slider .splide__arrows.g-container {
+  max-width: 1100px;
+}
+
+.football-equipment-page .shirt-premier-section .shirt-premier-block.g-container #brand-slider .splide__arrows.g-container .splide__arrow--prev {
+  right: 4rem;
+  left: unset;
+  background-color: transparent;
+}
+
+.football-equipment-page .shirt-premier-section .shirt-premier-block.g-container #brand-slider .splide__arrows.g-container .splide__arrow--next {
+  background-color: transparent;
+}
+
+.football-equipment-page .shirt-premier-section .shirt-premier-block.g-container #brand-slider .splide__pagination {
+  display: none;
+}
+
+.football-equipment-page .shirt-premier-section .shirt-premier-block.g-container #brand-slider a:hover .slider-shirt-premier h5 {
+  margin-bottom: 7rem;
+}
+
+.football-equipment-page .shirt-premier-section .shirt-premier-block.g-container #brand-slider a:hover .slider-shirt-premier .overlay {
+  max-height: 100%;
+}
+
+.football-equipment-page .shirt-premier-section .shirt-premier-block.g-container.test {
+  max-width: 1160px;
+}
+
+.football-equipment-page .shirt-premier-section .shirt-premier-block > .title-brand {
+  max-width: 1160px;
+  margin: 68px auto 20px;
+  font-size: 26px;
+  font-weight: 500;
+  text-align: center;
+  font-size: 24px;
+  padding-bottom: 13px;
+}
+
+.football-equipment-page .shirt-premier-section .shirt-premier-block .title-shirt-premier {
+  font-size: 26px;
+  margin-bottom: 1rem;
+}
+
+.football-equipment-page #shirt-premier-slider .splide__slide {
+  width: 370px !important;
+  height: 278px !important;
+}
+
+.football-equipment-page #brand-slider .splide__slide {
+  width: 370px !important;
+  height: 278px !important;
+}
+
+.football-equipment-page .hot-product-section {
+  padding: 0 0 4rem;
+  margin-top: 111px;
+}
+
+.football-equipment-page .hot-product-section .hot-product-block .grid-block {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 25px;
+}
+
+.football-equipment-page .hot-product-section .hot-product-block .grid-block .featured-img-block {
+  height: 270px;
+}
+
+.football-equipment-page .hot-product-section .hot-product-block .grid-block .featured-img-block .badge {
+  font-size: 14px;
+}
+
+.football-equipment-page .hot-product-section .hot-product-block .grid-block .featured-img-block .badge.-r {
+  margin-top: 2rem;
+}
+
+.football-equipment-page .hot-product-section .read-more-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.football-equipment-page .hot-product-section .read-more-block .btn-border {
+  display: block;
+  width: auto;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  padding: 7px 3rem;
+  font-family: Prachason;
+  font-size: 16px;
+  margin-top: 53px;
+  font-weight: 400;
+}
+
+.football-equipment-page .hot-product-section .read-more-block .btn-border:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.football-equipment-page .title-hot-product {
+  font-weight: 500;
+  font-size: 26px;
+  text-align: center;
+  margin-bottom: 33px;
+  font-size: 24px;
+}
+
+.football-equipment-page .post-items.-card .compare-block {
+  display: none;
+}
+
+.football-equipment-page .title-pro {
+  font-size: 26px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.football-equipment-page #football-shoes-slider-list {
+  max-height: 467px;
+}
+
+.football-equipment-page #football-shoes-slider-list .splide__slide {
+  padding: 0 40px;
+}
+
+.football-equipment-page .hero-slider-section .splide .splide__slide h2,
+.football-equipment-page .hero-slider-section .splide .splide__slide img {
+  position: relative;
+  z-index: 2;
+}
+
 @media (max-width: 991px) {
+  .football-equipment-page .hero-slider-section .splide .splide__slide {
+    min-height: 311px;
+  }
+  .football-equipment-page .pro-section {
+    padding: 2rem 0 58px;
+  }
+  .football-equipment-page .show-product-section .show-product-block .grid-block {
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+  }
   .football-equipment-page .football-equipment-section .football-equipment-block .title-football-equipment {
     text-align: center;
   }
-  .football-equipment-page .football-equipment-section .football-equipment-block .grid-block {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-  }
 }
 
-/* ====================== T-Shirt Page ====================== */
-.t-shirt-page {
-  background-color: #161616;
+.football-equipment-page .pro-section {
+  padding: 4px 0 54px;
 }
 
-.t-shirt-page .hero-slider-section .splide .splide__slide {
-  min-height: 600px;
+.football-equipment-page .show-product-section {
+  padding-top: 4rem;
 }
 
-.t-shirt-page .hero-slider-section .splide .splide__slide .g-container {
-  max-width: 60vw;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.t-shirt-page .hero-slider-section .splide .splide__slide .g-container .grid-block .grid-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-}
-
-.t-shirt-page .hero-slider-section .splide .splide__slide .g-container .grid-block .grid-item h2 {
-  margin: 0;
-  margin-top: 10px;
-  font-size: 26px;
-  font-family: "Prachason";
-}
-
-.t-shirt-page .hero-slider-section .splide .splide__slide.--slide-01 {
-  background: url(../images/t-shirt-slider.png) center center;
-  background-size: cover;
-}
-
-.t-shirt-page .hero-slider-section .splide .splide__slide.--slide-02 {
-  background: url(../images/t-shirt-slider.png) center center;
-  background-size: cover;
-}
-
-.t-shirt-page .hero-slider-section .splide .splide__slide.--slide-03 {
-  background: url(../images/t-shirt-slider.png) center center;
-  background-size: cover;
-}
-
-.t-shirt-page .hero-slider-section .splide .splide__slide h2,
-.t-shirt-page .hero-slider-section .splide .splide__slide img {
-  position: relative;
-  z-index: 2;
-}
-
-.t-shirt-page .hero-slider-section .splide .splide__slide h2 {
-  font-family: "Agency FB";
-}
-
-.t-shirt-page .hero-slider-section .splide .splide__slide .btn-border {
-  border: 1px solid #fff;
-  width: auto;
-  display: block;
-  position: relative;
-  z-index: 2;
-  padding: 7px 4rem;
-  border-radius: 5px;
-  font-family: "Prachason";
-  font-size: 16px;
-  font-weight: normal;
-}
-
-.t-shirt-page .hero-slider-section .splide .splide__slide .btn-border:hover {
-  background-color: #fff;
-  color: #000;
-}
-
-.t-shirt-page .hero-slider-section .splide .splide__slide .overlay {
-  display: block !important;
-  max-width: 60%;
-  -webkit-transition: max-height 0.15s ease-out;
-  transition: max-height 0.15s ease-out;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  background: -webkit-gradient(linear, right top, left top, from(rgba(22, 22, 22, 0)), to(#161616));
-  background: linear-gradient(270deg, rgba(22, 22, 22, 0) 0%, #161616 100%);
-  -webkit-transition: all height 0.5s ease-in-out;
-  transition: all height 0.5s ease-in-out;
-}
-
-.t-shirt-page .hero-slider-section .splide .splide__arrows .splide__arrow {
-  opacity: 1;
-  background: transparent;
-}
-
-.t-shirt-page .hero-slider-section .splide .splide__arrows .splide__arrow .arrow-left {
-  width: 100px;
-}
-
-.t-shirt-page .hero-slider-section .splide .splide__arrows .splide__arrow--prev {
-  left: 13%;
-}
-
-.t-shirt-page .hero-slider-section .splide .splide__arrows .splide__arrow--next {
-  right: 13%;
-}
-
-@media (max-width: 991px) {
-  .t-shirt-page .hero-slider-section .splide .splide__slide {
-    min-height: 320px;
-  }
-  .t-shirt-page .hero-slider-section .splide .splide__slide .g-container {
-    max-width: 1160px;
-  }
-  .t-shirt-page .hero-slider-section .splide .splide__slide.--slide-01 {
-    background: url(../images/t-shirt-slider-mb.png) center center;
-    background-size: cover;
-  }
-  .t-shirt-page .hero-slider-section .splide .splide__slide.--slide-02 {
-    background: url(../images/t-shirt-slider-mb.png) center center;
-    background-size: cover;
-  }
-  .t-shirt-page .hero-slider-section .splide .splide__slide.--slide-03 {
-    background: url(../images/t-shirt-slider-mb.png) center center;
-    background-size: cover;
-  }
-  .t-shirt-page .hero-slider-section .splide .splide__arrows .splide__arrow {
-    opacity: 1;
-    background: transparent;
-  }
-  .t-shirt-page .hero-slider-section .splide .splide__arrows .splide__arrow .arrow-left {
-    width: 100px;
-  }
-  .t-shirt-page .hero-slider-section .splide .splide__arrows .splide__arrow--prev {
-    left: 13%;
-  }
-  .t-shirt-page .hero-slider-section .splide .splide__arrows .splide__arrow--next {
-    right: 13%;
-  }
-}
-
-.t-shirt-page .t-shirt-brand-section {
+.football-equipment-page .football-equipment-section {
   padding: 4rem 0;
 }
 
-.t-shirt-page .t-shirt-brand-section .t-shirt-brand-block .grid-block {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 25px;
+.football-equipment-page #shoes-hot-slider .splide__pagination, .category-uniform #shoes-hot-slider .splide__pagination {
+  display: none;
 }
 
-.t-shirt-page .t-shirt-brand-section .t-shirt-brand-block .grid-block .grid-item {
-  position: relative;
-}
-
-.t-shirt-page .t-shirt-brand-section .t-shirt-brand-block .grid-block .grid-item a:hover .t-shirt-brand .overlay {
-  max-height: 100%;
-  -webkit-transition: max-height 0.25s ease-in;
-  transition: max-height 0.25s ease-in;
-}
-
-.t-shirt-page .t-shirt-brand-section .t-shirt-brand-block .grid-block .grid-item a:hover .t-shirt-brand img {
-  margin-bottom: 12rem;
-}
-
-.t-shirt-page .t-shirt-brand-section .t-shirt-brand-block .grid-block .grid-item .t-shirt-brand {
-  min-height: 400px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-.t-shirt-page .t-shirt-brand-section .t-shirt-brand-block .grid-block .grid-item .t-shirt-brand img {
-  position: relative;
-  z-index: 1;
-  margin-bottom: 2rem;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-.t-shirt-page .t-shirt-brand-section .t-shirt-brand-block .grid-block .grid-item .t-shirt-brand a.btn-border {
-  width: auto;
-  font-family: "Prachason";
-  font-weight: normal;
-  border: 1px solid #fff;
-  padding: 7px 4rem;
-  border-radius: 5px;
-}
-
-.t-shirt-page .t-shirt-brand-section .t-shirt-brand-block .grid-block .grid-item .t-shirt-brand a.btn-border:hover {
-  background-color: #fff;
-  color: #000;
-}
-
-.t-shirt-page .t-shirt-brand-section .t-shirt-brand-block .grid-block .grid-item .t-shirt-brand.-t-shirt-brand-01 {
-  background: url(../images/t-shirt-brand-01.png) center center;
-  background-size: cover;
-}
-
-.t-shirt-page .t-shirt-brand-section .t-shirt-brand-block .grid-block .grid-item .t-shirt-brand.-t-shirt-brand-02 {
-  background: url(../images/t-shirt-brand-02.png) center center;
-  background-size: cover;
-}
-
-.t-shirt-page .t-shirt-brand-section .t-shirt-brand-block .grid-block .grid-item .t-shirt-brand.-t-shirt-brand-03 {
-  background: url(../images/t-shirt-brand-03.png) center center;
-  background-size: cover;
-}
-
-.t-shirt-page .t-shirt-brand-section .t-shirt-brand-block .grid-block .grid-item .t-shirt-brand.-t-shirt-brand-04 {
-  background: url(../images/t-shirt-brand-04.png) center center;
-  background-size: cover;
-}
-
-.t-shirt-page .t-shirt-brand-section .t-shirt-brand-block .grid-block .grid-item .t-shirt-brand .overlay {
-  max-height: 40%;
-  -webkit-transition: max-height 0.15s ease-out;
-  transition: max-height 0.15s ease-out;
-  height: 100%;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(black));
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, black 100%);
-  -webkit-transition: all height 0.5s ease-in-out;
-  transition: all height 0.5s ease-in-out;
-}
-
-@media (max-width: 991px) {
-  .t-shirt-page .t-shirt-brand-section {
-    padding: 2rem 0;
-  }
-  .t-shirt-page .t-shirt-brand-section .t-shirt-brand-block .title-t-shirt-brand {
-    text-align: center;
-  }
-  .t-shirt-page .t-shirt-brand-section .t-shirt-brand-block .grid-block {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-  }
-}
-
-.t-shirt-page .show-product-section .show-product-block .grid-block {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 25px;
-}
-
-.t-shirt-page .show-product-section .read-more-block {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.t-shirt-page .show-product-section .read-more-block .btn-border {
-  width: auto;
-  padding: 10px 3rem;
-  border: 1px solid #fff;
-  border-radius: 5px;
-  font-family: "Prachason";
-  font-weight: normal;
-}
-
-.t-shirt-page .show-product-section .read-more-block .btn-border:hover {
-  background-color: #fff;
-  color: #000;
-}
-
-@media (max-width: 991px) {
-  .t-shirt-page .show-product-section .show-product-block .grid-block {
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-    gap: 15px;
-  }
-}
-
-.t-shirt-page .your-style-section {
-  padding: 4rem 0;
-}
-
-.t-shirt-page .your-style-section .your-style-block .grid-block {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 25px;
-}
-
-.t-shirt-page .your-style-section .your-style-block .grid-block .grid-item {
-  position: relative;
-}
-
-.t-shirt-page .your-style-section .your-style-block .grid-block .grid-item a:hover .your-style .overlay {
-  max-height: 100%;
-  -webkit-transition: max-height 0.25s ease-in;
-  transition: max-height 0.25s ease-in;
-}
-
-.t-shirt-page .your-style-section .your-style-block .grid-block .grid-item a:hover .your-style h4.head-your-style {
-  margin-bottom: 5rem;
-  color: #ffbe00;
-}
-
-.t-shirt-page .your-style-section .your-style-block .grid-block .grid-item .your-style {
-  min-height: 200px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-.t-shirt-page .your-style-section .your-style-block .grid-block .grid-item .your-style h4.head-your-style {
-  width: 100%;
+.football-equipment-page .pro-section .pro-block .grid-block .grid-item .pro .content-block, .football-equipment-page .pro-section .pro-block .grid-block .grid-item .pro .content-block h4.head-pro {
   text-align: center;
-  font-size: 18px;
-  font-family: "Prachason";
-  z-index: 1;
-  margin-bottom: 2rem;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  text-transform: uppercase;
-  margin: 0;
-  margin-bottom: 1rem;
-  position: relative;
-}
-
-.t-shirt-page .your-style-section .your-style-block .grid-block .grid-item .your-style a.btn-border {
-  width: auto;
-  font-family: "Prachason";
-  font-weight: normal;
-  border: 1px solid #fff;
-  padding: 7px 4rem;
-  border-radius: 5px;
-}
-
-.t-shirt-page .your-style-section .your-style-block .grid-block .grid-item .your-style a.btn-border:hover {
-  background-color: #fff;
-  color: #000;
-}
-
-.t-shirt-page .your-style-section .your-style-block .grid-block .grid-item .your-style.-your-style-01 {
-  background: url(../images/your-style-t-shirt-01.png) center center;
-  background-size: cover;
-}
-
-.t-shirt-page .your-style-section .your-style-block .grid-block .grid-item .your-style.-your-style-02 {
-  background: url(../images/your-style-t-shirt-02.png) center center;
-  background-size: cover;
-}
-
-.t-shirt-page .your-style-section .your-style-block .grid-block .grid-item .your-style.-your-style-03 {
-  background: url(../images/your-style-t-shirt-03.png) center center;
-  background-size: cover;
-}
-
-.t-shirt-page .your-style-section .your-style-block .grid-block .grid-item .your-style.-your-style-04 {
-  background: url(../images/your-style-t-shirt-04.png) center center;
-  background-size: cover;
-}
-
-.t-shirt-page .your-style-section .your-style-block .grid-block .grid-item .your-style .overlay {
-  max-height: 40%;
-  -webkit-transition: max-height 0.15s ease-out;
-  transition: max-height 0.15s ease-out;
-  height: 100%;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(black));
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, black 100%);
-  -webkit-transition: all height 0.5s ease-in-out;
-  transition: all height 0.5s ease-in-out;
-}
-
-.t-shirt-page .your-style-section .read-more-block {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.t-shirt-page .your-style-section .read-more-block .btn-border {
-  display: block;
-  width: auto;
-  border: 1px solid #fff;
-  border-radius: 5px;
-  padding: 7px 3rem;
-  font-family: "Prachason";
-  font-size: 16px;
-}
-
-.t-shirt-page .your-style-section .read-more-block .btn-border:hover {
-  background-color: #fff;
-  color: #000;
-}
-
-@media (max-width: 991px) {
-  .t-shirt-page .your-style-section .your-style-block .title-your-style {
-    text-align: center;
-  }
-  .t-shirt-page .your-style-section .your-style-block .grid-block {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-  }
-}
-
-/* ====================== Ari Gear Page ====================== */
-.ari-gear-page {
-  background-color: #161616;
-}
-
-.ari-gear-page .hero-slider-section .splide .splide__slide {
-  min-height: 600px;
-}
-
-.ari-gear-page .hero-slider-section .splide .splide__slide .g-container {
-  max-width: 60vw;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.ari-gear-page .hero-slider-section .splide .splide__slide .g-container .grid-block .grid-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-}
-
-.ari-gear-page .hero-slider-section .splide .splide__slide .g-container .grid-block .grid-item h2 {
-  margin: 0;
-  margin-top: 10px;
-  font-size: 26px;
-  font-family: "Prachason";
-}
-
-.ari-gear-page .hero-slider-section .splide .splide__slide.--slide-01 {
-  background: url(../images/ari-gear-slider.png) center center;
-  background-size: cover;
-}
-
-.ari-gear-page .hero-slider-section .splide .splide__slide.--slide-02 {
-  background: url(../images/ari-gear-slider.png) center center;
-  background-size: cover;
-}
-
-.ari-gear-page .hero-slider-section .splide .splide__slide.--slide-03 {
-  background: url(../images/ari-gear-slider.png) center center;
-  background-size: cover;
-}
-
-.ari-gear-page .hero-slider-section .splide .splide__slide h2,
-.ari-gear-page .hero-slider-section .splide .splide__slide img {
-  position: relative;
-  z-index: 2;
-}
-
-.ari-gear-page .hero-slider-section .splide .splide__slide h2 {
-  font-family: "Agency FB";
-}
-
-.ari-gear-page .hero-slider-section .splide .splide__slide .btn-border {
-  border: 1px solid #fff;
-  width: auto;
-  display: block;
-  position: relative;
-  z-index: 2;
-  padding: 7px 4rem;
-  border-radius: 5px;
-  font-family: "Prachason";
-  font-size: 16px;
-  font-weight: normal;
-}
-
-.ari-gear-page .hero-slider-section .splide .splide__slide .btn-border:hover {
-  background-color: #fff;
-  color: #000;
-}
-
-.ari-gear-page .hero-slider-section .splide .splide__slide .overlay {
-  display: block !important;
-  max-width: 60%;
-  -webkit-transition: max-height 0.15s ease-out;
-  transition: max-height 0.15s ease-out;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  background: -webkit-gradient(linear, right top, left top, from(rgba(22, 22, 22, 0)), to(#161616));
-  background: linear-gradient(270deg, rgba(22, 22, 22, 0) 0%, #161616 100%);
-  -webkit-transition: all height 0.5s ease-in-out;
-  transition: all height 0.5s ease-in-out;
-}
-
-.ari-gear-page .hero-slider-section .splide .splide__arrows .splide__arrow {
-  opacity: 1;
-  background: transparent;
-}
-
-.ari-gear-page .hero-slider-section .splide .splide__arrows .splide__arrow .arrow-left {
-  width: 100px;
-}
-
-.ari-gear-page .hero-slider-section .splide .splide__arrows .splide__arrow--prev {
-  left: 13%;
-}
-
-.ari-gear-page .hero-slider-section .splide .splide__arrows .splide__arrow--next {
-  right: 13%;
-}
-
-@media (max-width: 991px) {
-  .ari-gear-page .hero-slider-section .splide .splide__slide {
-    min-height: 320px;
-  }
-  .ari-gear-page .hero-slider-section .splide .splide__slide .g-container {
-    max-width: 1160px;
-  }
-  .ari-gear-page .hero-slider-section .splide .splide__slide.--slide-01 {
-    background: url(../images/ari-gear-slider-mb.png) center center;
-    background-size: cover;
-  }
-  .ari-gear-page .hero-slider-section .splide .splide__slide.--slide-02 {
-    background: url(../images/ari-gear-slider-mb.png) center center;
-    background-size: cover;
-  }
-  .ari-gear-page .hero-slider-section .splide .splide__slide.--slide-03 {
-    background: url(../images/ari-gear-slider-mb.png) center center;
-    background-size: cover;
-  }
-  .ari-gear-page .hero-slider-section .splide .splide__arrows .splide__arrow {
-    opacity: 1;
-    background: transparent;
-  }
-  .ari-gear-page .hero-slider-section .splide .splide__arrows .splide__arrow .arrow-left {
-    width: 100px;
-  }
-  .ari-gear-page .hero-slider-section .splide .splide__arrows .splide__arrow--prev {
-    left: 13%;
-  }
-  .ari-gear-page .hero-slider-section .splide .splide__arrows .splide__arrow--next {
-    right: 13%;
-  }
-}
-
-.ari-gear-page .hot-collection-section {
-  padding: 4rem 0;
-}
-
-.ari-gear-page .hot-collection-section .hot-collection-block .grid-block {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  gap: 25px;
-}
-
-.ari-gear-page .hot-collection-section .hot-collection-block .grid-block .grid-item {
-  position: relative;
-}
-
-.ari-gear-page .hot-collection-section .hot-collection-block .grid-block .grid-item a:hover .hot-collection .overlay {
-  max-height: 100%;
-  -webkit-transition: max-height 0.25s ease-in;
-  transition: max-height 0.25s ease-in;
-}
-
-.ari-gear-page .hot-collection-section .hot-collection-block .grid-block .grid-item a:hover .hot-collection h4.head-hot-collection {
-  margin-bottom: 10rem;
-  color: #ffbe00;
-}
-
-.ari-gear-page .hot-collection-section .hot-collection-block .grid-block .grid-item .hot-collection {
-  min-height: 400px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-.ari-gear-page .hot-collection-section .hot-collection-block .grid-block .grid-item .hot-collection .content-block {
-  width: 100%;
-  position: relative;
-  z-index: 2;
-  padding: 35px 30px;
-}
-
-.ari-gear-page .hot-collection-section .hot-collection-block .grid-block .grid-item .hot-collection .content-block h4.head-hot-collection {
-  width: 100%;
-  text-align: left;
-  font-size: 26px;
-  font-family: "Prachason";
-  z-index: 1;
-  margin-bottom: 2rem;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  text-transform: uppercase;
-  margin: 0;
-  margin-bottom: 1rem;
-}
-
-.ari-gear-page .hot-collection-section .hot-collection-block .grid-block .grid-item .hot-collection .content-block a.btn-border {
-  width: auto;
-  font-family: "Prachason";
-  font-weight: normal;
-  border: 1px solid #fff;
-  padding: 7px 4rem;
-  border-radius: 5px;
-}
-
-.ari-gear-page .hot-collection-section .hot-collection-block .grid-block .grid-item .hot-collection .content-block a.btn-border:hover {
-  background-color: #fff;
-  color: #000;
-}
-
-.ari-gear-page .hot-collection-section .hot-collection-block .grid-block .grid-item .hot-collection.-hot-collection-01 {
-  background: url(../images/hot-collection-01.png) center center;
-  background-size: cover;
-}
-
-.ari-gear-page .hot-collection-section .hot-collection-block .grid-block .grid-item .hot-collection.-hot-collection-02 {
-  background: url(../images/hot-collection-02.png) center center;
-  background-size: cover;
-}
-
-.ari-gear-page .hot-collection-section .hot-collection-block .grid-block .grid-item .hot-collection .overlay {
-  max-height: 40%;
-  -webkit-transition: max-height 0.15s ease-out;
-  transition: max-height 0.15s ease-out;
-  height: 100%;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(black));
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, black 100%);
-  -webkit-transition: all height 0.5s ease-in-out;
-  transition: all height 0.5s ease-in-out;
-}
-
-@media (max-width: 991px) {
-  .ari-gear-page .hot-collection-section {
-    padding: 2rem 0;
-  }
-  .ari-gear-page .hot-collection-section .hot-collection-block .title-hot-collection {
-    text-align: center;
-  }
-  .ari-gear-page .hot-collection-section .hot-collection-block .grid-block {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-  }
-}
-
-.ari-gear-page .your-style-section .your-style-block .grid-block {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 25px;
-}
-
-.ari-gear-page .your-style-section .your-style-block .grid-block .grid-item {
-  position: relative;
-}
-
-.ari-gear-page .your-style-section .your-style-block .grid-block .grid-item a:hover .your-style .overlay {
-  max-height: 100%;
-  -webkit-transition: max-height 0.25s ease-in;
-  transition: max-height 0.25s ease-in;
-}
-
-.ari-gear-page .your-style-section .your-style-block .grid-block .grid-item a:hover .your-style h4.head-your-style {
-  margin-bottom: 5rem;
-  color: #ffbe00;
-}
-
-.ari-gear-page .your-style-section .your-style-block .grid-block .grid-item .your-style {
-  min-height: 200px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-.ari-gear-page .your-style-section .your-style-block .grid-block .grid-item .your-style h4.head-your-style {
-  width: 100%;
-  text-align: center;
-  font-size: 18px;
-  font-family: "Prachason";
-  z-index: 1;
-  margin-bottom: 2rem;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  text-transform: uppercase;
-  margin: 0;
-  margin-bottom: 1rem;
-  position: relative;
-}
-
-.ari-gear-page .your-style-section .your-style-block .grid-block .grid-item .your-style a.btn-border {
-  width: auto;
-  font-family: "Prachason";
-  font-weight: normal;
-  border: 1px solid #fff;
-  padding: 7px 4rem;
-  border-radius: 5px;
-}
-
-.ari-gear-page .your-style-section .your-style-block .grid-block .grid-item .your-style a.btn-border:hover {
-  background-color: #fff;
-  color: #000;
-}
-
-.ari-gear-page .your-style-section .your-style-block .grid-block .grid-item .your-style.-your-style-01 {
-  background: url(../images/your-style-t-shirt-01.png) center center;
-  background-size: cover;
-}
-
-.ari-gear-page .your-style-section .your-style-block .grid-block .grid-item .your-style.-your-style-02 {
-  background: url(../images/your-style-t-shirt-02.png) center center;
-  background-size: cover;
-}
-
-.ari-gear-page .your-style-section .your-style-block .grid-block .grid-item .your-style.-your-style-03 {
-  background: url(../images/your-style-t-shirt-03.png) center center;
-  background-size: cover;
-}
-
-.ari-gear-page .your-style-section .your-style-block .grid-block .grid-item .your-style.-your-style-04 {
-  background: url(../images/your-style-t-shirt-04.png) center center;
-  background-size: cover;
-}
-
-.ari-gear-page .your-style-section .your-style-block .grid-block .grid-item .your-style .overlay {
-  max-height: 40%;
-  -webkit-transition: max-height 0.15s ease-out;
-  transition: max-height 0.15s ease-out;
-  height: 100%;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(black));
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, black 100%);
-  -webkit-transition: all height 0.5s ease-in-out;
-  transition: all height 0.5s ease-in-out;
-}
-
-.ari-gear-page .your-style-section .read-more-block {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.ari-gear-page .your-style-section .read-more-block .btn-border {
-  display: block;
-  width: auto;
-  border: 1px solid #fff;
-  border-radius: 5px;
-  padding: 7px 3rem;
-  font-family: "Prachason";
-  font-size: 16px;
-}
-
-.ari-gear-page .your-style-section .read-more-block .btn-border:hover {
-  background-color: #fff;
-  color: #000;
-}
-
-@media (max-width: 991px) {
-  .ari-gear-page .your-style-section .your-style-block .title-your-style {
-    text-align: center;
-  }
-  .ari-gear-page .your-style-section .your-style-block .grid-block {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-  }
-}
-
-.ari-gear-page .show-product-section {
-  padding: 4rem 0;
-  padding-bottom: 7rem;
-}
-
-.ari-gear-page .show-product-section .show-product-block .grid-block {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 25px;
-}
-
-.ari-gear-page .show-product-section .read-more-block {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.ari-gear-page .show-product-section .read-more-block .btn-border {
-  width: auto;
-  padding: 10px 3rem;
-  border: 1px solid #fff;
-  border-radius: 5px;
-  font-family: "Prachason";
-  font-weight: normal;
-}
-
-.ari-gear-page .show-product-section .read-more-block .btn-border:hover {
-  background-color: #fff;
-  color: #000;
-}
-
-@media (max-width: 991px) {
-  .ari-gear-page .show-product-section {
-    padding-top: 2rem;
-  }
-  .ari-gear-page .show-product-section .show-product-block h2 {
-    text-align: center;
-  }
-  .ari-gear-page .show-product-section .show-product-block .grid-block {
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-    gap: 15px;
-  }
 }
 
 /* ====================== Discount Page ====================== */
@@ -18691,4 +18514,1302 @@ body.popup-360, html.popup-360 {
 .compare-product-page .main-content .main-compare-product .compare-product-table .compare-table tbody td .buy-btn:hover {
   border-color: #ffbe00;
   color: #ffbe00;
+}
+
+/* Custom 18/3/2021 */
+@font-face {
+  font-family: 'Prachason';
+  font-weight: 500;
+  src: url("/static/version1615962574/frontend/Vision/ari/th_TH/fonts/Prachason-SemiBold.woff2") format("woff2"), url("/static/version1615962574/frontend/Vision/ari/th_TH/fonts/Prachason-SemiBold.woff") format("woff");
+}
+
+.site-header .main-nav .half-nav.main-menu .nav-menu-block .nav-menu > li,
+.site-header .main-nav .half-nav.main-menu .nav-menu-block .nav-menu > li > a {
+  padding-bottom: 9px;
+}
+
+.main p {
+  margin: 0;
+}
+
+.title-sub-hero,
+.title-kick-off {
+  font-weight: 400;
+}
+
+.owl-height,
+.owl-carousel {
+  max-height: 550px;
+}
+
+.post-items.-card .featured-img-block .badge {
+  top: 14px;
+  border-radius: 2px 0 0 2px;
+}
+
+.category,
+.price {
+  font-family: "Agency FB";
+}
+
+.splide__pagination {
+  display: none;
+}
+
+.title-cate,
+.title {
+  font-weight: 400;
+  font-size: 18px;
+  margin: 3px 0 20px;
+}
+
+.home .categories-section .categories-block .grid-block .grid-item:first-child .img-cate-block {
+  height: 395px;
+}
+
+.home .news-section .read-more-block {
+  margin-top: -5px;
+}
+
+.home .news-section .title-news,
+.home .categories-section .categories-block .title-categories {
+  margin-bottom: 14px;
+}
+
+.splide__arrows .splide__arrow,
+.splide__arrows .splide__arrow img {
+  width: 48px;
+  height: 40px;
+}
+
+.splide__arrows .splide__arrow,
+.product-categories-boots-page .hero-slider-section .splide .splide__arrows .splide__arrow,
+.owl-nav span {
+  background-repeat: no-repeat;
+  background-size: contain;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.splide__arrows .splide__arrow.splide__arrow--prev,
+.product-categories-boots-page .hero-slider-section .splide .splide__arrows .splide__arrow--prev.splide__arrow,
+.owl-prev > span {
+  background-image: url("/static/version1615962574/frontend/Vision/ari/th_TH/images/slider-arrow-left-icon.svg");
+}
+
+.splide__arrows .splide__arrow.splide__arrow--next,
+.product-categories-boots-page .hero-slider-section .splide .splide__arrows .splide__arrow--next.splide__arrow,
+.owl-next > span {
+  background-image: url("/static/version1615962574/frontend/Vision/ari/th_TH/images/slider-arrow-right-icon.svg");
+}
+
+.splide__arrows .splide__arrow img {
+  visibility: hidden;
+}
+
+.splide__arrows .splide__arrow:hover,
+.product-categories-boots-page .hero-slider-section .splide .splide__arrows .splide__arrow--prev.splide__arrow:hover,
+.owl-next > span:hover {
+  background-image: url("/static/version1615962574/frontend/Vision/ari/th_TH/images/slider-arrow-right-icon-hover.svg");
+}
+
+.splide__arrows .splide__arrow.splide__arrow--prev:hover,
+.product-categories-boots-page .hero-slider-section .splide .splide__arrows .splide__arrow--next.splide__arrow:hover,
+button.owl-prev > span:hover {
+  background-image: url("/static/version1615962574/frontend/Vision/ari/th_TH/images/slider-arrow-left-icon-hover.svg");
+}
+
+.compare-block {
+  width: 100%;
+  margin: 15px auto;
+  position: relative;
+  display: block;
+}
+
+.compare-block label {
+  position: relative;
+  min-height: 29px;
+  display: block;
+  padding-left: 33px;
+  margin-bottom: 0;
+  font-weight: normal;
+  cursor: pointer;
+}
+
+.compare-block label:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: 4px;
+  width: 19px;
+  height: 19px;
+  -webkit-transition: -webkit-transform 0.28s ease;
+  transition: -webkit-transform 0.28s ease;
+  transition: transform 0.28s ease;
+  transition: transform 0.28s ease, -webkit-transform 0.28s ease;
+  border-radius: 5px;
+  border: 1px solid #fff;
+}
+
+.compare-block .checkmark:after {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 5px;
+  border-bottom: 2px solid #FFBE00;
+  border-left: 2px solid #FFBE00;
+  -webkit-transform: rotate(-45deg) scale(0);
+          transform: rotate(-45deg) scale(0);
+  -webkit-transition: -webkit-transform ease 0.25s;
+  transition: -webkit-transform ease 0.25s;
+  transition: transform ease 0.25s;
+  transition: transform ease 0.25s, -webkit-transform ease 0.25s;
+  position: absolute;
+  top: 10px;
+  left: 9px;
+}
+
+.compare-block input[type=checkbox] {
+  width: auto;
+  position: absolute;
+  left: 5px;
+  margin-left: -20px;
+  opacity: 0;
+}
+
+.compare-block input[type=checkbox]:checked ~ label:before {
+  border: 2px solid #FFBE00;
+}
+
+.compare-block input[type=checkbox]:checked ~ .checkmark:after {
+  -webkit-transform: rotate(-45deg) scale(1);
+          transform: rotate(-45deg) scale(1);
+}
+
+.compare-block input[type=checkbox]:focus + label::before {
+  outline: 0;
+}
+
+.post-items.-card .compare-block {
+  padding: 9px 0 15px;
+}
+
+#splide01-track {
+  padding-bottom: 60px;
+}
+
+.home .subscibe-section .subscibe-block .sub-form .inp-sub {
+  background: #fff;
+  height: 23px !important;
+  width: 340px;
+}
+
+.home .subscibe-section .subscibe-block .sub-form .inp-sub::-webkit-input-placeholder {
+  color: #fff;
+  opacity: 1;
+}
+
+.home .subscibe-section .subscibe-block .sub-form .inp-sub:-ms-input-placeholder {
+  color: #fff;
+  opacity: 1;
+}
+
+.home .subscibe-section .subscibe-block .sub-form .inp-sub::-ms-input-placeholder {
+  color: #fff;
+  opacity: 1;
+}
+
+.home .subscibe-section .subscibe-block .sub-form .inp-sub::placeholder {
+  color: #fff;
+  opacity: 1;
+}
+
+.home .subscibe-section .subscibe-block .sub-form .inp-sub:-ms-input-placeholder {
+  color: #fff;
+}
+
+.home .subscibe-section .subscibe-block .sub-form .inp-sub::-ms-input-placeholder {
+  color: #fff;
+}
+
+.home .subscibe-section .subscibe-block .title-subscibe {
+  margin-right: 45px;
+}
+
+body h2 {
+  font-weight: 500;
+  font-size: 26px;
+}
+
+.home.product-categories-boots-page .hot-product-section {
+  background: none;
+  padding: 3px 0 0;
+}
+
+.home.product-categories-boots-page .hot-product-section .hot-product-block.g-container {
+  max-width: 1160px;
+}
+
+.home.product-categories-boots-page .hot-product-section .title-hot-product {
+  font-weight: 500;
+  color: #fff;
+  text-align: left;
+}
+
+.home.product-categories-boots-page .hot-product-section .title-hot-product > img {
+  display: none;
+}
+
+.home.product-categories-boots-page .hot-product-section .hot-product-block.g-container .post-items.-card {
+  background: none;
+  padding: 0;
+}
+
+.home.product-categories-boots-page .hot-product-section .compare-block,
+.home.product-categories-boots-page .show-product-section .compare-block {
+  display: none;
+}
+
+.home.product-categories-boots-page #splide01-track {
+  padding-bottom: 35px;
+}
+
+.category-football-shoes .brand-section .brand-block #brand-slider .splide__arrows.g-container button.splide__arrow--prev {
+  right: -17px;
+}
+
+#football-shoes-slider .splide__pagination {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.splide__pagination button.splide__pagination__page,
+.owl-theme .owl-dots button.owl-dot span {
+  width: 12px;
+  height: 10px;
+  background: url(/static/version1615962574/frontend/Vision/ari/th_TH/js/splidejs/src/pagination-empty.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.splide__pagination button.splide__pagination__page.is-active,
+.owl-theme .owl-dots button.owl-dot.active span {
+  background: url(/static/version1615962574/frontend/Vision/ari/th_TH/js/splidejs/src/pagination-active.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.splide__pagination button.splide__pagination__page:hover,
+.owl-theme .owl-dots button.owl-dot:hover span {
+  background: url(/static/version1615962574/frontend/Vision/ari/th_TH/js/splidejs/src/pagination-empty.svg);
+  opacity: .75;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.splide__pagination button.splide__pagination__page.is-active:hover,
+.owl-theme .owl-dots button.owl-dot.active:hover span {
+  background: url(/static/version1615962574/frontend/Vision/ari/th_TH/js/splidejs/src/pagination-active.svg);
+  opacity: .75;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.splide__pagination button.splide__pagination__page::after,
+.splide__pagination button.splide__pagination__page.is-active::after {
+  content: none;
+}
+
+.product-categories-boots-page .hero-slider-section .splide .splide__arrows .splide__arrow--prev.splide__arrow,
+.mp-banner-slider .owl-nav button.owl-prev span {
+  left: 30px;
+}
+
+.product-categories-boots-page .hero-slider-section .splide .splide__arrows .splide__arrow--next.splide__arrow,
+.mp-banner-slider .owl-nav button.owl-next span {
+  right: 30px;
+}
+
+.owl-prev > span,
+.owl-next > span {
+  color: transparent !important;
+  width: 48px;
+}
+
+.owl-theme .owl-dots button.owl-dot span,
+.owl-theme .owl-dots button.owl-dot.active span {
+  margin: 0 2px;
+  background-size: contain;
+}
+
+.mp-banner-slider div.owl-dots {
+  top: unset;
+  bottom: 10px;
+}
+
+.title-cate-goalkeeper {
+  margin-bottom: 20px;
+}
+
+.title-brand {
+  margin-bottom: 14px;
+}
+
+.category-goalkeeper section.brand-section {
+  margin-bottom: 137px;
+}
+
+.category-uniform .hero-slider-section .splide .splide__slide div.overlay {
+  display: none !important;
+}
+
+.category-uniform .hero-slider-section .splide .splide__slide div.g-container {
+  max-width: calc(100vw - 212px);
+}
+
+.category-uniform .hero-slider-section .splide .splide__slide .g-container .grid-block .grid-item h2 {
+  font-weight: 600;
+  font-size: 32px;
+}
+
+.category-uniform .hero-slider-section .splide .splide__slide .g-container .grid-block .grid-item .btn-border {
+  margin-top: 26px;
+  padding: 5.5px 63px;
+}
+
+.category-uniform section.hot-team-section {
+  padding: 40px 0 74px;
+}
+
+.your-fav-block h4 {
+  font-size: 21px;
+  font-weight: 400;
+}
+
+.category-uniform section.your-fav-section {
+  background: url(/static/version1615962574/frontend/Vision/ari/th_TH/images/bg-your-fav.png);
+  padding-bottom: 152px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.shirt-premier-block > .title-brand,
+.national-team-block > .title-national-team {
+  margin: 0 auto 25px;
+  max-width: 1160px;
+}
+
+.shirt-premier-block.g-container,
+.national-team-block.g-container {
+  max-width: 100%;
+  padding: 0;
+  margin-bottom: 50px;
+}
+
+.category-uniform .shirt-premier-section .shirt-premier-block.g-container #shirt-premier-slider div.slider-shirt-premier {
+  height: 278px;
+}
+
+#shirt-premier-slider .splide__slide,
+#national-team-slider .splide__slide {
+  margin-right: 30px !important;
+  width: 370px !important;
+}
+
+.category-uniform .shirt-premier-section .shirt-premier-block.g-container #shirt-premier-slider div.slider-shirt-premier h5 {
+  margin-bottom: 26px;
+}
+
+.category-uniform .shirt-premier-section .shirt-premier-block.g-container #shirt-premier-slider div.splide__arrows {
+  margin-top: 33px;
+}
+
+.splide__arrows button.splide__arrow--next {
+  right: -48px;
+}
+
+.category-uniform .shirt-premier-section .shirt-premier-block.g-container #shirt-premier-slider .splide__arrows.g-container button.splide__arrow--prev,
+.category-uniform .national-team-section .national-team-block.g-container #national-team-slider .splide__arrows.g-container .splide__arrow--prev {
+  right: -1px;
+}
+
+.home.product-categories-boots-page.categorypath-uniform .hot-product-section .title-hot-product {
+  margin: 60px 0 25px;
+}
+
+.category-uniform .hot-product-section .hot-product-block .grid-block .featured-img-block .badge {
+  width: 30px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.category-uniform .hot-product-section .hot-product-block .grid-block .featured-img-block .badge.-r {
+  margin-top: 37px;
+}
+
+.post-items.-card .title-item .category {
+  font-size: 14px;
+}
+
+.post-items.-card .title-item .title {
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+  height: 45px;
+}
+
+.post-items.-card .content-item .price-block .price {
+  font-size: 21px;
+}
+
+.home.product-categories-boots-page .hot-product-section .btn-border {
+  margin-top: 45px;
+}
+
+.read-more-block .btn-border {
+  font-weight: 400;
+}
+
+.category-uniform .hot-product-section .read-more-block .btn-border {
+  padding: 7px 40px;
+}
+
+.category-uniform .national-team-section {
+  margin-top: 70px;
+}
+
+.category-uniform .national-team-section .national-team-block .title-national-team {
+  margin-bottom: 30px;
+}
+
+.category-uniform .national-team-section {
+  padding-bottom: 119px;
+}
+
+.category-football-equipments .pro-section {
+  padding-top: 44px;
+  padding-bottom: 0;
+}
+
+.category-football-equipments .pro-section .pro-block .grid-block,
+.category-football-equipments .show-product-section .show-product-block .grid-block {
+  gap: 30px;
+}
+
+.category-football-equipments .show-product-section .show-product-block .grid-block {
+  row-gap: 80px;
+}
+
+.category-football-equipments .pro-section .pro-block .grid-block .grid-item .pro .content-block h4.head-pro {
+  font-weight: 500;
+}
+
+.category-football-equipments .pro-section .pro-block .grid-block .grid-item .pro .content-block a.btn-border {
+  font-size: 16px;
+}
+
+.categorypath-football-equipments .title-hot-product {
+  display: none;
+}
+
+.category-football-equipments .show-product-section {
+  padding-top: 59.5px;
+}
+
+.category-football-equipments .show-product-section .title-item {
+  margin-bottom: 22px;
+}
+
+/* ====================== Check Out Page ====================== */
+.checkout-page {
+  background-color: #161616;
+}
+
+.checkout-page .main-content .main-checkout {
+  margin: 2rem 0;
+  margin-bottom: 4rem;
+}
+
+.checkout-page .main-content .main-checkout .grid-block.-c2 {
+  -ms-grid-columns: 1fr .6fr;
+      grid-template-columns: 1fr .6fr;
+}
+
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .send-area-block h2 {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .send-area-block .choose-area [type="radio"]:checked,
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .send-area-block .choose-area [type="radio"]:not(:checked) {
+  position: absolute;
+  left: -9999px;
+}
+
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .send-area-block .choose-area [type="radio"]:checked + label,
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .send-area-block .choose-area [type="radio"]:not(:checked) + label {
+  position: relative;
+  padding: 15px;
+  padding-left: 45px;
+  cursor: pointer;
+  line-height: 20px;
+  display: inline-block;
+  color: #fff;
+  margin-right: 15px;
+  border: 1px solid #5C5C5C;
+  border-radius: 5px;
+  width: 35%;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .send-area-block .choose-area [type="radio"]:checked + label:before,
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .send-area-block .choose-area [type="radio"]:not(:checked) + label:before {
+  content: '';
+  position: absolute;
+  left: 12px;
+  top: 12px;
+  width: 23px;
+  height: 23px;
+  border: 1px solid #fff;
+  border-radius: 100%;
+  background: transparent;
+}
+
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .send-area-block .choose-area [type="radio"]:checked + label:before {
+  border-color: #ffbe00;
+}
+
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .send-area-block .choose-area [type="radio"]:checked + label {
+  border-color: #ffbe00;
+}
+
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .send-area-block .choose-area [type="radio"]:checked + label:after,
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .send-area-block .choose-area [type="radio"]:not(:checked) + label:after {
+  content: '';
+  width: 17px;
+  height: 17px;
+  background: #ffbe00;
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  border-radius: 100%;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .send-area-block .choose-area [type="radio"]:not(:checked) + label:after {
+  opacity: 0;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .send-area-block .choose-area [type="radio"]:checked + label:after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .step-block {
+  margin: 1rem 0;
+}
+
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .step-block#step-01 .acc-title::before {
+  content: '1';
+}
+
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .step-block#step-02 .acc-title::before {
+  content: '2';
+}
+
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .step-block#step-03 .acc-title::before {
+  content: '3';
+}
+
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .acc-title {
+  margin: 0;
+  background-color: #353535;
+  padding: 7px 15px;
+  font-size: 18px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .acc-title::before {
+  left: 30px;
+  font-size: 18px;
+  color: #000;
+  position: absolute;
+}
+
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .acc-title svg {
+  margin-right: 10px;
+}
+
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .acc-title.collapse svg path {
+  fill: #ffbe00;
+}
+
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .acc-content {
+  max-height: 0;
+  -webkit-transition: max-height .5s ease-out;
+  transition: max-height .5s ease-out;
+  overflow: hidden;
+  border: 1px solid #353535;
+}
+
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .acc-content .content {
+  padding: 30px;
+}
+
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .acc-content .content .accordion_options {
+  color: #000;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 3px 40px;
+  text-align: center;
+  display: block;
+  width: 40%;
+  margin: 0 auto;
+  background-color: #ffbe00;
+  border-radius: 5px;
+  margin-top: 2rem;
+}
+
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .acc-content .content .grid-block.-c2 {
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .acc-content .content.-payment-method .remark-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1rem 0;
+  margin-top: 1.5rem;
+  border-top: 1px solid #707070;
+}
+
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .acc-content .content.-payment-method .remark-block input[type="textarea"] {
+  border: 1px solid #343434;
+  border-radius: 5px;
+  background-color: transparent;
+  padding: 15px;
+  padding-bottom: 50px;
+  resize: none;
+}
+
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .acc-content .content.-payment-method .choose-payment.-c2 {
+  -ms-grid-columns: 1fr .4fr;
+      grid-template-columns: 1fr .4fr;
+}
+
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .acc-content .content.-payment-method .choose-payment.-c2 .grid-item:last-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .acc-content .content.-payment-method .choose-payment label p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .acc-content .content.-payment-method .choose-payment [type="radio"]:checked,
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .acc-content .content.-payment-method .choose-payment [type="radio"]:not(:checked) {
+  position: absolute;
+  left: -9999px;
+}
+
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .acc-content .content.-payment-method .choose-payment [type="radio"]:checked + label,
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .acc-content .content.-payment-method .choose-payment [type="radio"]:not(:checked) + label {
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+  line-height: 25px;
+  display: inline-block;
+  color: #fff;
+  margin-top: 15px;
+}
+
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .acc-content .content.-payment-method .choose-payment [type="radio"]:checked + label:before,
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .acc-content .content.-payment-method .choose-payment [type="radio"]:not(:checked) + label:before {
+  content: '';
+  position: absolute;
+  left: -5px;
+  top: 0px;
+  width: 23px;
+  height: 23px;
+  border: 1px solid #fff;
+  border-radius: 100%;
+  background: transparent;
+}
+
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .acc-content .content.-payment-method .choose-payment [type="radio"]:checked + label:before {
+  border-color: #ffbe00;
+}
+
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .acc-content .content.-payment-method .choose-payment [type="radio"]:checked + label:after,
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .acc-content .content.-payment-method .choose-payment [type="radio"]:not(:checked) + label:after {
+  content: '';
+  width: 17px;
+  height: 17px;
+  background: #ffbe00;
+  position: absolute;
+  top: 4px;
+  left: -1px;
+  border-radius: 100%;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .acc-content .content.-payment-method .choose-payment [type="radio"]:not(:checked) + label:after {
+  opacity: 0;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .acc-content .content.-payment-method .choose-payment [type="radio"]:checked + label:after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .acc-content .content .choose-send label {
+  font-size: 18px;
+}
+
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .acc-content .content .choose-send label span {
+  font-size: 16px;
+}
+
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .acc-content .content .choose-send [type="radio"]:checked,
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .acc-content .content .choose-send [type="radio"]:not(:checked) {
+  position: absolute;
+  left: -9999px;
+}
+
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .acc-content .content .choose-send [type="radio"]:checked + label,
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .acc-content .content .choose-send [type="radio"]:not(:checked) + label {
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+  line-height: 25px;
+  display: inline-block;
+  color: #fff;
+}
+
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .acc-content .content .choose-send [type="radio"]:checked + label:before,
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .acc-content .content .choose-send [type="radio"]:not(:checked) + label:before {
+  content: '';
+  position: absolute;
+  left: -5px;
+  top: 0px;
+  width: 23px;
+  height: 23px;
+  border: 1px solid #fff;
+  border-radius: 100%;
+  background: transparent;
+}
+
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .acc-content .content .choose-send [type="radio"]:checked + label:before {
+  border-color: #ffbe00;
+}
+
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .acc-content .content .choose-send [type="radio"]:checked + label:after,
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .acc-content .content .choose-send [type="radio"]:not(:checked) + label:after {
+  content: '';
+  width: 17px;
+  height: 17px;
+  background: #ffbe00;
+  position: absolute;
+  top: 4px;
+  left: -1px;
+  border-radius: 100%;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .acc-content .content .choose-send [type="radio"]:not(:checked) + label:after {
+  opacity: 0;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .acc-content .content .choose-send [type="radio"]:checked + label:after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .acc-content .content.-address h4 {
+  margin: 0;
+}
+
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .acc-content .content.-address .send-inform-block .grid-block:last-child {
+  border: 0;
+}
+
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .acc-content .content.-address .choose-address [type="radio"]:checked,
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .acc-content .content.-address .choose-address [type="radio"]:not(:checked) {
+  position: absolute;
+  left: -9999px;
+}
+
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .acc-content .content.-address .choose-address [type="radio"]:checked + label,
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .acc-content .content.-address .choose-address [type="radio"]:not(:checked) + label {
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+  line-height: 25px;
+  display: inline-block;
+  color: #fff;
+  margin-top: 15px;
+}
+
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .acc-content .content.-address .choose-address [type="radio"]:checked + label:before,
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .acc-content .content.-address .choose-address [type="radio"]:not(:checked) + label:before {
+  content: '';
+  position: absolute;
+  left: -5px;
+  top: 0px;
+  width: 23px;
+  height: 23px;
+  border: 1px solid #fff;
+  border-radius: 100%;
+  background: transparent;
+}
+
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .acc-content .content.-address .choose-address [type="radio"]:checked + label:before {
+  border-color: #ffbe00;
+}
+
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .acc-content .content.-address .choose-address [type="radio"]:checked + label:after,
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .acc-content .content.-address .choose-address [type="radio"]:not(:checked) + label:after {
+  content: '';
+  width: 17px;
+  height: 17px;
+  background: #ffbe00;
+  position: absolute;
+  top: 4px;
+  left: -1px;
+  border-radius: 100%;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .acc-content .content.-address .choose-address [type="radio"]:not(:checked) + label:after {
+  opacity: 0;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .acc-content .content.-address .choose-address [type="radio"]:checked + label:after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .acc-content .content.-address .grid-block.-c2 {
+  -ms-grid-columns: 1fr .25fr;
+      grid-template-columns: 1fr .25fr;
+}
+
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .acc-content .content.-address .grid-block.item-address {
+  padding-top: 1rem;
+  border-bottom: 1px solid #333333;
+}
+
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .acc-content .content.-address .grid-block .grid-item:last-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .acc-content .content.-address .grid-block .grid-item:last-child .edit-btn {
+  margin-right: 10px;
+  text-decoration: underline;
+}
+
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .acc-content .content.-address .add-send-inform-block {
+  margin: 1rem 0;
+  margin-bottom: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 12px 0;
+  border-top: 1px solid #707070;
+  border-bottom: 1px solid #707070;
+}
+
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .acc-content .content.-address .add-send-inform-block .add-send-inform-btn {
+  color: #ffbe00;
+}
+
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .acc-content.collapse {
+  max-height: 1000px;
+  -webkit-transition: max-height .5s ease-in;
+  transition: max-height .5s ease-in;
+}
+
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-right .summary-block {
+  background-color: #363636;
+  padding: 20px;
+  margin-top: 3.25rem;
+}
+
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-right .summary-block h3 {
+  margin: 0;
+}
+
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-right .summary-block .acc .acc__card .acc__title {
+  color: #fff;
+  font-family: 'Prachason';
+  font-weight: normal;
+  padding: 10px 0;
+}
+
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-right .summary-block .acc .acc__card .acc__title::after {
+  border-right: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  top: 15px;
+}
+
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-right .summary-block .acc .acc__card .acc__panel {
+  color: #fff;
+}
+
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-right .summary-block .sub-form {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 1.5rem 0;
+}
+
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-right .summary-block .sub-form .inp-sub {
+  width: 100%;
+  height: 30px;
+  padding: 5px 15px;
+  border: 1px solid #606060;
+  border-radius: 0;
+  background-color: transparent;
+}
+
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-right .summary-block .sub-form .inp-sub::-webkit-input-placeholder {
+  font-size: 16px;
+}
+
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-right .summary-block .sub-form .inp-sub:-ms-input-placeholder {
+  font-size: 16px;
+}
+
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-right .summary-block .sub-form .inp-sub::-ms-input-placeholder {
+  font-size: 16px;
+}
+
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-right .summary-block .sub-form .inp-sub::placeholder {
+  font-size: 16px;
+}
+
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-right .summary-block .sub-form .btn-submit {
+  background-color: #676767;
+  font-size: 16px;
+  font-family: "Prachason";
+  font-weight: normal;
+  color: #fff;
+  border: 0;
+  border-radius: 0;
+  padding: 4px 15px;
+  cursor: pointer;
+}
+
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-right .summary-block .total-summary-block {
+  margin-top: 1rem;
+  border-top: 1px solid #636363;
+  padding-top: 1rem;
+}
+
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-right .summary-block .sub-summary-price .grid-block.-c2, .checkout-page .main-content .main-checkout .grid-block .grid-item.-right .summary-block .total-summary-block .grid-block.-c2 {
+  -ms-grid-columns: .7fr 1fr;
+      grid-template-columns: .7fr 1fr;
+  gap: 10px;
+}
+
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-right .summary-block .sub-summary-price .grid-block.--total, .checkout-page .main-content .main-checkout .grid-block .grid-item.-right .summary-block .total-summary-block .grid-block.--total {
+  margin-top: 1rem;
+}
+
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-right .summary-block .sub-summary-price .grid-block .grid-item, .checkout-page .main-content .main-checkout .grid-block .grid-item.-right .summary-block .total-summary-block .grid-block .grid-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-right .summary-block .sub-summary-price .grid-block .grid-item h5, .checkout-page .main-content .main-checkout .grid-block .grid-item.-right .summary-block .total-summary-block .grid-block .grid-item h5 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-right .summary-block .sub-summary-price .grid-block .grid-item:last-child, .checkout-page .main-content .main-checkout .grid-block .grid-item.-right .summary-block .total-summary-block .grid-block .grid-item:last-child {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-right .summary-block .sub-summary-price .grid-block .grid-item:last-child .price, .checkout-page .main-content .main-checkout .grid-block .grid-item.-right .summary-block .total-summary-block .grid-block .grid-item:last-child .price {
+  font-family: 'Agency FB';
+  font-weight: bold;
+  font-size: 18px;
+  color: #fff;
+}
+
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-right .summary-block .sub-summary-price .grid-block .grid-item:last-child .address, .checkout-page .main-content .main-checkout .grid-block .grid-item.-right .summary-block .total-summary-block .grid-block .grid-item:last-child .address {
+  color: #717171;
+  font-style: italic;
+}
+
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-right .summary-block .sub-summary-price .grid-block .grid-item.-head-total h5, .checkout-page .main-content .main-checkout .grid-block .grid-item.-right .summary-block .total-summary-block .grid-block .grid-item.-head-total h5 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-right .summary-block .sub-summary-price .grid-block .grid-item.-price-total, .checkout-page .main-content .main-checkout .grid-block .grid-item.-right .summary-block .total-summary-block .grid-block .grid-item.-price-total {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-right .summary-block .sub-summary-price .grid-block .grid-item.-price-total .price, .checkout-page .main-content .main-checkout .grid-block .grid-item.-right .summary-block .total-summary-block .grid-block .grid-item.-price-total .price {
+  color: #ffbe00;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+/* ====================== Thankyou Page ====================== */
+.thankyou-page {
+  background-color: #161616;
+}
+
+.thankyou-page .main-content .hero-banner-thankyou {
+  background: url(../images/banner-bg-thankyou-page.png) center center;
+  background-size: cover;
+  min-height: 210px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.thankyou-page .main-content .hero-banner-thankyou .title-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.thankyou-page .main-content .hero-banner-thankyou .title-content h2 {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.thankyou-page .main-content .main-thankyou {
+  margin: 2rem 0;
+  margin-bottom: 7rem;
+}
+
+.thankyou-page .main-content .main-thankyou .order-content.g-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.thankyou-page .main-content .main-thankyou .order-content.g-container .order-number-block {
+  border-bottom: 1px solid #E3E3E3;
+  padding: 1rem 0;
+}
+
+.thankyou-page .main-content .main-thankyou .order-content.g-container .order-number-block .grid-block .grid-item:last-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.thankyou-page .main-content .main-thankyou .order-content.g-container .notice-txt {
+  text-align: center;
+  font-size: 18px;
+  color: #ffbe00;
+}
+
+.thankyou-page .main-content .main-thankyou .order-content.g-container .notice-txt a {
+  text-decoration: underline;
+  color: #ffbe00;
+}
+
+.thankyou-page .main-content .main-thankyou .order-content.g-container .title-order {
+  text-align: center;
+}
+
+.thankyou-page .main-content .main-thankyou .order-content.g-container .grid-block.-head {
+  margin-bottom: 5px;
+}
+
+.thankyou-page .main-content .main-thankyou .order-content.g-container .grid-block.-head .grid-item:last-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.thankyou-page .main-content .main-thankyou .order-content.g-container .grid-block.-order {
+  border-top: 1px solid #4A4A4A;
+}
+
+.thankyou-page .main-content .main-thankyou .order-content.g-container .grid-block.-order.-c3 {
+  -ms-grid-columns: .3fr 1fr .3fr;
+      grid-template-columns: .3fr 1fr .3fr;
+  padding: 1rem 0;
+}
+
+.thankyou-page .main-content .main-thankyou .order-content.g-container .grid-block.-order.-c3 .grid-item img {
+  width: 100%;
+}
+
+.thankyou-page .main-content .main-thankyou .order-content.g-container .grid-block.-order.-c3 .grid-item h5 {
+  margin: 0;
+  font-family: 'Agency FB';
+  font-size: 14px;
+  color: #ffbe00;
+}
+
+.thankyou-page .main-content .main-thankyou .order-content.g-container .grid-block.-order.-c3 .grid-item h3 {
+  margin: 0;
+  font-family: 'Agency FB';
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.thankyou-page .main-content .main-thankyou .order-content.g-container .grid-block.-order.-c3 .grid-item h4 {
+  margin: 0;
+  font-family: 'Agency FB';
+  font-size: 16px;
+  font-weight: normal;
+  margin-bottom: 15px;
+}
+
+.thankyou-page .main-content .main-thankyou .order-content.g-container .grid-block.-order.-c3 .grid-item p {
+  margin: 0;
+  font-size: 16px;
+}
+
+.thankyou-page .main-content .main-thankyou .order-content.g-container .grid-block.-order.-c3 .grid-item:last-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.thankyou-page .main-content .main-thankyou .order-content.g-container .grid-block.-order.-c3 .grid-item:last-child .sale-price {
+  font-size: 18px;
+  color: #ffbe00;
+  font-weight: bold;
+}
+
+.thankyou-page .main-content .main-thankyou .order-content.g-container .grid-block.-order.-c3 .grid-item:last-child .old-price {
+  margin-top: -7px;
+  font-size: 14px;
+  color: #606060;
+  font-weight: bold;
+  text-decoration: line-through;
+}
+
+.thankyou-page .main-content .main-thankyou .order-content.g-container .summary-price-block {
+  border-top: 1px solid #4A4A4A;
+  padding: 1rem 0;
+}
+
+.thankyou-page .main-content .main-thankyou .order-content.g-container .summary-price-block .grid-block .grid-item:last-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.thankyou-page .main-content .main-thankyou .order-content.g-container .summary-price-block .grid-block .grid-item:last-child .title-price {
+  font-size: 20px;
+}
+
+.thankyou-page .main-content .main-thankyou .order-content.g-container .summary-price-block .grid-block .grid-item:last-child .total-price {
+  font-size: 22px;
+  font-weight: bold;
+  font-family: 'Agency FB';
+  color: #ffbe00;
+}
+
+.thankyou-page .main-content .main-thankyou .order-content.g-container .btn-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 2rem;
+}
+
+.thankyou-page .main-content .main-thankyou .order-content.g-container .btn-block a.back-home-btn {
+  margin: 0 5px;
+  display: block;
+  padding: 7px 60px;
+  background-color: #353535;
+  border-radius: 5px;
+}
+
+.thankyou-page .main-content .main-thankyou .order-content.g-container .btn-block a.history-btn {
+  margin: 0 5px;
+  display: block;
+  padding: 7px 50px;
+  background-color: #ffbe00;
+  color: #000;
+  border-radius: 5px;
 }

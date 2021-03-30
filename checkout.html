@@ -8,7 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link rel="stylesheet" href="css/style.min.css" type="text/css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/featherlight/v.1.7.14/featherlight.min.css" type="text/css"rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/featherlight/v.1.7.14/featherlight.min.css" type="text/css"
+        rel="stylesheet" />
     <link href="js/splidejs/splide.min.css" type="text/css" rel="stylesheet" />
     <link href="js/mmenu-light/mmenu-light.css" type="text/css" rel="stylesheet" />
 
@@ -25,14 +26,245 @@
 
     <main class="main-content">
 
-        checkout
+        <section class="main-checkout">
+            <div class="g-container">
+                <div class="grid-block -c2 -mc1">
+                    <div class="grid-item -left">
+                        <div class="send-area-block">
+                            <h2>พื้นที่การจัดส่ง</h2>
+                            <div class="choose-area">
+                                <input type="radio" id="thailand" name="radio-group-area" value="thailand" checked>
+                                <label for="thailand">ประเทศไทย</label>
+
+                                <input type="radio" id="international" name="radio-group-area" value="international">
+                                <label for="international">ต่างประเทศ</label>
+                            </div>
+
+                            <h2>ชำระเงิน</h2>
+                            <div class="payment-method">
+                                <div id="step-accordion">
+                                    <div id="step-01" class="step-block">
+                                        <h3 class="acc-title collapse">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="38.835" height="32.373" viewBox="0 0 38.835 32.373">
+                                            <path id="Path_9656" data-name="Path 9656" d="M254.361,125.493l13.173,8.322-5.995,17.013-21.015,7.038L228.7,147.149,236.35,131.8Z" transform="translate(-228.699 -125.493)" fill="#606060"/>
+                                          </svg>
+                                          วิธีการจัดส่ง</h3>
+                                        <div id="c1" class="acc-content collapse">
+                                            <div class="content">
+                                                <div class="grid-block -c2 -mc1 choose-send">
+                                                    <div class="grid-item">
+                                                        <input type="radio" id="normal" name="radio-group-send" value="จัดส่งสินค้าปกติ" checked>
+                                                        <label for="normal">จัดส่งสินค้าแบบปกติ<br><span>(2-4 วันทำการ)</span></label>
+                                                    </div>
+                                                    <div class="grid-item">
+                                                        <input type="radio" id="cash-on-deli" name="radio-group-send" value="จัดส่งสินค้าแบบชำระปลายทาง">
+                                                        <label for="cash-on-deli">จัดส่งสินค้าแบบชำระเงินปลายทาง<br><span>(ชำระเงินสดเพียงอย่างเดียว)</span></label>
+                                                    </div>
+                                                
+                                                    <div class="grid-item">
+                                                        <input type="radio" id="sameday" name="radio-group-send" value="จัดส่งสินค้าภายในวันเดียวกัน">
+                                                        <label for="sameday">จัดส่งสินค้าภายในวันเดียวกัน<br><span>( ภายในวันเดียวตั้งแต่ 10:30 - 16:30 น. )</span></label>
+                                                    </div>
+                                                    <div class="grid-item">
+                                                        <input type="radio" id="self" name="radio-group-send" value="รับสินค้าเองที่ร้าน">
+                                                        <label for="self">รับสินค้าเองที่ร้าน</label>
+                                                    </div>
+                                                </div>
+                                                    <a href="javascript:void(0);" class="accordion_options" rel="1">ขั้นตอนต่อไป</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div id="step-02" class="step-block">
+                                        <h3 class="acc-title">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="38.835" height="32.373" viewBox="0 0 38.835 32.373">
+                                                <path id="Path_9656" data-name="Path 9656" d="M254.361,125.493l13.173,8.322-5.995,17.013-21.015,7.038L228.7,147.149,236.35,131.8Z" transform="translate(-228.699 -125.493)" fill="#606060"/>
+                                            </svg>
+                                            ข้อมูลการจัดส่งและที่อยู่ใบเสร็จ/ใบกำกับภาษี</h3>
+                                        <div id="c2" class="acc-content">
+                                            <div class="content -address">
+                                                <h4>ข้อมูลการจัดส่งสินค้า</h4>
+                                                <div class="send-inform-block">
+                                                    <div class="grid-block item-address -c2">
+                                                        <div class="grid-item">
+                                                            <div class="choose-address">
+                                                                <input type="radio" id="normal" name="radio-group-address" value="จัดส่งสินค้าปกติ" checked>
+                                                                <label for="normal">
+                                                                    จิดาภา ไทยอุดมทรัพย์<br>
+                                                                    <span>080-000-0000</span>
+                                                                    <p>450/222 ม.1 ซ.เทพารักษ์ 116 ต.แพรกษาใหม่ อ.เมือง จ.สมุทรปราการ
+                                                                        10280 ประเทศไทย</p>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="grid-item">
+                                                            <a href="#" class="edit-btn">แก้ไขที่อยู่</a>
+                                                            <a href="#" class="del-btn"><img src="images/bin.svg" alt=""></a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="grid-block item-address -c2">
+                                                        <div class="grid-item">
+                                                            <div class="choose-address -choose-billing">
+                                                                <input type="radio" id="normal" name="radio-group-address" value="จัดส่งสินค้าปกติ">
+                                                                <label for="normal">
+                                                                    จิดาภา ไทยอุดมทรัพย์<br>
+                                                                    <span>080-000-0000</span>
+                                                                    <p>450/222 ม.1 ซ.เทพารักษ์ 116 ต.แพรกษาใหม่ อ.เมือง จ.สมุทรปราการ
+                                                                        10280 ประเทศไทย</p>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="grid-item">
+                                                            <a href="#" class="edit-btn">แก้ไขที่อยู่</a>
+                                                            <a href="#" class="del-btn"><img src="images/bin.svg" alt=""></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="add-send-inform-block">
+                                                    <a href="#" class="add-send-inform-btn">+ เพิ่มที่อยู่จัดส่ง</a>
+                                                </div>
+
+                                                <h4>ข้อมูลที่อยู่ใบเสร็จ/ใบกำกับภาษี</h4>
+                                                <div class="choose-address">
+                                                    <input type="radio" id="old-billing" name="radio-group-billing" value="ใช้ที่อยู่ใบเสร็จ/ใบกำกับภาษีเป็นที่อยู่เดียวกันกับที่อยู่จัดส่ง" checked>
+                                                    <label for="old-billing">ใช้ที่อยู่ใบเสร็จ/ใบกำกับภาษีเป็นที่อยู่เดียวกันกับที่อยู่จัดส่ง</label>
+
+                                                    <input type="radio" id="new-billing" name="radio-group-billing" value="ใช้ที่อยู่ใบเสร็จ/แก้ไขข้อมูลออกใบเสร็จ/ใบกำกับภาษี">
+                                                    <label for="new-billing">ใช้ที่อยู่ใบเสร็จ/แก้ไขข้อมูลออกใบเสร็จ/ใบกำกับภาษี</label>
+                                                </div>
+                                                <a href="javascript:void(0);" class="accordion_options" rel="2">ขั้นตอนต่อไป</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="step-03" class="step-block">
+                                        <h3 class="acc-title">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="38.835" height="32.373" viewBox="0 0 38.835 32.373">
+                                                <path id="Path_9656" data-name="Path 9656" d="M254.361,125.493l13.173,8.322-5.995,17.013-21.015,7.038L228.7,147.149,236.35,131.8Z" transform="translate(-228.699 -125.493)" fill="#606060"/>
+                                              </svg>
+                                              วิธีการชำระเงิน</h3>
+                                        <div id="c3" class="acc-content">
+                                            <div class="content -payment-method">
+                                                <div class="grid-block -c2 -mc1 choose-payment">
+                                                    <div class="grid-item">
+                                                        <input type="radio" id="credit-card" name="radio-group-payment" value="ชำระด้วยบัตรเครดิต / เดบิต" checked>
+                                                        <label for="credit-card">
+                                                            ชำระด้วยบัตรเครดิต / เดบิต
+                                                            <p>*คำสั่งซื้อของคุณจะไม่สมบูรณ์จนกว่าคุณจะชำระเงิน</p>
+                                                        </label>
+                                                    </div>
+                                                    <div class="grid-item">
+                                                        <img src="images/icon-payment.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="grid-block -c2 -mc1 choose-payment">
+                                                    <div class="grid-item">
+                                                        <input type="radio" id="promptpay" name="radio-group-payment" value="พร้อมเพย์">
+                                                        <label for="promptpay">
+                                                            พร้อมเพย์
+                                                            <p>*คำสั่งซื้อของคุณจะไม่สมบูรณ์จนกว่าคุณจะชำระเงิน</p>
+                                                        </label>
+                                                    </div>
+                                                    <div class="grid-item">
+                                                        <img src="images/promptpay-icon.svg" alt="" />
+                                                    </div>
+                                                </div>
+
+                                                <div class="remark-block">
+                                                    <label>ระบุหมายเหตุคำสั่งซื้อ</label>
+                                                    <input type="textarea" placeholder="ตัวอย่าง : ไม่ต้องการใส่ใบเสร็จลงในพัสดุส่งสินค้า">
+                                                </div>
+                                                <a href="/thankyou.html" class="accordion_options">ดำเนินการชำระเงิน</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-item -right">
+                        <div class="summary-block">
+                            <h3>ใช้รหัสส่วนลด</h3>
+                            <form class="sub-form" action="#">
+                                <input type="text" class="inp-sub" placeholder="กรุณาระบุคูปองส่วนลด">
+                                <button class="btn-submit">ใช้</button>
+                            </form>
+
+                            <div class="sub-summary-price">
+
+                                <h3>สรุปรายการสั่งซื้อ</h3>
+                                <div class="acc">
+                                    <div class="acc__card">
+                                        <div class="acc__title">3 รายการ</div>
+                                            <div class="acc__panel">
+                                                รายการสั่งซื้อ
+                                            </div>
+                                    </div>
+                                </div>
+                                <div class="grid-block -c2">
+                                    <div class="grid-item">
+                                        <h5>ราคารวม</h5>
+                                    </div>
+                                    <div class="grid-item">
+                                        <span class="price">24,870 THB</span>
+                                    </div>
+                                </div>
+                                <div class="grid-block -c2">
+                                    <div class="grid-item">
+                                        <h5>ค่าจัดส่ง</h5>
+                                    </div>
+                                    <div class="grid-item">
+                                        <span class="address">ถูกคำนวนจากที่อยู่ของคุณ</span>
+                                    </div>
+                                </div>
+                                <div class="grid-block -c2">
+                                    <div class="grid-item">
+                                        <h5>ส่วนลด</h5>
+                                    </div>
+                                    <div class="grid-item">
+                                        <span class="price">870 THB</span>
+                                    </div>
+                                </div>
+                                <div class="grid-block -c2 --total">
+                                    <div class="grid-item">
+                                        <h5>รวม</h5>
+                                    </div>
+                                    <div class="grid-item">
+                                        <span class="price">24,000 THB</span>
+                                    </div>
+                                </div>
+                                <div class="grid-block -c2">
+                                    <div class="grid-item">
+                                        <h5>ภาษีมูลค่าเพิ่ม 7%</h5>
+                                    </div>
+                                    <div class="grid-item">
+                                        <span class="price">870 THB</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="total-summary-block">
+                                <div class="grid-block -c2">
+                                    <div class="grid-item -head-total">
+                                        <h5>ยอดรวมสุทธิ</h5>
+                                    </div>
+                                    <div class="grid-item -price-total">
+                                        <span class="price">24,870 THB</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
     </main>
 
     <footer-component></footer-component>
-    
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" defer></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/featherlight/v.1.7.14/featherlight.min.js" type="text/javascript" charset="utf-8" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/featherlight/v.1.7.14/featherlight.min.js"
+        type="text/javascript" charset="utf-8" defer></script>
     <script src="js/splidejs/splide.min.js" defer></script>
     <script src="js/mmenu-light/mmenu-light.min.js" type="text/javascript" defer></script>
     <script src="js/mmenu-light/mmenu-light.polyfills.js" type="text/javascript" defer></script>
