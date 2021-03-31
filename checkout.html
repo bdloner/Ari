@@ -48,7 +48,9 @@
                                             <svg xmlns="http://www.w3.org/2000/svg" width="38.835" height="32.373" viewBox="0 0 38.835 32.373">
                                             <path id="Path_9656" data-name="Path 9656" d="M254.361,125.493l13.173,8.322-5.995,17.013-21.015,7.038L228.7,147.149,236.35,131.8Z" transform="translate(-228.699 -125.493)" fill="#606060"/>
                                           </svg>
-                                          วิธีการจัดส่ง</h3>
+                                          วิธีการจัดส่ง
+                                          <a href="#" id="edit-prev-01" class="edit-btn" rel="1">แก้ไข</a>
+                                        </h3>
                                         <div id="c1" class="acc-content collapse">
                                             <div class="content">
                                                 <div class="grid-block -c2 -mc1 choose-send">
@@ -57,20 +59,112 @@
                                                         <label for="normal">จัดส่งสินค้าแบบปกติ<br><span>(2-4 วันทำการ)</span></label>
                                                     </div>
                                                     <div class="grid-item">
-                                                        <input type="radio" id="cash-on-deli" name="radio-group-send" value="จัดส่งสินค้าแบบชำระปลายทาง">
-                                                        <label for="cash-on-deli">จัดส่งสินค้าแบบชำระเงินปลายทาง<br><span>(ชำระเงินสดเพียงอย่างเดียว)</span></label>
-                                                    </div>
-                                                
-                                                    <div class="grid-item">
                                                         <input type="radio" id="sameday" name="radio-group-send" value="จัดส่งสินค้าภายในวันเดียวกัน">
                                                         <label for="sameday">จัดส่งสินค้าภายในวันเดียวกัน<br><span>( ภายในวันเดียวตั้งแต่ 10:30 - 16:30 น. )</span></label>
+                                                    </div>
+                                                    <div class="grid-item">
+                                                        <input type="radio" id="cash-on-deli" name="radio-group-send" value="จัดส่งสินค้าแบบชำระปลายทาง">
+                                                        <label for="cash-on-deli">จัดส่งสินค้าแบบชำระเงินปลายทาง<br><span>(ชำระเงินสดเพียงอย่างเดียว)</span></label>
                                                     </div>
                                                     <div class="grid-item">
                                                         <input type="radio" id="self" name="radio-group-send" value="รับสินค้าเองที่ร้าน">
                                                         <label for="self">รับสินค้าเองที่ร้าน</label>
                                                     </div>
                                                 </div>
-                                                    <a href="javascript:void(0);" class="accordion_options" rel="1">ขั้นตอนต่อไป</a>
+                                                <div class="self-block" style="display: none;">
+                                                    <form action="#" id="self-form">
+                                                        <h4>รับสินค้าเอง</h4>
+                                                        <div class="grid-block -c2 -mc1">
+                                                            <div class="grid-item">
+                                                                <h5>สาขา</h5>
+                                                                <select name="branch" id="branch">
+                                                                    <option value="" selected>กรุณาเลือกสาขา</option>
+                                                                    <option value="เมกะบางนา">อาริฟุตบอล เมกะบางนา</option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="grid-item -desc-branch">
+                                                                <span>*ระยะเวลารับสินค้า 2-4 วันทำการ</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="grid-block -c2-5 -mc1">
+                                                            <div class="grid-item">
+                                                                <ul class="with-logo">
+                                                                    <li>ศูนย์การค้าเมกาบางนา ห้องเลขที่ SHPC.L2.2380
+                                                                        ชั้น 2 เลขที่ 39 หมู่ 6 ถนน บางนา ตราด ต.บางเเก้ว
+                                                                        อ.บางพลี สมุทรปราการ 10540 </li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="grid-item">
+                                                                <ul class="contact-phone">
+                                                                    <li>02-105-1708</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="grid-block -c2 -mc1">
+                                                            <div class="grid-item">
+                                                                <h5>ชื่อผู้รับ</h5>
+                                                                <input type="text" placeholder="ชื่อผู้รับสินค้า" />
+                                                            </div>
+                                                            <div class="grid-item">
+                                                                <h5>เบอร์โทรติดต่อ</h5>
+                                                                <input type="tel" placeholder="เบอร์โทรติดต่อ" />
+                                                            </div>
+                                                            <div class="grid-item">
+                                                                <h5>อีเมล</h5>
+                                                                <input type="email" placeholder="email@email.com" />
+                                                            </div>
+                                                        </div>
+
+                                                        <h4 class="title-billing">ข้อมูลที่อยู่ใบเสร็จ/ใบกำกับภาษี</h4>
+                                                        <div class="choose-address">
+                                                            <input type="radio" id="new-self-billing" name="radio-group-self-billing" value="ใช้ที่อยู่ใบเสร็จ/แก้ไขข้อมูลออกใบเสร็จ/ใบกำกับภาษี">
+                                                            <label for="new-self-billing">ต้องการที่อยู่ใบเสร็จ/ใบกำกับภาษี</label>
+                                                        </div>
+
+                                                        <div class="send-inform-block" id="add-on-self-address" style="display: none;">
+                                                            <div class="grid-block item-address -c2">
+                                                                <div class="grid-item">
+                                                                    <div class="choose-address">
+                                                                        <input type="radio" id="normal-billing-01" name="radio-group-billing" value="จัดส่งสินค้าปกติ" checked>
+                                                                        <label for="normal-billing-01">
+                                                                            จิดาภา ไทยอุดมทรัพย์<br>
+                                                                            <span>080-000-0000</span>
+                                                                            <p>450/222 ม.1 ซ.เทพารักษ์ 116 ต.แพรกษาใหม่ อ.เมือง จ.สมุทรปราการ
+                                                                                10280 ประเทศไทย</p>
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="grid-item">
+                                                                    <a href="#" class="edit-btn -billing">แก้ไขที่อยู่</a>
+                                                                    <a href="#" class="del-btn"><img src="images/bin.svg" alt=""></a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="grid-block item-address -c2">
+                                                                <div class="grid-item">
+                                                                    <div class="choose-address -choose-self-billing">
+                                                                        <input type="radio" id="normal-billing-02" name="radio-group-billing" value="จัดส่งสินค้าปกติ">
+                                                                        <label for="normal-billing-02">
+                                                                            จิดาภา ไทยอุดมทรัพย์<br>
+                                                                            <span>080-000-0000</span>
+                                                                            <p>450/222 ม.1 ซ.เทพารักษ์ 116 ต.แพรกษาใหม่ อ.เมือง จ.สมุทรปราการ
+                                                                                10280 ประเทศไทย</p>
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="grid-item">
+                                                                    <a href="#" class="edit-btn -billing">แก้ไขที่อยู่</a>
+                                                                    <a href="#" class="del-btn"><img src="images/bin.svg" alt=""></a>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="add-send-inform-block">
+                                                                <a href="#" class="add-send-inform-btn -billing">+ เพิ่มที่อยู่ใบเสร็จ/ใบกำกับภาษี</a>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                                <a href="javascript:void(0);" class="accordion_options" rel="1">ขั้นตอนต่อไป</a>
+                                                <a href="javascript:void(0);" class="accordion_options_swap" rel="2" style="display: none;">ขั้นตอนต่อไป</a>
                                             </div>
                                         </div>
                                     </div>
@@ -80,7 +174,10 @@
                                             <svg xmlns="http://www.w3.org/2000/svg" width="38.835" height="32.373" viewBox="0 0 38.835 32.373">
                                                 <path id="Path_9656" data-name="Path 9656" d="M254.361,125.493l13.173,8.322-5.995,17.013-21.015,7.038L228.7,147.149,236.35,131.8Z" transform="translate(-228.699 -125.493)" fill="#606060"/>
                                             </svg>
-                                            ข้อมูลการจัดส่งและที่อยู่ใบเสร็จ/ใบกำกับภาษี</h3>
+                                            ข้อมูลการจัดส่งและที่อยู่ใบเสร็จ/ใบกำกับภาษี
+                                            <a href="#" id="edit-prev-02" class="edit-btn" rel="2">แก้ไข</a>
+                                        </h3>
+                                            
                                         <div id="c2" class="acc-content">
                                             <div class="content -address">
                                                 <h4>ข้อมูลการจัดส่งสินค้า</h4>
@@ -88,8 +185,8 @@
                                                     <div class="grid-block item-address -c2">
                                                         <div class="grid-item">
                                                             <div class="choose-address">
-                                                                <input type="radio" id="normal" name="radio-group-address" value="จัดส่งสินค้าปกติ" checked>
-                                                                <label for="normal">
+                                                                <input type="radio" id="normal-address-01" name="radio-group-address" value="จัดส่งสินค้าปกติ" checked>
+                                                                <label for="normal-address-01">
                                                                     จิดาภา ไทยอุดมทรัพย์<br>
                                                                     <span>080-000-0000</span>
                                                                     <p>450/222 ม.1 ซ.เทพารักษ์ 116 ต.แพรกษาใหม่ อ.เมือง จ.สมุทรปราการ
@@ -98,15 +195,15 @@
                                                             </div>
                                                         </div>
                                                         <div class="grid-item">
-                                                            <a href="#" class="edit-btn">แก้ไขที่อยู่</a>
+                                                            <a href="#" class="edit-btn -shipping">แก้ไขที่อยู่</a>
                                                             <a href="#" class="del-btn"><img src="images/bin.svg" alt=""></a>
                                                         </div>
                                                     </div>
                                                     <div class="grid-block item-address -c2">
                                                         <div class="grid-item">
                                                             <div class="choose-address -choose-billing">
-                                                                <input type="radio" id="normal" name="radio-group-address" value="จัดส่งสินค้าปกติ">
-                                                                <label for="normal">
+                                                                <input type="radio" id="normal-address-02" name="radio-group-address" value="จัดส่งสินค้าปกติ">
+                                                                <label for="normal-address-02">
                                                                     จิดาภา ไทยอุดมทรัพย์<br>
                                                                     <span>080-000-0000</span>
                                                                     <p>450/222 ม.1 ซ.เทพารักษ์ 116 ต.แพรกษาใหม่ อ.เมือง จ.สมุทรปราการ
@@ -115,23 +212,65 @@
                                                             </div>
                                                         </div>
                                                         <div class="grid-item">
-                                                            <a href="#" class="edit-btn">แก้ไขที่อยู่</a>
+                                                            <a href="#" class="edit-btn -shipping">แก้ไขที่อยู่</a>
                                                             <a href="#" class="del-btn"><img src="images/bin.svg" alt=""></a>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="add-send-inform-block">
-                                                    <a href="#" class="add-send-inform-btn">+ เพิ่มที่อยู่จัดส่ง</a>
+                                                    <a href="#" class="add-send-inform-btn -shipping">+ เพิ่มที่อยู่จัดส่ง</a>
                                                 </div>
 
                                                 <h4>ข้อมูลที่อยู่ใบเสร็จ/ใบกำกับภาษี</h4>
                                                 <div class="choose-address">
-                                                    <input type="radio" id="old-billing" name="radio-group-billing" value="ใช้ที่อยู่ใบเสร็จ/ใบกำกับภาษีเป็นที่อยู่เดียวกันกับที่อยู่จัดส่ง" checked>
+                                                    <input type="radio" id="old-billing" name="radio-group-choose-billing" value="ใช้ที่อยู่ใบเสร็จ/ใบกำกับภาษีเป็นที่อยู่เดียวกันกับที่อยู่จัดส่ง" checked>
                                                     <label for="old-billing">ใช้ที่อยู่ใบเสร็จ/ใบกำกับภาษีเป็นที่อยู่เดียวกันกับที่อยู่จัดส่ง</label>
 
-                                                    <input type="radio" id="new-billing" name="radio-group-billing" value="ใช้ที่อยู่ใบเสร็จ/แก้ไขข้อมูลออกใบเสร็จ/ใบกำกับภาษี">
+                                                    <input type="radio" id="new-billing" name="radio-group-choose-billing" value="ใช้ที่อยู่ใบเสร็จ/แก้ไขข้อมูลออกใบเสร็จ/ใบกำกับภาษี">
                                                     <label for="new-billing">ใช้ที่อยู่ใบเสร็จ/แก้ไขข้อมูลออกใบเสร็จ/ใบกำกับภาษี</label>
                                                 </div>
+
+                                                <div class="send-inform-block" id="add-on-address" style="display: none;">
+                                                    <div class="grid-block item-address -c2">
+                                                        <div class="grid-item">
+                                                            <div class="choose-address">
+                                                                <input type="radio" id="normal-billing-01" name="radio-group-billing" value="จัดส่งสินค้าปกติ" checked>
+                                                                <label for="normal-billing-01">
+                                                                    จิดาภา ไทยอุดมทรัพย์<br>
+                                                                    <span>080-000-0000</span>
+                                                                    <p>450/222 ม.1 ซ.เทพารักษ์ 116 ต.แพรกษาใหม่ อ.เมือง จ.สมุทรปราการ
+                                                                        10280 ประเทศไทย</p>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="grid-item">
+                                                            <a href="#" class="edit-btn -billing">แก้ไขที่อยู่</a>
+                                                            <a href="#" class="del-btn"><img src="images/bin.svg" alt=""></a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="grid-block item-address -c2">
+                                                        <div class="grid-item">
+                                                            <div class="choose-address -choose-billing">
+                                                                <input type="radio" id="normal-billing-02" name="radio-group-billing" value="จัดส่งสินค้าปกติ">
+                                                                <label for="normal-billing-02">
+                                                                    จิดาภา ไทยอุดมทรัพย์<br>
+                                                                    <span>080-000-0000</span>
+                                                                    <p>450/222 ม.1 ซ.เทพารักษ์ 116 ต.แพรกษาใหม่ อ.เมือง จ.สมุทรปราการ
+                                                                        10280 ประเทศไทย</p>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="grid-item">
+                                                            <a href="#" class="edit-btn -billing">แก้ไขที่อยู่</a>
+                                                            <a href="#" class="del-btn"><img src="images/bin.svg" alt=""></a>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="add-send-inform-block">
+                                                        <a href="#" class="add-send-inform-btn -billing">+ เพิ่มที่อยู่ใบเสร็จ/ใบกำกับภาษี</a>
+                                                    </div>
+                                                </div>
+
                                                 <a href="javascript:void(0);" class="accordion_options" rel="2">ขั้นตอนต่อไป</a>
                                             </div>
                                         </div>
@@ -173,7 +312,29 @@
                                                     <label>ระบุหมายเหตุคำสั่งซื้อ</label>
                                                     <input type="textarea" placeholder="ตัวอย่าง : ไม่ต้องการใส่ใบเสร็จลงในพัสดุส่งสินค้า">
                                                 </div>
-                                                <a href="/thankyou.html" class="accordion_options">ดำเนินการชำระเงิน</a>
+                                                <a href="/thankyou.html" id="credit-submit" class="accordion_options">ดำเนินการชำระเงิน</a>
+                                                <a href="/promptpay.html" id="pp-submit" class="accordion_options" style="display: none;">ดำเนินการชำระเงิน</a>
+                                            </div>
+
+                                            <div class="content -payment-sameday">
+                                                <div class="grid-block -c2 -mc1 choose-payment">
+                                                    <div class="grid-item">
+                                                        <input type="radio" id="cashon-delivery" name="radio-group-cashon-delivery" value="ชำระด้วยบัตรเครดิต / เดบิต" checked>
+                                                        <label for="cashon-delivery">
+                                                            ชำระเงินปลายทาง
+                                                            <p>*คำสั่งซื้อของคุณจะไม่สมบูรณ์จนกว่าคุณจะชำระเงิน</p>
+                                                        </label>
+                                                    </div>
+                                                    <div class="grid-item">
+                                                        <img src="images/pay-sameday-icon.svg" alt="" />
+                                                    </div>
+                                                </div>
+    
+                                                <div class="remark-block">
+                                                    <label>ระบุหมายเหตุคำสั่งซื้อ</label>
+                                                    <input type="textarea" placeholder="ตัวอย่าง : ไม่ต้องการใส่ใบเสร็จลงในพัสดุส่งสินค้า">
+                                                </div>
+                                                <a href="/thankyou.html" id="credit-submit" class="accordion_options">ดำเนินการชำระเงิน</a>
                                             </div>
                                         </div>
                                     </div>

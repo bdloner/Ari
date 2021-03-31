@@ -501,14 +501,191 @@ jQuery(document).ready(function($) {
 
     // Checkout Accordion Payment Method
 
-$(".accordion_options").click(function() {
-  let current = $(this).attr("rel");
-  let next = parseInt(current)+1;
+  $(".accordion_options").click(function() {
+    let current = $(this).attr("rel");
+    let next = parseInt(current)+1;
+    
+    $('#c'+current).removeClass('collapse');
+    $('#c'+current).prev().addClass('editable');
+
+    $('#c'+next).prev().addClass('collapse');
+    $('#c'+next).addClass('collapse');
+  });
+
+  $("#step-accordion .edit-btn").click(function(e) {
+    e.preventDefault();
+
+    let current = $(this).attr("rel");
+    let next = parseInt(current)+1;
+
+    if(current == '1'){
+      $('#step-accordion .editable').removeClass('editable');
+      $('#step-accordion .collapse').removeClass('collapse');
+
+      $('#c'+current).prev().addClass('collapse');
+      $('#c'+current).addClass('collapse');
+    } else{
+      $(this).parent().removeClass('editable');
+
+      $('#c'+current).addClass('collapse');
+
+      $('#c'+next).prev().removeClass('collapse');
+      $('#c'+next).removeClass('collapse');
+    }
+    
+  });
+
+    // Checkout Checked Radio
+
+    $('#new-billing').click(function(){
+      $("#step-02 #add-on-address").show();
+    });
+
+    // Self Choose Billing
+
+    $('#new-self-billing').click(function(){
+      $("#step-01 #add-on-self-address").show();
+    });
+
+    $('#step-01 .edit-btn.-shipping').click(function(){
+      $("#popup-address").fadeIn();
+
+      $("#edit-shipping-form").show();
+    });
+
+    $('#step-01 .edit-btn.-billing').click(function(){
+      $("#popup-address").fadeIn();
+
+      $("#edit-billing-form").show();
+    });
+
+    $('#step-01 .add-send-inform-btn.-shipping').click(function(){
+      $("#popup-address").fadeIn();
+
+      $("#add-shipping-form").show();
+    });
+
+    $('#step-01 .add-send-inform-btn.-billing').click(function(){
+      $("#popup-address").fadeIn();
+
+      $("#add-billing-form").show();
+    });
+
+    // Self End
+
+    $('#old-billing').click(function(){
+      $("#step-02 #add-on-address").hide();
+    });
+
+    $('#promptpay').click(function(){
+      $("#credit-submit").hide();
+
+      $("#pp-submit").show();
+    });
+
+    $('#credit-card').click(function(){
+      $("#credit-submit").show();
+
+      $("#pp-submit").hide();
+    });
+
+    $('#credit-card').click(function(){
+      $("#credit-submit").show();
+
+      $("#pp-submit").hide();
+    });
+
+    $('#popup-address .close-btn').click(function(){
+      $("#popup-address").fadeOut();
+      $("#popup-address form").hide();
+    });
+
+    $('#popup-address .overlay').click(function(){
+      $("#popup-address").fadeOut();
+      $("#popup-address form").hide();
+    });
+
+    $('#step-02 .edit-btn.-shipping').click(function(){
+      $("#popup-address").fadeIn();
+
+      $("#edit-shipping-form").show();
+    });
+
+    $('#step-02 .edit-btn.-billing').click(function(){
+      $("#popup-address").fadeIn();
+
+      $("#edit-billing-form").show();
+    });
+
+    $('#step-02 .add-send-inform-btn.-shipping').click(function(){
+      $("#popup-address").fadeIn();
+
+      $("#add-shipping-form").show();
+    });
+
+    $('#step-02 .add-send-inform-btn.-billing').click(function(){
+      $("#popup-address").fadeIn();
+
+      $("#add-billing-form").show();
+    });
+
+    $('#step-01 #cash-on-deli').click(function(){
+      $("#step-02").show();
+      $(".-payment-method").hide();
+      $(".accordion_options_swap").hide();
+      $("#step-03").removeClass('swap-step');
+
+      $(".self-block").hide();
+
+      $(".-payment-sameday").show();
+      $("#step-01 .accordion_options").show();
+    });
+
+    $('#step-01 #sameday').click(function(){
+      $("#step-02").show();
+      $(".-payment-sameday").hide();
+      $(".accordion_options_swap").hide();
+      $("#step-03").removeClass('swap-step');
+
+      $(".self-block").hide();
+
+      $(".-payment-method").show();
+      $("#step-01 .accordion_options").show();
+    });
+
+    $('#step-01 #normal').click(function(){
+      $("#step-02").show();
+      $(".-payment-sameday").hide();
+      $(".accordion_options_swap").hide();
+      $("#step-03").removeClass('swap-step');
+
+      $(".self-block").hide();
+
+      $(".-payment-method").show();
+      $("#step-01 .accordion_options").show();
+    });
+
+    $('#step-01 #self').click(function(){
+      $("#step-02").hide();
+      $(".-payment-sameday").hide();
+      $("#step-01 .accordion_options").hide();
+      
+      $(".self-block").show();
+
+      $(".-payment-method").show();
+      $(".accordion_options_swap").show();
+      $("#step-03").addClass('swap-step');
+    });
+
+    $(".accordion_options_swap").click(function() {
+      let current = $(this).attr("rel");
+      let next = parseInt(current)+1;
+      
+      $('#c1').removeClass('collapse');
+      $('#c1').prev().addClass('editable');
   
-  $('#c'+current).removeClass('collapse');
-
-  $('#c'+next).prev().addClass('collapse');
-  $('#c'+next).addClass('collapse');
-});
-
+      $('#c'+next).prev().addClass('collapse');
+      $('#c'+next).addClass('collapse');
+    });    
+    
 });

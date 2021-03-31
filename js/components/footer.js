@@ -147,6 +147,383 @@ class Footer extends HTMLElement {
         </div>
     </div>
 
+    <div id="popup-address" style="display: none;">
+        <div class="overlay"></div>
+        <div class="address-block">
+            <a href="#" class="close-btn"><img src="images/x-icon.svg" alt=""></a>
+            <form action="#" id="add-shipping-form" style="display: none;">
+                <h2 class="title-cate">ข้อมูลการจัดส่งสินค้า</h2>
+                <div class="grid-block -c2 -mc1">
+                    <div class="grid-item">
+                        <h5>อีเมล</h5>
+                        <input type="email" placeholder="yourmail@email.com" />
+                    </div>
+                    <div class="grid-item">
+                        <h5>เบอร์โทรติดต่อ</h5>
+                        <input type="tel" placeholder="08_-___-____" />
+                    </div>
+                </div>
+                <div class="grid-block -c1">
+                    <div class="grid-item">
+                        <h5>ชื่อ - นามสกุล</h5>
+                        <input type="text" placeholder="ชื่อ - นามสกุล" />
+                    </div>
+                    <div class="grid-item">
+                        <h5>ที่อยู่</h5>
+                        <input type="text" placeholder="เลขที่อยู่/อาคาร/ถนน" />
+                    </div>
+                </div>
+                <div class="grid-block -c2 -mc1">
+                    <div class="grid-item">
+                        <h5>ประเทศ</h5>
+                        <select name="country" id="country">
+                            <option value="" selected>ประเทศ</option>
+                            <option value="ไทย">ไทย</option>
+                            <option value="สหรัฐอเมริกา">สหรัฐอเมริกา</option>
+                        </select>
+                    </div>
+                    <div class="grid-item">
+                        <h5>จังหวัด</h5>
+                        <select name="province" id="province">
+                            <option value="" selected>จังหวัด</option>
+                            <option value="กรุงเทพมหานคร">กรุงเทพมหานคร</option>
+                            <option value="สมุทรปราการ">สมุทรปราการ</option>
+                        </select>
+                    </div>
+                    <div class="grid-item">
+                        <h5>แขวง/ตำบล</h5>
+                        <select name="sub-district" id="sub-district">
+                            <option value="" selected>แขวง/ตำบล</option>
+                            <option value="พญาไท">พญาไท</option>
+                            <option value="บางพลีใหญ่">บางพลีใหญ่</option>
+                        </select>
+                    </div>
+                    <div class="grid-item">
+                        <h5>เขต/เมือง</h5>
+                        <select name="state" id="state">
+                            <option value="" selected>เขต/เมือง</option>
+                            <option value="พญาไท">พญาไท</option>
+                            <option value="บางพลี">บางพลี</option>
+                        </select>
+                    </div>
+                    <div class="grid-item">
+                        <h5>รหัสไปรษณีย์</h5>
+                        <select name="postcode" id="postcode">
+                            <option value="" selected>รหัสไปรษณีย์</option>
+                            <option value="10400">10400</option>
+                            <option value="10540">10540</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="grid-block -submit-block">
+                    <div class="grid-item">
+                        <a href="#" class="submit-btn btn-global">บันทึก</a>
+                    </div>
+                </div>
+            </form>
+
+            <form action="#" id="add-billing-form" style="display: none;">
+                <h2 class="title-cate">ข้อมูลที่อยู่ใบเสร็จ/ใบกำกับภาษี</h2>
+                <div class="choose-cate-block">
+                    <span>ประเภท : </span>
+                    <div class="choose-to-add">
+                        <input type="radio" id="for-personal" name="radio-group-cate" value="บุคคล"
+                            checked>
+                        <label for="for-personal">บุคคล</label>
+
+                        <input type="radio" id="for-company" name="radio-group-cate"
+                            value="บริษัท/องค์กร">
+                        <label for="for-company">บริษัท/องค์กร</label>
+                    </div>
+                </div>
+                <div id="personal">
+                    <div class="grid-block -c2 -mc1">
+                        <div class="grid-item">
+                            <h5>อีเมล</h5>
+                            <input type="email" placeholder="yourmail@email.com" />
+                        </div>
+                        <div class="grid-item">
+                            <h5>เบอร์โทรติดต่อ</h5>
+                            <input type="tel" placeholder="08_-___-____" />
+                        </div>
+                    </div>
+                    <div class="grid-block -c1">
+                        <div class="grid-item">
+                            <h5>ชื่อ - นามสกุล</h5>
+                            <input type="text" placeholder="ชื่อ - นามสกุล" />
+                        </div>
+                        <div class="grid-item">
+                            <h5>ที่อยู่</h5>
+                            <input type="text" placeholder="เลขที่อยู่/อาคาร/ถนน" />
+                        </div>
+                    </div>
+                </div>
+                <div id="company" style="display: none;">
+                    <div class="grid-block -c2 -mc1">
+                        <div class="grid-item">
+                            <h5>เบอร์โทรติดต่อ</h5>
+                            <input type="tel" placeholder="08_-___-____" />
+                        </div>
+                        <div class="grid-item">
+                            <h5>เลขประจำตัวผู้เสียภาษี</h5>
+                            <input type="text" placeholder="หมายเลขประจำตัวผู้เสียภาษี" />
+                        </div>
+                    </div>
+                    <div class="grid-block -c2 -mc1">
+                        <div class="grid-item">
+                            <h5>ชื่อบริษัท (ที่ใช้ในการออกใบกำกับภาษี)</h5>
+                            <input type="text"
+                                placeholder="ชื่อบริษัท (ที่ใช้ในการออกใบกำกับภาษี)" />
+                        </div>
+                        <div class="grid-item">
+                            <h5>สาขา (ไม่บังคับ)</h5>
+                            <input type="text" placeholder="ระบุสาขา" />
+                        </div>
+                    </div>
+                    <div class="grid-block -c1">
+                        <div class="grid-item">
+                            <h5>ที่อยู่</h5>
+                            <input type="text" placeholder="เลขที่อยู่/อาคาร/ถนน" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid-block -c2 -mc1">
+                    <div class="grid-item">
+                        <h5>จังหวัด</h5>
+                        <select name="province" id="province">
+                            <option value="" selected>จังหวัด</option>
+                            <option value="กรุงเทพมหานคร">กรุงเทพมหานคร</option>
+                            <option value="สมุทรปราการ">สมุทรปราการ</option>
+                        </select>
+                    </div>
+                    <div class="grid-item">
+                        <h5>แขวง/ตำบล</h5>
+                        <select name="sub-district" id="sub-district">
+                            <option value="" selected>แขวง/ตำบล</option>
+                            <option value="พญาไท">พญาไท</option>
+                            <option value="บางพลีใหญ่">บางพลีใหญ่</option>
+                        </select>
+                    </div>
+                    <div class="grid-item">
+                        <h5>เขต/เมือง</h5>
+                        <select name="state" id="state">
+                            <option value="" selected>เขต/เมือง</option>
+                            <option value="พญาไท">พญาไท</option>
+                            <option value="บางพลี">บางพลี</option>
+                        </select>
+                    </div>
+                    <div class="grid-item">
+                        <h5>รหัสไปรษณีย์</h5>
+                        <select name="postcode" id="postcode">
+                            <option value="" selected>รหัสไปรษณีย์</option>
+                            <option value="10400">10400</option>
+                            <option value="10540">10540</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="grid-block -submit-block">
+                    <div class="grid-item">
+                        <a href="#" class="submit-btn btn-global">บันทึก</a>
+                    </div>
+                </div>
+            </form>
+
+            <form action="#" id="edit-shipping-form" style="display: none;">
+                <div class="title-block">
+                    <h4>แก้ไขข้อมูลที่อยู่จัดส่ง</h4>
+                </div>
+
+                <div class="grid-block -c2 -mc1">
+                    <div class="grid-item">
+                        <h5>อีเมล</h5>
+                        <input type="email" placeholder="yourmail@email.com" />
+                    </div>
+                    <div class="grid-item">
+                        <h5>เบอร์โทรติดต่อ</h5>
+                        <input type="tel" placeholder="08_-___-____" />
+                    </div>
+                </div>
+                <div class="grid-block -c1">
+                    <div class="grid-item">
+                        <h5>ชื่อ - นามสกุล</h5>
+                        <input type="text" placeholder="ชื่อ - นามสกุล" />
+                    </div>
+                    <div class="grid-item">
+                        <h5>ที่อยู่</h5>
+                        <input type="text" placeholder="เลขที่อยู่/อาคาร/ถนน" />
+                    </div>
+                </div>
+                <div class="grid-block -c2 -mc1">
+                    <div class="grid-item">
+                        <h5>ประเทศ</h5>
+                        <select name="country-edit" id="country-edit">
+                            <option value="" selected>ประเทศ</option>
+                            <option value="ไทย">ไทย</option>
+                            <option value="สหรัฐอเมริกา">สหรัฐอเมริกา</option>
+                        </select>
+                    </div>
+                    <div class="grid-item">
+                        <h5>จังหวัด</h5>
+                        <select name="province-edit" id="province-edit">
+                            <option value="" selected>จังหวัด</option>
+                            <option value="กรุงเทพมหานคร">กรุงเทพมหานคร</option>
+                            <option value="สมุทรปราการ">สมุทรปราการ</option>
+                        </select>
+                    </div>
+                    <div class="grid-item">
+                        <h5>แขวง/ตำบล</h5>
+                        <select name="sub-district-edit" id="sub-district-edit">
+                            <option value="" selected>แขวง/ตำบล</option>
+                            <option value="พญาไท">พญาไท</option>
+                            <option value="บางพลีใหญ่">บางพลีใหญ่</option>
+                        </select>
+                    </div>
+                    <div class="grid-item">
+                        <h5>เขต/เมือง</h5>
+                        <select name="state-edit" id="state-edit">
+                            <option value="" selected>เขต/เมือง</option>
+                            <option value="พญาไท">พญาไท</option>
+                            <option value="บางพลี">บางพลี</option>
+                        </select>
+                    </div>
+                    <div class="grid-item">
+                        <h5>รหัสไปรษณีย์</h5>
+                        <select name="postcode-edit" id="postcode-edit">
+                            <option value="" selected>รหัสไปรษณีย์</option>
+                            <option value="10400">10400</option>
+                            <option value="10540">10540</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="grid-block -submit-block">
+                    <div class="grid-item">
+                        <a href="#" class="submit-btn btn-global">บันทึก</a>
+                    </div>
+                </div>
+            </form>
+
+            <form action="#" id="edit-billing-form" style="display: none;">
+                <div class="title-block">
+                    <h4>แก้ไขข้อมูลใบกำกับภาษี</h4>
+                </div>
+                <div class="choose-cate-block">
+                    <span>ประเภท : </span>
+                    <div class="choose-to-add">
+                        <input type="radio" id="for-personal-edit" name="radio-group"
+                            value="บุคคล" checked>
+                        <label for="for-personal-edit">บุคคล</label>
+
+                        <input type="radio" id="for-company-edit" name="radio-group"
+                            value="บริษัท/องค์กร">
+                        <label for="for-company-edit">บริษัท/องค์กร</label>
+                    </div>
+                </div>
+                <div class="grid-block -c2 -mc1">
+                    <div class="grid-item">
+                        <h5>อีเมล</h5>
+                        <input type="email" placeholder="yourmail@email.com" />
+                    </div>
+                    <div class="grid-item">
+                        <h5>เบอร์โทรติดต่อ</h5>
+                        <input type="tel" placeholder="08_-___-____" />
+                    </div>
+                </div>
+                <div id="personal-edit">
+                    <div class="grid-block -c2 -mc1">
+                        <div class="grid-item">
+                            <h5>อีเมล</h5>
+                            <input type="email" placeholder="yourmail@email.com" />
+                        </div>
+                        <div class="grid-item">
+                            <h5>เบอร์โทรติดต่อ</h5>
+                            <input type="tel" placeholder="08_-___-____" />
+                        </div>
+                    </div>
+                    <div class="grid-block -c1">
+                        <div class="grid-item">
+                            <h5>ชื่อ - นามสกุล</h5>
+                            <input type="text" placeholder="ชื่อ - นามสกุล" />
+                        </div>
+                        <div class="grid-item">
+                            <h5>ที่อยู่</h5>
+                            <input type="text" placeholder="เลขที่อยู่/อาคาร/ถนน" />
+                        </div>
+                    </div>
+                </div>
+                <div id="company-edit" style="display: none;">
+                    <div class="grid-block -c2 -mc1">
+                        <div class="grid-item">
+                            <h5>เบอร์โทรติดต่อ</h5>
+                            <input type="tel" placeholder="08_-___-____" />
+                        </div>
+                        <div class="grid-item">
+                            <h5>เลขประจำตัวผู้เสียภาษี</h5>
+                            <input type="text" placeholder="หมายเลขประจำตัวผู้เสียภาษี" />
+                        </div>
+                    </div>
+                    <div class="grid-block -c2 -mc1">
+                        <div class="grid-item">
+                            <h5>ชื่อบริษัท (ที่ใช้ในการออกใบกำกับภาษี)</h5>
+                            <input type="text"
+                                placeholder="ชื่อบริษัท (ที่ใช้ในการออกใบกำกับภาษี)" />
+                        </div>
+                        <div class="grid-item">
+                            <h5>สาขา (ไม่บังคับ)</h5>
+                            <input type="text" placeholder="ระบุสาขา" />
+                        </div>
+                    </div>
+                    <div class="grid-block -c1">
+                        <div class="grid-item">
+                            <h5>ที่อยู่</h5>
+                            <input type="text" placeholder="เลขที่อยู่/อาคาร/ถนน" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid-block -c2 -mc1">
+                    <div class="grid-item">
+                        <h5>จังหวัด</h5>
+                        <select name="province-company-edit" id="province-company-edit">
+                            <option value="" selected>จังหวัด</option>
+                            <option value="กรุงเทพมหานคร">กรุงเทพมหานคร</option>
+                            <option value="สมุทรปราการ">สมุทรปราการ</option>
+                        </select>
+                    </div>
+                    <div class="grid-item">
+                        <h5>แขวง/ตำบล</h5>
+                        <select name="sub-district-company-edit" id="sub-district-company-edit">
+                            <option value="" selected>แขวง/ตำบล</option>
+                            <option value="พญาไท">พญาไท</option>
+                            <option value="บางพลีใหญ่">บางพลีใหญ่</option>
+                        </select>
+                    </div>
+                    <div class="grid-item">
+                        <h5>เขต/เมือง</h5>
+                        <select name="state-company-edit" id="state-company-edit">
+                            <option value="" selected>เขต/เมือง</option>
+                            <option value="พญาไท">พญาไท</option>
+                            <option value="บางพลี">บางพลี</option>
+                        </select>
+                    </div>
+                    <div class="grid-item">
+                        <h5>รหัสไปรษณีย์</h5>
+                        <select name="postcode-company-edit" id="postcode-company-edit">
+                            <option value="" selected>รหัสไปรษณีย์</option>
+                            <option value="10400">10400</option>
+                            <option value="10540">10540</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="grid-block -submit-block">
+                    <div class="grid-item">
+                        <a href="#" class="submit-btn btn-global">บันทึก</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
     <div id="search-popup">
             <form action="#" class="search-block">
                 <input type="text" name="focus" required class="search-box" placeholder="Search for" />
