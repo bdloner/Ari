@@ -147,6 +147,22 @@ class Footer extends HTMLElement {
         </div>
     </div>
 
+    <div id="confirm-area" style="display: none;">
+        <div class="overlay"></div>
+        <div class="confirm-block">
+            <a href="#" class="close-btn"><img src="images/x-icon.svg" alt=""></a>
+            <div class="content-block">
+                <h2>ยืนยันการเปลี่ยนพื้นที่จัดส่ง</h2>
+                <p>ข้อมูลที่อยู่จะไม่ถูกบันทึกไว้ หากท่านประสงค์ที่จะเปลี่ยนแปลงพื้นที่จัดส่งโปรดใส่รายละเอียดข้อมูลอีกครั้ง</p>
+                <div class="btn-block">
+                    <a href="#" id="cancel-btn">ยกเลิก</a>    
+                    <a href="#" id="inter-btn" class="confirm-btn">ยืนยัน</a>    
+                    <a href="#" id="local-btn" class="confirm-btn">ยืนยัน</a> 
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div id="popup-address" style="display: none;">
         <div class="overlay"></div>
         <div class="address-block">
@@ -410,11 +426,11 @@ class Footer extends HTMLElement {
                 <div class="choose-cate-block">
                     <span>ประเภท : </span>
                     <div class="choose-to-add">
-                        <input type="radio" id="for-personal-edit" name="radio-group"
+                        <input type="radio" id="for-personal-edit" name="radio-group-edit-billing"
                             value="บุคคล" checked>
                         <label for="for-personal-edit">บุคคล</label>
 
-                        <input type="radio" id="for-company-edit" name="radio-group"
+                        <input type="radio" id="for-company-edit" name="radio-group-edit-billing"
                             value="บริษัท/องค์กร">
                         <label for="for-company-edit">บริษัท/องค์กร</label>
                     </div>

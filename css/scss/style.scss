@@ -17570,7 +17570,7 @@ body, html{
                                                 background-size: 15px;
                                                 background-position: calc(100% - 10px) center;
                                                 border-color: #606060;
-                                                color: #606060;
+                                                color: #fff;
                                             }
         
                                             input{
@@ -18573,12 +18573,6 @@ body, html{
 }
 
 /* Custom 18/3/2021 */
-@font-face {
-    font-family: 'Prachason';
-    font-weight: 500;
-    src:  url('/static/version1615962574/frontend/Vision/ari/th_TH/fonts/Prachason-SemiBold.woff2') format('woff2'),
-          url('/static/version1615962574/frontend/Vision/ari/th_TH/fonts/Prachason-SemiBold.woff') format('woff');
-  }
   
   .site-header .main-nav .half-nav.main-menu .nav-menu-block .nav-menu > li,
   .site-header .main-nav .half-nav.main-menu .nav-menu-block .nav-menu > li > a {
@@ -19108,6 +19102,7 @@ body, html{
                                     font-weight: 600;
                                     position: relative;
                                     display: flex;
+                                    padding-right: 50px;
 
                                     &::before {
                                         left: 30px;
@@ -19169,6 +19164,7 @@ body, html{
                                                         margin-top: 20px;
                                                     }
                                                 }
+
                                                 .grid-block{
                                                     &:last-child{
                                                         border: 0
@@ -19449,6 +19445,225 @@ body, html{
                                             }
                                         }
 
+                                        .inter-inform-block{
+                                            h4{
+                                                margin-bottom: 0px;
+                                                font-size: 21px;
+                                                font-weight: 600;
+
+                                                &.title-billing{
+                                                    margin-bottom: 20px;
+                                                }
+                                            }
+
+                                            .choose-address{
+
+                                                [type="radio"]:checked,
+                                                [type="radio"]:not(:checked) {
+                                                    position: absolute;
+                                                    left: -9999px;
+                                                }
+                                                [type="radio"]:checked + label,
+                                                [type="radio"]:not(:checked) + label
+                                                {
+                                                    position: relative;
+                                                    padding-left: 30px;
+                                                    cursor: pointer;
+                                                    line-height: 25px;
+                                                    display: inline-block;
+                                                    color: #fff;
+                                                }
+                                                [type="radio"]:checked + label:before,
+                                                [type="radio"]:not(:checked) + label:before {
+                                                    content: '';
+                                                    position: absolute;
+                                                    left: -5px;
+                                                    top: 0px;
+                                                    width: 23px;
+                                                    height: 23px;
+                                                    border: 1px solid #fff;
+                                                    border-radius: 100%;
+                                                    background: transparent;
+                                                }
+            
+                                                [type="radio"]:checked + label:before{
+                                                    border-color: $primary-color;
+                                                }
+            
+                                                [type="radio"]:checked + label:after,
+                                                [type="radio"]:not(:checked) + label:after {
+                                                    content: '';
+                                                    width: 17px;
+                                                    height: 17px;
+                                                    background: $primary-color;
+                                                    position: absolute;
+                                                    top: 4px;
+                                                    left: -1px;
+                                                    border-radius: 100%;
+                                                    -webkit-transition: all 0.2s ease;
+                                                    transition: all 0.2s ease;
+                                                }
+                                                [type="radio"]:not(:checked) + label:after {
+                                                    opacity: 0;
+                                                    -webkit-transform: scale(0);
+                                                    transform: scale(0);
+                                                }
+                                                [type="radio"]:checked + label:after {
+                                                    opacity: 1;
+                                                    -webkit-transform: scale(1);
+                                                    transform: scale(1);
+                                                }
+                                            }
+
+                                            .grid-block{
+                                                &.-c2{
+                                                    grid-template-columns: 1fr .25fr;
+                                                }
+
+                                                &.item-address{
+                                                    padding-top: 1rem;
+                                                    border-bottom: 1px solid #333333;
+                                                }
+
+                                                .grid-item{
+                                                    h5{
+                                                        margin: 7px 0;
+                                                        font-size: 16px;
+                                                        font-weight: normal;
+                                                    }
+
+                                                    &:last-child{
+                                                        justify-content: flex-start !important;
+                                                        flex-direction: column;
+                                                    }
+                                                }
+                                            }
+
+                                            .add-send-inform-block{
+                                                margin: 1rem 0;
+                                                margin-bottom: 3rem;
+                                                display: flex;
+                                                justify-content: center;
+                                                align-items: center;
+                                                padding: 12px 0;
+                                                border-top: 1px solid #707070;
+                                                border-bottom: 1px solid #707070;
+
+                                                .add-send-inform-btn{
+                                                    color: $primary-color;
+                                                }
+                                            }
+
+                                            form{
+                                                .title-cate{
+                                                    font-size: 21px;
+                                                    font-weight: bold;
+                                                    margin: .5rem 0;
+                                                }
+
+                                                [type="radio"]:checked,
+                                                [type="radio"]:not(:checked) {
+                                                    position: absolute;
+                                                    left: -9999px;
+                                                }
+                                                [type="radio"]:checked + label,
+                                                [type="radio"]:not(:checked) + label
+                                                {
+                                                    position: relative;
+                                                    padding-left: 30px;
+                                                    cursor: pointer;
+                                                    line-height: 25px;
+                                                    display: inline-block;
+                                                    color: #fff;
+                                                }
+                                                [type="radio"]:checked + label:before,
+                                                [type="radio"]:not(:checked) + label:before {
+                                                    content: '';
+                                                    position: absolute;
+                                                    left: -5px;
+                                                    top: 0px;
+                                                    width: 23px;
+                                                    height: 23px;
+                                                    border: 1px solid #fff;
+                                                    border-radius: 100%;
+                                                    background: transparent;
+                                                }
+            
+                                                [type="radio"]:checked + label:before{
+                                                    border-color: $primary-color;
+                                                }
+            
+                                                [type="radio"]:checked + label:after,
+                                                [type="radio"]:not(:checked) + label:after {
+                                                    content: '';
+                                                    width: 17px;
+                                                    height: 17px;
+                                                    background: $primary-color;
+                                                    position: absolute;
+                                                    top: 4px;
+                                                    left: -1px;
+                                                    border-radius: 100%;
+                                                    -webkit-transition: all 0.2s ease;
+                                                    transition: all 0.2s ease;
+                                                }
+                                                [type="radio"]:not(:checked) + label:after {
+                                                    opacity: 0;
+                                                    -webkit-transform: scale(0);
+                                                    transform: scale(0);
+                                                }
+                                                [type="radio"]:checked + label:after {
+                                                    opacity: 1;
+                                                    -webkit-transform: scale(1);
+                                                    transform: scale(1);
+                                                }
+                                    
+                                                select{
+                                                    width: 100%;
+                                                    font-size: 16px;
+                                                    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='13.439' height='7.702' viewBox='0 0 13.439 7.702'%3E%3Cpath id='Path_9392' data-name='Path 9392' d='M1301.679,374.1l6.5,6.013-6.5,6.013' transform='translate(386.83 -1300.973) rotate(90)' fill='none' stroke='rgb(96,96,96)' stroke-linecap='round' stroke-linejoin='round' stroke-width='1'/%3E%3C/svg%3E%0A") no-repeat;
+                                                    background-size: 15px;
+                                                    background-position: calc(100% - 10px) center;
+                                                    border-color: #606060;
+                                                    color: #fff;
+                                                    height: 40px;
+                                                    padding: 5px 15px;
+                                                }
+                                    
+                                                input{
+                                                    border: 1px solid #606060;
+                                                    width: 100%;
+                                                    padding: 7px 20px;
+                                                    border-radius: 5px;
+                                                    box-sizing: border-box;
+                                                    background-color: transparent;
+                                                    transition: .3s;
+                                                    color: #fff;
+                                    
+                                                    &::placeholder{
+                                                        color: #9F9F9F;
+                                                        font-size: 16px;
+                                                    }
+                                    
+                                                    &:focus{
+                                                        border-color: $primary-color;
+                                                    }
+                                                }
+                                    
+                                                .grid-block{
+                                                    &.-c2{
+                                                        grid-template-columns: 1fr 1fr;
+                                                        gap: 0;
+                                                        column-gap: 30px;
+                                                    }
+
+                                                    &.-c1{
+                                                        grid-template-columns: 1fr;
+                                                        gap: 0;
+                                                    }
+                                                }
+                                            }
+                                        }
+
                                         .accordion_options, .accordion_options_swap {
                                             color: #000;
                                             box-sizing: border-box;
@@ -19634,6 +19849,10 @@ body, html{
                                                 margin: 0;
                                             }
 
+                                            .inform-billing{
+                                                margin: .5rem 0;
+                                            }
+
                                             .send-inform-block{
                                                 &#add-on-address{
                                                     .grid-block{
@@ -19642,6 +19861,175 @@ body, html{
                                                         margin-top: 20px;
                                                     }
                                                 }
+                                                &#add-on-inter-address{
+                                                    .choose-to-add{
+                                                        display: grid;
+                                                        gap: 25px;
+                                                        padding-left: 5px;
+                                                        padding-bottom: 2rem;
+                                                        border-bottom: 1px solid #DBDBDB;
+                                            
+                                                        [type="radio"]:checked,
+                                                        [type="radio"]:not(:checked) {
+                                                            position: absolute;
+                                                            left: -9999px;
+                                                        }
+                                                        [type="radio"]:checked + label,
+                                                        [type="radio"]:not(:checked) + label
+                                                        {
+                                                            position: relative;
+                                                            padding-left: 28px;
+                                                            cursor: pointer;
+                                                            line-height: 20px;
+                                                            display: inline-block;
+                                                            color: #fff;
+                                                            margin-right: 15px;
+                                                        }
+                                                        [type="radio"]:checked + label:before,
+                                                        [type="radio"]:not(:checked) + label:before {
+                                                            content: '';
+                                                            position: absolute;
+                                                            left: -4px;
+                                                            top: -4px;
+                                                            width: 23px;
+                                                            height: 23px;
+                                                            border: 1px solid #fff;
+                                                            border-radius: 100%;
+                                                            background: transparent;
+                                                        }
+                                            
+                                                        [type="radio"]:checked + label:before{
+                                                            border-color: $primary-color;
+                                                        }
+                                            
+                                                        [type="radio"]:checked + label:after,
+                                                        [type="radio"]:not(:checked) + label:after {
+                                                            content: '';
+                                                            width: 17px;
+                                                            height: 17px;
+                                                            background: $primary-color;
+                                                            position: absolute;
+                                                            top: 0px;
+                                                            left: 0px;
+                                                            border-radius: 100%;
+                                                            -webkit-transition: all 0.2s ease;
+                                                            transition: all 0.2s ease;
+                                                        }
+                                                        [type="radio"]:not(:checked) + label:after {
+                                                            opacity: 0;
+                                                            -webkit-transform: scale(0);
+                                                            transform: scale(0);
+                                                        }
+                                                        [type="radio"]:checked + label:after {
+                                                            opacity: 1;
+                                                            -webkit-transform: scale(1);
+                                                            transform: scale(1);
+                                                        }
+                                                    }
+                                            
+                                                    .choose-cate-block{
+                                                        display: flex;
+                                                        margin-bottom: 1rem;
+                                            
+                                                        .choose-to-add{
+                                                            margin-left: 15px;
+                                                            display: flex !important;
+                                                            align-items: center;
+                                                            border: 0;
+                                                            gap: 0;
+                                                            padding: 0;
+                                                        }
+                                                    }
+
+                                                    form{
+                                                        padding-top: 1rem;
+
+                                                        .title-cate{
+                                                            font-size: 21px;
+                                                            font-weight: bold;
+                                                            margin: .5rem 0;
+                                                        }
+
+                                                        select{
+                                                            width: 100%;
+                                                            font-size: 16px;
+                                                            background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='13.439' height='7.702' viewBox='0 0 13.439 7.702'%3E%3Cpath id='Path_9392' data-name='Path 9392' d='M1301.679,374.1l6.5,6.013-6.5,6.013' transform='translate(386.83 -1300.973) rotate(90)' fill='none' stroke='rgb(96,96,96)' stroke-linecap='round' stroke-linejoin='round' stroke-width='1'/%3E%3C/svg%3E%0A") no-repeat;
+                                                            background-size: 15px;
+                                                            background-position: calc(100% - 10px) center;
+                                                            border-color: #606060;
+                                                            color: #fff;
+                                                            height: 40px;
+                                                            padding: 5px 15px;
+                                                        }
+
+                                                        input{
+                                                            border: 1px solid #606060;
+                                                            width: 100%;
+                                                            padding: 7px 20px;
+                                                            border-radius: 5px;
+                                                            box-sizing: border-box;
+                                                            background-color: transparent;
+                                                            transition: .3s;
+                                                            color: #fff;
+
+                                                            &::placeholder{
+                                                                color: #9F9F9F;
+                                                                font-size: 16px;
+                                                            }
+
+                                                            &:focus{
+                                                                border-color: $primary-color;
+                                                            }
+                                                        }
+
+                                                        .grid-block{
+                                                            .grid-item{
+                                                                flex-direction: column;
+                                                            }
+
+                                                            &.-c2{
+                                                                grid-template-columns: 1fr 1fr;
+                                                                gap: 0;
+                                                                column-gap: 30px;
+                                                            }
+
+                                                            &.-c1{
+                                                                grid-template-columns: 1fr;
+                                                                gap: 0;
+                                                            }
+
+                                                            .grid-item{
+                                                                h5{
+                                                                    margin: 5px 0;
+                                                                    font-size: 16px;
+                                                                    font-weight: normal;
+                                                                }
+                                                            }
+
+                                                            &.-submit-block{
+                                                                margin-top: 2rem;
+
+                                                                .grid-item{
+                                                                    .back-btn{
+                                                                        text-decoration: underline;
+                                                                    }
+
+                                                                    &:last-child{
+                                                                        display: flex;
+                                                                        align-items: center;
+
+                                                                        .submit-btn{
+                                                                            width: 15%;
+                                                                            padding: 5px 5rem;
+                                                                            margin: 0 auto;
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+
                                                 .grid-block{
                                                     &:last-child{
                                                         border: 0
@@ -19650,7 +20038,17 @@ body, html{
                                             }
 
                                             .choose-address{
+                                                margin-top: 1.5rem;
+
+                                                h4{
+                                                    font-size: 21px;
+                                                }
+
                                                 label[for="old-billing"]{
+                                                    margin: 1rem 0;
+                                                }
+
+                                                label[for="inter-old-billing"]{
                                                     margin: 1rem 0;
                                                 }
                                                 [type="radio"]:checked,
@@ -19824,7 +20222,6 @@ body, html{
                             }
     
                             .total-summary-block{
-                                margin-top: 1rem;
                                 border-top: 1px solid #636363;
                                 padding-top: 1rem;
                             }
@@ -19882,6 +20279,63 @@ body, html{
                                             }
                                         }
                                     }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media(max-width: 991px){
+        .main-content{
+            .main-checkout{
+                .grid-block {
+                    &.-mc1{
+                        grid-template-columns: 1fr !important;
+                        gap: 20px;
+                    }
+                    
+                    .grid-item{
+                        .choose-area {
+                            display: grid;
+                            grid-template-columns: 1fr;
+                            gap: 20px;
+
+                            label{
+                                width: 100% !important;
+                                box-sizing: border-box;
+                            }
+                        }
+
+                        .choose-address{
+                            margin: 0 !important;
+                        }
+
+                        .accordion_options, .accordion_options_swap{
+                            width: 100% !important;
+                        }
+
+                        .send-inform-block{
+                            .item-address{
+                                gap: 0px;
+
+                                .grid-item{
+                                    &:last-child{
+                                        justify-content: flex-start !important;
+                                        padding-left: 30px;
+                                        margin-bottom: 20px;
+                                    }
+                                }
+                            }
+                        }
+
+                        .choose-payment{
+                            .grid-item{
+                                &:last-child{
+                                    justify-content: flex-start !important;
+                                    padding-left: 30px;
                                 }
                             }
                         }
@@ -20080,7 +20534,52 @@ body, html{
             }
         }
     }
+
+    @media(max-width: 991px){
+        .main-content{
+            .main-thankyou{
+                .order-content{
+                    .grid-block{
+                        &.-mc2{
+                            position: relative;
+                            grid-template-columns: .3fr 1fr !important;
+                            padding-bottom: 4rem !important;
+                        }
+
+                        .grid-item{
+                            &.-last-mb{
+                                flex-direction: column;
+                                position: absolute;
+                                left: 28%;
+                                bottom: 15px;
+                                align-items: flex-start !important;
+                            }
+                        }
+                    }
+                    .btn-block {
+                        display: flex;
+                        flex-direction: column-reverse;
+                        align-items: center;
+
+                        a.history-btn {
+                            margin-bottom: 1rem !important;
+                            width: 35%;
+                            text-align: center;
+                        }
+                        
+                        .back-home-btn{
+                            width: 35%;
+                            text-align: center;
+                            padding: 7px 50px !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
+
+/* ====================== PromptPay Page ====================== */
 
 .promptpay-page{
     background-color: #161616;
@@ -20142,7 +20641,27 @@ body, html{
             }
         }
     }
+
+    @media(max-width: 991px){
+        .main-content{
+            .promptpay-section{
+                .promptpay-block{
+                    max-width: 80% !important;
+                    margin: 20px;
+                    padding: 20px;
+
+                    .qr-block{
+                        img{
+                            width: 65%;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
+
+/* ====================== Address Popup ====================== */
 
 #popup-address{
     padding: 2rem;
@@ -20160,6 +20679,7 @@ body, html{
    }
 
    .address-block{
+        box-sizing: border-box;
         position: absolute;
         max-width: 650px;
         width: 100%;
@@ -20277,7 +20797,7 @@ body, html{
                 background-size: 15px;
                 background-position: calc(100% - 10px) center;
                 border-color: #606060;
-                color: #606060;
+                color: #fff;
                 height: 40px;
                 padding: 5px 15px;
             }
@@ -20344,5 +20864,142 @@ body, html{
                 }
             }
         }
+    }
+
+    @media(max-width: 991px){
+        .address-block{
+            margin: 15rem 0px;
+            max-width: 95%;
+
+            form{
+                .grid-block{
+                    &.-mc1{
+                        grid-template-columns: 1fr !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ====================== Confirm Area Popup ====================== */
+
+#confirm-area{
+    padding: 2rem;
+
+    &.inter{
+        .confirm-btn{
+            &#local-btn{
+                display: none;
+            }
+        }
+    }
+
+    &.local{
+        .confirm-btn{
+            &#inter-btn{
+                display: none;
+            }
+        }
+    }
+
+   .overlay{
+        position: fixed;
+        height: 100vh;
+        width: 100vw;
+        left: 0;
+        top: 0;
+        right: 0;
+        background-color: rgba(22,22,22,.92);
+        z-index: 9999;
+        cursor: pointer;
    }
+
+   .confirm-block{
+        box-sizing: border-box;
+        position: absolute;
+        max-width: 650px;
+        width: 100%;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        padding: 60px 20px;
+        background-color: #161616;
+        z-index: 99999;
+        box-shadow: 0 0 15px rgba(0,0,0,.65);
+
+        .close-btn{
+            display: block;
+            position: absolute;
+            width: 100%;
+            text-align: right;
+            margin-top: -2.5rem;
+            margin-left: -2.5rem;
+        }
+
+        .content-block{
+            padding: 0 5rem;
+
+            h2{
+                font-family: 'Prachason';
+                font-weight: bold;
+                text-align: center;
+                margin: 0;
+            }
+
+            p{
+                text-align: center;
+            }
+
+            .btn-block {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 2rem;
+
+                #cancel-btn{
+                    color: $primary-color;
+                    font-size: 18px;
+                    text-decoration: underline;
+                    padding: 7px 5rem;
+                }
+
+                .confirm-btn{
+                    color: #000;
+                    font-size: 18px;
+                    background-color: $primary-color;
+                    padding: 7px 5rem;
+                    border-radius: 5px;
+                    margin-left: 20px;
+                }
+            }
+        }
+    }
+
+    @media(max-width: 991px){
+        .confirm-block{
+            max-width: 95%;
+
+            .content-block{
+                padding: 0;
+
+                .btn-block{
+                    flex-direction: column-reverse;
+
+                    .confirm-btn {
+                        margin: 0 !important;
+                        margin-bottom: 1rem !important;
+                    }
+                }
+            }
+
+            form{
+                .grid-block{
+                    &.-mc1{
+                        grid-template-columns: 1fr !important;
+                    }
+                }
+            }
+        }
+    }
 }

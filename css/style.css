@@ -17705,7 +17705,7 @@ body.popup-360, html.popup-360 {
   background-size: 15px;
   background-position: calc(100% - 10px) center;
   border-color: #606060;
-  color: #606060;
+  color: #fff;
 }
 
 .my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-address .new-address-block .form-to-add-block form input, .my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-address .new-address-block .form-to-edit-block form input, .my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-address .edit-address-block .form-to-add-block form input, .my-account-page .main-content .main-my-account .grid-block .grid-item.-side-content .sub-content#tab-address .edit-address-block .form-to-edit-block form input {
@@ -18525,12 +18525,6 @@ body.popup-360, html.popup-360 {
 }
 
 /* Custom 18/3/2021 */
-@font-face {
-  font-family: 'Prachason';
-  font-weight: 500;
-  src: url("/static/version1615962574/frontend/Vision/ari/th_TH/fonts/Prachason-SemiBold.woff2") format("woff2"), url("/static/version1615962574/frontend/Vision/ari/th_TH/fonts/Prachason-SemiBold.woff") format("woff");
-}
-
 .site-header .main-nav .half-nav.main-menu .nav-menu-block .nav-menu > li,
 .site-header .main-nav .half-nav.main-menu .nav-menu-block .nav-menu > li > a {
   padding-bottom: 9px;
@@ -19150,6 +19144,7 @@ body h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding-right: 50px;
 }
 
 .checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .acc-title::before {
@@ -19515,6 +19510,250 @@ body h2 {
   margin: 0 auto;
 }
 
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .acc-content .content .inter-inform-block h4 {
+  margin-bottom: 0px;
+  font-size: 21px;
+  font-weight: 600;
+}
+
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .acc-content .content .inter-inform-block h4.title-billing {
+  margin-bottom: 20px;
+}
+
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .acc-content .content .inter-inform-block .choose-address [type="radio"]:checked,
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .acc-content .content .inter-inform-block .choose-address [type="radio"]:not(:checked) {
+  position: absolute;
+  left: -9999px;
+}
+
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .acc-content .content .inter-inform-block .choose-address [type="radio"]:checked + label,
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .acc-content .content .inter-inform-block .choose-address [type="radio"]:not(:checked) + label {
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+  line-height: 25px;
+  display: inline-block;
+  color: #fff;
+}
+
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .acc-content .content .inter-inform-block .choose-address [type="radio"]:checked + label:before,
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .acc-content .content .inter-inform-block .choose-address [type="radio"]:not(:checked) + label:before {
+  content: '';
+  position: absolute;
+  left: -5px;
+  top: 0px;
+  width: 23px;
+  height: 23px;
+  border: 1px solid #fff;
+  border-radius: 100%;
+  background: transparent;
+}
+
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .acc-content .content .inter-inform-block .choose-address [type="radio"]:checked + label:before {
+  border-color: #ffbe00;
+}
+
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .acc-content .content .inter-inform-block .choose-address [type="radio"]:checked + label:after,
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .acc-content .content .inter-inform-block .choose-address [type="radio"]:not(:checked) + label:after {
+  content: '';
+  width: 17px;
+  height: 17px;
+  background: #ffbe00;
+  position: absolute;
+  top: 4px;
+  left: -1px;
+  border-radius: 100%;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .acc-content .content .inter-inform-block .choose-address [type="radio"]:not(:checked) + label:after {
+  opacity: 0;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .acc-content .content .inter-inform-block .choose-address [type="radio"]:checked + label:after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .acc-content .content .inter-inform-block .grid-block.-c2 {
+  -ms-grid-columns: 1fr .25fr;
+      grid-template-columns: 1fr .25fr;
+}
+
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .acc-content .content .inter-inform-block .grid-block.item-address {
+  padding-top: 1rem;
+  border-bottom: 1px solid #333333;
+}
+
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .acc-content .content .inter-inform-block .grid-block .grid-item h5 {
+  margin: 7px 0;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .acc-content .content .inter-inform-block .grid-block .grid-item:last-child {
+  -webkit-box-pack: start !important;
+      -ms-flex-pack: start !important;
+          justify-content: flex-start !important;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .acc-content .content .inter-inform-block .add-send-inform-block {
+  margin: 1rem 0;
+  margin-bottom: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 12px 0;
+  border-top: 1px solid #707070;
+  border-bottom: 1px solid #707070;
+}
+
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .acc-content .content .inter-inform-block .add-send-inform-block .add-send-inform-btn {
+  color: #ffbe00;
+}
+
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .acc-content .content .inter-inform-block form .title-cate {
+  font-size: 21px;
+  font-weight: bold;
+  margin: .5rem 0;
+}
+
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .acc-content .content .inter-inform-block form [type="radio"]:checked,
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .acc-content .content .inter-inform-block form [type="radio"]:not(:checked) {
+  position: absolute;
+  left: -9999px;
+}
+
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .acc-content .content .inter-inform-block form [type="radio"]:checked + label,
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .acc-content .content .inter-inform-block form [type="radio"]:not(:checked) + label {
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+  line-height: 25px;
+  display: inline-block;
+  color: #fff;
+}
+
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .acc-content .content .inter-inform-block form [type="radio"]:checked + label:before,
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .acc-content .content .inter-inform-block form [type="radio"]:not(:checked) + label:before {
+  content: '';
+  position: absolute;
+  left: -5px;
+  top: 0px;
+  width: 23px;
+  height: 23px;
+  border: 1px solid #fff;
+  border-radius: 100%;
+  background: transparent;
+}
+
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .acc-content .content .inter-inform-block form [type="radio"]:checked + label:before {
+  border-color: #ffbe00;
+}
+
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .acc-content .content .inter-inform-block form [type="radio"]:checked + label:after,
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .acc-content .content .inter-inform-block form [type="radio"]:not(:checked) + label:after {
+  content: '';
+  width: 17px;
+  height: 17px;
+  background: #ffbe00;
+  position: absolute;
+  top: 4px;
+  left: -1px;
+  border-radius: 100%;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .acc-content .content .inter-inform-block form [type="radio"]:not(:checked) + label:after {
+  opacity: 0;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .acc-content .content .inter-inform-block form [type="radio"]:checked + label:after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .acc-content .content .inter-inform-block form select {
+  width: 100%;
+  font-size: 16px;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='13.439' height='7.702' viewBox='0 0 13.439 7.702'%3E%3Cpath id='Path_9392' data-name='Path 9392' d='M1301.679,374.1l6.5,6.013-6.5,6.013' transform='translate(386.83 -1300.973) rotate(90)' fill='none' stroke='rgb(96,96,96)' stroke-linecap='round' stroke-linejoin='round' stroke-width='1'/%3E%3C/svg%3E%0A") no-repeat;
+  background-size: 15px;
+  background-position: calc(100% - 10px) center;
+  border-color: #606060;
+  color: #fff;
+  height: 40px;
+  padding: 5px 15px;
+}
+
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .acc-content .content .inter-inform-block form input {
+  border: 1px solid #606060;
+  width: 100%;
+  padding: 7px 20px;
+  border-radius: 5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: transparent;
+  -webkit-transition: .3s;
+  transition: .3s;
+  color: #fff;
+}
+
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .acc-content .content .inter-inform-block form input::-webkit-input-placeholder {
+  color: #9F9F9F;
+  font-size: 16px;
+}
+
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .acc-content .content .inter-inform-block form input:-ms-input-placeholder {
+  color: #9F9F9F;
+  font-size: 16px;
+}
+
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .acc-content .content .inter-inform-block form input::-ms-input-placeholder {
+  color: #9F9F9F;
+  font-size: 16px;
+}
+
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .acc-content .content .inter-inform-block form input::placeholder {
+  color: #9F9F9F;
+  font-size: 16px;
+}
+
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .acc-content .content .inter-inform-block form input:focus {
+  border-color: #ffbe00;
+}
+
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .acc-content .content .inter-inform-block form .grid-block.-c2 {
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 0;
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
+}
+
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .acc-content .content .inter-inform-block form .grid-block.-c1 {
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  gap: 0;
+}
+
 .checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .acc-content .content .accordion_options, .checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .acc-content .content .accordion_options_swap {
   color: #000;
   -webkit-box-sizing: border-box;
@@ -19713,17 +19952,231 @@ body h2 {
   margin: 0;
 }
 
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .acc-content .content.-address .inform-billing {
+  margin: .5rem 0;
+}
+
 .checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .acc-content .content.-address .send-inform-block#add-on-address .grid-block {
   border: 0;
   border-top: 1px solid #333333;
   margin-top: 20px;
 }
 
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .acc-content .content.-address .send-inform-block#add-on-inter-address .choose-to-add {
+  display: -ms-grid;
+  display: grid;
+  gap: 25px;
+  padding-left: 5px;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #DBDBDB;
+}
+
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .acc-content .content.-address .send-inform-block#add-on-inter-address .choose-to-add [type="radio"]:checked,
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .acc-content .content.-address .send-inform-block#add-on-inter-address .choose-to-add [type="radio"]:not(:checked) {
+  position: absolute;
+  left: -9999px;
+}
+
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .acc-content .content.-address .send-inform-block#add-on-inter-address .choose-to-add [type="radio"]:checked + label,
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .acc-content .content.-address .send-inform-block#add-on-inter-address .choose-to-add [type="radio"]:not(:checked) + label {
+  position: relative;
+  padding-left: 28px;
+  cursor: pointer;
+  line-height: 20px;
+  display: inline-block;
+  color: #fff;
+  margin-right: 15px;
+}
+
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .acc-content .content.-address .send-inform-block#add-on-inter-address .choose-to-add [type="radio"]:checked + label:before,
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .acc-content .content.-address .send-inform-block#add-on-inter-address .choose-to-add [type="radio"]:not(:checked) + label:before {
+  content: '';
+  position: absolute;
+  left: -4px;
+  top: -4px;
+  width: 23px;
+  height: 23px;
+  border: 1px solid #fff;
+  border-radius: 100%;
+  background: transparent;
+}
+
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .acc-content .content.-address .send-inform-block#add-on-inter-address .choose-to-add [type="radio"]:checked + label:before {
+  border-color: #ffbe00;
+}
+
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .acc-content .content.-address .send-inform-block#add-on-inter-address .choose-to-add [type="radio"]:checked + label:after,
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .acc-content .content.-address .send-inform-block#add-on-inter-address .choose-to-add [type="radio"]:not(:checked) + label:after {
+  content: '';
+  width: 17px;
+  height: 17px;
+  background: #ffbe00;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border-radius: 100%;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .acc-content .content.-address .send-inform-block#add-on-inter-address .choose-to-add [type="radio"]:not(:checked) + label:after {
+  opacity: 0;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .acc-content .content.-address .send-inform-block#add-on-inter-address .choose-to-add [type="radio"]:checked + label:after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .acc-content .content.-address .send-inform-block#add-on-inter-address .choose-cate-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .acc-content .content.-address .send-inform-block#add-on-inter-address .choose-cate-block .choose-to-add {
+  margin-left: 15px;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 0;
+  gap: 0;
+  padding: 0;
+}
+
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .acc-content .content.-address .send-inform-block#add-on-inter-address form {
+  padding-top: 1rem;
+}
+
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .acc-content .content.-address .send-inform-block#add-on-inter-address form .title-cate {
+  font-size: 21px;
+  font-weight: bold;
+  margin: .5rem 0;
+}
+
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .acc-content .content.-address .send-inform-block#add-on-inter-address form select {
+  width: 100%;
+  font-size: 16px;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='13.439' height='7.702' viewBox='0 0 13.439 7.702'%3E%3Cpath id='Path_9392' data-name='Path 9392' d='M1301.679,374.1l6.5,6.013-6.5,6.013' transform='translate(386.83 -1300.973) rotate(90)' fill='none' stroke='rgb(96,96,96)' stroke-linecap='round' stroke-linejoin='round' stroke-width='1'/%3E%3C/svg%3E%0A") no-repeat;
+  background-size: 15px;
+  background-position: calc(100% - 10px) center;
+  border-color: #606060;
+  color: #fff;
+  height: 40px;
+  padding: 5px 15px;
+}
+
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .acc-content .content.-address .send-inform-block#add-on-inter-address form input {
+  border: 1px solid #606060;
+  width: 100%;
+  padding: 7px 20px;
+  border-radius: 5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: transparent;
+  -webkit-transition: .3s;
+  transition: .3s;
+  color: #fff;
+}
+
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .acc-content .content.-address .send-inform-block#add-on-inter-address form input::-webkit-input-placeholder {
+  color: #9F9F9F;
+  font-size: 16px;
+}
+
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .acc-content .content.-address .send-inform-block#add-on-inter-address form input:-ms-input-placeholder {
+  color: #9F9F9F;
+  font-size: 16px;
+}
+
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .acc-content .content.-address .send-inform-block#add-on-inter-address form input::-ms-input-placeholder {
+  color: #9F9F9F;
+  font-size: 16px;
+}
+
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .acc-content .content.-address .send-inform-block#add-on-inter-address form input::placeholder {
+  color: #9F9F9F;
+  font-size: 16px;
+}
+
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .acc-content .content.-address .send-inform-block#add-on-inter-address form input:focus {
+  border-color: #ffbe00;
+}
+
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .acc-content .content.-address .send-inform-block#add-on-inter-address form .grid-block .grid-item {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .acc-content .content.-address .send-inform-block#add-on-inter-address form .grid-block.-c2 {
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 0;
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
+}
+
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .acc-content .content.-address .send-inform-block#add-on-inter-address form .grid-block.-c1 {
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  gap: 0;
+}
+
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .acc-content .content.-address .send-inform-block#add-on-inter-address form .grid-block .grid-item h5 {
+  margin: 5px 0;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .acc-content .content.-address .send-inform-block#add-on-inter-address form .grid-block.-submit-block {
+  margin-top: 2rem;
+}
+
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .acc-content .content.-address .send-inform-block#add-on-inter-address form .grid-block.-submit-block .grid-item .back-btn {
+  text-decoration: underline;
+}
+
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .acc-content .content.-address .send-inform-block#add-on-inter-address form .grid-block.-submit-block .grid-item:last-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .acc-content .content.-address .send-inform-block#add-on-inter-address form .grid-block.-submit-block .grid-item:last-child .submit-btn {
+  width: 15%;
+  padding: 5px 5rem;
+  margin: 0 auto;
+}
+
 .checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .acc-content .content.-address .send-inform-block .grid-block:last-child {
   border: 0;
 }
 
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .acc-content .content.-address .choose-address {
+  margin-top: 1.5rem;
+}
+
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .acc-content .content.-address .choose-address h4 {
+  font-size: 21px;
+}
+
 .checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .acc-content .content.-address .choose-address label[for="old-billing"] {
+  margin: 1rem 0;
+}
+
+.checkout-page .main-content .main-checkout .grid-block .grid-item.-left .payment-method #step-accordion .acc-content .content.-address .choose-address label[for="inter-old-billing"] {
   margin: 1rem 0;
 }
 
@@ -19911,7 +20364,6 @@ body h2 {
 }
 
 .checkout-page .main-content .main-checkout .grid-block .grid-item.-right .summary-block .total-summary-block {
-  margin-top: 1rem;
   border-top: 1px solid #636363;
   padding-top: 1rem;
 }
@@ -19971,6 +20423,48 @@ body h2 {
   color: #ffbe00;
   font-weight: bold;
   font-size: 24px;
+}
+
+@media (max-width: 991px) {
+  .checkout-page .main-content .main-checkout .grid-block.-mc1 {
+    -ms-grid-columns: 1fr !important;
+        grid-template-columns: 1fr !important;
+    gap: 20px;
+  }
+  .checkout-page .main-content .main-checkout .grid-block .grid-item .choose-area {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .checkout-page .main-content .main-checkout .grid-block .grid-item .choose-area label {
+    width: 100% !important;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .checkout-page .main-content .main-checkout .grid-block .grid-item .choose-address {
+    margin: 0 !important;
+  }
+  .checkout-page .main-content .main-checkout .grid-block .grid-item .accordion_options, .checkout-page .main-content .main-checkout .grid-block .grid-item .accordion_options_swap {
+    width: 100% !important;
+  }
+  .checkout-page .main-content .main-checkout .grid-block .grid-item .send-inform-block .item-address {
+    gap: 0px;
+  }
+  .checkout-page .main-content .main-checkout .grid-block .grid-item .send-inform-block .item-address .grid-item:last-child {
+    -webkit-box-pack: start !important;
+        -ms-flex-pack: start !important;
+            justify-content: flex-start !important;
+    padding-left: 30px;
+    margin-bottom: 20px;
+  }
+  .checkout-page .main-content .main-checkout .grid-block .grid-item .choose-payment .grid-item:last-child {
+    -webkit-box-pack: start !important;
+        -ms-flex-pack: start !important;
+            justify-content: flex-start !important;
+    padding-left: 30px;
+  }
 }
 
 /* ====================== Thankyou Page ====================== */
@@ -20177,6 +20671,50 @@ body h2 {
   border-radius: 5px;
 }
 
+@media (max-width: 991px) {
+  .thankyou-page .main-content .main-thankyou .order-content .grid-block.-mc2 {
+    position: relative;
+    -ms-grid-columns: .3fr 1fr !important;
+        grid-template-columns: .3fr 1fr !important;
+    padding-bottom: 4rem !important;
+  }
+  .thankyou-page .main-content .main-thankyou .order-content .grid-block .grid-item.-last-mb {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: absolute;
+    left: 28%;
+    bottom: 15px;
+    -webkit-box-align: start !important;
+        -ms-flex-align: start !important;
+            align-items: flex-start !important;
+  }
+  .thankyou-page .main-content .main-thankyou .order-content .btn-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .thankyou-page .main-content .main-thankyou .order-content .btn-block a.history-btn {
+    margin-bottom: 1rem !important;
+    width: 35%;
+    text-align: center;
+  }
+  .thankyou-page .main-content .main-thankyou .order-content .btn-block .back-home-btn {
+    width: 35%;
+    text-align: center;
+    padding: 7px 50px !important;
+  }
+}
+
+/* ====================== PromptPay Page ====================== */
 .promptpay-page {
   background-color: #161616;
 }
@@ -20246,6 +20784,18 @@ body h2 {
   color: #000;
 }
 
+@media (max-width: 991px) {
+  .promptpay-page .main-content .promptpay-section .promptpay-block {
+    max-width: 80% !important;
+    margin: 20px;
+    padding: 20px;
+  }
+  .promptpay-page .main-content .promptpay-section .promptpay-block .qr-block img {
+    width: 65%;
+  }
+}
+
+/* ====================== Address Popup ====================== */
 #popup-address {
   padding: 2rem;
 }
@@ -20263,6 +20813,8 @@ body h2 {
 }
 
 #popup-address .address-block {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   position: absolute;
   max-width: 650px;
   width: 100%;
@@ -20394,7 +20946,7 @@ body h2 {
   background-size: 15px;
   background-position: calc(100% - 10px) center;
   border-color: #606060;
-  color: #606060;
+  color: #fff;
   height: 40px;
   padding: 5px 15px;
 }
@@ -20477,4 +21029,133 @@ body h2 {
   width: 15%;
   padding: 5px 5rem;
   margin: 0 auto;
+}
+
+@media (max-width: 991px) {
+  #popup-address .address-block {
+    margin: 15rem 0px;
+    max-width: 95%;
+  }
+  #popup-address .address-block form .grid-block.-mc1 {
+    -ms-grid-columns: 1fr !important;
+        grid-template-columns: 1fr !important;
+  }
+}
+
+/* ====================== Confirm Area Popup ====================== */
+#confirm-area {
+  padding: 2rem;
+}
+
+#confirm-area.inter .confirm-btn#local-btn {
+  display: none;
+}
+
+#confirm-area.local .confirm-btn#inter-btn {
+  display: none;
+}
+
+#confirm-area .overlay {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  left: 0;
+  top: 0;
+  right: 0;
+  background-color: rgba(22, 22, 22, 0.92);
+  z-index: 9999;
+  cursor: pointer;
+}
+
+#confirm-area .confirm-block {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: absolute;
+  max-width: 650px;
+  width: 100%;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  padding: 60px 20px;
+  background-color: #161616;
+  z-index: 99999;
+  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.65);
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.65);
+}
+
+#confirm-area .confirm-block .close-btn {
+  display: block;
+  position: absolute;
+  width: 100%;
+  text-align: right;
+  margin-top: -2.5rem;
+  margin-left: -2.5rem;
+}
+
+#confirm-area .confirm-block .content-block {
+  padding: 0 5rem;
+}
+
+#confirm-area .confirm-block .content-block h2 {
+  font-family: 'Prachason';
+  font-weight: bold;
+  text-align: center;
+  margin: 0;
+}
+
+#confirm-area .confirm-block .content-block p {
+  text-align: center;
+}
+
+#confirm-area .confirm-block .content-block .btn-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 2rem;
+}
+
+#confirm-area .confirm-block .content-block .btn-block #cancel-btn {
+  color: #ffbe00;
+  font-size: 18px;
+  text-decoration: underline;
+  padding: 7px 5rem;
+}
+
+#confirm-area .confirm-block .content-block .btn-block .confirm-btn {
+  color: #000;
+  font-size: 18px;
+  background-color: #ffbe00;
+  padding: 7px 5rem;
+  border-radius: 5px;
+  margin-left: 20px;
+}
+
+@media (max-width: 991px) {
+  #confirm-area .confirm-block {
+    max-width: 95%;
+  }
+  #confirm-area .confirm-block .content-block {
+    padding: 0;
+  }
+  #confirm-area .confirm-block .content-block .btn-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  #confirm-area .confirm-block .content-block .btn-block .confirm-btn {
+    margin: 0 !important;
+    margin-bottom: 1rem !important;
+  }
+  #confirm-area .confirm-block form .grid-block.-mc1 {
+    -ms-grid-columns: 1fr !important;
+        grid-template-columns: 1fr !important;
+  }
 }

@@ -541,6 +541,128 @@ jQuery(document).ready(function($) {
       $("#step-02 #add-on-address").show();
     });
 
+    // Choose Area
+
+    $('.choose-area #international').click(function(){
+      $("#confirm-area").fadeIn();
+      $("#confirm-area").addClass('inter');
+    });
+
+    $('.choose-area #thailand').click(function(){
+      $("#confirm-area").fadeIn();
+      $("#confirm-area").addClass('local');
+    });
+    
+    $('#confirm-area .close-btn').click(function(){
+      $("#confirm-area").fadeOut();
+
+      setTimeout(function() {
+        $("#confirm-area").removeClass('local');
+        $("#confirm-area").removeClass('inter');
+       }, 500);
+    });
+
+    $('#confirm-area .overlay').click(function(){
+      $("#confirm-area").fadeOut();
+
+      setTimeout(function() {
+        $("#confirm-area").removeClass('local');
+        $("#confirm-area").removeClass('inter');
+       }, 500);
+      
+    });
+
+    $('#confirm-area #inter-btn').click(function(){
+      $("#confirm-area").fadeOut();
+
+      setTimeout(function() {
+        $("#confirm-area").removeClass('local');
+        $("#confirm-area").removeClass('inter');
+       }, 500);
+
+      $(".payment-method.-local").hide();
+      $(".payment-method.-inter").show();
+    });
+
+    $('#confirm-area #local-btn').click(function(){
+      $("#confirm-area").fadeOut();
+
+      setTimeout(function() {
+        $("#confirm-area").removeClass('local');
+        $("#confirm-area").removeClass('inter');
+       }, 500);
+
+      $(".payment-method.-local").show();
+      $(".payment-method.-inter").hide();
+    });
+
+    $('#confirm-area #cancel-btn').click(function(){
+      $("#confirm-area").fadeOut();
+
+      setTimeout(function() {
+        $("#confirm-area").removeClass('local');
+        $("#confirm-area").removeClass('inter');
+       }, 500);
+    });
+
+    // End Choose Area
+
+    $('#inter-new-billing').click(function(){
+      $(".-inter #add-on-inter-address").show();
+    });
+
+    $('#inter-old-billing').click(function(){
+      $(".-inter #add-on-inter-address").hide();
+    });
+
+    $(".-inter .accordion_options").click(function() {
+      
+      let current = $(this).attr("rel");
+      let next = parseInt(current)+1;
+      
+      $('.-inter #c'+current).removeClass('collapse');
+      $('.-inter #c'+current).prev().addClass('editable');
+  
+      $('.-inter #c'+next).prev().addClass('collapse');
+      $('.-inter #c'+next).addClass('collapse');
+    });
+
+    $(".-inter .edit-btn").click(function(e) {
+      e.preventDefault();
+  
+      let current = $(this).attr("rel");
+      let next = parseInt(current)+1;
+  
+      if(current == '1'){
+        $('.-inter .editable').removeClass('editable');
+        $('.-inter .collapse').removeClass('collapse');
+  
+        $('.-inter #c'+current).prev().addClass('collapse');
+        $('.-inter #c'+current).addClass('collapse');
+      } else{
+        $(this).parent().removeClass('editable');
+  
+        $('.-inter #c'+current).addClass('collapse');
+  
+        $('.-inter #c'+next).prev().removeClass('collapse');
+        $('.-inter #c'+next).removeClass('collapse');
+      }
+      
+    });
+
+    $('.-inter #promptpay-inter').click(function(){
+      $(".-inter #credit-submit").hide();
+
+      $(".-inter #pp-submit").show();
+    });
+
+    $('.-inter #credit-card-inter').click(function(){
+      $(".-inter #credit-submit").show();
+
+      $(".-inter #pp-submit").hide();
+    });
+    
+    
     // Self Choose Billing
 
     $('#new-self-billing').click(function(){
@@ -550,25 +672,25 @@ jQuery(document).ready(function($) {
     $('#step-01 .edit-btn.-shipping').click(function(){
       $("#popup-address").fadeIn();
 
-      $("#edit-shipping-form").show();
+      $("#popup-address #edit-shipping-form").show();
     });
 
     $('#step-01 .edit-btn.-billing').click(function(){
       $("#popup-address").fadeIn();
 
-      $("#edit-billing-form").show();
+      $("#popup-address #edit-billing-form").show();
     });
 
     $('#step-01 .add-send-inform-btn.-shipping').click(function(){
       $("#popup-address").fadeIn();
 
-      $("#add-shipping-form").show();
+      $("#popup-address #add-shipping-form").show();
     });
 
     $('#step-01 .add-send-inform-btn.-billing').click(function(){
       $("#popup-address").fadeIn();
 
-      $("#add-billing-form").show();
+      $("#popup-address #add-billing-form").show();
     });
 
     // Self End
@@ -577,22 +699,16 @@ jQuery(document).ready(function($) {
       $("#step-02 #add-on-address").hide();
     });
 
-    $('#promptpay').click(function(){
-      $("#credit-submit").hide();
+    $('.-local #promptpay').click(function(){
+      $(".-local #credit-submit").hide();
 
-      $("#pp-submit").show();
+      $(".-local #pp-submit").show();
     });
 
-    $('#credit-card').click(function(){
-      $("#credit-submit").show();
+    $('.-local #credit-card').click(function(){
+      $(".-local #credit-submit").show();
 
-      $("#pp-submit").hide();
-    });
-
-    $('#credit-card').click(function(){
-      $("#credit-submit").show();
-
-      $("#pp-submit").hide();
+      $(".-local #pp-submit").hide();
     });
 
     $('#popup-address .close-btn').click(function(){
@@ -614,19 +730,19 @@ jQuery(document).ready(function($) {
     $('#step-02 .edit-btn.-billing').click(function(){
       $("#popup-address").fadeIn();
 
-      $("#edit-billing-form").show();
+      $("#popup-address #edit-billing-form").show();
     });
 
     $('#step-02 .add-send-inform-btn.-shipping').click(function(){
       $("#popup-address").fadeIn();
 
-      $("#add-shipping-form").show();
+      $("#popup-address #add-shipping-form").show();
     });
 
     $('#step-02 .add-send-inform-btn.-billing').click(function(){
       $("#popup-address").fadeIn();
 
-      $("#add-billing-form").show();
+      $("#popup-address #add-billing-form").show();
     });
 
     $('#step-01 #cash-on-deli').click(function(){
